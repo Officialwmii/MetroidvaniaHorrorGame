@@ -28,20 +28,27 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetButtonDown("Stun") && canAttack)
+		if (Input.GetButtonDown("EMP") && canAttack)
 		{
 			canAttack = false;
 			animator.SetBool("IsAttacking", true);
 			StartCoroutine(AttackCooldown());
 		}
 
-		if (Input.GetButtonDown("Grenade"))
+		if (Input.GetButtonDown("Stun"))
 		{
 			GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f,-0.2f), Quaternion.identity) as GameObject; 
 			Vector2 direction = new Vector2(transform.localScale.x, 0);
 			throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction; 
 			throwableWeapon.name = "ThrowableWeapon";
 		}
+
+		if (Input.GetButtonDown("Grenade"))
+		{ 
+		
+		
+		}
+
 	}
 
 	IEnumerator AttackCooldown()
