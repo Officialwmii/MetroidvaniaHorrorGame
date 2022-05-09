@@ -10,10 +10,11 @@ public class Enemy_Screamer : MonoBehaviour {
 	private Transform wallCheck;
 	public LayerMask turnLayerMask;
 	private Rigidbody2D rb;
-
+	public bool playerDetectable;
 	private bool facingRight = true;
 	
 	public float speed = 5f;
+	private Animator animator;
 
 	public bool isInvincible = false;
 	private bool isHitted = false;
@@ -22,11 +23,12 @@ public class Enemy_Screamer : MonoBehaviour {
 		fallCheck = transform.Find("FallCheck");
 		wallCheck = transform.Find("WallCheck");
 		rb = GetComponent<Rigidbody2D>();
+		animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-
+		checkForPlayer();
 		if (life <= 0) {
 			transform.GetComponent<Animator>().SetBool("IsDead", true);
 			StartCoroutine(DestroyEnemy());
@@ -34,6 +36,10 @@ public class Enemy_Screamer : MonoBehaviour {
 
 		isPlat = Physics2D.OverlapCircle(fallCheck.position, .2f, 1 << LayerMask.NameToLayer("Default"));
 		isObstacle = Physics2D.OverlapCircle(wallCheck.position, .2f, turnLayerMask);
+
+
+		
+
 
 		//if (!isHitted && life > 0 && Mathf.Abs(rb.velocity.y) < 0.5f)
 		//{
@@ -55,6 +61,18 @@ public class Enemy_Screamer : MonoBehaviour {
 		//}
 	}
 
+	void checkForPlayer()
+    {
+		if (playerDetectable)
+		{
+			animator.SetBool("HasNoticed", true);
+		}
+        else
+        {
+			animator.SetBool("HasNoticed", false);
+        }
+    }
+	
 	void Flip (){
 		// Switch the way the player is labelled as facing.
 		facingRight = !facingRight;
