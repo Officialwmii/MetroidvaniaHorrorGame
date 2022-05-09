@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 807242336929141194}
   - component: {fileID: 779311044678612238}
   m_Layer: 9
-  m_Name: Crawler
+  m_Name: Infected
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5a2a47753bb261f4cbfb1382afdf7aa5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 841bda9339d7cdb45a6fdcc5342822b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,7 +121,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.27}
+  m_Offset: {x: -0.06, y: -0.12}
   m_Size: {x: 0.46, y: 1.72}
   m_Direction: 0
 --- !u!50 &807242336929141194
@@ -155,7 +155,7 @@ Animator:
   m_GameObject: {fileID: 829873685863465678}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 432044ab149e4d449ba66966120d4f21, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8527ace85f2806146ac3e58659830a23, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
