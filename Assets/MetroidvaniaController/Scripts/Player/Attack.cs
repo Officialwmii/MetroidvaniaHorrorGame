@@ -46,9 +46,9 @@ public class Attack : MonoBehaviour
 		}
 
 		if (Input.GetButtonDown("Grenade"))
-		{ 
-		
-		
+		{
+			EventManager.UseGrenades();
+
 		}
 
 	}

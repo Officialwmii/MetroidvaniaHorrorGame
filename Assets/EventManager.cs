@@ -10,13 +10,28 @@ public class EventManager : MonoBehaviour
     static private GameObject life2;
     static private GameObject life3;
 
+    static public int grenades = 2;
+    static public int MaxGrenades = 2;
+
+    static public bool canUseGrenades = true;
+    static private GameObject grenade1;
+    static private GameObject grenade2;
+    static private GameObject grenade3;
+    static private GameObject MaxGrenade1;
+    static private GameObject MaxGrenade2;
+    static private GameObject MaxGrenade3;
+
     static public float StunCooldown = 100;
     static public float CooldownTime = 15;
     static public bool canUseStun = true;
-    static private GameObject cooldown;
+    static private GameObject Cooldown;
     static public int stunUpgrade = 1;
    
     public bool EnemiesAlerted = false;
+    static public float CurrentDanger = 15;
+    static private GameObject DangerMeter;
+
+
 
     static public float Fuel = 100;
     static public float MaxFuel = 100;
@@ -35,11 +50,28 @@ public class EventManager : MonoBehaviour
         life3 = GameObject.Find("HP3");
         UpdateLives();
 
-        cooldown = GameObject.Find("Cooldown");
+        grenade1 = GameObject.Find("grenade1");
+        grenade2 = GameObject.Find("grenade2");
+        grenade3 = GameObject.Find("grenade3");
+
+        MaxGrenade1 = GameObject.Find("MaxGrenade1");
+        MaxGrenade2 = GameObject.Find("MaxGrenade2");
+        MaxGrenade3 = GameObject.Find("MaxGrenade3");
+
+        UpdateGrenades();
+
+        Cooldown = GameObject.Find("Cooldown");
 
         UpdateStunGunCooldown();
+        UpdateCooldown();
+
+
 
         fuelBar = GameObject.Find("fuelBar");
+        UpdateFuel();
+
+        DangerMeter = GameObject.Find("DangerMeter");
+        UpdateDangerMeter();
 
     }
 
@@ -52,12 +84,11 @@ public class EventManager : MonoBehaviour
             UpdateCooldown();
             //Debug.Log(StunCooldown);
         }
-        else { canUseStun = true;//
+        else { canUseStun = true;
             //Debug.Log("Cooldown reset");
         }
 
 
-        UpdateFuel();
 
     }
 
@@ -116,6 +147,75 @@ public class EventManager : MonoBehaviour
 
     }
 
+    static public void UpdateGrenades()
+    {
+
+        MaxGrenade1.SetActive(false);
+        MaxGrenade2.SetActive(false);
+        MaxGrenade3.SetActive(false);
+
+        if (MaxGrenades >= 1) { MaxGrenade1.SetActive(true); } 
+        if (MaxGrenades >= 2) { MaxGrenade2.SetActive(true); }
+        if (MaxGrenades >= 3) { MaxGrenade3.SetActive(true); }
+
+
+        if (grenades == 3)
+        {
+            grenade1.SetActive(true);
+            grenade2.SetActive(true);
+            grenade3.SetActive(true);
+
+        }
+
+        if (grenades == 2)
+        {
+            grenade1.SetActive(true);
+            grenade2.SetActive(true);
+            grenade3.SetActive(false);
+        }
+
+        if (grenades == 1)
+        {
+            grenade1.SetActive(true);
+            grenade2.SetActive(false);
+            grenade3.SetActive(false);
+        }
+
+        if (grenades == 0)
+        {
+            grenade1.SetActive(false);
+            grenade2.SetActive(false);
+            grenade3.SetActive(false);
+        }
+
+    }
+
+    static public void UseGrenades() {
+
+        grenades = grenades - 1;
+        if (grenades <= 0)
+        {
+            grenades = 0;
+            canUseGrenades = false;
+        }
+
+        UpdateGrenades();
+
+    }
+
+    static public void GrenadePickup()
+    {
+        grenades = grenades + 1;
+        canUseGrenades = true;
+        if (grenades >= MaxGrenades)
+        {
+            grenades = MaxGrenades;
+        }
+
+        UpdateGrenades();
+    }
+
+
     static public void StartCooldown()
     {
         StunCooldown = 0f;
@@ -123,7 +223,12 @@ public class EventManager : MonoBehaviour
         UpdateCooldown();
     }
     static public void UpdateCooldown() {
-        cooldown.GetComponent<UnityEngine.UI.Image>().fillAmount = StunCooldown/100/CooldownTime;
+          Cooldown.GetComponent<UnityEngine.UI.Image>().fillAmount = StunCooldown/100/CooldownTime;
+       // string test;
+        //test = Cooldown.name;
+
+
+
     }
 
     static public void UseDash() {
@@ -159,6 +264,29 @@ public class EventManager : MonoBehaviour
 
     }
 
+
+    static public void AddDanger()
+    {
+        CurrentDanger = CurrentDanger + 15;
+        if (CurrentDanger >= 100) { CurrentDanger = 100;}
+
+        UpdateDangerMeter();
+    }
+
+    static public void ReduceDanger()
+    {
+        CurrentDanger = CurrentDanger - 25;
+        if (CurrentDanger <= 0) { CurrentDanger = 0;}
+
+        UpdateDangerMeter();
+    }
+
+    static public void UpdateDangerMeter()
+    {
+
+        DangerMeter.GetComponent<UnityEngine.UI.Slider>().value = CurrentDanger / 100;
+
+    }
 
 
     public void Alert() {
