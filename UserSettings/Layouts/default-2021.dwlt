@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 122
+  controlID: 37
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 46
+  controlID: 126
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 75
+  controlID: 24
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 76
+  controlID: 25
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -445,7 +445,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 48f6ffff
+      m_ExpandedIDs: 2efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -718,7 +718,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 13.551783, y: -4.5416303, z: -0.11836828}
     speed: 2
-    m_Value: {x: 13.012124, y: -4.604801, z: -0.10896493}
+    m_Value: {x: 13.551783, y: -4.5416303, z: -0.11836828}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -771,7 +771,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 21.836815
     speed: 2
-    m_Value: 20.896473
+    m_Value: 21.836815
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1038,22 +1038,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/animation_sprite/Enemy/Liptank/Liptank_idle_frames
+    - Assets/animation_sprite/Enemy/Screamer/Screamer_stunned_frames
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/animation_sprite/Enemy/Liptank/Liptank_idle_frames
+  - Assets/animation_sprite/Enemy/Screamer/Screamer_stunned_frames
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Juran\Documents\GitHub\MetroidvaniaHorrorGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 965d0000
-    m_LastClickedID: 23958
-    m_ExpandedIDs: 000000000a5d0000225d0000625d0000a05d000000ca9a3bffffff7f
+    m_SelectedIDs: de570000
+    m_LastClickedID: 22494
+    m_ExpandedIDs: 00000000f65600000c5700004a5700004c5700005457000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1081,7 +1081,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000a5d0000
+    m_ExpandedIDs: 00000000f6560000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
