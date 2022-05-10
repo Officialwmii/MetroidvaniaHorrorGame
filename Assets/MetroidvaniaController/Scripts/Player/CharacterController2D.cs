@@ -23,6 +23,8 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private float m_DashForce = 25f;
 	private bool canDash = true;
 	private bool isDashing = false; //If player is dashing
+	private bool MultiDirectionalDashing = true;
+
 	private bool m_IsWall = false; //If there is a wall in front of the player
 	private bool isWallSliding = false; //If player is sliding in a wall
 	private bool oldWallSlidding = false; //If player is sliding in a wall in the previous frame
@@ -142,7 +144,27 @@ public class CharacterController2D : MonoBehaviour
 			// If crouching, check to see if the character can stand up
 			if (isDashing)
 			{
-				m_Rigidbody2D.velocity = new Vector2(transform.localScale.x * m_DashForce, 0);
+
+
+				if (MultiDirectionalDashing) {
+
+					if (Mathf.Round(Input.GetAxisRaw("Horizontal")) == 0 && Mathf.Round(Input.GetAxisRaw("Vertical")) == 0) {
+						m_Rigidbody2D.velocity = new Vector2(transform.localScale.x * m_DashForce, 0);
+
+
+					}
+					else {
+
+						m_Rigidbody2D.velocity = new Vector2(Mathf.Round(Input.GetAxisRaw("Horizontal")) * 
+							m_DashForce, Mathf.Round(Input.GetAxisRaw("Vertical")) * m_DashForce*0.75f);
+
+					}
+
+				}
+				else {
+					m_Rigidbody2D.velocity = new Vector2(transform.localScale.x * m_DashForce, 0);
+				}
+
 			}
 			//only control the player if grounded or airControl is turned on
 			else if (m_Grounded || m_AirControl)
