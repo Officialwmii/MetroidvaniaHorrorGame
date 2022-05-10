@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;
 
 public class Enemy_Screamer : MonoBehaviour {
@@ -12,18 +13,32 @@ public class Enemy_Screamer : MonoBehaviour {
 	private Rigidbody2D rb;
 	public bool playerDetectable;
 	private bool facingRight = true;
+	public GameObject detectionCollider;
+	public float detectionRange = 2f;
+	private GameObject player;
 	
 	public float speed = 5f;
 	private Animator animator;
 
 	public bool isInvincible = false;
 	private bool isHitted = false;
+	public UnityEvent IsScreamingEvent;
+	public UnityEvent IsQuietEvent;
 
 	void Awake () {
 		fallCheck = transform.Find("FallCheck");
 		wallCheck = transform.Find("WallCheck");
 		rb = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
+		player = GameObject.FindGameObjectWithTag("Player");
+		if (IsScreamingEvent == null)
+        {
+			IsScreamingEvent = new UnityEvent();
+        }
+		if (IsQuietEvent == null)
+        {
+			IsQuietEvent = new UnityEvent();
+        }
 	}
 	
 	// Update is called once per frame
@@ -35,10 +50,7 @@ public class Enemy_Screamer : MonoBehaviour {
 		}
 
 		isPlat = Physics2D.OverlapCircle(fallCheck.position, .2f, 1 << LayerMask.NameToLayer("Default"));
-		isObstacle = Physics2D.OverlapCircle(wallCheck.position, .2f, turnLayerMask);
-
-
-		
+		isObstacle = Physics2D.OverlapCircle(wallCheck.position, .2f, turnLayerMask);		
 
 
 		//if (!isHitted && life > 0 && Mathf.Abs(rb.velocity.y) < 0.5f)
@@ -63,6 +75,19 @@ public class Enemy_Screamer : MonoBehaviour {
 
 	void checkForPlayer()
     {
+		if (Vector3.Distance(player.transform.position, transform.position) <= detectionRange)
+        {
+			playerDetectable = true;
+			IsScreamingEvent.Invoke();
+
+        }
+        else
+        {
+			playerDetectable = false;
+			IsQuietEvent.Invoke();
+        }
+
+
 		if (playerDetectable)
 		{
 			animator.SetBool("HasNoticed", true);

@@ -64,7 +64,7 @@ public class Enemy : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-
+	
 	public void ApplyDamage(float damage) {
 		if (!isInvincible) 
 		{
@@ -105,5 +105,10 @@ public class Enemy : MonoBehaviour {
 		rb.velocity = new Vector2(0, rb.velocity.y);
 		yield return new WaitForSeconds(3f);
 		Destroy(gameObject);
+	}
+
+	public void Alert()
+	{
+		Debug.Log("My dad is alerting me!");
 	}
 }

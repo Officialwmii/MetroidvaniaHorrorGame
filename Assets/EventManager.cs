@@ -15,6 +15,7 @@ public class EventManager : MonoBehaviour
     static public bool canUseStun = true;
     static private GameObject cooldown;
     static public int stunUpgrade = 1;
+    public bool EnemiesAlerted = false;
 
 
     // Start is called before the first frame update
@@ -110,6 +111,17 @@ public class EventManager : MonoBehaviour
     }
     static public void UpdateCooldown() {
         cooldown.GetComponent<UnityEngine.UI.Image>().fillAmount = StunCooldown/100/CooldownTime;
+    }
+    
+    public void Alert() {
+        EnemiesAlerted = true;
+        Debug.Log("Help!");
+    }
+
+    public void Calm()
+    {
+        EnemiesAlerted = false;
+        Debug.Log("Phew, false alarm.");
     }
 
 
