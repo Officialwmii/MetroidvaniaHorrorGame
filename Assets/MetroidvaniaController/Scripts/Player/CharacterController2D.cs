@@ -136,7 +136,7 @@ public class CharacterController2D : MonoBehaviour
 	public void Move(float move, bool jump, bool dash)
 	{
 		if (canMove) {
-			if (dash && canDash && !isWallSliding)
+			if (dash && canDash && !isWallSliding && EventManager.canUseDash)
 			{
 				//m_Rigidbody2D.AddForce(new Vector2(transform.localScale.x * m_DashForce, 0f));
 				StartCoroutine(DashCooldown());
@@ -164,6 +164,8 @@ public class CharacterController2D : MonoBehaviour
 				else {
 					m_Rigidbody2D.velocity = new Vector2(transform.localScale.x * m_DashForce, 0);
 				}
+
+				
 
 			}
 			//only control the player if grounded or airControl is turned on
@@ -307,6 +309,7 @@ public class CharacterController2D : MonoBehaviour
 	IEnumerator DashCooldown()
 	{
 		animator.SetBool("IsDashing", true);
+		EventManager.UseDash();
 		isDashing = true;
 		canDash = false;
 		yield return new WaitForSeconds(0.1f);

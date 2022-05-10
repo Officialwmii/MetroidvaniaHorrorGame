@@ -15,7 +15,16 @@ public class EventManager : MonoBehaviour
     static public bool canUseStun = true;
     static private GameObject cooldown;
     static public int stunUpgrade = 1;
+   
     public bool EnemiesAlerted = false;
+
+    static public float Fuel = 100;
+    static public float MaxFuel = 100;
+    static public float DashFuelCost = 15;
+    static public float EMPFuelCost = 15;
+    static public bool canUseDash = true;
+
+    static private GameObject fuelBar;
 
 
     // Start is called before the first frame update
@@ -29,6 +38,8 @@ public class EventManager : MonoBehaviour
         cooldown = GameObject.Find("Cooldown");
 
         UpdateStunGunCooldown();
+
+        fuelBar = GameObject.Find("fuelBar");
 
     }
 
@@ -44,6 +55,10 @@ public class EventManager : MonoBehaviour
         else { canUseStun = true;//
             //Debug.Log("Cooldown reset");
         }
+
+
+        UpdateFuel();
+
     }
 
 
@@ -58,9 +73,7 @@ public class EventManager : MonoBehaviour
         if (stunUpgrade == 3) { CooldownTime = 6; }
         if (stunUpgrade == 4) { CooldownTime = 5; }
         if (stunUpgrade >= 5) { CooldownTime = 4; }
-
     }
-
 
     static public void UpdateLives()
     {
@@ -112,7 +125,42 @@ public class EventManager : MonoBehaviour
     static public void UpdateCooldown() {
         cooldown.GetComponent<UnityEngine.UI.Image>().fillAmount = StunCooldown/100/CooldownTime;
     }
-    
+
+    static public void UseDash() {
+
+        Fuel = Fuel - DashFuelCost;
+        if (Fuel <= 0) {
+            Fuel = 0;
+            canUseDash = false;
+        }
+
+        UpdateFuel();
+    }
+
+    static public void FuelPickup() {
+
+
+        Fuel = Fuel + 50;
+        canUseDash = true;
+        if (Fuel >= MaxFuel)
+            {
+                Fuel = MaxFuel; 
+        }
+        
+        UpdateFuel();
+
+    }
+
+
+
+    static public void UpdateFuel() {
+
+        fuelBar.GetComponent<UnityEngine.UI.Slider>().value = Fuel/100;
+
+    }
+
+
+
     public void Alert() {
         EnemiesAlerted = true;
         Debug.Log("Help!");

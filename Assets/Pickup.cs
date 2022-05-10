@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public enum UpgradeType { StunCooldown, MaxFuel, MaxGranade };
+    public enum UpgradeType { StunCooldown, MaxFuel, MaxGranade, FuelResource };
     public UpgradeType upgradeType;
     // Start is called before the first frame update
     void Start()
@@ -34,6 +34,11 @@ public class Pickup : MonoBehaviour
                 case UpgradeType.MaxGranade:
                     EventManager.UpgradeStunGun();
                     break;
+                case UpgradeType.FuelResource:
+                    EventManager.FuelPickup();
+                    break;
+
+
             }
         
 
