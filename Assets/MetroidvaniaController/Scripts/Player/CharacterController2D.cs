@@ -82,7 +82,7 @@ public class CharacterController2D : MonoBehaviour
 					OnLandEvent.Invoke();
 					if (!m_IsWall && !isDashing) 
 						particleJumpDown.Play();
-					canDoubleJump = true;
+					//canDoubleJump = true;
 					if (m_Rigidbody2D.velocity.y < 0f)
 						limitVelOnWallJump = false;
 				}
@@ -199,7 +199,7 @@ public class CharacterController2D : MonoBehaviour
 				animator.SetBool("JumpUp", true);
 				m_Grounded = false;
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-				canDoubleJump = true;
+				//canDoubleJump = true;
 				particleJumpDown.Play();
 				particleJumpUp.Play();
 			}
@@ -219,7 +219,7 @@ public class CharacterController2D : MonoBehaviour
 					m_WallCheck.localPosition = new Vector3(-m_WallCheck.localPosition.x, m_WallCheck.localPosition.y, 0);
 					Flip();
 					StartCoroutine(WaitToCheck(0.1f));
-					canDoubleJump = true;
+					//canDoubleJump = true;
 					animator.SetBool("IsWallSliding", true);
 				}
 				isDashing = false;
@@ -245,7 +245,7 @@ public class CharacterController2D : MonoBehaviour
 					m_Rigidbody2D.AddForce(new Vector2(transform.localScale.x * m_JumpForce *1.2f, m_JumpForce));
 					jumpWallStartX = transform.position.x;
 					limitVelOnWallJump = true;
-					canDoubleJump = true;
+					//canDoubleJump = true;
 					isWallSliding = false;
 					animator.SetBool("IsWallSliding", false);
 					oldWallSlidding = false;
@@ -258,7 +258,7 @@ public class CharacterController2D : MonoBehaviour
 					animator.SetBool("IsWallSliding", false);
 					oldWallSlidding = false;
 					m_WallCheck.localPosition = new Vector3(Mathf.Abs(m_WallCheck.localPosition.x), m_WallCheck.localPosition.y, 0);
-					canDoubleJump = true;
+					//canDoubleJump = true;
 					StartCoroutine(DashCooldown());
 				}
 			}
@@ -268,7 +268,7 @@ public class CharacterController2D : MonoBehaviour
 				animator.SetBool("IsWallSliding", false);
 				oldWallSlidding = false;
 				m_WallCheck.localPosition = new Vector3(Mathf.Abs(m_WallCheck.localPosition.x), m_WallCheck.localPosition.y, 0);
-				canDoubleJump = true;
+				//canDoubleJump = true;
 			}
 		}
 	}
@@ -347,7 +347,7 @@ public class CharacterController2D : MonoBehaviour
 	IEnumerator WaitToEndSliding()
 	{
 		yield return new WaitForSeconds(0.1f);
-		canDoubleJump = true;
+		//canDoubleJump = true;
 		isWallSliding = false;
 		animator.SetBool("IsWallSliding", false);
 		oldWallSlidding = false;
