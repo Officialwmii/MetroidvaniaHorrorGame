@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EventManager : MonoBehaviour
 {
 
     static public int Lives = 3;
+    static public int MaxLives = 10;
     static private GameObject life1;
     static private GameObject life2;
     static private GameObject life3;
@@ -26,10 +28,18 @@ public class EventManager : MonoBehaviour
     static public bool canUseStun = true;
     static private GameObject Cooldown;
     static public int stunUpgrade = 1;
-   
+
+    static public int Collectables = 0;
+
+
     public bool EnemiesAlerted = false;
     static public float CurrentDanger = 15;
+    static public float CurrentDangerLevel = 0;
+
     static private GameObject DangerMeter;
+    static private GameObject DangerLevel1Layer;
+    static private GameObject DangerLevel2Layer;
+    static private GameObject DangerLevel3Layer;
 
 
 
@@ -73,6 +83,10 @@ public class EventManager : MonoBehaviour
         DangerMeter = GameObject.Find("DangerMeter");
         UpdateDangerMeter();
 
+        DangerLevel1Layer = GameObject.Find("DangerLevel1");
+        DangerLevel2Layer = GameObject.Find("DangerLevel2");
+        DangerLevel3Layer = GameObject.Find("DangerLevel3");
+        UpdateDangerLevel();
     }
 
     // Update is called once per frame
@@ -88,7 +102,16 @@ public class EventManager : MonoBehaviour
             //Debug.Log("Cooldown reset");
         }
 
+        if (Input.GetKeyDown(KeyCode.PageUp)) {
+            AddDanger();
+        
+        }
 
+        if (Input.GetKeyDown(KeyCode.PageDown))
+        {
+            ReduceDanger();
+
+        }
 
     }
 
@@ -145,6 +168,14 @@ public class EventManager : MonoBehaviour
         Lives = Lives - 1;
         UpdateLives();
 
+    }
+
+    static public void HealthPickup()
+    {
+        Lives = Lives + 1;
+        if (Lives >= MaxLives) { Lives = MaxLives; }
+
+        UpdateLives();
     }
 
     static public void UpdateGrenades()
@@ -264,14 +295,25 @@ public class EventManager : MonoBehaviour
 
     }
 
+    static public void CollectablePickup()
+    {
 
-    static public void AddDanger()
+        Collectables++;
+
+    }
+
+
+        static public void AddDanger()
     {
         CurrentDanger = CurrentDanger + 15;
         if (CurrentDanger >= 100) { CurrentDanger = 100;}
 
         UpdateDangerMeter();
+        UpdateDangerLevel();
     }
+
+
+
 
     static public void ReduceDanger()
     {
@@ -279,6 +321,7 @@ public class EventManager : MonoBehaviour
         if (CurrentDanger <= 0) { CurrentDanger = 0;}
 
         UpdateDangerMeter();
+        UpdateDangerLevel();
     }
 
     static public void UpdateDangerMeter()
@@ -288,6 +331,24 @@ public class EventManager : MonoBehaviour
 
     }
 
+    static public void UpdateDangerLevel()
+    {
+        CurrentDangerLevel = 0;
+       
+        if (CurrentDanger >= 50) CurrentDangerLevel = 1;
+        if (CurrentDanger >= 75) CurrentDangerLevel = 2;
+        if (CurrentDanger >= 85) CurrentDangerLevel = 3;
+       //if (CurrentDanger >= 100) SceneManager.LoadScene("Scenes/" + SceneManager.GetActiveScene().name);
+
+        DangerLevel1Layer.SetActive(false);
+        DangerLevel2Layer.SetActive(false);
+        DangerLevel3Layer.SetActive(false);
+
+        if (CurrentDangerLevel >= 1) DangerLevel1Layer.SetActive(true);
+        if (CurrentDangerLevel >= 2) DangerLevel2Layer.SetActive(true);
+        if (CurrentDangerLevel >= 3) DangerLevel3Layer.SetActive(true);
+
+    }
 
     public void Alert() {
         EnemiesAlerted = true;
