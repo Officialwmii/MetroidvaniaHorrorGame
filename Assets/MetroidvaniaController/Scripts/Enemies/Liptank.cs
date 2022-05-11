@@ -92,7 +92,12 @@ public class Liptank : MonoBehaviour
 		if (Vector3.Distance(player.transform.position, transform.position) <= detectionRange)
 		{
 			playerDetectable = true;
+			transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
 			
+			if (player.transform.position.x > transform.position.x && facingRight) 
+				Flip();
+			if (player.transform.position.x < transform.position.x && !facingRight)
+				Flip();
 
 
 		}
@@ -172,11 +177,22 @@ public class Liptank : MonoBehaviour
     {
 		
 		Debug.Log("I spit");
-		Vector2 direction = new Vector2(-transform.localScale.x, 0);
-		GameObject spitBullet = Instantiate(projectile, transform.position + new Vector3(transform.localScale.x-1.9f, 0.5f), Quaternion.identity);
-		spitBullet.GetComponent<EnemyProjectile>().direction = direction;
-		spitBullet.name = "SpitBullet";
+		if (facingRight)
+		{
+			Vector2 direction = new Vector2(-1, 0);
+			GameObject spitBullet = Instantiate(projectile, transform.position + new Vector3(transform.localScale.x - 1.9f, 0.5f), Quaternion.identity);
+			spitBullet.GetComponent<EnemyProjectile>().direction = direction;
+			spitBullet.name = "SpitBullet";
+		}
+		else if (!facingRight)
+        {
+			Vector2 direction = new Vector2(1, 0);
+			GameObject spitBullet = Instantiate(projectile, transform.position + new Vector3(transform.localScale.x + 1.9f, 0.5f), Quaternion.identity);
+			spitBullet.GetComponent<EnemyProjectile>().direction = direction;
+			spitBullet.name = "SpitBullet";
+		}
 		timer = 0f;
-
 	}
+		
+	
 }

@@ -1061,11 +1061,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1566424744768056949, guid: 50300679fea22d74f8d5a20f55ceac1e, type: 3}
       propertyPath: nextShot
-      value: 1.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1566424744768056949, guid: 50300679fea22d74f8d5a20f55ceac1e, type: 3}
       propertyPath: shootCooldown
-      value: 1.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1566424744768056949, guid: 50300679fea22d74f8d5a20f55ceac1e, type: 3}
       propertyPath: detectionRange
