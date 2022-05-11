@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class EventManager : MonoBehaviour
 {
 
-    static public int Lives = 3;
+    static public int Lives = 4;
     static public int MaxLives = 10;
     static private GameObject life1;
     static private GameObject life2;
     static private GameObject life3;
+    static private GameObject life4;
+
 
     static public int grenades = 2;
     static public int MaxGrenades = 2;
@@ -58,6 +60,7 @@ public class EventManager : MonoBehaviour
         life1 = GameObject.Find("HP1");
         life2 = GameObject.Find("HP2");
         life3 = GameObject.Find("HP3");
+        life3 = GameObject.Find("HP4");
         UpdateLives();
 
         grenade1 = GameObject.Find("grenade1");
@@ -132,33 +135,40 @@ public class EventManager : MonoBehaviour
     static public void UpdateLives()
     {
 
+        life1.SetActive(false);
+        life2.SetActive(false);
+        life3.SetActive(false);
+        life4.SetActive(false);
+
+        if (Lives == 4)
+        {
+            life4.SetActive(true);
+
+
+        }
+
         if (Lives == 3)
         {
-            life1.SetActive(true);
-            life2.SetActive(true);
             life3.SetActive(true);
+
 
         }
 
         if (Lives == 2)
         {
-            life1.SetActive(true);
             life2.SetActive(true);
-            life3.SetActive(false);
+
         }
 
         if (Lives == 1)
         {
             life1.SetActive(true);
-            life2.SetActive(false);
-            life3.SetActive(false);
+
         }
 
         if (Lives == 0)
         {
-            life1.SetActive(false);
-            life2.SetActive(false);
-            life3.SetActive(false);
+
         }
 
     }
