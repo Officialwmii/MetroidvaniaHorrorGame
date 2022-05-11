@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
 
-public class Enemy_Screamer : MonoBehaviour {
+public class Screamer : MonoBehaviour {
 
 	public float life = 10;
 	private bool isPlat;

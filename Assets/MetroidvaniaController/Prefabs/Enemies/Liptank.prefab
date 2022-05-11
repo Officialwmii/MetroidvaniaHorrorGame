@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 833546103016679072}
-  - component: {fileID: 937370916216969955}
+  - component: {fileID: -1566424744768056949}
   - component: {fileID: 680800394409511256}
   - component: {fileID: 826529193392231162}
   - component: {fileID: 807242336929141194}
@@ -38,7 +38,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &937370916216969955
+--- !u!114 &-1566424744768056949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 829873685863465678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d2c0f83c1beeb41ad996fae74d081d, type: 3}
+  m_Script: {fileID: 11500000, guid: 498124c3b145d4146afab0289e574f18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
@@ -57,26 +57,10 @@ MonoBehaviour:
   playerDetectable: 0
   detectionCollider: {fileID: 0}
   detectionRange: 2
+  projectile: {fileID: 5532974359214069763, guid: 89cbe3e544333924897e87475cb57182, type: 3}
+  shootCooldown: 20
   speed: 5
   isInvincible: 0
-  IsScreamingEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: fba604f8fb16ce24abb8275c4ac53990, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  IsQuietEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!212 &680800394409511256
 SpriteRenderer:
   m_ObjectHideFlags: 0
