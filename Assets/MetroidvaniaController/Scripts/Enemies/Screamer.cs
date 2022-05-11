@@ -79,8 +79,13 @@ public class Screamer : MonoBehaviour {
         {
 			playerDetectable = true;
 			IsScreamingEvent.Invoke();
+			transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
 
-        }
+			if (player.transform.position.x > transform.position.x && facingRight)
+				Flip();
+			if (player.transform.position.x < transform.position.x && !facingRight)
+				Flip();
+		}
         else
         {
 			playerDetectable = false;
