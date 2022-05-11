@@ -35,7 +35,6 @@ Transform:
   m_Children:
   - {fileID: 833200837642659382}
   - {fileID: 833263741300592438}
-  - {fileID: 7012782135452498054}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -56,7 +55,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   playerDetectable: 0
-  detectionCollider: {fileID: 1383859024862069532}
+  detectionCollider: {fileID: 0}
   detectionRange: 2
   speed: 5
   isInvincible: 0
@@ -75,6 +74,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  IsQuietEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &680800394409511256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -246,51 +248,3 @@ Transform:
   m_Father: {fileID: 833546103016679072}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1383859024862069532
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7012782135452498054}
-  - component: {fileID: 6268605796083249570}
-  m_Layer: 0
-  m_Name: Circle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7012782135452498054
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383859024862069532}
-  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.03, y: 0.18999994, z: 0}
-  m_LocalScale: {x: -1.7299999, y: 1.7299999, z: 1.7299999}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 833546103016679072}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &6268605796083249570
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383859024862069532}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
