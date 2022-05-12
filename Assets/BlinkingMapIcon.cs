@@ -19,14 +19,17 @@ public class BlinkingMapIcon : MonoBehaviour
     void Update()
     {
         blinkingTimer = blinkingTimer +1 * Time.deltaTime;
-        if (blinkingTimer > 0.5f) {
+        if (blinkingTimer > 0.5f && blinkingTimer < 1f && ShowMap.showMap) {
 
-            this.GetComponent<SpriteRenderer>().enabled = false;
-        }
-         if (blinkingTimer > 1f) {
             this.GetComponent<SpriteRenderer>().enabled = true;
-            blinkingTimer = 0f;
         }
+         else  {
+            this.GetComponent<SpriteRenderer>().enabled = false;
+            
+        }
+
+
+        if (blinkingTimer > 1) { blinkingTimer = 0f; }
 
         this.transform.position = PlayerPosition.transform.position;
 
