@@ -32,7 +32,7 @@ public class EventManager : MonoBehaviour
     static public int stunUpgrade = 1;
 
     static public int Collectables = 0;
-
+    static public int AudioLog = 0;
 
     public bool EnemiesAlerted = false;
     static public float CurrentDanger = 15;
@@ -52,6 +52,15 @@ public class EventManager : MonoBehaviour
     static public bool canUseDash = true;
 
     static private GameObject fuelBar;
+
+    static public bool HasJetpack = true;
+    static public bool HasArmour = false;
+    static public bool HasRocketLauncher = false;
+    static public bool HasFuelRefill = true;
+
+    static public int MainUpgradesAccired= 0;
+
+
 
 
     // Start is called before the first frame update
@@ -95,6 +104,8 @@ public class EventManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //stun cooldown
         if (StunCooldown <= 100* CooldownTime)
         {
             StunCooldown = StunCooldown + Time.deltaTime*100;
@@ -105,6 +116,8 @@ public class EventManager : MonoBehaviour
             //Debug.Log("Cooldown reset");
         }
 
+
+        //Danger meter debug
         if (Input.GetKeyDown(KeyCode.PageUp)) {
             AddDanger();
         
@@ -113,6 +126,16 @@ public class EventManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.PageDown))
         {
             ReduceDanger();
+
+        }
+
+        //fuel refill upgrade
+        if (HasFuelRefill && Fuel < MaxFuel / 2) {
+            Fuel = Fuel + Time.deltaTime *5;
+
+            if (Fuel >= DashFuelCost) { canUseDash = true; }
+            
+            UpdateFuel();
 
         }
 
@@ -134,50 +157,22 @@ public class EventManager : MonoBehaviour
 
     static public void UpdateLives()
     {
-
         life1.SetActive(false);
         life2.SetActive(false);
         life3.SetActive(false);
         life4.SetActive(false);
 
-        if (Lives == 4)
-        {
-            life4.SetActive(true);
-
-
-        }
-
-        if (Lives == 3)
-        {
-            life3.SetActive(true);
-
-
-        }
-
-        if (Lives == 2)
-        {
-            life2.SetActive(true);
-
-        }
-
-        if (Lives == 1)
-        {
-            life1.SetActive(true);
-
-        }
-
-        if (Lives == 0)
-        {
-
-        }
-
+        if (Lives == 4) { life4.SetActive(true); }
+        if (Lives == 3) { life3.SetActive(true); }
+        if (Lives == 2) { life2.SetActive(true); }
+        if (Lives == 1) { life1.SetActive(true); }
+        if (Lives == 0) {        }
     }
 
     static public void ReduceHP() {
 
         Lives = Lives - 1;
         UpdateLives();
-
     }
 
     static public void HealthPickup()
@@ -190,7 +185,6 @@ public class EventManager : MonoBehaviour
 
     static public void UpdateGrenades()
     {
-
         MaxGrenade1.SetActive(false);
         MaxGrenade2.SetActive(false);
         MaxGrenade3.SetActive(false);
@@ -198,7 +192,6 @@ public class EventManager : MonoBehaviour
         if (MaxGrenades >= 1) { MaxGrenade1.SetActive(true); } 
         if (MaxGrenades >= 2) { MaxGrenade2.SetActive(true); }
         if (MaxGrenades >= 3) { MaxGrenade3.SetActive(true); }
-
 
         if (grenades == 3)
         {
@@ -265,17 +258,12 @@ public class EventManager : MonoBehaviour
     }
     static public void UpdateCooldown() {
          Cooldown.GetComponent<UnityEngine.UI.Image>().fillAmount = StunCooldown/100/CooldownTime;
-       // string test;
-        //test = Cooldown.name;
-
-
-
     }
 
     static public void UseDash() {
 
         Fuel = Fuel - DashFuelCost;
-        if (Fuel <= 0) {
+        if (Fuel <= DashFuelCost) {
             Fuel = 0;
             canUseDash = false;
         }
@@ -285,7 +273,6 @@ public class EventManager : MonoBehaviour
 
     static public void FuelPickup() {
 
-
         Fuel = Fuel + 50;
         canUseDash = true;
         if (Fuel >= MaxFuel)
@@ -294,27 +281,26 @@ public class EventManager : MonoBehaviour
         }
         
         UpdateFuel();
-
     }
 
 
 
-    static public void UpdateFuel() {
+    static public void UpdateFuel() { fuelBar.GetComponent<UnityEngine.UI.Slider>().value = Fuel/100; }
+    static public void CollectablePickup(){ Collectables++; }
 
-        fuelBar.GetComponent<UnityEngine.UI.Slider>().value = Fuel/100;
+    static public void AudioLogPickup() { AudioLog++; }
+    static public void GainAbilityJetpack() { HasJetpack = true; MainUpgradesAccired++; }
 
-    }
+    static public void GainAbilityArmour() { HasArmour = true; MainUpgradesAccired++; }
 
-    static public void CollectablePickup()
-    {
+    static public void GainAbilityRocketLauncher() { HasRocketLauncher = true; MainUpgradesAccired++; }
 
-        Collectables++;
+    static public void GainAbilityFuelRefill() { HasFuelRefill = true; }
 
-    }
+    //Danger
 
+    static public void AddDanger() {
 
-        static public void AddDanger()
-    {
         CurrentDanger = CurrentDanger + 15;
         if (CurrentDanger >= 100) { CurrentDanger = 100;}
 
@@ -333,6 +319,7 @@ public class EventManager : MonoBehaviour
         UpdateDangerMeter();
         UpdateDangerLevel();
     }
+
 
     static public void UpdateDangerMeter()
     {

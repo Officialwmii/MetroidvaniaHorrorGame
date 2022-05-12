@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public enum UpgradeType { StunCooldown, MaxFuel, MaxGranade, FuelResource, GrenadeResource, HealthPack, CollectablePickup };
+    public enum UpgradeType {
+
+        //Resources
+        FuelResource, GrenadeResource, HealthPack,
+        
+        //Numberical upgrades
+        StunCooldown, MaxFuel, MaxGranade,  
+        
+        //Collectables
+        CollectablePickup, AudioLogPickup,
+        
+        //Ability upgrades
+        GainAbilityJetpack, GainAbilityArmour, GainAbilityRocketLauncher, GainAbilityFuelRefill
+    };
     public UpgradeType upgradeType;
     // Start is called before the first frame update
     void Start()
@@ -25,15 +38,7 @@ public class Pickup : MonoBehaviour
 
             switch (upgradeType)
             {
-                case UpgradeType.StunCooldown:
-                    EventManager.UpgradeStunGun();
-                    break;
-                case UpgradeType.MaxFuel:
-                    EventManager.UpgradeStunGun();
-                    break;
-                case UpgradeType.MaxGranade:
-                    EventManager.UpgradeStunGun();
-                    break;
+                //Resource pickups
                 case UpgradeType.FuelResource:
                     EventManager.FuelPickup();
                     break;
@@ -43,11 +48,41 @@ public class Pickup : MonoBehaviour
                 case UpgradeType.HealthPack:
                     EventManager.HealthPickup();
                     break;
+                    
+                //Numericall upgrades
+                case UpgradeType.StunCooldown:
+                    EventManager.UpgradeStunGun();
+                    break;
+                case UpgradeType.MaxFuel:
+                    EventManager.UpgradeStunGun();
+                    break;
+                case UpgradeType.MaxGranade:
+                    EventManager.UpgradeStunGun();
+                    break;
+
+                //Collectable 
                 case UpgradeType.CollectablePickup:
                     EventManager.CollectablePickup();
                     break;
+                case UpgradeType.AudioLogPickup:
+                    EventManager.AudioLogPickup();
+                    break;
 
-                    
+
+                // Ability upgrades
+                case UpgradeType.GainAbilityJetpack:
+                    EventManager.GainAbilityJetpack();
+                    break;
+                case UpgradeType.GainAbilityArmour:
+                    EventManager.GainAbilityArmour();
+                    break;
+                case UpgradeType.GainAbilityRocketLauncher:
+                    EventManager.GainAbilityRocketLauncher();
+                    break;
+                case UpgradeType.GainAbilityFuelRefill:
+                    EventManager.GainAbilityFuelRefill();
+                    break;
+
             }
         
 

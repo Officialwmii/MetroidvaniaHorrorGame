@@ -139,7 +139,7 @@ public class CharacterController2D : MonoBehaviour
 	public void Move(float move, bool jump, bool dash)
 	{
 		if (canMove) {
-			if (dash && canDash && !isWallSliding && EventManager.canUseDash)
+			if (dash && canDash && !isWallSliding && EventManager.canUseDash && EventManager.HasJetpack)
 			{
 				//m_Rigidbody2D.AddForce(new Vector2(transform.localScale.x * m_DashForce, 0f));
 				StartCoroutine(DashCooldown());
