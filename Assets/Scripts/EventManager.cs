@@ -5,14 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class EventManager : MonoBehaviour
 {
-
     static public int Lives = 4;
     static public int MaxLives = 10;
     static private GameObject life1;
     static private GameObject life2;
     static private GameObject life3;
     static private GameObject life4;
-
 
     static public int grenades = 2;
     static public int MaxGrenades = 2;
@@ -43,8 +41,6 @@ public class EventManager : MonoBehaviour
     static private GameObject DangerLevel2Layer;
     static private GameObject DangerLevel3Layer;
 
-
-
     static public float Fuel = 100;
     static public float MaxFuel = 100;
     static public float DashFuelCost = 15;
@@ -58,10 +54,7 @@ public class EventManager : MonoBehaviour
     static public bool HasRocketLauncher = false;
     static public bool HasFuelRefill = true;
 
-    static public int MainUpgradesAccired= 0;
-
-
-
+    static public int MainUpgradesAcquired= 0;
 
     // Start is called before the first frame update
     void Start()
@@ -83,11 +76,8 @@ public class EventManager : MonoBehaviour
         UpdateGrenades();
 
         Cooldown = GameObject.Find("Cooldown");
-
         UpdateStunGunCooldown();
         UpdateCooldown();
-
-
 
         fuelBar = GameObject.Find("fuelBar");
         UpdateFuel();
@@ -104,7 +94,6 @@ public class EventManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //stun cooldown
         if (StunCooldown <= 100* CooldownTime)
         {
@@ -116,18 +105,10 @@ public class EventManager : MonoBehaviour
             //Debug.Log("Cooldown reset");
         }
 
-
         //Danger meter debug
-        if (Input.GetKeyDown(KeyCode.PageUp)) {
-            AddDanger();
-        
-        }
+        if (Input.GetKeyDown(KeyCode.PageUp)) { AddDanger();}
 
-        if (Input.GetKeyDown(KeyCode.PageDown))
-        {
-            ReduceDanger();
-
-        }
+        if (Input.GetKeyDown(KeyCode.PageDown)){ ReduceDanger(); }
 
         //fuel refill upgrade
         if (HasFuelRefill && Fuel < MaxFuel / 2) {
@@ -136,7 +117,6 @@ public class EventManager : MonoBehaviour
             if (Fuel >= DashFuelCost) { canUseDash = true; }
             
             UpdateFuel();
-
         }
 
     }
@@ -193,34 +173,13 @@ public class EventManager : MonoBehaviour
         if (MaxGrenades >= 2) { MaxGrenade2.SetActive(true); }
         if (MaxGrenades >= 3) { MaxGrenade3.SetActive(true); }
 
-        if (grenades == 3)
-        {
-            grenade1.SetActive(true);
-            grenade2.SetActive(true);
-            grenade3.SetActive(true);
+        grenade1.SetActive(false);
+        grenade2.SetActive(false);
+        grenade3.SetActive(false);
 
-        }
-
-        if (grenades == 2)
-        {
-            grenade1.SetActive(true);
-            grenade2.SetActive(true);
-            grenade3.SetActive(false);
-        }
-
-        if (grenades == 1)
-        {
-            grenade1.SetActive(true);
-            grenade2.SetActive(false);
-            grenade3.SetActive(false);
-        }
-
-        if (grenades == 0)
-        {
-            grenade1.SetActive(false);
-            grenade2.SetActive(false);
-            grenade3.SetActive(false);
-        }
+        if (grenades >= 1) { grenade1.SetActive(true); }
+        if (grenades >= 2) { grenade2.SetActive(true); }
+        if (grenades >= 3) { grenade3.SetActive(true); }
 
     }
 
@@ -234,7 +193,6 @@ public class EventManager : MonoBehaviour
         }
 
         UpdateGrenades();
-
     }
 
     static public void GrenadePickup()
@@ -289,11 +247,11 @@ public class EventManager : MonoBehaviour
     static public void CollectablePickup(){ Collectables++; }
 
     static public void AudioLogPickup() { AudioLog++; }
-    static public void GainAbilityJetpack() { HasJetpack = true; MainUpgradesAccired++; }
+    static public void GainAbilityJetpack() { HasJetpack = true; MainUpgradesAcquired++; }
 
-    static public void GainAbilityArmour() { HasArmour = true; MainUpgradesAccired++; }
+    static public void GainAbilityArmour() { HasArmour = true; MainUpgradesAcquired++; }
 
-    static public void GainAbilityRocketLauncher() { HasRocketLauncher = true; MainUpgradesAccired++; }
+    static public void GainAbilityRocketLauncher() { HasRocketLauncher = true; MainUpgradesAcquired++; }
 
     static public void GainAbilityFuelRefill() { HasFuelRefill = true; }
 
