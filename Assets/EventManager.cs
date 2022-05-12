@@ -60,7 +60,7 @@ public class EventManager : MonoBehaviour
         life1 = GameObject.Find("HP1");
         life2 = GameObject.Find("HP2");
         life3 = GameObject.Find("HP3");
-        life3 = GameObject.Find("HP4");
+        life4 = GameObject.Find("HP4");
         UpdateLives();
 
         grenade1 = GameObject.Find("grenade1");
@@ -264,7 +264,7 @@ public class EventManager : MonoBehaviour
         UpdateCooldown();
     }
     static public void UpdateCooldown() {
-          Cooldown.GetComponent<UnityEngine.UI.Image>().fillAmount = StunCooldown/100/CooldownTime;
+         Cooldown.GetComponent<UnityEngine.UI.Image>().fillAmount = StunCooldown/100/CooldownTime;
        // string test;
         //test = Cooldown.name;
 
