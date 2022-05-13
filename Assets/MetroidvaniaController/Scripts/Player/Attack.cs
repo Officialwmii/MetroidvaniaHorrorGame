@@ -35,28 +35,37 @@ public class Attack : MonoBehaviour
 			StartCoroutine(AttackCooldown());
 		}
 
-		if (Input.GetButtonDown("Stun") && EventManager.canUseStun == true)
+		if (Input.GetButtonDown("Stun") && EventManager.canUseStun == true && canAttack)
 		{
-			GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f,-0.2f), Quaternion.identity) as GameObject; 
-			Vector2 direction = new Vector2(transform.localScale.x, 0);
-			throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction; 
-			throwableWeapon.name = "ThrowableWeapon";
 
+			animator.SetBool("IsShooting", true);
 			EventManager.StartCooldown();
+			canAttack = false;
+			StartCoroutine(AttackCooldown());
+
+
+			
 		}
 
 		if (Input.GetButtonDown("Grenade"))
 		{
 			EventManager.UseGrenades();
-
+			animator.SetBool("IsThrowingGrenade", true);
 		}
 
 	}
 
 	IEnumerator AttackCooldown()
 	{
-		yield return new WaitForSeconds(0.25f);
+		yield return new WaitForSeconds(0.1f);
 		canAttack = true;
+		GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f, -0.2f), Quaternion.identity) as GameObject;
+		Vector2 direction = new Vector2(transform.localScale.x, 0);
+		throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction;
+		throwableWeapon.name = "ThrowableWeapon";
+
+
+
 	}
 
 	public void DoDashDamage()

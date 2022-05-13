@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dash
+  m_Name: GroundShooting
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,15 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: dd82f3ef9f75443e6952b0d4bdef35d3, type: 3}
-    - time: 0.083333336
-      value: {fileID: 21300000, guid: 404ab6340bb094483bd9dec0b2731e42, type: 3}
-    - time: 0.41666666
-      value: {fileID: 21300000, guid: 0c4d188dcdc70482e841f2a97952ebbd, type: 3}
-    - time: 0.5
-      value: {fileID: 21300000, guid: b955a59751ace44ef910019fa2df68b6, type: 3}
-    - time: 0.6666667
-      value: {fileID: 21300000, guid: b955a59751ace44ef910019fa2df68b6, type: 3}
+      value: {fileID: 21300000, guid: 273ed233514f9184892646e21b5ef3ab, type: 3}
+    - time: 0.16666667
+      value: {fileID: 21300000, guid: 6b481d188ec519541874db7c5230c263, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,17 +42,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: dd82f3ef9f75443e6952b0d4bdef35d3, type: 3}
-    - {fileID: 21300000, guid: 404ab6340bb094483bd9dec0b2731e42, type: 3}
-    - {fileID: 21300000, guid: 0c4d188dcdc70482e841f2a97952ebbd, type: 3}
-    - {fileID: 21300000, guid: b955a59751ace44ef910019fa2df68b6, type: 3}
-    - {fileID: 21300000, guid: b955a59751ace44ef910019fa2df68b6, type: 3}
+    - {fileID: 21300000, guid: 273ed233514f9184892646e21b5ef3ab, type: 3}
+    - {fileID: 21300000, guid: 6b481d188ec519541874db7c5230c263, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.68333334
+    m_StopTime: 0.18333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
