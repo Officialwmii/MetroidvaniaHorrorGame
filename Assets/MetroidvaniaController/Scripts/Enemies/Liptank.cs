@@ -30,8 +30,6 @@ public class Liptank : MonoBehaviour
 
 	private bool isStunned = false; 
 
-
-
 	void Awake()
 	{
 		fallCheck = transform.Find("FallCheck");
@@ -149,11 +147,9 @@ public class Liptank : MonoBehaviour
 	}
 
 	public void Stun(float StunDuration) {
-
 		StartCoroutine(StunTime(StunDuration));
 	}
-	IEnumerator StunTime(float _StunDuration)
-	{
+	IEnumerator StunTime(float _StunDuration){
 		isStunned = true;
 		transform.GetComponent<Animator>().SetBool("IsStunned", true);
 		yield return new WaitForSeconds(_StunDuration);
