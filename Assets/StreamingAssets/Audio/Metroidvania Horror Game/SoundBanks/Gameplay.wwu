@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A73BA212-3132-40A2-8458-E4373DB6E968}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Gameplay" ID="{A73BA212-3132-40A2-8458-E4373DB6E968}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Map_Area_1" ID="{E007194B-8CAD-43D5-B1E1-6A731B17BDD2}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Map_Area_2" ID="{6E0BDAD6-A960-430B-8DCA-73987F11E1C7}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Map_Area_3" ID="{A21B7806-DD80-4E28-9E0D-8EE2CE078C2F}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

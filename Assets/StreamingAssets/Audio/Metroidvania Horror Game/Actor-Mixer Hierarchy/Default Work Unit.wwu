@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Game SFX" ID="{323DC618-D507-46EC-B682-047B21BB7D64}" ShortID="674473255">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="27"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="Enemies" ID="{77EFCDD5-3D00-4AF5-9589-A7A82D718380}" ShortID="472837422">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Folder Name="Tentacles" ID="{308CE435-368D-495C-90BF-51D416393971}" ShortID="536651317"/>
+								<Folder Name="Infected" ID="{53DE7F93-94CC-45AC-A3B8-A38E52D2BF84}" ShortID="309170641"/>
+								<Folder Name="Crawler" ID="{29C5142E-61AB-408A-BC42-A8570D24A377}" ShortID="769299523"/>
+								<Folder Name="Screamer" ID="{710EADB2-BB81-4894-A24D-96033739B0EB}" ShortID="45931950"/>
+								<Folder Name="Glob" ID="{113976F8-FA0F-4C1F-846A-7E99C8F91192}" ShortID="350747754"/>
+								<Folder Name="Liptank" ID="{7223B5E2-A4D9-42F7-89FE-31FBB8A91FB5}" ShortID="583224662"/>
+								<Folder Name="Eye Stalker" ID="{F8405CBC-4778-4D08-A6DD-23E4FB274441}" ShortID="290139169"/>
+								<Folder Name="Xeno-encephalon" ID="{542CA34A-5B06-46A6-8C92-F7BD2A6A704A}" ShortID="585265612"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Ambience" ID="{72307C38-1C49-48F7-B3EF-93DA6773DA2D}" ShortID="965922869">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<SwitchContainer Name="Ambience Switch" ID="{1B8792FD-A20C-4DCC-B998-1F02FB23E71A}" ShortID="151876722">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Ambience Sequence" ID="{C9ABA2B0-0566-4F8B-A2F9-76620C045F61}" ShortID="1163907">
+											<PropertyList>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Ambience Sequence" ID="{C9ABA2B0-0566-4F8B-A2F9-76620C045F61}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Player" ID="{F1B29558-AA31-4A71-8B1D-B1BA4CC17CC5}" ShortID="1024765613">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="12"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Folder Name="Weapons" ID="{5F27CD41-5C16-4052-87A6-B2F86BC36E32}" ShortID="109216870"/>
+								<Folder Name="Movement" ID="{D9C5C4A4-7AC9-489E-8CE9-EECFC974D9F5}" ShortID="849552938"/>
+								<Folder Name="UI" ID="{012F7620-28B7-4556-B962-6BFBE16FE881}" ShortID="64751858"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Objects" ID="{7166B759-FA94-44E4-875C-B405F59A444D}" ShortID="513394200">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Folder>
+						<Folder Name="Environment" ID="{D0D8B0DD-D2E6-48CD-9F30-22A135F6EF6B}" ShortID="568561948">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="8"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Folder Name="Fungus" ID="{A1C9B209-562A-48EF-9828-04215DFFCD4A}" ShortID="311071818"/>
+								<Folder Name="Security" ID="{4FC93C56-CF76-4751-BFCC-8D923B4547B0}" ShortID="670456307"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="UI" ID="{17F09558-1EFA-41AC-AE65-DAAC38B7D98E}" ShortID="204282588">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Select" ID="{EB6C46E5-9161-423C-AA8E-4AF8EDF32FBE}" ShortID="77519839">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Select" ID="{C7B5CDAD-5748-4075-B3F6-91B962541857}" ShortID="516080934">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Back" ID="{649E6E62-CF1C-4EDA-B1F2-CE44D35919B8}" ShortID="887300822">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Back" ID="{0E490BE6-E8AE-4143-AA98-449AF4B13252}" ShortID="905249739">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Pause" ID="{1D66865E-7B52-4FBB-9B0B-823693B7DE36}" ShortID="37374885">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Pause" ID="{1F4B721A-AA65-4B95-A294-C425F260E907}" ShortID="109909058">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

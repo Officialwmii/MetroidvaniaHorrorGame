@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5D906649-5363-408C-B39D-AA3DF0B3E71E}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{5D906649-5363-408C-B39D-AA3DF0B3E71E}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Story_Progression" ID="{A3E037AC-AEDB-4166-8CBA-3D6172701DEF}">
+					<ChildrenList>
+						<State Name="None" ID="{6448DD6C-28B5-415A-8353-F77F06597E06}"/>
+						<State Name="Upgrade_1" ID="{0965315D-926D-4632-A0B6-EBE87AE73C88}"/>
+						<State Name="Upgrade_3" ID="{62892F83-6525-4C3E-BE71-DF149C13F735}"/>
+						<State Name="Upgrade_2" ID="{9C4CA061-AA8A-40E9-A5E1-D9627DAD6B52}"/>
+						<State Name="Upgrade_4" ID="{9BB154B8-0367-467B-8F92-7B8BF7C6DA49}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}"/>
+				<GameParameter Name="Health_Bar" ID="{0DC0D2C2-19C8-4552-8625-AC5947959912}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
