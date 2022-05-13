@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour {
 	public bool isInvincible = false;
 	private bool isHitted = false;
 	private bool isStunned = false;
+	public bool Exploadable = false;
+
 
 	void Awake () {
 		fallCheck = transform.Find("FallCheck");
@@ -82,6 +84,9 @@ public class Enemy : MonoBehaviour {
 
 	public void Stun(float StunDuration){
 		StartCoroutine(StunTime(StunDuration));
+
+		if (Exploadable) ApplyDamage(2000);
+
 	}
 	IEnumerator StunTime(float _StunDuration){
 		isStunned = true;
