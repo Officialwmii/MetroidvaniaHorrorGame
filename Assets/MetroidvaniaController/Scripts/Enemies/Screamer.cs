@@ -22,6 +22,8 @@ public class Screamer : MonoBehaviour {
 
 	public bool isInvincible = false;
 	private bool isHitted = false;
+	private bool isStunned = false;
+
 	public UnityEvent IsScreamingEvent;
 	public UnityEvent IsQuietEvent;
 
@@ -50,10 +52,10 @@ public class Screamer : MonoBehaviour {
 		}
 
 		isPlat = Physics2D.OverlapCircle(fallCheck.position, .2f, 1 << LayerMask.NameToLayer("Default"));
-		isObstacle = Physics2D.OverlapCircle(wallCheck.position, .2f, turnLayerMask);		
+		isObstacle = Physics2D.OverlapCircle(wallCheck.position, .2f, turnLayerMask);
 
 
-		//if (!isHitted && life > 0 && Mathf.Abs(rb.velocity.y) < 0.5f)
+		//if (!isHitted && life > 0 && Mathf.Abs(rb.velocity.y) < 0.5f && !isStunned)
 		//{
 		//	if (isPlat && !isObstacle && !isHitted)
 		//	{
@@ -75,7 +77,7 @@ public class Screamer : MonoBehaviour {
 
 	void checkForPlayer()
     {
-		if (Vector3.Distance(player.transform.position, transform.position) <= detectionRange)
+		if (Vector3.Distance(player.transform.position, transform.position) <= detectionRange && !isStunned)
         {
 			playerDetectable = true;
 			IsScreamingEvent.Invoke();
@@ -112,6 +114,21 @@ public class Screamer : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+
+	public void Stun(float StunDuration)
+	{
+		StartCoroutine(StunTime(StunDuration));
+	}
+	IEnumerator StunTime(float _StunDuration)
+	{
+		isStunned = true;
+		transform.GetComponent<Animator>().SetBool("IsStunned", true);
+		yield return new WaitForSeconds(_StunDuration);
+		isStunned = false;
+		transform.GetComponent<Animator>().SetBool("IsStunned", false);
+	}
+
 
 	public void ApplyDamage(float damage) {
 		if (!isInvincible) 

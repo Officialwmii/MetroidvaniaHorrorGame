@@ -27,7 +27,6 @@ public class Liptank : MonoBehaviour
 
 	public bool isInvincible = false;
 	private bool isHitted = false;
-
 	private bool isStunned = false; 
 
 	void Awake()
