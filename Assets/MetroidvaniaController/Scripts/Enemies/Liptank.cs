@@ -28,6 +28,9 @@ public class Liptank : MonoBehaviour
 	public bool isInvincible = false;
 	private bool isHitted = false;
 
+	private bool isStunned = false; 
+
+
 
 	void Awake()
 	{
@@ -44,9 +47,9 @@ public class Liptank : MonoBehaviour
 	{
 		checkForPlayer();
 
-		Debug.Log("Timetime  " + timer + "\n" + "NextShot  " + nextShot + "\n" + "Shoot Cooldown " + shootCooldown);
+		//Debug.Log("Timetime  " + timer + "\n" + "NextShot  " + nextShot + "\n" + "Shoot Cooldown " + shootCooldown);
 
-		if (playerDetectable)
+		if (playerDetectable && isStunned==false)
         {
 			timer += Time.deltaTime;
 			nextShot = shootCooldown;
@@ -108,7 +111,7 @@ public class Liptank : MonoBehaviour
 		}
 
 
-		if (playerDetectable)
+		if (playerDetectable && isStunned == false)
 		{
 			animator.SetBool("IsAttacking", true);
 
@@ -137,11 +140,25 @@ public class Liptank : MonoBehaviour
 			float direction = damage / Mathf.Abs(damage);
 			damage = Mathf.Abs(damage);
 			transform.GetComponent<Animator>().SetBool("Hit", true);
+
 			life -= damage;
 			rb.velocity = Vector2.zero;
 			rb.AddForce(new Vector2(direction * 500f, 100f));
 			StartCoroutine(HitTime());
 		}
+	}
+
+	public void Stun(float StunDuration) {
+
+		StartCoroutine(StunTime(StunDuration));
+	}
+	IEnumerator StunTime(float _StunDuration)
+	{
+		isStunned = true;
+		transform.GetComponent<Animator>().SetBool("IsStunned", true);
+		yield return new WaitForSeconds(_StunDuration);
+		isStunned = false;
+		transform.GetComponent<Animator>().SetBool("IsStunned", false);
 	}
 
 	void OnCollisionStay2D(Collision2D collision)

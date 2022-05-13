@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2271702997190427415}
   - component: {fileID: 2271702997190427412}
   - component: {fileID: 2271702997190427413}
+  - component: {fileID: 50741331}
   m_Layer: 6
   m_Name: PlayerMapPosition
   m_TagString: Untagged
@@ -95,5 +96,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e110add2f1edba4d8ff2ff2c3669461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &50741331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2271702997190427402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b697f8e6fee45cf4e864b941f1b8d8d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
