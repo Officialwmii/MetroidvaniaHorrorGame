@@ -97,6 +97,8 @@ MonoBehaviour:
   m_WallCheck: {fileID: 4986330650710208}
   canDoubleJump: 0
   m_DashForce: 25
+  WallSlideAbilityActive: 0
+  DoubleJumpAbilityActive: 0
   life: 10
   invincible: 0
   particleJumpUp: {fileID: 198584872278178884}
@@ -206,12 +208,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 997df418e0d44cc47bce83f98402746b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 785b347d48af0a74c9c246fe4ffb87a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.9985716, y: 2.249375}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
