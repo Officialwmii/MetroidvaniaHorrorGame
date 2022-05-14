@@ -32,7 +32,7 @@ public class EventManager : MonoBehaviour
     static public int Collectables = 0;
     static public int AudioLog = 0;
 
-    public bool EnemiesAlerted = false;
+    static public bool EnemiesAlerted = false;
     static public float CurrentDanger = 15;
     static public float CurrentDangerLevel = 0;
 
@@ -312,16 +312,17 @@ public class EventManager : MonoBehaviour
 
     }
 
-    public void Alert() {
+    static public void Alert() {
         EnemiesAlerted = true;
         Debug.Log("Help!");
     }
 
-    public void Calm()
+    static public void Calm()
     {
         EnemiesAlerted = false;
         Debug.Log("Phew, false alarm.");
     }
 
+    
 
 }
