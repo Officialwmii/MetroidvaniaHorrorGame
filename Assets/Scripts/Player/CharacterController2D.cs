@@ -4,9 +4,9 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class CharacterController2D : MonoBehaviour
-{
-	[SerializeField] private float m_JumpForce_min = 5f; // Amount of force added when the player jumps.
-	[SerializeField] private float m_JumpForce_max = 10f; 
+{ 
+	[SerializeField] private float m_JumpForce = 10f;                        // Amount of force added when the player jumps.
+	[SerializeField] private float m_JetpackForce = 90f;					// The Jetpack force
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
@@ -140,10 +140,10 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
-	public void Move(float move, bool jump, bool dash, bool holdJump, bool stoppedJump, float gravity)
+	public void Move(float move, bool jump, bool dash, bool holdJump, float gravity, bool holdJetpack)
 	{
-		m_Rigidbody2D.gravityScale = gravity;
-		Debug.Log(gravity);
+		m_Rigidbody2D.gravityScale = gravity;   // Variable jump height is achievemed by lowering the player's gravity for a period of time. 
+		//Debug.Log(gravity);
 		if (canMove) {
 			if (dash && canDash && !isWallSliding && EventManager.canUseDash && EventManager.HasJetpack)
 			{
@@ -205,48 +205,33 @@ public class CharacterController2D : MonoBehaviour
 			{
 				// Add a vertical force to the player.	
 
-				//Debug.Log(timer);
-				//jumpForce = m_JumpForce_min + (timer * jumpAcceleration);
-
-				//jumpForce = Mathf.Clamp(jumpForce, m_JumpForce_min, m_JumpForce_max);
-
 				animator.SetBool("IsJumping", true);
 				animator.SetBool("JumpUp", true);
 				m_Grounded = false;
 				//Debug.Log(jumpForce);
 
-				m_Rigidbody2D.AddForce(new Vector2(0, m_JumpForce_max), ForceMode2D.Impulse);
+				m_Rigidbody2D.AddForce(new Vector2(0, m_JumpForce), ForceMode2D.Impulse);
 
 
 				if (DoubleJumpAbilityActive) canDoubleJump = true;
 				particleJumpDown.Play();
 				particleJumpUp.Play();
 			}
-//			if (!m_Grounded && holdJump && !stoppedJump)
- //           {
+            if (!m_Grounded && holdJetpack && EventManager.canUseJetpack)
+           
+			{
+				m_Rigidbody2D.AddForce(new Vector2(0, m_JetpackForce));
+				EventManager.UseJetpack();
 				
-//				Debug.Log(m_Rigidbody2D.velocity.y);
-	//			if (m_Rigidbody2D.velocity.y >= m_JumpForce_max)
-  //              {
-//					m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
 
-  //              }
-
-				 //LMAO JETPACK if you call this while not grounded, it jetpack
-				//				Debug.Log(m_Rigidbody2D.velocity.y);
-				//				if (m_Rigidbody2D.velocity.y >= m_JumpForce_max)
-				//              {
-				//					m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, m_JumpForce_max);
-				//               }
-
-	//		}
+			}
 
 
 			else if (!m_Grounded && jump && canDoubleJump && !isWallSliding)
 			{
 				canDoubleJump = false;
 				m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
-				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce_min / 1.2f));
+				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce / 1.2f));
 				animator.SetBool("IsDoubleJumping", true);
 			}
 
@@ -282,7 +267,7 @@ public class CharacterController2D : MonoBehaviour
 					animator.SetBool("IsJumping", true);
 					animator.SetBool("JumpUp", true); 
 					m_Rigidbody2D.velocity = new Vector2(0f, 0f);
-					m_Rigidbody2D.AddForce(new Vector2(transform.localScale.x * m_JumpForce_min *1.2f, m_JumpForce_min));
+					m_Rigidbody2D.AddForce(new Vector2(transform.localScale.x * m_JumpForce *1.2f, m_JumpForce));
 					jumpWallStartX = transform.position.x;
 					limitVelOnWallJump = true;
 					if (DoubleJumpAbilityActive) canDoubleJump = true;

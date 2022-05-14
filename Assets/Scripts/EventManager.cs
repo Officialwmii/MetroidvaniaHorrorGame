@@ -46,6 +46,8 @@ public class EventManager : MonoBehaviour
     static public float DashFuelCost = 15;
     static public float EMPFuelCost = 15;
     static public bool canUseDash = true;
+    static public float JetpackFuelCost = 0.9f;
+    static public bool canUseJetpack = true;
 
     static private GameObject fuelBar;
 
@@ -115,6 +117,7 @@ public class EventManager : MonoBehaviour
             Fuel = Fuel + Time.deltaTime *5;
 
             if (Fuel >= DashFuelCost) { canUseDash = true; }
+            if (Fuel >= DashFuelCost) { canUseJetpack = true; }
             
             UpdateFuel();
         }
@@ -237,11 +240,23 @@ public class EventManager : MonoBehaviour
 
         UpdateFuel();
     }
+    
+    static public void UseJetpack()
+    {
+        Fuel = Fuel - JetpackFuelCost;
+        if (Fuel <= JetpackFuelCost)
+        {
+            Fuel = 0;
+            canUseJetpack = false;
+        }
+        UpdateFuel();
+    }
 
     static public void FuelPickup() {
 
         Fuel = Fuel + 50;
         canUseDash = true;
+        canUseJetpack = true;
         if (Fuel >= MaxFuel)
             {
                 Fuel = MaxFuel; 
