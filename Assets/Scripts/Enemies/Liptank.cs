@@ -21,6 +21,7 @@ public class Liptank : MonoBehaviour
 	public float shootCooldown = 1f;
 	public float nextShot = 1f;
 	public float timer;
+	public float damageAmount = 2f;
 
 	public float speed = 5f;
 	private Animator animator;
@@ -161,7 +162,7 @@ public class Liptank : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "Player" && life > 0)
 		{
-			collision.gameObject.GetComponent<CharacterController2D>().ApplyDamage(2f);
+			collision.gameObject.GetComponent<CharacterController2D>().ApplyDamage(damageAmount);
 		}
 	}
 

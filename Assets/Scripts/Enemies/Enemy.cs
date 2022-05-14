@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour {
 	private bool isHitted = false;
 	private bool isStunned = false;
 	public bool Exploadable = false;
+	public float damageAmount = 2f;
 
 
 	void Awake () {
@@ -100,7 +101,7 @@ public class Enemy : MonoBehaviour {
 	{
 		if (collision.gameObject.tag == "Player" && life > 0)
 		{
-			collision.gameObject.GetComponent<CharacterController2D>().ApplyDamage(2f);
+			collision.gameObject.GetComponent<CharacterController2D>().ApplyDamage(damageAmount);
 		}
 	}
 
