@@ -814,6 +814,46 @@ PrefabInstance:
       propertyPath: damageAmount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 937370916216969955, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
+      propertyPath: IsQuietEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 937370916216969955, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
+      propertyPath: IsQuietEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 937370916216969955, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
+      propertyPath: IsQuietEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 730183628}
+    - target: {fileID: 937370916216969955, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
+      propertyPath: IsQuietEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 937370916216969955, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
+      propertyPath: IsQuietEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Calm
+      objectReference: {fileID: 0}
+    - target: {fileID: 937370916216969955, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
+      propertyPath: IsScreamingEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 730183628}
+    - target: {fileID: 937370916216969955, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
+      propertyPath: IsScreamingEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Alert
+      objectReference: {fileID: 0}
+    - target: {fileID: 937370916216969955, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
+      propertyPath: IsQuietEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EventManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 937370916216969955, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
+      propertyPath: IsScreamingEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EventManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 937370916216969955, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
+      propertyPath: IsQuietEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
 --- !u!1001 &287837750
@@ -2247,6 +2287,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d877fb22ea79f640af4d9f3438a7a32, type: 3}
+--- !u!114 &730183628 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2506930682725204154, guid: fafaa88671560cf47abc4322e68e7b5e, type: 3}
+  m_PrefabInstance: {fileID: 1346722763}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711bff03f3467a54bbcea390e1794743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &732656508
 PrefabInstance:
   m_ObjectHideFlags: 0
