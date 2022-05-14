@@ -12,6 +12,14 @@ public class PlayerMovement : MonoBehaviour {
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool dash = false;
+	bool holdJump = false;
+	bool stoppedJump = false;
+	float variableGravity = 2f;
+	float defaultGravity = 5f;
+
+
+
+	
 
 	//bool dashAxis = false;
 	
@@ -22,10 +30,28 @@ public class PlayerMovement : MonoBehaviour {
 
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-		if (Input.GetButtonDown("Jump"))
+		if (Input.GetButtonDown("Jump") && CharacterController2D.m_Grounded) //Remove the grounded part for jetpack
 		{
+
 			jump = true;
+			holdJump = true;
+			stoppedJump = false;
+
+			
+
+
 		}
+
+		if (Input.GetButtonUp("Jump"))
+        {
+
+			holdJump = false;
+			jump = false;
+			stoppedJump = true;
+
+
+
+        }
 
 		if (Input.GetButtonDown("Dash"))
 		{
@@ -61,8 +87,19 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate ()
 	{
 		// Move our character
-		controller.Move(horizontalMove * Time.fixedDeltaTime, jump, dash);
-		jump = false;
-		dash = false;
+		
+
+		if (holdJump)
+        {
+			controller.Move(horizontalMove * Time.fixedDeltaTime, jump, dash, holdJump, stoppedJump, variableGravity);
+			jump = false;
+			dash = false;
+		}
+        if (!holdJump)
+        {
+			controller.Move(horizontalMove * Time.fixedDeltaTime, jump, dash, holdJump, stoppedJump, defaultGravity);
+			jump = false;
+			dash = false;
+		}
 	}
 }
