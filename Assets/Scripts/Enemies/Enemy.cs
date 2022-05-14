@@ -35,10 +35,12 @@ public class Enemy : MonoBehaviour {
 		if (EventManager.EnemiesAlerted == true)
         {
 			onAlert = true;
+			speed = 10f;
         }
         else
         {
 			onAlert = false;
+			speed = 5f;
         }
 
 		if (life <= 0) {

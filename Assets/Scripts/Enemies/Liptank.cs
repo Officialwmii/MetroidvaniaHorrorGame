@@ -18,8 +18,8 @@ public class Liptank : MonoBehaviour
 	public float detectionRange = 5f;
 	private GameObject player;
 	public GameObject projectile;
-	public float shootCooldown = 1f;
-	public float nextShot = 1f;
+	public float shootCooldown = 1.1f;
+	public float nextShot = 1.1f;
 	public float timer;
 	public float damageAmount = 1f;
 
@@ -47,10 +47,20 @@ public class Liptank : MonoBehaviour
 		if (EventManager.EnemiesAlerted == true)
 		{
 			onAlert = true;
+			animator.speed = 2f;
+			shootCooldown = 0.5f;
+			nextShot = 0.5f;
+
+
 		}
 		else
 		{
 			onAlert = false;
+			animator.speed = 1f;
+			shootCooldown = 1.1f;
+			nextShot = 1.1f;
+
+
 		}
 		checkForPlayer();
 
@@ -193,7 +203,9 @@ public class Liptank : MonoBehaviour
 
 	public void Shoot()
     {
+
 		animator.SetBool("IsAttacking", true);
+
 		//Debug.Log("I spit");
 		if (facingRight)
 		{
@@ -210,6 +222,7 @@ public class Liptank : MonoBehaviour
 			spitBullet.name = "SpitBullet";
 		}
 		timer = 0f;
+
 	}
 		
 	

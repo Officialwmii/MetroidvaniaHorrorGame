@@ -33,5 +33,10 @@ public class EnemyProjectile : MonoBehaviour
 		{
 			Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
 		}
+
+        else
+        {
+			Destroy(gameObject);
+        }
 	}
 }
