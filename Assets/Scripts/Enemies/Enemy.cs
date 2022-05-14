@@ -21,6 +21,8 @@ public class Enemy : MonoBehaviour {
 	public bool Exploadable = false;
 	public float damageAmount = 1f;
 
+	public bool onAlert = false;
+
 
 	void Awake () {
 		fallCheck = transform.Find("FallCheck");
@@ -30,6 +32,14 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		if (EventManager.EnemiesAlerted == true)
+        {
+			onAlert = true;
+        }
+        else
+        {
+			onAlert = false;
+        }
 
 		if (life <= 0) {
 			transform.GetComponent<Animator>().SetBool("IsDead", true);
