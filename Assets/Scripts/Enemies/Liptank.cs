@@ -21,7 +21,7 @@ public class Liptank : MonoBehaviour
 	public float shootCooldown = 1f;
 	public float nextShot = 1f;
 	public float timer;
-	public float damageAmount = 2f;
+	public float damageAmount = 1f;
 
 	public float speed = 5f;
 	private Animator animator;

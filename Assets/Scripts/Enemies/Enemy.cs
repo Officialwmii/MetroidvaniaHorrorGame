@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour {
 	private bool isHitted = false;
 	private bool isStunned = false;
 	public bool Exploadable = false;
-	public float damageAmount = 2f;
+	public float damageAmount = 1f;
 
 
 	void Awake () {
