@@ -110,12 +110,7 @@ public class Liptank : MonoBehaviour
 		}
 
 
-		if (playerDetectable && isStunned == false)
-		{
-			animator.SetBool("IsAttacking", true);
-
-		}
-		else
+		if (!playerDetectable)
 		{
 			animator.SetBool("IsAttacking", false);
 		}
@@ -189,7 +184,7 @@ public class Liptank : MonoBehaviour
 
 	public void Shoot()
     {
-		
+		animator.SetBool("IsAttacking", true);
 		//Debug.Log("I spit");
 		if (facingRight)
 		{
