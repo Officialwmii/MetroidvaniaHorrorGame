@@ -149,6 +149,13 @@ public class EventManager : MonoBehaviour
         if (Lives == 0) {        }
     }
 
+
+    static public void SetHP(float HP)
+    {
+        Lives = (int) HP;
+        UpdateLives();
+    }
+
     static public void ReduceHP() {
 
         Lives = Lives - 1;
