@@ -119,6 +119,8 @@ public class EventManager : MonoBehaviour
             UpdateFuel();
         }
 
+        AlertAddingDanger();
+
     }
 
 
@@ -323,6 +325,15 @@ public class EventManager : MonoBehaviour
         Debug.Log("Phew, false alarm.");
     }
 
-    
+    static public void AlertAddingDanger() {
+
+        if (EnemiesAlerted) {
+
+            CurrentDanger = CurrentDanger + 0.25f * Time.deltaTime;
+
+            UpdateDangerMeter();
+        }
+
+    }
 
 }

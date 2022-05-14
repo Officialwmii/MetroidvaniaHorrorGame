@@ -86,7 +86,7 @@ public class Enemy : MonoBehaviour {
 	public void Stun(float StunDuration){
 		StartCoroutine(StunTime(StunDuration));
 
-		if (Exploadable) ApplyDamage(2000);
+		if (Exploadable) { ApplyDamage(2000); EventManager.AddDanger(); }
 
 	}
 	IEnumerator StunTime(float _StunDuration){
@@ -103,7 +103,7 @@ public class Enemy : MonoBehaviour {
 		{
 			collision.gameObject.GetComponent<CharacterController2D>().ApplyDamage(-damageAmount);
 
-			if (Exploadable) ApplyDamage(2000);
+			if (Exploadable){ ApplyDamage(2000); EventManager.AddDanger(); }
 
 		}
 	}
