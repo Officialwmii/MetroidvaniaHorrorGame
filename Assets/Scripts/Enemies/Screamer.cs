@@ -16,7 +16,7 @@ public class Screamer : MonoBehaviour {
 	public GameObject detectionCollider;
 	public float detectionRange = 1f;
 	private GameObject player;
-	public float damageAmount = -1f;
+	public float damageAmount = 1f;
 	
 	public float speed = 5f;
 	private Animator animator;
@@ -148,7 +148,7 @@ public class Screamer : MonoBehaviour {
 	{
 		if (collision.gameObject.tag == "Player" && life > 0)
 		{
-			collision.gameObject.GetComponent<CharacterController2D>().ApplyDamage(damageAmount);
+			collision.gameObject.GetComponent<CharacterController2D>().ApplyDamage(-damageAmount);
 		}
 	}
 

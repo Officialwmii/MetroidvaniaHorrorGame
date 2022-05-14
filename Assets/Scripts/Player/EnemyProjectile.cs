@@ -7,7 +7,7 @@ public class EnemyProjectile : MonoBehaviour
 	public Vector2 direction;
 	public bool hasHit = false;
 	public float speed = -10f;
-	public float damageAmount = -1f;
+	public float damageAmount = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class EnemyProjectile : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "Player")
 		{
-			collision.gameObject.SendMessage("ApplyDamage", damageAmount);
+			collision.gameObject.SendMessage("ApplyDamage", -damageAmount);
 			Destroy(gameObject);
 		}
 		else if (collision.gameObject.tag != "Enemy")
