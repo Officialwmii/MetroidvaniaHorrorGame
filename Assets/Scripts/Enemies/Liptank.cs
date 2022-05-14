@@ -52,6 +52,7 @@ public class Liptank : MonoBehaviour
 			nextShot = shootCooldown;
 			if (timer > nextShot)
 			{
+				//Debug.Log("I shoot!");
 				Shoot();
 			}
 
@@ -188,7 +189,7 @@ public class Liptank : MonoBehaviour
 	public void Shoot()
     {
 		
-		Debug.Log("I spit");
+		//Debug.Log("I spit");
 		if (facingRight)
 		{
 			Vector2 direction = new Vector2(-1, 0);

@@ -632,7 +632,7 @@ Transform:
   - {fileID: 1820806512}
   - {fileID: 861630363}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &223091296 stripped
 Transform:
@@ -1375,7 +1375,7 @@ Transform:
   m_Children:
   - {fileID: 1878744013}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &431094840 stripped
 Transform:
@@ -2968,6 +2968,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1566424744768056949, guid: 50300679fea22d74f8d5a20f55ceac1e, type: 3}
+      propertyPath: shootCooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1566424744768056949, guid: 50300679fea22d74f8d5a20f55ceac1e, type: 3}
+      propertyPath: detectionRange
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 829873685863465678, guid: 50300679fea22d74f8d5a20f55ceac1e, type: 3}
       propertyPath: m_Name
       value: Liptank
@@ -3542,7 +3550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2506930682725204153, guid: fafaa88671560cf47abc4322e68e7b5e, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2506930682725204153, guid: fafaa88671560cf47abc4322e68e7b5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3595,7 +3603,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2862989420647916123, guid: bcb6576ddec9a5c438fbec1b83e4d1be, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 2862989420647916123, guid: bcb6576ddec9a5c438fbec1b83e4d1be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4055,7 +4063,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1754967143 stripped
 Transform:
@@ -28525,7 +28533,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2862989420647916123, guid: bcb6576ddec9a5c438fbec1b83e4d1be, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2862989420647916123, guid: bcb6576ddec9a5c438fbec1b83e4d1be, type: 3}
       propertyPath: m_LocalPosition.x
