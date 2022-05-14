@@ -14,7 +14,7 @@ public class Screamer : MonoBehaviour {
 	public bool playerDetectable;
 	private bool facingRight = true;
 	public GameObject detectionCollider;
-	public float detectionRange = 2f;
+	public float detectionRange = 1f;
 	private GameObject player;
 	
 	public float speed = 5f;

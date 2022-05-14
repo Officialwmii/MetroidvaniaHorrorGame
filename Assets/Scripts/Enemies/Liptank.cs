@@ -21,7 +21,7 @@ public class Liptank : MonoBehaviour
 	public float shootCooldown = 1f;
 	public float nextShot = 1f;
 	public float timer;
-	public float damageAmount = 2f;
+	public float damageAmount = 1f;
 
 	public float speed = 5f;
 	private Animator animator;
@@ -110,12 +110,7 @@ public class Liptank : MonoBehaviour
 		}
 
 
-		if (playerDetectable && isStunned == false)
-		{
-			animator.SetBool("IsAttacking", true);
-
-		}
-		else
+		if (!playerDetectable)
 		{
 			animator.SetBool("IsAttacking", false);
 		}
@@ -189,7 +184,7 @@ public class Liptank : MonoBehaviour
 
 	public void Shoot()
     {
-		
+		animator.SetBool("IsAttacking", true);
 		//Debug.Log("I spit");
 		if (facingRight)
 		{
