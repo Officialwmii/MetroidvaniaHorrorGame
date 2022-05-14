@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour {
 	bool stoppedJump = false;
 	public float variableGravity = 2f;
 	float defaultGravity = 5f;
+	private bool startTimer = false;
+	[SerializeField]private float jumpTimer = 0.5f;
+	private float timer;
 
 
 
@@ -24,20 +27,24 @@ public class PlayerMovement : MonoBehaviour {
 	//bool dashAxis = false;
 	
 	// Update is called once per frame
-	void Update () {
+	private void Awake()
+    {
+		timer = jumpTimer;
+    }
 
+    void Update () {
+		Debug.Log(timer);
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-		if (Input.GetButtonDown("Jump") && CharacterController2D.m_Grounded) //Remove the grounded part for jetpack
+		if (Input.GetButtonDown("Jump")) //Remove the grounded part for jetpack
 		{
 
 			jump = true;
 			holdJump = true;
 			stoppedJump = false;
-
-			
+			startTimer = true;
 
 
 		}
@@ -48,9 +55,20 @@ public class PlayerMovement : MonoBehaviour {
 			holdJump = false;
 			jump = false;
 			stoppedJump = true;
+			timer = jumpTimer;
 
 
 
+        }
+		if (startTimer)
+        {
+			timer -= Time.deltaTime;
+			if (timer <= 0)
+            {
+				holdJump = false;
+				timer = jumpTimer;
+				startTimer = false;
+            }
         }
 
 		if (Input.GetButtonDown("Dash"))
