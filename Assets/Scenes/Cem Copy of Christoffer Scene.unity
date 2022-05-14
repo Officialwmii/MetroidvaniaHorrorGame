@@ -2990,11 +2990,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833546103016679072, guid: 50300679fea22d74f8d5a20f55ceac1e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.95
+      value: -22.86
       objectReference: {fileID: 0}
     - target: {fileID: 833546103016679072, guid: 50300679fea22d74f8d5a20f55ceac1e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.66
+      value: -13.91
       objectReference: {fileID: 0}
     - target: {fileID: 833546103016679072, guid: 50300679fea22d74f8d5a20f55ceac1e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3234,6 +3234,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 726940394409152712, guid: b65c6c251a5f9294fa91fce54a72b310, type: 3}
+      propertyPath: damageAmount
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 829873685863465678, guid: b65c6c251a5f9294fa91fce54a72b310, type: 3}
       propertyPath: m_Name
       value: Crawler
@@ -27845,7 +27849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114231493902538710, guid: 50936cccdb69523458c1b42052ebafff, type: 3}
       propertyPath: invincible
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50936cccdb69523458c1b42052ebafff, type: 3}
@@ -27856,6 +27860,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 726940394409152712, guid: 391b7fa64cf7e4c47bae4ec8c0c350c7, type: 3}
+      propertyPath: damageAmount
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 829873685863465678, guid: 391b7fa64cf7e4c47bae4ec8c0c350c7, type: 3}
       propertyPath: m_Name
       value: Infected

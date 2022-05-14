@@ -21,7 +21,7 @@ public class Liptank : MonoBehaviour
 	public float shootCooldown = 1f;
 	public float nextShot = 1f;
 	public float timer;
-	public float damageAmount = 1f;
+	public float damageAmount = -1f;
 
 	public float speed = 5f;
 	private Animator animator;
@@ -135,7 +135,7 @@ public class Liptank : MonoBehaviour
 			damage = Mathf.Abs(damage);
 			transform.GetComponent<Animator>().SetBool("Hit", true);
 
-			life -= damage;
+			life += damage;
 			rb.velocity = Vector2.zero;
 			rb.AddForce(new Vector2(direction * 500f, 100f));
 			StartCoroutine(HitTime());
