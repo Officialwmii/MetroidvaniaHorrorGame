@@ -142,7 +142,7 @@ public class EventManager : MonoBehaviour
         life3.SetActive(false);
         life4.SetActive(false);
 
-        if (Lives == 4) { life4.SetActive(true); }
+        if (Lives >= 4) { life4.SetActive(true); }
         if (Lives == 3) { life3.SetActive(true); }
         if (Lives == 2) { life2.SetActive(true); }
         if (Lives == 1) { life1.SetActive(true); }

@@ -102,6 +102,9 @@ public class Enemy : MonoBehaviour {
 		if (collision.gameObject.tag == "Player" && life > 0)
 		{
 			collision.gameObject.GetComponent<CharacterController2D>().ApplyDamage(-damageAmount);
+
+			if (Exploadable) ApplyDamage(2000);
+
 		}
 	}
 
