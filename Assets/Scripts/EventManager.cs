@@ -268,7 +268,7 @@ public class EventManager : MonoBehaviour
 
     static public void AddDanger() {
 
-        CurrentDanger = CurrentDanger + 15;
+        CurrentDanger = CurrentDanger + 5;
         if (CurrentDanger >= 100) { CurrentDanger = 100;}
 
         UpdateDangerMeter();
