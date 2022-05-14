@@ -297,6 +297,8 @@ public class CharacterController2D : MonoBehaviour
 			life += damage;
 			m_Rigidbody2D.velocity = Vector2.zero;
 
+			EventManager.SetHP(life);
+
 			if (life <= 0)
 			{
 				StartCoroutine(WaitToDead());
