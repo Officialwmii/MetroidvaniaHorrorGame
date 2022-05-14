@@ -28,7 +28,8 @@ public class Liptank : MonoBehaviour
 
 	public bool isInvincible = false;
 	private bool isHitted = false;
-	private bool isStunned = false; 
+	private bool isStunned = false;
+	public bool onAlert = false;
 
 	void Awake()
 	{
@@ -43,6 +44,14 @@ public class Liptank : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate()
 	{
+		if (EventManager.EnemiesAlerted == true)
+		{
+			onAlert = true;
+		}
+		else
+		{
+			onAlert = false;
+		}
 		checkForPlayer();
 
 		//Debug.Log("Timetime  " + timer + "\n" + "NextShot  " + nextShot + "\n" + "Shoot Cooldown " + shootCooldown);

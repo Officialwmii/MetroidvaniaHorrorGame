@@ -17,6 +17,7 @@ public class Screamer : MonoBehaviour {
 	public float detectionRange = 1f;
 	private GameObject player;
 	public float damageAmount = 1f;
+	public bool onAlert = false;
 	
 	public float speed = 5f;
 	private Animator animator;
@@ -88,6 +89,7 @@ public class Screamer : MonoBehaviour {
 
 				EventManager.Alert();
 				//IsScreamingEvent.Invoke();
+				onAlert = true;
 				transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
 
 				if (player.transform.position.x > transform.position.x && facingRight)
@@ -105,6 +107,7 @@ public class Screamer : MonoBehaviour {
 				playerDetectable = false;
 				EventManager.Calm();
 				//IsQuietEvent.Invoke();
+				onAlert = false;
 				animator.SetBool("HasNoticed", false);
 			}
 		}
