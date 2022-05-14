@@ -29,9 +29,9 @@ public class EnemyProjectile : MonoBehaviour
 			collision.gameObject.SendMessage("ApplyDamage", damageAmount);
 			Destroy(gameObject);
 		}
-		else if (collision.gameObject.tag != "Enemy")
+		else if (collision.gameObject.tag == "Enemy")
 		{
-			Destroy(gameObject);
+			Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
 		}
 	}
 }

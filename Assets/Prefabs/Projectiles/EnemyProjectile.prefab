@@ -139,3 +139,4 @@ MonoBehaviour:
   direction: {x: 0, y: 0}
   hasHit: 0
   speed: 10
+  damageAmount: -1

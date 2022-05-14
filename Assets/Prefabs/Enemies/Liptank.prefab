@@ -61,6 +61,7 @@ MonoBehaviour:
   shootCooldown: 20
   nextShot: 1
   timer: 0
+  damageAmount: 1
   speed: 5
   isInvincible: 0
 --- !u!212 &680800394409511256
@@ -128,8 +129,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.040537834, y: 0.0009980202}
-  m_Size: {x: 1.8013973, y: 2.2761164}
+  m_Offset: {x: 0.04992342, y: 0.0009980202}
+  m_Size: {x: 1.3070917, y: 2.2761164}
   m_Direction: 0
 --- !u!50 &807242336929141194
 Rigidbody2D:
