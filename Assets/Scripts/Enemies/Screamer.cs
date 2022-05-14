@@ -104,11 +104,7 @@ public class Screamer : MonoBehaviour {
         {
 			if (playerDetectable)
 			{
-				playerDetectable = false;
-				//EventManager.Calm();
-				//IsQuietEvent.Invoke();
-				onAlert = false;
-				animator.SetBool("HasNoticed", false);
+				
 			}
 		}
 		
@@ -128,8 +124,15 @@ public class Screamer : MonoBehaviour {
 	public void Stun(float StunDuration)
 	{
 		StartCoroutine(StunTime(StunDuration));
+		
 		EventManager.Calm();
 		onAlert = false;
+		playerDetectable = false;
+		//IsQuietEvent.Invoke();
+		onAlert = false;
+		animator.SetBool("HasNoticed", false);
+
+
 	}
 	IEnumerator StunTime(float _StunDuration)
 	{
