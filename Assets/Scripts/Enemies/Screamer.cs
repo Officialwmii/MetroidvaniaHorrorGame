@@ -78,32 +78,37 @@ public class Screamer : MonoBehaviour {
 
 	void checkForPlayer()
     {
-		if (Vector3.Distance(player.transform.position, transform.position) <= detectionRange && !isStunned)
+		if (Vector3.Distance(player.transform.position, transform.position) <= detectionRange && !isStunned )
         {
-			playerDetectable = true;
-			IsScreamingEvent.Invoke();
-			transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
+			if (!playerDetectable) {
 
-			if (player.transform.position.x > transform.position.x && facingRight)
-				Flip();
-			if (player.transform.position.x < transform.position.x && !facingRight)
-				Flip();
+				playerDetectable = true;
+
+				animator.SetBool("HasNoticed", true);
+
+				EventManager.Alert();
+				//IsScreamingEvent.Invoke();
+				transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
+
+				if (player.transform.position.x > transform.position.x && facingRight)
+					Flip();
+				if (player.transform.position.x < transform.position.x && !facingRight)
+					Flip();
+			}
+
+			
 		}
         else
         {
-			playerDetectable = false;
-			IsQuietEvent.Invoke();
-        }
-
-
-		if (playerDetectable)
-		{
-			animator.SetBool("HasNoticed", true);
+			if (playerDetectable)
+			{
+				playerDetectable = false;
+				EventManager.Calm();
+				//IsQuietEvent.Invoke();
+				animator.SetBool("HasNoticed", false);
+			}
 		}
-        else
-        {
-			animator.SetBool("HasNoticed", false);
-        }
+		
     }
 	
 	void Flip (){
