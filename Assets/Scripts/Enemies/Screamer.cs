@@ -47,6 +47,19 @@ public class Screamer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		onAlert = EventManager.EnemiesAlerted;
+		
+		if (onAlert)
+		{
+			animator.SetBool("HasNoticed", true);
+		}
+
+        else if (!onAlert)
+        {
+			animator.SetBool("HasNoticed", false);
+		}
+		
+		
 		checkForPlayer();
 		if (life <= 0) {
 			transform.GetComponent<Animator>().SetBool("IsDead", true);
@@ -85,11 +98,10 @@ public class Screamer : MonoBehaviour {
 
 				playerDetectable = true;
 
-				animator.SetBool("HasNoticed", true);
+				
 
 				EventManager.Alert();
 				//IsScreamingEvent.Invoke();
-				onAlert = true;
 				transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
 
 				if (player.transform.position.x > transform.position.x && facingRight)
@@ -104,8 +116,9 @@ public class Screamer : MonoBehaviour {
         {
 			if (playerDetectable)
 			{
-				
+				playerDetectable = false;
 			}
+			EventManager.Calm();
 		}
 		
     }
@@ -126,11 +139,10 @@ public class Screamer : MonoBehaviour {
 		StartCoroutine(StunTime(StunDuration));
 		
 		EventManager.Calm();
-		onAlert = false;
 		playerDetectable = false;
 		//IsQuietEvent.Invoke();
-		onAlert = false;
-		animator.SetBool("HasNoticed", false);
+
+		
 
 
 	}
