@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour {
 	bool dash = false;
 	bool holdJump = false;
 	bool stoppedJump = false;
-	float variableGravity = 2f;
+	public float variableGravity = 2f;
 	float defaultGravity = 5f;
 
 
