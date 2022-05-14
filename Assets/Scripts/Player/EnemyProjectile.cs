@@ -26,7 +26,7 @@ public class EnemyProjectile : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "Player")
 		{
-			collision.gameObject.SendMessage("ApplyDamage", -damageAmount);
+			collision.gameObject.SendMessage("ApplyDamage", damageAmount);
 			Destroy(gameObject);
 		}
 		else if (collision.gameObject.tag != "Enemy")

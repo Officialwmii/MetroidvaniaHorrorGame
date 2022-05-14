@@ -810,6 +810,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 937370916216969955, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
+      propertyPath: damageAmount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0ed21cdd3e22d84891188ab5dbcfa7e, type: 3}
 --- !u!1001 &287837750
@@ -2973,6 +2977,10 @@ PrefabInstance:
       value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: -1566424744768056949, guid: 50300679fea22d74f8d5a20f55ceac1e, type: 3}
+      propertyPath: damageAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1566424744768056949, guid: 50300679fea22d74f8d5a20f55ceac1e, type: 3}
       propertyPath: shootCooldown
       value: 1.1
       objectReference: {fileID: 0}
@@ -3236,7 +3244,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 726940394409152712, guid: b65c6c251a5f9294fa91fce54a72b310, type: 3}
       propertyPath: damageAmount
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 829873685863465678, guid: b65c6c251a5f9294fa91fce54a72b310, type: 3}
       propertyPath: m_Name
@@ -27866,7 +27874,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 726940394409152712, guid: 391b7fa64cf7e4c47bae4ec8c0c350c7, type: 3}
       propertyPath: damageAmount
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 829873685863465678, guid: 391b7fa64cf7e4c47bae4ec8c0c350c7, type: 3}
       propertyPath: m_Name
