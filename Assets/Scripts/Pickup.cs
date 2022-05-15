@@ -33,7 +33,7 @@ public class Pickup : MonoBehaviour
     {
         if (col.CompareTag("Player")) {
 
-            Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
+           // Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
             Destroy(gameObject);
 
             switch (upgradeType)

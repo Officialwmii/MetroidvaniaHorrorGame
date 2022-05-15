@@ -32,7 +32,7 @@ public class EventManager : MonoBehaviour
     static public int Collectables = 0;
     static public int AudioLog = 0;
 
-    public bool EnemiesAlerted = false;
+    static public bool EnemiesAlerted = false;
     static public float CurrentDanger = 15;
     static public float CurrentDangerLevel = 0;
 
@@ -46,6 +46,8 @@ public class EventManager : MonoBehaviour
     static public float DashFuelCost = 15;
     static public float EMPFuelCost = 15;
     static public bool canUseDash = true;
+    static public float JetpackFuelCost = 0.9f;
+    static public bool canUseJetpack = true;
 
     static private GameObject fuelBar;
 
@@ -115,9 +117,12 @@ public class EventManager : MonoBehaviour
             Fuel = Fuel + Time.deltaTime *5;
 
             if (Fuel >= DashFuelCost) { canUseDash = true; }
+            if (Fuel >= DashFuelCost) { canUseJetpack = true; }
             
             UpdateFuel();
         }
+
+        AlertAddingDanger();
 
     }
 
@@ -142,11 +147,18 @@ public class EventManager : MonoBehaviour
         life3.SetActive(false);
         life4.SetActive(false);
 
-        if (Lives == 4) { life4.SetActive(true); }
+        if (Lives >= 4) { life4.SetActive(true); }
         if (Lives == 3) { life3.SetActive(true); }
         if (Lives == 2) { life2.SetActive(true); }
         if (Lives == 1) { life1.SetActive(true); }
         if (Lives == 0) {        }
+    }
+
+
+    static public void SetHP(float HP)
+    {
+        Lives = (int) HP;
+        UpdateLives();
     }
 
     static public void ReduceHP() {
@@ -228,11 +240,23 @@ public class EventManager : MonoBehaviour
 
         UpdateFuel();
     }
+    
+    static public void UseJetpack()
+    {
+        Fuel = Fuel - JetpackFuelCost;
+        if (Fuel <= JetpackFuelCost)
+        {
+            Fuel = 0;
+            canUseJetpack = false;
+        }
+        UpdateFuel();
+    }
 
     static public void FuelPickup() {
 
         Fuel = Fuel + 50;
         canUseDash = true;
+        canUseJetpack = true;
         if (Fuel >= MaxFuel)
             {
                 Fuel = MaxFuel; 
@@ -259,7 +283,7 @@ public class EventManager : MonoBehaviour
 
     static public void AddDanger() {
 
-        CurrentDanger = CurrentDanger + 15;
+        CurrentDanger = CurrentDanger + 5;
         if (CurrentDanger >= 100) { CurrentDanger = 100;}
 
         UpdateDangerMeter();
@@ -305,16 +329,26 @@ public class EventManager : MonoBehaviour
 
     }
 
-    public void Alert() {
+    static public void Alert() {
         EnemiesAlerted = true;
         Debug.Log("Help!");
     }
 
-    public void Calm()
+    static public void Calm()
     {
         EnemiesAlerted = false;
         Debug.Log("Phew, false alarm.");
     }
 
+    static public void AlertAddingDanger() {
+
+        if (EnemiesAlerted) {
+
+            CurrentDanger = CurrentDanger + 0.25f * Time.deltaTime;
+
+            UpdateDangerMeter();
+        }
+
+    }
 
 }
