@@ -13,7 +13,7 @@ public class Attack : MonoBehaviour
 	public bool isTimeToCheck = false;
 
 	public GameObject cam;
-
+	public GameObject Grenade;
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -22,11 +22,12 @@ public class Attack : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
-        
-    }
+		Grenade = (GameObject)Resources.Load("prefabs/GrenadeProjectile", typeof(GameObject));
 
-    // Update is called once per frame
-    void Update()
+	}
+
+	// Update is called once per frame
+	void Update()
     {
 		if (Input.GetButtonDown("EMP") && canAttack)
 		{
@@ -47,10 +48,15 @@ public class Attack : MonoBehaviour
 			
 		}
 
-		if (Input.GetButtonDown("Grenade"))
+		if (Input.GetButtonDown("Grenade") && EventManager.grenades>0)
 		{
 			EventManager.UseGrenades();
 			animator.SetBool("IsThrowingGrenade", true);
+
+			GameObject Grenade2 = Instantiate(Grenade, transform.position + new Vector3(transform.localScale.x * 0.5f, -0.2f), Quaternion.identity) as GameObject;
+			Vector2 direction = new Vector2(transform.localScale.x, 0);
+			Grenade2.GetComponent<GrenadeProjectile>().direction = direction;
+
 		}
 
 	}

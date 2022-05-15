@@ -104,8 +104,6 @@ public class Enemy : MonoBehaviour {
 
 		if (Exploadable) { ApplyDamage(2000); EventManager.AddDanger(); }
 
-		Frozen();
-
 	}
 	IEnumerator StunTime(float _StunDuration){
 		isStunned = true;
