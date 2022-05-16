@@ -76,7 +76,16 @@
 							</TransitionList>
 							<ObjectLists/>
 							<Playlist>
-								<MusicPlaylistItem Name="" ID="{6148A42A-3FD1-4754-86CC-90982ADD6670}" ShortID="242494413"/>
+								<MusicPlaylistItem Name="" ID="{6148A42A-3FD1-4754-86CC-90982ADD6670}" ShortID="242494413">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{B10FB797-525A-4386-B278-13D1E8C5AA50}" ShortID="989793387">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Upgrade 1" ID="{D6EBF971-3C99-431A-BCB1-18388290CBDF}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="Story Progression 2" ID="{F2DF2EF6-87DD-4C00-86E0-9C7E305B40EE}" ShortID="999842494">
@@ -217,7 +226,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="Lethal Gun" ID="{D3EFF0C7-FCA7-464D-86A6-A355BC5557B5}" ShortID="549155793">
+								<MusicSegment Name="Time Attack" ID="{D3EFF0C7-FCA7-464D-86A6-A355BC5557B5}" ShortID="549155793">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -300,7 +309,7 @@
 													<MusicCue Name="Exit Cue" ID="{FA07484E-6238-41B0-BD41-70E52ED19484}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+															<Property Name="TimeMs" Type="Real64" Value="3002.36686390533"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -314,10 +323,8 @@
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
-									<ReferenceList/>
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{8CB9960C-7D1B-4938-89E0-86053138ED91}">
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</ChildrenList>
@@ -393,7 +400,7 @@
 													<MusicCue Name="Exit Cue" ID="{C92E9FED-F020-4793-9DFC-22F07FEEF21E}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+															<Property Name="TimeMs" Type="Real64" Value="2505.32544378698"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -420,6 +427,64 @@
 								<MusicPlaylistItem Name="" ID="{0AB9E3DB-655C-4497-9BB1-26BFFAC1B796}" ShortID="605943088"/>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Base Music" ID="{47B6AA3B-34C4-4B01-91DB-8E79DC8B0E39}" ShortID="762260167">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Starting Music" ID="{90C06986-9B26-4785-94E3-5B32536475A2}" ShortID="268819006">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{948D2020-2335-46B0-95EF-E18F58EB2244}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{F3FC2D64-0288-4B2F-B748-AD299D2ED725}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="2499.35815147625"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{67EC1515-ED89-402C-A04B-77802B1F6AAA}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{E41B2105-3A6F-423E-9B19-10F866CC9496}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{B4FA04E8-4A28-4992-B2C7-2E86946043A4}" ShortID="665141282"/>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{C5E9B7BE-0967-4298-AB75-2709E4841B57}">
@@ -435,6 +500,9 @@
 						</MusicTransition>
 					</TransitionList>
 					<ObjectLists/>
+					<ArgumentList>
+						<ArgumentRef Name="Story_Progression" ID="{A3E037AC-AEDB-4166-8CBA-3D6172701DEF}"/>
+					</ArgumentList>
 				</MusicSwitchContainer>
 				<MusicPlaylistContainer Name="Main Menu Music" ID="{721A6B07-AAC5-44B3-B603-E9E8DA75FE53}" ShortID="552361417">
 					<PropertyList>
