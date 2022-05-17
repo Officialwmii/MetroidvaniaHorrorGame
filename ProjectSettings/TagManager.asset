@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Jumpthrough
   - Liptank
+  - tilemap
   layers:
   - Default
   - TransparentFX
