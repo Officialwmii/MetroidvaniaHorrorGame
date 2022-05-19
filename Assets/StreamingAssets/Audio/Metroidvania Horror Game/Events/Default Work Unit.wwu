@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Trigger_Ambience_Intensifier" ID="{85F51569-11D4-463B-B3FF-B589161B0BAE}">
+					<ChildrenList>
+						<Action Name="" ID="{477E53D5-E3AE-440D-8BF1-61E052C4C8B9}" ShortID="655075855">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Intensifier" ID="{943EAEB5-844A-4F71-9658-293429BB509D}" WorkUnitID="{E2AC5ECE-D860-41D2-96F7-906556BF2569}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

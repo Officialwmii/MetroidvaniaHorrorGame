@@ -3,8 +3,69 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}"/>
-				<GameParameter Name="Health_Bar" ID="{0DC0D2C2-19C8-4552-8625-AC5947959912}"/>
+				<Folder Name="UI" ID="{B84D1522-916A-42D8-9E0F-52BF3E5891FE}" ShortID="389315034">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<GameParameter Name="Gun_Cooldown" ID="{4F1F9DC8-0219-4BDD-8787-55B0F26AE476}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Health_Bar" ID="{0DC0D2C2-19C8-4552-8625-AC5947959912}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Jetpack_Fuel" ID="{764CD0BC-123E-459D-B959-FA6512EEBA0E}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Upgrades" ID="{9D56D5F8-DB1A-45DC-8ABA-DB1874D3AF76}" ShortID="445459606">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<GameParameter Name="Gun_Upgrade" ID="{62FC1DAA-B355-4AA3-86E6-A9BE2EF6ADAC}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="4"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Jetpack_Upgrade" ID="{D6C7AC7B-44B6-440B-B503-47060A2479B7}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Grenade_Upgrade" ID="{D8F28C1E-DAB8-4A45-BFF8-2B97DAE27953}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Objects" ID="{69946C06-185E-4CE7-AEF0-C5F540A7705E}" ShortID="252639286">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<GameParameter Name="Artifacts_Collected" ID="{DF875772-8155-4029-B7AC-FCEDD62A0775}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="5"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

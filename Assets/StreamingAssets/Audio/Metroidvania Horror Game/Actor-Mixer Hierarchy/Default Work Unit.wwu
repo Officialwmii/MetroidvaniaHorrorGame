@@ -25,11 +25,185 @@
 							<ChildrenList>
 								<Folder Name="Tentacles" ID="{308CE435-368D-495C-90BF-51D416393971}" ShortID="536651317"/>
 								<Folder Name="Infected" ID="{53DE7F93-94CC-45AC-A3B8-A38E52D2BF84}" ShortID="309170641"/>
-								<Folder Name="Crawler" ID="{29C5142E-61AB-408A-BC42-A8570D24A377}" ShortID="769299523"/>
+								<Folder Name="Crawler" ID="{29C5142E-61AB-408A-BC42-A8570D24A377}" ShortID="769299523">
+									<ChildrenList>
+										<RandomSequenceContainer Name="Crawler Idle" ID="{DA305480-1AB3-4CEC-A1D7-8A673ED3F41F}" ShortID="1047376398">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_enemie_crawlers_idle" ID="{F79EA9D9-1F4B-47C3-A989-B15E398146EB}" ShortID="96628335">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists/>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Crawler Attacking" ID="{D9709CD9-182B-4F58-8DE0-3C0E911F5DA5}" ShortID="257565643">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_enemie_crawlers_attacking" ID="{62EC00A3-A75C-4A2D-B882-7919AFAAB2B0}" ShortID="698210979">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists/>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Crawler Hurt" ID="{F7743592-B41E-4FE2-B35D-81406C65010B}" ShortID="60216954">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_enemie_crawlers_hurt" ID="{38F5C5E0-DC4E-48CF-8018-4F068BD3D9F2}" ShortID="455063050">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists/>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Crawler Explode" ID="{B4EEA82F-1EF0-4186-8607-95C11CDC4E23}" ShortID="131393386">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_enemie_crawlers_explode" ID="{D83DF750-B9DB-4CF6-8AD0-D0352C137A43}" ShortID="361435993">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists/>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</Folder>
 								<Folder Name="Screamer" ID="{710EADB2-BB81-4894-A24D-96033739B0EB}" ShortID="45931950"/>
 								<Folder Name="Glob" ID="{113976F8-FA0F-4C1F-846A-7E99C8F91192}" ShortID="350747754"/>
 								<Folder Name="Liptank" ID="{7223B5E2-A4D9-42F7-89FE-31FBB8A91FB5}" ShortID="583224662"/>
-								<Folder Name="Eye Stalker" ID="{F8405CBC-4778-4D08-A6DD-23E4FB274441}" ShortID="290139169"/>
+								<Folder Name="Eye Stalker" ID="{F8405CBC-4778-4D08-A6DD-23E4FB274441}" ShortID="290139169">
+									<ChildrenList>
+										<RandomSequenceContainer Name="Eye Stalker Death" ID="{3F393993-70D9-4CF6-A9CE-82498CC6F376}" ShortID="490425077">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_enemie_eye_stalker_death" ID="{3D2FFAD0-7C2C-4B8D-9AEE-040C1594A59A}" ShortID="857958831">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists/>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="eye Stalker Alerted" ID="{0EAC45C2-57C7-4502-A115-38715F90C6FA}" ShortID="773734916">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_enemie_eye_stalker_alerted" ID="{DFE1F6D4-1AD4-4FCB-A2E8-E361373D6D1C}" ShortID="515016230">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists/>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Eye Stalker Idle" ID="{667FC2AF-87C6-4DAD-9020-91779142F339}" ShortID="310763404">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_enemie_eye_stalker_idle" ID="{7F997CD9-9A66-4F99-B0ED-E240913397EA}" ShortID="154666913">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists/>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</Folder>
 								<Folder Name="Xeno-encephalon" ID="{542CA34A-5B06-46A6-8C92-F7BD2A6A704A}" ShortID="585265612"/>
 							</ChildrenList>
 						</Folder>
@@ -49,10 +223,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Ambience Sequence" ID="{C9ABA2B0-0566-4F8B-A2F9-76620C045F61}" ShortID="1163907">
-											<PropertyList>
-												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-											</PropertyList>
+										<BlendContainer Name="Location Ambiance" ID="{29020567-CDF4-4E6D-AB3D-E573971D3BE1}" ShortID="713118956">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -62,13 +233,13 @@
 												</Reference>
 											</ReferenceList>
 											<ObjectLists/>
-										</RandomSequenceContainer>
+										</BlendContainer>
 									</ChildrenList>
 									<ObjectLists/>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="Ambience Sequence" ID="{C9ABA2B0-0566-4F8B-A2F9-76620C045F61}"/>
+												<ItemRef Name="Location Ambiance" ID="{29020567-CDF4-4E6D-AB3D-E573971D3BE1}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 									</GroupingInfo>
@@ -91,6 +262,19 @@
 								<Property Name="Color" Type="int16" Value="19"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Sound Name="sfx_objects_alien_artifact" ID="{DC9EF83A-3159-44F8-8BAC-AD526F4F9427}" ShortID="61882177">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+							</ChildrenList>
 						</Folder>
 						<Folder Name="Environment" ID="{D0D8B0DD-D2E6-48CD-9F30-22A135F6EF6B}" ShortID="568561948">
 							<PropertyList>
@@ -109,6 +293,26 @@
 							</PropertyList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Select" ID="{EB6C46E5-9161-423C-AA8E-4AF8EDF32FBE}" ShortID="77519839">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7840133F-005E-4C2B-9773-0BECEBB65818}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="600"/>
+															<Property Name="Min" Type="Real64" Value="-600"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -127,12 +331,43 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ui_select" ID="{3F27F7EB-1131-4C85-BDB1-F456E09FAF94}">
+													<Language>SFX</Language>
+													<AudioFile>ui_select.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="925556678"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
 											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ui_select" ID="{3F27F7EB-1131-4C85-BDB1-F456E09FAF94}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Back" ID="{649E6E62-CF1C-4EDA-B1F2-CE44D35919B8}" ShortID="887300822">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0012A75C-A0F0-40D5-AE50-45AA66053B35}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-1000"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -151,7 +386,19 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ui_back" ID="{0AC17700-10D7-4DAE-9049-5F9F6BB9F5BA}">
+													<Language>SFX</Language>
+													<AudioFile>ui_back.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="969567069"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
 											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ui_back" ID="{0AC17700-10D7-4DAE-9049-5F9F6BB9F5BA}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
@@ -175,7 +422,19 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ui_pause" ID="{967D9207-27D1-4E55-B3DB-C66BAB8FBF55}">
+													<Language>SFX</Language>
+													<AudioFile>ui_pause.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="648292605"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
 											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ui_pause" ID="{967D9207-27D1-4E55-B3DB-C66BAB8FBF55}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<ObjectLists/>

@@ -4,12 +4,32 @@
 		<WorkUnit Name="Default Work Unit" ID="{5D906649-5363-408C-B39D-AA3DF0B3E71E}" PersistMode="Standalone">
 			<ChildrenList>
 				<StateGroup Name="Story_Progression" ID="{A3E037AC-AEDB-4166-8CBA-3D6172701DEF}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{6448DD6C-28B5-415A-8353-F77F06597E06}"/>
 						<State Name="Upgrade_1" ID="{0965315D-926D-4632-A0B6-EBE87AE73C88}"/>
 						<State Name="Upgrade_3" ID="{62892F83-6525-4C3E-BE71-DF149C13F735}"/>
 						<State Name="Upgrade_2" ID="{9C4CA061-AA8A-40E9-A5E1-D9627DAD6B52}"/>
 						<State Name="Upgrade_4" ID="{9BB154B8-0367-467B-8F92-7B8BF7C6DA49}"/>
+						<State Name="Start" ID="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}"/>
+						<State Name="Death" ID="{D2BD77C1-C492-4874-B64F-731A2756DBA9}"/>
+						<State Name="Escaped" ID="{AFB4F184-D8FD-41AC-82C4-89759F7CB2C7}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Floor_Type" ID="{EB06355B-F2D9-4B5B-86B1-D3CBCDB28B9D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="8"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{475E3B2B-4BE5-4821-8094-2AF3AD6D827D}"/>
+						<State Name="Metal" ID="{C8F2D09C-834C-45C6-ACDE-CF3AC0FAFBA6}"/>
+						<State Name="Glass" ID="{39DC983A-B118-4762-BE5D-1C67AA8BF4EE}"/>
+						<State Name="Flesh" ID="{6B52BF2E-E284-4B74-9B37-E2229EDC9EE9}"/>
+						<State Name="Wood" ID="{2E877264-A0C6-4FA2-8CE4-5DF9671FB875}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
