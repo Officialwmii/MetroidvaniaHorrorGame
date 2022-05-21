@@ -17,14 +17,14 @@ public class BossHead : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision);
+        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
             
             collision.gameObject.SendMessage("ApplyDamage", -damageAmount);
-            //Debug.Log("I hurt");
+            Debug.Log("I hurt");
 
         }
         else if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "tilemap" || collision.gameObject.tag == "Jumpthrough")

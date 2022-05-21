@@ -592,8 +592,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 678d0dc573114b4fa4a47a1483ba6642
     GuidInternal: 
-    m_lastTime: -8585490998629849670
-    List: []
+    m_lastTime: -8585484457363673596
+    List:
+    - name: Trigger_Ambience_Intensifier
+      guid: 6915f585d4113b46b3ffb589161b0bae
+      id: 2651394355
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Trigger_Ambience_Intensifier
+        ObjectType: 3
+        guid: 6915f585d4113b46b3ffb589161b0bae
+      Path: Events\Default Work Unit\Trigger_Ambience_Intensifier
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -606,8 +623,76 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2620ce58e7fe1e439e677f5e73b7c0d5
     GuidInternal: 
-    m_lastTime: -8585490998629819748
+    m_lastTime: -8585484457363633705
     List:
+    - name: Artifacts_Collected
+      guid: 725787df55812940b7acfcedd62a0775
+      id: 1884715346
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2620ce58e7fe1e439e677f5e73b7c0d5
+      - ElementName: Objects
+        ObjectType: 4
+        guid: 066c94695e18e74caef0c5f540a7705e
+      - ElementName: Artifacts_Collected
+        ObjectType: 13
+        guid: 725787df55812940b7acfcedd62a0775
+      Path: Game Parameters\Default Work Unit\Objects\Artifacts_Collected
+    - name: Grenade_Upgrade
+      guid: 1e8cf2d8b8da454abff82b97dae27953
+      id: 1580962308
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2620ce58e7fe1e439e677f5e73b7c0d5
+      - ElementName: Upgrades
+        ObjectType: 4
+        guid: f8d5569d1adbdc458abadb1874d3af76
+      - ElementName: Grenade_Upgrade
+        ObjectType: 13
+        guid: 1e8cf2d8b8da454abff82b97dae27953
+      Path: Game Parameters\Default Work Unit\Upgrades\Grenade_Upgrade
+    - name: Gun_Cooldown
+      guid: c89d1f4f1902dd4b878755b0f26ae476
+      id: 3974435895
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2620ce58e7fe1e439e677f5e73b7c0d5
+      - ElementName: UI
+        ObjectType: 4
+        guid: 22154db86a91d8429e0f52bf3e5891fe
+      - ElementName: Gun_Cooldown
+        ObjectType: 13
+        guid: c89d1f4f1902dd4b878755b0f26ae476
+      Path: Game Parameters\Default Work Unit\UI\Gun_Cooldown
+    - name: Gun_Upgrade
+      guid: aa1dfc6255b3a34a86e6a9be2ef6adac
+      id: 2286992720
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2620ce58e7fe1e439e677f5e73b7c0d5
+      - ElementName: Upgrades
+        ObjectType: 4
+        guid: f8d5569d1adbdc458abadb1874d3af76
+      - ElementName: Gun_Upgrade
+        ObjectType: 13
+        guid: aa1dfc6255b3a34a86e6a9be2ef6adac
+      Path: Game Parameters\Default Work Unit\Upgrades\Gun_Upgrade
     - name: Health_Bar
       guid: c2d2c00dc81952458625ac5947959912
       id: 3505704881
@@ -618,10 +703,47 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 2620ce58e7fe1e439e677f5e73b7c0d5
+      - ElementName: UI
+        ObjectType: 4
+        guid: 22154db86a91d8429e0f52bf3e5891fe
       - ElementName: Health_Bar
         ObjectType: 13
         guid: c2d2c00dc81952458625ac5947959912
-      Path: Game Parameters\Default Work Unit\Health_Bar
+      Path: Game Parameters\Default Work Unit\UI\Health_Bar
+    - name: Jetpack_Fuel
+      guid: bcd04c763e129d45b959fa6512eeba0e
+      id: 3017925012
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2620ce58e7fe1e439e677f5e73b7c0d5
+      - ElementName: UI
+        ObjectType: 4
+        guid: 22154db86a91d8429e0f52bf3e5891fe
+      - ElementName: Jetpack_Fuel
+        ObjectType: 13
+        guid: bcd04c763e129d45b959fa6512eeba0e
+      Path: Game Parameters\Default Work Unit\UI\Jetpack_Fuel
+    - name: Jetpack_Upgrade
+      guid: 7bacc7d6b6440b44b50347060a2479b7
+      id: 4062170604
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2620ce58e7fe1e439e677f5e73b7c0d5
+      - ElementName: Upgrades
+        ObjectType: 4
+        guid: f8d5569d1adbdc458abadb1874d3af76
+      - ElementName: Jetpack_Upgrade
+        ObjectType: 13
+        guid: 7bacc7d6b6440b44b50347060a2479b7
+      Path: Game Parameters\Default Work Unit\Upgrades\Jetpack_Upgrade
     - name: Noise_Meter
       guid: d3316160652be34cad45940650947dc2
       id: 3691056935
@@ -632,10 +754,55 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 2620ce58e7fe1e439e677f5e73b7c0d5
+      - ElementName: UI
+        ObjectType: 4
+        guid: 22154db86a91d8429e0f52bf3e5891fe
       - ElementName: Noise_Meter
         ObjectType: 13
         guid: d3316160652be34cad45940650947dc2
-      Path: Game Parameters\Default Work Unit\Noise_Meter
+      Path: Game Parameters\Default Work Unit\UI\Noise_Meter
+    - name: Objects
+      guid: 066c94695e18e74caef0c5f540a7705e
+      id: 1695690031
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2620ce58e7fe1e439e677f5e73b7c0d5
+      - ElementName: Objects
+        ObjectType: 4
+        guid: 066c94695e18e74caef0c5f540a7705e
+      Path: Game Parameters\Default Work Unit\Objects
+    - name: UI
+      guid: 22154db86a91d8429e0f52bf3e5891fe
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2620ce58e7fe1e439e677f5e73b7c0d5
+      - ElementName: UI
+        ObjectType: 4
+        guid: 22154db86a91d8429e0f52bf3e5891fe
+      Path: Game Parameters\Default Work Unit\UI
+    - name: Upgrades
+      guid: f8d5569d1adbdc458abadb1874d3af76
+      id: 3834024670
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2620ce58e7fe1e439e677f5e73b7c0d5
+      - ElementName: Upgrades
+        ObjectType: 4
+        guid: f8d5569d1adbdc458abadb1874d3af76
+      Path: Game Parameters\Default Work Unit\Upgrades
   - PhysicalPath: Game Parameters\Factory Motion.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -842,8 +1009,106 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 4966905d63538c40b39daa3df0b3e71e
     GuidInternal: 
-    m_lastTime: -8585490998628543166
+    m_lastTime: -8585484457362960434
     List:
+    - name: Floor_Type
+      guid: 5b3506ebd9f25b4b86b1d3cbcdb28b9d
+      id: 4168292868
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4966905d63538c40b39daa3df0b3e71e
+      - ElementName: Floor_Type
+        ObjectType: 9
+        guid: 5b3506ebd9f25b4b86b1d3cbcdb28b9d
+      Path: States\Default Work Unit\Floor_Type
+      values:
+      - name: Flesh
+        guid: 2ebf526b84e2744b9b37e2229edc9ee9
+        id: 1153642577
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4966905d63538c40b39daa3df0b3e71e
+        - ElementName: Floor_Type
+          ObjectType: 9
+          guid: 5b3506ebd9f25b4b86b1d3cbcdb28b9d
+        - ElementName: Flesh
+          ObjectType: 8
+          guid: 2ebf526b84e2744b9b37e2229edc9ee9
+      - name: Glass
+        guid: 3a98dc3918b16247be5d1c67aa8bf4ee
+        id: 2449969375
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4966905d63538c40b39daa3df0b3e71e
+        - ElementName: Floor_Type
+          ObjectType: 9
+          guid: 5b3506ebd9f25b4b86b1d3cbcdb28b9d
+        - ElementName: Glass
+          ObjectType: 8
+          guid: 3a98dc3918b16247be5d1c67aa8bf4ee
+      - name: Metal
+        guid: 9cd0f2c84c83c645acdecf3ac0fafba6
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4966905d63538c40b39daa3df0b3e71e
+        - ElementName: Floor_Type
+          ObjectType: 9
+          guid: 5b3506ebd9f25b4b86b1d3cbcdb28b9d
+        - ElementName: Metal
+          ObjectType: 8
+          guid: 9cd0f2c84c83c645acdecf3ac0fafba6
+      - name: None
+        guid: 2b3b5e47e54b214880942af3ad6d827d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4966905d63538c40b39daa3df0b3e71e
+        - ElementName: Floor_Type
+          ObjectType: 9
+          guid: 5b3506ebd9f25b4b86b1d3cbcdb28b9d
+        - ElementName: None
+          ObjectType: 8
+          guid: 2b3b5e47e54b214880942af3ad6d827d
+      - name: Wood
+        guid: 6472872ec6a0a24f8ce45df9671fb875
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4966905d63538c40b39daa3df0b3e71e
+        - ElementName: Floor_Type
+          ObjectType: 9
+          guid: 5b3506ebd9f25b4b86b1d3cbcdb28b9d
+        - ElementName: Wood
+          ObjectType: 8
+          guid: 6472872ec6a0a24f8ce45df9671fb875
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Story_Progression
       guid: ac37e0a3dbae66418cba3d6172701def
       id: 753405764
@@ -859,6 +1124,38 @@ MonoBehaviour:
         guid: ac37e0a3dbae66418cba3d6172701def
       Path: States\Default Work Unit\Story_Progression
       values:
+      - name: Death
+        guid: c177bdd292c47448b64f731a2756dba9
+        id: 779278001
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4966905d63538c40b39daa3df0b3e71e
+        - ElementName: Story_Progression
+          ObjectType: 9
+          guid: ac37e0a3dbae66418cba3d6172701def
+        - ElementName: Death
+          ObjectType: 8
+          guid: c177bdd292c47448b64f731a2756dba9
+      - name: Escaped
+        guid: 84f1b4affdd8ac4182c489759f7cb2c7
+        id: 4229539972
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4966905d63538c40b39daa3df0b3e71e
+        - ElementName: Story_Progression
+          ObjectType: 9
+          guid: ac37e0a3dbae66418cba3d6172701def
+        - ElementName: Escaped
+          ObjectType: 8
+          guid: 84f1b4affdd8ac4182c489759f7cb2c7
       - name: None
         guid: 6cdd4864b5285a418353f77f06597e06
         id: 748895195
@@ -875,6 +1172,22 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 6cdd4864b5285a418353f77f06597e06
+      - name: Start
+        guid: 713eba05d0fe5949a8a14dbefabd8a23
+        id: 1281810935
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4966905d63538c40b39daa3df0b3e71e
+        - ElementName: Story_Progression
+          ObjectType: 9
+          guid: ac37e0a3dbae66418cba3d6172701def
+        - ElementName: Start
+          ObjectType: 8
+          guid: 713eba05d0fe5949a8a14dbefabd8a23
       - name: Upgrade_1
         guid: 5d3165096d923246a0b6ebe87ae73c88
         id: 2983809735
@@ -968,8 +1281,22 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: ce5eace260d8d24196f7906556bf2569
     GuidInternal: 
-    m_lastTime: -8585490998628513246
-    List: []
+    m_lastTime: -8585484457362920546
+    List:
+    - name: Ambience_Intensifier
+      guid: b5ae3e944a84714f9658293429bb509d
+      id: 2685934232
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ce5eace260d8d24196f7906556bf2569
+      - ElementName: Ambience_Intensifier
+        ObjectType: 14
+        guid: b5ae3e944a84714f9658293429bb509d
+      Path: Triggers\Default Work Unit\Ambience_Intensifier
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0

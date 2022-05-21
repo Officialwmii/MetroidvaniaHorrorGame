@@ -10,12 +10,13 @@ public class BossPhase1 : MonoBehaviour
     public GameObject Head_3;
     public GameObject Head_4;
     private int check;
-    static public float base_timer = 10f;
+    static public float base_timer = 20f;
     public float timer = base_timer;
     private Vector2 Head_1_position;
     private Vector2 Head_2_position;
     private Vector2 Head_3_position;
     private Vector2 Head_4_position;
+    public float head_speed = 30f;
 
     void Start()
     {
@@ -23,7 +24,6 @@ public class BossPhase1 : MonoBehaviour
         Head_2_position = GetPosition(Head_2);
         Head_3_position = GetPosition(Head_3);
         Head_4_position = GetPosition(Head_4);
-        Debug.Log(Head_1_position);
     }
 
     // Update is called once per frame
@@ -32,40 +32,69 @@ public class BossPhase1 : MonoBehaviour
 
         timer -= Time.deltaTime;
 
-        if (timer <= 5) {
+        if (timer <= 15) {
 
-            HeadSlam(Head_1, 0, -30);
+            HeadSlam(Head_1, "down");
+
+            
+            
+        }
+        if (timer <= 14)
+        {
+            HeadSlam(Head_2, "up");
+
+            
+        }
+        if (timer <= 13)
+        {
+            HeadSlam(Head_3, "right");
+
+            
+        }
+        if (timer <= 12)
+        {
+            HeadSlam(Head_4, "left");
+
+            
+            
+        }
+        if (timer <= 0)
+        {
             ResetPosition(Head_1, Head_1_position);
-            
-            
-        }
-        if (timer <= 4)
-        {
-            HeadSlam(Head_2, 0, 30);
             ResetPosition(Head_2, Head_2_position);
-            
-        }
-        if (timer <= 3)
-        {
-            HeadSlam(Head_3, -30, 0);
             ResetPosition(Head_3, Head_3_position);
-            
-        }
-        if (timer <= 2)
-        {
-            HeadSlam(Head_4, 30, 0);
             ResetPosition(Head_4, Head_4_position);
-            
             timer = base_timer;
         }
 
 
     }
 
-    void HeadSlam(GameObject head, float x_speed, float y_speed)
+    void HeadSlam(GameObject head, string dir)
     {
-        head.GetComponent<Rigidbody2D>().velocity = new Vector2(x_speed, y_speed);
-        //Debug.Log("I smash head.");
+        if (dir == "up")
+        {
+            head.transform.Translate(Vector3.up * Time.deltaTime * head_speed);
+
+        }
+        else if (dir == "down")
+        {
+            head.transform.Translate(Vector3.down * Time.deltaTime * head_speed);
+
+        }
+        else if (dir == "left")
+        {
+            head.transform.Translate(Vector3.down * Time.deltaTime * head_speed);
+            Debug.Log("Going left!");
+        }
+        else if (dir == "right")
+        {
+            head.transform.Translate(Vector3.up * Time.deltaTime * head_speed);
+            Debug.Log("Going right!");
+        }
+        
+        head.transform.Translate(Vector3.forward * Time.deltaTime * 5);
+        Debug.Log("I smash head.");
 
     }
     
