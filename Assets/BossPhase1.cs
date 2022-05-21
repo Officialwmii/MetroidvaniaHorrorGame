@@ -5,10 +5,18 @@ using UnityEngine;
 public class BossPhase1 : MonoBehaviour
 {
     // Start is called before the first frame update
+    [Header("Head Objects")]
     public GameObject Head_1;
     public GameObject Head_2;
     public GameObject Head_3;
     public GameObject Head_4;
+    [Header("Tell Objects")]
+    public GameObject Tell_1;
+    public GameObject Tell_2;
+    public GameObject Tell_3;
+    public GameObject Tell_4;
+
+    [Header("Floats")]
     private int check;
     static public float base_timer = 20f;
     public float timer = base_timer;
@@ -24,6 +32,11 @@ public class BossPhase1 : MonoBehaviour
         Head_2_position = GetPosition(Head_2);
         Head_3_position = GetPosition(Head_3);
         Head_4_position = GetPosition(Head_4);
+
+        Tell_1.SetActive(false);
+        Tell_2.SetActive(false);
+        Tell_3.SetActive(false);
+        Tell_4.SetActive(false);
     }
 
     // Update is called once per frame
@@ -32,28 +45,43 @@ public class BossPhase1 : MonoBehaviour
 
         timer -= Time.deltaTime;
 
+        
+        if (timer <= 17)
+        {
+            Tell_1.SetActive(true);
+        }
         if (timer <= 15) {
 
             HeadSlam(Head_1, "down");
+            Tell_1.SetActive(false);
+            Tell_3.SetActive(true);
 
             
             
+        }
+        if (timer <= 16)
+        {
+            Tell_2.SetActive(true);
         }
         if (timer <= 14)
         {
             HeadSlam(Head_2, "up");
+            Tell_2.SetActive(false);
+            Tell_4.SetActive(true);
 
-            
+
         }
         if (timer <= 13)
         {
             HeadSlam(Head_3, "right");
+            Tell_3.SetActive(false);
 
             
         }
         if (timer <= 12)
         {
             HeadSlam(Head_4, "left");
+            Tell_4.SetActive(false);
 
             
             
@@ -64,6 +92,7 @@ public class BossPhase1 : MonoBehaviour
             ResetPosition(Head_2, Head_2_position);
             ResetPosition(Head_3, Head_3_position);
             ResetPosition(Head_4, Head_4_position);
+
             timer = base_timer;
         }
 
