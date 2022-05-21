@@ -14,7 +14,8 @@ public class BossFight : MonoBehaviour
     
     void Start()
     {
-        
+        Phase_2.SetActive(false);
+        End_Phase.SetActive(false);
     }
 
     // Update is called once per frame

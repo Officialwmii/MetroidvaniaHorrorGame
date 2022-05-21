@@ -17,9 +17,8 @@ public class BossPhase1 : MonoBehaviour
     public GameObject Tell_4;
 
     [Header("Floats")]
-    private int check;
-    static public float base_timer = 20f;
-    public float timer = base_timer;
+    static public float phase1_timer = 20f;
+    private float timer = phase1_timer;
     private Vector2 Head_1_position;
     private Vector2 Head_2_position;
     private Vector2 Head_3_position;
@@ -43,48 +42,35 @@ public class BossPhase1 : MonoBehaviour
     void Update()
     {
 
-        timer -= Time.deltaTime;
-
-        
+        timer -= Time.deltaTime;     
         if (timer <= 17)
         {
             Tell_1.SetActive(true);
         }
-        if (timer <= 15) {
-
-            HeadSlam(Head_1, "down");
-            Tell_1.SetActive(false);
-            Tell_3.SetActive(true);
-
-            
-            
-        }
         if (timer <= 16)
         {
             Tell_2.SetActive(true);
+        }
+        if (timer <= 15) {
+            HeadSlam(Head_1, "down");
+            Tell_1.SetActive(false);
+            Tell_3.SetActive(true);                 
         }
         if (timer <= 14)
         {
             HeadSlam(Head_2, "up");
             Tell_2.SetActive(false);
             Tell_4.SetActive(true);
-
-
         }
         if (timer <= 13)
         {
             HeadSlam(Head_3, "right");
-            Tell_3.SetActive(false);
-
-            
+            Tell_3.SetActive(false);         
         }
         if (timer <= 12)
         {
             HeadSlam(Head_4, "left");
-            Tell_4.SetActive(false);
-
-            
-            
+            Tell_4.SetActive(false);     
         }
         if (timer <= 0)
         {
@@ -93,7 +79,7 @@ public class BossPhase1 : MonoBehaviour
             ResetPosition(Head_3, Head_3_position);
             ResetPosition(Head_4, Head_4_position);
 
-            timer = base_timer;
+            timer = phase1_timer;
         }
 
 
