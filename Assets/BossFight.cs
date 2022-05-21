@@ -9,6 +9,8 @@ public class BossFight : MonoBehaviour
     public GameObject Phase_2;
     public GameObject End_Phase;
     public GameObject The_Bossman;
+    public bool DEBUG_End_Phase_1 = false;
+    public bool DEBUG_End_Phase_2 = false;
     
     void Start()
     {
@@ -20,13 +22,13 @@ public class BossFight : MonoBehaviour
     {
         Phase_1.SetActive(true);
 
-        if (The_Bossman.GetComponent<Bossman>().life <= 10)
+        if (The_Bossman.GetComponent<Bossman>().life <= 10 || DEBUG_End_Phase_1)
         {
             Phase_1.SetActive(false);
             Phase_2.SetActive(true);
         }
 
-        if (The_Bossman.GetComponent<Bossman>().life <= 0)
+        if (The_Bossman.GetComponent<Bossman>().life <= 0 || DEBUG_End_Phase_2)
         {
             Phase_2.SetActive(false);
             End_Phase.SetActive(true);
