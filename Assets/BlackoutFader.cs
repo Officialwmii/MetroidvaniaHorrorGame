@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Fader : MonoBehaviour
+public class BlackoutFader : MonoBehaviour
 {
     private CanvasGroup canvasGroup;
     private float elapsedTime = 0;
@@ -13,20 +13,20 @@ public class Fader : MonoBehaviour
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();
-        canvasGroup.alpha = 0;
+        canvasGroup.alpha = 1;
         upperBound = Convert.ToInt32(Math.Pow(fadeTime, fadeTime));
-        StartCoroutine(DoFadeIn());
+        StartCoroutine(DoFadeOut());
     }
 
-    IEnumerator DoFadeIn()
+    IEnumerator DoFadeOut()
         {
             canvasGroup = GetComponent<CanvasGroup>();
-            while(canvasGroup.alpha < 1)
+            while(canvasGroup.alpha > 0)
             {
                 elapsedTime += Time.deltaTime;
-                // canvasGroup.alpha = Mathf.Clamp01(elapsedTime / fadeTime);   // Liner Progression
+                // canvasGroup.alpha = Mathf.Clamp01(elapsedTime / fadeTime);   // Linear
                 // I switched from linear to expotential fade progression
-                canvasGroup.alpha = Mathf.Clamp01(Convert.ToSingle((Math.Pow(elapsedTime, fadeTime)))/upperBound);  // Exponential
+                canvasGroup.alpha = 1 - Mathf.Clamp01(Convert.ToSingle((Math.Pow(elapsedTime, fadeTime)))/upperBound);  // Exponential
                 yield return null;
             }
             yield return null;
