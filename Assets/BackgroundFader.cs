@@ -7,7 +7,7 @@ public class BackgroundFader : MonoBehaviour
 {
     private CanvasGroup canvasGroup;
     private float elapsedTime = 0;
-    private float fadeTime = 3.0f;
+    private float fadeTime = 2.5f;
     private int upperBound;
     private LinkedList<SpriteRenderer> sprites = new LinkedList<SpriteRenderer>();
     // Start is called before the first frame update

@@ -7,7 +7,7 @@ public class Fader : MonoBehaviour
 {
     private CanvasGroup canvasGroup;
     private float elapsedTime = 0;
-    private float fadeTime = 3.0f;
+    private float fadeTime = 2.5f;
     private int upperBound;
     // Start is called before the first frame update
     void Start()
