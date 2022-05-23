@@ -65,9 +65,9 @@
 				<Property Name="PluginUserAcknowledge\Motion" Type="bool" Value="True"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_12_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
-				<Property Name="ProjectExplorer\FirstVisible_5_1" Type="string" Value="{EB06355B-F2D9-4B5B-86B1-D3CBCDB28B9D}"/>
+				<Property Name="ProjectExplorer\FirstVisible_5_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_7_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_9_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
 				<Property Name="ProjectExplorer\x64_Expanded_11_1" Type="string" Value=""/>
@@ -84,7 +84,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ83uKGFdv+ZxBlh7XB+Kt3vSFNbVqoSDHS4wOz3GYoOHG"/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="SZXu9fvdb0Cj6KDpZBrkQy+o7rTwHoZBhgeVwRzcTiNZt2ZxlPrkRIdctAX1mkRNwkWsDsdXAkWhFThxX5DG+hjGPTIH1exGtoIEeyG7fWSAVDDasxrsTKHXimc+0/Qfkzk5P9lw9kypzoJJjMbzdq/Cf2bGh61NkCCRd5FC8zn9kocbDKLMTbmYHwL7I+ca2Zxw2SsYWE+N4DwOkR9dpZI1dPcetOJPs12BQGxlAQs="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="SZXu9fvdb0Cj6KDpZBrkQxjGPTIH1exGtoIEeyG7fWQ="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="SWaQXWNTjECznao98LPnHls1BuvZ8ltLhrHTy82yi50="/>

@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/Main Menu.unity
     guid: b35cb3aeff73d724db6fd2c25d2a67db
   - enabled: 1
     path: Assets/Scenes/Christoffer.unity
     guid: 4c99041fd5c4276469947c08b45e5a5b
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 70ca92fbc61084c44ac8b0a855117691
   m_configObjects: {}

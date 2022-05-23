@@ -11,6 +11,9 @@ public class BackgroundFader : MonoBehaviour
     private int upperBound;
     private LinkedList<SpriteRenderer> sprites = new LinkedList<SpriteRenderer>();
     // Start is called before the first frame update
+    private Animation creditsRoll;
+    private Animation creditsButtons;
+
     void Start()
     {
         Transform transform;
@@ -65,4 +68,19 @@ public class BackgroundFader : MonoBehaviour
         yield return null;
     }
 
+    void StartCreditsScene()
+    {
+        PlayCreditsRoll();
+        PlayButtonFade();
+    }
+
+    void PlayButtonFade()
+    {
+        creditsButtons.Play();
+    }
+
+    void PlayCreditsRoll()
+    {
+        creditsRoll.Play();
+    }
 }
