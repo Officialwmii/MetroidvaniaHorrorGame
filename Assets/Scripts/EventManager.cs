@@ -337,7 +337,7 @@ public class EventManager : MonoBehaviour
     static public void Calm()
     {
         EnemiesAlerted = false;
-        Debug.Log("Phew, false alarm.");
+       // Debug.Log("Phew, false alarm.");
     }
 
     static public void AlertAddingDanger() {
