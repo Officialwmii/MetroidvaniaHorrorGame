@@ -5,7 +5,8 @@ using System.Collections;
 public class Bossman : MonoBehaviour
 {
 
-	public float life = 10;
+	public float life = 20;
+	public float maxLife = 20;
 	private bool isPlat;
 	private bool isObstacle;
 	private Transform fallCheck;
@@ -72,17 +73,7 @@ public class Bossman : MonoBehaviour
 
 		//Debug.Log("Timetime  " + timer + "\n" + "NextShot  " + nextShot + "\n" + "Shoot Cooldown " + shootCooldown);
 
-		if (playerDetectable && isStunned==false)
-        {
-			timer += Time.deltaTime;
-			nextShot = shootCooldown;
-			if (timer > nextShot)
-			{
-				//Debug.Log("I shoot!");
-				Shoot();
-			}
 
-        }
 
 		if (life <= 0)
 		{
@@ -159,7 +150,7 @@ public class Bossman : MonoBehaviour
 			float direction = damage / Mathf.Abs(damage);
 			damage = Mathf.Abs(damage);
 			transform.GetComponent<Animator>().SetBool("Hit", true);
-
+			Debug.Log("I hurt! I took damage.");
 			life += damage;
 			rb.velocity = Vector2.zero;
 			rb.AddForce(new Vector2(direction * 500f, 100f));
