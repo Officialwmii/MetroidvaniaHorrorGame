@@ -12,6 +12,7 @@ public class SubtitlesText : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        ClearSubtitles();
     }
 
 
@@ -20,5 +21,16 @@ public class SubtitlesText : MonoBehaviour
         subtitleText.text = subtitle;
     }
 
-    
+    public void ClearSubtitles()
+    {
+        subtitleText.text = "";
+
+        
+    }
+
+    private IEnumerator ClearAfterSeconds(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        ClearSubtitles();
+    }
 }
