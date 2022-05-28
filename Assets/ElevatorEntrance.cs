@@ -25,7 +25,7 @@ public class ElevatorEntrance : MonoBehaviour
         {
 
             col.transform.position = EndDestination.transform.position;
-            Debug.Log("Elevator activated");        
+            //Debug.Log("Elevator activated");        
         }
     }
 }
