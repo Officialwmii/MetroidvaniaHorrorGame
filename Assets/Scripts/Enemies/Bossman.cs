@@ -31,12 +31,12 @@ public class Bossman : MonoBehaviour
 	private bool isStunned = false;
 	public bool onAlert = false;
 
-	private GameObject FrozenEnemy;
+
 
 
 	void Awake()
 	{
-		FrozenEnemy = (GameObject)Resources.Load("prefabs/FrozenLipTank", typeof(GameObject));
+
 
 
 		fallCheck = transform.Find("FallCheck");
@@ -178,14 +178,7 @@ public class Bossman : MonoBehaviour
 		transform.GetComponent<Animator>().SetBool("IsStunned", false);
 
 	}
-	public void Frozen()
-	{
 
-		GameObject FrozenCorpse = Instantiate(FrozenEnemy, transform.position, Quaternion.identity);
-		Physics2D.IgnoreCollision(FrozenCorpse.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-
-		Destroy(gameObject);
-	}
 
 
 	void OnCollisionStay2D(Collision2D collision)
