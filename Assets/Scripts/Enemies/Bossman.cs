@@ -151,7 +151,7 @@ public class Bossman : MonoBehaviour
 			damage = Mathf.Abs(damage);
 			transform.GetComponent<Animator>().SetBool("Hit", true);
 			Debug.Log("I hurt! I took damage.");
-			life += damage;
+			life -= damage;
 			rb.velocity = Vector2.zero;
 			rb.AddForce(new Vector2(direction * 500f, 100f));
 			StartCoroutine(HitTime());

@@ -30,20 +30,28 @@ public class BossFight : MonoBehaviour
         UpdateBossHealthMeter();
         Phase_1.SetActive(true);
 
-        if (The_Bossman.GetComponent<Bossman>().life <= 10 || DEBUG_End_Phase_1)
+        if (The_Bossman.GetComponent<Bossman>().life <= 15 || DEBUG_End_Phase_1)
         {
             Phase_1.SetActive(false);
             Phase_2.SetActive(true);
         }
 
-        if (The_Bossman.GetComponent<Bossman>().life <= 5 || DEBUG_End_Phase_2)
+        if (The_Bossman.GetComponent<Bossman>().life <= 10 || DEBUG_End_Phase_2)
         {
             Phase_2.SetActive(false);
             Phase_3.SetActive(true);
         }
 
+        if (The_Bossman.GetComponent<Bossman>().life < 5)
+        {
+            Phase_1.SetActive(true);
+            Phase_2.SetActive(true);
+        }
+
         if (The_Bossman.GetComponent<Bossman>().life <= 0 || DEBUG_End_Phase_3)
         {
+            Phase_1.SetActive(false);
+            Phase_2.SetActive(false);
             Phase_3.SetActive(false);
             End_Phase.SetActive(true);
         }

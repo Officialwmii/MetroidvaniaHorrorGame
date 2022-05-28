@@ -139,3 +139,4 @@ MonoBehaviour:
   direction: {x: 0, y: 400}
   hasHit: 0
   speed: 20
+  StunGun: 0
