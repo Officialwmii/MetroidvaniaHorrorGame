@@ -5,7 +5,13 @@ using UnityEngine;
 public class OneSidedDoor : MonoBehaviour
 {
     public GameObject Door;
+    public enum DoorType
+    {
 
+        //Resources
+        OneWayDoor, ZeroGravity
+    };
+    public DoorType doorType;
 
     // Start is called before the first frame update
     void Start()
@@ -23,10 +29,32 @@ public class OneSidedDoor : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            Destroy(Door);
-            Destroy(gameObject);
-            Debug.Log("Open door");
+            switch (doorType)
+            {
+                case DoorType.OneWayDoor:
+                    EventManager.FuelPickup();
+                    break;
+
+                case DoorType.ZeroGravity:
+                    if (EventManager.HasArmour)
+                    {
+                        Unlock();
+                    }
+                    break;
+                
+
+
+            }
 
         }
+    }
+
+
+    private void Unlock() {
+
+        Destroy(Door);
+        Destroy(gameObject);
+        Debug.Log("Open door");
+
     }
 }
