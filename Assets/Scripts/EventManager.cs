@@ -51,7 +51,8 @@ public class EventManager : MonoBehaviour
 
     static private GameObject fuelBar;
 
-    static public bool HasJetpack = true;
+    static public bool HasJetpack = false;
+    static public bool HasDoubleJetpack = false;
     static public bool HasArmour = false;
     static public bool HasRocketLauncher = false;
     static public bool HasFuelRefill = true;
@@ -271,7 +272,11 @@ public class EventManager : MonoBehaviour
     static public void CollectablePickup(){ Collectables++; }
 
     static public void AudioLogPickup() { AudioLog++; }
-    static public void GainAbilityJetpack() { HasJetpack = true; MainUpgradesAcquired++; }
+    static public void GainAbilityJetpack() {
+
+        if (HasJetpack == false) { HasJetpack = true; }
+        else { HasDoubleJetpack = true; }
+         MainUpgradesAcquired++; }
 
     static public void GainAbilityArmour() { HasArmour = true; MainUpgradesAcquired++; }
 

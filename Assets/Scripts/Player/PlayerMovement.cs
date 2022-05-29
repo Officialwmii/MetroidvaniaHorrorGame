@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour {
 			}
 		}
 		//JETPACK
-		if (Input.GetButtonDown("Jetpack"))
+		if (Input.GetButtonDown("Jetpack")&&EventManager.HasDoubleJetpack)
         {
 			holdJetpack = true;
 
