@@ -9,7 +9,7 @@ public class OneSidedDoor : MonoBehaviour
     {
 
         //Resources
-        OneWayDoor, ZeroGravity, ConstalationKey
+        OneWayDoor, ZeroGravity, ConstalationKey, Credits
     };
     public DoorType doorType;
 
@@ -42,7 +42,10 @@ public class OneSidedDoor : MonoBehaviour
                     if (EventManager.ConstalationsKeysAcquired>=3) { Unlock(); }
                     break;
 
-
+                case DoorType.Credits:
+                    EventManager.GoToCredits();
+                    break;
+                    
             }
 
         }
