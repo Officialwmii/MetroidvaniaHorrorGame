@@ -58,6 +58,7 @@ public class EventManager : MonoBehaviour
     static public bool HasFuelRefill = true;
 
     static public int MainUpgradesAcquired= 0;
+    static public int ConstalationsKeysAcquired = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -283,6 +284,12 @@ public class EventManager : MonoBehaviour
     static public void GainAbilityRocketLauncher() { HasRocketLauncher = true; MainUpgradesAcquired++; }
 
     static public void GainAbilityFuelRefill() { HasFuelRefill = true; }
+
+    static public void GainConstalationKey() { ConstalationsKeysAcquired++; }
+
+    
+
+
 
     //Danger
 

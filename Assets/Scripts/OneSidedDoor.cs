@@ -9,7 +9,7 @@ public class OneSidedDoor : MonoBehaviour
     {
 
         //Resources
-        OneWayDoor, ZeroGravity
+        OneWayDoor, ZeroGravity, ConstalationKey
     };
     public DoorType doorType;
 
@@ -36,12 +36,11 @@ public class OneSidedDoor : MonoBehaviour
                     break;
 
                 case DoorType.ZeroGravity:
-                    if (EventManager.HasArmour)
-                    {
-                        Unlock();
-                    }
+                    if (EventManager.HasArmour){ Unlock(); }
                     break;
-                
+                case DoorType.ConstalationKey:
+                    if (EventManager.ConstalationsKeysAcquired>=3) { Unlock(); }
+                    break;
 
 
             }

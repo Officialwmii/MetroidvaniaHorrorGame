@@ -16,7 +16,9 @@ public class Pickup : MonoBehaviour
         CollectablePickup, AudioLogPickup,
         
         //Ability upgrades
-        GainAbilityJetpack, GainAbilityArmour, GainAbilityRocketLauncher, GainAbilityFuelRefill
+        GainAbilityJetpack, GainAbilityArmour, GainAbilityRocketLauncher, GainAbilityFuelRefill,
+        
+        ConstalationKey
     };
     public UpgradeType upgradeType;
     // Start is called before the first frame update
@@ -81,6 +83,10 @@ public class Pickup : MonoBehaviour
                     break;
                 case UpgradeType.GainAbilityFuelRefill:
                     EventManager.GainAbilityFuelRefill();
+                    break;
+
+                case UpgradeType.ConstalationKey:
+                    EventManager.GainConstalationKey();
                     break;
 
             }
