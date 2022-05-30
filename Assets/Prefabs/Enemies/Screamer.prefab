@@ -56,8 +56,9 @@ MonoBehaviour:
     m_Bits: 0
   playerDetectable: 0
   detectionCollider: {fileID: 0}
-  detectionRange: 11
+  detectionRange: 5
   damageAmount: 1
+  onAlert: 0
   speed: 5
   isInvincible: 0
   IsScreamingEvent:
