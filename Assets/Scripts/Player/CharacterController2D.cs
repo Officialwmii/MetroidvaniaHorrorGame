@@ -39,6 +39,7 @@ public class CharacterController2D : MonoBehaviour
 	public bool DoubleJumpAbilityActive = false;
 
 	public float life = 10f; //Life of the player
+	private float startLife = 0;
 	public bool invincible = false; //If player can die
 	private bool canMove = true; //If player can move
 
@@ -49,6 +50,8 @@ public class CharacterController2D : MonoBehaviour
 	private float jumpWallStartX = 0;
 	private float jumpWallDistX = 0; //Distance between player and wall
 	private bool limitVelOnWallJump = false; //For limit wall jump distance with low fps
+
+	private GameObject StartPosition;
 
 	[Header("Events")]
 	[Space]
@@ -61,6 +64,8 @@ public class CharacterController2D : MonoBehaviour
 
 	private void Awake()
 	{
+		startLife = life;
+
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
 
@@ -387,9 +392,21 @@ public class CharacterController2D : MonoBehaviour
 		canMove = false;
 		invincible = true;
 		GetComponent<Attack>().enabled = false;
+		
 		yield return new WaitForSeconds(0.4f);
 		m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y);
+		
 		yield return new WaitForSeconds(1.1f);
-		SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+		StartPosition = GameObject.Find("StartPosition");
+		gameObject.transform.position = StartPosition.transform.position;
+		animator.SetBool("IsDead", false);
+		canMove = true;
+		invincible = false;
+		GetComponent<Attack>().enabled = true;
+		life = startLife;
+		EventManager.SetHP(life);
+
+
+		//SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
 	}
 }
