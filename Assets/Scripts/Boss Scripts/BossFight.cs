@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class BossFight : MonoBehaviour
 {
@@ -8,18 +9,23 @@ public class BossFight : MonoBehaviour
     public GameObject Phase_1;
     public GameObject Phase_2;
     public GameObject Phase_3;
+    public GameObject Phase_4;
+    public GameObject Phase_5;
+    public GameObject Phase_6;
     public GameObject End_Phase;
     public GameObject The_Bossman;
-    public bool DEBUG_End_Phase_1 = false;
-    public bool DEBUG_End_Phase_2 = false;
-    public bool DEBUG_End_Phase_3 = false;
+
 
     public GameObject BossmanHP;
 
     void Start()
     {
+        Phase_1.SetActive(false);
         Phase_2.SetActive(false);
         Phase_3.SetActive(false);
+        Phase_4.SetActive(false);
+        Phase_5.SetActive(false);
+        Phase_6.SetActive(false);
         End_Phase.SetActive(false);
         
     }
@@ -28,33 +34,44 @@ public class BossFight : MonoBehaviour
     void Update()
     {
         UpdateBossHealthMeter();
-        Phase_1.SetActive(true);
 
-        if (The_Bossman.GetComponent<Bossman>().life <= 15 || DEBUG_End_Phase_1)
+        if (The_Bossman.GetComponent<Bossman>().life <= 18)
+        {
+            
+            Phase_1.SetActive(true);
+        }
+        
+        
+        if (The_Bossman.GetComponent<Bossman>().life <= 16)
         {
             Phase_1.SetActive(false);
             Phase_2.SetActive(true);
             Phase_3.SetActive(true);
         }
 
-        if (The_Bossman.GetComponent<Bossman>().life <= 10 || DEBUG_End_Phase_2)
+        if (The_Bossman.GetComponent<Bossman>().life <= 10)
         {
             Phase_2.SetActive(false);
+            Phase_4.SetActive(true);
 
         }
 
-        if (The_Bossman.GetComponent<Bossman>().life < 5)
+        if (The_Bossman.GetComponent<Bossman>().life <= 6)
         {
-            Phase_1.SetActive(true);
-            Phase_2.SetActive(true);
+            Phase_5.SetActive(true);
+            Phase_6.SetActive(true);
             Phase_3.SetActive(false);
+            Phase_4.SetActive(false);
         }
 
-        if (The_Bossman.GetComponent<Bossman>().life <= 0 || DEBUG_End_Phase_3)
+        if (The_Bossman.GetComponent<Bossman>().life <= 0)
         {
             Phase_1.SetActive(false);
             Phase_2.SetActive(false);
             Phase_3.SetActive(false);
+            Phase_4.SetActive(false);
+            Phase_5.SetActive(false);
+            Phase_6.SetActive(false);
             End_Phase.SetActive(true);
         }
 

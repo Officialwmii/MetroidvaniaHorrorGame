@@ -22,6 +22,10 @@ public class GasDamage : MonoBehaviour
         {
             col.gameObject.GetComponent<CharacterController2D>().ApplyDamage(-1);
         }
+        else if (col.gameObject.tag == "Enemy" || col.gameObject.tag == "tilemap" || col.gameObject.tag == "Jumpthrough")
+        {
+            Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+        }
     }        
 
 
