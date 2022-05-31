@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class BossArena : MonoBehaviour
 {
@@ -10,11 +11,13 @@ public class BossArena : MonoBehaviour
     public GameObject playerCamera;
     public GameObject bossStuff;
     public GameObject BossmanHP;
+    public PlayableDirector director;
+    public GameObject BossHider;
 
 
     void Start()
     {
-        
+        BossHider.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,6 +25,8 @@ public class BossArena : MonoBehaviour
     {
         if (PlayerInArena)
         {
+            director.Play();
+            BossHider.SetActive(true);
             bossCamera.SetActive(true);
             bossStuff.SetActive(true);
             BossmanHP.SetActive(true);
@@ -34,6 +39,7 @@ public class BossArena : MonoBehaviour
             bossCamera.SetActive(false);
             bossStuff.SetActive(false);
             BossmanHP.SetActive(false);
+            BossHider.SetActive(false);
 
             playerCamera.SetActive(true);
         }
@@ -48,7 +54,11 @@ public class BossArena : MonoBehaviour
             PlayerInArena = true;           
         }
 
-        else
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
         {
             PlayerInArena = false;
         }
