@@ -14,18 +14,36 @@ public class EnemySpawner : MonoBehaviour
     public GameObject liptank;
     public GameObject infected;
     public GameObject spawnedEnemyParent;
+    public bool enemiesPresent = false;
+    [Header("Timer")]
+    public float phase_timer = 20f;
+    public float timer;
+    public float trigger_time = 5f;
 
-    void Awake()
-    {
-        spawnMonsters();
-
-    }
 
     // Update is called once per frame
-
+    private void Start()
+    {
+        timer = phase_timer;
+        spawnMonsters();
+        enemiesPresent = true;
+    }
+    private void Update()
+    {
+        timer -= Time.deltaTime;
+        if (timer <= trigger_time)
+        {
+            checkEnemies(spawnedEnemyParent.transform);
+            if (enemiesPresent == false)
+            {
+                spawnMonsters();
+                enemiesPresent = true;
+            }
+        }
+    }
     void OnDisable()
     {
-        killMonsters(spawnedEnemyParent.transform);
+
     }
 
     void spawnMonsters()
@@ -34,14 +52,16 @@ public class EnemySpawner : MonoBehaviour
         Instantiate(infected, spawner_2.transform.position, spawner_2.transform.rotation, spawnedEnemyParent.transform);
         Instantiate(infected, spawner_3.transform.position, spawner_3.transform.rotation, spawnedEnemyParent.transform);
         Instantiate(liptank, spawner_4.transform.position, spawner_4.transform.rotation, spawnedEnemyParent.transform);
-        Instantiate(infected, spawner_5.transform.position, spawner_5.transform.rotation, spawnedEnemyParent.transform);
+        Instantiate(liptank, spawner_5.transform.position, spawner_5.transform.rotation, spawnedEnemyParent.transform);
     }
 
-    void killMonsters(Transform spawnParent)
+
+
+    void checkEnemies(Transform spawnParent)
     {
-        foreach(GameObject child in spawnParent)
+        if (spawnParent.childCount == 0)
         {
-            Destroy(child);
+            enemiesPresent = false;
         }
     }
 }

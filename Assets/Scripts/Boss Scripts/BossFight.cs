@@ -34,18 +34,20 @@ public class BossFight : MonoBehaviour
         {
             Phase_1.SetActive(false);
             Phase_2.SetActive(true);
+            Phase_3.SetActive(true);
         }
 
         if (The_Bossman.GetComponent<Bossman>().life <= 10 || DEBUG_End_Phase_2)
         {
             Phase_2.SetActive(false);
-            Phase_3.SetActive(true);
+
         }
 
         if (The_Bossman.GetComponent<Bossman>().life < 5)
         {
             Phase_1.SetActive(true);
             Phase_2.SetActive(true);
+            Phase_3.SetActive(false);
         }
 
         if (The_Bossman.GetComponent<Bossman>().life <= 0 || DEBUG_End_Phase_3)
