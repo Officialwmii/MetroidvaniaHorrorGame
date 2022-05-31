@@ -1844,6 +1844,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcb6576ddec9a5c438fbec1b83e4d1be, type: 3}
+--- !u!1 &432649920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1377240496476148, guid: 50936cccdb69523458c1b42052ebafff, type: 3}
+  m_PrefabInstance: {fileID: 1306228733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &453000719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5168,10 +5173,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3491671780159908996, guid: 450f64570c81c7d4d90d4440497b4db2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3491671780159908997, guid: 450f64570c81c7d4d90d4440497b4db2, type: 3}
       propertyPath: BossHPBar
       value: 
       objectReference: {fileID: 244659877}
+    - target: {fileID: 3491671780159908998, guid: 450f64570c81c7d4d90d4440497b4db2, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491671780159908998, guid: 450f64570c81c7d4d90d4440497b4db2, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491671780159908998, guid: 450f64570c81c7d4d90d4440497b4db2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3491671780842639683, guid: 450f64570c81c7d4d90d4440497b4db2, type: 3}
       propertyPath: m_Name
       value: BossArena
@@ -5224,6 +5245,10 @@ PrefabInstance:
       propertyPath: BossmanHP
       value: 
       objectReference: {fileID: 244659877}
+    - target: {fileID: 5130599084740556883, guid: 450f64570c81c7d4d90d4440497b4db2, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 432649920}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450f64570c81c7d4d90d4440497b4db2, type: 3}
 --- !u!4 &1585445011 stripped

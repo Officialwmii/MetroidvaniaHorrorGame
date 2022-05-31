@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,9 +76,432 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_0
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3566
+        width: 310
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee82f19e275cb4499ab64dbf68161fe
+      internalID: -879033719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_1
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 3581
+        width: 144
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b802d4339e38cf42ba0b5ccab6511ac
+      internalID: -1211041810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_2
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 3566
+        width: 308
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac93c8e6cc25e7e45a11c25e5d486fa2
+      internalID: -1915290590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_3
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 3573
+        width: 284
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c300645a828f6774d860b3b5b8a3a2e2
+      internalID: 1524378254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_4
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 3562
+        width: 310
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328c9e8a57cffbd42972f68e139333eb
+      internalID: 1327201289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_5
+      rect:
+        serializedVersion: 2
+        x: 2851
+        y: 3581
+        width: 264
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233487ad656053c45a76c8307b76f524
+      internalID: 1344949186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_12
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1501
+        width: 975
+        height: 1217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1699873a8df6eec44a3c46f9a20a2c61
+      internalID: -1152371781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_13
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1771
+        width: 154
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b2577ac152aba45996a465a85a9b48
+      internalID: -625948582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_14
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 2702
+        width: 848
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7825285993c3c44a6fddbbfe644652
+      internalID: 952245511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2632
+        width: 524
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df4e9434c90306418e825b0bf49aa0b
+      internalID: 1048032933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_16
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1760
+        width: 218
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d09d68f051b43f4991674c746232513
+      internalID: -415068153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_17
+      rect:
+        serializedVersion: 2
+        x: 2902
+        y: 1812
+        width: 622
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd0f258e4cfcb943946343985c71c27
+      internalID: 1531306994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_18
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 303
+        width: 507
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8bf29e6446e0f45aa9a2dae1b49bc2
+      internalID: 528881772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_19
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 916
+        width: 420
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d5bc850afb3384395df5778713095f
+      internalID: -476226050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_20
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 614
+        width: 296
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84677980a772c79409efdd654e0cbeb8
+      internalID: 362200598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_21
+      rect:
+        serializedVersion: 2
+        x: 3518
+        y: 1148
+        width: 518
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ccca850e04b4848a254b0a16e84576
+      internalID: 890529666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_22
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 93
+        width: 170
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcbc235af161794c9849d8e11d6f760
+      internalID: 927114135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_23
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 594
+        width: 20
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec3504cfd36c9d4fbbfb3273335e051
+      internalID: -430537930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset2_boss_wall_doors_24
+      rect:
+        serializedVersion: 2
+        x: 3557
+        y: 53
+        width: 480
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d330717d38787d42905dbdabbb268f2
+      internalID: -424850774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +512,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset2_boss_wall_doors_10: 1559953767
+      Asset2_boss_wall_doors_14: 952245511
+      Asset2_boss_wall_doors_13: -625948582
+      Asset2_boss_wall_doors_5: 1344949186
+      Asset2_boss_wall_doors_9: 913876876
+      Asset2_boss_wall_doors_19: -476226050
+      Asset2_boss_wall_doors_18: 528881772
+      Asset2_boss_wall_doors_20: 362200598
+      Asset2_boss_wall_doors_7: -2110075025
+      Asset2_boss_wall_doors_6: -1235152078
+      Asset2_boss_wall_doors_24: -424850774
+      Asset2_boss_wall_doors_0: -879033719
+      Asset2_boss_wall_doors_3: 1524378254
+      Asset2_boss_wall_doors_1: -1211041810
+      Asset2_boss_wall_doors_12: -1152371781
+      Asset2_boss_wall_doors_11: 1766534121
+      Asset2_boss_wall_doors_2: -1915290590
+      Asset2_boss_wall_doors_17: 1531306994
+      Asset2_boss_wall_doors_15: 1048032933
+      Asset2_boss_wall_doors_22: 927114135
+      Asset2_boss_wall_doors_16: -415068153
+      Asset2_boss_wall_doors_8: 938110887
+      Asset2_boss_wall_doors_23: -430537930
+      Asset2_boss_wall_doors_4: 1327201289
+      Asset2_boss_wall_doors_21: 890529666
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
