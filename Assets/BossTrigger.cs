@@ -7,10 +7,12 @@ public class BossTrigger : MonoBehaviour
     // Start is called before the first frame update
     public GameObject BossStuff;
     public GameObject BossHPBar;
+
     void Start()
     {
         BossStuff.SetActive(false);
         BossHPBar.SetActive(false);
+
 
     }
 
@@ -27,6 +29,7 @@ public class BossTrigger : MonoBehaviour
 
             BossStuff.SetActive(true);
             BossHPBar.SetActive(true);
+
             Debug.Log("I fight");
 
         }
