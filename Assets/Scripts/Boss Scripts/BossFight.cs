@@ -60,7 +60,6 @@ public class BossFight : MonoBehaviour
         if (The_Bossman.GetComponent<Bossman>().life <= 60)
         {
             Phase_5.SetActive(true);
-            Phase_6.SetActive(true);
             Phase_3.SetActive(false);
             Phase_4.SetActive(false);
         }
