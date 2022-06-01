@@ -290,8 +290,15 @@ public class EventManager : MonoBehaviour
     static public void GainConstalationKey() { ConstalationsKeysAcquired++; }
 
     static public void GoToCredits() { SceneManager.LoadScene("Credits"); }
-    
 
+    static public void OnRespawning() {
+
+        if (grenades >= 0) { grenades = 1; }
+        Fuel = MaxFuel;
+
+
+
+    }
 
 
     //Danger

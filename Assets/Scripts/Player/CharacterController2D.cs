@@ -405,7 +405,7 @@ public class CharacterController2D : MonoBehaviour
 		GetComponent<Attack>().enabled = true;
 		life = startLife;
 		EventManager.SetHP(life);
-
+		EventManager.OnRespawning();
 
 		//SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
 	}
