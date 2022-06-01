@@ -29,12 +29,12 @@ public class Attack : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-		if (Input.GetButtonDown("EMP") && canAttack)
+		/*if (Input.GetButtonDown("EMP") && canAttack)
 		{
 			canAttack = false;
 			animator.SetBool("IsAttacking", true);
 			StartCoroutine(AttackCooldown());
-		}
+		}*/
 
 		if (Input.GetButtonDown("Stun") && EventManager.canUseStun == true && canAttack)
 		{
