@@ -12,7 +12,7 @@ public class EventManager : MonoBehaviour
     static private GameObject life3;
     static private GameObject life4;
 
-    static public int grenades = 2;
+    static public int grenades = 1;
     static public int MaxGrenades = 2;
 
     static public bool canUseGrenades = true;

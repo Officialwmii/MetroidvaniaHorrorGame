@@ -8,12 +8,18 @@ public class ThrowableWeapon : MonoBehaviour
 	public bool hasHit = false;
 	public float speed = 10f;
 	public bool StunGun = true;
+	public Sprite rocket;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+		if (EventManager.HasRocketLauncher) { StunGun = false; GetComponent<SpriteRenderer>().sprite = rocket; }
+		if (direction.x <= 0f) GetComponent<SpriteRenderer>().flipX = true;
+
+
+
+	}
 
     // Update is called once per frame
     void FixedUpdate()
@@ -28,7 +34,7 @@ public class ThrowableWeapon : MonoBehaviour
 		{
 
 			if(StunGun) collision.gameObject.SendMessage("Stun", 5f);
-			else collision.gameObject.SendMessage("ApplyDamage", Mathf.Sign(direction.x) * 2f);
+			else collision.gameObject.SendMessage("ApplyDamage", Mathf.Sign(direction.x) * 20f);
 
 			Destroy(gameObject);
 		}

@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ba10fdfba098a374eb6e5f50a12ed3dd, type: 3}
+  m_Sprite: {fileID: -1182595668, guid: 539f4dbf8eee9c943aa0ce96c3f96ea2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -139,4 +139,5 @@ MonoBehaviour:
   direction: {x: 0, y: 400}
   hasHit: 0
   speed: 20
-  StunGun: 0
+  StunGun: 1
+  rocket: {fileID: -1822250663, guid: 539f4dbf8eee9c943aa0ce96c3f96ea2, type: 3}
