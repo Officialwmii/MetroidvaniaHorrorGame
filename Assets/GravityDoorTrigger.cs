@@ -24,7 +24,7 @@ public class GravityDoorTrigger : MonoBehaviour
     {
         if (col.CompareTag("Player")&& EventManager.HasArmour) {
             animator.SetBool("Opening", true);
-            Debug.Log("open door");
+            //Debug.Log("open door");
 
         }
     }
