@@ -98,6 +98,8 @@ public class EventManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Cursor.visible = false;
+
         //stun cooldown
         if (StunCooldown <= 100* CooldownTime)
         {
