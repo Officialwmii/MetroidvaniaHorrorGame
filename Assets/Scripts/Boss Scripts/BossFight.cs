@@ -46,12 +46,13 @@ public class BossFight : MonoBehaviour
         {
             Phase_1.SetActive(false);
             Phase_2.SetActive(true);
-            Phase_3.SetActive(true);
+    
         }
 
         if (The_Bossman.GetComponent<Bossman>().life <= 100)
         {
             Phase_2.SetActive(false);
+            Phase_3.SetActive(true);
             Phase_4.SetActive(true);
 
         }
