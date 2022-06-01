@@ -32,7 +32,7 @@ public class OneSidedDoor : MonoBehaviour
             switch (doorType)
             {
                 case DoorType.OneWayDoor:
-                    EventManager.FuelPickup();
+                    Unlock();
                     break;
 
                 case DoorType.ZeroGravity:

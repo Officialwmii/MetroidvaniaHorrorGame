@@ -397,7 +397,7 @@ public class CharacterController2D : MonoBehaviour
 		m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y);
 		
 		yield return new WaitForSeconds(1.1f);
-		StartPosition = GameObject.Find("StartPosition");
+		StartPosition = GameObject.Find("PlayerRespawn");
 		gameObject.transform.position = StartPosition.transform.position;
 		animator.SetBool("IsDead", false);
 		canMove = true;
