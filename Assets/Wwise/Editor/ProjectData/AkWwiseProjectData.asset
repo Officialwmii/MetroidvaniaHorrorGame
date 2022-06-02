@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: b106df9e97fcad469d2318001bac9194
     GuidInternal: 
-    m_lastTime: -8585490998628503273
+    m_lastTime: -8585491641169211362
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8585490998628493298
+    m_lastTime: -8585491641169191364
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8535b56aa120c74b8c0ecf7198a0e1c6
     GuidInternal: 
-    m_lastTime: -8585490998629440767
+    m_lastTime: -8585491641171411363
     List:
     - name: 0 Gravity Room
       guid: cfd7a6d59eed854e89f0364decde63de
@@ -455,7 +455,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Credits
     guid: 5fb001664d55d44fae09e071ce986671
     GuidInternal: 
-    m_lastTime: -8585490998628603006
+    m_lastTime: -8585491641169381372
     List:
     - name: Credits_Audio
       guid: 38f2cc8e7a68164ead4e7042a069bbd8
@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d421e5cb6879fa4eadfcbf265136c428
     GuidInternal: 
-    m_lastTime: -8585490998628583051
+    m_lastTime: -8585491641169361364
     List:
     - name: Main
       guid: e460c25cd66cc24db6c79dcc7874f721
@@ -509,7 +509,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Gameplay
     guid: 12a23ba73231a2408458e4373db6e968
     GuidInternal: 
-    m_lastTime: -8585490998628573081
+    m_lastTime: -8585491641169341370
     List:
     - name: Map_Area_1
       guid: 4b1907e0ad8cd543b1e16a731b17bdd2
@@ -564,7 +564,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Main Menu
     guid: 7bb62af3b75fe34399eb941e58a5fd4e
     GuidInternal: 
-    m_lastTime: -8585490998628573081
+    m_lastTime: -8585491641169331371
     List:
     - name: Main_Menu_Audio
       guid: b7a0fe26a9d21041a2a9be46a68e70b2
@@ -592,7 +592,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 678d0dc573114b4fa4a47a1483ba6642
     GuidInternal: 
-    m_lastTime: -8585484457363673596
+    m_lastTime: -8585483761631386010
     List:
     - name: Trigger_Ambience_Intensifier
       guid: 6915f585d4113b46b3ffb589161b0bae
@@ -623,7 +623,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2620ce58e7fe1e439e677f5e73b7c0d5
     GuidInternal: 
-    m_lastTime: -8585484457363633705
+    m_lastTime: -8585483761631376012
     List:
     - name: Artifacts_Collected
       guid: 725787df55812940b7acfcedd62a0775
@@ -814,7 +814,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory Motion
     guid: 225213d7dbd1d042adc0930743567776
     GuidInternal: 
-    m_lastTime: -8585490998629809781
+    m_lastTime: -8585491641172031372
     List:
     - name: Playback_Rate
       guid: e37e38283ac11643b9c3db5c521624af
@@ -855,7 +855,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory SoundSeed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8585490998629799806
+    m_lastTime: -8585491641172021371
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -1009,7 +1009,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 4966905d63538c40b39daa3df0b3e71e
     GuidInternal: 
-    m_lastTime: -8585484457362960434
+    m_lastTime: -8585483761630845994
     List:
     - name: Floor_Type
       guid: 5b3506ebd9f25b4b86b1d3cbcdb28b9d
@@ -1267,7 +1267,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: c71ec7f5f4fb464e9445b7648d67ea2a
     GuidInternal: 
-    m_lastTime: -8585490998628533192
+    m_lastTime: -8585491641169261360
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -1281,7 +1281,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: ce5eace260d8d24196f7906556bf2569
     GuidInternal: 
-    m_lastTime: -8585484457362920546
+    m_lastTime: -8585483761630835994
     List:
     - name: Ambience_Intensifier
       guid: b5ae3e944a84714f9658293429bb509d
