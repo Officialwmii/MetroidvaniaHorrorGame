@@ -39,6 +39,7 @@ public class Pickup : MonoBehaviour
 
            // Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
             DestroyObject = true;
+            EventManager.RefillFuel();
 
             switch (upgradeType)
             {

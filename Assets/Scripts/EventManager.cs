@@ -246,6 +246,7 @@ public class EventManager : MonoBehaviour
         }
 
         UpdateGrenades();
+        RefillFuel();
     }
 
     static public void GrenadePickup()
@@ -305,6 +306,11 @@ public class EventManager : MonoBehaviour
                 Fuel = MaxFuel; 
         }
         
+        UpdateFuel();
+    }
+
+    static public void RefillFuel(){
+        Fuel = MaxFuel;
         UpdateFuel();
     }
 
