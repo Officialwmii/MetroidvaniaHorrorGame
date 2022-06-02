@@ -7,10 +7,15 @@ public class EventManager : MonoBehaviour
 {
     static public int Lives = 4;
     static public int MaxLives = 4;
+    static public int LifeShards = 0;
+
     static private GameObject life1;
     static private GameObject life2;
     static private GameObject life3;
     static private GameObject life4;
+    static private GameObject life5;
+    static private GameObject life6;
+    static private GameObject life7;
 
     static public int grenades = 1;
     static public int MaxGrenades = 2;
@@ -74,6 +79,9 @@ public class EventManager : MonoBehaviour
         life2 = GameObject.Find("HP2");
         life3 = GameObject.Find("HP3");
         life4 = GameObject.Find("HP4");
+        life5 = GameObject.Find("HP5");
+        life6 = GameObject.Find("HP6");
+        life7 = GameObject.Find("HP7");
         UpdateLives();
 
         grenade1 = GameObject.Find("grenade1");
@@ -165,8 +173,14 @@ public class EventManager : MonoBehaviour
         life2.SetActive(false);
         life3.SetActive(false);
         life4.SetActive(false);
+        life5.SetActive(false);
+        life6.SetActive(false);
+        life7.SetActive(false);
 
-        if (Lives >= 4) { life4.SetActive(true); }
+        if (Lives >= 7) { life7.SetActive(true); }
+        if (Lives == 6) { life6.SetActive(true); }
+        if (Lives == 5) { life5.SetActive(true); }
+        if (Lives == 4) { life4.SetActive(true); }
         if (Lives == 3) { life3.SetActive(true); }
         if (Lives == 2) { life2.SetActive(true); }
         if (Lives == 1) { life1.SetActive(true); }
@@ -185,6 +199,10 @@ public class EventManager : MonoBehaviour
     }
 
     static public void HealthPickup(){
+
+        LifeShards = LifeShards + 1;
+        if (LifeShards >= 3) { LifeShards = 0; MaxLives++; }
+
         Lives = Lives + 1;
         if (Lives >= MaxLives) { Lives = MaxLives; }
 
