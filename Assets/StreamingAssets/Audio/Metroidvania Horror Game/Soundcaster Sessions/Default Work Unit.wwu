@@ -1,6 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{614D3778-B11C-447A-B589-F13DC32672C0}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{614D3778-B11C-447A-B589-F13DC32672C0}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{614D3778-B11C-447A-B589-F13DC32672C0}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Player" ID="{FA984993-F042-44FB-8FBB-DCFD96D0E006}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Escape Pod Hatch Ambience Loop" ID="{B5792B25-5BF6-4DD5-BC62-96624CBC6419}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Hallway Ambience Loop" ID="{93759C70-453E-4DC7-9942-8E60164349EF}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Boss Ambience Loop" ID="{48ADBDA1-F5E7-4BD9-A8EE-C27CB72149C0}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Medbay Ambience Loop" ID="{37821992-DF49-4902-864D-B38056F842AF}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ship Hull Ambience Loop" ID="{3B0D450D-D4DB-42A3-B7F2-8245E7349377}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Warehouse Ambience Loop" ID="{6CADF69D-885E-4B5B-BF13-3B142125ACE6}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Artifacts_Collected" ID="{DF875772-8155-4029-B7AC-FCEDD62A0775}"/>
+							<Value>5</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Playback_Rate" ID="{28387EE3-C13A-4316-B9C3-DB5C521624AF}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Jetpack_Upgrade" ID="{D6C7AC7B-44B6-440B-B503-47060A2479B7}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RPM" ID="{9112AA05-F577-44FD-9F4E-4424158129E6}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Health_Bar" ID="{0DC0D2C2-19C8-4552-8625-AC5947959912}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Jetpack_Fuel" ID="{764CD0BC-123E-459D-B959-FA6512EEBA0E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Grenade_Upgrade" ID="{D8F28C1E-DAB8-4A45-BFF8-2B97DAE27953}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Gun_Upgrade" ID="{62FC1DAA-B355-4AA3-86E6-A9BE2EF6ADAC}"/>
+							<Value>4</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Gun_Cooldown" ID="{4F1F9DC8-0219-4BDD-8787-55B0F26AE476}"/>
+							<Value>4</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Bridge" ID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>
+						<CurrentSwitchRef Name="Flesh" ID="{CD70ADC4-42DF-45EA-9E0E-64255DD8EA89}"/>
+						<CurrentSwitchRef Name="Level_1" ID="{F4FEC03C-1CDD-41AF-9D6D-2249E46B5BF1}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

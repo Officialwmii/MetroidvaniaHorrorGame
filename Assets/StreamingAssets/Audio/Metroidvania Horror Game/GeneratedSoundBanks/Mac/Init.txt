@@ -1,12 +1,26 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	753405764	Story_Progression			\Default Work Unit\Story_Progression	
+	3826569560	Music_State			\Default Work Unit\Music_State	
+	4071102763	Music_Segments			\Default Work Unit\Music_Segments	
+	4071417932	Player_State			\Default Work Unit\Player_State	
 
 State	ID	Name	State Group			Notes
-	748895195	None	Story_Progression			
-	2983809730	Upgrade_4	Story_Progression			
-	2983809732	Upgrade_2	Story_Progression			
-	2983809733	Upgrade_3	Story_Progression			
-	2983809735	Upgrade_1	Story_Progression			
+	89505537	Gameplay	Music_State			
+	748895195	None	Music_State			
+	2005704188	Main_Menu	Music_State			
+	2201105581	Credits	Music_State			
+	748895195	None	Music_Segments			
+	779278001	Death	Music_Segments			
+	1281810935	Start	Music_Segments			
+	2005704188	Main_Menu	Music_Segments			
+	2201105581	Credits	Music_Segments			
+	2983809730	Upgrade_4	Music_Segments			
+	2983809732	Upgrade_2	Music_Segments			
+	2983809733	Upgrade_3	Music_Segments			
+	2983809735	Upgrade_1	Music_Segments			
+	4229539972	Escaped	Music_Segments			
+	655265632	Alive	Player_State			
+	748895195	None	Player_State			
+	2044049779	Dead	Player_State			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
@@ -31,9 +45,14 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	85412153	Ambience			\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience	
 	213475909	SFX_Bus			\Default Work Unit\Master Audio Bus\SFX_Bus	
 	573466488	Dialogue_Bus			\Default Work Unit\Master Audio Bus\Dialogue_Bus	
 	2680856269	Music_Bus			\Default Work Unit\Master Audio Bus\Music_Bus	
+	3691056935	Noise_Meter			\Default Work Unit\Master Audio Bus\Music_Bus\Noise_Meter	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3546444380	Big_Garage1	Wwise Matrix Reverb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

@@ -3,7 +3,7 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{5D906649-5363-408C-B39D-AA3DF0B3E71E}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="Story_Progression" ID="{A3E037AC-AEDB-4166-8CBA-3D6172701DEF}">
+				<StateGroup Name="Music_Segments" ID="{A3E037AC-AEDB-4166-8CBA-3D6172701DEF}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="10"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -17,19 +17,31 @@
 						<State Name="Start" ID="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}"/>
 						<State Name="Death" ID="{D2BD77C1-C492-4874-B64F-731A2756DBA9}"/>
 						<State Name="Escaped" ID="{AFB4F184-D8FD-41AC-82C4-89759F7CB2C7}"/>
+						<State Name="Main_Menu" ID="{A85775FB-DB8E-49D9-9E80-5696AB6F8977}"/>
+						<State Name="Credits" ID="{520414D3-050E-4FA3-8A2E-79DF19E28CC5}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="Floor_Type" ID="{EB06355B-F2D9-4B5B-86B1-D3CBCDB28B9D}">
+				<StateGroup Name="Music_State" ID="{D0F08B4E-1A96-41CE-BC0D-963EAB3AF519}">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="8"/>
+						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<State Name="None" ID="{475E3B2B-4BE5-4821-8094-2AF3AD6D827D}"/>
-						<State Name="Metal" ID="{C8F2D09C-834C-45C6-ACDE-CF3AC0FAFBA6}"/>
-						<State Name="Glass" ID="{39DC983A-B118-4762-BE5D-1C67AA8BF4EE}"/>
-						<State Name="Flesh" ID="{6B52BF2E-E284-4B74-9B37-E2229EDC9EE9}"/>
-						<State Name="Wood" ID="{2E877264-A0C6-4FA2-8CE4-5DF9671FB875}"/>
+						<State Name="None" ID="{4BB3579F-CBDD-4EC9-8632-BE2A52475590}"/>
+						<State Name="Main_Menu" ID="{1CE6CB78-5BBB-44D3-878E-1BE4E83038E5}"/>
+						<State Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
+						<State Name="Credits" ID="{2D795328-8802-4398-931F-C4B993FE4951}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Player_State" ID="{30D0CF07-04A9-4175-BB31-F5DF8F44B3CF}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{0F1295A8-FFFD-4165-9CF6-54B740B9372D}"/>
+						<State Name="Alive" ID="{10522CB0-52A3-4E42-B1E1-0CA2C975F816}"/>
+						<State Name="Dead" ID="{06ADB154-859F-4C89-A7A6-C67A97C7D349}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
