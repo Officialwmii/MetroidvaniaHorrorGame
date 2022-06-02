@@ -5,7 +5,7 @@ using UnityEngine;
 public class OneSidedDoor : MonoBehaviour
 {
     public GameObject Door;
-    public enum DoorType
+    public  enum DoorType
     {
 
         //Resources

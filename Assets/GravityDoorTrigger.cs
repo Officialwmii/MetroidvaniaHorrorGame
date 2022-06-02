@@ -7,6 +7,14 @@ public class GravityDoorTrigger : MonoBehaviour
     public GameObject animatorObject;
     private Animator animator;
 
+    public  enum DoorType
+    {
+
+        //Resources
+        Sector, ZeroGravity
+    };
+    public DoorType doorType;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +30,12 @@ public class GravityDoorTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player")&& EventManager.HasArmour) {
-            animator.SetBool("Opening", true);
+        if (col.CompareTag("Player") ) {
+           
+            if (doorType==DoorType.ZeroGravity && EventManager.HasArmour) animator.SetBool("Opening", true);
+            if (doorType == DoorType.Sector) animator.SetBool("Opening", true);
+
+
             //Debug.Log("open door");
 
         }
