@@ -21,6 +21,8 @@ public class Pickup : MonoBehaviour
         ConstalationKey
     };
     public UpgradeType upgradeType;
+    private bool DestroyObject; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +38,7 @@ public class Pickup : MonoBehaviour
         if (col.CompareTag("Player")) {
 
            // Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
-            Destroy(gameObject);
+            DestroyObject = true;
 
             switch (upgradeType)
             {
@@ -45,6 +47,7 @@ public class Pickup : MonoBehaviour
                     EventManager.FuelPickup();
                     break;
                 case UpgradeType.GrenadeResource:
+                    if (EventManager.grenades == EventManager.MaxGrenades) DestroyObject = false;
                     EventManager.GrenadePickup();
                     break;
                 case UpgradeType.HealthPack:
@@ -55,7 +58,7 @@ public class Pickup : MonoBehaviour
                 case UpgradeType.StunCooldown:
                     EventManager.UpgradeStunGun();
                     break;
-                case UpgradeType.MaxFuel:
+                case UpgradeType.MaxFuel: // Not used
                     EventManager.UpgradeStunGun();
                     break;
                 case UpgradeType.MaxGranade:
@@ -88,11 +91,9 @@ public class Pickup : MonoBehaviour
                 case UpgradeType.ConstalationKey:
                     EventManager.GainConstalationKey();
                     break;
-
             }
-        
 
-
+            if (DestroyObject) { Destroy(gameObject); }
 
         }
 
