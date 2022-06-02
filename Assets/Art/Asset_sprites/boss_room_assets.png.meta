@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,9 +76,369 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: boss_room_assets_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 2727
+        width: 536
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c767154c3ae5a9d4f98be68fc4dd3932
+      internalID: 279142976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_1
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 3027
+        width: 1096
+        height: 718
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d1426fb9f0c9c489c837f9d8cdc418
+      internalID: 2111952929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_2
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 3019
+        width: 1462
+        height: 782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a8c4f98dadecc41a3f59e516770eab
+      internalID: -848351366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_3
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 3008
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8a5618431d64c44bdd965371b8a6f8
+      internalID: 1708212773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_4
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 2350
+        width: 526
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4eb2952aa9bc904792aae428932cb8e
+      internalID: -1432848821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_5
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1836
+        width: 816
+        height: 802
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18028e76603b8644492a0c31fe6b4f44
+      internalID: -1627296592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_6
+      rect:
+        serializedVersion: 2
+        x: 2947
+        y: 1763
+        width: 860
+        height: 858
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97219a946afcbb438dc6e55e4103056
+      internalID: 2037421948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_7
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1871
+        width: 476
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb496900415cfd45a611e4a6f57fe5f
+      internalID: 936244436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_8
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 1843
+        width: 606
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7661e149566cda64cb4e53a0d7a81f87
+      internalID: 1047515343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_10
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1309
+        width: 1158
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c989835c9541de4a87b8d28e17b0776
+      internalID: 123020085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_11
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 968
+        width: 499
+        height: 507
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0589faff0736ee74bb95fe31c4611f2e
+      internalID: 1311468883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_12
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 1195
+        width: 774
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da1563d1bba4b14b8c186b752a74dd5
+      internalID: 985361761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 70
+        width: 1336
+        height: 895
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8727d94129b1147ba6f128d656850f
+      internalID: -684222461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_14
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 19
+        width: 578
+        height: 575
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a759db0efd9ff844a7df2f809344fd4
+      internalID: -231719119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_15
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 311
+        width: 594
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bd406e8c8b4c24ebefc2cb821d1d32
+      internalID: -1860820115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_16
+      rect:
+        serializedVersion: 2
+        x: 3471
+        y: 17
+        width: 596
+        height: 604
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f589a0734823d3946b6a34a766094df2
+      internalID: -2010707233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +449,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      boss_room_assets_1: 2111952929
+      boss_room_assets_13: -684222461
+      boss_room_assets_12: 985361761
+      boss_room_assets_15: -1860820115
+      boss_room_assets_5: -1627296592
+      boss_room_assets_9: 479427939
+      boss_room_assets_4: -1432848821
+      boss_room_assets_0: 279142976
+      boss_room_assets_6: 2037421948
+      boss_room_assets_3: 1708212773
+      boss_room_assets_2: -848351366
+      boss_room_assets_16: -2010707233
+      boss_room_assets_7: 936244436
+      boss_room_assets_10: 123020085
+      boss_room_assets_11: 1311468883
+      boss_room_assets_14: -231719119
+      boss_room_assets_8: 1047515343
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
