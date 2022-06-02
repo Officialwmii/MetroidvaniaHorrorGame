@@ -156,10 +156,10 @@ public class Enemy : MonoBehaviour {
 
 	public void Alert()
 	{
-		Debug.Log("My dad is alerting me!");
+		//Debug.Log("My dad is alerting me!");
 	}
     private void OnCollisionEnter2D(Collision2D collision)
     {
-		Debug.Log(collision.gameObject.name);
+		//Debug.Log(collision.gameObject.name);
     }
 }
