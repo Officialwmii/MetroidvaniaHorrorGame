@@ -51,7 +51,7 @@ public class EventManager : MonoBehaviour
     static private GameObject DangerLevel3Layer;
 
     static public float Fuel = 100;
-    static public float MaxFuel = 100;
+    static public float MaxFuel = 50;
     static public float DashFuelCost = 15;
     static public float EMPFuelCost = 15;
     static public bool canUseDash = true;
@@ -65,6 +65,9 @@ public class EventManager : MonoBehaviour
     static public bool HasArmour = false;
     static public bool HasRocketLauncher = false;
     static public bool HasFuelRefill = true;
+    static public int FuelRefillNumberOfUpgrades = 1;
+    static public float FuelRefillTreshold = 0.25f;
+    static public float FuelRefillSpeed = 2.5f;
 
     static public int MainUpgradesAcquired= 0;
     static public int ConstalationsKeysAcquired = 0;
@@ -140,11 +143,8 @@ public class EventManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.PageDown)){ ReduceDanger(); }
 
         //fuel refill upgrade
-        if (HasFuelRefill && Fuel < MaxFuel / 2) {
-            Fuel = Fuel + Time.deltaTime *5;
-
-            if (Fuel >= DashFuelCost) { canUseDash = true; }
-            if (Fuel >= DashFuelCost) { canUseJetpack = true; }
+        if (HasFuelRefill && (Fuel < MaxFuel * FuelRefillTreshold || Fuel<15) && CharacterController2D.m_Grounded==true) {
+            Fuel = Fuel + Time.deltaTime * FuelRefillSpeed;
             
             UpdateFuel();
         }
@@ -299,6 +299,8 @@ public class EventManager : MonoBehaviour
     static public void FuelPickup() {
 
         Fuel = Fuel + 50;
+        MaxFuel = MaxFuel + 10;
+
         canUseDash = true;
         canUseJetpack = true;
         if (Fuel >= MaxFuel)
@@ -314,7 +316,12 @@ public class EventManager : MonoBehaviour
         UpdateFuel();
     }
 
-    static public void UpdateFuel() { fuelBar.GetComponent<UnityEngine.UI.Slider>().value = Fuel/ MaxFuel; }
+    static public void UpdateFuel() {
+
+        if (Fuel >= DashFuelCost) { canUseDash = true; }
+        if (Fuel >= DashFuelCost) { canUseJetpack = true; }
+
+        fuelBar.GetComponent<UnityEngine.UI.Slider>().value = Fuel/ MaxFuel; }
     static public void CollectablePickup(){ Collectables++; }
     static public void AudioLogPickup() { AudioLog++; }
     static public void GainAbilityJetpack() {
@@ -325,7 +332,17 @@ public class EventManager : MonoBehaviour
 
     static public void GainAbilityArmour() { HasArmour = true; MainUpgradesAcquired++; }
     static public void GainAbilityRocketLauncher() { HasRocketLauncher = true; MainUpgradesAcquired++; }
-    static public void GainAbilityFuelRefill() { HasFuelRefill = true; }
+    static public void GainAbilityFuelRefill() { 
+        HasFuelRefill = true;
+        FuelRefillNumberOfUpgrades++;
+        if (FuelRefillNumberOfUpgrades == 1) { FuelRefillTreshold = 0.25f; FuelRefillSpeed = 2.5f; }
+        if (FuelRefillNumberOfUpgrades == 2) { FuelRefillTreshold = 0.33f; FuelRefillSpeed = 3.3f; }
+        if (FuelRefillNumberOfUpgrades == 3) { FuelRefillTreshold = 0.5f; FuelRefillSpeed = 5; }
+        if (FuelRefillNumberOfUpgrades == 4) { FuelRefillTreshold = 0.75f; FuelRefillSpeed = 7.5f; }
+        if (FuelRefillNumberOfUpgrades == 5) { FuelRefillTreshold = 1f; FuelRefillSpeed = 10; }
+        if (FuelRefillNumberOfUpgrades >= 6) { FuelRefillTreshold = 1f; FuelRefillSpeed = 25; }
+
+    }
     static public void GainConstalationKey() { ConstalationsKeysAcquired++; }
     static public void GoToCredits() { SceneManager.LoadScene("Credits"); }
 
