@@ -59,7 +59,7 @@ public class Pickup : MonoBehaviour
                     EventManager.UpgradeStunGun();
                     break;
                 case UpgradeType.MaxGranade:
-                    EventManager.UpgradeStunGun();
+                    EventManager.UpgradeMaxGrenade();
                     break;
 
                 //Collectable 

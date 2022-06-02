@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EventManager : MonoBehaviour
 {
     static public int Lives = 4;
-    static public int MaxLives = 10;
+    static public int MaxLives = 4;
     static private GameObject life1;
     static private GameObject life2;
     static private GameObject life3;
@@ -19,9 +19,13 @@ public class EventManager : MonoBehaviour
     static private GameObject grenade1;
     static private GameObject grenade2;
     static private GameObject grenade3;
+    static private GameObject grenade4;
+    static private GameObject grenade5;
     static private GameObject MaxGrenade1;
     static private GameObject MaxGrenade2;
     static private GameObject MaxGrenade3;
+    static private GameObject MaxGrenade4;
+    static private GameObject MaxGrenade5;
 
     static public float StunCooldown = 100;
     static public float CooldownTime = 15;
@@ -75,10 +79,14 @@ public class EventManager : MonoBehaviour
         grenade1 = GameObject.Find("grenade1");
         grenade2 = GameObject.Find("grenade2");
         grenade3 = GameObject.Find("grenade3");
+        grenade5 = GameObject.Find("grenade4");
+        grenade4 = GameObject.Find("grenade5");
 
         MaxGrenade1 = GameObject.Find("MaxGrenade1");
         MaxGrenade2 = GameObject.Find("MaxGrenade2");
         MaxGrenade3 = GameObject.Find("MaxGrenade3");
+        MaxGrenade4 = GameObject.Find("MaxGrenade4");
+        MaxGrenade5 = GameObject.Find("MaxGrenade5");
 
         UpdateGrenades();
 
@@ -166,43 +174,47 @@ public class EventManager : MonoBehaviour
     }
 
 
-    static public void SetHP(float HP)
-    {
+    static public void SetHP(float HP){
         Lives = (int) HP;
         UpdateLives();
     }
 
     static public void ReduceHP() {
-
         Lives = Lives - 1;
         UpdateLives();
     }
 
-    static public void HealthPickup()
-    {
+    static public void HealthPickup(){
         Lives = Lives + 1;
         if (Lives >= MaxLives) { Lives = MaxLives; }
 
         UpdateLives();
     }
 
-    static public void UpdateGrenades()
-    {
+    static public void UpdateGrenades(){
         MaxGrenade1.SetActive(false);
         MaxGrenade2.SetActive(false);
         MaxGrenade3.SetActive(false);
+        MaxGrenade4.SetActive(false);
+        MaxGrenade5.SetActive(false);
 
         if (MaxGrenades >= 1) { MaxGrenade1.SetActive(true); } 
         if (MaxGrenades >= 2) { MaxGrenade2.SetActive(true); }
         if (MaxGrenades >= 3) { MaxGrenade3.SetActive(true); }
+        if (MaxGrenades >= 4) { MaxGrenade4.SetActive(true); }
+        if (MaxGrenades >= 5) { MaxGrenade5.SetActive(true); }
 
         grenade1.SetActive(false);
         grenade2.SetActive(false);
         grenade3.SetActive(false);
+        grenade4.SetActive(false);
+        grenade5.SetActive(false);
 
         if (grenades >= 1) { grenade1.SetActive(true); }
         if (grenades >= 2) { grenade2.SetActive(true); }
         if (grenades >= 3) { grenade3.SetActive(true); }
+        if (grenades >= 4) { grenade4.SetActive(true); }
+        if (grenades >= 5) { grenade5.SetActive(true); }
 
     }
 
@@ -229,7 +241,10 @@ public class EventManager : MonoBehaviour
 
         UpdateGrenades();
     }
-
+    static public void UpgradeMaxGrenade() {
+        MaxGrenades++;
+        UpdateGrenades();
+    }
     static public void StartCooldown()
     {
         StunCooldown = 0f;
@@ -275,9 +290,7 @@ public class EventManager : MonoBehaviour
         UpdateFuel();
     }
 
-
-
-    static public void UpdateFuel() { fuelBar.GetComponent<UnityEngine.UI.Slider>().value = Fuel/100; }
+    static public void UpdateFuel() { fuelBar.GetComponent<UnityEngine.UI.Slider>().value = Fuel/ MaxFuel; }
     static public void CollectablePickup(){ Collectables++; }
     static public void AudioLogPickup() { AudioLog++; }
     static public void GainAbilityJetpack() {
