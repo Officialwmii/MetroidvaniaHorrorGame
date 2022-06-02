@@ -338,12 +338,12 @@ TextureImporter:
       name: Asset1_11
       rect:
         serializedVersion: 2
-        x: 1722
-        y: 1756
-        width: 934
-        height: 1160
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1759
+        y: 1990
+        width: 863
+        height: 662
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
