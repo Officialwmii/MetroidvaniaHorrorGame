@@ -13,6 +13,7 @@ public class BossArena : MonoBehaviour
     public GameObject BossmanHP;
     public PlayableDirector director;
     public GameObject BossHider;
+    public GameObject vignette;
 
 
     void Start()
@@ -30,7 +31,8 @@ public class BossArena : MonoBehaviour
             bossCamera.SetActive(true);
             bossStuff.SetActive(true);
             BossmanHP.SetActive(true);
-
+            
+            vignette.SetActive(false);
             playerCamera.SetActive(false);
         }
 
@@ -42,6 +44,7 @@ public class BossArena : MonoBehaviour
             BossHider.SetActive(false);
 
             playerCamera.SetActive(true);
+            vignette.SetActive(true);
         }
 
     }
