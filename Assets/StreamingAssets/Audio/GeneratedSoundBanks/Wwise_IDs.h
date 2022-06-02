@@ -13,25 +13,108 @@ namespace AK
 {
     namespace STATES
     {
-        namespace STORY_PROGRESSION
+        namespace MUSIC_SEGMENTS
         {
-            static const AkUniqueID GROUP = 753405764U;
+            static const AkUniqueID GROUP = 4071102763U;
 
             namespace STATE
             {
+                static const AkUniqueID CREDITS = 2201105581U;
+                static const AkUniqueID DEATH = 779278001U;
+                static const AkUniqueID ESCAPED = 4229539972U;
+                static const AkUniqueID MAIN_MENU = 2005704188U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID START = 1281810935U;
                 static const AkUniqueID UPGRADE_1 = 2983809735U;
                 static const AkUniqueID UPGRADE_2 = 2983809732U;
                 static const AkUniqueID UPGRADE_3 = 2983809733U;
                 static const AkUniqueID UPGRADE_4 = 2983809730U;
             } // namespace STATE
-        } // namespace STORY_PROGRESSION
+        } // namespace MUSIC_SEGMENTS
+
+        namespace MUSIC_STATE
+        {
+            static const AkUniqueID GROUP = 3826569560U;
+
+            namespace STATE
+            {
+                static const AkUniqueID CREDITS = 2201105581U;
+                static const AkUniqueID GAMEPLAY = 89505537U;
+                static const AkUniqueID MAIN_MENU = 2005704188U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSIC_STATE
+
+        namespace PLAYER_STATE
+        {
+            static const AkUniqueID GROUP = 4071417932U;
+
+            namespace STATE
+            {
+                static const AkUniqueID ALIVE = 655265632U;
+                static const AkUniqueID DEAD = 2044049779U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace PLAYER_STATE
 
     } // namespace STATES
 
+    namespace SWITCHES
+    {
+        namespace FLOOR_TYPE
+        {
+            static const AkUniqueID GROUP = 4168292868U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID FLESH = 1153642577U;
+                static const AkUniqueID GLASS = 2449969375U;
+                static const AkUniqueID METAL = 2473969246U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace FLOOR_TYPE
+
+        namespace NOISE_METER_LEVEL
+        {
+            static const AkUniqueID GROUP = 21751588U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID LEVEL_1 = 1290008369U;
+                static const AkUniqueID LEVEL_2 = 1290008370U;
+                static const AkUniqueID LEVEL_3 = 1290008371U;
+                static const AkUniqueID SILENT = 3160623154U;
+            } // namespace SWITCH
+        } // namespace NOISE_METER_LEVEL
+
+        namespace PLAYER_LOCATION
+        {
+            static const AkUniqueID GROUP = 3238956108U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BRIDGE = 2068062714U;
+                static const AkUniqueID ESCAPE_POD_HATCH = 2979494847U;
+                static const AkUniqueID GENERAL = 133642231U;
+                static const AkUniqueID HALLWAY = 2198133169U;
+                static const AkUniqueID MEDBAY = 2646389459U;
+                static const AkUniqueID SAFE_ROOM = 3489426920U;
+                static const AkUniqueID SHIP_HULL = 3057088135U;
+                static const AkUniqueID WAREHOUSE = 2981836174U;
+            } // namespace SWITCH
+        } // namespace PLAYER_LOCATION
+
+    } // namespace SWITCHES
+
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID ARTIFACTS_COLLECTED = 1884715346U;
+        static const AkUniqueID GRENADE_UPGRADE = 1580962308U;
+        static const AkUniqueID GUN_COOLDOWN = 3974435895U;
+        static const AkUniqueID GUN_UPGRADE = 2286992720U;
         static const AkUniqueID HEALTH_BAR = 3505704881U;
+        static const AkUniqueID JETPACK_FUEL = 3017925012U;
+        static const AkUniqueID JETPACK_UPGRADE = 4062170604U;
         static const AkUniqueID NOISE_METER = 3691056935U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID RPM = 796049864U;
@@ -46,6 +129,11 @@ namespace AK
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID AMBIENCE_INTENSIFIER = 2685934232U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {
@@ -68,13 +156,16 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID DIALOGUE_BUS = 573466488U;
         static const AkUniqueID MUSIC_BUS = 2680856269U;
+        static const AkUniqueID NOISE_METER = 3691056935U;
         static const AkUniqueID SFX_BUS = 213475909U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
+        static const AkUniqueID DEFAULT_MOTION_DEVICE = 4230635974U;
         static const AkUniqueID NO_OUTPUT = 2317455096U;
         static const AkUniqueID SYSTEM = 3859886410U;
     } // namespace AUDIO_DEVICES

@@ -16,14 +16,16 @@
 			<ShortName>Main_Menu_Audio</ShortName>
 			<Path>Main_Menu_Audio.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3607052272">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4154128032">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
+				<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience"/>
 				<AuxBus Id="213475909" Name="SFX_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus"/>
 				<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
 				<AuxBus Id="2680856269" Name="Music_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_Bus"/>
+				<AuxBus Id="3691056935" Name="Noise_Meter" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_Bus\Noise_Meter"/>
 			</IncludedAuxBusses>
 		</SoundBank>
 		<SoundBank Id="2465958038" Language="SFX" Hash="3799066445">
