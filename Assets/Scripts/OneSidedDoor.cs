@@ -32,7 +32,11 @@ public class OneSidedDoor : MonoBehaviour
             switch (doorType)
             {
                 case DoorType.OneWayDoor:
-                    Unlock();
+                    Destroy(gameObject);
+                    Door.GetComponent<Animator>().SetBool("Opening", true);
+                    Debug.Log("Open door");
+
+                    //Unlock();
                     break;
 
                 case DoorType.ZeroGravity:
@@ -56,7 +60,7 @@ public class OneSidedDoor : MonoBehaviour
 
         Destroy(Door);
         Destroy(gameObject);
-        Debug.Log("Open door");
+        //Debug.Log("Open door");
 
     }
 }
