@@ -1,0 +1,401 @@
+fileFormatVersion: 2
+guid: a6fc462f087e6914c8d529272814e86f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: teleporter_doors_2
+      rect:
+        serializedVersion: 2
+        x: 3037
+        y: 3793
+        width: 962
+        height: 218
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdce9693b500aba468beeb95bab35d77
+      internalID: 652306749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleporter_doors_4
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 3473
+        width: 702
+        height: 362
+      alignment: 9
+      pivot: {x: 0.009189655, y: 0.4909407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5f626265640ec448e21d213b3f09a9
+      internalID: 2037484137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleporter_doors_5
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 2336
+        width: 880
+        height: 1459
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed439963a7dc8f6478539e935f15ddae
+      internalID: 2036771706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleporter_doors_6
+      rect:
+        serializedVersion: 2
+        x: 3529
+        y: 2745
+        width: 60
+        height: 582
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8873a9ed9e7cf6f4c81e5ed53adf49ac
+      internalID: 1791735342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleporter_doors_7
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 2611
+        width: 634
+        height: 678
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ef48b0d97816d41ba1481b2b7cfde3
+      internalID: 2008799123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleporter_doors_9
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 2049
+        width: 1178
+        height: 280
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f06e8a37c1d7b43b6d3d412ca32bd1
+      internalID: 1281953127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleporter_doors_12
+      rect:
+        serializedVersion: 2
+        x: 3229
+        y: 1804
+        width: 851
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba8a8d242485314ba0777686fdd5183
+      internalID: 1658274948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleporter_doors_16
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 1294
+        width: 586
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e62e7db8f8c2234795856788e9ef279
+      internalID: 1790072230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleporter_doors_20
+      rect:
+        serializedVersion: 2
+        x: 3221
+        y: 897
+        width: 848
+        height: 578
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5366cf8a0611bc740be29a04319bea95
+      internalID: -293498662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleporter_doors_23
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 77
+        width: 2356
+        height: 403
+      alignment: 9
+      pivot: {x: 0.4958376, y: 0.027375668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0acdd91d562d314cbbe337ab0a92b1b
+      internalID: 993550774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleporter_doors_24
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 35
+        width: 728
+        height: 540
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b204e787ea73a4bafc20008fcf7a7e
+      internalID: 1741353807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleporter_doors_26
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 480
+        width: 1957
+        height: 637
+      alignment: 9
+      pivot: {x: 0.49895346, y: 0.18006176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2bbd6ed01bc0a41a847408114e456f
+      internalID: 496928092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      teleporter_doors_6: 1791735342
+      teleporter_doors_20: -293498662
+      teleporter_doors_5: 2036771706
+      teleporter_doors_3: -1545465213
+      teleporter_doors_13: -812573021
+      teleporter_doors_18: 1226871990
+      teleporter_doors_8: -1249053405
+      teleporter_doors_15: -801377616
+      teleporter_doors_19: -1551579477
+      teleporter_doors_11: -2050142677
+      teleporter_doors_16: 1790072230
+      teleporter_doors_12: 1658274948
+      teleporter_doors_21: -636164420
+      teleporter_doors_4: 2037484137
+      teleporter_doors_1: 1636253084
+      teleporter_doors_26: 496928092
+      teleporter_doors_23: 993550774
+      teleporter_doors_14: -669159446
+      teleporter_doors_7: 2008799123
+      teleporter_doors_2: 652306749
+      teleporter_doors_22: -936510912
+      teleporter_doors_9: 1281953127
+      teleporter_doors_17: 1694196830
+      teleporter_doors_25: -1371284061
+      teleporter_doors_0: 1576760442
+      teleporter_doors_10: -784249292
+      teleporter_doors_24: 1741353807
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
