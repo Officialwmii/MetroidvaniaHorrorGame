@@ -46,7 +46,7 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
-    void spawnMonsters()
+    public void spawnMonsters()
     {
         Instantiate(infected, spawner_1.transform.position,spawner_1.transform.rotation, spawnedEnemyParent.transform);
         Instantiate(infected, spawner_2.transform.position, spawner_2.transform.rotation, spawnedEnemyParent.transform);
