@@ -81,6 +81,14 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("QUIT");
+        //Debug.Log("QUIT");
     }
+
+    public void Respawn() {
+        
+        Resume();
+        EventManager.OnRespawning();
+
+    }
+
 }

@@ -60,6 +60,9 @@ public class EventManager : MonoBehaviour
     static public int MainUpgradesAcquired= 0;
     static public int ConstalationsKeysAcquired = 0;
 
+    static private GameObject player;
+    static private GameObject StartPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -93,6 +96,10 @@ public class EventManager : MonoBehaviour
         DangerLevel2Layer = GameObject.Find("DangerLevel2");
         DangerLevel3Layer = GameObject.Find("DangerLevel3");
         UpdateDangerLevel();
+
+        player = GameObject.Find("Player");
+        StartPosition = GameObject.Find("PlayerRespawn");
+
     }
 
     // Update is called once per frame
@@ -223,7 +230,6 @@ public class EventManager : MonoBehaviour
         UpdateGrenades();
     }
 
-
     static public void StartCooldown()
     {
         StunCooldown = 0f;
@@ -273,7 +279,6 @@ public class EventManager : MonoBehaviour
 
     static public void UpdateFuel() { fuelBar.GetComponent<UnityEngine.UI.Slider>().value = Fuel/100; }
     static public void CollectablePickup(){ Collectables++; }
-
     static public void AudioLogPickup() { AudioLog++; }
     static public void GainAbilityJetpack() {
 
@@ -282,21 +287,18 @@ public class EventManager : MonoBehaviour
          MainUpgradesAcquired++; }
 
     static public void GainAbilityArmour() { HasArmour = true; MainUpgradesAcquired++; }
-
     static public void GainAbilityRocketLauncher() { HasRocketLauncher = true; MainUpgradesAcquired++; }
-
     static public void GainAbilityFuelRefill() { HasFuelRefill = true; }
-
     static public void GainConstalationKey() { ConstalationsKeysAcquired++; }
-
     static public void GoToCredits() { SceneManager.LoadScene("Credits"); }
 
     static public void OnRespawning() {
 
-        if (grenades >= 0) { grenades = 1; }
-        Fuel = MaxFuel;
-
-
+        if (grenades <= 0) { grenades = 1; UpdateGrenades(); } 
+        Fuel = MaxFuel; UpdateFuel();
+        player.GetComponent<CharacterController2D>().ResetHealth();
+        player.transform.position = StartPosition.transform.position;
+        player.GetComponent<Animator>().SetBool("IsDead", false);
 
     }
 
@@ -313,8 +315,6 @@ public class EventManager : MonoBehaviour
     }
 
 
-
-
     static public void ReduceDanger()
     {
         CurrentDanger = CurrentDanger - 25;
@@ -324,12 +324,9 @@ public class EventManager : MonoBehaviour
         UpdateDangerLevel();
     }
 
-
     static public void UpdateDangerMeter()
     {
-
         DangerMeter.GetComponent<UnityEngine.UI.Slider>().value = CurrentDanger / 100;
-
     }
 
     static public void UpdateDangerLevel()
