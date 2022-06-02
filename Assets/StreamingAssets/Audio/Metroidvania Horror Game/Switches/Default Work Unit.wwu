@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F5C71EC7-FBF4-4E46-9445-B7648D67EA2A}" SchemaVersion="103">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{F5C71EC7-FBF4-4E46-9445-B7648D67EA2A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F5C71EC7-FBF4-4E46-9445-B7648D67EA2A}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="11"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Level_1" ID="{F4FEC03C-1CDD-41AF-9D6D-2249E46B5BF1}"/>
+						<Switch Name="Level_2" ID="{C3BC5321-68E4-4578-A6E2-8F0B08254634}"/>
+						<Switch Name="Level_3" ID="{AE0A9F69-19A5-495C-A385-7AA87E7E6571}"/>
+						<Switch Name="Silent" ID="{C0AB1866-64C3-4CF2-8BAB-5CA886D86167}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Floor_Type" ID="{1D3BEC24-73D5-47AB-9CFE-8B88EB3ABFD2}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="6"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Flesh" ID="{CD70ADC4-42DF-45EA-9E0E-64255DD8EA89}"/>
+						<Switch Name="Glass" ID="{F1CD66F8-D130-47AA-AA0F-EE512A9CEFD0}"/>
+						<Switch Name="Metal" ID="{0AE16BA4-4F92-405F-896B-E4248D5C088B}"/>
+						<Switch Name="Wood" ID="{927BBC68-E3CF-4F16-82A1-55ECD4338828}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Player_Location" ID="{FD7D4EE3-5B5E-43E3-9575-E7BA13534B41}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Escape_Pod_Hatch" ID="{D37BAE8E-3594-4C87-B4BF-1275932B2970}"/>
+						<Switch Name="Ship_Hull" ID="{2B234250-D74D-4950-BB6F-A86BC9AD8B13}"/>
+						<Switch Name="Hallway" ID="{D17888B8-CC81-44DF-B69C-D5AA10597B86}"/>
+						<Switch Name="Warehouse" ID="{85E1CCAC-95B9-4DF7-BEC0-03AFC408E5F5}"/>
+						<Switch Name="Medbay" ID="{2AAAAA8C-6E29-48FF-9C51-BC8D28F7F1F5}"/>
+						<Switch Name="General" ID="{CE0C4818-CD83-4AC4-A66E-4F0251C40A53}"/>
+						<Switch Name="Bridge" ID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>
+						<Switch Name="Safe_Room" ID="{28922E59-589F-4835-BB69-3E88FF0D5304}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

@@ -17,6 +17,128 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Music" ID="{3E5D4BDC-CD65-42A5-B08D-0A53D5809338}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{19A803B5-7F18-4545-B492-25AD0F37ED09}" ShortID="423750409">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Silent_Space_Music" ID="{FEA8C2FE-EC05-4DCD-96E3-5DE7EC78D12F}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Dialogue" ID="{A3C9D170-2277-4314-9489-D74547327C05}" ShortID="567260796">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="11"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Folder Name="Audio Logs" ID="{28ACE5C8-9754-4ADA-AF82-F65B05083E51}" ShortID="704737245">
+							<ChildrenList>
+								<Event Name="Audio_Log_1" ID="{D547DCF8-7E2F-410A-B4F8-1618F6C498EA}">
+									<ChildrenList>
+										<Action Name="" ID="{20A35016-ACE7-462B-9A6C-5B28184BAE32}" ShortID="916239541">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Audio Log Sequence 1" ID="{5C4B9CC8-2997-4435-9C0B-A1768384CDA4}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Audio_Log_2" ID="{6CB9088D-C9E8-438E-A328-E56D7BD8050D}">
+									<ChildrenList>
+										<Action Name="" ID="{A18E6056-E259-4432-91B6-AF392B3D97FF}" ShortID="389032755">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Audio Log Sequence 2" ID="{34BD2EB0-D1A4-48A5-A763-E48F48754CB9}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Audio_Log_3" ID="{862616D0-7ECD-46A2-9480-4B9F21F9D884}">
+									<ChildrenList>
+										<Action Name="" ID="{B74A3979-34F0-4931-9FD4-06110300F2D1}" ShortID="402096068">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Audio Log Sequence 3" ID="{28C6DE2E-216D-431A-BDF7-D13BFB96A30E}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Audio_Log_4" ID="{7D5C26B1-2919-4AA0-8FB3-F6DB85754A21}">
+									<ChildrenList>
+										<Action Name="" ID="{52F3209C-B855-47ED-B74C-B94EC502C33B}" ShortID="776196128">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Audio Log Sequence 4" ID="{4E2D335D-48DE-493F-B83E-C52D88345E7B}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Audio_Log_5" ID="{4A9F447A-F1F4-4ECC-A67B-70CF0F228623}">
+									<ChildrenList>
+										<Action Name="" ID="{54A5AD28-6722-40A6-9B5B-85842F4336BE}" ShortID="191581910">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Audio Log Sequence 5" ID="{B973472C-3AF9-4DB1-93C7-4F4383A9E6DF}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Audio_Log_6" ID="{C1002CD2-F1F6-4061-B72A-87D2E56093FC}">
+									<ChildrenList>
+										<Action Name="" ID="{5ADC2181-AB0E-4BB4-89FA-08970F6DD75B}" ShortID="773681934">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Audio Log Sequence 6" ID="{BE9D03C9-FA4C-44D8-9601-F2FB685928A4}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Ship AI" ID="{E4224306-80AB-447C-B88C-A8215B0CB4CD}" ShortID="16543386">
+							<ChildrenList>
+								<Event Name="Escape_Pod_Sequence" ID="{6ABEEEB9-6449-426C-A5B1-339EBB1470CA}"/>
+								<Event Name="Going_Up" ID="{E3E4CD98-03F2-415F-A74D-30635984FF12}"/>
+								<Event Name="Going_Down" ID="{309E6A28-39B5-4C6A-8BE8-655FAC7F1390}"/>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Play_Xeno_Monologue" ID="{914D9AD0-3AB8-449C-90C7-D30F5B224296}">
+							<ChildrenList>
+								<Action Name="" ID="{1F6D63E5-DFE9-447A-9CAA-E408E6E36DA8}" ShortID="824864404">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Xeno-encephalon Monologues" ID="{505D416D-A7F2-49DE-B049-32D7CBBFE72E}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Xeno_Ambience" ID="{96B99336-40F0-4827-9008-6137C5D2476D}">
+							<ChildrenList>
+								<Action Name="" ID="{958247A8-7E23-412B-939C-BD027C8E8210}" ShortID="434627977">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_16" ID="{F3F5CC75-5B28-4E60-9B6E-F43EA08FE920}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
