@@ -38,9 +38,17 @@ public class ThrowableWeapon : MonoBehaviour
 
 			Destroy(gameObject);
 		}
+		else if (collision.gameObject.tag == "Jumpthrough")
+		{
+			Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+		}
+
 		else if (collision.gameObject.tag != "Player")
 		{
 			Destroy(gameObject);
 		}
+
+		
 	}
+	
 }
