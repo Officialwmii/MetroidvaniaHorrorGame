@@ -40,10 +40,15 @@
 							</RTPCList>
 						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+							<ObjectRef Name="SFX" ID="{A6993C3C-F08B-47C7-A798-9F27B5C1EC09}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
@@ -4359,7 +4364,6 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
-													<ReferenceList/>
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
@@ -4416,7 +4420,6 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
-													<ReferenceList/>
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
@@ -6754,6 +6757,13 @@
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{9C3264A2-A273-4767-866F-3C4542277DA1}" ShortID="1062968143">
 											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3D255DB9-C6A6-4770-A827-D6D73608324C}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
 											<SegmentRef Name="Noise Meter Base" ID="{8028773D-5F6A-475D-A0AA-EC883BC83989}"/>
@@ -8516,12 +8526,14 @@
 					<ArgumentList>
 						<ArgumentRef Name="Music_State" ID="{D0F08B4E-1A96-41CE-BC0D-963EAB3AF519}"/>
 						<ArgumentRef Name="Music_Segments" ID="{A3E037AC-AEDB-4166-8CBA-3D6172701DEF}"/>
+						<ArgumentRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
 							<Path>
 								<PathElementRef Name="Main_Menu" ID="{1CE6CB78-5BBB-44D3-878E-1BE4E83038E5}"/>
 								<PathElementRef Name="Main_Menu" ID="{A85775FB-DB8E-49D9-9E80-5696AB6F8977}"/>
+								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Main Menu Music" ID="{721A6B07-AAC5-44B3-B603-E9E8DA75FE53}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>
@@ -8531,6 +8543,7 @@
 							<Path>
 								<PathElementRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
 								<PathElementRef Name="Start" ID="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}"/>
+								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Base Music" ID="{47B6AA3B-34C4-4B01-91DB-8E79DC8B0E39}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>
@@ -8540,6 +8553,7 @@
 							<Path>
 								<PathElementRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
 								<PathElementRef Name="Upgrade_1" ID="{0965315D-926D-4632-A0B6-EBE87AE73C88}"/>
+								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Story Progression 1" ID="{DE91D987-6986-4F0B-AD9D-31836E3BB62C}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>
@@ -8549,6 +8563,7 @@
 							<Path>
 								<PathElementRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
 								<PathElementRef Name="Upgrade_2" ID="{9C4CA061-AA8A-40E9-A5E1-D9627DAD6B52}"/>
+								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Story Progression 2" ID="{F2DF2EF6-87DD-4C00-86E0-9C7E305B40EE}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>
@@ -8558,6 +8573,7 @@
 							<Path>
 								<PathElementRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
 								<PathElementRef Name="Upgrade_3" ID="{62892F83-6525-4C3E-BE71-DF149C13F735}"/>
+								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Story Progression 3" ID="{CECBFD78-2F06-48EA-9625-F971EC74A0D0}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>
@@ -8567,6 +8583,7 @@
 							<Path>
 								<PathElementRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
 								<PathElementRef Name="Upgrade_4" ID="{9BB154B8-0367-467B-8F92-7B8BF7C6DA49}"/>
+								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Story Progression 4" ID="{8A2D1E8D-AA6A-4084-9337-D83FA0D9798C}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>
@@ -8576,6 +8593,7 @@
 							<Path>
 								<PathElementRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
 								<PathElementRef Name="Death" ID="{D2BD77C1-C492-4874-B64F-731A2756DBA9}"/>
+								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Death" ID="{EBA7081D-42BE-4440-B72B-41AE1C9D4C2D}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>
@@ -8585,6 +8603,7 @@
 							<Path>
 								<PathElementRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
 								<PathElementRef Name="Escaped" ID="{AFB4F184-D8FD-41AC-82C4-89759F7CB2C7}"/>
+								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Victory" ID="{8A30DF37-7E80-4EB6-A884-109E0F28F297}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>
@@ -8594,6 +8613,7 @@
 							<Path>
 								<PathElementRef Name="Credits" ID="{2D795328-8802-4398-931F-C4B993FE4951}"/>
 								<PathElementRef Name="Credits" ID="{520414D3-050E-4FA3-8A2E-79DF19E28CC5}"/>
+								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Credits Music" ID="{1DFF12E4-39EF-4A0C-9474-C126600D15DD}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>

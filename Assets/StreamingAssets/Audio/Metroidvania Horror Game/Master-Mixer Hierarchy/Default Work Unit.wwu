@@ -17,7 +17,6 @@
 							</PropertyList>
 							<ChildrenList>
 								<Bus Name="0 Gravity Room" ID="{D5A6D7CF-ED9E-4E85-89F0-364DECDE63DE}">
-									<ReferenceList/>
 									<ObjectLists/>
 								</Bus>
 								<Bus Name="Boss Room" ID="{85BF7642-FEA9-4514-8402-2BEC2727E6A5}">
@@ -27,6 +26,11 @@
 						</Folder>
 						<AuxBus Name="Music_Bus" ID="{4F6C9A99-BB92-42F9-8A87-3F5AF26A8471}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>

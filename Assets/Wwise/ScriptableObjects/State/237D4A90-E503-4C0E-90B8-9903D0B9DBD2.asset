@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Gameplay
   id: 89505537
   guid: 237D4A90-E503-4C0E-90B8-9903D0B9DBD2
-  WwiseStateGroupReference: {fileID: 0}
+  WwiseStateGroupReference: {fileID: 11400000, guid: a64a5e63981084f6db8b29935bd90342, type: 2}

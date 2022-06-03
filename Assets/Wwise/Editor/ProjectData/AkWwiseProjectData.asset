@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 8535b56aa120c74b8c0ecf7198a0e1c6
     GuidInternal: 
-    m_lastTime: -8585473715281572430
+    m_lastTime: -8585473596167653840
     List:
     - name: 0 Gravity Room
       guid: cfd7a6d59eed854e89f0364decde63de
@@ -481,7 +481,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: d421e5cb6879fa4eadfcbf265136c428
     GuidInternal: 
-    m_lastTime: -8585473665279544351
+    m_lastTime: -8585473609180022285
     List:
     - name: Main
       guid: e460c25cd66cc24db6c79dcc7874f721
@@ -2629,9 +2629,9 @@ MonoBehaviour:
         ObjectType: 14
         guid: b5ae3e944a84714f9658293429bb509d
       Path: Triggers/Default Work Unit/Ambience_Intensifier
-  ExpandedFileSystemItemIds: 010000000600000007000000080000000a0000001100000012000000160000003100000037000000390000004600000047000000
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000080000000a0000001100000012000000160000001b0000001c000000220000003100000037000000390000004600000048000000540000005d0000005e000000
   ExpandedWaapiItemIds: 010000000600000007000000080000000a0000001100000012000000160000003100000037000000390000004600000047000000
-  AutoSyncSelection: 0
+  AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 1
   CurrentPluginConfig: 
