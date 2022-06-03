@@ -28,7 +28,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-15</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Color" Type="int16" Value="2"/>
@@ -36,6 +36,13 @@
 							</PropertyList>
 							<ChildrenList>
 								<AuxBus Name="Noise_Meter" ID="{D66CBA94-3D80-4DFA-BEA8-75F58472B573}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ObjectLists/>
 								</AuxBus>
 							</ChildrenList>
@@ -43,6 +50,11 @@
 						</AuxBus>
 						<AuxBus Name="SFX_Bus" ID="{57188A7B-F96F-419C-961E-D707E2ADDEF4}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="12"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
@@ -67,6 +79,11 @@
 						</AuxBus>
 						<AuxBus Name="Dialogue_Bus" ID="{725B5DE9-3B81-4AB0-AC1B-1B1351D8620F}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>

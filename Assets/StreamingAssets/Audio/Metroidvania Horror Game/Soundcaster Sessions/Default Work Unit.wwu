@@ -120,7 +120,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Bridge" ID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>
 						<CurrentSwitchRef Name="Flesh" ID="{CD70ADC4-42DF-45EA-9E0E-64255DD8EA89}"/>
-						<CurrentSwitchRef Name="Silent" ID="{C0AB1866-64C3-4CF2-8BAB-5CA886D86167}"/>
+						<CurrentSwitchRef Name="Level_1" ID="{F4FEC03C-1CDD-41AF-9D6D-2249E46B5BF1}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
