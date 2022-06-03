@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-
+    public AudioNode subtitles;
 
     public enum UpgradeType {
 
@@ -78,7 +78,7 @@ public class Pickup : MonoBehaviour
                     EventManager.CollectablePickup();
                     break;
                 case UpgradeType.AudioLogPickup:
-                    EventManager.AudioLogPickup();
+                    EventManager.AudioLogPickup(subtitles);
                     break;
 
 

@@ -190,10 +190,16 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID AUDIO_LOGS = 183450429U;
         static const AkUniqueID DIALOGUE_BUS = 573466488U;
+        static const AkUniqueID ENEMIES = 2242381963U;
         static const AkUniqueID MUSIC_BUS = 2680856269U;
         static const AkUniqueID NOISE_METER = 3691056935U;
+        static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID SFX_BUS = 213475909U;
+        static const AkUniqueID SHIP_AI = 1779194964U;
+        static const AkUniqueID WEAPONS = 1467963052U;
+        static const AkUniqueID XENO = 3971690117U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

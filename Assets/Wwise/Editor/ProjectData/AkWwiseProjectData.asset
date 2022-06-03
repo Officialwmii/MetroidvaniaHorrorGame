@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 8535b56aa120c74b8c0ecf7198a0e1c6
     GuidInternal: 
-    m_lastTime: -8585473574634612408
+    m_lastTime: -8585473215895250012
     List:
     - name: 0 Gravity Room
       guid: cfd7a6d59eed854e89f0364decde63de
@@ -346,6 +346,26 @@ MonoBehaviour:
         ObjectType: 1
         guid: 66646291130ffc408b53f84dbc5b8fcb
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX_Bus/Ambience
+    - name: Audio_Logs
+      guid: d0a11e4ecf587047987ea06ed25c3b28
+      id: 183450429
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8535b56aa120c74b8c0ecf7198a0e1c6
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Dialogue_Bus
+        ObjectType: 1
+        guid: e95d5b72813bb04aac1b1b1351d8620f
+      - ElementName: Audio_Logs
+        ObjectType: 1
+        guid: d0a11e4ecf587047987ea06ed25c3b28
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Dialogue_Bus/Audio_Logs
     - name: Boss Room
       guid: 4276bf85a9fe144584022bec2727e6a5
       id: 1571820443
@@ -384,6 +404,26 @@ MonoBehaviour:
         ObjectType: 1
         guid: e95d5b72813bb04aac1b1b1351d8620f
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Dialogue_Bus
+    - name: Enemies
+      guid: 6f7b8cfd96e25f4b9f690b1ce2129740
+      id: 2242381963
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8535b56aa120c74b8c0ecf7198a0e1c6
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Dialogue_Bus
+        ObjectType: 1
+        guid: e95d5b72813bb04aac1b1b1351d8620f
+      - ElementName: Enemies
+        ObjectType: 1
+        guid: 6f7b8cfd96e25f4b9f690b1ce2129740
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Dialogue_Bus/Enemies
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -435,6 +475,26 @@ MonoBehaviour:
         ObjectType: 1
         guid: 94ba6cd6803dfa4dbea875f58472b573
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Music_Bus/Noise_Meter
+    - name: Player
+      guid: b735ac2d8a91d64085946dc20be8d263
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8535b56aa120c74b8c0ecf7198a0e1c6
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX_Bus
+        ObjectType: 1
+        guid: 7b8a18576ff99c41961ed707e2addef4
+      - ElementName: Player
+        ObjectType: 1
+        guid: b735ac2d8a91d64085946dc20be8d263
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX_Bus/Player
     - name: SFX_Bus
       guid: 7b8a18576ff99c41961ed707e2addef4
       id: 213475909
@@ -452,6 +512,26 @@ MonoBehaviour:
         ObjectType: 1
         guid: 7b8a18576ff99c41961ed707e2addef4
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX_Bus
+    - name: Ship_AI
+      guid: 967c58cb8c728f47a52a0444e879e9aa
+      id: 1779194964
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8535b56aa120c74b8c0ecf7198a0e1c6
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Dialogue_Bus
+        ObjectType: 1
+        guid: e95d5b72813bb04aac1b1b1351d8620f
+      - ElementName: Ship_AI
+        ObjectType: 1
+        guid: 967c58cb8c728f47a52a0444e879e9aa
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Dialogue_Bus/Ship_AI
     - name: Special Effects
       guid: 1c53bea99d878a49a0727dffd4567acc
       id: 543676676
@@ -469,6 +549,49 @@ MonoBehaviour:
         ObjectType: 4
         guid: 1c53bea99d878a49a0727dffd4567acc
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Special Effects
+    - name: Weapons
+      guid: 9ea7aca1248d984085f02cc42b1736f5
+      id: 1467963052
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8535b56aa120c74b8c0ecf7198a0e1c6
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX_Bus
+        ObjectType: 1
+        guid: 7b8a18576ff99c41961ed707e2addef4
+      - ElementName: Player
+        ObjectType: 1
+        guid: b735ac2d8a91d64085946dc20be8d263
+      - ElementName: Weapons
+        ObjectType: 1
+        guid: 9ea7aca1248d984085f02cc42b1736f5
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX_Bus/Player/Weapons
+    - name: Xeno
+      guid: b847583edc00ab4caa8a1c8059169ed5
+      id: 3971690117
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8535b56aa120c74b8c0ecf7198a0e1c6
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Dialogue_Bus
+        ObjectType: 1
+        guid: e95d5b72813bb04aac1b1b1351d8620f
+      - ElementName: Xeno
+        ObjectType: 1
+        guid: b847583edc00ab4caa8a1c8059169ed5
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Dialogue_Bus/Xeno
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     PathAndIcons:
@@ -509,7 +632,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 678d0dc573114b4fa4a47a1483ba6642
     GuidInternal: 
-    m_lastTime: -8585473715281171123
+    m_lastTime: -8585473216853143083
     List:
     - name: Alien_Artifact
       guid: b19eeb17f466c3408e4ddff15aac46a9
@@ -934,8 +1057,8 @@ MonoBehaviour:
         guid: 6c83efa9f85f104daf8fa963badcb2a6
       Path: Events/Default Work Unit/SFX/Player/Weapons/Grenade_Fire
       maxAttenuation: 0
-      maxDuration: 4.953163
-      minDuration: 2.476582
+      maxDuration: 3.564
+      minDuration: 1.782
     - name: Grenade_Freeze
       guid: b54459a9487b3842a430cab7c527288b
       id: 475568473
@@ -960,8 +1083,8 @@ MonoBehaviour:
         guid: b54459a9487b3842a430cab7c527288b
       Path: Events/Default Work Unit/SFX/Player/Weapons/Grenade_Freeze
       maxAttenuation: 0
-      maxDuration: 5.656854
-      minDuration: 2.828427
+      maxDuration: 2.049585
+      minDuration: 1.024792
     - name: Grenade_Upgrade
       guid: b73190f4a424bb4aa89864a2f896f295
       id: 1580962308
@@ -2629,7 +2752,7 @@ MonoBehaviour:
         ObjectType: 14
         guid: b5ae3e944a84714f9658293429bb509d
       Path: Triggers/Default Work Unit/Ambience_Intensifier
-  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000080000000a0000001100000012000000160000001b0000001c000000220000003100000037000000390000004600000048000000540000005d0000005e000000
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000080000000a0000001100000012000000160000001b0000001c0000002200000031000000370000003900000046000000470000004800000049000000540000005d0000005e000000
   ExpandedWaapiItemIds: 010000000600000007000000080000000a0000001100000012000000160000003100000037000000390000004600000047000000
   AutoSyncSelection: 1
   autoPopulateEnabled: 1

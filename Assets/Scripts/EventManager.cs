@@ -75,6 +75,8 @@ public class EventManager : MonoBehaviour
     static private GameObject player;
     static private GameObject StartPosition;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -323,37 +325,43 @@ public class EventManager : MonoBehaviour
 
         fuelBar.GetComponent<UnityEngine.UI.Slider>().value = Fuel/ MaxFuel; }
     static public void CollectablePickup(){ Collectables++; }
-    static public void AudioLogPickup()
+    static public void AudioLogPickup(AudioNode subtitles)
     {
         if(AudioLog == 0)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_1", player);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
         }
         else if(AudioLog == 1)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_2", player);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
         }
         else if (AudioLog == 2)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_3", player);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
         }
         else if (AudioLog == 3)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_4", player);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
         }
         else if (AudioLog == 4)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_5", player);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
         }
         else
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_6", player);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
         }
     }
 

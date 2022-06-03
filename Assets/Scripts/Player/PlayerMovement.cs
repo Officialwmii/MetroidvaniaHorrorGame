@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private bool holdJetpack = false;
 
-
+	public GameObject player;
 
     //bool dashAxis = false;
 
@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour {
 			jump = true;
 			holdJump = true;
 			startTimer = true;
+			AkSoundEngine.PostEvent("Player_Jump", player);
 		}
 
 		if (Input.GetButtonUp("Jump"))

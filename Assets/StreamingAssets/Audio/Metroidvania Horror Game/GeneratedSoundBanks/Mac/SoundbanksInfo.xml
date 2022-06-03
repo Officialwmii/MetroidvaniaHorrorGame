@@ -11,19 +11,25 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="908780949">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1827035833">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
 				<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience"/>
+				<AuxBus Id="183450429" Name="Audio_Logs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Audio_Logs"/>
 				<AuxBus Id="213475909" Name="SFX_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus"/>
 				<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+				<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+				<AuxBus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons"/>
+				<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+				<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
 				<AuxBus Id="2680856269" Name="Music_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_Bus"/>
 				<AuxBus Id="3691056935" Name="Noise_Meter" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_Bus\Noise_Meter"/>
+				<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="English(US)" Hash="3117671955">
+		<SoundBank Id="3161908922" Language="English(US)" Hash="3173215240">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
@@ -47,6 +53,10 @@
 							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_1_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="183450429" Name="Audio_Logs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Audio_Logs"/>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1201273841" Name="Audio_Log_2" ObjectPath="\Events\Default Work Unit\Dialogue\Audio Logs\Audio_Log_2" DurationType="OneShot" DurationMin="19.5" DurationMax="19.5">
 					<IncludedMemoryFiles>
@@ -59,6 +69,10 @@
 							<Path>SFX/sfx_objects_audio_log_activation_50F70E07.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="183450429" Name="Audio_Logs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Audio_Logs"/>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1201273840" Name="Audio_Log_3" ObjectPath="\Events\Default Work Unit\Dialogue\Audio Logs\Audio_Log_3" DurationType="OneShot" DurationMin="18.5" DurationMax="18.5">
 					<IncludedMemoryFiles>
@@ -71,6 +85,10 @@
 							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_3_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="183450429" Name="Audio_Logs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Audio_Logs"/>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1201273847" Name="Audio_Log_4" ObjectPath="\Events\Default Work Unit\Dialogue\Audio Logs\Audio_Log_4" DurationType="OneShot" DurationMin="21.5" DurationMax="21.5">
 					<IncludedMemoryFiles>
@@ -83,6 +101,10 @@
 							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_4_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="183450429" Name="Audio_Logs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Audio_Logs"/>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1201273846" Name="Audio_Log_5" ObjectPath="\Events\Default Work Unit\Dialogue\Audio Logs\Audio_Log_5" DurationType="OneShot" DurationMin="22.5" DurationMax="22.5">
 					<IncludedMemoryFiles>
@@ -95,6 +117,10 @@
 							<Path>SFX/sfx_objects_audio_log_activation_50F70E07.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="183450429" Name="Audio_Logs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Audio_Logs"/>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1201273845" Name="Audio_Log_6" ObjectPath="\Events\Default Work Unit\Dialogue\Audio Logs\Audio_Log_6" DurationType="OneShot" DurationMin="16.75" DurationMax="16.75">
 					<IncludedMemoryFiles>
@@ -107,6 +133,10 @@
 							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_6_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="183450429" Name="Audio_Logs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Audio_Logs"/>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1559875400" Name="Back" ObjectPath="\Events\Default Work Unit\SFX\UI\Back" DurationType="OneShot" DurationMin="1.646538" DurationMax="2.933797">
 					<IncludedMemoryFiles>
@@ -260,24 +290,35 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="45544" Name="Going_Down" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\Going_Down" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1006108075" Name="Going_Up" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\Going_Up" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="3705282092" Name="Grenade_Fire" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Grenade_Fire" DurationType="OneShot" DurationMin="2.476582" DurationMax="4.953163">
+				<Event Id="3705282092" Name="Grenade_Fire" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Grenade_Fire" DurationType="OneShot" DurationMin="1.782" DurationMax="3.564">
 					<IncludedMemoryFiles>
 						<File Id="451920883" Language="SFX">
 							<ShortName>Grenade Fire\sfx_player_grenade_fire.wav</ShortName>
-							<Path>SFX/Grenade Fire/sfx_player_grenade_fire_019E12AB.wem</Path>
+							<Path>SFX/Grenade Fire/sfx_player_grenade_fire_9AE80F30.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+						<AuxBus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="475568473" Name="Grenade_Freeze" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Grenade_Freeze" DurationType="OneShot" DurationMin="2.828427" DurationMax="5.656854">
+				<Event Id="475568473" Name="Grenade_Freeze" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Grenade_Freeze" DurationType="OneShot" DurationMin="1.024792" DurationMax="2.049585">
 					<IncludedMemoryFiles>
 						<File Id="544239192" Language="SFX">
 							<ShortName>Grenade Freeze\sfx_player_grenade_freeze.wav</ShortName>
-							<Path>SFX/Grenade Freeze/sfx_player_grenade_freeze_B10F3BB9.wem</Path>
+							<Path>SFX/Grenade Freeze/sfx_player_grenade_freeze_40FB96C6.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+						<AuxBus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1580962308" Name="Grenade_Upgrade" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Grenade_Upgrade" DurationType="OneShot" DurationMin="1." DurationMax="1.">
 					<IncludedMemoryFiles>
@@ -298,6 +339,10 @@
 							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_1_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+						<AuxBus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="4035040332" Name="Jetpack_Dash" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Jetpack_Dash" DurationType="OneShot" DurationMin="1.494364" DurationMax="1.507246">
 					<IncludedMemoryFiles>
@@ -318,6 +363,9 @@
 							<Path>SFX/Jetpack/sfx_player_jetpack_dash_1_14115FDD.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="4062170604" Name="Jetpack_Upgrade" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Jetpack_Upgrade" DurationType="OneShot" DurationMin="1." DurationMax="1.">
 					<IncludedMemoryFiles>
@@ -330,6 +378,9 @@
 							<Path>SFX/sfx_player_jetpack_upgrade_1_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3705941311" Name="Lethal_Gun_Fire" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Lethal_Gun_Fire" DurationType="OneShot" DurationMin="0.441942" DurationMax="1.414214">
 					<IncludedMemoryFiles>
@@ -350,6 +401,10 @@
 							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_4_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+						<AuxBus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3092587493" Name="Pause" ObjectPath="\Events\Default Work Unit\SFX\UI\Pause" DurationType="OneShot" DurationMin="1.435781" DurationMax="1.435781">
 					<IncludedMemoryFiles>
@@ -767,6 +822,10 @@
 							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_16_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3336051688" Name="Play_Xeno_Monologue" ObjectPath="\Events\Default Work Unit\Dialogue\Play_Xeno_Monologue" DurationType="OneShot" DurationMin="3." DurationMax="8.5">
 					<IncludedMemoryFiles>
@@ -831,6 +890,10 @@
 							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_1_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1068092414" Name="Player_Hurt" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Player_Hurt" DurationType="OneShot" DurationMin="1." DurationMax="1.">
 					<IncludedMemoryFiles>
@@ -855,6 +918,9 @@
 							<Path>SFX/Player Hurt/sfx_player_hurt_3_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1305133589" Name="Player_Jump" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Player_Jump" DurationType="OneShot" DurationMin="0.420448" DurationMax="0.594604">
 					<IncludedMemoryFiles>
@@ -863,6 +929,9 @@
 							<Path>SFX/Player Jump/sfx_player_jump_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1727584325" Name="Security_Alarm" ObjectPath="\Events\Default Work Unit\SFX\Environment\Security_Alarm" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -896,6 +965,10 @@
 							<Path>SFX/Stun Cooldown/sfx_player_stun_cooldown_complete_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+						<AuxBus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1876963445" Name="Stun_Gun_Fire" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Stun_Gun_Fire" DurationType="OneShot" DurationMin="0.662913" DurationMax="1.325825">
 					<IncludedMemoryFiles>
@@ -904,6 +977,10 @@
 							<Path>SFX/Stun Fire/sfx_player_stun_fire_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+						<AuxBus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2455087587" Name="Stun_Gun_Upgrade" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Stun_Gun_Upgrade" DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<IncludedMemoryFiles>
@@ -924,6 +1001,10 @@
 							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_4_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+						<AuxBus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="157604563" Name="Suit_Upgrade" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Suit_Upgrade" DurationType="OneShot" DurationMin="1." DurationMax="1.">
 					<IncludedMemoryFiles>
@@ -936,6 +1017,9 @@
 							<Path>SFX/Suit/sfx_player_suit_upgrade_1_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
 			<GameParameters>

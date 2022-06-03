@@ -45,10 +45,16 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience	
+	183450429	Audio_Logs			\Default Work Unit\Master Audio Bus\Dialogue_Bus\Audio_Logs	
 	213475909	SFX_Bus			\Default Work Unit\Master Audio Bus\SFX_Bus	
 	573466488	Dialogue_Bus			\Default Work Unit\Master Audio Bus\Dialogue_Bus	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\SFX_Bus\Player	
+	1467963052	Weapons			\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons	
+	1779194964	Ship_AI			\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI	
+	2242381963	Enemies			\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies	
 	2680856269	Music_Bus			\Default Work Unit\Master Audio Bus\Music_Bus	
 	3691056935	Noise_Meter			\Default Work Unit\Master Audio Bus\Music_Bus\Noise_Meter	
+	3971690117	Xeno			\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno	
 
 Effect plug-ins	ID	Name	Type				Notes
 	3546444380	Big_Garage1	Wwise Matrix Reverb			

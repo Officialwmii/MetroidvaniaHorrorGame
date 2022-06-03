@@ -19,6 +19,8 @@ public class SubtitlesText : MonoBehaviour
     public void SetSubtitle(string subtitle)
     {
         subtitleText.text = subtitle;
+
+        StartCoroutine(ClearAfterSeconds());
     }
 
     public void ClearSubtitles()
@@ -28,9 +30,9 @@ public class SubtitlesText : MonoBehaviour
         
     }
 
-    private IEnumerator ClearAfterSeconds(float duration)
+    private IEnumerator ClearAfterSeconds()
     {
-        yield return new WaitForSeconds(duration);
+        yield return new WaitForSeconds(25f);
         ClearSubtitles();
     }
 }

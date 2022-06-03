@@ -113,9 +113,9 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Credits" ID="{520414D3-050E-4FA3-8A2E-79DF19E28CC5}"/>
+						<CurrentStateRef Name="Start" ID="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}"/>
 						<CurrentStateRef Name="Alive" ID="{10522CB0-52A3-4E42-B1E1-0CA2C975F816}"/>
-						<CurrentStateRef Name="Credits" ID="{2D795328-8802-4398-931F-C4B993FE4951}"/>
+						<CurrentStateRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Bridge" ID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>

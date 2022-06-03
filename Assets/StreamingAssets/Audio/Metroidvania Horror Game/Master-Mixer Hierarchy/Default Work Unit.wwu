@@ -52,7 +52,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Color" Type="int16" Value="12"/>
@@ -63,7 +63,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -74,6 +74,21 @@
 									</ReferenceList>
 									<ObjectLists/>
 								</AuxBus>
+								<AuxBus Name="Player" ID="{2DAC35B7-918A-40D6-8594-6DC20BE8D263}">
+									<ChildrenList>
+										<AuxBus Name="Weapons" ID="{A1ACA79E-8D24-4098-85F0-2CC42B1736F5}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ObjectLists/>
+										</AuxBus>
+									</ChildrenList>
+									<ObjectLists/>
+								</AuxBus>
 							</ChildrenList>
 							<ObjectLists/>
 						</AuxBus>
@@ -81,12 +96,33 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<AuxBus Name="Ship_AI" ID="{CB587C96-728C-478F-A52A-0444E879E9AA}">
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Xeno" ID="{3E5847B8-00DC-4CAB-AA8A-1C8059169ED5}">
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Audio_Logs" ID="{4E1EA1D0-58CF-4770-987E-A06ED25C3B28}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Enemies" ID="{FD8C7B6F-E296-4B5F-9F69-0B1CE2129740}">
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
 							<ObjectLists/>
 						</AuxBus>
 					</ChildrenList>

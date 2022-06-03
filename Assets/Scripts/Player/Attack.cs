@@ -14,6 +14,7 @@ public class Attack : MonoBehaviour
 
 	public GameObject cam;
 	public GameObject Grenade;
+	public GameObject player;
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -40,6 +41,7 @@ public class Attack : MonoBehaviour
 		{
 
 			animator.SetBool("IsShooting", true);
+			AkSoundEngine.PostEvent("Stun_Gun_Fire", player);
 			EventManager.StartCooldown();
 			canAttack = false;
 			StartCoroutine(AttackCooldown());
@@ -51,6 +53,7 @@ public class Attack : MonoBehaviour
 		if (Input.GetButtonDown("Grenade") && EventManager.grenades>0)
 		{
 			EventManager.UseGrenades();
+			AkSoundEngine.PostEvent("Grenade_Freeze", Grenade);
 			animator.SetBool("IsThrowingGrenade", true);
 
 			GameObject Grenade2 = Instantiate(Grenade, transform.position + new Vector3(transform.localScale.x * 0.5f, -0.2f), Quaternion.identity) as GameObject;
