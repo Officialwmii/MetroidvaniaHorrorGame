@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb08f29e2aae4016abb85ee54b66c1b, type: 3}
+  m_Name: 7D5C26B1-2919-4AA0-8FB3-F6DB85754A21
+  m_EditorClassIdentifier: 
+  objectName: Audio_Log_4
+  id: 1201273847
+  guid: 7D5C26B1-2919-4AA0-8FB3-F6DB85754A21

@@ -33,7 +33,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Artifacts_Collected" ID="{DF875772-8155-4029-B7AC-FCEDD62A0775}"/>
-							<Value>5</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
@@ -45,7 +45,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Jetpack_Upgrade" ID="{D6C7AC7B-44B6-440B-B503-47060A2479B7}"/>
-							<Value>2</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
@@ -65,7 +65,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Jetpack_Fuel" ID="{764CD0BC-123E-459D-B959-FA6512EEBA0E}"/>
-							<Value>50</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
@@ -89,11 +89,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Gun_Upgrade" ID="{62FC1DAA-B355-4AA3-86E6-A9BE2EF6ADAC}"/>
-							<Value>4</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Gun_Cooldown" ID="{4F1F9DC8-0219-4BDD-8787-55B0F26AE476}"/>
-							<Value>4</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
@@ -101,7 +101,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}"/>
-							<Value>100</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
@@ -112,11 +112,15 @@
 							<Value>50</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{6448DD6C-28B5-415A-8353-F77F06597E06}"/>
+						<CurrentStateRef Name="None" ID="{0F1295A8-FFFD-4165-9CF6-54B740B9372D}"/>
+						<CurrentStateRef Name="None" ID="{4BB3579F-CBDD-4EC9-8632-BE2A52475590}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Bridge" ID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>
 						<CurrentSwitchRef Name="Flesh" ID="{CD70ADC4-42DF-45EA-9E0E-64255DD8EA89}"/>
-						<CurrentSwitchRef Name="Level_1" ID="{F4FEC03C-1CDD-41AF-9D6D-2249E46B5BF1}"/>
+						<CurrentSwitchRef Name="Silent" ID="{C0AB1866-64C3-4CF2-8BAB-5CA886D86167}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

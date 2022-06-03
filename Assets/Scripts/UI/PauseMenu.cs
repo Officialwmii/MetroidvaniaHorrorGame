@@ -14,6 +14,8 @@ public class PauseMenu : MonoBehaviour
     MenuInputModule MIAMComp;
     EventSystem eSystemComponent;
 
+    public UISounds pauseMenuSounds;
+
     void Start()
     {
         eventSystemObject = GameObject.Find("EventSystem");
@@ -28,10 +30,12 @@ public class PauseMenu : MonoBehaviour
             if (GameIsPaused)
             {
                 Resume();
+                pauseMenuSounds.BackSound();
             }
             else
             {
                 Pause();
+                pauseMenuSounds.PauseSound();
             }
         }
     }

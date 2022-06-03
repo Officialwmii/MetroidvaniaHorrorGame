@@ -6,6 +6,8 @@ public class ElevatorEntrance : MonoBehaviour
 {
 
     public GameObject EndDestination;
+    public GameObject player;
+    public AK.Wwise.Event Elevator_Up;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,8 @@ public class ElevatorEntrance : MonoBehaviour
         {
 
             col.transform.position = EndDestination.transform.position;
-            //Debug.Log("Elevator activated");        
+            //Debug.Log("Elevator activated");
+            Elevator_Up.Post(player);
         }
     }
 }

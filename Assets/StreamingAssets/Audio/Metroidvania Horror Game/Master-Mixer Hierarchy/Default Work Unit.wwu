@@ -17,11 +17,7 @@
 							</PropertyList>
 							<ChildrenList>
 								<Bus Name="0 Gravity Room" ID="{D5A6D7CF-ED9E-4E85-89F0-364DECDE63DE}">
-									<ReferenceList>
-										<Reference Name="Effect0" PluginName="iZotope Trash Filters" CompanyID="259" PluginID="6" PluginType="3">
-											<ObjectRef Name="Lo_Pass_500Hz" ID="{2D6C0828-CEF7-4377-BE3C-39677CC3DFA2}" WorkUnitID="{69E63F95-6DEA-446E-9EE0-8683389E45B4}"/>
-										</Reference>
-									</ReferenceList>
+									<ReferenceList/>
 									<ObjectLists/>
 								</Bus>
 								<Bus Name="Boss Room" ID="{85BF7642-FEA9-4514-8402-2BEC2727E6A5}">
@@ -51,7 +47,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -73,14 +69,6 @@
 							<ObjectLists/>
 						</AuxBus>
 					</ChildrenList>
-					<ObjectLists/>
-				</Bus>
-				<Bus Name="Motion Factory Bus" ID="{2AF9B9C6-6EF1-46E9-B5F2-E30C9E602C74}">
-					<ReferenceList>
-						<Reference Name="AudioDevice">
-							<ObjectRef Name="Default_Motion_Device" ID="{9F485453-BEFA-4605-93B3-81FC2236DE8C}" WorkUnitID="{9BF964A0-3E95-4DCB-BA78-D700D115BC0B}"/>
-						</Reference>
-					</ReferenceList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

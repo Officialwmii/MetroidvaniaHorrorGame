@@ -11,12 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1054688183" Language="SFX" Hash="576066711">
-			<ObjectPath>\SoundBanks\Main Menu\Main_Menu_Audio</ObjectPath>
-			<ShortName>Main_Menu_Audio</ShortName>
-			<Path>Main_Menu_Audio.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4154128032">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1838473293">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -28,30 +23,911 @@
 				<AuxBus Id="3691056935" Name="Noise_Meter" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_Bus\Noise_Meter"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2465958038" Language="SFX" Hash="3799066445">
-			<ObjectPath>\SoundBanks\Credits\Credits_Audio</ObjectPath>
-			<ShortName>Credits_Audio</ShortName>
-			<Path>Credits_Audio.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1077138683">
+		<SoundBank Id="3161908922" Language="English(US)" Hash="2235139504">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
-			<Path>Main.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="3558846592" Language="SFX" Hash="3062193671">
-			<ObjectPath>\SoundBanks\Gameplay\Map_Area_2</ObjectPath>
-			<ShortName>Map_Area_2</ShortName>
-			<Path>Map_Area_2.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="3558846593" Language="SFX" Hash="1758866869">
-			<ObjectPath>\SoundBanks\Gameplay\Map_Area_3</ObjectPath>
-			<ShortName>Map_Area_3</ShortName>
-			<Path>Map_Area_3.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="3558846595" Language="SFX" Hash="1683630175">
-			<ObjectPath>\SoundBanks\Gameplay\Map_Area_1</ObjectPath>
-			<ShortName>Map_Area_1</ShortName>
-			<Path>Map_Area_1.bnk</Path>
+			<Path>English(US)/Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="708294615" Name="Alien_Artifact" ObjectPath="\Events\Default Work Unit\SFX\Alien_Artifact" DurationType="OneShot" DurationMin="6.089357" DurationMax="14.483012">
+					<IncludedMemoryFiles>
+						<File Id="182519293" Language="SFX">
+							<ShortName>sfx_objects_alien_artifact.wav</ShortName>
+							<Path>SFX/sfx_objects_alien_artifact_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1201273842" Name="Audio_Log_1" ObjectPath="\Events\Default Work Unit\Dialogue\Audio Logs\Audio_Log_1" DurationType="OneShot" DurationMin="20.5" DurationMax="20.5">
+					<IncludedMemoryFiles>
+						<File Id="552029135" Language="SFX">
+							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
+							<Path>SFX/sfx_objects_audio_log_activation_E659F634.wem</Path>
+						</File>
+						<File Id="669252164" Language="English(US)">
+							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_1.wav</ShortName>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1201273841" Name="Audio_Log_2" ObjectPath="\Events\Default Work Unit\Dialogue\Audio Logs\Audio_Log_2" DurationType="OneShot" DurationMin="19.5" DurationMax="19.5">
+					<IncludedMemoryFiles>
+						<File Id="245107331" Language="English(US)">
+							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_2.wav</ShortName>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_2_10C4C929.wem</Path>
+						</File>
+						<File Id="552029135" Language="SFX">
+							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
+							<Path>SFX/sfx_objects_audio_log_activation_E659F634.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1201273840" Name="Audio_Log_3" ObjectPath="\Events\Default Work Unit\Dialogue\Audio Logs\Audio_Log_3" DurationType="OneShot" DurationMin="18.5" DurationMax="18.5">
+					<IncludedMemoryFiles>
+						<File Id="552029135" Language="SFX">
+							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
+							<Path>SFX/sfx_objects_audio_log_activation_E659F634.wem</Path>
+						</File>
+						<File Id="582800018" Language="English(US)">
+							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_3.wav</ShortName>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1201273847" Name="Audio_Log_4" ObjectPath="\Events\Default Work Unit\Dialogue\Audio Logs\Audio_Log_4" DurationType="OneShot" DurationMin="21.5" DurationMax="21.5">
+					<IncludedMemoryFiles>
+						<File Id="552029135" Language="SFX">
+							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
+							<Path>SFX/sfx_objects_audio_log_activation_E659F634.wem</Path>
+						</File>
+						<File Id="744198633" Language="English(US)">
+							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_4.wav</ShortName>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1201273846" Name="Audio_Log_5" ObjectPath="\Events\Default Work Unit\Dialogue\Audio Logs\Audio_Log_5" DurationType="OneShot" DurationMin="22.5" DurationMax="22.5">
+					<IncludedMemoryFiles>
+						<File Id="304362184" Language="English(US)">
+							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_5.wav</ShortName>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_5_10C4C929.wem</Path>
+						</File>
+						<File Id="552029135" Language="SFX">
+							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
+							<Path>SFX/sfx_objects_audio_log_activation_E659F634.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1201273845" Name="Audio_Log_6" ObjectPath="\Events\Default Work Unit\Dialogue\Audio Logs\Audio_Log_6" DurationType="OneShot" DurationMin="16.75" DurationMax="16.75">
+					<IncludedMemoryFiles>
+						<File Id="552029135" Language="SFX">
+							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
+							<Path>SFX/sfx_objects_audio_log_activation_E659F634.wem</Path>
+						</File>
+						<File Id="1061363470" Language="English(US)">
+							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_6.wav</ShortName>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1559875400" Name="Back" ObjectPath="\Events\Default Work Unit\SFX\UI\Back" DurationType="OneShot" DurationMin="1.646538" DurationMax="2.933797">
+					<IncludedMemoryFiles>
+						<File Id="969567069" Language="SFX">
+							<ShortName>ui_back.wav</ShortName>
+							<Path>SFX/ui_back_2A44EC3E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2896864154" Name="Elevator_Down" ObjectPath="\Events\Default Work Unit\SFX\Environment\Elevator_Down" DurationType="OneShot" DurationMin="3.888472" DurationMax="3.888472">
+					<IncludedMemoryFiles>
+						<File Id="959127739" Language="SFX">
+							<ShortName>Elevator\sfx_environment_elevator.wav</ShortName>
+							<Path>SFX/Elevator/sfx_environment_elevator_F38CC47E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1077976377" Name="Elevator_Up" ObjectPath="\Events\Default Work Unit\SFX\Environment\Elevator_Up" DurationType="OneShot" DurationMin="1.648758" DurationMax="1.648758">
+					<IncludedMemoryFiles>
+						<File Id="697570722" Language="SFX">
+							<ShortName>Elevator\sfx_environment_elevator.wav</ShortName>
+							<Path>SFX/Elevator/sfx_environment_elevator_EC91CC2B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1157753940" Name="Escape_Pod_Sequence" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\Escape_Pod_Sequence" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Footsteps" DurationType="OneShot" DurationMin="0.353553" DurationMax="1.06066">
+					<IncludedMemoryFiles>
+						<File Id="12323694" Language="SFX">
+							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_3.wav</ShortName>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_3_10C4C929.wem</Path>
+						</File>
+						<File Id="84080864" Language="SFX">
+							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_5.wav</ShortName>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_5_10C4C929.wem</Path>
+						</File>
+						<File Id="212270525" Language="SFX">
+							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_7.wav</ShortName>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_7_10C4C929.wem</Path>
+						</File>
+						<File Id="263022152" Language="SFX">
+							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_4.wav</ShortName>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_4_10C4C929.wem</Path>
+						</File>
+						<File Id="266786222" Language="SFX">
+							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_1.wav</ShortName>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_1_10C4C929.wem</Path>
+						</File>
+						<File Id="324224561" Language="SFX">
+							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_2.wav</ShortName>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_2_10C4C929.wem</Path>
+						</File>
+						<File Id="346768803" Language="SFX">
+							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_2.wav</ShortName>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_2_10C4C929.wem</Path>
+						</File>
+						<File Id="388289992" Language="SFX">
+							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_3.wav</ShortName>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_3_10C4C929.wem</Path>
+						</File>
+						<File Id="499182671" Language="SFX">
+							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_6.wav</ShortName>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_6_10C4C929.wem</Path>
+						</File>
+						<File Id="543710671" Language="SFX">
+							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_8.wav</ShortName>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_8_10C4C929.wem</Path>
+						</File>
+						<File Id="699641404" Language="SFX">
+							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_3.wav</ShortName>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_3_10C4C929.wem</Path>
+						</File>
+						<File Id="702327265" Language="SFX">
+							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_4.wav</ShortName>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_4_10C4C929.wem</Path>
+						</File>
+						<File Id="728264653" Language="SFX">
+							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_1.wav</ShortName>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_1_10C4C929.wem</Path>
+						</File>
+						<File Id="770339308" Language="SFX">
+							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_2.wav</ShortName>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_2_10C4C929.wem</Path>
+						</File>
+						<File Id="777501039" Language="SFX">
+							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_4.wav</ShortName>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_4_10C4C929.wem</Path>
+						</File>
+						<File Id="820693115" Language="SFX">
+							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_1.wav</ShortName>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_1_10C4C929.wem</Path>
+						</File>
+						<File Id="945543423" Language="SFX">
+							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_3.wav</ShortName>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_3_10C4C929.wem</Path>
+						</File>
+						<File Id="951515435" Language="SFX">
+							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_5.wav</ShortName>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_5_10C4C929.wem</Path>
+						</File>
+						<File Id="1007650402" Language="SFX">
+							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_1.wav</ShortName>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1013508017" Language="SFX">
+							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_2.wav</ShortName>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_2_10C4C929.wem</Path>
+						</File>
+						<File Id="1053989945" Language="SFX">
+							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_4.wav</ShortName>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{0AE16BA4-4F92-405F-896B-E4248D5C088B}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{927BBC68-E3CF-4F16-82A1-55ECD4338828}">
+							<Media>
+								<File Id="324224561"/>
+								<File Id="388289992"/>
+								<File Id="728264653"/>
+								<File Id="777501039"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0AE16BA4-4F92-405F-896B-E4248D5C088B}">
+							<Media>
+								<File Id="263022152"/>
+								<File Id="699641404"/>
+								<File Id="770339308"/>
+								<File Id="820693115"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{CD70ADC4-42DF-45EA-9E0E-64255DD8EA89}">
+							<Media>
+								<File Id="12323694"/>
+								<File Id="84080864"/>
+								<File Id="212270525"/>
+								<File Id="499182671"/>
+								<File Id="543710671"/>
+								<File Id="1007650402"/>
+								<File Id="1013508017"/>
+								<File Id="1053989945"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F1CD66F8-D130-47AA-AA0F-EE512A9CEFD0}">
+							<Media>
+								<File Id="266786222"/>
+								<File Id="346768803"/>
+								<File Id="702327265"/>
+								<File Id="945543423"/>
+								<File Id="951515435"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="45544" Name="Going_Down" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\Going_Down" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1006108075" Name="Going_Up" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\Going_Up" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3705282092" Name="Grenade_Fire" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Grenade_Fire" DurationType="OneShot" DurationMin="2.476582" DurationMax="4.953163">
+					<IncludedMemoryFiles>
+						<File Id="451920883" Language="SFX">
+							<ShortName>Grenade Fire\sfx_player_grenade_fire.wav</ShortName>
+							<Path>SFX/Grenade Fire/sfx_player_grenade_fire_E8DA3F30.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="475568473" Name="Grenade_Freeze" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Grenade_Freeze" DurationType="OneShot" DurationMin="2.828427" DurationMax="5.656854">
+					<IncludedMemoryFiles>
+						<File Id="544239192" Language="SFX">
+							<ShortName>Grenade Freeze\sfx_player_grenade_freeze.wav</ShortName>
+							<Path>SFX/Grenade Freeze/sfx_player_grenade_freeze_7752D266.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1580962308" Name="Grenade_Upgrade" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Grenade_Upgrade" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="110542236" Language="SFX">
+							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_2.wav</ShortName>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_2_10C4C929.wem</Path>
+						</File>
+						<File Id="333313522" Language="SFX">
+							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_4.wav</ShortName>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_4_10C4C929.wem</Path>
+						</File>
+						<File Id="715858962" Language="SFX">
+							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_3.wav</ShortName>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_3_10C4C929.wem</Path>
+						</File>
+						<File Id="805806231" Language="SFX">
+							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_1.wav</ShortName>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4035040332" Name="Jetpack_Dash" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Jetpack_Dash" DurationType="OneShot" DurationMin="1.494364" DurationMax="1.507246">
+					<IncludedMemoryFiles>
+						<File Id="127882654" Language="SFX">
+							<ShortName>Jetpack\sfx_player_jetpack_dash_4.wav</ShortName>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_4_0B7315B7.wem</Path>
+						</File>
+						<File Id="213843341" Language="SFX">
+							<ShortName>Jetpack\sfx_player_jetpack_dash_2.wav</ShortName>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_2_2780EBB7.wem</Path>
+						</File>
+						<File Id="882463319" Language="SFX">
+							<ShortName>Jetpack\sfx_player_jetpack_dash_3.wav</ShortName>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_3_9AEA7716.wem</Path>
+						</File>
+						<File Id="1063171889" Language="SFX">
+							<ShortName>Jetpack\sfx_player_jetpack_dash_1.wav</ShortName>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_1_FBCE505A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4062170604" Name="Jetpack_Upgrade" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Jetpack_Upgrade" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="514305692" Language="SFX">
+							<ShortName>sfx_player_jetpack_upgrade_2.wav</ShortName>
+							<Path>SFX/sfx_player_jetpack_upgrade_2_10C4C929.wem</Path>
+						</File>
+						<File Id="1020952662" Language="SFX">
+							<ShortName>sfx_player_jetpack_upgrade_1.wav</ShortName>
+							<Path>SFX/sfx_player_jetpack_upgrade_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3705941311" Name="Lethal_Gun_Fire" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Lethal_Gun_Fire" DurationType="OneShot" DurationMin="0.441942" DurationMax="1.414214">
+					<IncludedMemoryFiles>
+						<File Id="183375381" Language="SFX">
+							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_2.wav</ShortName>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_2_10C4C929.wem</Path>
+						</File>
+						<File Id="722421037" Language="SFX">
+							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_1.wav</ShortName>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_1_10C4C929.wem</Path>
+						</File>
+						<File Id="811209880" Language="SFX">
+							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_3.wav</ShortName>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_3_10C4C929.wem</Path>
+						</File>
+						<File Id="885199976" Language="SFX">
+							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_4.wav</ShortName>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3092587493" Name="Pause" ObjectPath="\Events\Default Work Unit\SFX\UI\Pause" DurationType="OneShot" DurationMin="1.435781" DurationMax="1.435781">
+					<IncludedMemoryFiles>
+						<File Id="648292605" Language="SFX">
+							<ShortName>ui_pause.wav</ShortName>
+							<Path>SFX/ui_pause_C0042753.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Play_Ambience" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="6329621" Language="SFX">
+							<ShortName>sfx_ambience_ship_hull.wav</ShortName>
+							<Path>SFX/sfx_ambience_ship_hull_D79FB2B7.wem</Path>
+						</File>
+						<File Id="419453379" Language="SFX">
+							<ShortName>sfx_ambience_med_bay.wav</ShortName>
+							<Path>SFX/sfx_ambience_med_bay_10C4C929.wem</Path>
+						</File>
+						<File Id="575244914" Language="SFX">
+							<ShortName>sfx_ambience_warehouse.wav</ShortName>
+							<Path>SFX/sfx_ambience_warehouse_10C4C929.wem</Path>
+						</File>
+						<File Id="615095720" Language="SFX">
+							<ShortName>sfx_ambience_boss.wav</ShortName>
+							<Path>SFX/sfx_ambience_boss_10C4C929.wem</Path>
+						</File>
+						<File Id="827298294" Language="SFX">
+							<ShortName>sfx_ambience_hallway.wav</ShortName>
+							<Path>SFX/sfx_ambience_hallway_10C4C929.wem</Path>
+						</File>
+						<File Id="871992041" Language="SFX">
+							<ShortName>sfx_ambience_escape_pod_hatch.wav</ShortName>
+							<Path>SFX/sfx_ambience_escape_pod_hatch_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{D37BAE8E-3594-4C87-B4BF-1275932B2970}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}">
+							<Media>
+								<File Id="615095720"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2B234250-D74D-4950-BB6F-A86BC9AD8B13}">
+							<Media>
+								<File Id="6329621"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2AAAAA8C-6E29-48FF-9C51-BC8D28F7F1F5}">
+							<Media>
+								<File Id="419453379"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D37BAE8E-3594-4C87-B4BF-1275932B2970}">
+							<Media>
+								<File Id="871992041"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{85E1CCAC-95B9-4DF7-BEC0-03AFC408E5F5}">
+							<Media>
+								<File Id="575244914"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D17888B8-CC81-44DF-B69C-D5AA10597B86}">
+							<Media>
+								<File Id="827298294"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="21019540" Language="SFX">
+							<ShortName>Progression_1_2_M1-49.wav</ShortName>
+							<Path>SFX/Progression_1_2_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="30339314" Language="SFX">
+							<ShortName>Base_Layer_1_M1-49.wav</ShortName>
+							<Path>SFX/Base_Layer_1_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="61499553" Language="SFX">
+							<ShortName>Victory_Stinger_Ending_7_M49-53.wav</ShortName>
+							<Path>SFX/Victory_Stinger_Ending_7_M49-53_D79FB2B7.wem</Path>
+						</File>
+						<File Id="84063088" Language="SFX">
+							<ShortName>Victory_Stinger_Ending_1_M49-53.wav</ShortName>
+							<Path>SFX/Victory_Stinger_Ending_1_M49-53_D79FB2B7.wem</Path>
+						</File>
+						<File Id="96754927" Language="SFX">
+							<ShortName>Victory_Stinger_Ending_9_M49-53.wav</ShortName>
+							<Path>SFX/Victory_Stinger_Ending_9_M49-53_D79FB2B7.wem</Path>
+						</File>
+						<File Id="112016936" Language="SFX">
+							<ShortName>Victory_Stinger_Ending_3_M49-53.wav</ShortName>
+							<Path>SFX/Victory_Stinger_Ending_3_M49-53_D79FB2B7.wem</Path>
+						</File>
+						<File Id="115879475" Language="SFX">
+							<ShortName>Victory_Stinger_Ending_2_M49-53.wav</ShortName>
+							<Path>SFX/Victory_Stinger_Ending_2_M49-53_D79FB2B7.wem</Path>
+						</File>
+						<File Id="131762784" Language="SFX">
+							<ShortName>Victory_Stinger_Ending_5_M49-53.wav</ShortName>
+							<Path>SFX/Victory_Stinger_Ending_5_M49-53_D79FB2B7.wem</Path>
+						</File>
+						<File Id="135272103" Language="SFX">
+							<ShortName>Noise_Meter_Layer_1_1_M1-5.wav</ShortName>
+							<Path>SFX/Noise_Meter_Layer_1_1_M1-5_D79FB2B7.wem</Path>
+						</File>
+						<File Id="143207839" Language="SFX">
+							<ShortName>Progression_4_1_M1-49.wav</ShortName>
+							<Path>SFX/Progression_4_1_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="153984511" Language="SFX">
+							<ShortName>Noise_Meter_Layer_2_1_M1-5.wav</ShortName>
+							<Path>SFX/Noise_Meter_Layer_2_1_M1-5_D79FB2B7.wem</Path>
+						</File>
+						<File Id="154343532" Language="SFX">
+							<ShortName>Base_Layer_2_M1-49.wav</ShortName>
+							<Path>SFX/Base_Layer_2_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="277084804" Language="SFX">
+							<ShortName>Victory_Stinger_Ending_4_M49-53.wav</ShortName>
+							<Path>SFX/Victory_Stinger_Ending_4_M49-53_D79FB2B7.wem</Path>
+						</File>
+						<File Id="343590361" Language="SFX">
+							<ShortName>Death_Stinger_Ending_Prog_4_2_M61-65.wav</ShortName>
+							<Path>SFX/Death_Stinger_Ending_Prog_4_2_M61-65_D79FB2B7.wem</Path>
+						</File>
+						<File Id="352765779" Language="SFX">
+							<ShortName>Base_Layer_4_M1-49.wav</ShortName>
+							<Path>SFX/Base_Layer_4_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="361788286" Language="SFX">
+							<ShortName>Progression_2_1_M1-49.wav</ShortName>
+							<Path>SFX/Progression_2_1_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="386364663" Language="SFX">
+							<ShortName>Death_Stinger_Ending_Base_4_M61-65.wav</ShortName>
+							<Path>SFX/Death_Stinger_Ending_Base_4_M61-65_D79FB2B7.wem</Path>
+						</File>
+						<File Id="477173057" Language="SFX">
+							<ShortName>Death_Stinger_Ending_Base_2_M61-65.wav</ShortName>
+							<Path>SFX/Death_Stinger_Ending_Base_2_M61-65_D79FB2B7.wem</Path>
+						</File>
+						<File Id="480705699" Language="SFX">
+							<ShortName>Progression_2_2_M1-49.wav</ShortName>
+							<Path>SFX/Progression_2_2_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="544080710" Language="SFX">
+							<ShortName>Progression_1_1_M1-49.wav</ShortName>
+							<Path>SFX/Progression_1_1_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="552505700" Language="SFX">
+							<ShortName>Death_Stinger_Ending_Base_1_M61-65.wav</ShortName>
+							<Path>SFX/Death_Stinger_Ending_Base_1_M61-65_D79FB2B7.wem</Path>
+						</File>
+						<File Id="554863416" Language="SFX">
+							<ShortName>Victory_Stinger_Ending_8_M49-53.wav</ShortName>
+							<Path>SFX/Victory_Stinger_Ending_8_M49-53_D79FB2B7.wem</Path>
+						</File>
+						<File Id="615733923" Language="SFX">
+							<ShortName>Progression_4_2_M1-49.wav</ShortName>
+							<Path>SFX/Progression_4_2_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="627347666" Language="SFX">
+							<ShortName>Death_Stinger_Ending_Prog_2_2_M61-65.wav</ShortName>
+							<Path>SFX/Death_Stinger_Ending_Prog_2_2_M61-65_D79FB2B7.wem</Path>
+						</File>
+						<File Id="654053244" Language="SFX">
+							<ShortName>Victory_Stinger_Ending_6_M49-53.wav</ShortName>
+							<Path>SFX/Victory_Stinger_Ending_6_M49-53_D79FB2B7.wem</Path>
+						</File>
+						<File Id="708733859" Language="SFX">
+							<ShortName>Base_Layer_3_M1-49.wav</ShortName>
+							<Path>SFX/Base_Layer_3_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="712310994" Language="SFX">
+							<ShortName>Death_Stinger_Ending_Prog_1_1_M61-65.wav</ShortName>
+							<Path>SFX/Death_Stinger_Ending_Prog_1_1_M61-65_D79FB2B7.wem</Path>
+						</File>
+						<File Id="732893337" Language="SFX">
+							<ShortName>Progression_3_1_M1-49.wav</ShortName>
+							<Path>SFX/Progression_3_1_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="748931381" Language="SFX">
+							<ShortName>Noise_Meter_Layer_2_2_M1-5.wav</ShortName>
+							<Path>SFX/Noise_Meter_Layer_2_2_M1-5_D79FB2B7.wem</Path>
+						</File>
+						<File Id="753869440" Language="SFX">
+							<ShortName>Noise_Meter_Layer_3_1_M1-5.wav</ShortName>
+							<Path>SFX/Noise_Meter_Layer_3_1_M1-5_D79FB2B7.wem</Path>
+						</File>
+						<File Id="792362547" Language="SFX">
+							<ShortName>Progression_3_2_M1-49.wav</ShortName>
+							<Path>SFX/Progression_3_2_M1-49_D79FB2B7.wem</Path>
+						</File>
+						<File Id="843723302" Language="SFX">
+							<ShortName>Silent Space Credits.wav</ShortName>
+							<Path>SFX/Silent Space Credits_D79FB2B7.wem</Path>
+						</File>
+						<File Id="922334724" Language="SFX">
+							<ShortName>Death_Stinger_Ending_Prog_3_2_M61-65.wav</ShortName>
+							<Path>SFX/Death_Stinger_Ending_Prog_3_2_M61-65_D79FB2B7.wem</Path>
+						</File>
+						<File Id="930170408" Language="SFX">
+							<ShortName>Death_Stinger_Ending_Prog_1_2_M61-65.wav</ShortName>
+							<Path>SFX/Death_Stinger_Ending_Prog_1_2_M61-65_D79FB2B7.wem</Path>
+						</File>
+						<File Id="971252853" Language="SFX">
+							<ShortName>Death_Stinger_Ending_Base_3_M61-65.wav</ShortName>
+							<Path>SFX/Death_Stinger_Ending_Base_3_M61-65_D79FB2B7.wem</Path>
+						</File>
+						<File Id="977194662" Language="SFX">
+							<ShortName>Death_Stinger_Ending_Prog_3_1_M61-65.wav</ShortName>
+							<Path>SFX/Death_Stinger_Ending_Prog_3_1_M61-65_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{1CE6CB78-5BBB-44D3-878E-1BE4E83038E5}">
+							<Children/>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}">
+							<Children>
+								<SwitchContainer SwitchValue="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}">
+									<Media>
+										<File Id="30339314"/>
+										<File Id="135272103"/>
+										<File Id="153984511"/>
+										<File Id="154343532"/>
+										<File Id="352765779"/>
+										<File Id="708733859"/>
+										<File Id="748931381"/>
+										<File Id="753869440"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}">
+							<Children>
+								<SwitchContainer SwitchValue="{0965315D-926D-4632-A0B6-EBE87AE73C88}">
+									<Media>
+										<File Id="21019540"/>
+										<File Id="135272103"/>
+										<File Id="153984511"/>
+										<File Id="544080710"/>
+										<File Id="748931381"/>
+										<File Id="753869440"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}">
+							<Children>
+								<SwitchContainer SwitchValue="{9C4CA061-AA8A-40E9-A5E1-D9627DAD6B52}">
+									<Media>
+										<File Id="135272103"/>
+										<File Id="153984511"/>
+										<File Id="361788286"/>
+										<File Id="480705699"/>
+										<File Id="748931381"/>
+										<File Id="753869440"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}">
+							<Children>
+								<SwitchContainer SwitchValue="{62892F83-6525-4C3E-BE71-DF149C13F735}">
+									<Media>
+										<File Id="135272103"/>
+										<File Id="153984511"/>
+										<File Id="732893337"/>
+										<File Id="748931381"/>
+										<File Id="753869440"/>
+										<File Id="792362547"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}">
+							<Children>
+								<SwitchContainer SwitchValue="{9BB154B8-0367-467B-8F92-7B8BF7C6DA49}">
+									<Media>
+										<File Id="143207839"/>
+										<File Id="615733923"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}">
+							<Children>
+								<SwitchContainer SwitchValue="{D2BD77C1-C492-4874-B64F-731A2756DBA9}">
+									<Media>
+										<File Id="343590361"/>
+										<File Id="386364663"/>
+										<File Id="477173057"/>
+										<File Id="552505700"/>
+										<File Id="627347666"/>
+										<File Id="712310994"/>
+										<File Id="922334724"/>
+										<File Id="930170408"/>
+										<File Id="971252853"/>
+										<File Id="977194662"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}">
+							<Children>
+								<SwitchContainer SwitchValue="{AFB4F184-D8FD-41AC-82C4-89759F7CB2C7}">
+									<Media>
+										<File Id="61499553"/>
+										<File Id="84063088"/>
+										<File Id="96754927"/>
+										<File Id="112016936"/>
+										<File Id="115879475"/>
+										<File Id="131762784"/>
+										<File Id="277084804"/>
+										<File Id="554863416"/>
+										<File Id="654053244"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2D795328-8802-4398-931F-C4B993FE4951}">
+							<Children>
+								<SwitchContainer SwitchValue="{520414D3-050E-4FA3-8A2E-79DF19E28CC5}">
+									<Media>
+										<File Id="843723302"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="2680856269" Name="Music_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_Bus"/>
+						<AuxBus Id="3691056935" Name="Noise_Meter" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_Bus\Noise_Meter"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3109796241" Name="Play_Xeno_Ambience" ObjectPath="\Events\Default Work Unit\Dialogue\Play_Xeno_Ambience" DurationType="OneShot" DurationMin="36.5" DurationMax="36.5">
+					<IncludedMemoryFiles>
+						<File Id="512919423" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_16.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_16_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3336051688" Name="Play_Xeno_Monologue" ObjectPath="\Events\Default Work Unit\Dialogue\Play_Xeno_Monologue" DurationType="OneShot" DurationMin="3." DurationMax="8.5">
+					<IncludedMemoryFiles>
+						<File Id="69293566" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_10.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_10_10C4C929.wem</Path>
+						</File>
+						<File Id="74916476" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_14.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_14_10C4C929.wem</Path>
+						</File>
+						<File Id="158052674" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_8.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_8_10C4C929.wem</Path>
+						</File>
+						<File Id="209311016" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_4.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_4_10C4C929.wem</Path>
+						</File>
+						<File Id="264026108" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_11.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_11_10C4C929.wem</Path>
+						</File>
+						<File Id="378239919" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_15.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_15_10C4C929.wem</Path>
+						</File>
+						<File Id="486323830" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_2.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_2_10C4C929.wem</Path>
+						</File>
+						<File Id="667688247" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_6.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_6_10C4C929.wem</Path>
+						</File>
+						<File Id="677252750" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_13.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_13_10C4C929.wem</Path>
+						</File>
+						<File Id="701323549" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_7.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_7_10C4C929.wem</Path>
+						</File>
+						<File Id="723447735" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_12.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_12_10C4C929.wem</Path>
+						</File>
+						<File Id="732557398" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_3.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_3_10C4C929.wem</Path>
+						</File>
+						<File Id="853171573" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_5.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_5_10C4C929.wem</Path>
+						</File>
+						<File Id="857098854" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_9.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_9_10C4C929.wem</Path>
+						</File>
+						<File Id="932881791" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_1.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1068092414" Name="Player_Hurt" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Player_Hurt" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="32388923" Language="SFX">
+							<ShortName>Player Hurt\sfx_player_hurt_1.wav</ShortName>
+							<Path>SFX/Player Hurt/sfx_player_hurt_1_10C4C929.wem</Path>
+						</File>
+						<File Id="63806104" Language="SFX">
+							<ShortName>Player Hurt\sfx_player_hurt_2.wav</ShortName>
+							<Path>SFX/Player Hurt/sfx_player_hurt_2_10C4C929.wem</Path>
+						</File>
+						<File Id="848091051" Language="SFX">
+							<ShortName>Player Hurt\sfx_player_hurt_5.wav</ShortName>
+							<Path>SFX/Player Hurt/sfx_player_hurt_5_10C4C929.wem</Path>
+						</File>
+						<File Id="864522723" Language="SFX">
+							<ShortName>Player Hurt\sfx_player_hurt_4.wav</ShortName>
+							<Path>SFX/Player Hurt/sfx_player_hurt_4_10C4C929.wem</Path>
+						</File>
+						<File Id="878010969" Language="SFX">
+							<ShortName>Player Hurt\sfx_player_hurt_3.wav</ShortName>
+							<Path>SFX/Player Hurt/sfx_player_hurt_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1305133589" Name="Player_Jump" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Player_Jump" DurationType="OneShot" DurationMin="0.420448" DurationMax="0.594604">
+					<IncludedMemoryFiles>
+						<File Id="1016587642" Language="SFX">
+							<ShortName>Player Jump\sfx_player_jump.wav</ShortName>
+							<Path>SFX/Player Jump/sfx_player_jump_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1727584325" Name="Security_Alarm" ObjectPath="\Events\Default Work Unit\SFX\Environment\Security_Alarm" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="150222993" Language="SFX">
+							<ShortName>Security Alarm\sfx_environment_security_alarm_activated.wav</ShortName>
+							<Path>SFX/Security Alarm/sfx_environment_security_alarm_activated_FB688B1B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1432588725" Name="Select" ObjectPath="\Events\Default Work Unit\SFX\UI\Select" DurationType="OneShot" DurationMin="1.210849" DurationMax="1.712399">
+					<IncludedMemoryFiles>
+						<File Id="925556678" Language="SFX">
+							<ShortName>ui_select.wav</ShortName>
+							<Path>SFX/ui_select_5F59EDFB.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2477713992" Name="Stop_Ambience" ObjectPath="\Events\Default Work Unit\Stop Commands\Stop_Ambience" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="4218701743" Name="Stop_Infected_Audio" ObjectPath="\Events\Default Work Unit\Stop Commands\Stop_Infected_Audio" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="708622098" Name="Stun_Gun_Cooldown" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Stun_Gun_Cooldown" DurationType="OneShot" DurationMin="0.8125" DurationMax="9.375">
+					<IncludedMemoryFiles>
+						<File Id="82215919" Language="SFX">
+							<ShortName>Stun Cooldown\sfx_player_stun_cooldown.wav</ShortName>
+							<Path>SFX/Stun Cooldown/sfx_player_stun_cooldown_10C4C929.wem</Path>
+						</File>
+						<File Id="276793087" Language="SFX">
+							<ShortName>Stun Cooldown\sfx_player_stun_cooldown_complete.wav</ShortName>
+							<Path>SFX/Stun Cooldown/sfx_player_stun_cooldown_complete_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1876963445" Name="Stun_Gun_Fire" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Stun_Gun_Fire" DurationType="OneShot" DurationMin="0.662913" DurationMax="1.325825">
+					<IncludedMemoryFiles>
+						<File Id="750823969" Language="SFX">
+							<ShortName>Stun Fire\sfx_player_stun_fire.wav</ShortName>
+							<Path>SFX/Stun Fire/sfx_player_stun_fire_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2455087587" Name="Stun_Gun_Upgrade" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Stun_Gun_Upgrade" DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<IncludedMemoryFiles>
+						<File Id="14651933" Language="SFX">
+							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_1.wav</ShortName>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_1_10C4C929.wem</Path>
+						</File>
+						<File Id="299991711" Language="SFX">
+							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_2.wav</ShortName>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_2_10C4C929.wem</Path>
+						</File>
+						<File Id="392537604" Language="SFX">
+							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_3.wav</ShortName>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_3_10C4C929.wem</Path>
+						</File>
+						<File Id="723059966" Language="SFX">
+							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_4.wav</ShortName>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="157604563" Name="Suit_Upgrade" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Suit_Upgrade" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="691092938" Language="SFX">
+							<ShortName>Suit\sfx_player_suit_upgrade_2.wav</ShortName>
+							<Path>SFX/Suit/sfx_player_suit_upgrade_2_10C4C929.wem</Path>
+						</File>
+						<File Id="822777633" Language="SFX">
+							<ShortName>Suit\sfx_player_suit_upgrade_1.wav</ShortName>
+							<Path>SFX/Suit/sfx_player_suit_upgrade_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3505704881" Name="Health_Bar" ObjectPath="\Game Parameters\Default Work Unit\UI\Health_Bar"/>
+				<GameParameter Id="3691056935" Name="Noise_Meter" ObjectPath="\Game Parameters\Default Work Unit\UI\Noise_Meter"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3826569560" Name="Music_State" ObjectPath="\States\Default Work Unit\Music_State" GUID="{D0F08B4E-1A96-41CE-BC0D-963EAB3AF519}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music_State\None" GUID="{4BB3579F-CBDD-4EC9-8632-BE2A52475590}"/>
+						<State Id="2005704188" Name="Main_Menu" ObjectPath="\States\Default Work Unit\Music_State\Main_Menu" GUID="{1CE6CB78-5BBB-44D3-878E-1BE4E83038E5}"/>
+						<State Id="89505537" Name="Gameplay" ObjectPath="\States\Default Work Unit\Music_State\Gameplay" GUID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
+						<State Id="2201105581" Name="Credits" ObjectPath="\States\Default Work Unit\Music_State\Credits" GUID="{2D795328-8802-4398-931F-C4B993FE4951}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="4071102763" Name="Music_Segments" ObjectPath="\States\Default Work Unit\Music_Segments" GUID="{A3E037AC-AEDB-4166-8CBA-3D6172701DEF}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music_Segments\None" GUID="{6448DD6C-28B5-415A-8353-F77F06597E06}"/>
+						<State Id="2983809735" Name="Upgrade_1" ObjectPath="\States\Default Work Unit\Music_Segments\Upgrade_1" GUID="{0965315D-926D-4632-A0B6-EBE87AE73C88}"/>
+						<State Id="2983809733" Name="Upgrade_3" ObjectPath="\States\Default Work Unit\Music_Segments\Upgrade_3" GUID="{62892F83-6525-4C3E-BE71-DF149C13F735}"/>
+						<State Id="2983809732" Name="Upgrade_2" ObjectPath="\States\Default Work Unit\Music_Segments\Upgrade_2" GUID="{9C4CA061-AA8A-40E9-A5E1-D9627DAD6B52}"/>
+						<State Id="2983809730" Name="Upgrade_4" ObjectPath="\States\Default Work Unit\Music_Segments\Upgrade_4" GUID="{9BB154B8-0367-467B-8F92-7B8BF7C6DA49}"/>
+						<State Id="1281810935" Name="Start" ObjectPath="\States\Default Work Unit\Music_Segments\Start" GUID="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}"/>
+						<State Id="779278001" Name="Death" ObjectPath="\States\Default Work Unit\Music_Segments\Death" GUID="{D2BD77C1-C492-4874-B64F-731A2756DBA9}"/>
+						<State Id="4229539972" Name="Escaped" ObjectPath="\States\Default Work Unit\Music_Segments\Escaped" GUID="{AFB4F184-D8FD-41AC-82C4-89759F7CB2C7}"/>
+						<State Id="2005704188" Name="Main_Menu" ObjectPath="\States\Default Work Unit\Music_Segments\Main_Menu" GUID="{A85775FB-DB8E-49D9-9E80-5696AB6F8977}"/>
+						<State Id="2201105581" Name="Credits" ObjectPath="\States\Default Work Unit\Music_Segments\Credits" GUID="{520414D3-050E-4FA3-8A2E-79DF19E28CC5}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="21751588" Name="Noise_Meter_Level" ObjectPath="\Switches\Default Work Unit\Noise_Meter_Level" GUID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}">
+					<Switches>
+						<Switch Id="1290008369" Name="Level_1" ObjectPath="\Switches\Default Work Unit\Noise_Meter_Level\Level_1" GUID="{F4FEC03C-1CDD-41AF-9D6D-2249E46B5BF1}"/>
+						<Switch Id="1290008370" Name="Level_2" ObjectPath="\Switches\Default Work Unit\Noise_Meter_Level\Level_2" GUID="{C3BC5321-68E4-4578-A6E2-8F0B08254634}"/>
+						<Switch Id="1290008371" Name="Level_3" ObjectPath="\Switches\Default Work Unit\Noise_Meter_Level\Level_3" GUID="{AE0A9F69-19A5-495C-A385-7AA87E7E6571}"/>
+						<Switch Id="3160623154" Name="Silent" ObjectPath="\Switches\Default Work Unit\Noise_Meter_Level\Silent" GUID="{C0AB1866-64C3-4CF2-8BAB-5CA886D86167}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3238956108" Name="Player_Location" ObjectPath="\Switches\Default Work Unit\Player_Location" GUID="{FD7D4EE3-5B5E-43E3-9575-E7BA13534B41}">
+					<Switches>
+						<Switch Id="2979494847" Name="Escape_Pod_Hatch" ObjectPath="\Switches\Default Work Unit\Player_Location\Escape_Pod_Hatch" GUID="{D37BAE8E-3594-4C87-B4BF-1275932B2970}"/>
+						<Switch Id="3057088135" Name="Ship_Hull" ObjectPath="\Switches\Default Work Unit\Player_Location\Ship_Hull" GUID="{2B234250-D74D-4950-BB6F-A86BC9AD8B13}"/>
+						<Switch Id="2198133169" Name="Hallway" ObjectPath="\Switches\Default Work Unit\Player_Location\Hallway" GUID="{D17888B8-CC81-44DF-B69C-D5AA10597B86}"/>
+						<Switch Id="2981836174" Name="Warehouse" ObjectPath="\Switches\Default Work Unit\Player_Location\Warehouse" GUID="{85E1CCAC-95B9-4DF7-BEC0-03AFC408E5F5}"/>
+						<Switch Id="2646389459" Name="Medbay" ObjectPath="\Switches\Default Work Unit\Player_Location\Medbay" GUID="{2AAAAA8C-6E29-48FF-9C51-BC8D28F7F1F5}"/>
+						<Switch Id="133642231" Name="General" ObjectPath="\Switches\Default Work Unit\Player_Location\General" GUID="{CE0C4818-CD83-4AC4-A66E-4F0251C40A53}"/>
+						<Switch Id="2068062714" Name="Bridge" ObjectPath="\Switches\Default Work Unit\Player_Location\Bridge" GUID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>
+						<Switch Id="3489426920" Name="Safe_Room" ObjectPath="\Switches\Default Work Unit\Player_Location\Safe_Room" GUID="{28922E59-589F-4835-BB69-3E88FF0D5304}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="4168292868" Name="Floor_Type" ObjectPath="\Switches\Default Work Unit\Floor_Type" GUID="{1D3BEC24-73D5-47AB-9CFE-8B88EB3ABFD2}">
+					<Switches>
+						<Switch Id="1153642577" Name="Flesh" ObjectPath="\Switches\Default Work Unit\Floor_Type\Flesh" GUID="{CD70ADC4-42DF-45EA-9E0E-64255DD8EA89}"/>
+						<Switch Id="2449969375" Name="Glass" ObjectPath="\Switches\Default Work Unit\Floor_Type\Glass" GUID="{F1CD66F8-D130-47AA-AA0F-EE512A9CEFD0}"/>
+						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\Floor_Type\Metal" GUID="{0AE16BA4-4F92-405F-896B-E4248D5C088B}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\Floor_Type\Wood" GUID="{927BBC68-E3CF-4F16-82A1-55ECD4338828}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

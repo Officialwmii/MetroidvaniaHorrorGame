@@ -323,7 +323,40 @@ public class EventManager : MonoBehaviour
 
         fuelBar.GetComponent<UnityEngine.UI.Slider>().value = Fuel/ MaxFuel; }
     static public void CollectablePickup(){ Collectables++; }
-    static public void AudioLogPickup() { AudioLog++; }
+    static public void AudioLogPickup()
+    {
+        if(AudioLog == 0)
+        {
+            AudioLog++;
+            AkSoundEngine.PostEvent("Audio_Log_1", player);
+        }
+        else if(AudioLog == 1)
+        {
+            AudioLog++;
+            AkSoundEngine.PostEvent("Audio_Log_2", player);
+        }
+        else if (AudioLog == 2)
+        {
+            AudioLog++;
+            AkSoundEngine.PostEvent("Audio_Log_3", player);
+        }
+        else if (AudioLog == 3)
+        {
+            AudioLog++;
+            AkSoundEngine.PostEvent("Audio_Log_4", player);
+        }
+        else if (AudioLog == 4)
+        {
+            AudioLog++;
+            AkSoundEngine.PostEvent("Audio_Log_5", player);
+        }
+        else
+        {
+            AudioLog++;
+            AkSoundEngine.PostEvent("Audio_Log_6", player);
+        }
+    }
+
     static public void GainAbilityJetpack() {
 
         if (HasJetpack == false) { HasJetpack = true; }

@@ -1248,6 +1248,32 @@
 														<ItemRef Name="Metal" ID="{E96882F1-D968-46B3-BA18-12C582479656}"/>
 													</GroupingBehavior>
 												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Wood" ID="{927BBC68-E3CF-4F16-82A1-55ECD4338828}"/>
+														<ItemList>
+															<ItemRef Name="Wood" ID="{148A0B2B-A138-4923-A0F4-FDF75CED251E}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Metal" ID="{0AE16BA4-4F92-405F-896B-E4248D5C088B}"/>
+														<ItemList>
+															<ItemRef Name="Metal" ID="{E96882F1-D968-46B3-BA18-12C582479656}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Flesh" ID="{CD70ADC4-42DF-45EA-9E0E-64255DD8EA89}"/>
+														<ItemList>
+															<ItemRef Name="Flesh" ID="{06B38982-FAAD-49A1-A138-F8A28E901CB4}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Glass" ID="{F1CD66F8-D130-47AA-AA0F-EE512A9CEFD0}"/>
+														<ItemList>
+															<ItemRef Name="Glass" ID="{E7D54FC8-D7E0-4959-AED9-775B92274E46}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
 										<RandomSequenceContainer Name="Jetpack" ID="{245D37ED-7247-42C5-930D-C049EC9671FE}" ShortID="242234687">
@@ -1716,6 +1742,11 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="1"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1730,7 +1761,7 @@
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>7</Value>
+												<Value>15</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Pitch" Type="int32">
@@ -1740,7 +1771,6 @@
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="600"/>
-															<Property Name="Min" Type="Real64" Value="-600"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1767,6 +1797,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="ui_select" ID="{3F27F7EB-1131-4C85-BDB1-F456E09FAF94}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.71239935587762"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>ui_select.wav</AudioFile>
 													<MediaIDList>
@@ -1784,9 +1819,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Back" ID="{649E6E62-CF1C-4EDA-B1F2-CE44D35919B8}" ShortID="887300822">
 									<PropertyList>
-										<Property Name="Lowpass" Type="int16">
+										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>20</Value>
+												<Value>30</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Pitch" Type="int32">
@@ -1822,6 +1857,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="ui_back" ID="{0AC17700-10D7-4DAE-9049-5F9F6BB9F5BA}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.64653784219002"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>ui_back.wav</AudioFile>
 													<MediaIDList>
@@ -1858,6 +1898,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="ui_pause" ID="{967D9207-27D1-4E55-B3DB-C66BAB8FBF55}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.43578099838969"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>ui_pause.wav</AudioFile>
 													<MediaIDList>
@@ -1880,6 +1925,11 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="19"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1948,6 +1998,11 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="8"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1961,7 +2016,15 @@
 								<Folder Name="Fungus" ID="{A1C9B209-562A-48EF-9828-04215DFFCD4A}" ShortID="311071818"/>
 								<RandomSequenceContainer Name="Security Alarm" ID="{F3A9D719-7481-4339-A8AB-BFB15E868474}" ShortID="959967833">
 									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1986,6 +2049,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="sfx_environment_security_alarm_activated" ID="{942D5588-56FA-4ECA-8DD5-E2316B3C8D06}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.4333451422437"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Security Alarm\sfx_environment_security_alarm_activated.wav</AudioFile>
 													<MediaIDList>
@@ -2001,20 +2068,16 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Elevator" ID="{D5610300-636E-4F6F-91A6-F9F0CBEFDA69}" ShortID="596013448">
-									<PropertyList>
-										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
-										</Reference>
-									</ReferenceList>
+								<Folder Name="Elevator" ID="{C16E6C2D-CDFE-408C-9B76-4706B248CA8D}" ShortID="401001880">
 									<ChildrenList>
-										<Sound Name="sfx_environment_elevator" ID="{5E7B0059-248A-441A-B8CB-F6736845DF53}" ShortID="99832277">
+										<RandomSequenceContainer Name="Elevator Going Down" ID="{51444D95-8E81-4086-85F8-C222D903A490}" ShortID="354582110">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-400</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -2024,22 +2087,103 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_environment_elevator" ID="{F0B13F47-795F-4F1C-BA17-485B542AB9A1}">
-													<Language>SFX</Language>
-													<AudioFile>Elevator\sfx_environment_elevator.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="697570722"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="sfx_environment_elevator" ID="{A7A49D19-85E0-4122-86BE-6BCC98DC874E}" ShortID="149564207">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{E6EDA50D-2DDB-40A8-AFB8-AEBF5E8A44A9}">
+																		<PropertyList>
+																			<Property Name="Min" Type="Real64" Value="-600"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_environment_elevator" ID="{E9914954-C970-4EBC-BDAA-F3A806457688}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="1.08863333637904"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.6989356415267"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="25.4618293075684"/>
+																<Property Name="TrimEnd" Type="Real64" Value="28.5481116478798"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Elevator\sfx_environment_elevator.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="959127739"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_environment_elevator" ID="{E9914954-C970-4EBC-BDAA-F3A806457688}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_environment_elevator" ID="{F0B13F47-795F-4F1C-BA17-485B542AB9A1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Elevator Going Up" ID="{D5610300-636E-4F6F-91A6-F9F0CBEFDA69}" ShortID="596013448">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>400</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_environment_elevator" ID="{5E7B0059-248A-441A-B8CB-F6736845DF53}" ShortID="99832277">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_environment_elevator" ID="{F0B13F47-795F-4F1C-BA17-485B542AB9A1}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.0773054213634"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.0773054213634"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Elevator\sfx_environment_elevator.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="697570722"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_environment_elevator" ID="{F0B13F47-795F-4F1C-BA17-485B542AB9A1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
 									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
+								</Folder>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
@@ -2247,6 +2391,11 @@
 								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2269,7 +2418,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="General" ID="{CE0C4818-CD83-4AC4-A66E-4F0251C40A53}" WorkUnitID="{F5C71EC7-FBF4-4E46-9445-B7648D67EA2A}"/>
+											<ObjectRef Name="Escape_Pod_Hatch" ID="{D37BAE8E-3594-4C87-B4BF-1275932B2970}" WorkUnitID="{F5C71EC7-FBF4-4E46-9445-B7648D67EA2A}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
@@ -2285,8 +2434,14 @@
 										<RandomSequenceContainer Name="Boss Ambience Loop" ID="{48ADBDA1-F5E7-4BD9-A8EE-C27CB72149C0}" ShortID="770761921">
 											<PropertyList>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2332,8 +2487,14 @@
 										<RandomSequenceContainer Name="Escape Pod Hatch Ambience Loop" ID="{B5792B25-5BF6-4DD5-BC62-96624CBC6419}" ShortID="766080204">
 											<PropertyList>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2372,12 +2533,21 @@
 												</Sound>
 											</ChildrenList>
 											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="sfx_ambience_escape_pod_hatch" ID="{0806F8BD-06D8-4944-B959-EEC2CEA1D31C}"/>
+											</Playlist>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Hallway Ambience Loop" ID="{93759C70-453E-4DC7-9942-8E60164349EF}" ShortID="811571862">
 											<PropertyList>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2416,12 +2586,21 @@
 												</Sound>
 											</ChildrenList>
 											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="sfx_ambience_hallway" ID="{0AC49E63-1482-4F95-971F-A869B05387CF}"/>
+											</Playlist>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Medbay Ambience Loop" ID="{37821992-DF49-4902-864D-B38056F842AF}" ShortID="78315505">
 											<PropertyList>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2460,12 +2639,26 @@
 												</Sound>
 											</ChildrenList>
 											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="sfx_ambience_med_bay" ID="{5BD77A63-89DD-430F-B434-A6933974BB52}"/>
+											</Playlist>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Ship Hull Ambience Loop" ID="{3B0D450D-D4DB-42A3-B7F2-8245E7349377}" ShortID="474317459">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2477,6 +2670,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="sfx_ambience_ship_hull" ID="{CD5D2D4C-3985-47E3-BE06-C53361D394DB}" ShortID="183834055">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -2504,12 +2700,31 @@
 												</Sound>
 											</ChildrenList>
 											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="sfx_ambience_ship_hull" ID="{CD5D2D4C-3985-47E3-BE06-C53361D394DB}"/>
+											</Playlist>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Warehouse Ambience Loop" ID="{6CADF69D-885E-4B5B-BF13-3B142125ACE6}" ShortID="400012127">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2548,6 +2763,9 @@
 												</Sound>
 											</ChildrenList>
 											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="sfx_ambience_warehouse" ID="{D10F86AB-5463-4A84-8808-092F9F6156A1}"/>
+											</Playlist>
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<ObjectLists/>
@@ -2572,6 +2790,44 @@
 												<ItemRef Name="Boss Ambience Loop" ID="{48ADBDA1-F5E7-4BD9-A8EE-C27CB72149C0}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Bridge" ID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>
+												<ItemList>
+													<ItemRef Name="Boss Ambience Loop" ID="{48ADBDA1-F5E7-4BD9-A8EE-C27CB72149C0}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Ship_Hull" ID="{2B234250-D74D-4950-BB6F-A86BC9AD8B13}"/>
+												<ItemList>
+													<ItemRef Name="Ship Hull Ambience Loop" ID="{3B0D450D-D4DB-42A3-B7F2-8245E7349377}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Medbay" ID="{2AAAAA8C-6E29-48FF-9C51-BC8D28F7F1F5}"/>
+												<ItemList>
+													<ItemRef Name="Medbay Ambience Loop" ID="{37821992-DF49-4902-864D-B38056F842AF}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Escape_Pod_Hatch" ID="{D37BAE8E-3594-4C87-B4BF-1275932B2970}"/>
+												<ItemList>
+													<ItemRef Name="Escape Pod Hatch Ambience Loop" ID="{B5792B25-5BF6-4DD5-BC62-96624CBC6419}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Warehouse" ID="{85E1CCAC-95B9-4DF7-BEC0-03AFC408E5F5}"/>
+												<ItemList>
+													<ItemRef Name="Warehouse Ambience Loop" ID="{6CADF69D-885E-4B5B-BF13-3B142125ACE6}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Hallway" ID="{D17888B8-CC81-44DF-B69C-D5AA10597B86}"/>
+												<ItemList>
+													<ItemRef Name="Hallway Ambience Loop" ID="{93759C70-453E-4DC7-9942-8E60164349EF}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>
