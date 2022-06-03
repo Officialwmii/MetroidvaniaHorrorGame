@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Announcement 2
   m_EditorClassIdentifier: 
   clip: {fileID: 0}
-  subtitle: 
+  subtitle: ESCAPE POD UNLOCKED
+  duration: 3

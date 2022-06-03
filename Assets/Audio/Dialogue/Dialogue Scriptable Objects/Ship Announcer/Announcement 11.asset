@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Announcement 11
   m_EditorClassIdentifier: 
   clip: {fileID: 0}
-  subtitle: 
+  subtitle: WARNING INITIATING SCUTTLE PROTOCOL
+  duration: 5

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Announcement 6
   m_EditorClassIdentifier: 
   clip: {fileID: 0}
-  subtitle: 
+  subtitle: ELEVATORS DEACTIVATED, SCUTTLE PROTOCOL INITIATED
+  duration: 7

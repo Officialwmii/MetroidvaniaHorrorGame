@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Announcement 5
   m_EditorClassIdentifier: 
   clip: {fileID: 0}
-  subtitle: 
+  subtitle: GOING DOWN
+  duration: 3

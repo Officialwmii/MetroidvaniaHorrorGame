@@ -115,6 +115,7 @@ Transform:
   m_Children:
   - {fileID: 2150502162457759849}
   - {fileID: 2996550589255370173}
+  - {fileID: 8078123741928288296}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -249,3 +250,81 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.3441362, y: 5.7125645}
   m_EdgeRadius: 0
+--- !u!1001 &5444557709737971447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6224785976167277321}
+    m_Modifications:
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.992526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9.218526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.3551636
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.4906921
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327946953485249521, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: location
+      value: Escape Pod
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327946953485249521, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: subtitles
+      value: 
+      objectReference: {fileID: 11400000, guid: fe0cb82a5d9df443a84d6f661eecd863, type: 2}
+    - target: {fileID: 7676246549718950144, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+      propertyPath: m_Name
+      value: Access Denied Door
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+--- !u!4 &8078123741928288296 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
+  m_PrefabInstance: {fileID: 5444557709737971447}
+  m_PrefabAsset: {fileID: 0}

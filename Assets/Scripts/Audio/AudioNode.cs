@@ -7,6 +7,6 @@ public class AudioNode : ScriptableObject
 {
     public AudioClip clip;
     public string subtitle;
-
+    public float duration;
     
 }

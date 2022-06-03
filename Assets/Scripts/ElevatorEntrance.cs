@@ -7,7 +7,8 @@ public class ElevatorEntrance : MonoBehaviour
 
     public GameObject EndDestination;
     public GameObject player;
-    public AK.Wwise.Event Elevator_Up;
+
+    public bool goingUp;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,16 @@ public class ElevatorEntrance : MonoBehaviour
 
             col.transform.position = EndDestination.transform.position;
             //Debug.Log("Elevator activated");
-            Elevator_Up.Post(player);
+            if (goingUp)
+            {
+                AkSoundEngine.PostEvent("Elevator_Up", player);
+                // AkSoundEngine.PostEvent("Going_Up", player);
+            }
+            else
+            {
+                AkSoundEngine.PostEvent("Elevator_Down", player);
+                // AkSoundEngine.PostEvent("Going_Down", player);
+            }
         }
     }
 }

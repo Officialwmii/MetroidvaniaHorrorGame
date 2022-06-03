@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OneSidedDoor : MonoBehaviour
 {
+
     public GameObject Door;
     public  enum DoorType
     {
@@ -47,6 +48,7 @@ public class OneSidedDoor : MonoBehaviour
                     break;
 
                 case DoorType.Credits:
+                    AkSoundEngine.PostEvent("Escape_Pod_Sequence", col.gameObject);
                     EventManager.GoToCredits();
                     break;
                     

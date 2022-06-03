@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Announcement 14
   m_EditorClassIdentifier: 
   clip: {fileID: 0}
-  subtitle: 
+  subtitle: NOW ENTERING THE DEFENSE SECTOR
+  duration: 3

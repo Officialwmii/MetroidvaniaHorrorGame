@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Announcement 9
   m_EditorClassIdentifier: 
   clip: {fileID: 0}
-  subtitle: 
+  subtitle: EVA SUIT REQUIRED TO ENTER LOW GRAVITY ZONE
+  duration: 4

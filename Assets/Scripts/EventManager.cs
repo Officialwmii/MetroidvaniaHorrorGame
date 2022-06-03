@@ -75,7 +75,7 @@ public class EventManager : MonoBehaviour
     static private GameObject player;
     static private GameObject StartPosition;
 
-
+    private AK.Wwise.Event shipAI;
 
     // Start is called before the first frame update
     void Start()
@@ -209,6 +209,7 @@ public class EventManager : MonoBehaviour
         if (Lives >= MaxLives) { Lives = MaxLives; }
 
         UpdateLives();
+
     }
 
     static public void UpdateGrenades(){
@@ -324,44 +325,48 @@ public class EventManager : MonoBehaviour
         if (Fuel >= DashFuelCost) { canUseJetpack = true; }
 
         fuelBar.GetComponent<UnityEngine.UI.Slider>().value = Fuel/ MaxFuel; }
-    static public void CollectablePickup(){ Collectables++; }
+    static public void CollectablePickup()
+    {
+        Collectables++;
+        AkSoundEngine.PostEvent("Alien_Artifact", player);
+    }
     static public void AudioLogPickup(AudioNode subtitles)
     {
         if(AudioLog == 0)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_1", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
         else if(AudioLog == 1)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_2", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
         else if (AudioLog == 2)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_3", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
         else if (AudioLog == 3)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_4", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
         else if (AudioLog == 4)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_5", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
         else
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_6", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle);
+            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
     }
 
