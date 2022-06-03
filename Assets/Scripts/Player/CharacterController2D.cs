@@ -46,6 +46,10 @@ public class CharacterController2D : MonoBehaviour
 	private Animator animator;
 	public ParticleSystem particleJumpUp; //Trail particles
 	public ParticleSystem particleJumpDown; //Explosion particles
+	public GameObject particleBlood;
+	public GameObject particleBloodFauntain;
+	public GameObject head;
+
 
 	private float jumpWallStartX = 0;
 	private float jumpWallDistX = 0; //Distance between player and wall
@@ -323,7 +327,9 @@ public class CharacterController2D : MonoBehaviour
 			//Debug.Log("My health! " + life);
 			life += damage;
 			m_Rigidbody2D.velocity = Vector2.zero;
+			GameObject bloodeffect = Instantiate(particleBlood, transform.position, Quaternion.identity);
 
+			
 			EventManager.SetHP(life);
 
 			if (life <= 0)
@@ -388,11 +394,20 @@ public class CharacterController2D : MonoBehaviour
 
 	IEnumerator WaitToDead()
 	{
+		if (invincible == false)
+		{
+			GameObject bloodeffect2 = Instantiate(particleBloodFauntain, transform.position, Quaternion.identity);
+			GameObject Head = Instantiate(head, transform.position, Quaternion.identity);
+
+		
+
+
 		animator.SetBool("IsDead", true);
 		canMove = false;
 		invincible = true;
 		GetComponent<Attack>().enabled = false;
 		
+
 		yield return new WaitForSeconds(0.4f);
 		m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y);
 		
@@ -401,10 +416,11 @@ public class CharacterController2D : MonoBehaviour
 		canMove = true;
 		invincible = false;
 		GetComponent<Attack>().enabled = true;
-		
-		
-		
+		//Destroy(Head);
+
+
 		EventManager.OnRespawning();
+		}
 
 		//SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
 	}

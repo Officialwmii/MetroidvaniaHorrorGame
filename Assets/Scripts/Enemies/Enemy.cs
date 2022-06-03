@@ -23,11 +23,16 @@ public class Enemy : MonoBehaviour {
 
 	public bool onAlert = false;
 	private GameObject FrozenEnemy;
+	private GameObject particles;
+	private GameObject particles2;
 
 	void Awake () {
 
 		if (Exploadable){ FrozenEnemy = (GameObject)Resources.Load("prefabs/FrozenCrawler", typeof(GameObject));}
 		else { FrozenEnemy = (GameObject)Resources.Load("prefabs/FrozenInfected", typeof(GameObject));	}
+
+		particles = (GameObject)Resources.Load("prefabs/EnemyDeath", typeof(GameObject));
+		particles2 = (GameObject)Resources.Load("prefabs/SpiderLegs", typeof(GameObject));
 
 		fallCheck = transform.Find("FallCheck");
 		wallCheck = transform.Find("WallCheck");
@@ -48,8 +53,17 @@ public class Enemy : MonoBehaviour {
         }
 
 		if (life <= 0) {
+
+			//to only spawn particles once
+			if (transform.GetComponent<Animator>().GetBool("IsDead") == false)
+			{ GameObject NewParticle = Instantiate(particles, gameObject.transform.position, Quaternion.identity);
+				if (Exploadable)
+				{ GameObject NewParticle2 = Instantiate(particles2, gameObject.transform.position, Quaternion.identity); }
+			}
+
 			transform.GetComponent<Animator>().SetBool("IsDead", true);
 			StartCoroutine(DestroyEnemy());
+
 		}
 
 		isPlat = Physics2D.OverlapCircle(fallCheck.position, .2f, 1 << LayerMask.NameToLayer("Default"));
@@ -148,9 +162,11 @@ public class Enemy : MonoBehaviour {
 		capsule.size = new Vector2(1f, 0.25f);
 		capsule.offset = new Vector2(0f, -0.8f);
 		capsule.direction = CapsuleDirection2D.Horizontal;
+
+
 		yield return new WaitForSeconds(0.25f);
 		rb.velocity = new Vector2(0, rb.velocity.y);
-		yield return new WaitForSeconds(3f);
+		//yield return new WaitForSeconds(3f);
 		Destroy(gameObject);
 	}
 

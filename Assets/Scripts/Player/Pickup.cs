@@ -21,11 +21,16 @@ public class Pickup : MonoBehaviour
         ConstalationKey,RefillStation
     };
     public UpgradeType upgradeType;
-    private bool DestroyObject; 
+    private bool DestroyObject;
+    private GameObject particles;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        particles = (GameObject)Resources.Load("prefabs/UpgradeParticles", typeof(GameObject));
+
+
     }
 
     // Update is called once per frame
@@ -97,7 +102,8 @@ public class Pickup : MonoBehaviour
                     break;
             }
 
-            if (DestroyObject) { Destroy(gameObject); }
+            if (DestroyObject) { Destroy(gameObject); 
+                GameObject NewParticle = Instantiate(particles, gameObject.transform.position, Quaternion.identity); }
 
         }
 

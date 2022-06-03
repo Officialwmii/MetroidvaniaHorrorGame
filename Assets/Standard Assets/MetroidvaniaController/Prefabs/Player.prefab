@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783f8b7882d2d2a42a5b76de9179978f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 1050
+  m_JumpForce: 15
   m_JetpackForce: 90
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -106,6 +106,9 @@ MonoBehaviour:
   invincible: 0
   particleJumpUp: {fileID: 198584872278178884}
   particleJumpDown: {fileID: 198967111524372206}
+  particleBlood: {fileID: 6483215704426431856, guid: 252471acb31eaca46b6fcda3d36baa9f, type: 3}
+  particleBloodFauntain: {fileID: 1005042262291942750, guid: 3d2a63c07a308f74e853a733e0106ad8, type: 3}
+  head: {fileID: 6811707143718935952, guid: aa53377c53c78d94ca422f80c24e4a7b, type: 3}
   OnFallEvent:
     m_PersistentCalls:
       m_Calls:
@@ -5183,7 +5186,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10097,7 +10099,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

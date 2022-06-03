@@ -9,7 +9,7 @@ public class ThrowableWeapon : MonoBehaviour
 	public float speed = 10f;
 	public bool StunGun = true;
 	public Sprite rocket;
-
+	public GameObject particles;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +37,7 @@ public class ThrowableWeapon : MonoBehaviour
 			else collision.gameObject.SendMessage("ApplyDamage", Mathf.Sign(direction.x) * 20f);
 
 			Destroy(gameObject);
+			GameObject NewParticle = Instantiate(particles, gameObject.transform.position, Quaternion.identity);
 		}
 		else if (collision.gameObject.tag == "Jumpthrough")
 		{
@@ -46,9 +47,10 @@ public class ThrowableWeapon : MonoBehaviour
 		else if (collision.gameObject.tag != "Player")
 		{
 			Destroy(gameObject);
+			GameObject NewParticle = Instantiate(particles, gameObject.transform.position, Quaternion.identity);
 		}
 
-		
+
 	}
 	
 }
