@@ -3,20 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Trigger_Ambience_Intensifier" ID="{85F51569-11D4-463B-B3FF-B589161B0BAE}">
-					<ChildrenList>
-						<Action Name="" ID="{477E53D5-E3AE-440D-8BF1-61E052C4C8B9}" ShortID="655075855">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="35"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ambience_Intensifier" ID="{943EAEB5-844A-4F71-9658-293429BB509D}" WorkUnitID="{E2AC5ECE-D860-41D2-96F7-906556BF2569}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Music" ID="{3E5D4BDC-CD65-42A5-B08D-0A53D5809338}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="2"/>
@@ -132,6 +118,305 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_16" ID="{F3F5CC75-5B28-4E60-9B6E-F43EA08FE920}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{4F87ED55-024F-4CF6-BC25-E9908D2FBECE}" ShortID="903198696">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Folder Name="Ambience" ID="{C03E8DB3-38FB-4E2C-9DD3-7CE5D9BB0FAC}" ShortID="318451832">
+							<ChildrenList>
+								<Event Name="Play_Ambience" ID="{2C706956-69AD-499D-8297-51626D20FB47}">
+									<ChildrenList>
+										<Action Name="" ID="{53AF5B62-D80B-4F8D-A408-31BBD66B6D90}" ShortID="281847198">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ambience Switch" ID="{1B8792FD-A20C-4DCC-B998-1F02FB23E71A}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Environment" ID="{90381E0C-DC8B-43B6-89F3-20F07C147FB0}" ShortID="93634676">
+							<ChildrenList>
+								<Event Name="Elevator_Up" ID="{72634D5B-6E1F-4D12-888C-21E087638F71}">
+									<ChildrenList>
+										<Action Name="" ID="{29D1AF67-8113-46D3-9567-2A2B127DF605}" ShortID="648654331">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Elevator Going Up" ID="{D5610300-636E-4F6F-91A6-F9F0CBEFDA69}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Elevator_Down" ID="{0F78AB4D-7D80-4A98-A590-B960B5CDAF59}">
+									<ChildrenList>
+										<Action Name="" ID="{54BC7364-F56A-49B1-BA59-44F57BDD4D5A}" ShortID="757361608">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Elevator Going Down" ID="{51444D95-8E81-4086-85F8-C222D903A490}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Security_Alarm" ID="{686BBCB0-5B53-495B-AD35-777BF4C6CC2B}">
+									<ChildrenList>
+										<Action Name="" ID="{205F5562-3C95-4CE6-8647-9BEE70137F6D}" ShortID="235455077">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Security Alarm" ID="{F3A9D719-7481-4339-A8AB-BFB15E868474}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Alien_Artifact" ID="{17EB9EB1-66F4-40C3-8E4D-DFF15AAC46A9}">
+							<ChildrenList>
+								<Action Name="" ID="{B270C189-0834-4518-8D7F-565D771B1C99}" ShortID="183287786">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alien Artifact Pick Up" ID="{C6D45346-EFFB-4793-9A86-1A534B14631E}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Player" ID="{837C2841-2A78-4A1B-B169-F41CB0665750}" ShortID="725209728">
+							<ChildrenList>
+								<Folder Name="Movement" ID="{27BB0EE4-ECA3-46F5-B5A2-90E23057E0A0}" ShortID="635737231">
+									<ChildrenList>
+										<Event Name="Jetpack_Dash" ID="{F1978607-14BF-4928-8A28-B0CAE0E363A8}">
+											<ChildrenList>
+												<Action Name="" ID="{2D701A1C-AD7B-4F54-B90A-0F313EBF4A5B}" ShortID="628303392">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Jetpack" ID="{245D37ED-7247-42C5-930D-C049EC9671FE}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Jetpack_Upgrade" ID="{A640E181-7DFA-45EC-B6C0-F60B10BA0CB8}">
+											<ChildrenList>
+												<Action Name="" ID="{AB23AA86-54F4-44AA-A3C6-18F8E32473F7}" ShortID="107538641">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Jetpack Upgrade" ID="{0D580C89-5940-43D1-9C0F-73037054FE19}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Footsteps" ID="{284367C3-D4C4-46D5-BCAD-BE18E768F598}">
+											<ChildrenList>
+												<Action Name="" ID="{69A861F2-7EC9-421D-AA7C-1A1B083E206D}" ShortID="953303972">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Footsteps" ID="{39910975-5D28-4C5F-8DC1-402BD81AFF06}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Player_Hurt" ID="{8132E1A5-51BD-4A6C-A7B2-966C34DF56BE}">
+											<ChildrenList>
+												<Action Name="" ID="{FA8F4979-BB0A-473E-B941-850AFFAFC833}" ShortID="556021985">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Player Hurt" ID="{5E116D0A-106D-40E0-8998-0AAE087FC479}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Player_Jump" ID="{89B6297E-9EF3-4559-BF04-9890B2FB48B2}">
+											<ChildrenList>
+												<Action Name="" ID="{BE322A3D-07B2-45B8-AAEB-DFC723117806}" ShortID="1070281655">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Player Jump" ID="{86E990AC-551E-4905-B93A-20FC37146625}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Suit_Upgrade" ID="{7289856B-760C-4A3A-ACB0-855868667A64}">
+											<ChildrenList>
+												<Action Name="" ID="{77FB2D82-F21B-4FDD-BD3E-89E1827E1625}" ShortID="177013241">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Suit Upgrade" ID="{F9BF7820-8A64-47DB-8823-15753948233B}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Weapons" ID="{82674CF6-E774-4882-B0E9-3C01848C8B0A}" ShortID="1019317657">
+									<ChildrenList>
+										<Event Name="Grenade_Fire" ID="{A9EF836C-5FF8-4D10-AF8F-A963BADCB2A6}">
+											<ChildrenList>
+												<Action Name="" ID="{D24FE40D-9340-412B-95F1-78050C11FE1C}" ShortID="14340938">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Grenade Fire" ID="{030C3DEE-22A2-4A9C-8434-CAD9114D9F40}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Grenade_Freeze" ID="{A95944B5-7B48-4238-A430-CAB7C527288B}">
+											<ChildrenList>
+												<Action Name="" ID="{8F69EECF-04F2-4DA0-87FB-C18FB57C5F82}" ShortID="756592991">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Grenade Freeze" ID="{921BE608-6735-4EAC-B9ED-C6585733A4BF}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Grenade_Upgrade" ID="{F49031B7-24A4-4ABB-A898-64A2F896F295}">
+											<ChildrenList>
+												<Action Name="" ID="{F63DE8E1-7194-4E00-A809-446096B22AC5}" ShortID="1071126392">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Grenade Upgrade" ID="{9EA9986D-4337-4BCC-8664-B2B7E8AF5D77}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Lethal_Gun_Fire" ID="{40B31D89-A6C8-4169-8CB1-F5A39CC55798}">
+											<ChildrenList>
+												<Action Name="" ID="{8FA808D5-88DE-4832-8D64-070DD7A8A9D2}" ShortID="221066109">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Lethal Gun" ID="{0BD82D60-C28D-4764-BE3C-72EAFA54FDC0}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Stun_Gun_Fire" ID="{E5043162-C7E7-4759-9393-2B9F266387D3}">
+											<ChildrenList>
+												<Action Name="" ID="{7F312B75-2F58-4591-9EAA-987B460ED18B}" ShortID="958387177">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Stun Fire" ID="{F36E97B0-9420-4C49-BCF4-88C5736CC15E}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Stun_Gun_Upgrade" ID="{39C7ED45-2EE8-46F5-91C1-51658BD58464}">
+											<ChildrenList>
+												<Action Name="" ID="{1D724130-BB43-40B5-9A6B-C37C2AD93F97}" ShortID="1003408833">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Stun Upgrade" ID="{90CC11D4-9344-4E85-9486-8FD9FB901952}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Stun_Gun_Cooldown" ID="{66997210-A674-4BE5-B7BA-D88A0391ABD3}">
+											<ChildrenList>
+												<Action Name="" ID="{C7FCC1C7-6EE2-40E1-A6A5-CD5DB4070C5B}" ShortID="619130084">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Stun Cooldown" ID="{A94B23DB-3270-4EB5-BF93-E0BD6685FAE9}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="UI" ID="{6AF36A7B-8CC3-4777-843F-A31E00E484D6}" ShortID="303796791">
+							<ChildrenList>
+								<Event Name="Select" ID="{C7037E1D-8D1B-4505-AA48-571A0B739688}">
+									<ChildrenList>
+										<Action Name="" ID="{35CDCAE6-92DB-473A-86AB-0BB5D67C66F3}" ShortID="928966942">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Select" ID="{EB6C46E5-9161-423C-AA8E-4AF8EDF32FBE}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Pause" ID="{8E0DD255-A922-4792-A3CB-D4A201498B50}">
+									<ChildrenList>
+										<Action Name="" ID="{C10BFDA1-BFFD-4B62-9AB1-9C0FEFA68BE7}" ShortID="247333455">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Pause" ID="{1D66865E-7B52-4FBB-9B0B-823693B7DE36}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Back" ID="{84270609-278D-4949-83F5-97150CEAFB9C}">
+									<ChildrenList>
+										<Action Name="" ID="{13AE2C82-5F7F-4516-9129-8B37A5AE19DE}" ShortID="802264657">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Back" ID="{649E6E62-CF1C-4EDA-B1F2-CE44D35919B8}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Stop Commands" ID="{F58A2DCE-F27D-4019-B02A-D6452A03C6DA}" ShortID="484276654">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="9"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Stop_Infected_Audio" ID="{D2A095BD-96E8-4530-90D3-AEF8E513625F}">
+							<ChildrenList>
+								<Action Name="" ID="{D2AF2A63-EF81-40D5-9606-4A5C56E52547}" ShortID="67538100">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Infected Sequence" ID="{9ABD1D06-CC4C-4C86-B406-59B7922230A8}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Ambience" ID="{BE21F370-A5F3-47D5-B681-50464EE132A2}">
+							<ChildrenList>
+								<Action Name="" ID="{91D440BD-6EE5-4F7C-9C04-C31904C08A56}" ShortID="846309154">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience Switch" ID="{1B8792FD-A20C-4DCC-B998-1F02FB23E71A}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

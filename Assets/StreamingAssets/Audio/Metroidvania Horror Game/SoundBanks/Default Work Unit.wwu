@@ -4,7 +4,43 @@
 		<WorkUnit Name="Default Work Unit" ID="{CBE521D4-7968-4EFA-ADFC-BF265136C428}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{5CC260E4-6CD6-4DC2-B6C7-9DCC7874F721}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Audio_Log_6" ID="{C1002CD2-F1F6-4061-B72A-87D2E56093FC}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Alien_Artifact" ID="{17EB9EB1-66F4-40C3-8E4D-DFF15AAC46A9}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Audio_Log_1" ID="{D547DCF8-7E2F-410A-B4F8-1618F6C498EA}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Going_Up" ID="{E3E4CD98-03F2-415F-A74D-30635984FF12}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Lethal_Gun_Fire" ID="{40B31D89-A6C8-4169-8CB1-F5A39CC55798}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Grenade_Freeze" ID="{A95944B5-7B48-4238-A430-CAB7C527288B}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Escape_Pod_Sequence" ID="{6ABEEEB9-6449-426C-A5B1-339EBB1470CA}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Music" ID="{3E5D4BDC-CD65-42A5-B08D-0A53D5809338}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Audio_Log_2" ID="{6CB9088D-C9E8-438E-A328-E56D7BD8050D}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Xeno_Monologue" ID="{914D9AD0-3AB8-449C-90C7-D30F5B224296}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Select" ID="{C7037E1D-8D1B-4505-AA48-571A0B739688}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Infected_Audio" ID="{D2A095BD-96E8-4530-90D3-AEF8E513625F}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Jump" ID="{89B6297E-9EF3-4559-BF04-9890B2FB48B2}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Jetpack_Upgrade" ID="{A640E181-7DFA-45EC-B6C0-F60B10BA0CB8}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Audio_Log_3" ID="{862616D0-7ECD-46A2-9480-4B9F21F9D884}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps" ID="{284367C3-D4C4-46D5-BCAD-BE18E768F598}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stun_Gun_Upgrade" ID="{39C7ED45-2EE8-46F5-91C1-51658BD58464}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stun_Gun_Fire" ID="{E5043162-C7E7-4759-9393-2B9F266387D3}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause" ID="{8E0DD255-A922-4792-A3CB-D4A201498B50}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Ambience" ID="{BE21F370-A5F3-47D5-B681-50464EE132A2}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Xeno_Ambience" ID="{96B99336-40F0-4827-9008-6137C5D2476D}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Jetpack_Dash" ID="{F1978607-14BF-4928-8A28-B0CAE0E363A8}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Back" ID="{84270609-278D-4949-83F5-97150CEAFB9C}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Security_Alarm" ID="{686BBCB0-5B53-495B-AD35-777BF4C6CC2B}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ambience" ID="{2C706956-69AD-499D-8297-51626D20FB47}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Suit_Upgrade" ID="{7289856B-760C-4A3A-ACB0-855868667A64}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Hurt" ID="{8132E1A5-51BD-4A6C-A7B2-966C34DF56BE}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Elevator_Down" ID="{0F78AB4D-7D80-4A98-A590-B960B5CDAF59}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Audio_Log_4" ID="{7D5C26B1-2919-4AA0-8FB3-F6DB85754A21}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Grenade_Upgrade" ID="{F49031B7-24A4-4ABB-A898-64A2F896F295}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stun_Gun_Cooldown" ID="{66997210-A674-4BE5-B7BA-D88A0391ABD3}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Going_Down" ID="{309E6A28-39B5-4C6A-8BE8-655FAC7F1390}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Grenade_Fire" ID="{A9EF836C-5FF8-4D10-AF8F-A963BADCB2A6}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Elevator_Up" ID="{72634D5B-6E1F-4D12-888C-21E087638F71}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Audio_Log_5" ID="{4A9F447A-F1F4-4ECC-A67B-70CF0F228623}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

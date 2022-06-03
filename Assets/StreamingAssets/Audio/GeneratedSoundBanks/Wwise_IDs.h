@@ -11,6 +11,45 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID ALIEN_ARTIFACT = 708294615U;
+        static const AkUniqueID AUDIO_LOG_1 = 1201273842U;
+        static const AkUniqueID AUDIO_LOG_2 = 1201273841U;
+        static const AkUniqueID AUDIO_LOG_3 = 1201273840U;
+        static const AkUniqueID AUDIO_LOG_4 = 1201273847U;
+        static const AkUniqueID AUDIO_LOG_5 = 1201273846U;
+        static const AkUniqueID AUDIO_LOG_6 = 1201273845U;
+        static const AkUniqueID BACK = 1559875400U;
+        static const AkUniqueID ELEVATOR_DOWN = 2896864154U;
+        static const AkUniqueID ELEVATOR_UP = 1077976377U;
+        static const AkUniqueID ESCAPE_POD_SEQUENCE = 1157753940U;
+        static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID GOING_DOWN = 45544U;
+        static const AkUniqueID GOING_UP = 1006108075U;
+        static const AkUniqueID GRENADE_FIRE = 3705282092U;
+        static const AkUniqueID GRENADE_FREEZE = 475568473U;
+        static const AkUniqueID GRENADE_UPGRADE = 1580962308U;
+        static const AkUniqueID JETPACK_DASH = 4035040332U;
+        static const AkUniqueID JETPACK_UPGRADE = 4062170604U;
+        static const AkUniqueID LETHAL_GUN_FIRE = 3705941311U;
+        static const AkUniqueID PAUSE = 3092587493U;
+        static const AkUniqueID PLAY_AMBIENCE = 278617630U;
+        static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_XENO_AMBIENCE = 3109796241U;
+        static const AkUniqueID PLAY_XENO_MONOLOGUE = 3336051688U;
+        static const AkUniqueID PLAYER_HURT = 1068092414U;
+        static const AkUniqueID PLAYER_JUMP = 1305133589U;
+        static const AkUniqueID SECURITY_ALARM = 1727584325U;
+        static const AkUniqueID SELECT = 1432588725U;
+        static const AkUniqueID STOP_AMBIENCE = 2477713992U;
+        static const AkUniqueID STOP_INFECTED_AUDIO = 4218701743U;
+        static const AkUniqueID STUN_GUN_COOLDOWN = 708622098U;
+        static const AkUniqueID STUN_GUN_FIRE = 1876963445U;
+        static const AkUniqueID STUN_GUN_UPGRADE = 2455087587U;
+        static const AkUniqueID SUIT_UPGRADE = 157604563U;
+    } // namespace EVENTS
+
     namespace STATES
     {
         namespace MUSIC_SEGMENTS
@@ -138,12 +177,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID CREDITS_AUDIO = 2465958038U;
         static const AkUniqueID MAIN = 3161908922U;
-        static const AkUniqueID MAIN_MENU_AUDIO = 1054688183U;
-        static const AkUniqueID MAP_AREA_1 = 3558846595U;
-        static const AkUniqueID MAP_AREA_2 = 3558846592U;
-        static const AkUniqueID MAP_AREA_3 = 3558846593U;
     } // namespace BANKS
 
     namespace BUSSES
@@ -151,7 +185,6 @@ namespace AK
         static const AkUniqueID _0_GRAVITY_ROOM = 1835835030U;
         static const AkUniqueID BOSS_ROOM = 1571820443U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
