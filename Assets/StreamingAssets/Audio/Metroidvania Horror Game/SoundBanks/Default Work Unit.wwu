@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{CBE521D4-7968-4EFA-ADFC-BF265136C428}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{5CC260E4-6CD6-4DC2-B6C7-9DCC7874F721}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>99999999</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="Audio_Log_6" ID="{C1002CD2-F1F6-4061-B72A-87D2E56093FC}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Alien_Artifact" ID="{17EB9EB1-66F4-40C3-8E4D-DFF15AAC46A9}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>

@@ -23,7 +23,7 @@
 				<AuxBus Id="3691056935" Name="Noise_Meter" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_Bus\Noise_Meter"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="English(US)" Hash="2235139504">
+		<SoundBank Id="3161908922" Language="English(US)" Hash="3713782216">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
@@ -112,7 +112,7 @@
 					<IncludedMemoryFiles>
 						<File Id="969567069" Language="SFX">
 							<ShortName>ui_back.wav</ShortName>
-							<Path>SFX/ui_back_2A44EC3E.wem</Path>
+							<Path>SFX/ui_back_90D1205D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -120,7 +120,7 @@
 					<IncludedMemoryFiles>
 						<File Id="959127739" Language="SFX">
 							<ShortName>Elevator\sfx_environment_elevator.wav</ShortName>
-							<Path>SFX/Elevator/sfx_environment_elevator_F38CC47E.wem</Path>
+							<Path>SFX/Elevator/sfx_environment_elevator_3C15664D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -128,7 +128,7 @@
 					<IncludedMemoryFiles>
 						<File Id="697570722" Language="SFX">
 							<ShortName>Elevator\sfx_environment_elevator.wav</ShortName>
-							<Path>SFX/Elevator/sfx_environment_elevator_EC91CC2B.wem</Path>
+							<Path>SFX/Elevator/sfx_environment_elevator_131F1F48.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -137,87 +137,87 @@
 					<IncludedMemoryFiles>
 						<File Id="12323694" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_3.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_3_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_3_3138B09A.wem</Path>
 						</File>
 						<File Id="84080864" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_5.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_5_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_5_3138B09A.wem</Path>
 						</File>
 						<File Id="212270525" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_7.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_7_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_7_3138B09A.wem</Path>
 						</File>
 						<File Id="263022152" Language="SFX">
 							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_4.wav</ShortName>
-							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_4_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_4_3138B09A.wem</Path>
 						</File>
 						<File Id="266786222" Language="SFX">
 							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_1.wav</ShortName>
-							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_1_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_1_3138B09A.wem</Path>
 						</File>
 						<File Id="324224561" Language="SFX">
 							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_2.wav</ShortName>
-							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_2_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_2_3138B09A.wem</Path>
 						</File>
 						<File Id="346768803" Language="SFX">
 							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_2.wav</ShortName>
-							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_2_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_2_3138B09A.wem</Path>
 						</File>
 						<File Id="388289992" Language="SFX">
 							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_3.wav</ShortName>
-							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_3_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_3_3138B09A.wem</Path>
 						</File>
 						<File Id="499182671" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_6.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_6_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_6_3138B09A.wem</Path>
 						</File>
 						<File Id="543710671" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_8.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_8_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_8_3138B09A.wem</Path>
 						</File>
 						<File Id="699641404" Language="SFX">
 							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_3.wav</ShortName>
-							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_3_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_3_3138B09A.wem</Path>
 						</File>
 						<File Id="702327265" Language="SFX">
 							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_4.wav</ShortName>
-							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_4_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_4_3138B09A.wem</Path>
 						</File>
 						<File Id="728264653" Language="SFX">
 							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_1.wav</ShortName>
-							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_1_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_1_3138B09A.wem</Path>
 						</File>
 						<File Id="770339308" Language="SFX">
 							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_2.wav</ShortName>
-							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_2_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_2_3138B09A.wem</Path>
 						</File>
 						<File Id="777501039" Language="SFX">
 							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_4.wav</ShortName>
-							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_4_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_4_3138B09A.wem</Path>
 						</File>
 						<File Id="820693115" Language="SFX">
 							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_1.wav</ShortName>
-							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_1_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_1_3138B09A.wem</Path>
 						</File>
 						<File Id="945543423" Language="SFX">
 							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_3.wav</ShortName>
-							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_3_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_3_3138B09A.wem</Path>
 						</File>
 						<File Id="951515435" Language="SFX">
 							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_5.wav</ShortName>
-							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_5_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_5_3138B09A.wem</Path>
 						</File>
 						<File Id="1007650402" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_1.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_1_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_1_3138B09A.wem</Path>
 						</File>
 						<File Id="1013508017" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_2.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_2_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_2_3138B09A.wem</Path>
 						</File>
 						<File Id="1053989945" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_4.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_4_10C4C929.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_4_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{0AE16BA4-4F92-405F-896B-E4248D5C088B}</DefaultSwitchValue>
@@ -267,7 +267,7 @@
 					<IncludedMemoryFiles>
 						<File Id="451920883" Language="SFX">
 							<ShortName>Grenade Fire\sfx_player_grenade_fire.wav</ShortName>
-							<Path>SFX/Grenade Fire/sfx_player_grenade_fire_E8DA3F30.wem</Path>
+							<Path>SFX/Grenade Fire/sfx_player_grenade_fire_019E12AB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -275,7 +275,7 @@
 					<IncludedMemoryFiles>
 						<File Id="544239192" Language="SFX">
 							<ShortName>Grenade Freeze\sfx_player_grenade_freeze.wav</ShortName>
-							<Path>SFX/Grenade Freeze/sfx_player_grenade_freeze_7752D266.wem</Path>
+							<Path>SFX/Grenade Freeze/sfx_player_grenade_freeze_B10F3BB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -283,19 +283,19 @@
 					<IncludedMemoryFiles>
 						<File Id="110542236" Language="SFX">
 							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_2.wav</ShortName>
-							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_2_10C4C929.wem</Path>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_2_3138B09A.wem</Path>
 						</File>
 						<File Id="333313522" Language="SFX">
 							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_4.wav</ShortName>
-							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_4_10C4C929.wem</Path>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_4_3138B09A.wem</Path>
 						</File>
 						<File Id="715858962" Language="SFX">
 							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_3.wav</ShortName>
-							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_3_10C4C929.wem</Path>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_3_3138B09A.wem</Path>
 						</File>
 						<File Id="805806231" Language="SFX">
 							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_1.wav</ShortName>
-							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_1_10C4C929.wem</Path>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_1_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -303,19 +303,19 @@
 					<IncludedMemoryFiles>
 						<File Id="127882654" Language="SFX">
 							<ShortName>Jetpack\sfx_player_jetpack_dash_4.wav</ShortName>
-							<Path>SFX/Jetpack/sfx_player_jetpack_dash_4_0B7315B7.wem</Path>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_4_2A17CD9C.wem</Path>
 						</File>
 						<File Id="213843341" Language="SFX">
 							<ShortName>Jetpack\sfx_player_jetpack_dash_2.wav</ShortName>
-							<Path>SFX/Jetpack/sfx_player_jetpack_dash_2_2780EBB7.wem</Path>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_2_6AD6ECF0.wem</Path>
 						</File>
 						<File Id="882463319" Language="SFX">
 							<ShortName>Jetpack\sfx_player_jetpack_dash_3.wav</ShortName>
-							<Path>SFX/Jetpack/sfx_player_jetpack_dash_3_9AEA7716.wem</Path>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_3_740D2165.wem</Path>
 						</File>
 						<File Id="1063171889" Language="SFX">
 							<ShortName>Jetpack\sfx_player_jetpack_dash_1.wav</ShortName>
-							<Path>SFX/Jetpack/sfx_player_jetpack_dash_1_FBCE505A.wem</Path>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_1_14115FDD.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -323,11 +323,11 @@
 					<IncludedMemoryFiles>
 						<File Id="514305692" Language="SFX">
 							<ShortName>sfx_player_jetpack_upgrade_2.wav</ShortName>
-							<Path>SFX/sfx_player_jetpack_upgrade_2_10C4C929.wem</Path>
+							<Path>SFX/sfx_player_jetpack_upgrade_2_3138B09A.wem</Path>
 						</File>
 						<File Id="1020952662" Language="SFX">
 							<ShortName>sfx_player_jetpack_upgrade_1.wav</ShortName>
-							<Path>SFX/sfx_player_jetpack_upgrade_1_10C4C929.wem</Path>
+							<Path>SFX/sfx_player_jetpack_upgrade_1_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -335,19 +335,19 @@
 					<IncludedMemoryFiles>
 						<File Id="183375381" Language="SFX">
 							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_2.wav</ShortName>
-							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_2_10C4C929.wem</Path>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_2_3138B09A.wem</Path>
 						</File>
 						<File Id="722421037" Language="SFX">
 							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_1.wav</ShortName>
-							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_1_10C4C929.wem</Path>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_1_3138B09A.wem</Path>
 						</File>
 						<File Id="811209880" Language="SFX">
 							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_3.wav</ShortName>
-							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_3_10C4C929.wem</Path>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_3_3138B09A.wem</Path>
 						</File>
 						<File Id="885199976" Language="SFX">
 							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_4.wav</ShortName>
-							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_4_10C4C929.wem</Path>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_4_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -355,7 +355,7 @@
 					<IncludedMemoryFiles>
 						<File Id="648292605" Language="SFX">
 							<ShortName>ui_pause.wav</ShortName>
-							<Path>SFX/ui_pause_C0042753.wem</Path>
+							<Path>SFX/ui_pause_76AA0AD0.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -363,27 +363,27 @@
 					<IncludedMemoryFiles>
 						<File Id="6329621" Language="SFX">
 							<ShortName>sfx_ambience_ship_hull.wav</ShortName>
-							<Path>SFX/sfx_ambience_ship_hull_D79FB2B7.wem</Path>
+							<Path>SFX/sfx_ambience_ship_hull_78D55724.wem</Path>
 						</File>
 						<File Id="419453379" Language="SFX">
 							<ShortName>sfx_ambience_med_bay.wav</ShortName>
-							<Path>SFX/sfx_ambience_med_bay_10C4C929.wem</Path>
+							<Path>SFX/sfx_ambience_med_bay_3138B09A.wem</Path>
 						</File>
 						<File Id="575244914" Language="SFX">
 							<ShortName>sfx_ambience_warehouse.wav</ShortName>
-							<Path>SFX/sfx_ambience_warehouse_10C4C929.wem</Path>
+							<Path>SFX/sfx_ambience_warehouse_3138B09A.wem</Path>
 						</File>
 						<File Id="615095720" Language="SFX">
 							<ShortName>sfx_ambience_boss.wav</ShortName>
-							<Path>SFX/sfx_ambience_boss_10C4C929.wem</Path>
+							<Path>SFX/sfx_ambience_boss_3138B09A.wem</Path>
 						</File>
 						<File Id="827298294" Language="SFX">
 							<ShortName>sfx_ambience_hallway.wav</ShortName>
-							<Path>SFX/sfx_ambience_hallway_10C4C929.wem</Path>
+							<Path>SFX/sfx_ambience_hallway_3138B09A.wem</Path>
 						</File>
 						<File Id="871992041" Language="SFX">
 							<ShortName>sfx_ambience_escape_pod_hatch.wav</ShortName>
-							<Path>SFX/sfx_ambience_escape_pod_hatch_10C4C929.wem</Path>
+							<Path>SFX/sfx_ambience_escape_pod_hatch_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{D37BAE8E-3594-4C87-B4BF-1275932B2970}</DefaultSwitchValue>
@@ -595,9 +595,13 @@
 								<SwitchContainer SwitchValue="{0965315D-926D-4632-A0B6-EBE87AE73C88}">
 									<Media>
 										<File Id="21019540"/>
+										<File Id="30339314"/>
 										<File Id="135272103"/>
 										<File Id="153984511"/>
+										<File Id="154343532"/>
+										<File Id="352765779"/>
 										<File Id="544080710"/>
+										<File Id="708733859"/>
 										<File Id="748931381"/>
 										<File Id="753869440"/>
 									</Media>
@@ -608,10 +612,16 @@
 							<Children>
 								<SwitchContainer SwitchValue="{9C4CA061-AA8A-40E9-A5E1-D9627DAD6B52}">
 									<Media>
+										<File Id="21019540"/>
+										<File Id="30339314"/>
 										<File Id="135272103"/>
 										<File Id="153984511"/>
+										<File Id="154343532"/>
+										<File Id="352765779"/>
 										<File Id="361788286"/>
 										<File Id="480705699"/>
+										<File Id="544080710"/>
+										<File Id="708733859"/>
 										<File Id="748931381"/>
 										<File Id="753869440"/>
 									</Media>
@@ -622,8 +632,16 @@
 							<Children>
 								<SwitchContainer SwitchValue="{62892F83-6525-4C3E-BE71-DF149C13F735}">
 									<Media>
+										<File Id="21019540"/>
+										<File Id="30339314"/>
 										<File Id="135272103"/>
 										<File Id="153984511"/>
+										<File Id="154343532"/>
+										<File Id="352765779"/>
+										<File Id="361788286"/>
+										<File Id="480705699"/>
+										<File Id="544080710"/>
+										<File Id="708733859"/>
 										<File Id="732893337"/>
 										<File Id="748931381"/>
 										<File Id="753869440"/>
@@ -636,8 +654,22 @@
 							<Children>
 								<SwitchContainer SwitchValue="{9BB154B8-0367-467B-8F92-7B8BF7C6DA49}">
 									<Media>
+										<File Id="21019540"/>
+										<File Id="30339314"/>
+										<File Id="135272103"/>
 										<File Id="143207839"/>
+										<File Id="153984511"/>
+										<File Id="154343532"/>
+										<File Id="352765779"/>
+										<File Id="361788286"/>
+										<File Id="480705699"/>
+										<File Id="544080710"/>
 										<File Id="615733923"/>
+										<File Id="708733859"/>
+										<File Id="732893337"/>
+										<File Id="748931381"/>
+										<File Id="753869440"/>
+										<File Id="792362547"/>
 									</Media>
 								</SwitchContainer>
 							</Children>
@@ -768,23 +800,23 @@
 					<IncludedMemoryFiles>
 						<File Id="32388923" Language="SFX">
 							<ShortName>Player Hurt\sfx_player_hurt_1.wav</ShortName>
-							<Path>SFX/Player Hurt/sfx_player_hurt_1_10C4C929.wem</Path>
+							<Path>SFX/Player Hurt/sfx_player_hurt_1_3138B09A.wem</Path>
 						</File>
 						<File Id="63806104" Language="SFX">
 							<ShortName>Player Hurt\sfx_player_hurt_2.wav</ShortName>
-							<Path>SFX/Player Hurt/sfx_player_hurt_2_10C4C929.wem</Path>
+							<Path>SFX/Player Hurt/sfx_player_hurt_2_3138B09A.wem</Path>
 						</File>
 						<File Id="848091051" Language="SFX">
 							<ShortName>Player Hurt\sfx_player_hurt_5.wav</ShortName>
-							<Path>SFX/Player Hurt/sfx_player_hurt_5_10C4C929.wem</Path>
+							<Path>SFX/Player Hurt/sfx_player_hurt_5_3138B09A.wem</Path>
 						</File>
 						<File Id="864522723" Language="SFX">
 							<ShortName>Player Hurt\sfx_player_hurt_4.wav</ShortName>
-							<Path>SFX/Player Hurt/sfx_player_hurt_4_10C4C929.wem</Path>
+							<Path>SFX/Player Hurt/sfx_player_hurt_4_3138B09A.wem</Path>
 						</File>
 						<File Id="878010969" Language="SFX">
 							<ShortName>Player Hurt\sfx_player_hurt_3.wav</ShortName>
-							<Path>SFX/Player Hurt/sfx_player_hurt_3_10C4C929.wem</Path>
+							<Path>SFX/Player Hurt/sfx_player_hurt_3_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -792,7 +824,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1016587642" Language="SFX">
 							<ShortName>Player Jump\sfx_player_jump.wav</ShortName>
-							<Path>SFX/Player Jump/sfx_player_jump_10C4C929.wem</Path>
+							<Path>SFX/Player Jump/sfx_player_jump_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -800,7 +832,7 @@
 					<IncludedMemoryFiles>
 						<File Id="150222993" Language="SFX">
 							<ShortName>Security Alarm\sfx_environment_security_alarm_activated.wav</ShortName>
-							<Path>SFX/Security Alarm/sfx_environment_security_alarm_activated_FB688B1B.wem</Path>
+							<Path>SFX/Security Alarm/sfx_environment_security_alarm_activated_E0996EE8.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -811,7 +843,7 @@
 					<IncludedMemoryFiles>
 						<File Id="925556678" Language="SFX">
 							<ShortName>ui_select.wav</ShortName>
-							<Path>SFX/ui_select_5F59EDFB.wem</Path>
+							<Path>SFX/ui_select_F951B69C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -821,11 +853,11 @@
 					<IncludedMemoryFiles>
 						<File Id="82215919" Language="SFX">
 							<ShortName>Stun Cooldown\sfx_player_stun_cooldown.wav</ShortName>
-							<Path>SFX/Stun Cooldown/sfx_player_stun_cooldown_10C4C929.wem</Path>
+							<Path>SFX/Stun Cooldown/sfx_player_stun_cooldown_3138B09A.wem</Path>
 						</File>
 						<File Id="276793087" Language="SFX">
 							<ShortName>Stun Cooldown\sfx_player_stun_cooldown_complete.wav</ShortName>
-							<Path>SFX/Stun Cooldown/sfx_player_stun_cooldown_complete_10C4C929.wem</Path>
+							<Path>SFX/Stun Cooldown/sfx_player_stun_cooldown_complete_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -833,7 +865,7 @@
 					<IncludedMemoryFiles>
 						<File Id="750823969" Language="SFX">
 							<ShortName>Stun Fire\sfx_player_stun_fire.wav</ShortName>
-							<Path>SFX/Stun Fire/sfx_player_stun_fire_10C4C929.wem</Path>
+							<Path>SFX/Stun Fire/sfx_player_stun_fire_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -841,19 +873,19 @@
 					<IncludedMemoryFiles>
 						<File Id="14651933" Language="SFX">
 							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_1.wav</ShortName>
-							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_1_10C4C929.wem</Path>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_1_3138B09A.wem</Path>
 						</File>
 						<File Id="299991711" Language="SFX">
 							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_2.wav</ShortName>
-							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_2_10C4C929.wem</Path>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_2_3138B09A.wem</Path>
 						</File>
 						<File Id="392537604" Language="SFX">
 							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_3.wav</ShortName>
-							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_3_10C4C929.wem</Path>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_3_3138B09A.wem</Path>
 						</File>
 						<File Id="723059966" Language="SFX">
 							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_4.wav</ShortName>
-							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_4_10C4C929.wem</Path>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_4_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -861,18 +893,17 @@
 					<IncludedMemoryFiles>
 						<File Id="691092938" Language="SFX">
 							<ShortName>Suit\sfx_player_suit_upgrade_2.wav</ShortName>
-							<Path>SFX/Suit/sfx_player_suit_upgrade_2_10C4C929.wem</Path>
+							<Path>SFX/Suit/sfx_player_suit_upgrade_2_3138B09A.wem</Path>
 						</File>
 						<File Id="822777633" Language="SFX">
 							<ShortName>Suit\sfx_player_suit_upgrade_1.wav</ShortName>
-							<Path>SFX/Suit/sfx_player_suit_upgrade_1_10C4C929.wem</Path>
+							<Path>SFX/Suit/sfx_player_suit_upgrade_1_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="3505704881" Name="Health_Bar" ObjectPath="\Game Parameters\Default Work Unit\UI\Health_Bar"/>
-				<GameParameter Id="3691056935" Name="Noise_Meter" ObjectPath="\Game Parameters\Default Work Unit\UI\Noise_Meter"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3826569560" Name="Music_State" ObjectPath="\States\Default Work Unit\Music_State" GUID="{D0F08B4E-1A96-41CE-BC0D-963EAB3AF519}">
