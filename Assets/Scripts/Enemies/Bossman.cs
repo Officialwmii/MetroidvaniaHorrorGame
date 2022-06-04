@@ -77,7 +77,7 @@ public class Bossman : MonoBehaviour
 
 		if (life <= 0)
 		{
-			transform.GetComponent<Animator>().SetBool("IsDead", true);
+			transform.GetComponent<Animator>().SetBool("BossDead", true);
 			StartCoroutine(DestroyEnemy());
 		}
 
