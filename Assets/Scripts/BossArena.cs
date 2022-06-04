@@ -17,6 +17,7 @@ public class BossArena : MonoBehaviour
     public GameObject ArenaLockLeft;
     public GameObject ArenaLockRight;
     public GameObject Boss;
+    public bool WasInArenaLastFrame = false;
 
     void Start()
     {
@@ -26,6 +27,11 @@ public class BossArena : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (WasInArenaLastFrame == false)
+        {
+            Boss.GetComponent<Bossman>().life = 400;
+        }
+        
         if (Boss.GetComponent<Bossman>().life <= 0)
         {
             ArenaLockLeft.SetActive(false);
@@ -34,6 +40,7 @@ public class BossArena : MonoBehaviour
         
         if (PlayerInArena)
         {
+            WasInArenaLastFrame = true;
             director.Play();
             BossHider.SetActive(true);
             bossCamera.SetActive(true);
@@ -59,6 +66,7 @@ public class BossArena : MonoBehaviour
             {
                 ArenaLockLeft.SetActive(false);
                 ArenaLockRight.SetActive(false);
+                WasInArenaLastFrame = false;
             }
             playerCamera.SetActive(true);
             vignette.SetActive(true);
@@ -67,6 +75,7 @@ public class BossArena : MonoBehaviour
             {
                 ArenaLockLeft.SetActive(true);
                 ArenaLockRight.SetActive(true);
+                WasInArenaLastFrame = true;
             }
         }
 
