@@ -212,9 +212,9 @@ TextureImporter:
       name: boss_room_assets_5
       rect:
         serializedVersion: 2
-        x: 1776
-        y: 1836
-        width: 816
+        x: 1814
+        y: 1817
+        width: 399
         height: 802
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -439,6 +439,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: boss_room_assets_9
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 1806
+        width: 368
+        height: 814
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fb2bf08c280eb4994e32e46916dfcf
+      internalID: 479427939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -460,6 +481,7 @@ TextureImporter:
       boss_room_assets_0: 279142976
       boss_room_assets_6: 2037421948
       boss_room_assets_3: 1708212773
+      boss_room_assets_17: -1333659215
       boss_room_assets_2: -848351366
       boss_room_assets_16: -2010707233
       boss_room_assets_7: 936244436

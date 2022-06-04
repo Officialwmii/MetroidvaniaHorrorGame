@@ -17,7 +17,7 @@ public class Screamer : MonoBehaviour {
 	public float detectionRange = 1f;
 	private GameObject player;
 	public float damageAmount = 1f;
-	public bool onAlert = false;
+	public bool onAlert;
 	
 	public float speed = 5f;
 	private Animator animator;
@@ -55,7 +55,8 @@ public class Screamer : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
+		checkForPlayer();
 		onAlert = EventManager.EnemiesAlerted;
 		
 		if (onAlert)
@@ -69,7 +70,7 @@ public class Screamer : MonoBehaviour {
 		}
 		
 		
-		checkForPlayer();
+		
 		if (life <= 0) {
 			transform.GetComponent<Animator>().SetBool("IsDead", true);
 			StartCoroutine(DestroyEnemy());
@@ -103,30 +104,27 @@ public class Screamer : MonoBehaviour {
     {
 		if (Vector3.Distance(player.transform.position, transform.position) <= detectionRange && !isStunned )
         {
-			if (!playerDetectable) {
-
-				playerDetectable = true;
+			playerDetectable = true;
 
 				
 
-				EventManager.Alert();
-				//IsScreamingEvent.Invoke();
-				transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
+			EventManager.Alert();
+			EventManager.AddDanger();
+			//IsScreamingEvent.Invoke();
+			transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
 
-				if (player.transform.position.x > transform.position.x && facingRight)
-					Flip();
-				if (player.transform.position.x < transform.position.x && !facingRight)
-					Flip();
-			}
+			if (player.transform.position.x > transform.position.x && facingRight)
+				Flip();
+			if (player.transform.position.x < transform.position.x && !facingRight)
+				Flip();
+			
 
 			
 		}
-        else
-        {
-			if (playerDetectable)
-			{
-				playerDetectable = false;
-			}
+        if (Vector3.Distance(player.transform.position, transform.position) > detectionRange && !isStunned)
+		{
+			playerDetectable = false;
+
 			EventManager.Calm();
 		}
 		

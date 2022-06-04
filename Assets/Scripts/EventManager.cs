@@ -451,6 +451,7 @@ public class EventManager : MonoBehaviour
     static public void Alert() {
         EnemiesAlerted = true;
         Debug.Log("Help!");
+
     }
 
     static public void Calm()
