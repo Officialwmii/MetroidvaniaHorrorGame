@@ -8,7 +8,7 @@ public class SurpriseAttack : MonoBehaviour
     // Start is called before the first frame update
     public PlayableDirector director;
     public GameObject player;
-    public float phase_timer = 20f;
+    public float phase_timer = 10f;
     public float timer;
     public float trigger_time = 5f;
     void Awake()
@@ -21,10 +21,14 @@ public class SurpriseAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (EventManager.CurrentDangerLevel > 1)
-        {
-            StartAttack();
+        switch (EventManager.CurrentDangerLevel) {
+
+            case 1: StartAttack(); break;
+            case 2: StartAttack(); break;
+            case 3: StartAttack(); break;
+
         }
+
     }
 
     void StartAttack()

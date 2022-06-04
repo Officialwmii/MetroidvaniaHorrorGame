@@ -140,7 +140,7 @@ public class EventManager : MonoBehaviour
         }
 
         //Danger meter debug
-        if (Input.GetKeyDown(KeyCode.PageUp)) { AddDanger();}
+        if (Input.GetKeyDown(KeyCode.PageUp)) { AddDangerEveryTick();}
 
         if (Input.GetKeyDown(KeyCode.PageDown)){ ReduceDanger(); }
 
@@ -151,8 +151,8 @@ public class EventManager : MonoBehaviour
             UpdateFuel();
         }
 
-        AlertAddingDanger();
-
+        //AlertAddingDanger();
+        AutomaticallyReduceDanger();
     }
 
 
@@ -407,15 +407,32 @@ public class EventManager : MonoBehaviour
 
     //Danger
 
-    static public void AddDanger() {
+    static public void AddDangerEveryTick() {
 
-        CurrentDanger = CurrentDanger + 5;
+        CurrentDanger = CurrentDanger + (5+2.5f) * Time.deltaTime;
         if (CurrentDanger >= 100) { CurrentDanger = 100;}
 
         UpdateDangerMeter();
         UpdateDangerLevel();
     }
 
+    static public void AutomaticallyReduceDanger() {
+        CurrentDanger = CurrentDanger - 2.5f * Time.deltaTime;
+        if (CurrentDanger <= 0) { CurrentDanger = 0; }
+
+        UpdateDangerMeter();
+        UpdateDangerLevel();
+
+    }
+
+    static public void AddDanger(float addition) {
+
+        CurrentDanger = CurrentDanger + addition;
+        if (CurrentDanger >= 100) { CurrentDanger = 100; }
+        UpdateDangerMeter();
+        UpdateDangerLevel();
+
+    }
 
     static public void ReduceDanger()
     {
@@ -435,9 +452,9 @@ public class EventManager : MonoBehaviour
     {
         CurrentDangerLevel = 0;
        
-        if (CurrentDanger >= 50) CurrentDangerLevel = 1;
-        if (CurrentDanger >= 75) CurrentDangerLevel = 2;
-        if (CurrentDanger >= 85) CurrentDangerLevel = 3;
+        if (CurrentDanger >= 25) CurrentDangerLevel = 1;
+        if (CurrentDanger >= 50) CurrentDangerLevel = 2;
+        if (CurrentDanger >= 75) CurrentDangerLevel = 3;
        //if (CurrentDanger >= 100) SceneManager.LoadScene("Scenes/" + SceneManager.GetActiveScene().name);
 
         DangerLevel1Layer.SetActive(false);
@@ -466,7 +483,7 @@ public class EventManager : MonoBehaviour
 
         if (EnemiesAlerted) {
 
-            CurrentDanger = CurrentDanger + 0.25f * Time.deltaTime;
+           // CurrentDanger = CurrentDanger + 0.25f * Time.deltaTime;
 
             UpdateDangerMeter();
         }

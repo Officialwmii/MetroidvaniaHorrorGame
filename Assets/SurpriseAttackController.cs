@@ -17,7 +17,6 @@ public class SurpriseAttackController : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("player");
         surpriseParent = GameObject.Find("surpriseParent");
-
     }
     private void Awake()
     {
@@ -29,10 +28,9 @@ public class SurpriseAttackController : MonoBehaviour
     {
  
 
-        if (EventManager.CurrentDangerLevel > 1 && surpriseParent.transform.childCount == 0)
+        if (EventManager.CurrentDangerLevel > 1 && surpriseParent.transform.childCount <= 0)
         {
             spawnAttack();
-
             
         }
 
@@ -46,6 +44,7 @@ public class SurpriseAttackController : MonoBehaviour
     void spawnAttack()
     {
         bossAttack = (GameObject)Instantiate(surpriseAttackPrefab, player.transform.position, player.transform.rotation, surpriseParent.transform);
+        bossAttack.transform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
         Destroy(bossAttack, 5);
     }
 }
