@@ -14384,6 +14384,12 @@ MonoBehaviour:
   End_Phase: {fileID: 3491671780435757170}
   The_Bossman: {fileID: 4319133755988133326}
   BossmanHP: {fileID: 0}
+  SET_BOSS_HP_400: 0
+  SET_BOSS_HP_380: 0
+  SET_BOSS_HP_300: 0
+  SET_BOSS_HP_200: 0
+  SET_BOSS_HP_100: 0
+  SET_BOSS_HP_0: 0
 --- !u!320 &3491671781402159565
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -14502,7 +14508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3491671781410467051
 Transform:
   m_ObjectHideFlags: 0
@@ -14573,6 +14579,8 @@ PlayableDirector:
     value: {fileID: 7793468645989597791}
   - key: {fileID: -6320199238058815916, guid: 0f4e8fb3b6d7e2c41b254e887dc84f1f, type: 2}
     value: {fileID: 1185238203883752127}
+  - key: {fileID: -3323157276139500276, guid: 0f4e8fb3b6d7e2c41b254e887dc84f1f, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &3491671781410467053
@@ -29922,6 +29930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 833830908175244059}
+  - component: {fileID: 6042945144379710989}
   m_Layer: 0
   m_Name: DamageHeads
   m_TagString: Untagged
@@ -29946,6 +29955,27 @@ Transform:
   m_Father: {fileID: 3491671781410467051}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &6042945144379710989
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8277715155992122674}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 6089ed881595d7142b2cf23acc413320, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 5694623746222319761, guid: 6089ed881595d7142b2cf23acc413320, type: 2}
+    value: {fileID: 5399981754448055728}
+  - key: {fileID: 7470451442300948508, guid: 6089ed881595d7142b2cf23acc413320, type: 2}
+    value: {fileID: 3141034527790874590}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &8280667418086845168
 GameObject:
   m_ObjectHideFlags: 0
