@@ -14,7 +14,9 @@ public class BossArena : MonoBehaviour
     public PlayableDirector director;
     public GameObject BossHider;
     public GameObject vignette;
-
+    public GameObject ArenaLockLeft;
+    public GameObject ArenaLockRight;
+    public GameObject Boss;
 
     void Start()
     {
@@ -24,6 +26,12 @@ public class BossArena : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Boss.GetComponent<Bossman>().life <= 0)
+        {
+            ArenaLockLeft.SetActive(false);
+            ArenaLockRight.SetActive(false);
+        }
+        
         if (PlayerInArena)
         {
             director.Play();
@@ -31,6 +39,11 @@ public class BossArena : MonoBehaviour
             bossCamera.SetActive(true);
             bossStuff.SetActive(true);
             BossmanHP.SetActive(true);
+            if (Boss.GetComponent<Bossman>().life > 0)
+            {
+                ArenaLockLeft.SetActive(true);
+                ArenaLockRight.SetActive(true);
+            }
             
             vignette.SetActive(false);
             playerCamera.SetActive(false);
@@ -42,9 +55,19 @@ public class BossArena : MonoBehaviour
             bossStuff.SetActive(false);
             BossmanHP.SetActive(false);
             BossHider.SetActive(false);
-
+            if (Boss.GetComponent<Bossman>().life > 0)
+            {
+                ArenaLockLeft.SetActive(false);
+                ArenaLockRight.SetActive(false);
+            }
             playerCamera.SetActive(true);
             vignette.SetActive(true);
+
+            if (Boss.GetComponent<Bossman>().life <= 0)
+            {
+                ArenaLockLeft.SetActive(true);
+                ArenaLockRight.SetActive(true);
+            }
         }
 
     }
