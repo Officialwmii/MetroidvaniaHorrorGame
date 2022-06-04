@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 93cc9a4dd81321640be41d383b1e1297, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -183,6 +183,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatorObject: {fileID: 3130858568479208095}
+  shipAIAnnouncementClosed:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  shipAIAnnouncementOpened:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  doorClosed: {fileID: 0}
+  doorOpened: {fileID: 0}
   doorType: 0
 --- !u!61 &1213678332512914216
 BoxCollider2D:
@@ -318,7 +328,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 93cc9a4dd81321640be41d383b1e1297, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 93cc9a4dd81321640be41d383b1e1297, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,7 +115,6 @@ Transform:
   m_Children:
   - {fileID: 2150502162457759849}
   - {fileID: 2996550589255370173}
-  - {fileID: 8078123741928288296}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -168,7 +167,8 @@ Transform:
   m_LocalPosition: {x: -0.000012207776, y: 1.6, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8078123741928288296}
   m_Father: {fileID: 6224785976167277321}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -192,7 +192,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 93cc9a4dd81321640be41d383b1e1297, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -255,27 +255,27 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 6224785976167277321}
+    m_TransformParent: {fileID: 2150502162457759849}
     m_Modifications:
     - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 7.992526
+      value: 5.328351
       objectReference: {fileID: 0}
     - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 9.218526
+      value: 6.1456842
       objectReference: {fileID: 0}
     - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3551636
+      value: 2.236784
       objectReference: {fileID: 0}
     - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4906921
+      value: -2.727128
       objectReference: {fileID: 0}
     - target: {fileID: 4293538882777202399, guid: c47de9c9b026a41f2ae38c82a76ab28e, type: 3}
       propertyPath: m_LocalPosition.z
