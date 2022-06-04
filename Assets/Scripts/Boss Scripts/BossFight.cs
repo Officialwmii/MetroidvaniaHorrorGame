@@ -18,6 +18,15 @@ public class BossFight : MonoBehaviour
 
     public GameObject BossmanHP;
 
+    [Header("Debug")]
+    public bool SET_BOSS_HP_400;
+    public bool SET_BOSS_HP_380;
+    public bool SET_BOSS_HP_300;
+    public bool SET_BOSS_HP_200;
+    public bool SET_BOSS_HP_100;
+    public bool SET_BOSS_HP_0;
+
+
     void Start()
     {
         Phase_1.SetActive(false);
@@ -34,7 +43,18 @@ public class BossFight : MonoBehaviour
     void Update()
     {
         UpdateBossHealthMeter();
-
+        DebugPhases();
+        if (The_Bossman.GetComponent<Bossman>().life == 400)
+        {
+            Phase_1.SetActive(false);
+            Phase_2.SetActive(false);
+            Phase_3.SetActive(false);
+            Phase_4.SetActive(false);
+            Phase_5.SetActive(false);
+            Phase_6.SetActive(false);
+            End_Phase.SetActive(false);
+        }
+        
         if (The_Bossman.GetComponent<Bossman>().life <= 380)
         {
             
@@ -59,9 +79,10 @@ public class BossFight : MonoBehaviour
 
         if (The_Bossman.GetComponent<Bossman>().life <= 100)
         {
+            Phase_4.SetActive(false);
             Phase_5.SetActive(true);
 
-            Phase_4.SetActive(false);
+            
         }
 
         if (The_Bossman.GetComponent<Bossman>().life <= 0)
@@ -81,5 +102,66 @@ public class BossFight : MonoBehaviour
     void UpdateBossHealthMeter()
     {
         BossmanHP.GetComponent<UnityEngine.UI.Slider>().value = The_Bossman.GetComponent<Bossman>().life / The_Bossman.GetComponent<Bossman>().maxLife;
+    }
+
+    void DebugPhases()
+    {
+        if (SET_BOSS_HP_400)
+        {
+            The_Bossman.GetComponent<Bossman>().life = 400;
+            SET_BOSS_HP_380 = false;
+            SET_BOSS_HP_300 = false;
+            SET_BOSS_HP_200 = false;
+            SET_BOSS_HP_100 = false;
+            SET_BOSS_HP_0 = false;
+        }
+        if (SET_BOSS_HP_380)
+        {
+            The_Bossman.GetComponent<Bossman>().life = 380;
+            SET_BOSS_HP_400 = false;
+            SET_BOSS_HP_300 = false;
+            SET_BOSS_HP_200 = false;
+            SET_BOSS_HP_100 = false;
+            SET_BOSS_HP_0 = false;
+        }
+        if (SET_BOSS_HP_300)
+        {
+            The_Bossman.GetComponent<Bossman>().life = 300;
+            SET_BOSS_HP_400 = false;
+            SET_BOSS_HP_380 = false;
+            SET_BOSS_HP_200 = false;
+            SET_BOSS_HP_100 = false;
+            SET_BOSS_HP_0 = false;
+        }
+        if (SET_BOSS_HP_200)
+        {
+            The_Bossman.GetComponent<Bossman>().life = 200;
+            SET_BOSS_HP_400 = false;
+            SET_BOSS_HP_380 = false;
+            SET_BOSS_HP_300 = false;
+            SET_BOSS_HP_100 = false;
+            SET_BOSS_HP_0 = false;
+        }
+        if (SET_BOSS_HP_100)
+        {
+            The_Bossman.GetComponent<Bossman>().life = 100;
+            SET_BOSS_HP_400 = false;
+            SET_BOSS_HP_380 = false;
+            SET_BOSS_HP_300 = false;
+            SET_BOSS_HP_200 = false;
+            SET_BOSS_HP_0 = false;
+        }
+        if (SET_BOSS_HP_0)
+        {
+            The_Bossman.GetComponent<Bossman>().life = 0;
+            SET_BOSS_HP_400 = false;
+            SET_BOSS_HP_380 = false;
+            SET_BOSS_HP_300 = false;
+            SET_BOSS_HP_200 = false;
+            SET_BOSS_HP_100 = false;
+        }
+
+
+
     }
 }
