@@ -13,7 +13,7 @@ public class BossArena : MonoBehaviour
     public GameObject BossmanHP;
     public PlayableDirector director;
     public GameObject BossHider;
-    public GameObject vignette;
+    //public GameObject vignette;
     public GameObject ArenaLockLeft;
     public GameObject ArenaLockRight;
     public GameObject Boss;
@@ -52,7 +52,7 @@ public class BossArena : MonoBehaviour
                 ArenaLockRight.SetActive(true);
             }
             
-            vignette.SetActive(false);
+           // vignette.SetActive(false);
             playerCamera.SetActive(false);
         }
 
@@ -69,7 +69,7 @@ public class BossArena : MonoBehaviour
                 WasInArenaLastFrame = false;
             }
             playerCamera.SetActive(true);
-            vignette.SetActive(true);
+            //vignette.SetActive(true);
 
             if (Boss.GetComponent<Bossman>().life <= 0)
             {
