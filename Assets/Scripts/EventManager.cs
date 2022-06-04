@@ -399,7 +399,9 @@ public class EventManager : MonoBehaviour
         player.GetComponent<CharacterController2D>().ResetHealth();
         player.transform.position = StartPosition.transform.position;
         player.GetComponent<Animator>().SetBool("IsDead", false);
-
+        CurrentDanger = 0;
+        UpdateDangerMeter();
+        UpdateDangerLevel();
     }
 
 
