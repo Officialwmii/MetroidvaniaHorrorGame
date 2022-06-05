@@ -192,10 +192,10 @@ public class EventManager : MonoBehaviour
 
             alienTimer = 0;
 
-            float randomNumber = Random.Range(0f,1f);
+            float randomNumber = Random.Range(0f,300f);
 
             //Debug.Log(randomNumber);
-            randomNumber = 1;
+            //randomNumber = 1;
 
             if (Mathf.RoundToInt(randomNumber) == 1) {
 
