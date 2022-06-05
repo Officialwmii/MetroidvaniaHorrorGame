@@ -128,7 +128,7 @@ public class Bossman : MonoBehaviour
 
 		if (!playerDetectable)
 		{
-			animator.SetBool("IsAttacking", false);
+			//animator.SetBool("IsAttacking", false);
 
 			//casue a bunch of warnings
 

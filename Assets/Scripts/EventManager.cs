@@ -82,8 +82,9 @@ public class EventManager : MonoBehaviour
     static private GameObject EscapePodDoor;
     static private GameObject AlertTimerFont;
 
-    private static float AlertTimer = 180; 
+    private static float AlertTimer = 180;
 
+    private static float alienTimer = 0;
 
     private AK.Wwise.Event shipAI;
 
@@ -139,6 +140,7 @@ public class EventManager : MonoBehaviour
         AlertTimerFont = GameObject.Find("AlertTimerFont");
         AlertTimerFont.SetActive(false);
 
+        
 
     }
 
@@ -183,7 +185,58 @@ public class EventManager : MonoBehaviour
                 (Mathf.FloorToInt((AlertTimer % 1)*100)).ToString("D2");
             if (AlertTimer <= 0) { EventManager.GoToCredits(); EscapeSequence = false; }
         }
+
+        if (CurrentDangerLevel == 0) alienTimer = alienTimer + Time.deltaTime;
+
+        if (alienTimer >= 1) {
+
+            alienTimer = 0;
+
+            float randomNumber = Random.Range(0f,1f);
+
+            //Debug.Log(randomNumber);
+            randomNumber = 1;
+
+            if (Mathf.RoundToInt(randomNumber) == 1) {
+
+                AlienInnerMonologue();
+
+            }
+
+        }
+
+
     }
+
+    static public void AlienInnerMonologue() {
+
+        float RandomLine = Random.Range(0f, 12f);
+
+        switch (Mathf.RoundToInt(RandomLine))
+        {
+            case 1: sub("loneliness is the cancer that grows in the hearts of all brains", 5f); break;
+            case 2: sub("dare to dream a nightmare from which you wouldn’t want to wake up", 5f); break;
+            case 3: sub("feed your own tail to your own mouth again and again and again and again", 5f); break;
+            case 4: sub("we are what we are and what we are is the cosmic recursion", 5f); break;
+            case 5: sub("even the smallest speck plays its part", 5f); break;
+            case 6: sub("they trusted you", 1f); break;
+            case 7: sub("in the eternal dark scream your screams and we will whisper you to sleep", 5f); break;
+            case 8: sub("that which does not end cannot end that which does not end", 5f); break;
+            case 9: sub("open your eyes to find that your eyes were already open", 5f); break;
+            case 10: sub("you cannot wake up you are not asleep", 2f); break;
+            case 11: sub("O the curse of recursion!", 2f); break;
+            case 12: sub("void your shells. cease your lives.", 2f); break;
+        }
+    }
+
+    static public void sub(string text, float duration) {
+
+        SubtitlesText.instance.SetSubtitle(text, duration);
+
+
+    }
+
+
 
     static public void OnBossCompleted() {
 
