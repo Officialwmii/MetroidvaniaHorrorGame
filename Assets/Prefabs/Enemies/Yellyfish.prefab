@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 979991095242514680}
   m_Layer: 0
   m_Name: YellyfishBody
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 1
   life: 5
+  deatheffects: {fileID: 5266026876114313236, guid: 59d3652a1dbf202479ba42b6c1cbbebf, type: 3}
 --- !u!1 &4320044402591468197
 GameObject:
   m_ObjectHideFlags: 0

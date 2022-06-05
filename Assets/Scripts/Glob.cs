@@ -8,6 +8,8 @@ public class Glob : MonoBehaviour
     public float damageAmount = 1;
     public float life = 5;
 
+    public GameObject deatheffects; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +29,12 @@ public class Glob : MonoBehaviour
             collision.gameObject.GetComponent<CharacterController2D>().ApplyDamage(-damageAmount);
 
         }
+    }
+
+    public void ApplyDamage(float damage) {
+        Debug.Log("Destroy Jellyfish");
+        Destroy(gameObject);
+        GameObject NewParticle = Instantiate(deatheffects, gameObject.transform.position, Quaternion.identity);
+
     }
 }
