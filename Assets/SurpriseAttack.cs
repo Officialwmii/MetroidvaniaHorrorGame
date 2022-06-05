@@ -15,7 +15,7 @@ public class SurpriseAttack : MonoBehaviour
     {
         Debug.Log(director);
         timer = phase_timer;
-        player = GameObject.Find("player");
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class SurpriseAttack : MonoBehaviour
             case 1: StartAttack(); break;
             case 2: StartAttack(); break;
             case 3: StartAttack(); break;
-
+            case 4: StartAttack(); break;
         }
 
     }

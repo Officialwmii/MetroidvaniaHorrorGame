@@ -126,6 +126,7 @@ public class Liptank : MonoBehaviour
 				Flip();
 			if (player.transform.position.x < transform.position.x && !facingRight)
 				Flip();
+			EventManager.AddDangerEveryTick(0.25f);
 
 
 		}

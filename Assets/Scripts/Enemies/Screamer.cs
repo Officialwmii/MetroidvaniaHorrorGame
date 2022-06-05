@@ -114,7 +114,7 @@ public class Screamer : MonoBehaviour {
 
 
 			EventManager.Alert();
-			EventManager.AddDangerEveryTick();
+			EventManager.AddDangerEveryTick(1);
 			//IsScreamingEvent.Invoke();
 			transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
 

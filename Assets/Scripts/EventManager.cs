@@ -44,6 +44,7 @@ public class EventManager : MonoBehaviour
     static public bool EnemiesAlerted = false;
     static public float CurrentDanger = 15;
     static public float CurrentDangerLevel = 0;
+    static public float DangerMultiplier = 1;
 
     static private GameObject DangerMeter;
     static private GameObject DangerLevel1Layer;
@@ -141,9 +142,9 @@ public class EventManager : MonoBehaviour
         }
 
         //Danger meter debug
-        if (Input.GetKeyDown(KeyCode.PageUp)) { AddDangerEveryTick();}
+        //if (Input.GetKeyDown(KeyCode.PageUp)) { AddDangerEveryTick();}
 
-        if (Input.GetKeyDown(KeyCode.PageDown)){ ReduceDanger(); }
+        //if (Input.GetKeyDown(KeyCode.PageDown)){ ReduceDanger(); }
 
         //fuel refill upgrade
         if (HasFuelRefill && (Fuel < MaxFuel * FuelRefillTreshold || Fuel<15) && CharacterController2D.m_Grounded==true) {
@@ -339,8 +340,16 @@ public class EventManager : MonoBehaviour
     {
         Collectables++;
         AkSoundEngine.PostEvent("Alien_Artifact", player);
+
+        if (Collectables == 1) DangerMultiplier = 1.25f;
+        if (Collectables == 2) DangerMultiplier = 1.5f;
+        if (Collectables == 3) DangerMultiplier = 1.75f;
+        if (Collectables == 4) DangerMultiplier = 2f;
+        if (Collectables >= 5) DangerMultiplier = 2.5f;
+
+        AddDanger(25);
     }
-   
+
     static public void GainAbilityJetpack() {
 
         if (HasJetpack == false) { HasJetpack = true; }
@@ -421,9 +430,9 @@ public class EventManager : MonoBehaviour
 
     //Danger
 
-    static public void AddDangerEveryTick() {
+    static public void AddDangerEveryTick(float ratio) {
 
-        CurrentDanger = CurrentDanger + (5+2.5f) * Time.deltaTime;
+        CurrentDanger = CurrentDanger + (5+2.5f) / 5 * 5 * DangerMultiplier * Time.deltaTime* ratio;
         if (CurrentDanger >= 100) { CurrentDanger = 100;}
 
         UpdateDangerMeter();
@@ -431,7 +440,7 @@ public class EventManager : MonoBehaviour
     }
 
     static public void AutomaticallyReduceDanger() {
-        CurrentDanger = CurrentDanger - 2.5f * Time.deltaTime;
+        CurrentDanger = CurrentDanger - 2.5f/5 * (5/ DangerMultiplier) * Time.deltaTime;
         if (CurrentDanger <= 0) { CurrentDanger = 0; }
 
         UpdateDangerMeter();
@@ -441,7 +450,7 @@ public class EventManager : MonoBehaviour
 
     static public void AddDanger(float addition) {
 
-        CurrentDanger = CurrentDanger + addition;
+        CurrentDanger = CurrentDanger + addition*DangerMultiplier;
         if (CurrentDanger >= 100) { CurrentDanger = 100; }
         UpdateDangerMeter();
         UpdateDangerLevel();
@@ -469,7 +478,8 @@ public class EventManager : MonoBehaviour
         if (CurrentDanger >= 25) CurrentDangerLevel = 1;
         if (CurrentDanger >= 50) CurrentDangerLevel = 2;
         if (CurrentDanger >= 75) CurrentDangerLevel = 3;
-       //if (CurrentDanger >= 100) SceneManager.LoadScene("Scenes/" + SceneManager.GetActiveScene().name);
+        if (CurrentDanger >= 99) CurrentDangerLevel = 4;
+        //SceneManager.LoadScene("Scenes/" + SceneManager.GetActiveScene().name);
 
         DangerLevel1Layer.SetActive(false);
         DangerLevel2Layer.SetActive(false);
@@ -478,7 +488,7 @@ public class EventManager : MonoBehaviour
         if (CurrentDangerLevel >= 1) DangerLevel1Layer.SetActive(true);
         if (CurrentDangerLevel >= 2) DangerLevel2Layer.SetActive(true);
         if (CurrentDangerLevel >= 3) DangerLevel3Layer.SetActive(true);
-
+        if (CurrentDangerLevel >= 4) player.GetComponent<CharacterController2D>().ApplyDamage(-200);
     }
 
     static public void Alert() {
