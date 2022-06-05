@@ -469,7 +469,7 @@ public class EventManager : MonoBehaviour
 
     static public void Alert() {
         EnemiesAlerted = true;
-        Debug.Log("Help!");
+        //Debug.Log("Help!");
 
     }
 
