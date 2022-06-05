@@ -56,14 +56,15 @@ MonoBehaviour:
     m_Bits: 0
   playerDetectable: 0
   detectionCollider: {fileID: 0}
-  detectionRange: 2
+  detectionRange: 15
   projectile: {fileID: 5532974359214069763, guid: 89cbe3e544333924897e87475cb57182, type: 3}
-  shootCooldown: 20
+  shootCooldown: 1
   nextShot: 1
   timer: 0
   damageAmount: 1
   speed: 5
   isInvincible: 0
+  onAlert: 0
 --- !u!212 &680800394409511256
 SpriteRenderer:
   m_ObjectHideFlags: 0

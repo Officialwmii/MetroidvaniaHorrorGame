@@ -8,6 +8,7 @@ public class EnemyProjectile : MonoBehaviour
 	public bool hasHit = false;
 	public float speed = -10f;
 	public float damageAmount = 1f;
+	public GameObject particles;
 
     // Start is called before the first frame update
     void Start()
@@ -28,15 +29,23 @@ public class EnemyProjectile : MonoBehaviour
 		{
 			collision.gameObject.SendMessage("ApplyDamage", damageAmount);
 			Destroy(gameObject);
+			GameObject NewParticle = Instantiate(particles, gameObject.transform.position, Quaternion.identity);
+
 		}
 		else if (collision.gameObject.tag == "Enemy")
 		{
 			Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
 		}
+		else if (collision.gameObject.tag == "Jumpthrough")
+		{
+			Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+		}
 
-        else
+		else
         {
 			Destroy(gameObject);
-        }
+			GameObject NewParticle = Instantiate(particles, gameObject.transform.position, Quaternion.identity);
+
+		}
 	}
 }

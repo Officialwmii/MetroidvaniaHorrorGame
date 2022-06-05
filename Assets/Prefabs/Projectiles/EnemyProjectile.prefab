@@ -100,9 +100,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.032137334}
   serializedVersion: 2
-  m_Radius: 0.29
+  m_Radius: 0.22864693
 --- !u!50 &5532974359214069768
 Rigidbody2D:
   serializedVersion: 4
@@ -140,3 +140,4 @@ MonoBehaviour:
   hasHit: 0
   speed: 10
   damageAmount: -1
+  particles: {fileID: 1960839145158108246, guid: 485071231eaedef469927e170cc2959c, type: 3}
