@@ -128,7 +128,7 @@ public class Bossman : MonoBehaviour
 
 		if (!playerDetectable)
 		{
-			//animator.SetBool("IsAttacking", false);
+			animator.SetBool("IsAttacking", false);
 
 			//casue a bunch of warnings
 
@@ -203,6 +203,8 @@ public class Bossman : MonoBehaviour
 		rb.velocity = new Vector2(0, rb.velocity.y);
 		yield return new WaitForSeconds(3f);
 		Destroy(gameObject);
+
+
 	}
 
 	public void Shoot()

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 public class EventManager : MonoBehaviour
 {
     static public int Lives = 4;
@@ -75,6 +75,15 @@ public class EventManager : MonoBehaviour
 
     static private GameObject player;
     static private GameObject StartPosition;
+    static private GameObject AlertWarning;
+    public static bool EscapeSequence = false;
+    static private GameObject Elevator;
+    static private GameObject StartPositionBoss;
+    static private GameObject EscapePodDoor;
+    static private GameObject AlertTimerFont;
+
+    private static float AlertTimer = 300; 
+
 
     private AK.Wwise.Event shipAI;
 
@@ -122,6 +131,15 @@ public class EventManager : MonoBehaviour
         player = GameObject.Find("Player");
         StartPosition = GameObject.Find("PlayerRespawn");
 
+        AlertWarning = GameObject.Find("Alert");
+        AlertWarning.SetActive(false);
+        Elevator = GameObject.Find("ElevatorGroup");
+        StartPositionBoss = GameObject.Find("PlayerRespawn2");
+        EscapePodDoor = GameObject.Find("EscapePodDoor");
+        AlertTimerFont = GameObject.Find("AlertTimerFont");
+        AlertTimerFont.SetActive(false);
+
+
     }
 
     // Update is called once per frame
@@ -144,7 +162,6 @@ public class EventManager : MonoBehaviour
         //Danger meter debug
         //if (Input.GetKeyDown(KeyCode.PageUp)) { AddDangerEveryTick();}
 
-        //if (Input.GetKeyDown(KeyCode.PageDown)){ ReduceDanger(); }
 
         //fuel refill upgrade
         if (HasFuelRefill && (Fuel < MaxFuel * FuelRefillTreshold || Fuel<15) && CharacterController2D.m_Grounded==true) {
@@ -155,6 +172,30 @@ public class EventManager : MonoBehaviour
 
         //AlertAddingDanger();
         AutomaticallyReduceDanger();
+
+        if (Input.GetKeyDown(KeyCode.PageDown)) { OnBossCompleted(); }
+        if (EscapeSequence) 
+        {
+            AlertTimer = AlertTimer - Time.deltaTime;
+            AlertTimerFont.GetComponent<TMP_Text>().text = 
+                Mathf.FloorToInt(AlertTimer / 60).ToString("D2") + ":"+ 
+                Mathf.FloorToInt(AlertTimer % 60).ToString("D2") + ":" +
+                (Mathf.FloorToInt((AlertTimer % 1)*100)).ToString("D2");
+            if (AlertTimer <= 0) { EventManager.GoToCredits(); EscapeSequence = false; }
+        }
+    }
+
+    static public void OnBossCompleted() {
+
+        EscapeSequence = true;
+        AlertWarning.SetActive(true);
+        Elevator.SetActive(false);
+        AlertTimerFont.SetActive(true);
+
+        StartPosition = StartPositionBoss;
+
+        Destroy(EscapePodDoor);
+
     }
 
 

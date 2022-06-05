@@ -95,6 +95,9 @@ public class BossFight : MonoBehaviour
             Phase_6.SetActive(false);
             End_Phase.SetActive(true);
             // Play Audio for Ship AI
+            EventManager.OnBossCompleted();
+
+
         }
 
     }
