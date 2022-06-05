@@ -52,7 +52,7 @@ public class CharacterController2D : MonoBehaviour
 	public GameObject particleDash;
 	public GameObject particleJetpack;
 	public GameObject DashTrail;
-
+	public GameObject JetpackTrail;
 
 	private float jumpWallStartX = 0;
 	private float jumpWallDistX = 0; //Distance between player and wall
@@ -238,13 +238,13 @@ public class CharacterController2D : MonoBehaviour
 				m_Rigidbody2D.AddForce(new Vector2(0, m_JetpackForce));
 				EventManager.UseJetpack();
 				//particleJetpack.GetComponent<ParticleSystem>().Play();
-				DashTrail.GetComponent<TrailRenderer>().emitting = true;
+				JetpackTrail.GetComponent<TrailRenderer>().emitting = true;
 
 
 			}
-			if (holdJetpack == false || EventManager.canUseJetpack == false)
+			if ((holdJetpack == false || EventManager.canUseJetpack == false))
 			{
-				DashTrail.GetComponent<TrailRenderer>().emitting = false;
+				JetpackTrail.GetComponent<TrailRenderer>().emitting = false;
 			}
 
 			else if (!m_Grounded && jump && canDoubleJump && !isWallSliding)
@@ -367,6 +367,7 @@ public class CharacterController2D : MonoBehaviour
 		isDashing = false;
 		yield return new WaitForSeconds(0.25f);
 		DashTrail.GetComponent<TrailRenderer>().emitting = false;
+		Debug.Log("turn off dash trail");
 		yield return new WaitForSeconds(0.25f);
 		canDash = true;
 
