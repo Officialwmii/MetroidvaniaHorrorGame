@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,9 +76,327 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: weapon_room_assets_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3221
+        width: 840
+        height: 840
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89396755d3e7d3947a467f01cc0339f7
+      internalID: 1718655586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_1
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 3521
+        width: 1430
+        height: 535
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea138b5bbe9b1e047a1dc1dcb80360e4
+      internalID: -1102117715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_2
+      rect:
+        serializedVersion: 2
+        x: 3227
+        y: 2635
+        width: 842
+        height: 1416
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ae62e14c8eb95469376e58ae29538c
+      internalID: -279963142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_3
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1781
+        width: 660
+        height: 1245
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ff65b0fb848124e811986842f92ca1
+      internalID: 2129139186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_5
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 1781
+        width: 582
+        height: 1420
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681451d389386e94f8e0c6f1be35b16d
+      internalID: -797003274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_6
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 2337
+        width: 876
+        height: 580
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34657bc44aa850444b98ad64fc1a0858
+      internalID: -1158175112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_7
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1778
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96534b03a28915409897f30aec61a29
+      internalID: -754178166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_8
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1778
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42503fc43a72b9f419295891c2b51ef7
+      internalID: -41044354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_9
+      rect:
+        serializedVersion: 2
+        x: 3230
+        y: 901
+        width: 567
+        height: 1418
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8e9f58e983b1e48a4e11392f6ce11c
+      internalID: 933567032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 893
+        width: 1433
+        height: 588
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6edb6661dc499c47ae43e598f345fee
+      internalID: 81683825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_13
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 895
+        width: 576
+        height: 582
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf2050bcd7f7994b8c3bbd9b6f93ca1
+      internalID: 212407695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_14
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 895
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0709df70d21fc2e4eaef2864783a7cb1
+      internalID: -653907476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_17
+      rect:
+        serializedVersion: 2
+        x: 2382
+        y: 46
+        width: 1418
+        height: 567
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b895110d98b6a4b99d18c768cc5be9
+      internalID: -727419003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_room_assets_18
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 32
+        width: 1444
+        height: 557
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112ab2624aba633468bf8e983b2be96f
+      internalID: 1979187316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +407,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      weapon_room_assets_10: 1667773547
+      weapon_room_assets_16: 190932414
+      weapon_room_assets_9: 933567032
+      weapon_room_assets_12: 81683825
+      weapon_room_assets_2: -279963142
+      weapon_room_assets_15: -783410843
+      weapon_room_assets_3: 2129139186
+      weapon_room_assets_8: -41044354
+      weapon_room_assets_4: -1749436878
+      weapon_room_assets_6: -1158175112
+      weapon_room_assets_13: 212407695
+      weapon_room_assets_18: 1979187316
+      weapon_room_assets_5: -797003274
+      weapon_room_assets_11: -578120337
+      weapon_room_assets_1: -1102117715
+      weapon_room_assets_17: -727419003
+      weapon_room_assets_7: -754178166
+      weapon_room_assets_14: -653907476
+      weapon_room_assets_0: 1718655586
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
