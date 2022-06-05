@@ -33,11 +33,13 @@ public class Screamer : MonoBehaviour {
 	public UnityEvent IsQuietEvent;
 
 	private GameObject FrozenEnemy;
+	private GameObject DeathParticles;
+
 
 	void Awake () {
 		startDetectionRange = detectionRange;
 		FrozenEnemy = (GameObject)Resources.Load("prefabs/FrozenScremer", typeof(GameObject));
-
+		DeathParticles = (GameObject)Resources.Load("prefabs/EnemyDeath", typeof(GameObject));
 
 		fallCheck = transform.Find("FallCheck");
 		wallCheck = transform.Find("WallCheck");
@@ -220,7 +222,10 @@ public class Screamer : MonoBehaviour {
 		capsule.direction = CapsuleDirection2D.Horizontal;
 		yield return new WaitForSeconds(0.25f);
 		rb.velocity = new Vector2(0, rb.velocity.y);
-		yield return new WaitForSeconds(3f);
+		//yield return new WaitForSeconds(3f);
 		Destroy(gameObject);
+		GameObject NewParticles = Instantiate(DeathParticles, transform.position, Quaternion.identity);
+
+
 	}
 }

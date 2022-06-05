@@ -32,12 +32,13 @@ public class Liptank : MonoBehaviour
 	public bool onAlert = false;
 
 	private GameObject FrozenEnemy;
+	private GameObject DeathParticles;
 
 
 	void Awake()
 	{
 		FrozenEnemy = (GameObject)Resources.Load("prefabs/FrozenLipTank", typeof(GameObject));
-
+		DeathParticles = (GameObject)Resources.Load("prefabs/EnemyDeath", typeof(GameObject));
 
 		fallCheck = transform.Find("FallCheck");
 		wallCheck = transform.Find("WallCheck");
@@ -158,9 +159,9 @@ public class Liptank : MonoBehaviour
 		{
 			float direction = damage / Mathf.Abs(damage);
 			damage = Mathf.Abs(damage);
-			transform.GetComponent<Animator>().SetBool("Hit", true);
+			//transform.GetComponent<Animator>().SetBool("Hit", true);
 
-			life += damage;
+			life -= damage;
 			rb.velocity = Vector2.zero;
 			rb.AddForce(new Vector2(direction * 500f, 100f));
 			StartCoroutine(HitTime());
@@ -211,10 +212,18 @@ public class Liptank : MonoBehaviour
 		capsule.size = new Vector2(1f, 0.25f);
 		capsule.offset = new Vector2(0f, -0.8f);
 		capsule.direction = CapsuleDirection2D.Horizontal;
-		yield return new WaitForSeconds(0.25f);
+
+
+		//yield return new WaitForSeconds(0.25f);
 		rb.velocity = new Vector2(0, rb.velocity.y);
-		yield return new WaitForSeconds(3f);
+		//yield return new WaitForSeconds(0.5f);
 		Destroy(gameObject);
+		GameObject NewParticles = Instantiate(DeathParticles, transform.position, Quaternion.identity);
+		yield return new WaitForSeconds(0.5f);
+		GameObject NewParticles2 = Instantiate(DeathParticles, transform.position, Quaternion.identity);
+		yield return new WaitForSeconds(0.5f);
+		GameObject NewParticles3 = Instantiate(DeathParticles, transform.position, Quaternion.identity);
+
 	}
 
 	public void Shoot()
