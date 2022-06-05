@@ -51,6 +51,8 @@ public class CharacterController2D : MonoBehaviour
 	public GameObject head;
 	public GameObject particleDash;
 	public GameObject particleJetpack;
+	public GameObject DashTrail;
+
 
 	private float jumpWallStartX = 0;
 	private float jumpWallDistX = 0; //Distance between player and wall
@@ -161,7 +163,7 @@ public class CharacterController2D : MonoBehaviour
 			{
 				//m_Rigidbody2D.AddForce(new Vector2(transform.localScale.x * m_DashForce, 0f));
 				StartCoroutine(DashCooldown());
-				particleDash.GetComponent<ParticleSystem>().Play();
+				//particleDash.GetComponent<ParticleSystem>().Play();
 			}
 			// If crouching, check to see if the character can stand up
 			if (isDashing)
@@ -235,11 +237,15 @@ public class CharacterController2D : MonoBehaviour
 			{
 				m_Rigidbody2D.AddForce(new Vector2(0, m_JetpackForce));
 				EventManager.UseJetpack();
-				particleJetpack.GetComponent<ParticleSystem>().Play();
+				//particleJetpack.GetComponent<ParticleSystem>().Play();
+				DashTrail.GetComponent<TrailRenderer>().emitting = true;
 
 
 			}
-
+			if (holdJetpack == false || EventManager.canUseJetpack == false)
+			{
+				DashTrail.GetComponent<TrailRenderer>().emitting = false;
+			}
 
 			else if (!m_Grounded && jump && canDoubleJump && !isWallSliding)
 			{
@@ -269,7 +275,7 @@ public class CharacterController2D : MonoBehaviour
 					{
 						StartCoroutine(WaitToEndSliding());
 					}
-					else 
+					else
 					{
 						oldWallSlidding = true;
 						m_Rigidbody2D.velocity = new Vector2(-transform.localScale.x * 2, -5);
@@ -279,9 +285,9 @@ public class CharacterController2D : MonoBehaviour
 				if (jump && isWallSliding)
 				{
 					animator.SetBool("IsJumping", true);
-					animator.SetBool("JumpUp", true); 
+					animator.SetBool("JumpUp", true);
 					m_Rigidbody2D.velocity = new Vector2(0f, 0f);
-					m_Rigidbody2D.AddForce(new Vector2(transform.localScale.x * m_JumpForce *1.2f, m_JumpForce));
+					m_Rigidbody2D.AddForce(new Vector2(transform.localScale.x * m_JumpForce * 1.2f, m_JumpForce));
 					jumpWallStartX = transform.position.x;
 					limitVelOnWallJump = true;
 					if (DoubleJumpAbilityActive) canDoubleJump = true;
@@ -301,7 +307,7 @@ public class CharacterController2D : MonoBehaviour
 					StartCoroutine(DashCooldown());
 				}
 			}
-			else if (isWallSliding && !m_IsWall && canCheck) 
+			else if (isWallSliding && !m_IsWall && canCheck)
 			{
 				isWallSliding = false;
 				animator.SetBool("IsWallSliding", false);
@@ -355,10 +361,15 @@ public class CharacterController2D : MonoBehaviour
 		EventManager.UseDash();
 		isDashing = true;
 		canDash = false;
+		DashTrail.GetComponent<TrailRenderer>().emitting = true;
+
 		yield return new WaitForSeconds(0.1f);
 		isDashing = false;
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0.25f);
+		DashTrail.GetComponent<TrailRenderer>().emitting = false;
+		yield return new WaitForSeconds(0.25f);
 		canDash = true;
+
 	}
 
 	IEnumerator Stun(float time) 
