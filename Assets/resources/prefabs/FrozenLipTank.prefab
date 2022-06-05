@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3951480191471318024}
   - component: {fileID: 3951480191471318025}
   - component: {fileID: 6666079183552314909}
-  m_Layer: 1
+  m_Layer: 3
   m_Name: FrozenLipTank
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6533149500102147997, guid: 22280a5425240734fa720242d16f5e95, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22280a5425240734fa720242d16f5e95, type: 3}

@@ -56,7 +56,8 @@ MonoBehaviour:
     m_Bits: 0
   playerDetectable: 0
   detectionCollider: {fileID: 0}
-  detectionRange: 5
+  detectionRange: 8
+  extendedDetectionRange: 20
   damageAmount: 1
   onAlert: 0
   speed: 5

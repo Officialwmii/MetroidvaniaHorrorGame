@@ -15,6 +15,9 @@ public class Screamer : MonoBehaviour {
 	private bool facingRight = true;
 	public GameObject detectionCollider;
 	public float detectionRange = 1f;
+	private float startDetectionRange;
+	public float extendedDetectionRange = 1f;
+
 	private GameObject player;
 	public float damageAmount = 1f;
 	public bool onAlert;
@@ -32,7 +35,7 @@ public class Screamer : MonoBehaviour {
 	private GameObject FrozenEnemy;
 
 	void Awake () {
-
+		startDetectionRange = detectionRange;
 		FrozenEnemy = (GameObject)Resources.Load("prefabs/FrozenScremer", typeof(GameObject));
 
 
@@ -102,26 +105,35 @@ public class Screamer : MonoBehaviour {
 
 	void checkForPlayer()
     {
-		if (Vector3.Distance(player.transform.position, transform.position) <= detectionRange && !isStunned )
-        {
+		if (Vector3.Distance(player.transform.position, transform.position) <= detectionRange && !isStunned)
+		{
 			playerDetectable = true;
 
-				
+
 
 			EventManager.Alert();
 			EventManager.AddDangerEveryTick();
 			//IsScreamingEvent.Invoke();
 			transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
 
+			detectionRange = extendedDetectionRange;
+
 			if (player.transform.position.x > transform.position.x && facingRight)
 				Flip();
 			if (player.transform.position.x < transform.position.x && !facingRight)
 				Flip();
-			
 
-			
+
+
 		}
-        if (Vector3.Distance(player.transform.position, transform.position) > detectionRange && !isStunned)
+		else {
+
+			detectionRange = startDetectionRange;
+
+		}
+
+
+		if (Vector3.Distance(player.transform.position, transform.position) > detectionRange && !isStunned)
 		{
 			playerDetectable = false;
 
