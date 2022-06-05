@@ -49,7 +49,8 @@ public class CharacterController2D : MonoBehaviour
 	public GameObject particleBlood;
 	public GameObject particleBloodFauntain;
 	public GameObject head;
-
+	public GameObject particleDash;
+	public GameObject particleJetpack;
 
 	private float jumpWallStartX = 0;
 	private float jumpWallDistX = 0; //Distance between player and wall
@@ -78,6 +79,8 @@ public class CharacterController2D : MonoBehaviour
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
+
+
 	}
 
 
@@ -158,6 +161,7 @@ public class CharacterController2D : MonoBehaviour
 			{
 				//m_Rigidbody2D.AddForce(new Vector2(transform.localScale.x * m_DashForce, 0f));
 				StartCoroutine(DashCooldown());
+				particleDash.GetComponent<ParticleSystem>().Play();
 			}
 			// If crouching, check to see if the character can stand up
 			if (isDashing)
@@ -231,7 +235,8 @@ public class CharacterController2D : MonoBehaviour
 			{
 				m_Rigidbody2D.AddForce(new Vector2(0, m_JetpackForce));
 				EventManager.UseJetpack();
-				
+				particleJetpack.GetComponent<ParticleSystem>().Play();
+
 
 			}
 
