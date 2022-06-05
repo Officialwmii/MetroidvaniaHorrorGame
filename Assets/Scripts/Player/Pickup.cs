@@ -20,7 +20,10 @@ public class Pickup : MonoBehaviour
         //Ability upgrades
         GainAbilityJetpack, GainAbilityArmour, GainAbilityRocketLauncher, GainAbilityFuelRefill,
         
-        ConstalationKey,RefillStation
+        ConstalationKey,
+
+        //Don't destroy
+        RefillStation, StartingRoom
     };
     public UpgradeType upgradeType;
     private bool DestroyObject;
@@ -101,6 +104,9 @@ public class Pickup : MonoBehaviour
                     break;
                 case UpgradeType.RefillStation:
                     EventManager.RefillFuel(); DestroyObject = false;
+                    break;
+                case UpgradeType.StartingRoom:
+                    EventManager.StartingRoom(); DestroyObject = false;
                     break;
             }
 

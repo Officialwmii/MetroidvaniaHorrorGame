@@ -132,6 +132,7 @@ public class EventManager : MonoBehaviour
         if (StunCooldown <= 100* CooldownTime)
         {
             StunCooldown = StunCooldown + Time.deltaTime*100;
+
             UpdateCooldown();
             //Debug.Log(StunCooldown);
         }
@@ -319,6 +320,15 @@ public class EventManager : MonoBehaviour
         UpdateFuel();
     }
 
+    static public void StartingRoom() {
+
+        player.GetComponent<CharacterController2D>().ResetHealth();
+        Fuel = MaxFuel;
+        UpdateFuel();
+        CurrentDanger = 0; UpdateDangerMeter(); UpdateDangerLevel();
+        StunCooldown = 100 * CooldownTime; UpdateCooldown();
+    }
+
     static public void UpdateFuel() {
 
         if (Fuel >= DashFuelCost) { canUseDash = true; }
@@ -330,15 +340,49 @@ public class EventManager : MonoBehaviour
         Collectables++;
         AkSoundEngine.PostEvent("Alien_Artifact", player);
     }
+   
+    static public void GainAbilityJetpack() {
+
+        if (HasJetpack == false) { HasJetpack = true; }
+        else { HasDoubleJetpack = true; }
+         MainUpgradesAcquired++; }
+
+    static public void GainAbilityArmour() { HasArmour = true; MainUpgradesAcquired++; }
+    static public void GainAbilityRocketLauncher() { HasRocketLauncher = true; MainUpgradesAcquired++; }
+    static public void GainAbilityFuelRefill() { 
+        HasFuelRefill = true;
+        FuelRefillNumberOfUpgrades++;
+        if (FuelRefillNumberOfUpgrades == 1) { FuelRefillTreshold = 0.25f; FuelRefillSpeed = 2.5f; }
+        if (FuelRefillNumberOfUpgrades == 2) { FuelRefillTreshold = 0.33f; FuelRefillSpeed = 3.3f; }
+        if (FuelRefillNumberOfUpgrades == 3) { FuelRefillTreshold = 0.5f; FuelRefillSpeed = 5; }
+        if (FuelRefillNumberOfUpgrades == 4) { FuelRefillTreshold = 0.75f; FuelRefillSpeed = 7.5f; }
+        if (FuelRefillNumberOfUpgrades == 5) { FuelRefillTreshold = 1f; FuelRefillSpeed = 10; }
+        if (FuelRefillNumberOfUpgrades >= 6) { FuelRefillTreshold = 1f; FuelRefillSpeed = 25; }
+
+    }
+    static public void GainConstalationKey() { ConstalationsKeysAcquired++; }
+    static public void GoToCredits() { SceneManager.LoadScene("Credits"); }
+
+    static public void OnRespawning() {
+
+        if (grenades <= 0) { grenades = 1; UpdateGrenades(); } 
+        Fuel = MaxFuel; UpdateFuel();
+        player.GetComponent<CharacterController2D>().ResetHealth();
+        player.transform.position = StartPosition.transform.position;
+        player.GetComponent<Animator>().SetBool("IsDead", false);
+        
+        CurrentDanger = 0; UpdateDangerMeter(); UpdateDangerLevel();
+    }
+
     static public void AudioLogPickup(AudioNode subtitles)
     {
-        if(AudioLog == 0)
+        if (AudioLog == 0)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_1", player);
             SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
-        else if(AudioLog == 1)
+        else if (AudioLog == 1)
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_2", player);
@@ -370,39 +414,9 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    static public void GainAbilityJetpack() {
 
-        if (HasJetpack == false) { HasJetpack = true; }
-        else { HasDoubleJetpack = true; }
-         MainUpgradesAcquired++; }
 
-    static public void GainAbilityArmour() { HasArmour = true; MainUpgradesAcquired++; }
-    static public void GainAbilityRocketLauncher() { HasRocketLauncher = true; MainUpgradesAcquired++; }
-    static public void GainAbilityFuelRefill() { 
-        HasFuelRefill = true;
-        FuelRefillNumberOfUpgrades++;
-        if (FuelRefillNumberOfUpgrades == 1) { FuelRefillTreshold = 0.25f; FuelRefillSpeed = 2.5f; }
-        if (FuelRefillNumberOfUpgrades == 2) { FuelRefillTreshold = 0.33f; FuelRefillSpeed = 3.3f; }
-        if (FuelRefillNumberOfUpgrades == 3) { FuelRefillTreshold = 0.5f; FuelRefillSpeed = 5; }
-        if (FuelRefillNumberOfUpgrades == 4) { FuelRefillTreshold = 0.75f; FuelRefillSpeed = 7.5f; }
-        if (FuelRefillNumberOfUpgrades == 5) { FuelRefillTreshold = 1f; FuelRefillSpeed = 10; }
-        if (FuelRefillNumberOfUpgrades >= 6) { FuelRefillTreshold = 1f; FuelRefillSpeed = 25; }
 
-    }
-    static public void GainConstalationKey() { ConstalationsKeysAcquired++; }
-    static public void GoToCredits() { SceneManager.LoadScene("Credits"); }
-
-    static public void OnRespawning() {
-
-        if (grenades <= 0) { grenades = 1; UpdateGrenades(); } 
-        Fuel = MaxFuel; UpdateFuel();
-        player.GetComponent<CharacterController2D>().ResetHealth();
-        player.transform.position = StartPosition.transform.position;
-        player.GetComponent<Animator>().SetBool("IsDead", false);
-        CurrentDanger = 0;
-        UpdateDangerMeter();
-        UpdateDangerLevel();
-    }
 
 
     //Danger
