@@ -82,7 +82,7 @@ public class EventManager : MonoBehaviour
     static private GameObject EscapePodDoor;
     static private GameObject AlertTimerFont;
 
-    private static float AlertTimer = 300; 
+    private static float AlertTimer = 180; 
 
 
     private AK.Wwise.Event shipAI;
