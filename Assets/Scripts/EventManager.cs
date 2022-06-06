@@ -464,7 +464,7 @@ public class EventManager : MonoBehaviour
 
     }
     static public void GainConstalationKey() { ConstalationsKeysAcquired++; }
-    static public void GoToCredits() { SceneManager.LoadScene("Credits"); }
+    static public void GoToCredits() { SceneManager.LoadScene("EndSequence"); }
 
     static public void OnRespawning() {
 
