@@ -110,7 +110,7 @@ TextureImporter:
         x: 493
         y: 3241
         width: 352
-        height: 850
+        height: 464
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,27 +120,6 @@ TextureImporter:
       bones: []
       spriteID: cb7493063439c31428eff0027f176ad4
       internalID: 1449188858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_1
-      rect:
-        serializedVersion: 2
-        x: 850
-        y: 4081
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02f107553b3bc5a4f8d50f9a7773bc08
-      internalID: -448870673
       vertices: []
       indices: 
       edges: []
@@ -167,27 +146,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickup_placemnet_3
-      rect:
-        serializedVersion: 2
-        x: 4079
-        y: 4049
-        width: 8
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5d4012f300e81b41a5b9122a73300cb
-      internalID: 961312775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Pickup_placemnet_4
       rect:
         serializedVersion: 2
@@ -204,48 +162,6 @@ TextureImporter:
       bones: []
       spriteID: 631bc59986d3d284f9be03f048ed6060
       internalID: -884225719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_5
-      rect:
-        serializedVersion: 2
-        x: 3471
-        y: 3763
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c40d789a3e2178478bf9a8d413189fc
-      internalID: 1761635365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_6
-      rect:
-        serializedVersion: 2
-        x: 484
-        y: 3632
-        width: 4
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dec3a1f4d4bbf6843b2fdde6fea389f0
-      internalID: 2069192180
       vertices: []
       indices: 
       edges: []
@@ -276,9 +192,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3251
-        y: 3215
+        y: 3222
         width: 538
-        height: 278
+        height: 271
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,48 +204,6 @@ TextureImporter:
       bones: []
       spriteID: 289204b95bb6b0343abb9d23660c2f22
       internalID: 351796518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_9
-      rect:
-        serializedVersion: 2
-        x: 1170
-        y: 2578
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29e608c78359da948abf153f9be6cfc2
-      internalID: -782184925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_10
-      rect:
-        serializedVersion: 2
-        x: 1196
-        y: 2580
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6f6a2a26ac0c174cb9bc9d13cc93a49
-      internalID: -540816624
       vertices: []
       indices: 
       edges: []
@@ -351,90 +225,6 @@ TextureImporter:
       bones: []
       spriteID: a7ffeeaa3c080804d923c303b32a7ce6
       internalID: -948912485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_12
-      rect:
-        serializedVersion: 2
-        x: 324
-        y: 2565
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6ab11b75489ec845ad9f564733b8489
-      internalID: -500480276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_13
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 2567
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ef3d29e2f6755845b39609b08837de9
-      internalID: -1074964923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_14
-      rect:
-        serializedVersion: 2
-        x: 2041
-        y: 2568
-        width: 11
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f78c0c08130075e468218eb49b5c1580
-      internalID: 1726956821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_15
-      rect:
-        serializedVersion: 2
-        x: 2066
-        y: 2570
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edc546988ddb35a41bb2cf5ebf701a01
-      internalID: 1224073008
       vertices: []
       indices: 
       edges: []
@@ -528,11 +318,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 139
-        y: 718
+        y: 674
         width: 2114
-        height: 838
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 882
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.055544}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -566,27 +356,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickup_placemnet_22
-      rect:
-        serializedVersion: 2
-        x: 2268
-        y: 806
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb42b96e2b8c4e14e923f95158ab4abf
-      internalID: 1953465230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Pickup_placemnet_23
       rect:
         serializedVersion: 2
@@ -603,48 +372,6 @@ TextureImporter:
       bones: []
       spriteID: 75256d30afd178d41b1a99f9f9647a7f
       internalID: -147979933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_24
-      rect:
-        serializedVersion: 2
-        x: 1289
-        y: 662
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 488bc1462913e954498c7bbfbf422d21
-      internalID: -802275127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_25
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 600
-        width: 18
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73450681bef08974080cb3918999e4d7
-      internalID: -152514632
       vertices: []
       indices: 
       edges: []
@@ -671,43 +398,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickup_placemnet_27
+      name: Pickup_placemnet_29
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 578
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 577
+        y: 3702
+        width: 242
+        height: 381
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1d06c2a983929549a3ea8d2bee60a1e
-      internalID: -846589216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickup_placemnet_28
-      rect:
-        serializedVersion: 2
-        x: 3960
-        y: 71
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02066ba3fecc6c84683cb221247025af
-      internalID: 1888039043
+      spriteID: c8455afe219ee9349b079b04d59c7df3
+      internalID: -137837282
       vertices: []
       indices: 
       edges: []
@@ -746,6 +452,7 @@ TextureImporter:
       Pickup_placemnet_7: 1431241575
       Pickup_placemnet_3: 961312775
       Pickup_placemnet_19: -1838994401
+      Pickup_placemnet_29: -137837282
       Pickup_placemnet_12: -500480276
       Pickup_placemnet_18: 1979350144
       Pickup_placemnet_14: 1726956821
