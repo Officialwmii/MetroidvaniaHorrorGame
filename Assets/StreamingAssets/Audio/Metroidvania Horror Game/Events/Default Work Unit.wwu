@@ -96,33 +96,354 @@
 						</Folder>
 						<Folder Name="Ship AI" ID="{E4224306-80AB-447C-B88C-A8215B0CB4CD}" ShortID="16543386">
 							<ChildrenList>
-								<Event Name="Escape_Pod_Sequence" ID="{6ABEEEB9-6449-426C-A5B1-339EBB1470CA}"/>
-								<Event Name="Going_Up" ID="{E3E4CD98-03F2-415F-A74D-30635984FF12}"/>
-								<Event Name="Going_Down" ID="{309E6A28-39B5-4C6A-8BE8-655FAC7F1390}"/>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_12" ID="{6ABEEEB9-6449-426C-A5B1-339EBB1470CA}">
+									<ChildrenList>
+										<Action Name="" ID="{9165529A-8410-4156-815A-CD978E937D4A}" ShortID="854336289">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_12" ID="{4CC25DA1-C89C-40C4-9DD8-79F3CF3A9BA6}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_4" ID="{E3E4CD98-03F2-415F-A74D-30635984FF12}">
+									<ChildrenList>
+										<Action Name="" ID="{F19EC166-EA29-4EDB-9D75-A8122F9DB4EA}" ShortID="85795969">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_4" ID="{39EEA3DF-BC7A-4EE5-B51E-45A605D0A6A7}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_5" ID="{309E6A28-39B5-4C6A-8BE8-655FAC7F1390}">
+									<ChildrenList>
+										<Action Name="" ID="{ADC1D03B-B715-4E5F-B04D-D73CF4EC6E40}" ShortID="505474242">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_5" ID="{7EBEE9AB-87F0-4EDA-BED4-2B85710A7719}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_1" ID="{F86CD547-76CB-4A15-A356-0D270989373F}">
+									<ChildrenList>
+										<Action Name="" ID="{06EAF5C4-E478-45A2-A4D4-07C6438A2EB8}" ShortID="202001368">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_1" ID="{F661E1BF-F305-41D9-B610-92D064037551}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_22" ID="{30E237E4-33F1-4739-89FD-11C3C90D50F7}">
+									<ChildrenList>
+										<Action Name="" ID="{B135AB8F-3D6E-41BC-B263-A4E0A0AF971C}" ShortID="389308529">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_22" ID="{AB17F11E-047E-423A-8E45-11BADC2DFA06}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_2" ID="{583AFB02-D52C-4E71-943B-23CF59368B6C}">
+									<ChildrenList>
+										<Action Name="" ID="{94717025-F6A0-4C39-806B-E686DBE6030C}" ShortID="275885272">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_2" ID="{98AA6186-7224-4515-96D2-3B0064B2791B}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_3" ID="{AA1E22B8-0CA2-4698-A6BB-DEB2F49A8D60}">
+									<ChildrenList>
+										<Action Name="" ID="{2F1400A3-8F95-4111-B5BA-3B36787D086A}" ShortID="184649677">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_3" ID="{BE2B6318-0CA1-40CB-90C5-7ECB267F6705}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_20" ID="{B221ADF3-E0A2-4ADE-A578-9F5A8C68AF08}">
+									<ChildrenList>
+										<Action Name="" ID="{33B76DD9-F570-4201-A684-6148F81C9D25}" ShortID="880016527">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_20" ID="{EDF90CE2-0E46-4E7D-8725-C0712406A0BB}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_21" ID="{9D6A1BC1-677D-42C6-AF35-59E1EADF5ABD}">
+									<ChildrenList>
+										<Action Name="" ID="{6D47AADC-617E-4C89-A637-09019D645AEA}" ShortID="737147322">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_21" ID="{61D534B6-8403-4FF9-B35F-111BEF0D2EE1}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_6" ID="{D07859DE-869D-4636-8739-D80847A18746}">
+									<ChildrenList>
+										<Action Name="" ID="{DE207675-B113-4518-8F46-1C2CB521C625}" ShortID="121360713">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_6" ID="{A6776FA4-1C5F-431C-BCEC-9BEBD2C919FA}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_7" ID="{CD7F4382-3BFB-4A12-B6A2-642B746E8BFD}">
+									<ChildrenList>
+										<Action Name="" ID="{BA117FEB-767C-401E-BF8A-CABA13B3C742}" ShortID="849795291">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_7" ID="{C99911B3-9E37-451A-836E-4C3FF48104B4}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_8" ID="{BBE21029-9769-47A3-AFAD-13FB0369D0B2}">
+									<ChildrenList>
+										<Action Name="" ID="{F0A3AF20-C974-4E3D-B6B7-9758814E0A2E}" ShortID="796094313">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_8" ID="{7F77155A-8048-464F-AE0A-C484E5EBCD20}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_9" ID="{04F669A1-2321-4734-8577-44F3DB955CFD}">
+									<ChildrenList>
+										<Action Name="" ID="{AA4AD894-AFE4-4D77-908F-6ACBBB022CF9}" ShortID="217082791">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_9" ID="{98CEF0A3-5107-4318-96CF-1FDF04DEBBEA}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_10" ID="{FC6B067C-B3ED-4D24-8332-8B16CF34B51D}">
+									<ChildrenList>
+										<Action Name="" ID="{A16EC8D2-9F95-4691-BD87-6CFF29EDA313}" ShortID="624216433">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_10" ID="{7D73203B-D599-49B5-AA33-338CFBA04851}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_11" ID="{B44C8807-B3C6-4DFB-B8F0-6BFD40778417}">
+									<ChildrenList>
+										<Action Name="" ID="{6308FE1F-31FF-4955-B875-A5F5A6B6D25B}" ShortID="660887515">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_11" ID="{DF9F7406-5124-4B36-B95E-07A83E1E1177}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_13" ID="{0E8FAB07-2432-4268-A1E3-6A0C5CF86EA5}">
+									<ChildrenList>
+										<Action Name="" ID="{9BDCDE5F-30A8-4295-800E-50BD2430DDEF}" ShortID="450309660">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_13" ID="{34CD50FB-B758-4A6C-B0BC-59B17FE96672}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_14" ID="{55E9A784-86FA-4212-87F8-83E51831F56D}">
+									<ChildrenList>
+										<Action Name="" ID="{39C31915-D46D-41C7-B674-9921CFFE497C}" ShortID="267485416">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_14" ID="{2637371E-C50F-4BF3-AFEA-3857C6473527}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_15" ID="{D30FAFE0-A654-4EC6-83AC-EC6EB7D17B16}">
+									<ChildrenList>
+										<Action Name="" ID="{5156E333-29AD-400F-A63A-44A1900FA78B}" ShortID="274639807">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_15" ID="{2CF91FB8-319F-48D9-9B31-940C38174DFC}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_16" ID="{82E1F147-9A6D-4C3D-A68F-F19C92CC35A8}">
+									<ChildrenList>
+										<Action Name="" ID="{39D8994E-89AC-48D2-B47C-6E959BEF5F0B}" ShortID="226218016">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_16" ID="{4683C87A-9510-4089-847B-7C29BA99A2C4}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_17" ID="{DBF901E4-1A55-4903-8ABC-99D8EAE5E641}">
+									<ChildrenList>
+										<Action Name="" ID="{6D7CBCA7-940B-4924-B36A-AA38246474A9}" ShortID="298493974">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_17" ID="{75886AA8-2BF5-4A6D-AA0C-C295035E7E8E}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_18" ID="{B1F0E1F4-27ED-47F7-A1F4-84DA197A9826}">
+									<ChildrenList>
+										<Action Name="" ID="{41DA146D-5DE3-4941-AA09-C6E63AA41C90}" ShortID="906463070">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_18" ID="{BA613EFC-4EB7-458A-AE8F-E54D52A9B269}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SHIP_SYSTEM_ANNOUNCEMENT_19" ID="{3A4DBE1E-E8D3-4F5B-9C82-B4E22C312283}">
+									<ChildrenList>
+										<Action Name="" ID="{4AA06911-28C3-4BC3-916E-67E7986FD941}" ShortID="34092735">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_19" ID="{6E2AC852-6F5E-4C5D-8C8B-49B06B75B608}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
-						<Event Name="Play_Xeno_Monologue" ID="{914D9AD0-3AB8-449C-90C7-D30F5B224296}">
+						<Folder Name="Xeno" ID="{1F46479A-C13C-4026-AD95-087B7C289B39}" ShortID="906106757">
 							<ChildrenList>
-								<Action Name="" ID="{1F6D63E5-DFE9-447A-9CAA-E408E6E36DA8}" ShortID="824864404">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Xeno-encephalon Monologues" ID="{505D416D-A7F2-49DE-B049-32D7CBBFE72E}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Play_Xeno_Ambience" ID="{96B99336-40F0-4827-9008-6137C5D2476D}">
+									<ChildrenList>
+										<Action Name="" ID="{958247A8-7E23-412B-939C-BD027C8E8210}" ShortID="434627977">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_16" ID="{F3F5CC75-5B28-4E60-9B6E-F43EA08FE920}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Xeno_Monologue" ID="{914D9AD0-3AB8-449C-90C7-D30F5B224296}">
+									<ChildrenList>
+										<Action Name="" ID="{1F6D63E5-DFE9-447A-9CAA-E408E6E36DA8}" ShortID="824864404">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Xeno-encephalon Monologues" ID="{505D416D-A7F2-49DE-B049-32D7CBBFE72E}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="Play_Xeno_Ambience" ID="{96B99336-40F0-4827-9008-6137C5D2476D}">
+						</Folder>
+						<Folder Name="Enemies" ID="{8C91EE2C-979F-4D18-B89D-195AC4C38B4B}" ShortID="186543466">
 							<ChildrenList>
-								<Action Name="" ID="{958247A8-7E23-412B-939C-BD027C8E8210}" ShortID="434627977">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_16" ID="{F3F5CC75-5B28-4E60-9B6E-F43EA08FE920}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Folder Name="Infected" ID="{D5227984-F94A-4FC1-B4C1-C1BF987E7177}" ShortID="191193906">
+									<ChildrenList>
+										<Event Name="Infected_Idle" ID="{ACC987B8-B046-4152-AC1C-AA0059562CE6}">
+											<ChildrenList>
+												<Action Name="" ID="{CB42498F-3980-46B8-A3BD-D3F958A3AC77}" ShortID="108619323">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Infected Idle" ID="{0B0E46E3-A0F0-4C41-B879-F6B59CD2BA93}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Infected_Death" ID="{DD839D3B-7F4D-4686-B975-3F92E1ECA204}">
+											<ChildrenList>
+												<Action Name="" ID="{7BF0A834-941F-4007-9E38-AE7A79ED68CD}" ShortID="109617782">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Infected Death" ID="{EAFE9460-0692-4F40-8EA1-1DA17EDBD702}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Infected_Stunned" ID="{0D23FF6D-BAF6-4EB1-A118-CCA9054577F2}">
+											<ChildrenList>
+												<Action Name="" ID="{FA2D276F-C73B-4FC1-B7E2-3C8967B03927}" ShortID="4805474">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Infected Stunned" ID="{E17B58C0-F637-4B84-823A-00B475DE99B3}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Screamer" ID="{F2532AE0-A300-4478-9FB9-4D9ECB4CC3B5}" ShortID="940782980">
+									<ChildrenList>
+										<Event Name="Screamer_Idle" ID="{C6E97B91-117B-4AFC-9F69-B2EA17A4C346}">
+											<ChildrenList>
+												<Action Name="" ID="{FD93A044-71A3-4951-8891-BEEEBB7A8BE7}" ShortID="453301973">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Screamer Idle" ID="{3BC88292-8F7F-4216-9110-CF9FF2973251}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Screamer_Screeching" ID="{93F8AC4C-E297-46B7-9294-1A2E9F16A993}">
+											<ChildrenList>
+												<Action Name="" ID="{A6E9BB9F-32BC-4E6F-AF17-CB68C8493A9A}" ShortID="581787668">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Screamer Screeching" ID="{3736F616-FE76-4728-9707-DA6BA7A484FA}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Screamer_Death" ID="{795A5440-084A-4AA6-9324-C68872B326AE}">
+											<ChildrenList>
+												<Action Name="" ID="{FB0F2F42-1AF4-4903-AE5D-B63F805A7FFF}" ShortID="375281645">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Screamer Death" ID="{6AED12D8-E9C7-467B-AAEC-DD1E2F558342}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{4F87ED55-024F-4CF6-BC25-E9908D2FBECE}" ShortID="903198696">
@@ -264,6 +585,28 @@
 												</Action>
 											</ChildrenList>
 										</Event>
+										<Event Name="Health_Pickup" ID="{42634567-B538-413E-A3F9-F13F33C9B908}">
+											<ChildrenList>
+												<Action Name="" ID="{AE49AF52-1C63-457A-93EF-C6436CF70B9C}" ShortID="462051911">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Health Pickup" ID="{2317F2A9-04EC-4470-B79D-4B48445ED3CD}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Jetpack_Refill" ID="{9A197CA1-E037-4712-9E25-DCEC42157528}">
+											<ChildrenList>
+												<Action Name="" ID="{97BCAB12-CF24-4A1A-B2CD-1D79B0B2305A}" ShortID="201385372">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Jetpack Refill" ID="{68711EC8-613B-438C-9643-02D6691F6844}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
 								<Folder Name="Weapons" ID="{82674CF6-E774-4882-B0E9-3C01848C8B0A}" ShortID="1019317657">
@@ -345,6 +688,17 @@
 												</Action>
 											</ChildrenList>
 										</Event>
+										<Event Name="Denial" ID="{97C6D446-A5AA-4F9F-B18C-6DA468C98BE8}">
+											<ChildrenList>
+												<Action Name="" ID="{5F0187A2-FB36-4360-AE0C-88BD747C369C}" ShortID="399843509">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Denial" ID="{1E352303-0D83-40CA-9416-4FB3BD023F3B}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>
@@ -379,6 +733,154 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Back" ID="{649E6E62-CF1C-4EDA-B1F2-CE44D35919B8}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Noise_Meter_Fill" ID="{C1D5B6A7-1D44-4F08-9323-5F6113062645}">
+									<ChildrenList>
+										<Action Name="" ID="{D80AC9B7-09B5-4CCD-A4EC-94A86D6FC22B}" ShortID="920141957">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Noise Meter Fill" ID="{46ADCCBD-207E-4341-B621-15803E96B830}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Enemies" ID="{6E5E4E19-0247-4073-8E08-1CCD3EBA3EE8}" ShortID="962253081">
+							<ChildrenList>
+								<Folder Name="Liptank" ID="{8FC861FD-07BE-47DA-84BB-61DCDE63B6CD}" ShortID="225936817">
+									<ChildrenList>
+										<Event Name="Liptank_Idle" ID="{2BDC8E63-2B35-4DE7-80A4-DC41C5190679}">
+											<ChildrenList>
+												<Action Name="" ID="{16E2725D-2BD7-4666-9907-2A6609BE5F7C}" ShortID="71429440">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Liptank Idle" ID="{7A2E1A9B-2FB6-4B13-935A-4F305156C0B0}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Liptank_Attack" ID="{9D85F7A9-EBFA-47AD-A00A-593BC31EBE58}">
+											<ChildrenList>
+												<Action Name="" ID="{3198932E-CCA3-42A8-9A7B-158B2A347CFE}" ShortID="605452312">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Liptank Attack" ID="{52C9CFAB-6A6F-42CE-AEAC-B471B2F87849}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Liptank_Death" ID="{FC628602-C847-4B90-9ACA-B0875CCB793A}">
+											<ChildrenList>
+												<Action Name="" ID="{DD187DBD-F4AB-4A36-A645-FC86FA8D676B}" ShortID="737444079">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Liptank Death" ID="{AE828349-C5C0-4E5C-B4F2-B95F89FC4DEC}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Xeno-Encephalon" ID="{B21E78E8-3871-41DB-B7DD-4EDEF6955A74}" ShortID="148247152">
+									<ChildrenList>
+										<Event Name="Xeno_Attack" ID="{36E408CA-96E8-41A5-A62F-1F7DADE855B2}">
+											<ChildrenList>
+												<Action Name="" ID="{F4B4A9C6-B0AA-4151-AF32-FBF296BCFDB2}" ShortID="985237805">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Xeno Attack" ID="{90A46CB9-6D73-4A51-ADF8-E7D231C1A39C}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Xeno_Gas" ID="{48FDCEDC-FFCD-420F-A6BE-36A4776F93D7}">
+											<ChildrenList>
+												<Action Name="" ID="{DDCF8DD5-494C-4846-8A7C-82AFC1E2D473}" ShortID="321838511">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Xeno Gas" ID="{A67B24F0-08EE-413F-8168-B9A4CBF60B80}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Xeno_Damaged" ID="{8A696042-80E4-4D5C-B247-F05FCC7BCE29}">
+											<ChildrenList>
+												<Action Name="" ID="{CB5B7795-1E66-41DB-8143-FCAEEF9CD698}" ShortID="852813421">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Xeno Damaged" ID="{DAFB4A9F-F43F-41C5-AD99-08B8E9410FC2}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Xeno_Death" ID="{751F068C-CC1A-4128-BAD8-2BCA0B55A6A4}">
+											<ChildrenList>
+												<Action Name="" ID="{310ADEF7-2FC5-42EF-82DD-7FABB3D817F1}" ShortID="256149043">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Xeno Death" ID="{99973FD0-A031-4ED4-86C7-D6E074920E07}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Xeno_Idle" ID="{27FF17A5-92ED-483E-861C-56A20E74A75D}">
+											<ChildrenList>
+												<Action Name="" ID="{A5FEACC6-F20C-490F-BE0C-9A27537A8BBB}" ShortID="115947193">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Xeno Idle" ID="{29F9F86A-B335-4F28-9944-6B2F4CBC651C}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Crawler" ID="{70C6EC64-B36A-4C10-9832-42D4037D17BF}" ShortID="434859818">
+									<ChildrenList>
+										<Event Name="Crawler_Idle" ID="{5D7BF595-5D5B-4A9E-A7BB-84874BC663D7}">
+											<ChildrenList>
+												<Action Name="" ID="{9A5C933B-6954-4C9E-AB92-7CD780FDCDB4}" ShortID="144600883">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Crawler Idle" ID="{DA305480-1AB3-4CEC-A1D7-8A673ED3F41F}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Crawler_Explode" ID="{EF0005C4-D835-44DE-937B-6DB1FD819AA8}">
+											<ChildrenList>
+												<Action Name="" ID="{A9FBDBD6-DFB8-42B8-9217-0D8DD397C301}" ShortID="423047296">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Crawler Explode" ID="{B4EEA82F-1EF0-4186-8607-95C11CDC4E23}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Event Name="Glob_Idle" ID="{1827A82C-B268-4B71-B87C-A8089E77C804}">
+									<ChildrenList>
+										<Action Name="" ID="{0C4070C0-DE8F-4DE5-A198-FFFBA1D00456}" ShortID="637450994">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Glob Idle" ID="{3CE9A5FA-BEAB-4739-9B03-6BF38BB103E2}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

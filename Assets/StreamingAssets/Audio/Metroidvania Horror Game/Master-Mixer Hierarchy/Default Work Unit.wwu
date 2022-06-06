@@ -58,6 +58,7 @@
 								<Property Name="Color" Type="int16" Value="12"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList/>
 							<ChildrenList>
 								<AuxBus Name="Ambience" ID="{91626466-0F13-40FC-8B53-F84DBC5B8FCB}">
 									<PropertyList>
@@ -120,6 +121,13 @@
 									<ObjectLists/>
 								</AuxBus>
 								<AuxBus Name="Enemies" ID="{FD8C7B6F-E296-4B5F-9F69-0B1CE2129740}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ObjectLists/>
 								</AuxBus>
 							</ChildrenList>

@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4FD793A1-6526-4EB3-9BBF-E48ADF9C323B}" SchemaVersion="103">
 	<DynamicDialogue>
-		<WorkUnit Name="Default Work Unit" ID="{4FD793A1-6526-4EB3-9BBF-E48ADF9C323B}" PersistMode="Standalone">
-			<ChildrenList>
-				<Folder Name="Infected" ID="{3AC260AE-A0BE-407A-9910-69021ACDABA8}" ShortID="920209495"/>
-				<Folder Name="Ship AI" ID="{FF9F902F-9DC3-4123-8021-5FD082361B0C}" ShortID="961651175">
-					<ChildrenList>
-						<DialogueEvent Name="Escape_Pod" ID="{E4AFA719-2EDD-4AAC-A7D6-EFF69808A085}"/>
-						<DialogueEvent Name="Constelation_Key_Door" ID="{73E735F8-48FF-40B0-8B29-E3B9AD14116D}"/>
-						<DialogueEvent Name="Elevator" ID="{14951D0A-54B2-4E31-A668-C7191B9D3049}"/>
-						<DialogueEvent Name="Ship_Sector" ID="{9A6C015C-3B87-42EB-876E-06D46E0B582F}"/>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Xeno-Encephalon" ID="{6A1360BB-3DB3-4333-ADF2-C279022CD1CB}" ShortID="52239668"/>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{4FD793A1-6526-4EB3-9BBF-E48ADF9C323B}" PersistMode="Standalone"/>
 	</DynamicDialogue>
 </WwiseDocument>

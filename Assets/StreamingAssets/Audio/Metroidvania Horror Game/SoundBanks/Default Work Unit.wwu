@@ -8,10 +8,10 @@
 						<ObjectRef Name="Audio_Log_6" ID="{C1002CD2-F1F6-4061-B72A-87D2E56093FC}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Alien_Artifact" ID="{17EB9EB1-66F4-40C3-8E4D-DFF15AAC46A9}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Audio_Log_1" ID="{D547DCF8-7E2F-410A-B4F8-1618F6C498EA}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Going_Up" ID="{E3E4CD98-03F2-415F-A74D-30635984FF12}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_4" ID="{E3E4CD98-03F2-415F-A74D-30635984FF12}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Lethal_Gun_Fire" ID="{40B31D89-A6C8-4169-8CB1-F5A39CC55798}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grenade_Freeze" ID="{A95944B5-7B48-4238-A430-CAB7C527288B}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Escape_Pod_Sequence" ID="{6ABEEEB9-6449-426C-A5B1-339EBB1470CA}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_12" ID="{6ABEEEB9-6449-426C-A5B1-339EBB1470CA}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music" ID="{3E5D4BDC-CD65-42A5-B08D-0A53D5809338}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Audio_Log_2" ID="{6CB9088D-C9E8-438E-A328-E56D7BD8050D}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Xeno_Monologue" ID="{914D9AD0-3AB8-449C-90C7-D30F5B224296}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
@@ -36,7 +36,7 @@
 						<ObjectRef Name="Audio_Log_4" ID="{7D5C26B1-2919-4AA0-8FB3-F6DB85754A21}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grenade_Upgrade" ID="{F49031B7-24A4-4ABB-A898-64A2F896F295}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stun_Gun_Cooldown" ID="{66997210-A674-4BE5-B7BA-D88A0391ABD3}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Going_Down" ID="{309E6A28-39B5-4C6A-8BE8-655FAC7F1390}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_5" ID="{309E6A28-39B5-4C6A-8BE8-655FAC7F1390}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grenade_Fire" ID="{A9EF836C-5FF8-4D10-AF8F-A963BADCB2A6}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Elevator_Up" ID="{72634D5B-6E1F-4D12-888C-21E087638F71}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Audio_Log_5" ID="{4A9F447A-F1F4-4ECC-A67B-70CF0F228623}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>

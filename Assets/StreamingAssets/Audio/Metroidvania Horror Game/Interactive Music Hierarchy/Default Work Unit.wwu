@@ -73,7 +73,10 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="Progression A" ID="{412F0FE7-A1E2-4C85-932E-BD79537F564E}" ShortID="20348501">
+								<MusicSegment Name="Main Menu" ID="{412F0FE7-A1E2-4C85-932E-BD79537F564E}" ShortID="20348501">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="142536.115008952"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -82,6 +85,119 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Silent Space Main menu" ID="{F7858708-1308-4094-9CEA-2D51C847165D}" ShortID="832623577">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Silent Space Main menu" ID="{0D2404C9-ACA6-43DD-83C9-E303C2AE1CFB}">
+													<Language>SFX</Language>
+													<AudioFile>Silent Space Main menu.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="891228030"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{263C183B-D3DA-458B-A993-B175AEFD8989}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{6FEF405F-AE16-4BFB-8487-B3C8CE3F8DF1}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Silent Space Main menu" ID="{BE814D16-A94F-4A10-BA9E-D16A48A9009A}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="48000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="96500"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-48000"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Silent Space Main menu" ID="{0D2404C9-ACA6-43DD-83C9-E303C2AE1CFB}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{40A36EB8-26EE-4876-BF78-A5C02AE3F03A}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>48</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>96.5</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{1E469C30-A5F0-4DF4-9849-254AD8A830B6}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>48</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>96.5</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{48BD5AB7-DD39-4DF8-A57A-8583A363D5D3}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>48</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>96.5</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Cues">
 											<Reference>
@@ -94,36 +210,7 @@
 													<MusicCue Name="Exit Cue" ID="{4CC9E09A-9292-42C5-AEA5-9720E01C9725}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="1000"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-								<MusicSegment Name="Progression B" ID="{5D60C312-2109-4E3D-82EB-0C84FA16AA61}" ShortID="357810182">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
-										</Reference>
-									</ReferenceList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<Reference>
-												<Local>
-													<MusicCue Name="Entry Cue" ID="{57FABF77-814C-49C3-99C2-1461545CE61E}"/>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicCue Name="Exit Cue" ID="{A0FEE7B5-8ADB-428D-80AA-75560F461066}">
-														<PropertyList>
-															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+															<Property Name="TimeMs" Type="Real64" Value="47500"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -147,7 +234,17 @@
 							</TransitionList>
 							<ObjectLists/>
 							<Playlist>
-								<MusicPlaylistItem Name="" ID="{192EF1AF-679E-428D-8478-FBFA40EC327A}" ShortID="621560264"/>
+								<MusicPlaylistItem Name="" ID="{192EF1AF-679E-428D-8478-FBFA40EC327A}" ShortID="621560264">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{69082EC8-38D7-42F0-862D-9A6063E8BF3A}" ShortID="297727224">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Main Menu" ID="{412F0FE7-A1E2-4C85-932E-BD79537F564E}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicSegment Name="Credits Music" ID="{1DFF12E4-39EF-4A0C-9474-C126600D15DD}" ShortID="272313394">
@@ -8917,16 +9014,6 @@
 					<EntryList>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Main_Menu" ID="{1CE6CB78-5BBB-44D3-878E-1BE4E83038E5}"/>
-								<PathElementRef Name="Main_Menu" ID="{A85775FB-DB8E-49D9-9E80-5696AB6F8977}"/>
-								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Main Menu Music" ID="{721A6B07-AAC5-44B3-B603-E9E8DA75FE53}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
 								<PathElementRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
 								<PathElementRef Name="Start" ID="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}"/>
 								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
@@ -9003,6 +9090,16 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Credits Music" ID="{1DFF12E4-39EF-4A0C-9474-C126600D15DD}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Main_Menu" ID="{1CE6CB78-5BBB-44D3-878E-1BE4E83038E5}"/>
+								<PathElementRef Name="Main_Menu" ID="{A85775FB-DB8E-49D9-9E80-5696AB6F8977}"/>
+								<PathElementRef Name="Noise_Meter_Level" ID="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Main Menu Music" ID="{721A6B07-AAC5-44B3-B603-E9E8DA75FE53}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

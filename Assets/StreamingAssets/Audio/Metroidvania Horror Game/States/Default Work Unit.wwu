@@ -44,6 +44,13 @@
 						<State Name="Dead" ID="{06ADB154-859F-4C89-A7A6-C67A97C7D349}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Zero_Gravity" ID="{AD97D2C0-09AE-4322-A25C-5E4AF475EFF3}">
+					<ChildrenList>
+						<State Name="None" ID="{F8954C26-3C09-4404-ADF3-14F8914B48A3}"/>
+						<State Name="Normal_Gravity" ID="{373160DE-FE2C-4EF5-B8D8-9CBABED76E41}"/>
+						<State Name="Zero_Gravity" ID="{8FF88EB1-ED04-4930-B55F-D203393B3705}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

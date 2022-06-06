@@ -113,14 +113,14 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Start" ID="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}"/>
+						<CurrentStateRef Name="Main_Menu" ID="{A85775FB-DB8E-49D9-9E80-5696AB6F8977}"/>
 						<CurrentStateRef Name="Alive" ID="{10522CB0-52A3-4E42-B1E1-0CA2C975F816}"/>
-						<CurrentStateRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
+						<CurrentStateRef Name="Main_Menu" ID="{1CE6CB78-5BBB-44D3-878E-1BE4E83038E5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Bridge" ID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>
-						<CurrentSwitchRef Name="Flesh" ID="{CD70ADC4-42DF-45EA-9E0E-64255DD8EA89}"/>
-						<CurrentSwitchRef Name="Level_1" ID="{F4FEC03C-1CDD-41AF-9D6D-2249E46B5BF1}"/>
+						<CurrentSwitchRef Name="Metal" ID="{0AE16BA4-4F92-405F-896B-E4248D5C088B}"/>
+						<CurrentSwitchRef Name="Silent" ID="{C0AB1866-64C3-4CF2-8BAB-5CA886D86167}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
