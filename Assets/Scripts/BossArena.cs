@@ -18,10 +18,15 @@ public class BossArena : MonoBehaviour
     public GameObject ArenaLockRight;
     public GameObject Boss;
     public bool WasInArenaLastFrame = false;
+    private GameObject BossEntrance;
+
 
     void Start()
     {
         BossHider.SetActive(false);
+
+        BossEntrance = GameObject.Find("BossEntrance");
+
     }
 
     // Update is called once per frame
@@ -86,7 +91,9 @@ public class BossArena : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
 
-            PlayerInArena = true;           
+            PlayerInArena = true;
+
+            collision.gameObject.transform.position = BossEntrance.transform.position;
         }
 
     }
