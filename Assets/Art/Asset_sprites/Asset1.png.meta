@@ -317,10 +317,10 @@ TextureImporter:
       name: Asset1_10
       rect:
         serializedVersion: 2
-        x: 294
-        y: 2072
-        width: 852
-        height: 283
+        x: 288
+        y: 2137
+        width: 850
+        height: 400
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}

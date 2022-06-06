@@ -214,8 +214,8 @@ TextureImporter:
         serializedVersion: 2
         x: 2943
         y: 2931
-        width: 854
-        height: 860
+        width: 850
+        height: 850
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -815,7 +815,7 @@ TextureImporter:
       Living_quarter_assets_1: 163283270
       Living_quarter_assets_23: -253119664
       Living_quarter_assets_0: -235228783
-      Living_quarter_assets_25: 1205735960
+      Living_quarter_assets_30: -1485583613
       Living_quarter_assets_21: 1812118275
       Living_quarter_assets_5: -295005174
       Living_quarter_assets_11: -594526203
@@ -837,9 +837,9 @@ TextureImporter:
       Living_quarter_assets_6: -252161847
       Living_quarter_assets_29: -1689811659
       Living_quarter_assets_12: 1234866007
-      Living_quarter_assets_30: -1485583613
       Living_quarter_assets_8: 97474132
       Living_quarter_assets_16: 837727619
+      Living_quarter_assets_25: 1205735960
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
