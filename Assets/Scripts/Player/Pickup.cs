@@ -80,7 +80,7 @@ public class Pickup : MonoBehaviour
                 //Numericall upgrades
                 case UpgradeType.StunCooldown:
                     EventManager.UpgradeStunGun();
-
+                    AkSoundEngine.PostEvent("JetpackRefill", col.gameObject);
                     EventManager.sub("Stun Repluser Expansion - Energy Cooldown Reduction #"+ EventManager.stunUpgrade+", duration " + EventManager.CooldownTime + "s.", 3f);
                     break;
                 case UpgradeType.MaxFuel: // Not used
@@ -88,14 +88,13 @@ public class Pickup : MonoBehaviour
                     break;
                 case UpgradeType.MaxGranade:
                     EventManager.UpgradeMaxGrenade();
-
+                    AkSoundEngine.PostEvent("JetpackRefill", col.gameObject);
                     EventManager.sub("Grenade slot -Increase maximum cryo grenade capacity +1.", 3f);
                     break;
 
                 //Collectable 
                 case UpgradeType.CollectablePickup:
                     EventManager.CollectablePickup();
-
                     EventManager.sub("Alien artifact acquired - Artifact found on Virgil Prime, "+EventManager.Collectables+"/ 5.", 3f);
                     break;
 
@@ -120,10 +119,12 @@ public class Pickup : MonoBehaviour
                     break;
                 case UpgradeType.ConstalationKey:
                     EventManager.GainConstalationKey();
+                    AkSoundEngine.PostEvent("Constalation_Key", col.gameObject);
                     break;
                 case UpgradeType.RefillStation:
                     EventManager.RefillFuel(); DestroyObject = false;
                     EventManager.sub("Fuel Restored", 1f);
+                    AkSoundEngine.PostEvent("JetpackRefill", col.gameObject);
                     break;
                 case UpgradeType.StartingRoom:
                     EventManager.StartingRoom(); DestroyObject = false;

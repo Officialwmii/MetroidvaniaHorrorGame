@@ -1020,6 +1020,17 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Constalation_Key" ID="{D10499D7-29C5-4CC0-B109-6DC4553D2E0C}">
+							<ChildrenList>
+								<Action Name="" ID="{B6BDB608-F4E6-459E-98BF-AAA0FCFC1B27}" ShortID="502849618">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Constalation Key Pick Up" ID="{52DFFFEC-4446-4A35-872D-13EA989886BA}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

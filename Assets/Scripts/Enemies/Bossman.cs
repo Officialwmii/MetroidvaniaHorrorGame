@@ -32,13 +32,15 @@ public class Bossman : MonoBehaviour
 	private bool isStunned = false;
 	public bool onAlert = false;
 
+	public GameObject boss;
 
+	public AK.Wwise.Event idle;
 
 
 	void Awake()
 	{
 
-
+		boss = GameObject.Find("Boss");
 
 		fallCheck = transform.Find("FallCheck");
 		wallCheck = transform.Find("WallCheck");
@@ -73,7 +75,10 @@ public class Bossman : MonoBehaviour
 
 		//Debug.Log("Timetime  " + timer + "\n" + "NextShot  " + nextShot + "\n" + "Shoot Cooldown " + shootCooldown);
 
-
+		void PlayIdle()
+        {
+			idle.Post(boss);
+        }
 
 		if (life <= 0)
 		{
@@ -155,6 +160,7 @@ public class Bossman : MonoBehaviour
 			damage = Mathf.Abs(damage);
 			transform.GetComponent<Animator>().SetBool("Hit", true);
 			Debug.Log("I hurt! I took damage.");
+			AkSoundEngine.PostEvent("Xeno_Damaged", boss);
 			life -= damage;
 			rb.velocity = Vector2.zero;
 			rb.AddForce(new Vector2(direction * 500f, 100f));

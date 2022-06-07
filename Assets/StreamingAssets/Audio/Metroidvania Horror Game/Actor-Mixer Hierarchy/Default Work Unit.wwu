@@ -380,6 +380,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="sfx_player_hurt_4" ID="{641682B6-D64D-4DC6-97B5-DA0CE187E97D}" ShortID="712107448">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -403,6 +410,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="sfx_player_hurt_5" ID="{3683D846-599A-4443-B850-39B9B77EAE5A}" ShortID="237524894">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -2608,6 +2622,15 @@
 									<ObjectLists/>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Constalation Key Pick Up" ID="{52DFFFEC-4446-4A35-872D-13EA989886BA}" ShortID="907282557">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -2616,6 +2639,92 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Key_Pick_Up_1" ID="{6A283B32-0DCC-492C-A9E7-CFB18B45B1DE}" ShortID="193961105">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCI FI Interface Display Confirm Data Sweep" ID="{9C5B606E-7FBC-4688-9E40-2F750312A84D}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.104639123725174"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.970290056360709"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SCI FI Interface Display Confirm Data Sweep.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="283991288"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SCI FI Interface Display Confirm Data Sweep" ID="{9C5B606E-7FBC-4688-9E40-2F750312A84D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Key_Pick_Up_3" ID="{06F303CA-4FCC-4485-AEA9-A4D3528AC760}" ShortID="115651240">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{A6993C3C-F08B-47C7-A798-9F27B5C1EC09}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCI FI Interface Display Confirm Data Sweep" ID="{E084F0E1-EA82-44F1-97EF-AA34065FE49D}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.86096292941492"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.71710121443908"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SCI FI Interface Display Confirm Data Sweep.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="395898396"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SCI FI Interface Display Confirm Data Sweep" ID="{E084F0E1-EA82-44F1-97EF-AA34065FE49D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Key_Pick_Up_2" ID="{FBB10EA5-18B6-4275-862B-D9542A9E4792}" ShortID="899119301">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{A6993C3C-F08B-47C7-A798-9F27B5C1EC09}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCI FI Interface Display Confirm Data Sweep" ID="{43DAECC7-BFC8-40AB-8695-AA895F67646E}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.51133896940419"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.54821755904455"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SCI FI Interface Display Confirm Data Sweep.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="242184287"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SCI FI Interface Display Confirm Data Sweep" ID="{43DAECC7-BFC8-40AB-8695-AA895F67646E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
 							</ChildrenList>
@@ -2829,7 +2938,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+									<ObjectRef Name="SFX" ID="{A6993C3C-F08B-47C7-A798-9F27B5C1EC09}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
@@ -4647,6 +4756,13 @@
 									<ObjectLists/>
 								</ActorMixer>
 								<ActorMixer Name="Xeno-Encephalon" ID="{79FC41EF-A3CA-4A0D-8CC5-36603F92DE53}" ShortID="811414711">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -7716,7 +7832,7 @@
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

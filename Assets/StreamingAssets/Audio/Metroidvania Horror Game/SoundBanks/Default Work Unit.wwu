@@ -3,7 +3,7 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{CBE521D4-7968-4EFA-ADFC-BF265136C428}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Main" ID="{2010CAE9-A877-4DD1-88D8-5D8FA7166BD2}">
+				<SoundBank Name="Main" ID="{5AEED4AF-3A97-45A6-B56B-311F9B0A0D23}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Audio_Log_6" ID="{C1002CD2-F1F6-4061-B72A-87D2E56093FC}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Alien_Artifact" ID="{17EB9EB1-66F4-40C3-8E4D-DFF15AAC46A9}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
@@ -73,6 +73,7 @@
 						<ObjectRef Name="Xeno_Monologue_02" ID="{6A1850A7-4FDC-4C29-BBB3-DB6967A315E8}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_16" ID="{82E1F147-9A6D-4C3D-A68F-F19C92CC35A8}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_5" ID="{309E6A28-39B5-4C6A-8BE8-655FAC7F1390}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Constalation_Key" ID="{D10499D7-29C5-4CC0-B109-6DC4553D2E0C}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Xeno_Monologue_09" ID="{58E4E7AF-EAD4-4CDE-BC8F-8F7A928C7224}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grenade_Fire" ID="{A9EF836C-5FF8-4D10-AF8F-A963BADCB2A6}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Elevator_Up" ID="{72634D5B-6E1F-4D12-888C-21E087638F71}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>

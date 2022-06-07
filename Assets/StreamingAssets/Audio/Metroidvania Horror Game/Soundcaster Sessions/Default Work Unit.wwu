@@ -98,8 +98,8 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{6448DD6C-28B5-415A-8353-F77F06597E06}"/>
-						<CurrentStateRef Name="Alive" ID="{10522CB0-52A3-4E42-B1E1-0CA2C975F816}"/>
-						<CurrentStateRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
+						<CurrentStateRef Name="None" ID="{0F1295A8-FFFD-4165-9CF6-54B740B9372D}"/>
+						<CurrentStateRef Name="None" ID="{4BB3579F-CBDD-4EC9-8632-BE2A52475590}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Bridge" ID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>

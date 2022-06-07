@@ -604,10 +604,10 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: d421e5cb6879fa4eadfcbf265136c428
     GuidInternal: 
-    m_lastTime: -8585470241977100780
+    m_lastTime: -8585470172452477154
     List:
     - name: Main
-      guid: e697a1ce610cc54ea30db3a1b91bf08c
+      guid: afd4ee5a973aa645b56b311f9b0a0d23
       id: 3161908922
       PathAndIcons:
       - ElementName: SoundBanks
@@ -618,7 +618,7 @@ MonoBehaviour:
         guid: d421e5cb6879fa4eadfcbf265136c428
       - ElementName: Main
         ObjectType: 7
-        guid: e697a1ce610cc54ea30db3a1b91bf08c
+        guid: afd4ee5a973aa645b56b311f9b0a0d23
       Path: SoundBanks/Default Work Unit/Main
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
@@ -632,7 +632,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 678d0dc573114b4fa4a47a1483ba6642
     GuidInternal: 
-    m_lastTime: -8585470225285979818
+    m_lastTime: -8585470172452838715
     List:
     - name: Alien_Artifact
       guid: b19eeb17f466c3408e4ddff15aac46a9
@@ -855,6 +855,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.933797
       minDuration: 1.646538
+    - name: Constalation_Key
+      guid: d79904d1c529c04cb1096dc4553d2e0c
+      id: 991706544
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 55ed874f4f02f64cbc25e9908d2fbece
+      - ElementName: Constalation_Key
+        ObjectType: 3
+        guid: d79904d1c529c04cb1096dc4553d2e0c
+      Path: Events/Default Work Unit/SFX/Constalation_Key
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Crawler
       guid: 64ecc6706ab3104c983242d4037d17bf
       id: 2426947127
@@ -994,26 +1014,6 @@ MonoBehaviour:
       maxDuration: 1.648758
       minDuration: 1.648758
     - name: Enemies
-      guid: 194e5e6e470273408e081ccd3eba3ee8
-      id: 2242381963
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 678d0dc573114b4fa4a47a1483ba6642
-      - ElementName: SFX
-        ObjectType: 4
-        guid: 55ed874f4f02f64cbc25e9908d2fbece
-      - ElementName: Enemies
-        ObjectType: 4
-        guid: 194e5e6e470273408e081ccd3eba3ee8
-      Path: Events/Default Work Unit/SFX/Enemies
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Enemies
       guid: 2cee918c9f97184db89d195ac4c38b4b
       id: 2242381963
       PathAndIcons:
@@ -1030,6 +1030,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: 2cee918c9f97184db89d195ac4c38b4b
       Path: Events/Default Work Unit/Dialogue/Enemies
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemies
+      guid: 194e5e6e470273408e081ccd3eba3ee8
+      id: 2242381963
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 55ed874f4f02f64cbc25e9908d2fbece
+      - ElementName: Enemies
+        ObjectType: 4
+        guid: 194e5e6e470273408e081ccd3eba3ee8
+      Path: Events/Default Work Unit/SFX/Enemies
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -4001,7 +4021,7 @@ MonoBehaviour:
         ObjectType: 14
         guid: b5ae3e944a84714f9658293429bb509d
       Path: Triggers/Default Work Unit/Ambience_Intensifier
-  ExpandedFileSystemItemIds: 02000000030000000400000005000000070000000900000011000000180000001a000000220000003a0000005a000000
+  ExpandedFileSystemItemIds: 0200000003000000040000000500000007000000090000001100000012000000180000001a000000220000003a0000005a000000
   ExpandedWaapiItemIds: 020000000300000004000000110000005a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

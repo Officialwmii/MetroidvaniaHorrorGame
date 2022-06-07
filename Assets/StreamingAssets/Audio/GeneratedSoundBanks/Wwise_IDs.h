@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID AUDIO_LOG_5 = 1201273846U;
         static const AkUniqueID AUDIO_LOG_6 = 1201273845U;
         static const AkUniqueID BACK = 1559875400U;
+        static const AkUniqueID CONSTALATION_KEY = 991706544U;
         static const AkUniqueID CRAWLER_EXPLODE = 2583459121U;
         static const AkUniqueID CRAWLER_IDLE = 2451879384U;
         static const AkUniqueID ELEVATOR_DOWN = 2896864154U;

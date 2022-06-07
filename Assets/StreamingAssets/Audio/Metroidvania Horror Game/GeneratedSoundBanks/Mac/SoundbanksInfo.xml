@@ -29,7 +29,7 @@
 				<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="English(US)" Hash="1760704867">
+		<SoundBank Id="3161908922" Language="English(US)" Hash="2458091127">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
@@ -38,7 +38,7 @@
 					<IncludedMemoryFiles>
 						<File Id="182519293" Language="SFX">
 							<ShortName>sfx_objects_alien_artifact.wav</ShortName>
-							<Path>SFX/sfx_objects_alien_artifact_3138B09A.wem</Path>
+							<Path>SFX/sfx_objects_alien_artifact_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -46,11 +46,11 @@
 					<IncludedMemoryFiles>
 						<File Id="552029135" Language="SFX">
 							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
-							<Path>SFX/sfx_objects_audio_log_activation_50F70E07.wem</Path>
+							<Path>SFX/sfx_objects_audio_log_activation_78F67AEC.wem</Path>
 						</File>
 						<File Id="669252164" Language="English(US)">
 							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_1.wav</ShortName>
-							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_1_3138B09A.wem</Path>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_1_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -62,11 +62,11 @@
 					<IncludedMemoryFiles>
 						<File Id="245107331" Language="English(US)">
 							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_2.wav</ShortName>
-							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_2_3138B09A.wem</Path>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_2_569C59C1.wem</Path>
 						</File>
 						<File Id="552029135" Language="SFX">
 							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
-							<Path>SFX/sfx_objects_audio_log_activation_50F70E07.wem</Path>
+							<Path>SFX/sfx_objects_audio_log_activation_78F67AEC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -78,11 +78,11 @@
 					<IncludedMemoryFiles>
 						<File Id="552029135" Language="SFX">
 							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
-							<Path>SFX/sfx_objects_audio_log_activation_50F70E07.wem</Path>
+							<Path>SFX/sfx_objects_audio_log_activation_78F67AEC.wem</Path>
 						</File>
 						<File Id="582800018" Language="English(US)">
 							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_3.wav</ShortName>
-							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_3_3138B09A.wem</Path>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_3_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -94,11 +94,11 @@
 					<IncludedMemoryFiles>
 						<File Id="552029135" Language="SFX">
 							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
-							<Path>SFX/sfx_objects_audio_log_activation_50F70E07.wem</Path>
+							<Path>SFX/sfx_objects_audio_log_activation_78F67AEC.wem</Path>
 						</File>
 						<File Id="744198633" Language="English(US)">
 							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_4.wav</ShortName>
-							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_4_3138B09A.wem</Path>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_4_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -110,11 +110,11 @@
 					<IncludedMemoryFiles>
 						<File Id="304362184" Language="English(US)">
 							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_5.wav</ShortName>
-							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_5_3138B09A.wem</Path>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_5_569C59C1.wem</Path>
 						</File>
 						<File Id="552029135" Language="SFX">
 							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
-							<Path>SFX/sfx_objects_audio_log_activation_50F70E07.wem</Path>
+							<Path>SFX/sfx_objects_audio_log_activation_78F67AEC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -126,11 +126,11 @@
 					<IncludedMemoryFiles>
 						<File Id="552029135" Language="SFX">
 							<ShortName>sfx_objects_audio_log_activation.wav</ShortName>
-							<Path>SFX/sfx_objects_audio_log_activation_50F70E07.wem</Path>
+							<Path>SFX/sfx_objects_audio_log_activation_78F67AEC.wem</Path>
 						</File>
 						<File Id="1061363470" Language="English(US)">
 							<ShortName>CAPTAIN_WALKER_AUDIO_LOG_6.wav</ShortName>
-							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_6_3138B09A.wem</Path>
+							<Path>Voices/English(US)/CAPTAIN_WALKER_AUDIO_LOG_6_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -142,7 +142,23 @@
 					<IncludedMemoryFiles>
 						<File Id="969567069" Language="SFX">
 							<ShortName>ui_back.wav</ShortName>
-							<Path>SFX/ui_back_90D1205D.wem</Path>
+							<Path>SFX/ui_back_BB7E5536.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="991706544" Name="Constalation_Key" ObjectPath="\Events\Default Work Unit\SFX\Constalation_Key" DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<IncludedMemoryFiles>
+						<File Id="242184287" Language="SFX">
+							<ShortName>SCI FI Interface Display Confirm Data Sweep.wav</ShortName>
+							<Path>SFX/SCI FI Interface Display Confirm Data Sweep_7E8FB066.wem</Path>
+						</File>
+						<File Id="283991288" Language="SFX">
+							<ShortName>SCI FI Interface Display Confirm Data Sweep.wav</ShortName>
+							<Path>SFX/SCI FI Interface Display Confirm Data Sweep_480582CF.wem</Path>
+						</File>
+						<File Id="395898396" Language="SFX">
+							<ShortName>SCI FI Interface Display Confirm Data Sweep.wav</ShortName>
+							<Path>SFX/SCI FI Interface Display Confirm Data Sweep_B7ED9916.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -150,7 +166,7 @@
 					<IncludedMemoryFiles>
 						<File Id="275254058" Language="SFX">
 							<ShortName>sfx_enemie_crawlers_explode.wav</ShortName>
-							<Path>SFX/sfx_enemie_crawlers_explode_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_crawlers_explode_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -161,11 +177,11 @@
 					<IncludedMemoryFiles>
 						<File Id="261126237" Language="SFX">
 							<ShortName>sfx_enemie_crawlers_idle_1.wav</ShortName>
-							<Path>SFX/sfx_enemie_crawlers_idle_1_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_crawlers_idle_1_569C59C1.wem</Path>
 						</File>
 						<File Id="699407469" Language="SFX">
 							<ShortName>sfx_enemie_crawlers_idle_2.wav</ShortName>
-							<Path>SFX/sfx_enemie_crawlers_idle_2_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_crawlers_idle_2_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -176,7 +192,7 @@
 					<IncludedMemoryFiles>
 						<File Id="959127739" Language="SFX">
 							<ShortName>Elevator\sfx_environment_elevator.wav</ShortName>
-							<Path>SFX/Elevator/sfx_environment_elevator_3C15664D.wem</Path>
+							<Path>SFX/Elevator/sfx_environment_elevator_2CFAF476.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -184,7 +200,7 @@
 					<IncludedMemoryFiles>
 						<File Id="697570722" Language="SFX">
 							<ShortName>Elevator\sfx_environment_elevator.wav</ShortName>
-							<Path>SFX/Elevator/sfx_environment_elevator_131F1F48.wem</Path>
+							<Path>SFX/Elevator/sfx_environment_elevator_5C2A2843.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -192,87 +208,87 @@
 					<IncludedMemoryFiles>
 						<File Id="12323694" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_3.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_3_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_3_569C59C1.wem</Path>
 						</File>
 						<File Id="84080864" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_5.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_5_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_5_569C59C1.wem</Path>
 						</File>
 						<File Id="212270525" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_7.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_7_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_7_569C59C1.wem</Path>
 						</File>
 						<File Id="263022152" Language="SFX">
 							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_4.wav</ShortName>
-							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_4_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_4_569C59C1.wem</Path>
 						</File>
 						<File Id="266786222" Language="SFX">
 							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_1.wav</ShortName>
-							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_1_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_1_569C59C1.wem</Path>
 						</File>
 						<File Id="324224561" Language="SFX">
 							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_2.wav</ShortName>
-							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_2_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_2_569C59C1.wem</Path>
 						</File>
 						<File Id="346768803" Language="SFX">
 							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_2.wav</ShortName>
-							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_2_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_2_569C59C1.wem</Path>
 						</File>
 						<File Id="388289992" Language="SFX">
 							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_3.wav</ShortName>
-							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_3_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_3_569C59C1.wem</Path>
 						</File>
 						<File Id="499182671" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_6.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_6_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_6_569C59C1.wem</Path>
 						</File>
 						<File Id="543710671" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_8.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_8_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_8_569C59C1.wem</Path>
 						</File>
 						<File Id="699641404" Language="SFX">
 							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_3.wav</ShortName>
-							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_3_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_3_569C59C1.wem</Path>
 						</File>
 						<File Id="702327265" Language="SFX">
 							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_4.wav</ShortName>
-							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_4_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_4_569C59C1.wem</Path>
 						</File>
 						<File Id="728264653" Language="SFX">
 							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_1.wav</ShortName>
-							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_1_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_1_569C59C1.wem</Path>
 						</File>
 						<File Id="770339308" Language="SFX">
 							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_2.wav</ShortName>
-							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_2_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_2_569C59C1.wem</Path>
 						</File>
 						<File Id="777501039" Language="SFX">
 							<ShortName>Footsteps\Wood\sfx_player_footsteps_wood_4.wav</ShortName>
-							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_4_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Wood/sfx_player_footsteps_wood_4_569C59C1.wem</Path>
 						</File>
 						<File Id="820693115" Language="SFX">
 							<ShortName>Footsteps\Metal\sfx_player_footsteps_metal_1.wav</ShortName>
-							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_1_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Metal/sfx_player_footsteps_metal_1_569C59C1.wem</Path>
 						</File>
 						<File Id="945543423" Language="SFX">
 							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_3.wav</ShortName>
-							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_3_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_3_569C59C1.wem</Path>
 						</File>
 						<File Id="951515435" Language="SFX">
 							<ShortName>Footsteps\Glass\sfx_player_footsteps_glass_5.wav</ShortName>
-							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_5_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Glass/sfx_player_footsteps_glass_5_569C59C1.wem</Path>
 						</File>
 						<File Id="1007650402" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_1.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_1_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_1_569C59C1.wem</Path>
 						</File>
 						<File Id="1013508017" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_2.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_2_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_2_569C59C1.wem</Path>
 						</File>
 						<File Id="1053989945" Language="SFX">
 							<ShortName>Footsteps\Flesh\sfx_player_footsteps_flesh_4.wav</ShortName>
-							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_4_3138B09A.wem</Path>
+							<Path>SFX/Footsteps/Flesh/sfx_player_footsteps_flesh_4_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{0AE16BA4-4F92-405F-896B-E4248D5C088B}</DefaultSwitchValue>
@@ -323,7 +339,7 @@
 					<IncludedMemoryFiles>
 						<File Id="914097194" Language="SFX">
 							<ShortName>sfx_enemie_glob_idle.wav</ShortName>
-							<Path>SFX/sfx_enemie_glob_idle_CA722868.wem</Path>
+							<Path>SFX/sfx_enemie_glob_idle_F75E693B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -334,7 +350,7 @@
 					<IncludedMemoryFiles>
 						<File Id="451920883" Language="SFX">
 							<ShortName>Grenade Fire\sfx_player_grenade_fire.wav</ShortName>
-							<Path>SFX/Grenade Fire/sfx_player_grenade_fire_9AE80F30.wem</Path>
+							<Path>SFX/Grenade Fire/sfx_player_grenade_fire_D9E1D213.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -346,7 +362,7 @@
 					<IncludedMemoryFiles>
 						<File Id="544239192" Language="SFX">
 							<ShortName>Grenade Freeze\sfx_player_grenade_freeze.wav</ShortName>
-							<Path>SFX/Grenade Freeze/sfx_player_grenade_freeze_40FB96C6.wem</Path>
+							<Path>SFX/Grenade Freeze/sfx_player_grenade_freeze_4184CB45.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -358,19 +374,19 @@
 					<IncludedMemoryFiles>
 						<File Id="110542236" Language="SFX">
 							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_2.wav</ShortName>
-							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_2_3138B09A.wem</Path>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_2_569C59C1.wem</Path>
 						</File>
 						<File Id="333313522" Language="SFX">
 							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_4.wav</ShortName>
-							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_4_3138B09A.wem</Path>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_4_569C59C1.wem</Path>
 						</File>
 						<File Id="715858962" Language="SFX">
 							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_3.wav</ShortName>
-							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_3_3138B09A.wem</Path>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_3_569C59C1.wem</Path>
 						</File>
 						<File Id="805806231" Language="SFX">
 							<ShortName>Grenade Upgrade\sfx_player_grenade_upgrade_1.wav</ShortName>
-							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_1_3138B09A.wem</Path>
+							<Path>SFX/Grenade Upgrade/sfx_player_grenade_upgrade_1_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -382,7 +398,7 @@
 					<IncludedMemoryFiles>
 						<File Id="533889330" Language="SFX">
 							<ShortName>SCI FI Interface Display Pop Up.wav</ShortName>
-							<Path>SFX/SCI FI Interface Display Pop Up_3138B09A.wem</Path>
+							<Path>SFX/SCI FI Interface Display Pop Up_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -393,19 +409,19 @@
 					<IncludedMemoryFiles>
 						<File Id="251338578" Language="SFX">
 							<ShortName>INFECTED_GRUNT_7_1.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_7_1_958CF8E8.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_7_1_BD42DE7F.wem</Path>
 						</File>
 						<File Id="416918827" Language="SFX">
 							<ShortName>INFECTED_GRUNT_7_2.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_7_2_3138B09A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_7_2_569C59C1.wem</Path>
 						</File>
 						<File Id="960901028" Language="SFX">
 							<ShortName>INFECTED_GRUNT_7_3.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_7_3_78AD6905.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_7_3_1D6AB4CA.wem</Path>
 						</File>
 						<File Id="1069455546" Language="SFX">
 							<ShortName>INFECTED_GRUNT_7_4.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_7_4_3138B09A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_7_4_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -416,19 +432,19 @@
 					<IncludedMemoryFiles>
 						<File Id="125855407" Language="SFX">
 							<ShortName>INFECTED_GRUNT_2_1.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_2_1_FDC09CB4.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_2_1_CBB6DF9B.wem</Path>
 						</File>
 						<File Id="643258863" Language="SFX">
 							<ShortName>INFECTED_GRUNT_8_1.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_8_1_94D6D693.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_8_1_ED6385AC.wem</Path>
 						</File>
 						<File Id="891778858" Language="SFX">
 							<ShortName>INFECTED_GRUNT_2_2.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_2_2_D0C515D6.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_2_2_D12C4BA5.wem</Path>
 						</File>
 						<File Id="1003524496" Language="SFX">
 							<ShortName>INFECTED_GRUNT_8_2.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_8_2_7394F731.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_8_2_373774B2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -439,19 +455,19 @@
 					<IncludedMemoryFiles>
 						<File Id="600746981" Language="SFX">
 							<ShortName>INFECTED_GRUNT_3_2.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_3_2_1A64DC3A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_3_2_6EAB9501.wem</Path>
 						</File>
 						<File Id="622548068" Language="SFX">
 							<ShortName>INFECTED_GRUNT_3_1.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_3_1_FBB19D68.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_3_1_F9FB108B.wem</Path>
 						</File>
 						<File Id="840286500" Language="SFX">
 							<ShortName>INFECTED_GRUNT_5_2.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_5_2_30DEDC08.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_5_2_CCD56A2B.wem</Path>
 						</File>
 						<File Id="862756737" Language="SFX">
 							<ShortName>INFECTED_GRUNT_5_1.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_5_1_3B1F779A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_5_1_B503003D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -462,19 +478,19 @@
 					<IncludedMemoryFiles>
 						<File Id="127882654" Language="SFX">
 							<ShortName>Jetpack\sfx_player_jetpack_dash_4.wav</ShortName>
-							<Path>SFX/Jetpack/sfx_player_jetpack_dash_4_2A17CD9C.wem</Path>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_4_4D4C9DEF.wem</Path>
 						</File>
 						<File Id="213843341" Language="SFX">
 							<ShortName>Jetpack\sfx_player_jetpack_dash_2.wav</ShortName>
-							<Path>SFX/Jetpack/sfx_player_jetpack_dash_2_6AD6ECF0.wem</Path>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_2_612F29FF.wem</Path>
 						</File>
 						<File Id="882463319" Language="SFX">
 							<ShortName>Jetpack\sfx_player_jetpack_dash_3.wav</ShortName>
-							<Path>SFX/Jetpack/sfx_player_jetpack_dash_3_740D2165.wem</Path>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_3_B4F10D4E.wem</Path>
 						</File>
 						<File Id="1063171889" Language="SFX">
 							<ShortName>Jetpack\sfx_player_jetpack_dash_1.wav</ShortName>
-							<Path>SFX/Jetpack/sfx_player_jetpack_dash_1_14115FDD.wem</Path>
+							<Path>SFX/Jetpack/sfx_player_jetpack_dash_1_EDD27222.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -485,15 +501,15 @@
 					<IncludedMemoryFiles>
 						<File Id="102273830" Language="SFX">
 							<ShortName>UI Notification Zoom In Display.wav</ShortName>
-							<Path>SFX/UI Notification Zoom In Display_F71DF2B4.wem</Path>
+							<Path>SFX/UI Notification Zoom In Display_E2194E27.wem</Path>
 						</File>
 						<File Id="610662297" Language="SFX">
 							<ShortName>UI Notification Zoom In Display.wav</ShortName>
-							<Path>SFX/UI Notification Zoom In Display_5A222A40.wem</Path>
+							<Path>SFX/UI Notification Zoom In Display_1FE017B7.wem</Path>
 						</File>
 						<File Id="672333437" Language="SFX">
 							<ShortName>UI Notification Zoom In Display.wav</ShortName>
-							<Path>SFX/UI Notification Zoom In Display_478EB0F0.wem</Path>
+							<Path>SFX/UI Notification Zoom In Display_43CDBC53.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -504,11 +520,11 @@
 					<IncludedMemoryFiles>
 						<File Id="514305692" Language="SFX">
 							<ShortName>sfx_player_jetpack_upgrade_2.wav</ShortName>
-							<Path>SFX/sfx_player_jetpack_upgrade_2_3138B09A.wem</Path>
+							<Path>SFX/sfx_player_jetpack_upgrade_2_569C59C1.wem</Path>
 						</File>
 						<File Id="1020952662" Language="SFX">
 							<ShortName>sfx_player_jetpack_upgrade_1.wav</ShortName>
-							<Path>SFX/sfx_player_jetpack_upgrade_1_3138B09A.wem</Path>
+							<Path>SFX/sfx_player_jetpack_upgrade_1_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -519,19 +535,19 @@
 					<IncludedMemoryFiles>
 						<File Id="183375381" Language="SFX">
 							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_2.wav</ShortName>
-							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_2_3138B09A.wem</Path>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_2_569C59C1.wem</Path>
 						</File>
 						<File Id="722421037" Language="SFX">
 							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_1.wav</ShortName>
-							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_1_3138B09A.wem</Path>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_1_569C59C1.wem</Path>
 						</File>
 						<File Id="811209880" Language="SFX">
 							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_3.wav</ShortName>
-							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_3_3138B09A.wem</Path>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_3_569C59C1.wem</Path>
 						</File>
 						<File Id="885199976" Language="SFX">
 							<ShortName>Lethal Gun\sfx_player_lethal_gun_fire_4.wav</ShortName>
-							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_4_3138B09A.wem</Path>
+							<Path>SFX/Lethal Gun/sfx_player_lethal_gun_fire_4_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -543,15 +559,15 @@
 					<IncludedMemoryFiles>
 						<File Id="667248012" Language="SFX">
 							<ShortName>sfx_enemie_liptank_attacking_2.wav</ShortName>
-							<Path>SFX/sfx_enemie_liptank_attacking_2_89DE660B.wem</Path>
+							<Path>SFX/sfx_enemie_liptank_attacking_2_097A18D8.wem</Path>
 						</File>
 						<File Id="765937388" Language="SFX">
 							<ShortName>sfx_enemie_liptank_attacking_3.wav</ShortName>
-							<Path>SFX/sfx_enemie_liptank_attacking_3_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_liptank_attacking_3_569C59C1.wem</Path>
 						</File>
 						<File Id="1013364594" Language="SFX">
 							<ShortName>sfx_enemie_liptank_attacking_1.wav</ShortName>
-							<Path>SFX/sfx_enemie_liptank_attacking_1_3E78BD96.wem</Path>
+							<Path>SFX/sfx_enemie_liptank_attacking_1_EEDE64F9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -562,7 +578,7 @@
 					<IncludedMemoryFiles>
 						<File Id="430324706" Language="SFX">
 							<ShortName>sfx_enemie_liptank_death.wav</ShortName>
-							<Path>SFX/sfx_enemie_liptank_death_47B7E786.wem</Path>
+							<Path>SFX/sfx_enemie_liptank_death_F7D96E01.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -573,7 +589,7 @@
 					<IncludedMemoryFiles>
 						<File Id="127770492" Language="SFX">
 							<ShortName>sfx_enemie_liptank_idle.wav</ShortName>
-							<Path>SFX/sfx_enemie_liptank_idle_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_liptank_idle_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -584,7 +600,7 @@
 					<IncludedMemoryFiles>
 						<File Id="147403889" Language="SFX">
 							<ShortName>SCI FI Utility Scanner High.wav</ShortName>
-							<Path>SFX/SCI FI Utility Scanner High_0AABC4A0.wem</Path>
+							<Path>SFX/SCI FI Utility Scanner High_4042B923.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -595,7 +611,7 @@
 					<IncludedMemoryFiles>
 						<File Id="648292605" Language="SFX">
 							<ShortName>ui_pause.wav</ShortName>
-							<Path>SFX/ui_pause_76AA0AD0.wem</Path>
+							<Path>SFX/ui_pause_1FBE92BB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -603,27 +619,27 @@
 					<IncludedMemoryFiles>
 						<File Id="6329621" Language="SFX">
 							<ShortName>sfx_ambience_ship_hull.wav</ShortName>
-							<Path>SFX/sfx_ambience_ship_hull_78D55724.wem</Path>
+							<Path>SFX/sfx_ambience_ship_hull_E84716CF.wem</Path>
 						</File>
 						<File Id="419453379" Language="SFX">
 							<ShortName>sfx_ambience_med_bay.wav</ShortName>
-							<Path>SFX/sfx_ambience_med_bay_3138B09A.wem</Path>
+							<Path>SFX/sfx_ambience_med_bay_569C59C1.wem</Path>
 						</File>
 						<File Id="575244914" Language="SFX">
 							<ShortName>sfx_ambience_warehouse.wav</ShortName>
-							<Path>SFX/sfx_ambience_warehouse_3138B09A.wem</Path>
+							<Path>SFX/sfx_ambience_warehouse_569C59C1.wem</Path>
 						</File>
 						<File Id="615095720" Language="SFX">
 							<ShortName>sfx_ambience_boss.wav</ShortName>
-							<Path>SFX/sfx_ambience_boss_3138B09A.wem</Path>
+							<Path>SFX/sfx_ambience_boss_569C59C1.wem</Path>
 						</File>
 						<File Id="827298294" Language="SFX">
 							<ShortName>sfx_ambience_hallway.wav</ShortName>
-							<Path>SFX/sfx_ambience_hallway_3138B09A.wem</Path>
+							<Path>SFX/sfx_ambience_hallway_569C59C1.wem</Path>
 						</File>
 						<File Id="871992041" Language="SFX">
 							<ShortName>sfx_ambience_escape_pod_hatch.wav</ShortName>
-							<Path>SFX/sfx_ambience_escape_pod_hatch_3138B09A.wem</Path>
+							<Path>SFX/sfx_ambience_escape_pod_hatch_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{D37BAE8E-3594-4C87-B4BF-1275932B2970}</DefaultSwitchValue>
@@ -667,151 +683,151 @@
 					<IncludedMemoryFiles>
 						<File Id="21019540" Language="SFX">
 							<ShortName>Progression_1_2_M1-49.wav</ShortName>
-							<Path>SFX/Progression_1_2_M1-49_78D55724.wem</Path>
+							<Path>SFX/Progression_1_2_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="30339314" Language="SFX">
 							<ShortName>Base_Layer_1_M1-49.wav</ShortName>
-							<Path>SFX/Base_Layer_1_M1-49_78D55724.wem</Path>
+							<Path>SFX/Base_Layer_1_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="61499553" Language="SFX">
 							<ShortName>Victory_Stinger_Ending_7_M49-53.wav</ShortName>
-							<Path>SFX/Victory_Stinger_Ending_7_M49-53_78D55724.wem</Path>
+							<Path>SFX/Victory_Stinger_Ending_7_M49-53_E84716CF.wem</Path>
 						</File>
 						<File Id="84063088" Language="SFX">
 							<ShortName>Victory_Stinger_Ending_1_M49-53.wav</ShortName>
-							<Path>SFX/Victory_Stinger_Ending_1_M49-53_78D55724.wem</Path>
+							<Path>SFX/Victory_Stinger_Ending_1_M49-53_E84716CF.wem</Path>
 						</File>
 						<File Id="96754927" Language="SFX">
 							<ShortName>Victory_Stinger_Ending_9_M49-53.wav</ShortName>
-							<Path>SFX/Victory_Stinger_Ending_9_M49-53_78D55724.wem</Path>
+							<Path>SFX/Victory_Stinger_Ending_9_M49-53_E84716CF.wem</Path>
 						</File>
 						<File Id="112016936" Language="SFX">
 							<ShortName>Victory_Stinger_Ending_3_M49-53.wav</ShortName>
-							<Path>SFX/Victory_Stinger_Ending_3_M49-53_78D55724.wem</Path>
+							<Path>SFX/Victory_Stinger_Ending_3_M49-53_E84716CF.wem</Path>
 						</File>
 						<File Id="115879475" Language="SFX">
 							<ShortName>Victory_Stinger_Ending_2_M49-53.wav</ShortName>
-							<Path>SFX/Victory_Stinger_Ending_2_M49-53_78D55724.wem</Path>
+							<Path>SFX/Victory_Stinger_Ending_2_M49-53_E84716CF.wem</Path>
 						</File>
 						<File Id="131762784" Language="SFX">
 							<ShortName>Victory_Stinger_Ending_5_M49-53.wav</ShortName>
-							<Path>SFX/Victory_Stinger_Ending_5_M49-53_78D55724.wem</Path>
+							<Path>SFX/Victory_Stinger_Ending_5_M49-53_E84716CF.wem</Path>
 						</File>
 						<File Id="135272103" Language="SFX">
 							<ShortName>Noise_Meter_Layer_1_1_M1-5.wav</ShortName>
-							<Path>SFX/Noise_Meter_Layer_1_1_M1-5_78D55724.wem</Path>
+							<Path>SFX/Noise_Meter_Layer_1_1_M1-5_E84716CF.wem</Path>
 						</File>
 						<File Id="143207839" Language="SFX">
 							<ShortName>Progression_4_1_M1-49.wav</ShortName>
-							<Path>SFX/Progression_4_1_M1-49_78D55724.wem</Path>
+							<Path>SFX/Progression_4_1_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="153984511" Language="SFX">
 							<ShortName>Noise_Meter_Layer_2_1_M1-5.wav</ShortName>
-							<Path>SFX/Noise_Meter_Layer_2_1_M1-5_78D55724.wem</Path>
+							<Path>SFX/Noise_Meter_Layer_2_1_M1-5_E84716CF.wem</Path>
 						</File>
 						<File Id="154343532" Language="SFX">
 							<ShortName>Base_Layer_2_M1-49.wav</ShortName>
-							<Path>SFX/Base_Layer_2_M1-49_78D55724.wem</Path>
+							<Path>SFX/Base_Layer_2_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="277084804" Language="SFX">
 							<ShortName>Victory_Stinger_Ending_4_M49-53.wav</ShortName>
-							<Path>SFX/Victory_Stinger_Ending_4_M49-53_78D55724.wem</Path>
+							<Path>SFX/Victory_Stinger_Ending_4_M49-53_E84716CF.wem</Path>
 						</File>
 						<File Id="343590361" Language="SFX">
 							<ShortName>Death_Stinger_Ending_Prog_4_2_M61-65.wav</ShortName>
-							<Path>SFX/Death_Stinger_Ending_Prog_4_2_M61-65_78D55724.wem</Path>
+							<Path>SFX/Death_Stinger_Ending_Prog_4_2_M61-65_E84716CF.wem</Path>
 						</File>
 						<File Id="352765779" Language="SFX">
 							<ShortName>Base_Layer_4_M1-49.wav</ShortName>
-							<Path>SFX/Base_Layer_4_M1-49_78D55724.wem</Path>
+							<Path>SFX/Base_Layer_4_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="361788286" Language="SFX">
 							<ShortName>Progression_2_1_M1-49.wav</ShortName>
-							<Path>SFX/Progression_2_1_M1-49_78D55724.wem</Path>
+							<Path>SFX/Progression_2_1_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="386364663" Language="SFX">
 							<ShortName>Death_Stinger_Ending_Base_4_M61-65.wav</ShortName>
-							<Path>SFX/Death_Stinger_Ending_Base_4_M61-65_78D55724.wem</Path>
+							<Path>SFX/Death_Stinger_Ending_Base_4_M61-65_E84716CF.wem</Path>
 						</File>
 						<File Id="477173057" Language="SFX">
 							<ShortName>Death_Stinger_Ending_Base_2_M61-65.wav</ShortName>
-							<Path>SFX/Death_Stinger_Ending_Base_2_M61-65_78D55724.wem</Path>
+							<Path>SFX/Death_Stinger_Ending_Base_2_M61-65_E84716CF.wem</Path>
 						</File>
 						<File Id="480705699" Language="SFX">
 							<ShortName>Progression_2_2_M1-49.wav</ShortName>
-							<Path>SFX/Progression_2_2_M1-49_78D55724.wem</Path>
+							<Path>SFX/Progression_2_2_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="544080710" Language="SFX">
 							<ShortName>Progression_1_1_M1-49.wav</ShortName>
-							<Path>SFX/Progression_1_1_M1-49_78D55724.wem</Path>
+							<Path>SFX/Progression_1_1_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="552505700" Language="SFX">
 							<ShortName>Death_Stinger_Ending_Base_1_M61-65.wav</ShortName>
-							<Path>SFX/Death_Stinger_Ending_Base_1_M61-65_78D55724.wem</Path>
+							<Path>SFX/Death_Stinger_Ending_Base_1_M61-65_E84716CF.wem</Path>
 						</File>
 						<File Id="554863416" Language="SFX">
 							<ShortName>Victory_Stinger_Ending_8_M49-53.wav</ShortName>
-							<Path>SFX/Victory_Stinger_Ending_8_M49-53_78D55724.wem</Path>
+							<Path>SFX/Victory_Stinger_Ending_8_M49-53_E84716CF.wem</Path>
 						</File>
 						<File Id="615733923" Language="SFX">
 							<ShortName>Progression_4_2_M1-49.wav</ShortName>
-							<Path>SFX/Progression_4_2_M1-49_78D55724.wem</Path>
+							<Path>SFX/Progression_4_2_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="627347666" Language="SFX">
 							<ShortName>Death_Stinger_Ending_Prog_2_2_M61-65.wav</ShortName>
-							<Path>SFX/Death_Stinger_Ending_Prog_2_2_M61-65_78D55724.wem</Path>
+							<Path>SFX/Death_Stinger_Ending_Prog_2_2_M61-65_E84716CF.wem</Path>
 						</File>
 						<File Id="654053244" Language="SFX">
 							<ShortName>Victory_Stinger_Ending_6_M49-53.wav</ShortName>
-							<Path>SFX/Victory_Stinger_Ending_6_M49-53_78D55724.wem</Path>
+							<Path>SFX/Victory_Stinger_Ending_6_M49-53_E84716CF.wem</Path>
 						</File>
 						<File Id="708733859" Language="SFX">
 							<ShortName>Base_Layer_3_M1-49.wav</ShortName>
-							<Path>SFX/Base_Layer_3_M1-49_78D55724.wem</Path>
+							<Path>SFX/Base_Layer_3_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="712310994" Language="SFX">
 							<ShortName>Death_Stinger_Ending_Prog_1_1_M61-65.wav</ShortName>
-							<Path>SFX/Death_Stinger_Ending_Prog_1_1_M61-65_78D55724.wem</Path>
+							<Path>SFX/Death_Stinger_Ending_Prog_1_1_M61-65_E84716CF.wem</Path>
 						</File>
 						<File Id="732893337" Language="SFX">
 							<ShortName>Progression_3_1_M1-49.wav</ShortName>
-							<Path>SFX/Progression_3_1_M1-49_78D55724.wem</Path>
+							<Path>SFX/Progression_3_1_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="748931381" Language="SFX">
 							<ShortName>Noise_Meter_Layer_2_2_M1-5.wav</ShortName>
-							<Path>SFX/Noise_Meter_Layer_2_2_M1-5_78D55724.wem</Path>
+							<Path>SFX/Noise_Meter_Layer_2_2_M1-5_E84716CF.wem</Path>
 						</File>
 						<File Id="751233446" Language="SFX">
 							<ShortName>Silent_Space.wav</ShortName>
-							<Path>SFX/Silent_Space_78D55724.wem</Path>
+							<Path>SFX/Silent_Space_E84716CF.wem</Path>
 						</File>
 						<File Id="753869440" Language="SFX">
 							<ShortName>Noise_Meter_Layer_3_1_M1-5.wav</ShortName>
-							<Path>SFX/Noise_Meter_Layer_3_1_M1-5_78D55724.wem</Path>
+							<Path>SFX/Noise_Meter_Layer_3_1_M1-5_E84716CF.wem</Path>
 						</File>
 						<File Id="792362547" Language="SFX">
 							<ShortName>Progression_3_2_M1-49.wav</ShortName>
-							<Path>SFX/Progression_3_2_M1-49_78D55724.wem</Path>
+							<Path>SFX/Progression_3_2_M1-49_E84716CF.wem</Path>
 						</File>
 						<File Id="843723302" Language="SFX">
 							<ShortName>Silent Space Credits.wav</ShortName>
-							<Path>SFX/Silent Space Credits_78D55724.wem</Path>
+							<Path>SFX/Silent Space Credits_E84716CF.wem</Path>
 						</File>
 						<File Id="922334724" Language="SFX">
 							<ShortName>Death_Stinger_Ending_Prog_3_2_M61-65.wav</ShortName>
-							<Path>SFX/Death_Stinger_Ending_Prog_3_2_M61-65_78D55724.wem</Path>
+							<Path>SFX/Death_Stinger_Ending_Prog_3_2_M61-65_E84716CF.wem</Path>
 						</File>
 						<File Id="930170408" Language="SFX">
 							<ShortName>Death_Stinger_Ending_Prog_1_2_M61-65.wav</ShortName>
-							<Path>SFX/Death_Stinger_Ending_Prog_1_2_M61-65_78D55724.wem</Path>
+							<Path>SFX/Death_Stinger_Ending_Prog_1_2_M61-65_E84716CF.wem</Path>
 						</File>
 						<File Id="971252853" Language="SFX">
 							<ShortName>Death_Stinger_Ending_Base_3_M61-65.wav</ShortName>
-							<Path>SFX/Death_Stinger_Ending_Base_3_M61-65_78D55724.wem</Path>
+							<Path>SFX/Death_Stinger_Ending_Base_3_M61-65_E84716CF.wem</Path>
 						</File>
 						<File Id="977194662" Language="SFX">
 							<ShortName>Death_Stinger_Ending_Prog_3_1_M61-65.wav</ShortName>
-							<Path>SFX/Death_Stinger_Ending_Prog_3_1_M61-65_78D55724.wem</Path>
+							<Path>SFX/Death_Stinger_Ending_Prog_3_1_M61-65_E84716CF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -1034,7 +1050,7 @@
 					<IncludedMemoryFiles>
 						<File Id="512919423" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_16.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_16_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_16_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1046,63 +1062,63 @@
 					<IncludedMemoryFiles>
 						<File Id="69293566" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_10.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_10_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_10_569C59C1.wem</Path>
 						</File>
 						<File Id="74916476" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_14.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_14_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_14_569C59C1.wem</Path>
 						</File>
 						<File Id="158052674" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_8.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_8_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_8_569C59C1.wem</Path>
 						</File>
 						<File Id="209311016" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_4.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_4_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_4_569C59C1.wem</Path>
 						</File>
 						<File Id="264026108" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_11.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_11_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_11_569C59C1.wem</Path>
 						</File>
 						<File Id="378239919" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_15.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_15_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_15_569C59C1.wem</Path>
 						</File>
 						<File Id="486323830" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_2.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_2_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_2_569C59C1.wem</Path>
 						</File>
 						<File Id="667688247" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_6.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_6_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_6_569C59C1.wem</Path>
 						</File>
 						<File Id="677252750" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_13.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_13_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_13_569C59C1.wem</Path>
 						</File>
 						<File Id="701323549" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_7.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_7_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_7_569C59C1.wem</Path>
 						</File>
 						<File Id="723447735" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_12.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_12_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_12_569C59C1.wem</Path>
 						</File>
 						<File Id="732557398" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_3.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_3_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_3_569C59C1.wem</Path>
 						</File>
 						<File Id="853171573" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_5.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_5_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_5_569C59C1.wem</Path>
 						</File>
 						<File Id="857098854" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_9.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_9_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_9_569C59C1.wem</Path>
 						</File>
 						<File Id="932881791" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_1.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_1_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_1_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1114,11 +1130,11 @@
 					<IncludedMemoryFiles>
 						<File Id="256954084" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_kill_impact_1.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_kill_impact_1_BF41797C.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_kill_impact_1_88205EF3.wem</Path>
 						</File>
 						<File Id="522861066" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_kill_impact_2.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_kill_impact_2_0E6117C5.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_kill_impact_2_EE83DCFA.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1129,23 +1145,15 @@
 					<IncludedMemoryFiles>
 						<File Id="32388923" Language="SFX">
 							<ShortName>Player Hurt\sfx_player_hurt_1.wav</ShortName>
-							<Path>SFX/Player Hurt/sfx_player_hurt_1_3138B09A.wem</Path>
+							<Path>SFX/Player Hurt/sfx_player_hurt_1_569C59C1.wem</Path>
 						</File>
 						<File Id="63806104" Language="SFX">
 							<ShortName>Player Hurt\sfx_player_hurt_2.wav</ShortName>
-							<Path>SFX/Player Hurt/sfx_player_hurt_2_3138B09A.wem</Path>
-						</File>
-						<File Id="848091051" Language="SFX">
-							<ShortName>Player Hurt\sfx_player_hurt_5.wav</ShortName>
-							<Path>SFX/Player Hurt/sfx_player_hurt_5_3138B09A.wem</Path>
-						</File>
-						<File Id="864522723" Language="SFX">
-							<ShortName>Player Hurt\sfx_player_hurt_4.wav</ShortName>
-							<Path>SFX/Player Hurt/sfx_player_hurt_4_3138B09A.wem</Path>
+							<Path>SFX/Player Hurt/sfx_player_hurt_2_569C59C1.wem</Path>
 						</File>
 						<File Id="878010969" Language="SFX">
 							<ShortName>Player Hurt\sfx_player_hurt_3.wav</ShortName>
-							<Path>SFX/Player Hurt/sfx_player_hurt_3_3138B09A.wem</Path>
+							<Path>SFX/Player Hurt/sfx_player_hurt_3_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1156,7 +1164,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1016587642" Language="SFX">
 							<ShortName>Player Jump\sfx_player_jump.wav</ShortName>
-							<Path>SFX/Player Jump/sfx_player_jump_3138B09A.wem</Path>
+							<Path>SFX/Player Jump/sfx_player_jump_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1167,19 +1175,19 @@
 					<IncludedMemoryFiles>
 						<File Id="11195309" Language="SFX">
 							<ShortName>INFECTED_GRUNT_9_4.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_9_4_3138B09A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_9_4_569C59C1.wem</Path>
 						</File>
 						<File Id="39043539" Language="SFX">
 							<ShortName>INFECTED_GRUNT_9_3.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_9_3_3138B09A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_9_3_569C59C1.wem</Path>
 						</File>
 						<File Id="354864297" Language="SFX">
 							<ShortName>INFECTED_GRUNT_9_2.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_9_2_3138B09A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_9_2_569C59C1.wem</Path>
 						</File>
 						<File Id="585703503" Language="SFX">
 							<ShortName>INFECTED_GRUNT_9_1.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_9_1_3138B09A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_9_1_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1190,31 +1198,31 @@
 					<IncludedMemoryFiles>
 						<File Id="214103239" Language="SFX">
 							<ShortName>INFECTED_GRUNT_2_11.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_2_11_3138B09A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_2_11_569C59C1.wem</Path>
 						</File>
 						<File Id="229540317" Language="SFX">
 							<ShortName>INFECTED_GRUNT_4_2.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_4_2_8B3142CD.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_4_2_72F2FC6E.wem</Path>
 						</File>
 						<File Id="272634493" Language="SFX">
 							<ShortName>INFECTED_GRUNT_10_2.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_10_2_3138B09A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_10_2_569C59C1.wem</Path>
 						</File>
 						<File Id="290981194" Language="SFX">
 							<ShortName>INFECTED_GRUNT_4_1.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_4_1_0CBB3942.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_4_1_1E57918D.wem</Path>
 						</File>
 						<File Id="362333534" Language="SFX">
 							<ShortName>INFECTED_GRUNT_10_1.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_10_1_3138B09A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_10_1_569C59C1.wem</Path>
 						</File>
 						<File Id="722518228" Language="SFX">
 							<ShortName>INFECTED_GRUNT_10_4.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_10_4_3138B09A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_10_4_569C59C1.wem</Path>
 						</File>
 						<File Id="751741689" Language="SFX">
 							<ShortName>INFECTED_GRUNT_10_3.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_10_3_3138B09A.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_10_3_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1225,19 +1233,19 @@
 					<IncludedMemoryFiles>
 						<File Id="275888289" Language="SFX">
 							<ShortName>INFECTED_GRUNT_6_1.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_6_1_D0FC7A31.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_6_1_00A3E63E.wem</Path>
 						</File>
 						<File Id="837894797" Language="SFX">
 							<ShortName>INFECTED_GRUNT_6_3.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_6_3_FEE82B62.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_6_3_244D11C9.wem</Path>
 						</File>
 						<File Id="881474601" Language="SFX">
 							<ShortName>INFECTED_GRUNT_6_2.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_6_2_0D61DBDF.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_6_2_03953D48.wem</Path>
 						</File>
 						<File Id="895621299" Language="SFX">
 							<ShortName>INFECTED_GRUNT_6_4.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_6_4_E24AE34E.wem</Path>
+							<Path>SFX/INFECTED_GRUNT_6_4_F2845D15.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1248,7 +1256,7 @@
 					<IncludedMemoryFiles>
 						<File Id="150222993" Language="SFX">
 							<ShortName>Security Alarm\sfx_environment_security_alarm_activated.wav</ShortName>
-							<Path>SFX/Security Alarm/sfx_environment_security_alarm_activated_E0996EE8.wem</Path>
+							<Path>SFX/Security Alarm/sfx_environment_security_alarm_activated_02D8CDA3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1259,7 +1267,7 @@
 					<IncludedMemoryFiles>
 						<File Id="925556678" Language="SFX">
 							<ShortName>ui_select.wav</ShortName>
-							<Path>SFX/ui_select_F951B69C.wem</Path>
+							<Path>SFX/ui_select_2D52B303.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1267,7 +1275,7 @@
 					<IncludedMemoryFiles>
 						<File Id="735477488" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_1.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_1_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_1_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1279,7 +1287,7 @@
 					<IncludedMemoryFiles>
 						<File Id="404218294" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_10.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_10_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_10_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1291,7 +1299,7 @@
 					<IncludedMemoryFiles>
 						<File Id="872939869" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_11.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_11_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_11_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1303,7 +1311,7 @@
 					<IncludedMemoryFiles>
 						<File Id="800875833" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_12.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_12_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_12_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1315,7 +1323,7 @@
 					<IncludedMemoryFiles>
 						<File Id="65158716" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_13.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_13_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_13_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1327,7 +1335,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1055789192" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_14.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_14_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_14_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1339,7 +1347,7 @@
 					<IncludedMemoryFiles>
 						<File Id="240272246" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_15.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_15_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_15_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1351,7 +1359,7 @@
 					<IncludedMemoryFiles>
 						<File Id="254570489" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_16.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_16_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_16_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1363,7 +1371,7 @@
 					<IncludedMemoryFiles>
 						<File Id="725215931" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_17.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_17_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_17_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1375,7 +1383,7 @@
 					<IncludedMemoryFiles>
 						<File Id="904780192" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_18.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_18_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_18_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1387,7 +1395,7 @@
 					<IncludedMemoryFiles>
 						<File Id="924631783" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_19.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_19_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_19_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1399,7 +1407,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1012840362" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_2.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_2_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_2_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1411,7 +1419,7 @@
 					<IncludedMemoryFiles>
 						<File Id="490354483" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_20.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_20_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_20_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1423,7 +1431,7 @@
 					<IncludedMemoryFiles>
 						<File Id="835689957" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_21.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_21_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_21_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1435,7 +1443,7 @@
 					<IncludedMemoryFiles>
 						<File Id="511577091" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_22.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_22_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_22_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1447,7 +1455,7 @@
 					<IncludedMemoryFiles>
 						<File Id="945601546" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_3.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_3_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_3_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1459,7 +1467,7 @@
 					<IncludedMemoryFiles>
 						<File Id="339367365" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_4.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_4_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_4_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1471,7 +1479,7 @@
 					<IncludedMemoryFiles>
 						<File Id="187605677" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_5.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_5_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_5_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1483,7 +1491,7 @@
 					<IncludedMemoryFiles>
 						<File Id="742581024" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_6.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_6_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_6_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1495,7 +1503,7 @@
 					<IncludedMemoryFiles>
 						<File Id="620535740" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_7.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_7_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_7_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1507,7 +1515,7 @@
 					<IncludedMemoryFiles>
 						<File Id="860688239" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_8.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_8_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_8_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1519,7 +1527,7 @@
 					<IncludedMemoryFiles>
 						<File Id="456664259" Language="SFX">
 							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_9.wav</ShortName>
-							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_9_3138B09A.wem</Path>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_9_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1531,11 +1539,11 @@
 					<IncludedMemoryFiles>
 						<File Id="82215919" Language="SFX">
 							<ShortName>Stun Cooldown\sfx_player_stun_cooldown.wav</ShortName>
-							<Path>SFX/Stun Cooldown/sfx_player_stun_cooldown_3138B09A.wem</Path>
+							<Path>SFX/Stun Cooldown/sfx_player_stun_cooldown_569C59C1.wem</Path>
 						</File>
 						<File Id="276793087" Language="SFX">
 							<ShortName>Stun Cooldown\sfx_player_stun_cooldown_complete.wav</ShortName>
-							<Path>SFX/Stun Cooldown/sfx_player_stun_cooldown_complete_3138B09A.wem</Path>
+							<Path>SFX/Stun Cooldown/sfx_player_stun_cooldown_complete_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1547,7 +1555,7 @@
 					<IncludedMemoryFiles>
 						<File Id="750823969" Language="SFX">
 							<ShortName>Stun Fire\sfx_player_stun_fire.wav</ShortName>
-							<Path>SFX/Stun Fire/sfx_player_stun_fire_3138B09A.wem</Path>
+							<Path>SFX/Stun Fire/sfx_player_stun_fire_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1559,19 +1567,19 @@
 					<IncludedMemoryFiles>
 						<File Id="14651933" Language="SFX">
 							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_1.wav</ShortName>
-							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_1_3138B09A.wem</Path>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_1_569C59C1.wem</Path>
 						</File>
 						<File Id="299991711" Language="SFX">
 							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_2.wav</ShortName>
-							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_2_3138B09A.wem</Path>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_2_569C59C1.wem</Path>
 						</File>
 						<File Id="392537604" Language="SFX">
 							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_3.wav</ShortName>
-							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_3_3138B09A.wem</Path>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_3_569C59C1.wem</Path>
 						</File>
 						<File Id="723059966" Language="SFX">
 							<ShortName>Stun Upgrade\sfx_player_stun_upgrade_4.wav</ShortName>
-							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_4_3138B09A.wem</Path>
+							<Path>SFX/Stun Upgrade/sfx_player_stun_upgrade_4_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1583,11 +1591,11 @@
 					<IncludedMemoryFiles>
 						<File Id="691092938" Language="SFX">
 							<ShortName>Suit\sfx_player_suit_upgrade_2.wav</ShortName>
-							<Path>SFX/Suit/sfx_player_suit_upgrade_2_3138B09A.wem</Path>
+							<Path>SFX/Suit/sfx_player_suit_upgrade_2_569C59C1.wem</Path>
 						</File>
 						<File Id="822777633" Language="SFX">
 							<ShortName>Suit\sfx_player_suit_upgrade_1.wav</ShortName>
-							<Path>SFX/Suit/sfx_player_suit_upgrade_1_3138B09A.wem</Path>
+							<Path>SFX/Suit/sfx_player_suit_upgrade_1_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1598,15 +1606,15 @@
 					<IncludedMemoryFiles>
 						<File Id="477298105" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_attack_through_surface_1.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_1_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_1_569C59C1.wem</Path>
 						</File>
 						<File Id="767708188" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_attack_through_surface_3.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_3_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_3_569C59C1.wem</Path>
 						</File>
 						<File Id="771317424" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_attack_through_surface_2.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_2_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_2_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1617,15 +1625,15 @@
 					<IncludedMemoryFiles>
 						<File Id="216699403" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_damaged_2.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_damaged_2_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_damaged_2_569C59C1.wem</Path>
 						</File>
 						<File Id="296672761" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_damaged_1.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_damaged_1_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_damaged_1_569C59C1.wem</Path>
 						</File>
 						<File Id="1065752237" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_damaged_3.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_damaged_3_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_damaged_3_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1636,7 +1644,7 @@
 					<IncludedMemoryFiles>
 						<File Id="616224007" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_death_sequence.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_death_sequence_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_death_sequence_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1647,7 +1655,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1023473157" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_gas_attack.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_gas_attack_324CC548.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_gas_attack_2F3BA08F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1658,7 +1666,7 @@
 					<IncludedMemoryFiles>
 						<File Id="813374736" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_idle.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_idle_3138B09A.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_idle_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1669,7 +1677,7 @@
 					<IncludedMemoryFiles>
 						<File Id="486323830" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_2.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_2_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_2_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1681,7 +1689,7 @@
 					<IncludedMemoryFiles>
 						<File Id="732557398" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_3.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_3_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_3_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1693,7 +1701,7 @@
 					<IncludedMemoryFiles>
 						<File Id="209311016" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_4.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_4_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_4_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1705,7 +1713,7 @@
 					<IncludedMemoryFiles>
 						<File Id="853171573" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_5.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_5_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_5_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1717,7 +1725,7 @@
 					<IncludedMemoryFiles>
 						<File Id="667688247" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_6.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_6_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_6_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1729,7 +1737,7 @@
 					<IncludedMemoryFiles>
 						<File Id="701323549" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_7.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_7_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_7_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1741,7 +1749,7 @@
 					<IncludedMemoryFiles>
 						<File Id="158052674" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_8.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_8_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_8_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1753,7 +1761,7 @@
 					<IncludedMemoryFiles>
 						<File Id="857098854" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_9.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_9_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_9_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1765,7 +1773,7 @@
 					<IncludedMemoryFiles>
 						<File Id="69293566" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_10.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_10_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_10_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1777,7 +1785,7 @@
 					<IncludedMemoryFiles>
 						<File Id="264026108" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_11.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_11_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_11_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1789,7 +1797,7 @@
 					<IncludedMemoryFiles>
 						<File Id="74916476" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_14.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_14_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_14_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -1801,7 +1809,7 @@
 					<IncludedMemoryFiles>
 						<File Id="378239919" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_15.wav</ShortName>
-							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_15_3138B09A.wem</Path>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_15_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
