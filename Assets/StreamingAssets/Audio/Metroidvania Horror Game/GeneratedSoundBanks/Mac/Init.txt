@@ -11,8 +11,6 @@ State	ID	Name	State Group			Notes
 	748895195	None	Music_Segments			
 	779278001	Death	Music_Segments			
 	1281810935	Start	Music_Segments			
-	2005704188	Main_Menu	Music_Segments			
-	2201105581	Credits	Music_Segments			
 	2983809730	Upgrade_4	Music_Segments			
 	2983809732	Upgrade_2	Music_Segments			
 	2983809733	Upgrade_3	Music_Segments			

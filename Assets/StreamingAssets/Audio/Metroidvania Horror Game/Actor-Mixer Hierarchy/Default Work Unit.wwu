@@ -60,6 +60,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Jetpack" ID="{245D37ED-7247-42C5-930D-C049EC9671FE}" ShortID="242234687">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -210,6 +211,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Jetpack Upgrade" ID="{0D580C89-5940-43D1-9C0F-73037054FE19}" ShortID="1046430158">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -281,6 +283,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Player Hurt" ID="{5E116D0A-106D-40E0-8998-0AAE087FC479}" ShortID="340997433">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-2</Value>
@@ -427,6 +430,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Player Jump" ID="{86E990AC-551E-4905-B93A-20FC37146625}" ShortID="858470576">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -483,6 +487,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Suit Upgrade" ID="{F9BF7820-8A64-47DB-8823-15753948233B}" ShortID="397626894">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -577,6 +582,7 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="Flesh" ID="{06B38982-FAAD-49A1-A138-F8A28E901CB4}" ShortID="149342340">
 													<PropertyList>
+														<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>
@@ -789,6 +795,7 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="Glass" ID="{E7D54FC8-D7E0-4959-AED9-775B92274E46}" ShortID="773786405">
 													<PropertyList>
+														<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>
@@ -932,6 +939,7 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="Metal" ID="{E96882F1-D968-46B3-BA18-12C582479656}" ShortID="342700330">
 													<PropertyList>
+														<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
 																<Value>16</Value>
@@ -1062,6 +1070,7 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="Wood" ID="{148A0B2B-A138-4923-A0F4-FDF75CED251E}" ShortID="278973584">
 													<PropertyList>
+														<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
 																<Value>19</Value>
@@ -1233,6 +1242,7 @@
 										</SwitchContainer>
 										<RandomSequenceContainer Name="Health Pickup" ID="{2317F2A9-04EC-4470-B79D-4B48445ED3CD}" ShortID="833761316">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -1261,7 +1271,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="SCI FI Interface Display Pop Up" ID="{31171BDC-0B1A-42B0-BB91-189D9BECE279}" ShortID="1041388852">
+												<Sound Name="Health" ID="{31171BDC-0B1A-42B0-BB91-189D9BECE279}" ShortID="1041388852">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -1289,6 +1299,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Jetpack Refill" ID="{68711EC8-613B-438C-9643-02D6691F6844}" ShortID="42947111">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -1312,7 +1323,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="UI Notification Zoom In Display" ID="{FB2165BE-8399-4B35-A0C3-3562BB343AC9}" ShortID="740353659">
+												<Sound Name="sfx_player_jetpack_fuel_meter_1" ID="{FB2165BE-8399-4B35-A0C3-3562BB343AC9}" ShortID="740353659">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -1340,7 +1351,7 @@
 														<ActiveSource Name="UI Notification Zoom In Display" ID="{62EE4144-C173-4401-8F70-68B71D7A84CA}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="UI Notification Zoom In Display_01" ID="{F90EB0AD-E621-4506-A129-91CB8B087962}" ShortID="168193916">
+												<Sound Name="sfx_player_jetpack_fuel_meter_2" ID="{F90EB0AD-E621-4506-A129-91CB8B087962}" ShortID="168193916">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="SFX" ID="{A6993C3C-F08B-47C7-A798-9F27B5C1EC09}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -1371,7 +1382,7 @@
 														<ActiveSource Name="UI Notification Zoom In Display" ID="{B82D2F42-18D3-488D-A8BD-B1C575E47762}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="UI Notification Zoom In Display_02" ID="{0BAEBB1E-2D55-406F-937C-B037C833900C}" ShortID="924503063">
+												<Sound Name="sfx_player_jetpack_fuel_meter_3" ID="{0BAEBB1E-2D55-406F-937C-B037C833900C}" ShortID="924503063">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="SFX" ID="{A6993C3C-F08B-47C7-A798-9F27B5C1EC09}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -1405,6 +1416,83 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player Death" ID="{D63F3175-212E-4A2D-BA03-C6A8CDBD8B3A}" ShortID="593044647">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_enemie_xeno-encephalon_kill_impact_1" ID="{16ECF141-497B-4AD1-8E06-9227C6E61F6E}" ShortID="563345179">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemie_xeno-encephalon_kill_impact_1" ID="{2EFE65E6-5491-4A82-9C82-32B23DD807A0}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.32367149758454"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.61996779388084"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_enemie_xeno-encephalon_kill_impact_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="256954084"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemie_xeno-encephalon_kill_impact_1" ID="{2EFE65E6-5491-4A82-9C82-32B23DD807A0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemie_xeno-encephalon_kill_impact_2" ID="{7A29AFD7-86A2-4884-9013-D628AD6F4074}" ShortID="158903722">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemie_xeno-encephalon_kill_impact_2" ID="{ACDDE135-2FCA-45EB-BF79-91561C1AF234}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.873188405797101"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.45289855072464"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_enemie_xeno-encephalon_kill_impact_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="522861066"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemie_xeno-encephalon_kill_impact_2" ID="{ACDDE135-2FCA-45EB-BF79-91561C1AF234}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
@@ -1431,6 +1519,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Grenade Fire" ID="{030C3DEE-22A2-4A9C-8434-CAD9114D9F40}" ShortID="877979905">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
@@ -1549,6 +1638,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Grenade Upgrade" ID="{9EA9986D-4337-4BCC-8664-B2B7E8AF5D77}" ShortID="304391620">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1663,6 +1753,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Lethal Gun" ID="{0BD82D60-C28D-4764-BE3C-72EAFA54FDC0}" ShortID="985227656">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
@@ -1784,7 +1875,14 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Stun Cooldown" ID="{A94B23DB-3270-4EB5-BF93-E0BD6685FAE9}" ShortID="781471240">
 											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-33</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1857,6 +1955,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Stun Fire" ID="{F36E97B0-9420-4C49-BCF4-88C5736CC15E}" ShortID="795593164">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-4</Value>
@@ -1919,6 +2018,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Stun Upgrade" ID="{90CC11D4-9344-4E85-9486-8FD9FB901952}" ShortID="250144306">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 											</PropertyList>
 											<ReferenceList>
@@ -2027,6 +2127,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Denial" ID="{1E352303-0D83-40CA-9416-4FB3BD023F3B}" ShortID="295170368">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
 														<Value>-600</Value>
@@ -2052,7 +2153,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="UI Notification Digital Deny" ID="{7E860EF2-7250-4839-A6BA-B7EABC638C21}" ShortID="425941669">
+												<Sound Name="Deny_1" ID="{7E860EF2-7250-4839-A6BA-B7EABC638C21}" ShortID="425941669">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -2080,7 +2181,7 @@
 														<ActiveSource Name="UI Notification Digital Deny" ID="{3D550945-FC6F-4B71-998F-080D88BBD61E}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="UI Notification Digital Deny_01" ID="{4343AD51-DC42-4E7C-A44E-39EB856AAADA}" ShortID="1067171100">
+												<Sound Name="Deny_2" ID="{4343AD51-DC42-4E7C-A44E-39EB856AAADA}" ShortID="1067171100">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="SFX" ID="{A6993C3C-F08B-47C7-A798-9F27B5C1EC09}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -2111,7 +2212,7 @@
 														<ActiveSource Name="UI Notification Digital Deny" ID="{2583F7DB-0952-4CB2-967F-26392FBFFC80}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="UI Notification Digital Deny_02" ID="{BB852B3F-6676-41F2-A0C3-28DC97199594}" ShortID="147272032">
+												<Sound Name="Deny_3" ID="{BB852B3F-6676-41F2-A0C3-28DC97199594}" ShortID="147272032">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="SFX" ID="{A6993C3C-F08B-47C7-A798-9F27B5C1EC09}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -2215,7 +2316,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="SCI FI Utility Scanner High" ID="{BB833500-CDE6-4273-B25C-0DD136E2A941}" ShortID="710069926">
+												<Sound Name="Meter_Fill" ID="{BB833500-CDE6-4273-B25C-0DD136E2A941}" ShortID="710069926">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -2439,6 +2540,7 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="19"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-9</Value>
@@ -2447,7 +2549,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
+									<ObjectRef Name="SFX" ID="{A6993C3C-F08B-47C7-A798-9F27B5C1EC09}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
@@ -2717,7 +2819,13 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2741,7 +2849,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Glob Idle" ID="{3CE9A5FA-BEAB-4739-9B03-6BF38BB103E2}" ShortID="966129953">
+										<RandomSequenceContainer Name="Glob_Idle" ID="{3CE9A5FA-BEAB-4739-9B03-6BF38BB103E2}" ShortID="966129953">
 											<PropertyList>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
@@ -2828,7 +2936,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Infected Idle" ID="{0B0E46E3-A0F0-4C41-B879-F6B59CD2BA93}" ShortID="269645461">
+										<RandomSequenceContainer Name="Infected_Idle" ID="{0B0E46E3-A0F0-4C41-B879-F6B59CD2BA93}" ShortID="269645461">
 											<PropertyList>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
@@ -2914,6 +3022,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_8_3" ID="{97175E4F-3E2A-4DDB-80F0-2EC97D2D9B56}" ShortID="934386249">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -2937,6 +3052,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_8_4" ID="{AF7F29B2-92A3-4CC1-8536-76AD9A6CFF66}" ShortID="84143710">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -2965,6 +3087,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_8_5" ID="{3FF062D3-BA44-4769-B159-61C5F2EA0904}" ShortID="1022080349">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3044,6 +3173,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_2_3" ID="{892DAB90-1294-4C06-BC3F-64B28A2F3ECD}" ShortID="480247315">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3072,6 +3208,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_2_4" ID="{93982311-A114-4792-B23E-58DAF1C61B2E}" ShortID="846209224">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3100,6 +3243,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_2_5" ID="{683C26D4-3162-4803-A716-F5A271F5EFE1}" ShortID="618172667">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3128,6 +3278,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_2_6" ID="{B98E57B3-9D8E-4A13-8E06-BBD38F975414}" ShortID="759885351">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3156,6 +3313,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_2_7" ID="{36D42DEF-05D3-4689-AD45-5C8695B3CCE9}" ShortID="232460904">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3184,6 +3348,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_2_8" ID="{903AEC31-C621-4826-91C5-192BB3B1EE39}" ShortID="309243191">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3212,6 +3383,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_2_9" ID="{559C6A52-2D35-4E62-ACBD-BF2753C7CC6E}" ShortID="112925111">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3240,6 +3418,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_2_10" ID="{E72E5882-C070-4CCB-A48B-69B0DBF9B306}" ShortID="878820935">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3268,6 +3453,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_2_12" ID="{BDC9861F-7B04-47E5-878B-9DF3AF510E1B}" ShortID="621612634">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3291,6 +3483,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_2_13" ID="{13FF0598-8D7D-4911-B5EB-1A1A2677AEC6}" ShortID="948082881">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3403,6 +3602,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_3_3" ID="{A2A70F5E-D356-477A-95D3-E79A3164E2C1}" ShortID="823549534">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3431,6 +3637,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_3_4" ID="{10119A55-5378-4F98-9A8F-70D36CEE82AB}" ShortID="741434685">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3459,6 +3672,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_3_5" ID="{013AF6A8-FC76-48D8-B1E1-EF43A28FFA3D}" ShortID="246845432">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3487,6 +3707,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_3_6" ID="{4B1A1CFC-64C6-4E12-9B77-1F66B3CD1FA2}" ShortID="584036418">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3515,6 +3742,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_3_7" ID="{E3AE8556-2390-4972-9873-49BA8D5754DE}" ShortID="45946421">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3543,6 +3777,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_3_8" ID="{63985C1C-E7BE-4DD2-96BF-3B962B147583}" ShortID="80053065">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3571,6 +3812,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_3_9" ID="{5836A131-EB47-4578-B00D-CCF36C4E0B16}" ShortID="886070764">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3599,6 +3847,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_3_10" ID="{218BB273-5411-4770-965D-CE4B60F2B030}" ShortID="882167166">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3627,6 +3882,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_3_11" ID="{0BA7D387-8048-4512-9AF9-3B82A2DF19F7}" ShortID="809238215">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3655,6 +3917,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_3_12" ID="{35A9590B-BAC2-47C3-99F3-085A36A7E3B4}" ShortID="151137922">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3683,6 +3952,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_3_13" ID="{DFC026EF-8E36-44A7-8DD8-0BDC3A819306}" ShortID="665081110">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3767,6 +4043,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_5_3" ID="{2DDFB4DD-4C72-49B6-9E6E-6BB7C26D4813}" ShortID="757066921">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3790,6 +4073,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_5_4" ID="{26D4A51C-24B9-4897-83C9-15CF6E927E46}" ShortID="261282231">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3817,6 +4107,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_5_5" ID="{751876F9-6A1A-45C9-AAEA-F92C86C7FBD8}" ShortID="451106979">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3840,6 +4137,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_5_6" ID="{E3D10F0B-881C-4C0E-9983-53AA432C085A}" ShortID="293792512">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -3870,7 +4174,7 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Infected Death" ID="{EAFE9460-0692-4F40-8EA1-1DA17EDBD702}" ShortID="121367946">
+										<RandomSequenceContainer Name="Infected_Death" ID="{EAFE9460-0692-4F40-8EA1-1DA17EDBD702}" ShortID="121367946">
 											<PropertyList>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
@@ -3999,6 +4303,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_7_5" ID="{19BB2BB1-DD69-4778-BFA0-E5D8F2063444}" ShortID="536642648">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -4022,6 +4333,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_7_6" ID="{585C13A8-DA1F-4D0F-85D7-0200B1BB02E2}" ShortID="313154764">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -4045,6 +4363,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_7_7" ID="{91613B6F-59FA-4226-B699-880BE3D97FA6}" ShortID="182867826">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -4142,7 +4467,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Crawler Explode" ID="{B4EEA82F-1EF0-4186-8607-95C11CDC4E23}" ShortID="131393386">
+										<RandomSequenceContainer Name="Crawler_Explode" ID="{B4EEA82F-1EF0-4186-8607-95C11CDC4E23}" ShortID="131393386">
 											<PropertyList>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
@@ -4204,7 +4529,7 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Crawler Idle" ID="{DA305480-1AB3-4CEC-A1D7-8A673ED3F41F}" ShortID="1047376398">
+										<RandomSequenceContainer Name="Crawler_Idle" ID="{DA305480-1AB3-4CEC-A1D7-8A673ED3F41F}" ShortID="1047376398">
 											<PropertyList>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
@@ -4797,6 +5122,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_10_5" ID="{95C57CB2-A9EC-4A92-A0B4-15B26CB89D69}" ShortID="972387518">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -4820,6 +5152,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_10_6" ID="{266609BA-8076-4EB2-ACE0-DC477315374C}" ShortID="351209114">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -4843,6 +5182,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_10_7" ID="{7A1F79F4-584E-48BF-B624-02C14F6461E3}" ShortID="182887758">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -4866,6 +5212,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_10_8" ID="{9E61EDDE-3522-4EDA-8D6E-2FE70E99DF58}" ShortID="818035210">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -4947,6 +5300,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_4_3" ID="{9ECEE7A0-053B-4E08-BECD-7364A23C4AA4}" ShortID="753357470">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -5118,6 +5478,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="INFECTED_GRUNT_7_8" ID="{8C3B7829-129D-43AE-A894-33BE86BC167B}" ShortID="974658151">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -5262,6 +5629,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_6_5" ID="{C905D9A1-3C12-4F7C-8A76-33B00EB0B744}" ShortID="1046870848">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -5290,6 +5664,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_6_6" ID="{8249D331-3D37-4B72-AADF-B70E42103109}" ShortID="259331985">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -5318,6 +5699,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_6_7" ID="{49DD82A6-9935-47F2-A9BB-70E11FEEE9C4}" ShortID="210477600">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -5346,6 +5734,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="INFECTED_GRUNT_6_8" ID="{E3FDBF9C-0F02-45DA-BC78-BB077DA837EF}" ShortID="372977050">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -6101,7 +6496,7 @@
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

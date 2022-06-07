@@ -375,7 +375,7 @@
 												<Action Name="" ID="{CB42498F-3980-46B8-A3BD-D3F958A3AC77}" ShortID="108619323">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Infected Idle" ID="{0B0E46E3-A0F0-4C41-B879-F6B59CD2BA93}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+															<ObjectRef Name="Infected_Idle" ID="{0B0E46E3-A0F0-4C41-B879-F6B59CD2BA93}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -386,7 +386,7 @@
 												<Action Name="" ID="{7BF0A834-941F-4007-9E38-AE7A79ED68CD}" ShortID="109617782">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Infected Death" ID="{EAFE9460-0692-4F40-8EA1-1DA17EDBD702}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+															<ObjectRef Name="Infected_Death" ID="{EAFE9460-0692-4F40-8EA1-1DA17EDBD702}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -598,10 +598,21 @@
 										</Event>
 										<Event Name="Jetpack_Refill" ID="{9A197CA1-E037-4712-9E25-DCEC42157528}">
 											<ChildrenList>
-												<Action Name="" ID="{97BCAB12-CF24-4A1A-B2CD-1D79B0B2305A}" ShortID="201385372">
+												<Action Name="" ID="{A939CA8C-6698-4727-BF36-16D78F33AA7C}" ShortID="299188530">
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Jetpack Refill" ID="{68711EC8-613B-438C-9643-02D6691F6844}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Player_Death" ID="{93657B7E-39E0-4E5D-A6EA-A33485ABBF28}">
+											<ChildrenList>
+												<Action Name="" ID="{EED261B2-EC81-43DC-A942-5D1F3B4E8567}" ShortID="889419734">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Player Death" ID="{D63F3175-212E-4A2D-BA03-C6A8CDBD8B3A}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -683,17 +694,6 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Stun Cooldown" ID="{A94B23DB-3270-4EB5-BF93-E0BD6685FAE9}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Denial" ID="{97C6D446-A5AA-4F9F-B18C-6DA468C98BE8}">
-											<ChildrenList>
-												<Action Name="" ID="{5F0187A2-FB36-4360-AE0C-88BD747C369C}" ShortID="399843509">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Denial" ID="{1E352303-0D83-40CA-9416-4FB3BD023F3B}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -856,7 +856,7 @@
 												<Action Name="" ID="{9A5C933B-6954-4C9E-AB92-7CD780FDCDB4}" ShortID="144600883">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Crawler Idle" ID="{DA305480-1AB3-4CEC-A1D7-8A673ED3F41F}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+															<ObjectRef Name="Crawler_Idle" ID="{DA305480-1AB3-4CEC-A1D7-8A673ED3F41F}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -867,7 +867,7 @@
 												<Action Name="" ID="{A9FBDBD6-DFB8-42B8-9217-0D8DD397C301}" ShortID="423047296">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Crawler Explode" ID="{B4EEA82F-1EF0-4186-8607-95C11CDC4E23}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+															<ObjectRef Name="Crawler_Explode" ID="{B4EEA82F-1EF0-4186-8607-95C11CDC4E23}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -880,7 +880,7 @@
 										<Action Name="" ID="{0C4070C0-DE8F-4DE5-A198-FFFBA1D00456}" ShortID="637450994">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Glob Idle" ID="{3CE9A5FA-BEAB-4739-9B03-6BF38BB103E2}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+													<ObjectRef Name="Glob_Idle" ID="{3CE9A5FA-BEAB-4739-9B03-6BF38BB103E2}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -895,36 +895,6 @@
 						<Property Name="Color" Type="int16" Value="9"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
-					<ChildrenList>
-						<Event Name="Stop_Infected_Audio" ID="{D2A095BD-96E8-4530-90D3-AEF8E513625F}">
-							<ChildrenList>
-								<Action Name="" ID="{D2AF2A63-EF81-40D5-9606-4A5C56E52547}" ShortID="67538100">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Infected Sequence" ID="{9ABD1D06-CC4C-4C86-B406-59B7922230A8}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_Ambience" ID="{BE21F370-A5F3-47D5-B681-50464EE132A2}">
-							<ChildrenList>
-								<Action Name="" ID="{91D440BD-6EE5-4F7C-9C04-C31904C08A56}" ShortID="846309154">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Ambience Switch" ID="{1B8792FD-A20C-4DCC-B998-1F02FB23E71A}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
 				</Folder>
 			</ChildrenList>
 		</WorkUnit>

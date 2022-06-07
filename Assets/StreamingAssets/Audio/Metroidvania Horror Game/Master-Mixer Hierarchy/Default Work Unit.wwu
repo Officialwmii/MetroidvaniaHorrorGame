@@ -58,7 +58,6 @@
 								<Property Name="Color" Type="int16" Value="12"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList/>
 							<ChildrenList>
 								<AuxBus Name="Ambience" ID="{91626466-0F13-40FC-8B53-F84DBC5B8FCB}">
 									<PropertyList>
@@ -124,7 +123,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

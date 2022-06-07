@@ -22,9 +22,11 @@ public class Enemy : MonoBehaviour {
 	public float damageAmount = 1f;
 
 	public bool onAlert = false;
+	public bool crawler = true;
 	private GameObject FrozenEnemy;
 	private GameObject particles;
 	private GameObject particles2;
+	public GameObject enemy;
 
 	void Awake () {
 
@@ -116,7 +118,7 @@ public class Enemy : MonoBehaviour {
 	public void Stun(float StunDuration){
 		StartCoroutine(StunTime(StunDuration));
 
-		if (Exploadable) { ApplyDamage(2000); EventManager.AddDanger(15f); }
+		if (Exploadable) { ApplyDamage(2000); AkSoundEngine.PostEvent("Crawler_Explode", enemy); EventManager.AddDanger(15f); }
 
 	}
 	IEnumerator StunTime(float _StunDuration){
@@ -162,7 +164,14 @@ public class Enemy : MonoBehaviour {
 		capsule.size = new Vector2(1f, 0.25f);
 		capsule.offset = new Vector2(0f, -0.8f);
 		capsule.direction = CapsuleDirection2D.Horizontal;
-
+		if (crawler)
+		{
+			AkSoundEngine.PostEvent("Crawler_Explode", enemy);
+		}
+		else if (!crawler)
+		{
+			AkSoundEngine.PostEvent("Infected_Death", enemy);
+		}
 
 		yield return new WaitForSeconds(0.25f);
 		rb.velocity = new Vector2(0, rb.velocity.y);

@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1827035833">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1800089945">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -29,7 +29,7 @@
 				<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="English(US)" Hash="3173215240">
+		<SoundBank Id="3161908922" Language="English(US)" Hash="3568634207">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
@@ -38,7 +38,7 @@
 					<IncludedMemoryFiles>
 						<File Id="182519293" Language="SFX">
 							<ShortName>sfx_objects_alien_artifact.wav</ShortName>
-							<Path>SFX/sfx_objects_alien_artifact_10C4C929.wem</Path>
+							<Path>SFX/sfx_objects_alien_artifact_3138B09A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -146,6 +146,32 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2583459121" Name="Crawler_Explode" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Crawler\Crawler_Explode" DurationType="OneShot" DurationMin="2.113497" DurationMax="3.765822">
+					<IncludedMemoryFiles>
+						<File Id="275254058" Language="SFX">
+							<ShortName>sfx_enemie_crawlers_explode.wav</ShortName>
+							<Path>SFX/sfx_enemie_crawlers_explode_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2451879384" Name="Crawler_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Crawler\Crawler_Idle" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="261126237" Language="SFX">
+							<ShortName>sfx_enemie_crawlers_idle_1.wav</ShortName>
+							<Path>SFX/sfx_enemie_crawlers_idle_1_3138B09A.wem</Path>
+						</File>
+						<File Id="699407469" Language="SFX">
+							<ShortName>sfx_enemie_crawlers_idle_2.wav</ShortName>
+							<Path>SFX/sfx_enemie_crawlers_idle_2_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="2896864154" Name="Elevator_Down" ObjectPath="\Events\Default Work Unit\SFX\Environment\Elevator_Down" DurationType="OneShot" DurationMin="3.888472" DurationMax="3.888472">
 					<IncludedMemoryFiles>
 						<File Id="959127739" Language="SFX">
@@ -162,7 +188,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1157753940" Name="Escape_Pod_Sequence" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\Escape_Pod_Sequence" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Footsteps" DurationType="OneShot" DurationMin="0.353553" DurationMax="1.06066">
 					<IncludedMemoryFiles>
 						<File Id="12323694" Language="SFX">
@@ -294,8 +319,17 @@
 						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="45544" Name="Going_Down" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\Going_Down" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="1006108075" Name="Going_Up" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\Going_Up" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3075738884" Name="Glob_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Glob_Idle" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="914097194" Language="SFX">
+							<ShortName>sfx_enemie_glob_idle.wav</ShortName>
+							<Path>SFX/sfx_enemie_glob_idle_CA722868.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="3705282092" Name="Grenade_Fire" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Grenade_Fire" DurationType="OneShot" DurationMin="1.782" DurationMax="3.564">
 					<IncludedMemoryFiles>
 						<File Id="451920883" Language="SFX">
@@ -344,7 +378,87 @@
 						<AuxBus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="4035040332" Name="Jetpack_Dash" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Jetpack_Dash" DurationType="OneShot" DurationMin="1.494364" DurationMax="1.507246">
+				<Event Id="3731941266" Name="Health_Pickup" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Health_Pickup" DurationType="OneShot" DurationMin="0.652748" DurationMax="1.305496">
+					<IncludedMemoryFiles>
+						<File Id="533889330" Language="SFX">
+							<ShortName>SCI FI Interface Display Pop Up.wav</ShortName>
+							<Path>SFX/SCI FI Interface Display Pop Up_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3491076326" Name="Infected_Death" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Infected\Infected_Death" DurationType="OneShot" DurationMin="1.05212" DurationMax="3.712311">
+					<IncludedMemoryFiles>
+						<File Id="251338578" Language="SFX">
+							<ShortName>INFECTED_GRUNT_7_1.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_7_1_958CF8E8.wem</Path>
+						</File>
+						<File Id="416918827" Language="SFX">
+							<ShortName>INFECTED_GRUNT_7_2.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_7_2_3138B09A.wem</Path>
+						</File>
+						<File Id="960901028" Language="SFX">
+							<ShortName>INFECTED_GRUNT_7_3.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_7_3_78AD6905.wem</Path>
+						</File>
+						<File Id="1069455546" Language="SFX">
+							<ShortName>INFECTED_GRUNT_7_4.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_7_4_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="273762806" Name="Infected_Idle" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Infected\Infected_Idle" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="125855407" Language="SFX">
+							<ShortName>INFECTED_GRUNT_2_1.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_2_1_FDC09CB4.wem</Path>
+						</File>
+						<File Id="643258863" Language="SFX">
+							<ShortName>INFECTED_GRUNT_8_1.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_8_1_94D6D693.wem</Path>
+						</File>
+						<File Id="891778858" Language="SFX">
+							<ShortName>INFECTED_GRUNT_2_2.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_2_2_D0C515D6.wem</Path>
+						</File>
+						<File Id="1003524496" Language="SFX">
+							<ShortName>INFECTED_GRUNT_8_2.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_8_2_7394F731.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="482913985" Name="Infected_Stunned" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Infected\Infected_Stunned" DurationType="OneShot" DurationMin="0.64505" DurationMax="5.283374">
+					<IncludedMemoryFiles>
+						<File Id="600746981" Language="SFX">
+							<ShortName>INFECTED_GRUNT_3_2.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_3_2_1A64DC3A.wem</Path>
+						</File>
+						<File Id="622548068" Language="SFX">
+							<ShortName>INFECTED_GRUNT_3_1.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_3_1_FBB19D68.wem</Path>
+						</File>
+						<File Id="840286500" Language="SFX">
+							<ShortName>INFECTED_GRUNT_5_2.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_5_2_30DEDC08.wem</Path>
+						</File>
+						<File Id="862756737" Language="SFX">
+							<ShortName>INFECTED_GRUNT_5_1.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_5_1_3B1F779A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="4035040332" Name="Jetpack_Dash" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Jetpack_Dash" DurationType="OneShot" DurationMin="1.056675" DurationMax="2.131568">
 					<IncludedMemoryFiles>
 						<File Id="127882654" Language="SFX">
 							<ShortName>Jetpack\sfx_player_jetpack_dash_4.wav</ShortName>
@@ -361,6 +475,25 @@
 						<File Id="1063171889" Language="SFX">
 							<ShortName>Jetpack\sfx_player_jetpack_dash_1.wav</ShortName>
 							<Path>SFX/Jetpack/sfx_player_jetpack_dash_1_14115FDD.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1925295108" Name="Jetpack_Refill" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Jetpack_Refill" DurationType="OneShot" DurationMin="0.748347" DurationMax="1.543467">
+					<IncludedMemoryFiles>
+						<File Id="102273830" Language="SFX">
+							<ShortName>UI Notification Zoom In Display.wav</ShortName>
+							<Path>SFX/UI Notification Zoom In Display_F71DF2B4.wem</Path>
+						</File>
+						<File Id="610662297" Language="SFX">
+							<ShortName>UI Notification Zoom In Display.wav</ShortName>
+							<Path>SFX/UI Notification Zoom In Display_5A222A40.wem</Path>
+						</File>
+						<File Id="672333437" Language="SFX">
+							<ShortName>UI Notification Zoom In Display.wav</ShortName>
+							<Path>SFX/UI Notification Zoom In Display_478EB0F0.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -404,6 +537,58 @@
 					<AuxBusSends>
 						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
 						<AuxBus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2793513639" Name="Liptank_Attack" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Liptank\Liptank_Attack" DurationType="OneShot" DurationMin="0.582729" DurationMax="1.932462">
+					<IncludedMemoryFiles>
+						<File Id="667248012" Language="SFX">
+							<ShortName>sfx_enemie_liptank_attacking_2.wav</ShortName>
+							<Path>SFX/sfx_enemie_liptank_attacking_2_89DE660B.wem</Path>
+						</File>
+						<File Id="765937388" Language="SFX">
+							<ShortName>sfx_enemie_liptank_attacking_3.wav</ShortName>
+							<Path>SFX/sfx_enemie_liptank_attacking_3_3138B09A.wem</Path>
+						</File>
+						<File Id="1013364594" Language="SFX">
+							<ShortName>sfx_enemie_liptank_attacking_1.wav</ShortName>
+							<Path>SFX/sfx_enemie_liptank_attacking_1_3E78BD96.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3025607975" Name="Liptank_Death" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Liptank\Liptank_Death" DurationType="OneShot" DurationMin="2.294372" DurationMax="3.244732">
+					<IncludedMemoryFiles>
+						<File Id="430324706" Language="SFX">
+							<ShortName>sfx_enemie_liptank_death.wav</ShortName>
+							<Path>SFX/sfx_enemie_liptank_death_47B7E786.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1098479049" Name="Liptank_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Liptank\Liptank_Idle" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="127770492" Language="SFX">
+							<ShortName>sfx_enemie_liptank_idle.wav</ShortName>
+							<Path>SFX/sfx_enemie_liptank_idle_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1069991569" Name="Noise_Meter_Fill" ObjectPath="\Events\Default Work Unit\SFX\UI\Noise_Meter_Fill" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="147403889" Language="SFX">
+							<ShortName>SCI FI Utility Scanner High.wav</ShortName>
+							<Path>SFX/SCI FI Utility Scanner High_0AABC4A0.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
 					</AuxBusSends>
 				</Event>
 				<Event Id="3092587493" Name="Pause" ObjectPath="\Events\Default Work Unit\SFX\UI\Pause" DurationType="OneShot" DurationMin="1.435781" DurationMax="1.435781">
@@ -596,6 +781,10 @@
 							<ShortName>Noise_Meter_Layer_2_2_M1-5.wav</ShortName>
 							<Path>SFX/Noise_Meter_Layer_2_2_M1-5_78D55724.wem</Path>
 						</File>
+						<File Id="751233446" Language="SFX">
+							<ShortName>Silent_Space.wav</ShortName>
+							<Path>SFX/Silent_Space_78D55724.wem</Path>
+						</File>
 						<File Id="753869440" Language="SFX">
 							<ShortName>Noise_Meter_Layer_3_1_M1-5.wav</ShortName>
 							<Path>SFX/Noise_Meter_Layer_3_1_M1-5_78D55724.wem</Path>
@@ -626,13 +815,6 @@
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{1CE6CB78-5BBB-44D3-878E-1BE4E83038E5}">
-							<Children>
-								<SwitchContainer SwitchValue="{A85775FB-DB8E-49D9-9E80-5696AB6F8977}">
-									<Children/>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
 						<SwitchContainer SwitchValue="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}">
 							<Children>
 								<SwitchContainer SwitchValue="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}">
@@ -796,13 +978,46 @@
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1CE6CB78-5BBB-44D3-878E-1BE4E83038E5}">
+							<Children>
+								<SwitchContainer SwitchValue="{A3E037AC-AEDB-4166-8CBA-3D6172701DEF}">
+									<Children>
+										<SwitchContainer SwitchValue="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}">
+											<Media>
+												<File Id="751233446"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
 						<SwitchContainer SwitchValue="{2D795328-8802-4398-931F-C4B993FE4951}">
 							<Children>
-								<SwitchContainer SwitchValue="{520414D3-050E-4FA3-8A2E-79DF19E28CC5}">
+								<SwitchContainer SwitchValue="{A3E037AC-AEDB-4166-8CBA-3D6172701DEF}">
 									<Children>
 										<SwitchContainer SwitchValue="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}">
 											<Media>
 												<File Id="843723302"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D0F08B4E-1A96-41CE-BC0D-963EAB3AF519}">
+							<Children>
+								<SwitchContainer SwitchValue="{A3E037AC-AEDB-4166-8CBA-3D6172701DEF}">
+									<Children>
+										<SwitchContainer SwitchValue="{7D2388E1-67F1-48F7-9A11-8EBC4F87FAA9}">
+											<Media>
+												<File Id="30339314"/>
+												<File Id="135272103"/>
+												<File Id="153984511"/>
+												<File Id="154343532"/>
+												<File Id="352765779"/>
+												<File Id="708733859"/>
+												<File Id="748931381"/>
+												<File Id="753869440"/>
 											</Media>
 										</SwitchContainer>
 									</Children>
@@ -815,7 +1030,7 @@
 						<AuxBus Id="3691056935" Name="Noise_Meter" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_Bus\Noise_Meter"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3109796241" Name="Play_Xeno_Ambience" ObjectPath="\Events\Default Work Unit\Dialogue\Play_Xeno_Ambience" DurationType="OneShot" DurationMin="36.5" DurationMax="36.5">
+				<Event Id="3109796241" Name="Play_Xeno_Ambience" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Play_Xeno_Ambience" DurationType="OneShot" DurationMin="36.5" DurationMax="36.5">
 					<IncludedMemoryFiles>
 						<File Id="512919423" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_16.wav</ShortName>
@@ -827,7 +1042,7 @@
 						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3336051688" Name="Play_Xeno_Monologue" ObjectPath="\Events\Default Work Unit\Dialogue\Play_Xeno_Monologue" DurationType="OneShot" DurationMin="3." DurationMax="8.5">
+				<Event Id="3336051688" Name="Play_Xeno_Monologue" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Play_Xeno_Monologue" DurationType="OneShot" DurationMin="3." DurationMax="8.5">
 					<IncludedMemoryFiles>
 						<File Id="69293566" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_10.wav</ShortName>
@@ -895,6 +1110,21 @@
 						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="3083087645" Name="Player_Death" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Player_Death" DurationType="OneShot" DurationMin="1.452899" DurationMax="1.619968">
+					<IncludedMemoryFiles>
+						<File Id="256954084" Language="SFX">
+							<ShortName>sfx_enemie_xeno-encephalon_kill_impact_1.wav</ShortName>
+							<Path>SFX/sfx_enemie_xeno-encephalon_kill_impact_1_BF41797C.wem</Path>
+						</File>
+						<File Id="522861066" Language="SFX">
+							<ShortName>sfx_enemie_xeno-encephalon_kill_impact_2.wav</ShortName>
+							<Path>SFX/sfx_enemie_xeno-encephalon_kill_impact_2_0E6117C5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="1068092414" Name="Player_Hurt" ObjectPath="\Events\Default Work Unit\SFX\Player\Movement\Player_Hurt" DurationType="OneShot" DurationMin="1." DurationMax="1.">
 					<IncludedMemoryFiles>
 						<File Id="32388923" Language="SFX">
@@ -933,6 +1163,87 @@
 						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="696551932" Name="Screamer_Death" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Screamer\Screamer_Death" DurationType="OneShot" DurationMin="1.25" DurationMax="2.75">
+					<IncludedMemoryFiles>
+						<File Id="11195309" Language="SFX">
+							<ShortName>INFECTED_GRUNT_9_4.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_9_4_3138B09A.wem</Path>
+						</File>
+						<File Id="39043539" Language="SFX">
+							<ShortName>INFECTED_GRUNT_9_3.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_9_3_3138B09A.wem</Path>
+						</File>
+						<File Id="354864297" Language="SFX">
+							<ShortName>INFECTED_GRUNT_9_2.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_9_2_3138B09A.wem</Path>
+						</File>
+						<File Id="585703503" Language="SFX">
+							<ShortName>INFECTED_GRUNT_9_1.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_9_1_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1531826864" Name="Screamer_Idle" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Screamer\Screamer_Idle" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="214103239" Language="SFX">
+							<ShortName>INFECTED_GRUNT_2_11.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_2_11_3138B09A.wem</Path>
+						</File>
+						<File Id="229540317" Language="SFX">
+							<ShortName>INFECTED_GRUNT_4_2.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_4_2_8B3142CD.wem</Path>
+						</File>
+						<File Id="272634493" Language="SFX">
+							<ShortName>INFECTED_GRUNT_10_2.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_10_2_3138B09A.wem</Path>
+						</File>
+						<File Id="290981194" Language="SFX">
+							<ShortName>INFECTED_GRUNT_4_1.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_4_1_0CBB3942.wem</Path>
+						</File>
+						<File Id="362333534" Language="SFX">
+							<ShortName>INFECTED_GRUNT_10_1.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_10_1_3138B09A.wem</Path>
+						</File>
+						<File Id="722518228" Language="SFX">
+							<ShortName>INFECTED_GRUNT_10_4.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_10_4_3138B09A.wem</Path>
+						</File>
+						<File Id="751741689" Language="SFX">
+							<ShortName>INFECTED_GRUNT_10_3.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_10_3_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2414406199" Name="Screamer_Screeching" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Screamer\Screamer_Screeching" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="275888289" Language="SFX">
+							<ShortName>INFECTED_GRUNT_6_1.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_6_1_D0FC7A31.wem</Path>
+						</File>
+						<File Id="837894797" Language="SFX">
+							<ShortName>INFECTED_GRUNT_6_3.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_6_3_FEE82B62.wem</Path>
+						</File>
+						<File Id="881474601" Language="SFX">
+							<ShortName>INFECTED_GRUNT_6_2.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_6_2_0D61DBDF.wem</Path>
+						</File>
+						<File Id="895621299" Language="SFX">
+							<ShortName>INFECTED_GRUNT_6_4.wav</ShortName>
+							<Path>SFX/INFECTED_GRUNT_6_4_E24AE34E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="1727584325" Name="Security_Alarm" ObjectPath="\Events\Default Work Unit\SFX\Environment\Security_Alarm" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="150222993" Language="SFX">
@@ -952,9 +1263,271 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2477713992" Name="Stop_Ambience" ObjectPath="\Events\Default Work Unit\Stop Commands\Stop_Ambience" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="4218701743" Name="Stop_Infected_Audio" ObjectPath="\Events\Default Work Unit\Stop Commands\Stop_Infected_Audio" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="708622098" Name="Stun_Gun_Cooldown" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Stun_Gun_Cooldown" DurationType="OneShot" DurationMin="0.8125" DurationMax="9.375">
+				<Event Id="3790999961" Name="SHIP_SYSTEM_ANNOUNCEMENT_1" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_1" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<IncludedMemoryFiles>
+						<File Id="735477488" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_1.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_1_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1331540971" Name="SHIP_SYSTEM_ANNOUNCEMENT_10" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_10" DurationType="OneShot" DurationMin="5.078688" DurationMax="5.078688">
+					<IncludedMemoryFiles>
+						<File Id="404218294" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_10.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_10_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1331540970" Name="SHIP_SYSTEM_ANNOUNCEMENT_11" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_11" DurationType="OneShot" DurationMin="5.078688" DurationMax="5.078688">
+					<IncludedMemoryFiles>
+						<File Id="872939869" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_11.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_11_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1331540969" Name="SHIP_SYSTEM_ANNOUNCEMENT_12" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_12" DurationType="OneShot" DurationMin="5.078688" DurationMax="5.078688">
+					<IncludedMemoryFiles>
+						<File Id="800875833" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_12.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_12_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1331540968" Name="SHIP_SYSTEM_ANNOUNCEMENT_13" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_13" DurationType="OneShot" DurationMin="3.713354" DurationMax="3.713354">
+					<IncludedMemoryFiles>
+						<File Id="65158716" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_13.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_13_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1331540975" Name="SHIP_SYSTEM_ANNOUNCEMENT_14" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_14" DurationType="OneShot" DurationMin="5.078688" DurationMax="5.078688">
+					<IncludedMemoryFiles>
+						<File Id="1055789192" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_14.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_14_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1331540974" Name="SHIP_SYSTEM_ANNOUNCEMENT_15" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_15" DurationType="OneShot" DurationMin="5.078688" DurationMax="5.078688">
+					<IncludedMemoryFiles>
+						<File Id="240272246" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_15.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_15_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1331540973" Name="SHIP_SYSTEM_ANNOUNCEMENT_16" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_16" DurationType="OneShot" DurationMin="5.078688" DurationMax="5.078688">
+					<IncludedMemoryFiles>
+						<File Id="254570489" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_16.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_16_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1331540972" Name="SHIP_SYSTEM_ANNOUNCEMENT_17" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_17" DurationType="OneShot" DurationMin="3.713354" DurationMax="3.713354">
+					<IncludedMemoryFiles>
+						<File Id="725215931" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_17.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_17_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1331540963" Name="SHIP_SYSTEM_ANNOUNCEMENT_18" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_18" DurationType="OneShot" DurationMin="3.713354" DurationMax="3.713354">
+					<IncludedMemoryFiles>
+						<File Id="904780192" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_18.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_18_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1331540962" Name="SHIP_SYSTEM_ANNOUNCEMENT_19" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_19" DurationType="OneShot" DurationMin="3.713354" DurationMax="3.713354">
+					<IncludedMemoryFiles>
+						<File Id="924631783" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_19.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_19_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3790999962" Name="SHIP_SYSTEM_ANNOUNCEMENT_2" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_2" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<IncludedMemoryFiles>
+						<File Id="1012840362" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_2.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_2_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1348318558" Name="SHIP_SYSTEM_ANNOUNCEMENT_20" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_20" DurationType="OneShot" DurationMin="3.713354" DurationMax="3.713354">
+					<IncludedMemoryFiles>
+						<File Id="490354483" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_20.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_20_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1348318559" Name="SHIP_SYSTEM_ANNOUNCEMENT_21" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_21" DurationType="OneShot" DurationMin="5.078688" DurationMax="5.078688">
+					<IncludedMemoryFiles>
+						<File Id="835689957" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_21.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_21_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1348318556" Name="SHIP_SYSTEM_ANNOUNCEMENT_22" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_22" DurationType="OneShot" DurationMin="5.078688" DurationMax="5.078688">
+					<IncludedMemoryFiles>
+						<File Id="511577091" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_22.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_22_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3790999963" Name="SHIP_SYSTEM_ANNOUNCEMENT_3" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_3" DurationType="OneShot" DurationMin="3.219271" DurationMax="3.219271">
+					<IncludedMemoryFiles>
+						<File Id="945601546" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_3.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_3_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3790999964" Name="SHIP_SYSTEM_ANNOUNCEMENT_4" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_4" DurationType="OneShot" DurationMin="1.219271" DurationMax="1.219271">
+					<IncludedMemoryFiles>
+						<File Id="339367365" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_4.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_4_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3790999965" Name="SHIP_SYSTEM_ANNOUNCEMENT_5" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_5" DurationType="OneShot" DurationMin="1.219271" DurationMax="1.219271">
+					<IncludedMemoryFiles>
+						<File Id="187605677" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_5.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_5_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3790999966" Name="SHIP_SYSTEM_ANNOUNCEMENT_6" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_6" DurationType="OneShot" DurationMin="7.809354" DurationMax="7.809354">
+					<IncludedMemoryFiles>
+						<File Id="742581024" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_6.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_6_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3790999967" Name="SHIP_SYSTEM_ANNOUNCEMENT_7" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_7" DurationType="OneShot" DurationMin="5.078688" DurationMax="5.078688">
+					<IncludedMemoryFiles>
+						<File Id="620535740" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_7.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_7_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3790999952" Name="SHIP_SYSTEM_ANNOUNCEMENT_8" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_8" DurationType="OneShot" DurationMin="5.078688" DurationMax="5.078688">
+					<IncludedMemoryFiles>
+						<File Id="860688239" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_8.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_8_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3790999953" Name="SHIP_SYSTEM_ANNOUNCEMENT_9" ObjectPath="\Events\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_9" DurationType="OneShot" DurationMin="5.078688" DurationMax="5.078688">
+					<IncludedMemoryFiles>
+						<File Id="456664259" Language="SFX">
+							<ShortName>SHIP_SYSTEM_ANNOUNCEMENT_9.wav</ShortName>
+							<Path>SFX/SHIP_SYSTEM_ANNOUNCEMENT_9_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="708622098" Name="Stun_Gun_Cooldown" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Stun_Gun_Cooldown" DurationType="OneShot" DurationMin="9.1875" DurationMax="9.1875">
 					<IncludedMemoryFiles>
 						<File Id="82215919" Language="SFX">
 							<ShortName>Stun Cooldown\sfx_player_stun_cooldown.wav</ShortName>
@@ -1021,9 +1594,81 @@
 						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="2325592372" Name="Xeno_Attack" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Attack" DurationType="OneShot" DurationMin="7." DurationMax="7.">
+					<IncludedMemoryFiles>
+						<File Id="477298105" Language="SFX">
+							<ShortName>sfx_enemie_xeno-encephalon_attack_through_surface_1.wav</ShortName>
+							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_1_3138B09A.wem</Path>
+						</File>
+						<File Id="767708188" Language="SFX">
+							<ShortName>sfx_enemie_xeno-encephalon_attack_through_surface_3.wav</ShortName>
+							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_3_3138B09A.wem</Path>
+						</File>
+						<File Id="771317424" Language="SFX">
+							<ShortName>sfx_enemie_xeno-encephalon_attack_through_surface_2.wav</ShortName>
+							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_2_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2379525397" Name="Xeno_Damaged" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Damaged" DurationType="OneShot" DurationMin="0.928078" DurationMax="2.12132">
+					<IncludedMemoryFiles>
+						<File Id="216699403" Language="SFX">
+							<ShortName>sfx_enemie_xeno-encephalon_damaged_2.wav</ShortName>
+							<Path>SFX/sfx_enemie_xeno-encephalon_damaged_2_3138B09A.wem</Path>
+						</File>
+						<File Id="296672761" Language="SFX">
+							<ShortName>sfx_enemie_xeno-encephalon_damaged_1.wav</ShortName>
+							<Path>SFX/sfx_enemie_xeno-encephalon_damaged_1_3138B09A.wem</Path>
+						</File>
+						<File Id="1065752237" Language="SFX">
+							<ShortName>sfx_enemie_xeno-encephalon_damaged_3.wav</ShortName>
+							<Path>SFX/sfx_enemie_xeno-encephalon_damaged_3_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="644176342" Name="Xeno_Death" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Death" DurationType="OneShot" DurationMin="3.125" DurationMax="3.125">
+					<IncludedMemoryFiles>
+						<File Id="616224007" Language="SFX">
+							<ShortName>sfx_enemie_xeno-encephalon_death_sequence.wav</ShortName>
+							<Path>SFX/sfx_enemie_xeno-encephalon_death_sequence_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1780464255" Name="Xeno_Gas" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Gas" DurationType="OneShot" DurationMin="7.173913" DurationMax="7.173913">
+					<IncludedMemoryFiles>
+						<File Id="1023473157" Language="SFX">
+							<ShortName>sfx_enemie_xeno-encephalon_gas_attack.wav</ShortName>
+							<Path>SFX/sfx_enemie_xeno-encephalon_gas_attack_324CC548.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1798072102" Name="Xeno_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Idle" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="813374736" Language="SFX">
+							<ShortName>sfx_enemie_xeno-encephalon_idle.wav</ShortName>
+							<Path>SFX/sfx_enemie_xeno-encephalon_idle_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="3505704881" Name="Health_Bar" ObjectPath="\Game Parameters\Default Work Unit\UI\Health_Bar"/>
+				<GameParameter Id="3691056935" Name="Noise_Meter" ObjectPath="\Game Parameters\Default Work Unit\UI\Noise_Meter"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3826569560" Name="Music_State" ObjectPath="\States\Default Work Unit\Music_State" GUID="{D0F08B4E-1A96-41CE-BC0D-963EAB3AF519}">
@@ -1044,8 +1689,6 @@
 						<State Id="1281810935" Name="Start" ObjectPath="\States\Default Work Unit\Music_Segments\Start" GUID="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}"/>
 						<State Id="779278001" Name="Death" ObjectPath="\States\Default Work Unit\Music_Segments\Death" GUID="{D2BD77C1-C492-4874-B64F-731A2756DBA9}"/>
 						<State Id="4229539972" Name="Escaped" ObjectPath="\States\Default Work Unit\Music_Segments\Escaped" GUID="{AFB4F184-D8FD-41AC-82C4-89759F7CB2C7}"/>
-						<State Id="2005704188" Name="Main_Menu" ObjectPath="\States\Default Work Unit\Music_Segments\Main_Menu" GUID="{A85775FB-DB8E-49D9-9E80-5696AB6F8977}"/>
-						<State Id="2201105581" Name="Credits" ObjectPath="\States\Default Work Unit\Music_Segments\Credits" GUID="{520414D3-050E-4FA3-8A2E-79DF19E28CC5}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>

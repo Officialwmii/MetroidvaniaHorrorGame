@@ -81,12 +81,11 @@ public class EventManager : MonoBehaviour
     static private GameObject StartPositionBoss;
     static private GameObject EscapePodDoor;
     static private GameObject AlertTimerFont;
+    static private GameObject boss;
 
     private static float AlertTimer = 180;
-
     private static float alienTimer = 0;
 
-    private AK.Wwise.Event shipAI;
 
     // Start is called before the first frame update
     void Start()
@@ -140,8 +139,11 @@ public class EventManager : MonoBehaviour
         AlertTimerFont = GameObject.Find("AlertTimerFont");
         AlertTimerFont.SetActive(false);
 
-        
+        boss = GameObject.Find("Boss");
 
+
+        AkSoundEngine.PostEvent("Play_Ambience", player);
+        
     }
 
     // Update is called once per frame
@@ -168,7 +170,7 @@ public class EventManager : MonoBehaviour
         //fuel refill upgrade
         if (HasFuelRefill && (Fuel < MaxFuel * FuelRefillTreshold || Fuel<15) && CharacterController2D.m_Grounded==true) {
             Fuel = Fuel + Time.deltaTime * FuelRefillSpeed;
-            
+            AkSoundEngine.PostEvent("Jetpack_Upgrade", player);
             UpdateFuel();
         }
 
@@ -215,7 +217,7 @@ public class EventManager : MonoBehaviour
         switch (Mathf.RoundToInt(RandomLine))
         {
             case 1: sub("loneliness is the cancer that grows in the hearts of all brains", 5f); break;
-            case 2: sub("dare to dream a nightmare from which you wouldn’t want to wake up", 5f); break;
+            case 2: sub("dare to dream a nightmare from which you wouldn?t want to wake up", 5f); break;
             case 3: sub("feed your own tail to your own mouth again and again and again and again", 5f); break;
             case 4: sub("we are what we are and what we are is the cosmic recursion", 5f); break;
             case 5: sub("even the smallest speck plays its part", 5f); break;
@@ -245,6 +247,8 @@ public class EventManager : MonoBehaviour
         Elevator.SetActive(false);
         AlertTimerFont.SetActive(true);
 
+        AkSoundEngine.PostEvent("Xeno_Death", boss);
+
         StartPosition = StartPositionBoss;
 
         Destroy(EscapePodDoor);
@@ -253,7 +257,7 @@ public class EventManager : MonoBehaviour
 
 
     static public void UpgradeStunGun() {
-
+        AkSoundEngine.PostEvent("Stun_Gun_Upgrade", player);
         stunUpgrade = stunUpgrade + 1;
         UpdateStunGunCooldown();
     }
@@ -306,6 +310,7 @@ public class EventManager : MonoBehaviour
 
         UpdateLives();
 
+
     }
 
     static public void UpdateGrenades(){
@@ -352,6 +357,7 @@ public class EventManager : MonoBehaviour
     {
         grenades = grenades + 1;
         canUseGrenades = true;
+        AkSoundEngine.PostEvent("Grenade_Upgrade", player);
         if (grenades >= MaxGrenades)
         {
             grenades = MaxGrenades;
@@ -366,6 +372,7 @@ public class EventManager : MonoBehaviour
     static public void StartCooldown()
     {
         StunCooldown = 0f;
+        AkSoundEngine.PostEvent("Stun_Gun_Cooldown", player);
         canUseStun = false;
         UpdateCooldown();
     }
@@ -470,6 +477,7 @@ public class EventManager : MonoBehaviour
 
         if (grenades <= 0) { grenades = 1; UpdateGrenades(); } 
         Fuel = MaxFuel; UpdateFuel();
+        AkSoundEngine.SetState("Player_State", "Alive");
         player.GetComponent<CharacterController2D>().ResetHealth();
         player.transform.position = StartPosition.transform.position;
         player.GetComponent<Animator>().SetBool("IsDead", false);

@@ -55,6 +55,7 @@ public class Pickup : MonoBehaviour
             {
                 //Resource pickups
                 case UpgradeType.FuelResource:
+                    AkSoundEngine.PostEvent("Jetpack_Refill", col.gameObject);
                     EventManager.FuelPickup();
                     
                     EventManager.sub("Fuel container - Recover 100% fuel, +10 max fuel capacity.",3f);
@@ -72,7 +73,7 @@ public class Pickup : MonoBehaviour
                     string temptext = "Health pack - Recover 1 health. " +(EventManager.LifeShards+1) +" / 3 rations.";
                     if (EventManager.LifeShards == 2) temptext = temptext + "+1 health point.";
                     EventManager.sub(temptext, 3f);
-                    
+                    AkSoundEngine.PostEvent("Health_Pickup", col.gameObject);
                     EventManager.HealthPickup();
                     break;
                     

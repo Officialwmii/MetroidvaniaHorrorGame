@@ -45,9 +45,6 @@ public class Attack : MonoBehaviour
 			EventManager.StartCooldown();
 			canAttack = false;
 			StartCoroutine(AttackCooldown());
-
-
-			
 		}
 
 		if (Input.GetButtonDown("Grenade") && EventManager.grenades>0)
@@ -66,6 +63,7 @@ public class Attack : MonoBehaviour
 
 	IEnumerator AttackCooldown()
 	{
+		AkSoundEngine.PostEvent("Stun_Gun_Cooldown", player);
 		yield return new WaitForSeconds(0.1f);
 		canAttack = true;
 		GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f, -0.2f), Quaternion.identity) as GameObject;

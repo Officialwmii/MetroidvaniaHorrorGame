@@ -35,6 +35,12 @@ public class Screamer : MonoBehaviour {
 	private GameObject FrozenEnemy;
 	private GameObject DeathParticles;
 
+	public GameObject screamer;
+
+
+	public AK.Wwise.Event Attack;
+	public AK.Wwise.Event Death;
+
 
 	void Awake () {
 		startDetectionRange = detectionRange;
@@ -114,6 +120,7 @@ public class Screamer : MonoBehaviour {
 
 
 			EventManager.Alert();
+			Attack.Post(screamer);
 			EventManager.AddDangerEveryTick(1);
 			//IsScreamingEvent.Invoke();
 			transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
@@ -220,6 +227,7 @@ public class Screamer : MonoBehaviour {
 		capsule.size = new Vector2(1f, 0.25f);
 		capsule.offset = new Vector2(0f, -0.8f);
 		capsule.direction = CapsuleDirection2D.Horizontal;
+		Death.Post(screamer);
 		yield return new WaitForSeconds(0.25f);
 		rb.velocity = new Vector2(0, rb.velocity.y);
 		//yield return new WaitForSeconds(3f);

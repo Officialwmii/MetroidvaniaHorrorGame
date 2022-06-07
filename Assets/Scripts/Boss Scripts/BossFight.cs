@@ -94,7 +94,7 @@ public class BossFight : MonoBehaviour
             Phase_5.SetActive(false);
             Phase_6.SetActive(false);
             End_Phase.SetActive(true);
-            // Play Audio for Ship AI
+            AkSoundEngine.PostEvent("SHIP_SYSTEM_ANNOUNCEMENT_11", The_Bossman);
             EventManager.OnBossCompleted();
 
 

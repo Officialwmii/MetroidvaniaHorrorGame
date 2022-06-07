@@ -53,6 +53,7 @@ public class CharacterController2D : MonoBehaviour
 	public GameObject particleJetpack;
 	public GameObject DashTrail;
 	public GameObject JetpackTrail;
+	public GameObject player;
 
 	private float jumpWallStartX = 0;
 	private float jumpWallDistX = 0; //Distance between player and wall
@@ -68,6 +69,8 @@ public class CharacterController2D : MonoBehaviour
 
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
+
+	public SetParameter gameState;
 
 	private void Awake()
 	{
@@ -342,6 +345,7 @@ public class CharacterController2D : MonoBehaviour
 
 			
 			EventManager.SetHP(life);
+			AkSoundEngine.PostEvent("Player_Hurt", player);
 
 			if (life <= 0)
 			{
@@ -420,6 +424,8 @@ public class CharacterController2D : MonoBehaviour
 
 
 		animator.SetBool("IsDead", true);
+		AkSoundEngine.PostEvent("Player_Death", head);
+		gameState.alive = false;
 		canMove = false;
 		invincible = true;
 		GetComponent<Attack>().enabled = false;

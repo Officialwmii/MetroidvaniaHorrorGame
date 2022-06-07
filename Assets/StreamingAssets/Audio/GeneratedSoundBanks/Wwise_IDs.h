@@ -21,33 +21,71 @@ namespace AK
         static const AkUniqueID AUDIO_LOG_5 = 1201273846U;
         static const AkUniqueID AUDIO_LOG_6 = 1201273845U;
         static const AkUniqueID BACK = 1559875400U;
+        static const AkUniqueID CRAWLER_EXPLODE = 2583459121U;
+        static const AkUniqueID CRAWLER_IDLE = 2451879384U;
         static const AkUniqueID ELEVATOR_DOWN = 2896864154U;
         static const AkUniqueID ELEVATOR_UP = 1077976377U;
-        static const AkUniqueID ESCAPE_POD_SEQUENCE = 1157753940U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
-        static const AkUniqueID GOING_DOWN = 45544U;
-        static const AkUniqueID GOING_UP = 1006108075U;
+        static const AkUniqueID GLOB_IDLE = 3075738884U;
         static const AkUniqueID GRENADE_FIRE = 3705282092U;
         static const AkUniqueID GRENADE_FREEZE = 475568473U;
         static const AkUniqueID GRENADE_UPGRADE = 1580962308U;
+        static const AkUniqueID HEALTH_PICKUP = 3731941266U;
+        static const AkUniqueID INFECTED_DEATH = 3491076326U;
+        static const AkUniqueID INFECTED_IDLE = 273762806U;
+        static const AkUniqueID INFECTED_STUNNED = 482913985U;
         static const AkUniqueID JETPACK_DASH = 4035040332U;
+        static const AkUniqueID JETPACK_REFILL = 1925295108U;
         static const AkUniqueID JETPACK_UPGRADE = 4062170604U;
         static const AkUniqueID LETHAL_GUN_FIRE = 3705941311U;
+        static const AkUniqueID LIPTANK_ATTACK = 2793513639U;
+        static const AkUniqueID LIPTANK_DEATH = 3025607975U;
+        static const AkUniqueID LIPTANK_IDLE = 1098479049U;
+        static const AkUniqueID NOISE_METER_FILL = 1069991569U;
         static const AkUniqueID PAUSE = 3092587493U;
         static const AkUniqueID PLAY_AMBIENCE = 278617630U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_XENO_AMBIENCE = 3109796241U;
         static const AkUniqueID PLAY_XENO_MONOLOGUE = 3336051688U;
+        static const AkUniqueID PLAYER_DEATH = 3083087645U;
         static const AkUniqueID PLAYER_HURT = 1068092414U;
         static const AkUniqueID PLAYER_JUMP = 1305133589U;
+        static const AkUniqueID SCREAMER_DEATH = 696551932U;
+        static const AkUniqueID SCREAMER_IDLE = 1531826864U;
+        static const AkUniqueID SCREAMER_SCREECHING = 2414406199U;
         static const AkUniqueID SECURITY_ALARM = 1727584325U;
         static const AkUniqueID SELECT = 1432588725U;
-        static const AkUniqueID STOP_AMBIENCE = 2477713992U;
-        static const AkUniqueID STOP_INFECTED_AUDIO = 4218701743U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_1 = 3790999961U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_2 = 3790999962U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_3 = 3790999963U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_4 = 3790999964U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_5 = 3790999965U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_6 = 3790999966U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_7 = 3790999967U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_8 = 3790999952U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_9 = 3790999953U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_10 = 1331540971U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_11 = 1331540970U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_12 = 1331540969U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_13 = 1331540968U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_14 = 1331540975U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_15 = 1331540974U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_16 = 1331540973U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_17 = 1331540972U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_18 = 1331540963U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_19 = 1331540962U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_20 = 1348318558U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_21 = 1348318559U;
+        static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_22 = 1348318556U;
         static const AkUniqueID STUN_GUN_COOLDOWN = 708622098U;
         static const AkUniqueID STUN_GUN_FIRE = 1876963445U;
         static const AkUniqueID STUN_GUN_UPGRADE = 2455087587U;
         static const AkUniqueID SUIT_UPGRADE = 157604563U;
+        static const AkUniqueID XENO_ATTACK = 2325592372U;
+        static const AkUniqueID XENO_DAMAGED = 2379525397U;
+        static const AkUniqueID XENO_DEATH = 644176342U;
+        static const AkUniqueID XENO_GAS = 1780464255U;
+        static const AkUniqueID XENO_IDLE = 1798072102U;
     } // namespace EVENTS
 
     namespace STATES
@@ -58,10 +96,8 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID CREDITS = 2201105581U;
                 static const AkUniqueID DEATH = 779278001U;
                 static const AkUniqueID ESCAPED = 4229539972U;
-                static const AkUniqueID MAIN_MENU = 2005704188U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID START = 1281810935U;
                 static const AkUniqueID UPGRADE_1 = 2983809735U;
@@ -147,13 +183,9 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID ARTIFACTS_COLLECTED = 1884715346U;
-        static const AkUniqueID GRENADE_UPGRADE = 1580962308U;
         static const AkUniqueID GUN_COOLDOWN = 3974435895U;
-        static const AkUniqueID GUN_UPGRADE = 2286992720U;
         static const AkUniqueID HEALTH_BAR = 3505704881U;
         static const AkUniqueID JETPACK_FUEL = 3017925012U;
-        static const AkUniqueID JETPACK_UPGRADE = 4062170604U;
         static const AkUniqueID NOISE_METER = 3691056935U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID RPM = 796049864U;

@@ -33,7 +33,10 @@ public class Liptank : MonoBehaviour
 
 	private GameObject FrozenEnemy;
 	private GameObject DeathParticles;
+	public GameObject lipTank;
 
+	public AK.Wwise.Event Attack;
+	public AK.Wwise.Event Death;
 
 	void Awake()
 	{
@@ -81,6 +84,7 @@ public class Liptank : MonoBehaviour
 			{
 				//Debug.Log("I shoot!");
 				Shoot();
+				Attack.Post(lipTank);
 			}
 
         }
@@ -88,6 +92,7 @@ public class Liptank : MonoBehaviour
 		if (life <= 0)
 		{
 			transform.GetComponent<Animator>().SetBool("IsDead", true);
+			Death.Post(lipTank);
 			StartCoroutine(DestroyEnemy());
 		}
 

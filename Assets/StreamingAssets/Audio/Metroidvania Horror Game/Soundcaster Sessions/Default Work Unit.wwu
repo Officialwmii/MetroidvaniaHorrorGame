@@ -32,20 +32,12 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="Artifacts_Collected" ID="{DF875772-8155-4029-B7AC-FCEDD62A0775}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
 							<Value>6</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Playback_Rate" ID="{28387EE3-C13A-4316-B9C3-DB5C521624AF}"/>
 							<Value>1</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Jetpack_Upgrade" ID="{D6C7AC7B-44B6-440B-B503-47060A2479B7}"/>
-							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
@@ -61,7 +53,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Health_Bar" ID="{0DC0D2C2-19C8-4552-8625-AC5947959912}"/>
-							<Value>100</Value>
+							<Value>7</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Jetpack_Fuel" ID="{764CD0BC-123E-459D-B959-FA6512EEBA0E}"/>
@@ -82,14 +74,6 @@
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
 							<Value>75</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Grenade_Upgrade" ID="{D8F28C1E-DAB8-4A45-BFF8-2B97DAE27953}"/>
-							<Value>50</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Gun_Upgrade" ID="{62FC1DAA-B355-4AA3-86E6-A9BE2EF6ADAC}"/>
-							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Gun_Cooldown" ID="{4F1F9DC8-0219-4BDD-8787-55B0F26AE476}"/>
@@ -113,14 +97,14 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Main_Menu" ID="{A85775FB-DB8E-49D9-9E80-5696AB6F8977}"/>
-						<CurrentStateRef Name="Alive" ID="{10522CB0-52A3-4E42-B1E1-0CA2C975F816}"/>
+						<CurrentStateRef Name="None" ID="{6448DD6C-28B5-415A-8353-F77F06597E06}"/>
+						<CurrentStateRef Name="None" ID="{0F1295A8-FFFD-4165-9CF6-54B740B9372D}"/>
 						<CurrentStateRef Name="Main_Menu" ID="{1CE6CB78-5BBB-44D3-878E-1BE4E83038E5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Bridge" ID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>
 						<CurrentSwitchRef Name="Metal" ID="{0AE16BA4-4F92-405F-896B-E4248D5C088B}"/>
-						<CurrentSwitchRef Name="Silent" ID="{C0AB1866-64C3-4CF2-8BAB-5CA886D86167}"/>
+						<CurrentSwitchRef Name="Level_1" ID="{F4FEC03C-1CDD-41AF-9D6D-2249E46B5BF1}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
