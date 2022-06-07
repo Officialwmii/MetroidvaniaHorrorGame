@@ -20,20 +20,13 @@ public class RandomIdleSoundEffects : MonoBehaviour
     void Update()
     {
         if (!source.isPlaying) {
-            if (waitTimeCountdown < 0f)
-            {
+            if (waitTimeCountdown < 0f){
                 currentClip = audioClips[Random.Range(0, audioClips.Count)];
                 source.clip = currentClip;
                 source.Play();
                 waitTimeCountdown = Random.Range(minWaitBetweenPlays, maxWaitBetweenPlays);
             }
-
-
-            else
-            {
-                waitTimeCountdown -= Time.deltaTime;
-            }
-
+            else{ waitTimeCountdown -= Time.deltaTime;}
         }
     }
 }
