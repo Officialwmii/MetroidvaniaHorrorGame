@@ -24,11 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: b106df9e97fcad469d2318001bac9194
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585491641169211362
-=======
     m_lastTime: -8585488935006565780
->>>>>>> Stashed changes
     List: []
   - PhysicalPath: Virtual Acoustics/Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -41,11 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585491641169191364
-=======
     m_lastTime: -8585488935006560801
->>>>>>> Stashed changes
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -311,11 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 8535b56aa120c74b8c0ecf7198a0e1c6
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585470313401609052
-=======
-    m_lastTime: -8585469792088656978
->>>>>>> Stashed changes
+    m_lastTime: -8585469787644224897
     List:
     - name: 0 Gravity Room
       guid: cfd7a6d59eed854e89f0364decde63de
@@ -616,14 +604,10 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: d421e5cb6879fa4eadfcbf265136c428
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585469848621581702
-=======
-    m_lastTime: -8585469828741668785
->>>>>>> Stashed changes
+    m_lastTime: -8585469785703896018
     List:
     - name: Main
-      guid: 4e0a18bd82e8d04a86af55c41dca22e2
+      guid: 8e6c8f0932af1645ae76e30a0bb87f18
       id: 3161908922
       PathAndIcons:
       - ElementName: SoundBanks
@@ -634,7 +618,7 @@ MonoBehaviour:
         guid: d421e5cb6879fa4eadfcbf265136c428
       - ElementName: Main
         ObjectType: 7
-        guid: 4e0a18bd82e8d04a86af55c41dca22e2
+        guid: 8e6c8f0932af1645ae76e30a0bb87f18
       Path: SoundBanks/Default Work Unit/Main
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
@@ -648,11 +632,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 678d0dc573114b4fa4a47a1483ba6642
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585469848628371701
-=======
-    m_lastTime: -8585469856733939141
->>>>>>> Stashed changes
+    m_lastTime: -8585469787649400450
     List:
     - name: Alien_Artifact
       guid: b19eeb17f466c3408e4ddff15aac46a9
@@ -3218,11 +3198,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 2620ce58e7fe1e439e677f5e73b7c0d5
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585470313409299051
-=======
     m_lastTime: -8585470352944255840
->>>>>>> Stashed changes
     List:
     - name: Gun_Cooldown
       guid: c89d1f4f1902dd4b878755b0f26ae476
@@ -3317,11 +3293,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Factory Motion
     guid: 225213d7dbd1d042adc0930743567776
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585491641172031372
-=======
     m_lastTime: -8585488935007393997
->>>>>>> Stashed changes
     List:
     - name: Playback_Rate
       guid: e37e38283ac11643b9c3db5c521624af
@@ -3362,11 +3334,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Factory SoundSeed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585491641172021371
-=======
     m_lastTime: -8585488935007392004
->>>>>>> Stashed changes
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -3520,11 +3488,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: 4966905d63538c40b39daa3df0b3e71e
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585470313391191799
-=======
     m_lastTime: -8585470352938659526
->>>>>>> Stashed changes
     List:
     - name: Music_Segments
       guid: ac37e0a3dbae66418cba3d6172701def
@@ -3832,11 +3796,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: c71ec7f5f4fb464e9445b7648d67ea2a
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585473987801383517
-=======
-    m_lastTime: -8585469856733413764
->>>>>>> Stashed changes
+    m_lastTime: -8585469787605831415
     List:
     - name: Floor_Type
       guid: 24ec3b1dd573ab479cfe8b88eb3abfd2
@@ -4014,11 +3974,7 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: ce5eace260d8d24196f7906556bf2569
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585483761630835994
-=======
     m_lastTime: -8585488491567158701
->>>>>>> Stashed changes
     List:
     - name: Ambience_Intensifier
       guid: b5ae3e944a84714f9658293429bb509d
@@ -4034,9 +3990,9 @@ MonoBehaviour:
         ObjectType: 14
         guid: b5ae3e944a84714f9658293429bb509d
       Path: Triggers/Default Work Unit/Ambience_Intensifier
-  ExpandedFileSystemItemIds: 010000000200000003000000040000000700000010000000110000001a0000001e00000066000000690000006b000000
-  ExpandedWaapiItemIds: 010000000600000007000000100000001100000066000000690000006b000000
-  AutoSyncSelection: 1
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 0600000007000000130000001400000016000000
+  AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

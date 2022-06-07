@@ -24,6 +24,10 @@ public class SetParameter : MonoBehaviour
     public GameObject fuel;
     public GameObject dangerMeter;
     public GameObject character;
+    public GameObject wwiseParameterSilent;
+    public GameObject wwiseParameter1;
+    public GameObject wwiseParameter2;
+    public GameObject wwiseParameter3;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +47,23 @@ public class SetParameter : MonoBehaviour
 
         if (dangerMeter.GetComponent<UnityEngine.UI.Slider>().value < 20f)
         {
-            
+            noiseMeterLevel.SetValue(wwiseParameterSilent);
+        }
+        else if (dangerMeter.GetComponent<UnityEngine.UI.Slider>().value >= 20f && dangerMeter.GetComponent<UnityEngine.UI.Slider>().value < 40)
+        {
+            noiseMeterLevel.SetValue(wwiseParameter1);
+        }
+        else if (dangerMeter.GetComponent<UnityEngine.UI.Slider>().value >= 40f && dangerMeter.GetComponent<UnityEngine.UI.Slider>().value < 60)
+        {
+            noiseMeterLevel.SetValue(wwiseParameter2);
+        }
+        else if (dangerMeter.GetComponent<UnityEngine.UI.Slider>().value >= 60f && dangerMeter.GetComponent<UnityEngine.UI.Slider>().value <= 100)
+        {
+            noiseMeterLevel.SetValue(wwiseParameter3);
+        }
+        else
+        {
+            noiseMeterLevel.SetValue(wwiseParameterSilent);
         }
 
 

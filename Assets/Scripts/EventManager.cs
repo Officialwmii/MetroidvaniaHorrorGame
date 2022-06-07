@@ -143,9 +143,6 @@ public class EventManager : MonoBehaviour
 
         boss = GameObject.Find("Boss");
 
-
-        AkSoundEngine.PostEvent("Play_Music", player);
-
     }
 
     // Update is called once per frame

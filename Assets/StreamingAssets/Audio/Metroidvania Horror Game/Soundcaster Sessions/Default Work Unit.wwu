@@ -6,18 +6,6 @@
 				<SoundcasterSession Name="Player" ID="{FA984993-F042-44FB-8FBB-DCFD96D0E006}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Escape Pod Hatch Ambience Loop" ID="{B5792B25-5BF6-4DD5-BC62-96624CBC6419}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Hallway Ambience Loop" ID="{93759C70-453E-4DC7-9942-8E60164349EF}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
-							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Boss Ambience Loop" ID="{48ADBDA1-F5E7-4BD9-A8EE-C27CB72149C0}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Medbay Ambience Loop" ID="{37821992-DF49-4902-864D-B38056F842AF}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 							<Position X="0" Y="3"/>
 						</Module>
@@ -97,13 +85,13 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{6448DD6C-28B5-415A-8353-F77F06597E06}"/>
+						<CurrentStateRef Name="Start" ID="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}"/>
 						<CurrentStateRef Name="None" ID="{0F1295A8-FFFD-4165-9CF6-54B740B9372D}"/>
-						<CurrentStateRef Name="None" ID="{4BB3579F-CBDD-4EC9-8632-BE2A52475590}"/>
+						<CurrentStateRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Metal" ID="{0AE16BA4-4F92-405F-896B-E4248D5C088B}"/>
-						<CurrentSwitchRef Name="Level_1" ID="{F4FEC03C-1CDD-41AF-9D6D-2249E46B5BF1}"/>
+						<CurrentSwitchRef Name="Silent" ID="{C0AB1866-64C3-4CF2-8BAB-5CA886D86167}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
