@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 64
+  controlID: 78
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 91
+  controlID: 109
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 92
+  controlID: 110
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 93
+  controlID: 111
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,8 +266,8 @@ MonoBehaviour:
     y: 0
     width: 1499.5
     height: 754.5
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: TimelineWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -295,16 +295,16 @@ MonoBehaviour:
     y: 0
     width: 1330.5
     height: 582.5
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 19}
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 3
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -454,9 +454,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d4c21300
-      m_LastClickedID: 1295060
-      m_ExpandedIDs: a839f4ff643ff4ffb670fffff6faffff34690000727400007eef12009ac11300eac11300a6c21300d4c21300
+      m_SelectedIDs: be9f0000
+      m_LastClickedID: 40894
+      m_ExpandedIDs: c086ffff30abffff8cebffff26f1ffff08890000e69a000014ab00007cb50000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -727,9 +727,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 651.6482, y: 301.27643, z: -5.676967}
+    m_Target: {x: 439.82257, y: -192.8233, z: -4.2113333}
     speed: 2
-    m_Value: {x: 641.1012, y: 305.17737, z: -5.797226}
+    m_Value: {x: 435.3208, y: -193.54207, z: -3.6760373}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -780,9 +780,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 581.8428
+    m_Target: 147.8127
     speed: 2
-    m_Value: 593.8686
+    m_Value: 94.28333
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1059,13 +1059,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: 96
   m_LastProjectPath: /Users/wmii/Documents/GitHub/MetroidvaniaHorrorGame/Metroidvania
     Horror Unity Project Settings
@@ -1073,9 +1073,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7aad0000
-    m_LastClickedID: 44410
-    m_ExpandedIDs: 000000006ead000070ad000072ad000074ad000076ad000078ad00007aad00007cad000000ca9a3b
+    m_SelectedIDs: e4730000
+    m_LastClickedID: 29668
+    m_ExpandedIDs: 00000000e0730000e2730000e4730000e6730000e8730000ea730000ec730000ee73000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1103,7 +1103,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006ead000070ad000072ad000074ad000076ad000078ad00007aad00007cad0000
+    m_ExpandedIDs: 00000000e0730000e2730000e4730000e6730000e8730000ea730000ec730000ee730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1128,8 +1128,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: be9f0000
+    m_LastClickedInstanceID: 40894
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000e0d100003a570000127b0000b05b000048680000ce8204004e2a0000de3d0000de3600007029000094370000ba280000c88b00000000000084920000
     m_RenameOverlay:
@@ -1217,7 +1217,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 26932
+  m_LastSelectedObjectID: 40894
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1238,10 +1238,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 957
-    width: 1465
-    height: 402
+    x: 47
+    y: 837.5
+    width: 1329.5
+    height: 561.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1285,9 +1285,9 @@ MonoBehaviour:
     m_SaveData: []
   m_treeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5f000000
-    m_LastClickedID: 95
-    m_ExpandedIDs: 0200000003000000040000000500000006000000090000000c0000000d0000000e000000110000001200000013000000140000001a0000001e0000001f00000021000000240000002b0000003a000000
+    m_SelectedIDs: 5b000000
+    m_LastClickedID: 91
+    m_ExpandedIDs: 02000000030000000400000007000000110000005a000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class AmbienceAreaBoundary : MonoBehaviour
 {
     public string areaName;
+
     private GameObject player;
 
     public void PlayAreaAmbience(string area)

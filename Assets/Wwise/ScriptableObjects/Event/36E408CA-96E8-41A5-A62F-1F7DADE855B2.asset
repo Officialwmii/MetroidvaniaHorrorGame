@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb08f29e2aae4016abb85ee54b66c1b, type: 3}
+  m_Name: 36E408CA-96E8-41A5-A62F-1F7DADE855B2
+  m_EditorClassIdentifier: 
+  objectName: Xeno_Attack
+  id: 2325592372
+  guid: 36E408CA-96E8-41A5-A62F-1F7DADE855B2

@@ -157,4 +157,4 @@ MonoBehaviour:
   shipAIAnnouncement:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 387d01fed9ffb4b9398f0b6b7b765c80, type: 2}
