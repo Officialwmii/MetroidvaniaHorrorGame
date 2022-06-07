@@ -1465,7 +1465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 157024255359877677, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 124.5886
+      value: 94.814
       objectReference: {fileID: 0}
     - target: {fileID: 157024255359877677, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1501,7 +1501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 157024255359877677, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 239.49997
+      value: 224.61264
       objectReference: {fileID: 0}
     - target: {fileID: 157024255359877677, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1526,6 +1526,10 @@ PrefabInstance:
     - target: {fileID: 8878762543579233006, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
       propertyPath: m_margin.z
       value: -0.46679688
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878762543579233006, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
@@ -2199,7 +2203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 157024255359877677, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 124.5886
+      value: 97.5709
       objectReference: {fileID: 0}
     - target: {fileID: 157024255359877677, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2235,7 +2239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 157024255359877677, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 237.57211
+      value: 224.06326
       objectReference: {fileID: 0}
     - target: {fileID: 157024255359877677, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2260,6 +2264,10 @@ PrefabInstance:
     - target: {fileID: 8878762543579233006, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
       propertyPath: m_margin.z
       value: -0.46679688
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878762543579233006, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e2eaff5a8f0e0745a631ecd00969eee, type: 3}
