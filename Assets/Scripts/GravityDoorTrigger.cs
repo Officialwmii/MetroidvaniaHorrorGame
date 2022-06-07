@@ -42,7 +42,14 @@ public class GravityDoorTrigger : MonoBehaviour
         if (col.CompareTag("Player") ) {
            
             if (doorType==DoorType.ZeroGravity && EventManager.HasArmour) animator.SetBool("Opening", true);
-            if (doorType == DoorType.Sector) animator.SetBool("Opening", true);
+            if (doorType == DoorType.Sector)
+            {
+                animator.SetBool("Opening", true);
+
+                GetComponent<AudioSource>().clip = SFXOpen;
+                GetComponent<AudioSource>().Play();
+
+            }
             if (doorType == DoorType.ZeroGravity && EventManager.HasArmour)
             {
                 shipAIAnnouncementOpened.Post(col.gameObject);
@@ -75,7 +82,12 @@ public class GravityDoorTrigger : MonoBehaviour
                 GetComponent<AudioSource>().Play();
 
             }
-          
+            if (doorType == DoorType.Sector)
+            {
+                GetComponent<AudioSource>().clip = SFXClose;
+                GetComponent<AudioSource>().Play();
+
+            }
 
         }
     }

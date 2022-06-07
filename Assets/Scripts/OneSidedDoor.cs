@@ -6,6 +6,7 @@ public class OneSidedDoor : MonoBehaviour
 {
 
     public GameObject Door;
+    
     public  enum DoorType
     {
 
@@ -36,6 +37,7 @@ public class OneSidedDoor : MonoBehaviour
                     Destroy(gameObject);
                     Door.GetComponent<Animator>().SetBool("Opening", true);
                     Debug.Log("Open door");
+                    Door.GetComponent<AudioSource>().Play();
 
                     //Unlock();
                     break;
