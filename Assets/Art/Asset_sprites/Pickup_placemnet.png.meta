@@ -233,10 +233,10 @@ TextureImporter:
       name: Pickup_placemnet_16
       rect:
         serializedVersion: 2
-        x: 77
-        y: 2145
-        width: 516
-        height: 410
+        x: 74
+        y: 2090
+        width: 520
+        height: 520
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +254,10 @@ TextureImporter:
       name: Pickup_placemnet_17
       rect:
         serializedVersion: 2
-        x: 923
-        y: 2157
-        width: 516
-        height: 412
+        x: 918
+        y: 2104
+        width: 520
+        height: 520
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,10 +275,10 @@ TextureImporter:
       name: Pickup_placemnet_18
       rect:
         serializedVersion: 2
-        x: 1795
-        y: 2147
-        width: 514
-        height: 410
+        x: 1789
+        y: 2095
+        width: 520
+        height: 520
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

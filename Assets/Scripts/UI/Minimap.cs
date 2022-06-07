@@ -37,8 +37,8 @@ public class Minimap : MonoBehaviour
     {
         //Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
 
-        if (col.CompareTag("Player"))
-        { active = true; } 
+        if (col.CompareTag("Player") && active == false)
+        { active = true; EventManager.AddMapSegment(); } 
     
     }
 }

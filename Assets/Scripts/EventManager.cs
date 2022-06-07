@@ -86,6 +86,8 @@ public class EventManager : MonoBehaviour
     private static float AlertTimer = 180;
     private static float alienTimer = 0;
 
+    public static int MapProgress = 0;
+    public static float Timer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -208,6 +210,14 @@ public class EventManager : MonoBehaviour
 
         }
 
+        Timer = Timer + Time.deltaTime;
+
+    }
+
+    public static void AddMapSegment()
+    {
+
+        MapProgress++;
 
     }
 
