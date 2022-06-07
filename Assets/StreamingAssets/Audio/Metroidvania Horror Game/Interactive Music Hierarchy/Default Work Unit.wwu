@@ -282,6 +282,34 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{7DE8ED66-AA6D-4EE3-8D44-3D01EE494FB6}" ShortID="1019604462">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}" WorkUnitID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{8CD04FC9-7A2E-4D37-AE3D-2B4BFFC4A0D1}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1728,6 +1756,34 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{134F9DAB-B0FC-4918-B95C-BBE59C45E51A}" ShortID="514044547">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}" WorkUnitID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{AC7621DE-8CA7-4431-A16C-1A3729152894}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3286,6 +3342,34 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{0051E100-F4E4-4294-86A5-CAF2154ABA76}" ShortID="2943697">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}" WorkUnitID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{44BC08FF-8C49-4F6E-B8C6-BA3911A53CB0}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -5671,6 +5755,32 @@
 									<ValueList>
 										<Value>-15</Value>
 									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{18C2D292-7C7C-4FD3-93B9-556AC85D5379}" ShortID="310931523">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}" WorkUnitID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{1FA11BFE-1902-4C58-BF9E-1FA2BBAF5A18}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -7019,6 +7129,34 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{7BD6C81E-CFAA-41F6-B1CA-F08FEAF2DF3D}" ShortID="98673573">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}" WorkUnitID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{88E73C56-92E2-485A-B660-BFEBE7289BD5}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

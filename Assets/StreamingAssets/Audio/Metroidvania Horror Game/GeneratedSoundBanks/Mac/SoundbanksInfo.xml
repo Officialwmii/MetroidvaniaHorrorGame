@@ -29,7 +29,7 @@
 				<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="English(US)" Hash="3724113242">
+		<SoundBank Id="3161908922" Language="English(US)" Hash="1760704867">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
@@ -157,7 +157,7 @@
 						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2451879384" Name="Crawler_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Crawler\Crawler_Idle" DurationType="Infinite">
+				<Event Id="2451879384" Name="Crawler_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Crawler\Crawler_Idle" MaxAttenuation="15." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="261126237" Language="SFX">
 							<ShortName>sfx_enemie_crawlers_idle_1.wav</ShortName>
@@ -319,7 +319,7 @@
 						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3075738884" Name="Glob_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Glob_Idle" DurationType="Infinite">
+				<Event Id="3075738884" Name="Glob_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Glob_Idle" MaxAttenuation="15." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="914097194" Language="SFX">
 							<ShortName>sfx_enemie_glob_idle.wav</ShortName>
@@ -412,7 +412,7 @@
 						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="273762806" Name="Infected_Idle" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Infected\Infected_Idle" DurationType="Infinite">
+				<Event Id="273762806" Name="Infected_Idle" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Infected\Infected_Idle" MaxAttenuation="15." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="125855407" Language="SFX">
 							<ShortName>INFECTED_GRUNT_2_1.wav</ShortName>
@@ -569,7 +569,7 @@
 						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="1098479049" Name="Liptank_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Liptank\Liptank_Idle" DurationType="Infinite">
+				<Event Id="1098479049" Name="Liptank_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Liptank\Liptank_Idle" MaxAttenuation="15." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="127770492" Language="SFX">
 							<ShortName>sfx_enemie_liptank_idle.wav</ShortName>
@@ -1186,7 +1186,7 @@
 						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="1531826864" Name="Screamer_Idle" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Screamer\Screamer_Idle" DurationType="Infinite">
+				<Event Id="1531826864" Name="Screamer_Idle" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Screamer\Screamer_Idle" MaxAttenuation="15." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="214103239" Language="SFX">
 							<ShortName>INFECTED_GRUNT_2_11.wav</ShortName>
@@ -1654,7 +1654,7 @@
 						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="1798072102" Name="Xeno_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Idle" DurationType="Infinite">
+				<Event Id="1798072102" Name="Xeno_Idle" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Idle" MaxAttenuation="15." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="813374736" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_idle.wav</ShortName>
@@ -1663,6 +1663,150 @@
 					</IncludedMemoryFiles>
 					<AuxBusSends>
 						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2070832516" Name="Xeno_Monologue_02" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_02" DurationType="OneShot" DurationMin="5.875" DurationMax="5.875">
+					<IncludedMemoryFiles>
+						<File Id="486323830" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_2.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_2_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2070832517" Name="Xeno_Monologue_03" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_03" DurationType="OneShot" DurationMin="5." DurationMax="5.">
+					<IncludedMemoryFiles>
+						<File Id="732557398" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_3.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_3_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2070832514" Name="Xeno_Monologue_04" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_04" DurationType="OneShot" DurationMin="8.25" DurationMax="8.25">
+					<IncludedMemoryFiles>
+						<File Id="209311016" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_4.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_4_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2070832515" Name="Xeno_Monologue_05" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_05" DurationType="OneShot" DurationMin="4.625" DurationMax="4.625">
+					<IncludedMemoryFiles>
+						<File Id="853171573" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_5.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_5_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2070832512" Name="Xeno_Monologue_06" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_06" DurationType="OneShot" DurationMin="4." DurationMax="4.">
+					<IncludedMemoryFiles>
+						<File Id="667688247" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_6.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_6_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2070832513" Name="Xeno_Monologue_07" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_07" DurationType="OneShot" DurationMin="3." DurationMax="3.">
+					<IncludedMemoryFiles>
+						<File Id="701323549" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_7.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_7_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2070832526" Name="Xeno_Monologue_08" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_08" DurationType="OneShot" DurationMin="6." DurationMax="6.">
+					<IncludedMemoryFiles>
+						<File Id="158052674" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_8.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_8_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2070832527" Name="Xeno_Monologue_09" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_09" DurationType="OneShot" DurationMin="4." DurationMax="4.">
+					<IncludedMemoryFiles>
+						<File Id="857098854" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_9.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_9_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2087610233" Name="Xeno_Monologue_10" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_10" DurationType="OneShot" DurationMin="4." DurationMax="4.">
+					<IncludedMemoryFiles>
+						<File Id="69293566" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_10.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_10_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2087610232" Name="Xeno_Monologue_11" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_11" DurationType="OneShot" DurationMin="4.25" DurationMax="4.25">
+					<IncludedMemoryFiles>
+						<File Id="264026108" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_11.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_11_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2087610237" Name="Xeno_Monologue_14" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_14" DurationType="OneShot" DurationMin="3.375" DurationMax="3.375">
+					<IncludedMemoryFiles>
+						<File Id="74916476" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_14.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_14_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2087610236" Name="Xeno_Monologue_15" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_15" DurationType="OneShot" DurationMin="4.5" DurationMax="4.5">
+					<IncludedMemoryFiles>
+						<File Id="378239919" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_15.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_15_3138B09A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
 					</AuxBusSends>
 				</Event>
 			</IncludedEvents>

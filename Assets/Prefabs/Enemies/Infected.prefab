@@ -242,9 +242,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1036111542332910471}
-  - component: {fileID: 8588575627452276565}
-  - component: {fileID: 570264497867983548}
-  - component: {fileID: 9085653711365889245}
+  - component: {fileID: 2537989416655421519}
+  - component: {fileID: 6508138096471526132}
+  - component: {fileID: 7889883868945567184}
   m_Layer: 1
   m_Name: Audio Events
   m_TagString: Untagged
@@ -267,23 +267,7 @@ Transform:
   m_Father: {fileID: 833546103016679072}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &8588575627452276565
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6517515062262375043}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 5
---- !u!114 &570264497867983548
+--- !u!114 &2537989416655421519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -305,7 +289,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &9085653711365889245
+--- !u!114 &6508138096471526132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -317,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1551fced8e3af495ab7f273ffd1c66a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: d1bbb3b5
+  triggerList: f7e1664c
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -339,3 +323,19 @@ MonoBehaviour:
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
   LargeModePositions: []
   multiPositionArray: []
+--- !u!58 &7889883868945567184
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6517515062262375043}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 15

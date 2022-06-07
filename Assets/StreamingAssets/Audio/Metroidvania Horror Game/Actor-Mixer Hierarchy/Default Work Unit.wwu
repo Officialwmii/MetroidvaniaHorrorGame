@@ -446,7 +446,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-7</Value>
+														<Value>-15</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2840,6 +2840,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<ActorMixer Name="Glob" ID="{D97FE269-37FD-4FF9-9893-C1E7806AED15}" ShortID="719859217">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -2852,6 +2859,7 @@
 										<RandomSequenceContainer Name="Glob_Idle" ID="{3CE9A5FA-BEAB-4739-9B03-6BF38BB103E2}" ShortID="966129953">
 											<PropertyList>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -2880,6 +2888,9 @@
 												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Idle" ID="{CD1F6ED6-DA07-4F1B-949D-3A36101FFACB}" WorkUnitID="{30E6FE42-34AB-4A74-AC72-504364B952C7}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
 												</Reference>
@@ -2926,6 +2937,11 @@
 								<ActorMixer Name="Infected" ID="{B5EBAA89-6DA0-4519-A031-1EF00819D1BC}" ShortID="190598736">
 									<PropertyList>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2939,6 +2955,7 @@
 										<RandomSequenceContainer Name="Infected_Idle" ID="{0B0E46E3-A0F0-4C41-B879-F6B59CD2BA93}" ShortID="269645461">
 											<PropertyList>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -2955,8 +2972,12 @@
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Idle" ID="{CD1F6ED6-DA07-4F1B-949D-3A36101FFACB}" WorkUnitID="{30E6FE42-34AB-4A74-AC72-504364B952C7}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
 												</Reference>
@@ -3518,6 +3539,9 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{53BF28F5-77DA-4051-BD04-25D66CFEE112}"/>
+											</PositioningInfo>
 											<ObjectLists/>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Infected Stunned" ID="{E17B58C0-F637-4B84-823A-00B475DE99B3}" ShortID="16644176">
@@ -4451,7 +4475,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4532,6 +4556,7 @@
 										<RandomSequenceContainer Name="Crawler_Idle" ID="{DA305480-1AB3-4CEC-A1D7-8A673ED3F41F}" ShortID="1047376398">
 											<PropertyList>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -4555,6 +4580,9 @@
 												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Idle" ID="{CD1F6ED6-DA07-4F1B-949D-3A36101FFACB}" WorkUnitID="{30E6FE42-34AB-4A74-AC72-504364B952C7}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
 												</Reference>
@@ -4906,6 +4934,7 @@
 										<RandomSequenceContainer Name="Xeno Idle" ID="{29F9F86A-B335-4F28-9944-6B2F4CBC651C}" ShortID="202024622">
 											<PropertyList>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -4924,6 +4953,9 @@
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Idle" ID="{CD1F6ED6-DA07-4F1B-949D-3A36101FFACB}" WorkUnitID="{30E6FE42-34AB-4A74-AC72-504364B952C7}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
 												</Reference>
@@ -4962,6 +4994,13 @@
 									<ObjectLists/>
 								</ActorMixer>
 								<ActorMixer Name="Screamer" ID="{D4895BA2-FDC0-42A4-9155-5C7807DDA3B5}" ShortID="236470444">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -4977,6 +5016,7 @@
 										<RandomSequenceContainer Name="Screamer Idle" ID="{3BC88292-8F7F-4216-9110-CF9FF2973251}" ShortID="78030012">
 											<PropertyList>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -4995,6 +5035,9 @@
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Idle" ID="{CD1F6ED6-DA07-4F1B-949D-3A36101FFACB}" WorkUnitID="{30E6FE42-34AB-4A74-AC72-504364B952C7}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
 												</Reference>
@@ -5776,6 +5819,13 @@
 									<ObjectLists/>
 								</ActorMixer>
 								<ActorMixer Name="Liptank" ID="{D96AF897-FBB3-4BEF-B809-2601463A3B1B}" ShortID="492697041">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
@@ -5961,6 +6011,7 @@
 										<RandomSequenceContainer Name="Liptank Idle" ID="{7A2E1A9B-2FB6-4B13-935A-4F305156C0B0}" ShortID="270046891">
 											<PropertyList>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -5978,6 +6029,9 @@
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Idle" ID="{CD1F6ED6-DA07-4F1B-949D-3A36101FFACB}" WorkUnitID="{30E6FE42-34AB-4A74-AC72-504364B952C7}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
 												</Reference>

@@ -88,7 +88,11 @@ MonoBehaviour:
   MultiPositionType: 1
   multiPositionTypeLabel: 0
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
+  LargeModePositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   multiPositionArray: []
 --- !u!58 &2861043723350808202
 CircleCollider2D:
@@ -105,7 +109,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 15
 --- !u!1 &829873685863465678
 GameObject:
   m_ObjectHideFlags: 0

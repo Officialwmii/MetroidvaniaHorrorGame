@@ -60,7 +60,7 @@ public class AmbienceAreaBoundary : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            AkSoundEngine.PostEvent("Stop_Ambience", player);
+            
         }
     }
 }

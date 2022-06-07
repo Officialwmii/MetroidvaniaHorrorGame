@@ -73,6 +73,7 @@ public class Screamer : MonoBehaviour {
 		if (onAlert)
 		{
 			animator.SetBool("HasNoticed", true);
+			Attack.Post(screamer);
 		}
 
         else if (!onAlert)
@@ -120,7 +121,6 @@ public class Screamer : MonoBehaviour {
 
 
 			EventManager.Alert();
-			Attack.Post(screamer);
 			EventManager.AddDangerEveryTick(1);
 			//IsScreamingEvent.Invoke();
 			transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);

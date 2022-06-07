@@ -124,6 +124,7 @@ public class Enemy : MonoBehaviour {
 	IEnumerator StunTime(float _StunDuration){
 		isStunned = true;
 		transform.GetComponent<Animator>().SetBool("IsStunned", true);
+		AkSoundEngine.PostEvent("Infected_Stunned", enemy);
 		yield return new WaitForSeconds(_StunDuration);
 		isStunned = false;
 		transform.GetComponent<Animator>().SetBool("IsStunned", false);
@@ -164,11 +165,7 @@ public class Enemy : MonoBehaviour {
 		capsule.size = new Vector2(1f, 0.25f);
 		capsule.offset = new Vector2(0f, -0.8f);
 		capsule.direction = CapsuleDirection2D.Horizontal;
-		if (crawler)
-		{
-			AkSoundEngine.PostEvent("Crawler_Explode", enemy);
-		}
-		else if (!crawler)
+		if (!crawler)
 		{
 			AkSoundEngine.PostEvent("Infected_Death", enemy);
 		}
@@ -186,5 +183,15 @@ public class Enemy : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
 		//Debug.Log(collision.gameObject.name);
+    }
+
+	public void PlayFootstep()
+    {
+		AkSoundEngine.PostEvent("Footsteps", enemy);
+    }
+
+	public void PlayIdle()
+    {
+		AkSoundEngine.PostEvent("Infected_Idle", enemy);
     }
 }

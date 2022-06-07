@@ -14,8 +14,6 @@ public class SetParameter : MonoBehaviour
     public AK.Wwise.State musicState;
     public AK.Wwise.State musicSegment;
 
-    public AK.Wwise.Event playMusic;
-
     public bool timeAttack = false;
     public bool escaped = false;
     public bool alive = true;
@@ -29,7 +27,7 @@ public class SetParameter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetGameState();
+        //SetGameState();
         character = GameObject.Find("Player");
     }
 
@@ -40,8 +38,8 @@ public class SetParameter : MonoBehaviour
         healthBar.SetGlobalValue(player.life);
         jetpackFuel.SetGlobalValue(fuel.GetComponent<UnityEngine.UI.Slider>().value);
 
-        /*
-         * if(stateCalled == false)
+
+        /*if(stateCalled == false)
         {
             if (EventManager.ConstalationsKeysAcquired == 0 && alive == true)
             {
@@ -80,8 +78,8 @@ public class SetParameter : MonoBehaviour
                 alive = true;
                 stateCalled = true;
             }
-        }*/
-        UpdateState();
+        }
+        UpdateState();*/
     }
 
     public void UpdateState()
@@ -103,11 +101,6 @@ public class SetParameter : MonoBehaviour
         AkSoundEngine.SetState("Music_State", "Gameplay");
         AkSoundEngine.SetState("Music_Segment", "Start");
         stateCalled = false;
-    }
-
-    public void PlayMusic()
-    {
-        playMusic.Post(character);
     }
 
 }

@@ -81,7 +81,7 @@ MonoBehaviour:
   IsQuietEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4404589951253072300}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -283,8 +283,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8078472493773719745}
   - component: {fileID: 3499182138268878614}
-  - component: {fileID: 307389406672769581}
-  - component: {fileID: 6593352302787450501}
+  - component: {fileID: 4138223169894713569}
+  - component: {fileID: 4304471907690955307}
   m_Layer: 1
   m_Name: Audio Events
   m_TagString: Untagged
@@ -329,23 +329,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!58 &307389406672769581
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4404589951253072300}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 10
---- !u!114 &6593352302787450501
+--- !u!114 &4138223169894713569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -379,3 +363,19 @@ MonoBehaviour:
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
   LargeModePositions: []
   multiPositionArray: []
+--- !u!58 &4304471907690955307
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4404589951253072300}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 15

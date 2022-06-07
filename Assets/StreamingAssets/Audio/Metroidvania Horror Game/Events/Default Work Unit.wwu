@@ -364,6 +364,138 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Xeno_Monologue_02" ID="{6A1850A7-4FDC-4C29-BBB3-DB6967A315E8}">
+									<ChildrenList>
+										<Action Name="" ID="{6B7B2AD1-7833-46A8-97A8-079309068460}" ShortID="869115430">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_2" ID="{8D6A836A-BC25-4890-AB1C-6ABCAED50907}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_03" ID="{5223ED3F-20BC-4348-B021-DD387CA474C6}">
+									<ChildrenList>
+										<Action Name="" ID="{81102567-01D3-45F2-AF70-B92287DDA716}" ShortID="88519081">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_3" ID="{DBA7B5FC-ACE3-46AD-888E-1A02833F5073}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_04" ID="{C718963D-972D-4EFF-BEBB-0BF27FF685D7}">
+									<ChildrenList>
+										<Action Name="" ID="{840B6FB3-28D6-4693-935F-688C565DE806}" ShortID="1020656997">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_4" ID="{DAADE84F-9B11-416A-AE7A-9D280A22A6FC}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_05" ID="{8BFA9B6E-5CB2-44CA-9454-BBC6A0E18D21}">
+									<ChildrenList>
+										<Action Name="" ID="{0E511059-CC04-42FA-AD1A-9FF8B252537C}" ShortID="970520750">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_5" ID="{20A6B6FD-44DF-4B35-86E4-169434F50536}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_06" ID="{D3875FEA-72AA-46C5-A186-93D6D88B7B33}">
+									<ChildrenList>
+										<Action Name="" ID="{C5C441CE-BB17-435F-BB1A-F7134857F449}" ShortID="692693446">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_6" ID="{4111DEC5-D873-47E0-BF4C-620EB3F1829E}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_07" ID="{D7DEBCEC-C830-4B47-8781-E9D503E039E9}">
+									<ChildrenList>
+										<Action Name="" ID="{CE6B667D-50A7-42BE-B567-47524035A39A}" ShortID="87454228">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_7" ID="{23A55350-A2D6-4057-B057-0C0B19D30453}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_08" ID="{F371D4AA-65C2-4DF9-B0ED-A40E3AC99A2A}">
+									<ChildrenList>
+										<Action Name="" ID="{FB0A17EB-E972-46C2-8A36-CC7D7CABBA2F}" ShortID="1032591212">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_8" ID="{D252D60D-463B-4032-B729-2DB0907FD32E}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_09" ID="{58E4E7AF-EAD4-4CDE-BC8F-8F7A928C7224}">
+									<ChildrenList>
+										<Action Name="" ID="{28892050-F09A-4BF9-877F-8B32901771DF}" ShortID="50895902">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_9" ID="{FC81A6AC-AB15-4941-850F-2558E50D7B60}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_10" ID="{8F292F50-8CA7-41DF-9909-7338763CDAD0}">
+									<ChildrenList>
+										<Action Name="" ID="{39DA1F74-6735-43D4-A336-978EED288D4A}" ShortID="45395162">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_10" ID="{CFE92CFC-293F-4A8A-8777-8F0181BA790E}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_11" ID="{91B0F835-5008-49FB-8698-091195CBCE08}">
+									<ChildrenList>
+										<Action Name="" ID="{F9E5D60F-26CE-425D-9E3B-4FCD813B8D1C}" ShortID="174697328">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_11" ID="{954B4731-DA8F-4D7D-B7A6-C8B2BDEB88C7}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_14" ID="{47136DBD-4D85-4FFD-AEF4-D6E58EC1AC5C}">
+									<ChildrenList>
+										<Action Name="" ID="{AAE2374E-0E62-4F10-B3A8-5306C3D317D4}" ShortID="247937934">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_14" ID="{213AB4BA-50C8-4F15-87F3-0A361F188823}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_15" ID="{E423117D-80FD-474E-98AD-186F86E8A10D}">
+									<ChildrenList>
+										<Action Name="" ID="{F969C174-ACE3-4293-9E93-D567FCF0149D}" ShortID="728809908">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_15" ID="{335EEE46-20C7-4860-9F3A-4EA892DDB76F}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Enemies" ID="{8C91EE2C-979F-4D18-B89D-195AC4C38B4B}" ShortID="186543466">
@@ -372,7 +504,7 @@
 									<ChildrenList>
 										<Event Name="Infected_Idle" ID="{ACC987B8-B046-4152-AC1C-AA0059562CE6}">
 											<ChildrenList>
-												<Action Name="" ID="{CB42498F-3980-46B8-A3BD-D3F958A3AC77}" ShortID="108619323">
+												<Action Name="" ID="{57CF2060-68F8-4227-B951-74311152E4CD}" ShortID="622533032">
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Infected_Idle" ID="{0B0E46E3-A0F0-4C41-B879-F6B59CD2BA93}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
@@ -889,12 +1021,6 @@
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
-				</Folder>
-				<Folder Name="Stop Commands" ID="{F58A2DCE-F27D-4019-B02A-D6452A03C6DA}" ShortID="484276654">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="9"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
 				</Folder>
 			</ChildrenList>
 		</WorkUnit>

@@ -604,7 +604,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: d421e5cb6879fa4eadfcbf265136c428
     GuidInternal: 
-    m_lastTime: -8585470352938666518
+    m_lastTime: -8585470241977100780
     List:
     - name: Main
       guid: e697a1ce610cc54ea30db3a1b91bf08c
@@ -632,7 +632,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 678d0dc573114b4fa4a47a1483ba6642
     GuidInternal: 
-    m_lastTime: -8585470352944259308
+    m_lastTime: -8585470225285979818
     List:
     - name: Alien_Artifact
       guid: b19eeb17f466c3408e4ddff15aac46a9
@@ -927,7 +927,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 95f57b5d5b5d9e4aa7bb84874bc663d7
       Path: Events/Default Work Unit/SFX/Enemies/Crawler/Crawler_Idle
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: Dialogue
@@ -994,26 +994,6 @@ MonoBehaviour:
       maxDuration: 1.648758
       minDuration: 1.648758
     - name: Enemies
-      guid: 2cee918c9f97184db89d195ac4c38b4b
-      id: 2242381963
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 678d0dc573114b4fa4a47a1483ba6642
-      - ElementName: Dialogue
-        ObjectType: 4
-        guid: 70d1c9a3772214439489d74547327c05
-      - ElementName: Enemies
-        ObjectType: 4
-        guid: 2cee918c9f97184db89d195ac4c38b4b
-      Path: Events/Default Work Unit/Dialogue/Enemies
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Enemies
       guid: 194e5e6e470273408e081ccd3eba3ee8
       id: 2242381963
       PathAndIcons:
@@ -1030,6 +1010,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: 194e5e6e470273408e081ccd3eba3ee8
       Path: Events/Default Work Unit/SFX/Enemies
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemies
+      guid: 2cee918c9f97184db89d195ac4c38b4b
+      id: 2242381963
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Enemies
+        ObjectType: 4
+        guid: 2cee918c9f97184db89d195ac4c38b4b
+      Path: Events/Default Work Unit/Dialogue/Enemies
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1099,7 +1099,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2ca8271868b2714bb87ca8089e77c804
       Path: Events/Default Work Unit/SFX/Enemies/Glob_Idle
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: Grenade_Fire
@@ -1278,7 +1278,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b887c9ac46b05241ac1caa0059562ce6
       Path: Events/Default Work Unit/Dialogue/Enemies/Infected/Infected_Idle
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: Infected_Stunned
@@ -1509,7 +1509,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 638edc2b352be74d80a4dc41c5190679
       Path: Events/Default Work Unit/SFX/Enemies/Liptank/Liptank_Idle
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: Movement
@@ -1837,7 +1837,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 917be9c67b11fc4a9f69b2ea17a4c346
       Path: Events/Default Work Unit/Dialogue/Enemies/Screamer/Screamer_Idle
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: Screamer_Screeching
@@ -2455,23 +2455,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 5.078688
       minDuration: 5.078688
-    - name: Stop Commands
-      guid: ce2d8af57df21940b02ad6452a03c6da
-      id: 3415639745
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 678d0dc573114b4fa4a47a1483ba6642
-      - ElementName: Stop Commands
-        ObjectType: 4
-        guid: ce2d8af57df21940b02ad6452a03c6da
-      Path: Events/Default Work Unit/Stop Commands
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Stun_Gun_Cooldown
       guid: 1072996674a6e54bb7bad88a0391abd3
       id: 708622098
@@ -2766,9 +2749,285 @@ MonoBehaviour:
         ObjectType: 3
         guid: a517ff27ed923e48861c56a20e74a75d
       Path: Events/Default Work Unit/SFX/Enemies/Xeno-Encephalon/Xeno_Idle
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
+    - name: Xeno_Monologue_02
+      guid: a750186adc4f294cbbb3db6967a315e8
+      id: 2070832516
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_02
+        ObjectType: 3
+        guid: a750186adc4f294cbbb3db6967a315e8
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_02
+      maxAttenuation: 0
+      maxDuration: 5.875
+      minDuration: 5.875
+    - name: Xeno_Monologue_03
+      guid: 3fed2352bc204843b021dd387ca474c6
+      id: 2070832517
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_03
+        ObjectType: 3
+        guid: 3fed2352bc204843b021dd387ca474c6
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_03
+      maxAttenuation: 0
+      maxDuration: 5
+      minDuration: 5
+    - name: Xeno_Monologue_04
+      guid: 3d9618c72d97ff4ebebb0bf27ff685d7
+      id: 2070832514
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_04
+        ObjectType: 3
+        guid: 3d9618c72d97ff4ebebb0bf27ff685d7
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_04
+      maxAttenuation: 0
+      maxDuration: 8.25
+      minDuration: 8.25
+    - name: Xeno_Monologue_05
+      guid: 6e9bfa8bb25cca449454bbc6a0e18d21
+      id: 2070832515
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_05
+        ObjectType: 3
+        guid: 6e9bfa8bb25cca449454bbc6a0e18d21
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_05
+      maxAttenuation: 0
+      maxDuration: 4.625
+      minDuration: 4.625
+    - name: Xeno_Monologue_06
+      guid: ea5f87d3aa72c546a18693d6d88b7b33
+      id: 2070832512
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_06
+        ObjectType: 3
+        guid: ea5f87d3aa72c546a18693d6d88b7b33
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_06
+      maxAttenuation: 0
+      maxDuration: 4
+      minDuration: 4
+    - name: Xeno_Monologue_07
+      guid: ecbcded730c8474b8781e9d503e039e9
+      id: 2070832513
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_07
+        ObjectType: 3
+        guid: ecbcded730c8474b8781e9d503e039e9
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_07
+      maxAttenuation: 0
+      maxDuration: 3
+      minDuration: 3
+    - name: Xeno_Monologue_08
+      guid: aad471f3c265f94db0eda40e3ac99a2a
+      id: 2070832526
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_08
+        ObjectType: 3
+        guid: aad471f3c265f94db0eda40e3ac99a2a
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_08
+      maxAttenuation: 0
+      maxDuration: 6
+      minDuration: 6
+    - name: Xeno_Monologue_09
+      guid: afe7e458d4eade4cbc8f8f7a928c7224
+      id: 2070832527
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_09
+        ObjectType: 3
+        guid: afe7e458d4eade4cbc8f8f7a928c7224
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_09
+      maxAttenuation: 0
+      maxDuration: 4
+      minDuration: 4
+    - name: Xeno_Monologue_10
+      guid: 502f298fa78cdf4199097338763cdad0
+      id: 2087610233
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_10
+        ObjectType: 3
+        guid: 502f298fa78cdf4199097338763cdad0
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_10
+      maxAttenuation: 0
+      maxDuration: 4
+      minDuration: 4
+    - name: Xeno_Monologue_11
+      guid: 35f8b0910850fb498698091195cbce08
+      id: 2087610232
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_11
+        ObjectType: 3
+        guid: 35f8b0910850fb498698091195cbce08
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_11
+      maxAttenuation: 0
+      maxDuration: 4.25
+      minDuration: 4.25
+    - name: Xeno_Monologue_14
+      guid: bd6d1347854dfd4faef4d6e58ec1ac5c
+      id: 2087610237
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_14
+        ObjectType: 3
+        guid: bd6d1347854dfd4faef4d6e58ec1ac5c
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_14
+      maxAttenuation: 0
+      maxDuration: 3.375
+      minDuration: 3.375
+    - name: Xeno_Monologue_15
+      guid: 7d1123e4fd804e4798ad186f86e8a10d
+      id: 2087610236
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 70d1c9a3772214439489d74547327c05
+      - ElementName: Xeno
+        ObjectType: 4
+        guid: 9a47461f3cc12640ad95087b7c289b39
+      - ElementName: Xeno_Monologue_15
+        ObjectType: 3
+        guid: 7d1123e4fd804e4798ad186f86e8a10d
+      Path: Events/Default Work Unit/Dialogue/Xeno/Xeno_Monologue_15
+      maxAttenuation: 0
+      maxDuration: 4.5
+      minDuration: 4.5
     - name: Xeno-Encephalon
       guid: e8781eb27138db41b7dd4edef6955a74
       id: 3162742627
@@ -3742,7 +4001,7 @@ MonoBehaviour:
         ObjectType: 14
         guid: b5ae3e944a84714f9658293429bb509d
       Path: Triggers/Default Work Unit/Ambience_Intensifier
-  ExpandedFileSystemItemIds: 02000000030000000400000007000000110000005a000000
+  ExpandedFileSystemItemIds: 02000000030000000400000005000000070000000900000011000000180000001a000000220000003a0000005a000000
   ExpandedWaapiItemIds: 020000000300000004000000110000005a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

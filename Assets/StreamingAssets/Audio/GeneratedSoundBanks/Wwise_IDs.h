@@ -86,6 +86,18 @@ namespace AK
         static const AkUniqueID XENO_DEATH = 644176342U;
         static const AkUniqueID XENO_GAS = 1780464255U;
         static const AkUniqueID XENO_IDLE = 1798072102U;
+        static const AkUniqueID XENO_MONOLOGUE_02 = 2070832516U;
+        static const AkUniqueID XENO_MONOLOGUE_03 = 2070832517U;
+        static const AkUniqueID XENO_MONOLOGUE_04 = 2070832514U;
+        static const AkUniqueID XENO_MONOLOGUE_05 = 2070832515U;
+        static const AkUniqueID XENO_MONOLOGUE_06 = 2070832512U;
+        static const AkUniqueID XENO_MONOLOGUE_07 = 2070832513U;
+        static const AkUniqueID XENO_MONOLOGUE_08 = 2070832526U;
+        static const AkUniqueID XENO_MONOLOGUE_09 = 2070832527U;
+        static const AkUniqueID XENO_MONOLOGUE_10 = 2087610233U;
+        static const AkUniqueID XENO_MONOLOGUE_11 = 2087610232U;
+        static const AkUniqueID XENO_MONOLOGUE_14 = 2087610237U;
+        static const AkUniqueID XENO_MONOLOGUE_15 = 2087610236U;
     } // namespace EVENTS
 
     namespace STATES

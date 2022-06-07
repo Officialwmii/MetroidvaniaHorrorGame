@@ -41,6 +41,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	1798072102	Xeno_Idle			\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Idle	
 	1876963445	Stun_Gun_Fire			\Default Work Unit\SFX\Player\Weapons\Stun_Gun_Fire	
 	1925295108	Jetpack_Refill			\Default Work Unit\SFX\Player\Movement\Jetpack_Refill	
+	2070832512	Xeno_Monologue_06			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_06	
+	2070832513	Xeno_Monologue_07			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_07	
+	2070832514	Xeno_Monologue_04			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_04	
+	2070832515	Xeno_Monologue_05			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_05	
+	2070832516	Xeno_Monologue_02			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_02	
+	2070832517	Xeno_Monologue_03			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_03	
+	2070832526	Xeno_Monologue_08			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_08	
+	2070832527	Xeno_Monologue_09			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_09	
+	2087610232	Xeno_Monologue_11			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_11	
+	2087610233	Xeno_Monologue_10			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_10	
+	2087610236	Xeno_Monologue_15			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_15	
+	2087610237	Xeno_Monologue_14			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_14	
 	2325592372	Xeno_Attack			\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Attack	
 	2379525397	Xeno_Damaged			\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Damaged	
 	2385628198	Footsteps			\Default Work Unit\SFX\Player\Movement\Footsteps	
