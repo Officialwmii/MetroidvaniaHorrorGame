@@ -586,12 +586,67 @@
 					<ChildrenList>
 						<Folder Name="Ambience" ID="{C03E8DB3-38FB-4E2C-9DD3-7CE5D9BB0FAC}" ShortID="318451832">
 							<ChildrenList>
-								<Event Name="Play_Ambience" ID="{2C706956-69AD-499D-8297-51626D20FB47}">
+								<Event Name="Play_Warehouse_Ambience" ID="{D074157C-5500-4A9D-BA26-960679D7501D}">
 									<ChildrenList>
-										<Action Name="" ID="{53AF5B62-D80B-4F8D-A408-31BBD66B6D90}" ShortID="281847198">
+										<Action Name="" ID="{E136D009-B11C-490A-A02F-839C5669F547}" ShortID="981668099">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Ambience Switch" ID="{1B8792FD-A20C-4DCC-B998-1F02FB23E71A}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+													<ObjectRef Name="Warehouse Ambience Loop" ID="{6CADF69D-885E-4B5B-BF13-3B142125ACE6}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Bridge_Ambience" ID="{C761D043-0DCD-4653-B528-168DD351641F}">
+									<ChildrenList>
+										<Action Name="" ID="{C34ECF69-F2C1-4632-8185-D3204EAEA12F}" ShortID="712456119">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boss Ambience Loop" ID="{48ADBDA1-F5E7-4BD9-A8EE-C27CB72149C0}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Escape_Pod_Ambience" ID="{5E3E24B7-074F-47B7-9A2C-83774513BA27}">
+									<ChildrenList>
+										<Action Name="" ID="{BB5268A9-A64C-4B02-864B-5869089AF74D}" ShortID="310046209">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Escape Pod Hatch Ambience Loop" ID="{B5792B25-5BF6-4DD5-BC62-96624CBC6419}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Ship_Hull_Ambience" ID="{EFE92793-9769-4AD4-968A-55FB772248A0}">
+									<ChildrenList>
+										<Action Name="" ID="{2B1C784F-D275-44FA-A338-508AB36D7DC7}" ShortID="263189240">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship Hull Ambience Loop" ID="{3B0D450D-D4DB-42A3-B7F2-8245E7349377}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Medbay_Ambience" ID="{F8333775-511B-49B7-A15C-EB15804BFCDD}">
+									<ChildrenList>
+										<Action Name="" ID="{5DB614E4-9055-434A-9FD2-CCBAC925F8BB}" ShortID="34054637">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Medbay Ambience Loop" ID="{37821992-DF49-4902-864D-B38056F842AF}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Hallway_Ambience" ID="{8E99BAD6-A38B-4931-8D6C-37FED1C70E74}">
+									<ChildrenList>
+										<Action Name="" ID="{5E7765BE-639C-4EED-8189-3CEF41192913}" ShortID="862411612">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hallway Ambience Loop" ID="{93759C70-453E-4DC7-9942-8E60164349EF}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

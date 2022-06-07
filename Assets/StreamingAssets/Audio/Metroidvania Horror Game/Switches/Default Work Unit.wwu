@@ -27,22 +27,6 @@
 						<Switch Name="Wood" ID="{927BBC68-E3CF-4F16-82A1-55ECD4338828}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<SwitchGroup Name="Player_Location" ID="{FD7D4EE3-5B5E-43E3-9575-E7BA13534B41}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="4"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Switch Name="Escape_Pod_Hatch" ID="{D37BAE8E-3594-4C87-B4BF-1275932B2970}"/>
-						<Switch Name="Ship_Hull" ID="{2B234250-D74D-4950-BB6F-A86BC9AD8B13}"/>
-						<Switch Name="Hallway" ID="{D17888B8-CC81-44DF-B69C-D5AA10597B86}"/>
-						<Switch Name="Warehouse" ID="{85E1CCAC-95B9-4DF7-BEC0-03AFC408E5F5}"/>
-						<Switch Name="Medbay" ID="{2AAAAA8C-6E29-48FF-9C51-BC8D28F7F1F5}"/>
-						<Switch Name="General" ID="{CE0C4818-CD83-4AC4-A66E-4F0251C40A53}"/>
-						<Switch Name="Bridge" ID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>
-						<Switch Name="Safe_Room" ID="{28922E59-589F-4835-BB69-3E88FF0D5304}"/>
-					</ChildrenList>
-				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -63,7 +63,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -75,6 +75,13 @@
 									<ObjectLists/>
 								</AuxBus>
 								<AuxBus Name="Player" ID="{2DAC35B7-918A-40D6-8594-6DC20BE8D263}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ChildrenList>
 										<AuxBus Name="Weapons" ID="{A1ACA79E-8D24-4098-85F0-2CC42B1736F5}">
 											<PropertyList>

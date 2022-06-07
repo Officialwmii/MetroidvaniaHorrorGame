@@ -29,7 +29,7 @@
 				<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="English(US)" Hash="2458091127">
+		<SoundBank Id="3161908922" Language="English(US)" Hash="3265141624">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
@@ -615,66 +615,46 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Play_Ambience" DurationType="Infinite">
+				<Event Id="2391845088" Name="Play_Bridge_Ambience" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Play_Bridge_Ambience" MaxAttenuation="10." DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="6329621" Language="SFX">
-							<ShortName>sfx_ambience_ship_hull.wav</ShortName>
-							<Path>SFX/sfx_ambience_ship_hull_E84716CF.wem</Path>
-						</File>
-						<File Id="419453379" Language="SFX">
-							<ShortName>sfx_ambience_med_bay.wav</ShortName>
-							<Path>SFX/sfx_ambience_med_bay_569C59C1.wem</Path>
-						</File>
-						<File Id="575244914" Language="SFX">
-							<ShortName>sfx_ambience_warehouse.wav</ShortName>
-							<Path>SFX/sfx_ambience_warehouse_569C59C1.wem</Path>
-						</File>
 						<File Id="615095720" Language="SFX">
 							<ShortName>sfx_ambience_boss.wav</ShortName>
 							<Path>SFX/sfx_ambience_boss_569C59C1.wem</Path>
 						</File>
-						<File Id="827298294" Language="SFX">
-							<ShortName>sfx_ambience_hallway.wav</ShortName>
-							<Path>SFX/sfx_ambience_hallway_569C59C1.wem</Path>
-						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2505135486" Name="Play_Escape_Pod_Ambience" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Play_Escape_Pod_Ambience" MaxAttenuation="10." DurationType="Infinite">
+					<IncludedMemoryFiles>
 						<File Id="871992041" Language="SFX">
 							<ShortName>sfx_ambience_escape_pod_hatch.wav</ShortName>
 							<Path>SFX/sfx_ambience_escape_pod_hatch_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{D37BAE8E-3594-4C87-B4BF-1275932B2970}</DefaultSwitchValue>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}">
-							<Media>
-								<File Id="615095720"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{2B234250-D74D-4950-BB6F-A86BC9AD8B13}">
-							<Media>
-								<File Id="6329621"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{2AAAAA8C-6E29-48FF-9C51-BC8D28F7F1F5}">
-							<Media>
-								<File Id="419453379"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{D37BAE8E-3594-4C87-B4BF-1275932B2970}">
-							<Media>
-								<File Id="871992041"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{85E1CCAC-95B9-4DF7-BEC0-03AFC408E5F5}">
-							<Media>
-								<File Id="575244914"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{D17888B8-CC81-44DF-B69C-D5AA10597B86}">
-							<Media>
-								<File Id="827298294"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3648364775" Name="Play_Hallway_Ambience" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Play_Hallway_Ambience" MaxAttenuation="10." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="827298294" Language="SFX">
+							<ShortName>sfx_ambience_hallway.wav</ShortName>
+							<Path>SFX/sfx_ambience_hallway_569C59C1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2963757099" Name="Play_Medbay_Ambience" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Play_Medbay_Ambience" MaxAttenuation="10." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="419453379" Language="SFX">
+							<ShortName>sfx_ambience_med_bay.wav</ShortName>
+							<Path>SFX/sfx_ambience_med_bay_569C59C1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 					<AuxBusSends>
 						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience"/>
 					</AuxBusSends>
@@ -1044,6 +1024,28 @@
 					<AuxBusSends>
 						<AuxBus Id="2680856269" Name="Music_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_Bus"/>
 						<AuxBus Id="3691056935" Name="Noise_Meter" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_Bus\Noise_Meter"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3569999937" Name="Play_Ship_Hull_Ambience" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Play_Ship_Hull_Ambience" MaxAttenuation="10." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="6329621" Language="SFX">
+							<ShortName>sfx_ambience_ship_hull.wav</ShortName>
+							<Path>SFX/sfx_ambience_ship_hull_E84716CF.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2853390822" Name="Play_Warehouse_Ambience" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Play_Warehouse_Ambience" MaxAttenuation="10." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="575244914" Language="SFX">
+							<ShortName>sfx_ambience_warehouse.wav</ShortName>
+							<Path>SFX/sfx_ambience_warehouse_569C59C1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Ambience"/>
 					</AuxBusSends>
 				</Event>
 				<Event Id="3109796241" Name="Play_Xeno_Ambience" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Play_Xeno_Ambience" DurationType="OneShot" DurationMin="36.5" DurationMax="36.5">
@@ -1851,18 +1853,6 @@
 						<Switch Id="1290008370" Name="Level_2" ObjectPath="\Switches\Default Work Unit\Noise_Meter_Level\Level_2" GUID="{C3BC5321-68E4-4578-A6E2-8F0B08254634}"/>
 						<Switch Id="1290008371" Name="Level_3" ObjectPath="\Switches\Default Work Unit\Noise_Meter_Level\Level_3" GUID="{AE0A9F69-19A5-495C-A385-7AA87E7E6571}"/>
 						<Switch Id="3160623154" Name="Silent" ObjectPath="\Switches\Default Work Unit\Noise_Meter_Level\Silent" GUID="{C0AB1866-64C3-4CF2-8BAB-5CA886D86167}"/>
-					</Switches>
-				</SwitchGroup>
-				<SwitchGroup Id="3238956108" Name="Player_Location" ObjectPath="\Switches\Default Work Unit\Player_Location" GUID="{FD7D4EE3-5B5E-43E3-9575-E7BA13534B41}">
-					<Switches>
-						<Switch Id="2979494847" Name="Escape_Pod_Hatch" ObjectPath="\Switches\Default Work Unit\Player_Location\Escape_Pod_Hatch" GUID="{D37BAE8E-3594-4C87-B4BF-1275932B2970}"/>
-						<Switch Id="3057088135" Name="Ship_Hull" ObjectPath="\Switches\Default Work Unit\Player_Location\Ship_Hull" GUID="{2B234250-D74D-4950-BB6F-A86BC9AD8B13}"/>
-						<Switch Id="2198133169" Name="Hallway" ObjectPath="\Switches\Default Work Unit\Player_Location\Hallway" GUID="{D17888B8-CC81-44DF-B69C-D5AA10597B86}"/>
-						<Switch Id="2981836174" Name="Warehouse" ObjectPath="\Switches\Default Work Unit\Player_Location\Warehouse" GUID="{85E1CCAC-95B9-4DF7-BEC0-03AFC408E5F5}"/>
-						<Switch Id="2646389459" Name="Medbay" ObjectPath="\Switches\Default Work Unit\Player_Location\Medbay" GUID="{2AAAAA8C-6E29-48FF-9C51-BC8D28F7F1F5}"/>
-						<Switch Id="133642231" Name="General" ObjectPath="\Switches\Default Work Unit\Player_Location\General" GUID="{CE0C4818-CD83-4AC4-A66E-4F0251C40A53}"/>
-						<Switch Id="2068062714" Name="Bridge" ObjectPath="\Switches\Default Work Unit\Player_Location\Bridge" GUID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>
-						<Switch Id="3489426920" Name="Safe_Room" ObjectPath="\Switches\Default Work Unit\Player_Location\Safe_Room" GUID="{28922E59-589F-4835-BB69-3E88FF0D5304}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="4168292868" Name="Floor_Type" ObjectPath="\Switches\Default Work Unit\Floor_Type" GUID="{1D3BEC24-73D5-47AB-9CFE-8B88EB3ABFD2}">

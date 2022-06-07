@@ -44,8 +44,13 @@ namespace AK
         static const AkUniqueID LIPTANK_IDLE = 1098479049U;
         static const AkUniqueID NOISE_METER_FILL = 1069991569U;
         static const AkUniqueID PAUSE = 3092587493U;
-        static const AkUniqueID PLAY_AMBIENCE = 278617630U;
+        static const AkUniqueID PLAY_BRIDGE_AMBIENCE = 2391845088U;
+        static const AkUniqueID PLAY_ESCAPE_POD_AMBIENCE = 2505135486U;
+        static const AkUniqueID PLAY_HALLWAY_AMBIENCE = 3648364775U;
+        static const AkUniqueID PLAY_MEDBAY_AMBIENCE = 2963757099U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_SHIP_HULL_AMBIENCE = 3569999937U;
+        static const AkUniqueID PLAY_WAREHOUSE_AMBIENCE = 2853390822U;
         static const AkUniqueID PLAY_XENO_AMBIENCE = 3109796241U;
         static const AkUniqueID PLAY_XENO_MONOLOGUE = 3336051688U;
         static const AkUniqueID PLAYER_DEATH = 3083087645U;
@@ -174,23 +179,6 @@ namespace AK
                 static const AkUniqueID SILENT = 3160623154U;
             } // namespace SWITCH
         } // namespace NOISE_METER_LEVEL
-
-        namespace PLAYER_LOCATION
-        {
-            static const AkUniqueID GROUP = 3238956108U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID BRIDGE = 2068062714U;
-                static const AkUniqueID ESCAPE_POD_HATCH = 2979494847U;
-                static const AkUniqueID GENERAL = 133642231U;
-                static const AkUniqueID HALLWAY = 2198133169U;
-                static const AkUniqueID MEDBAY = 2646389459U;
-                static const AkUniqueID SAFE_ROOM = 3489426920U;
-                static const AkUniqueID SHIP_HULL = 3057088135U;
-                static const AkUniqueID WAREHOUSE = 2981836174U;
-            } // namespace SWITCH
-        } // namespace PLAYER_LOCATION
 
     } // namespace SWITCHES
 

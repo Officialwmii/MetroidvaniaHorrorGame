@@ -3,7 +3,7 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{CBE521D4-7968-4EFA-ADFC-BF265136C428}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Main" ID="{5AEED4AF-3A97-45A6-B56B-311F9B0A0D23}">
+				<SoundBank Name="Main" ID="{BD180A4E-E882-4AD0-86AF-55C41DCA22E2}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Audio_Log_6" ID="{C1002CD2-F1F6-4061-B72A-87D2E56093FC}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Alien_Artifact" ID="{17EB9EB1-66F4-40C3-8E4D-DFF15AAC46A9}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
@@ -31,6 +31,7 @@
 						<ObjectRef Name="Player_Jump" ID="{89B6297E-9EF3-4559-BF04-9890B2FB48B2}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jetpack_Upgrade" ID="{A640E181-7DFA-45EC-B6C0-F60B10BA0CB8}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_6" ID="{D07859DE-869D-4636-8739-D80847A18746}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Bridge_Ambience" ID="{C761D043-0DCD-4653-B528-168DD351641F}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Infected_Death" ID="{DD839D3B-7F4D-4686-B975-3F92E1ECA204}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_3" ID="{AA1E22B8-0CA2-4698-A6BB-DEB2F49A8D60}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Audio_Log_3" ID="{862616D0-7ECD-46A2-9480-4B9F21F9D884}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
@@ -46,24 +47,28 @@
 						<ObjectRef Name="Pause" ID="{8E0DD255-A922-4792-A3CB-D4A201498B50}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_8" ID="{BBE21029-9769-47A3-AFAD-13FB0369D0B2}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Liptank_Attack" ID="{9D85F7A9-EBFA-47AD-A00A-593BC31EBE58}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Escape_Pod_Ambience" ID="{5E3E24B7-074F-47B7-9A2C-83774513BA27}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_18" ID="{B1F0E1F4-27ED-47F7-A1F4-84DA197A9826}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Xeno_Ambience" ID="{96B99336-40F0-4827-9008-6137C5D2476D}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Xeno_Idle" ID="{27FF17A5-92ED-483E-861C-56A20E74A75D}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_17" ID="{DBF901E4-1A55-4903-8ABC-99D8EAE5E641}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jetpack_Dash" ID="{F1978607-14BF-4928-8A28-B0CAE0E363A8}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Hallway_Ambience" ID="{8E99BAD6-A38B-4931-8D6C-37FED1C70E74}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Back" ID="{84270609-278D-4949-83F5-97150CEAFB9C}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Security_Alarm" ID="{686BBCB0-5B53-495B-AD35-777BF4C6CC2B}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Ambience" ID="{2C706956-69AD-499D-8297-51626D20FB47}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Medbay_Ambience" ID="{F8333775-511B-49B7-A15C-EB15804BFCDD}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Xeno_Monologue_11" ID="{91B0F835-5008-49FB-8698-091195CBCE08}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_7" ID="{CD7F4382-3BFB-4A12-B6A2-642B746E8BFD}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_1" ID="{F86CD547-76CB-4A15-A356-0D270989373F}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Suit_Upgrade" ID="{7289856B-760C-4A3A-ACB0-855868667A64}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Hurt" ID="{8132E1A5-51BD-4A6C-A7B2-966C34DF56BE}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Elevator_Down" ID="{0F78AB4D-7D80-4A98-A590-B960B5CDAF59}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Warehouse_Ambience" ID="{D074157C-5500-4A9D-BA26-960679D7501D}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Crawler_Idle" ID="{5D7BF595-5D5B-4A9E-A7BB-84874BC663D7}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Audio_Log_4" ID="{7D5C26B1-2919-4AA0-8FB3-F6DB85754A21}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Screamer_Death" ID="{795A5440-084A-4AA6-9324-C68872B326AE}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grenade_Upgrade" ID="{F49031B7-24A4-4ABB-A898-64A2F896F295}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ship_Hull_Ambience" ID="{EFE92793-9769-4AD4-968A-55FB772248A0}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_20" ID="{B221ADF3-E0A2-4ADE-A578-9F5A8C68AF08}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Screamer_Idle" ID="{C6E97B91-117B-4AFC-9F69-B2EA17A4C346}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Xeno_Monologue_07" ID="{D7DEBCEC-C830-4B47-8781-E9D503E039E9}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>

@@ -102,7 +102,6 @@
 						<CurrentStateRef Name="None" ID="{4BB3579F-CBDD-4EC9-8632-BE2A52475590}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Bridge" ID="{AAF06D30-BC32-45DC-8344-8A118EE30AB1}"/>
 						<CurrentSwitchRef Name="Metal" ID="{0AE16BA4-4F92-405F-896B-E4248D5C088B}"/>
 						<CurrentSwitchRef Name="Level_1" ID="{F4FEC03C-1CDD-41AF-9D6D-2249E46B5BF1}"/>
 					</CurrentSwitchList>

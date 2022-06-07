@@ -144,7 +144,6 @@ public class EventManager : MonoBehaviour
         boss = GameObject.Find("Boss");
 
 
-        AkSoundEngine.PostEvent("Play_Ambience", player);
         AkSoundEngine.PostEvent("Play_Music", player);
 
     }

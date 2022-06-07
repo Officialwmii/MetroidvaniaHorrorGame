@@ -80,7 +80,7 @@ public class Pickup : MonoBehaviour
                 //Numericall upgrades
                 case UpgradeType.StunCooldown:
                     EventManager.UpgradeStunGun();
-                    AkSoundEngine.PostEvent("JetpackRefill", col.gameObject);
+                    AkSoundEngine.PostEvent("Jetpack_Refill", col.gameObject);
                     EventManager.sub("Stun Repluser Expansion - Energy Cooldown Reduction #"+ EventManager.stunUpgrade+", duration " + EventManager.CooldownTime + "s.", 3f);
                     break;
                 case UpgradeType.MaxFuel: // Not used
@@ -88,7 +88,7 @@ public class Pickup : MonoBehaviour
                     break;
                 case UpgradeType.MaxGranade:
                     EventManager.UpgradeMaxGrenade();
-                    AkSoundEngine.PostEvent("JetpackRefill", col.gameObject);
+                    AkSoundEngine.PostEvent("Jetpack_Refill", col.gameObject);
                     EventManager.sub("Grenade slot -Increase maximum cryo grenade capacity +1.", 3f);
                     break;
 
@@ -105,16 +105,20 @@ public class Pickup : MonoBehaviour
 
                 // Ability upgrades
                 case UpgradeType.GainAbilityJetpack:
+                    AkSoundEngine.PostEvent("Grenade_Upgrade", col.gameObject);
                     EventManager.GainAbilityJetpack();
                     break;
                 case UpgradeType.GainAbilityArmour:
+                    AkSoundEngine.PostEvent("Grenade_Upgrade", col.gameObject);
                     EventManager.GainAbilityArmour();
                     break;
                 case UpgradeType.GainAbilityRocketLauncher:
+                    AkSoundEngine.PostEvent("Grenade_Upgrade", col.gameObject);
                     EventManager.GainAbilityRocketLauncher();
                     break;
                 case UpgradeType.GainAbilityFuelRefill:
                     EventManager.GainAbilityFuelRefill();
+                    AkSoundEngine.PostEvent("Grenade_Upgrade", col.gameObject);
                     EventManager.sub("Fuel recovery module acquired - Regenerates fuel on the ground.", 3f);
                     break;
                 case UpgradeType.ConstalationKey:
@@ -124,7 +128,7 @@ public class Pickup : MonoBehaviour
                 case UpgradeType.RefillStation:
                     EventManager.RefillFuel(); DestroyObject = false;
                     EventManager.sub("Fuel Restored", 1f);
-                    AkSoundEngine.PostEvent("JetpackRefill", col.gameObject);
+                    AkSoundEngine.PostEvent("Jetpack_Refill", col.gameObject);
                     break;
                 case UpgradeType.StartingRoom:
                     EventManager.StartingRoom(); DestroyObject = false;

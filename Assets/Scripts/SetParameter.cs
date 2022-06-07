@@ -13,6 +13,7 @@ public class SetParameter : MonoBehaviour
     public AK.Wwise.State playerState;
     public AK.Wwise.State musicState;
     public AK.Wwise.State musicSegment;
+    public AK.Wwise.Switch noiseMeterLevel;
 
     public bool timeAttack = false;
     public bool escaped = false;
@@ -37,6 +38,13 @@ public class SetParameter : MonoBehaviour
         noiseMeter.SetGlobalValue(dangerMeter.GetComponent<UnityEngine.UI.Slider>().value);
         healthBar.SetGlobalValue(player.life);
         jetpackFuel.SetGlobalValue(fuel.GetComponent<UnityEngine.UI.Slider>().value);
+
+
+
+        if (dangerMeter.GetComponent<UnityEngine.UI.Slider>().value < 20f)
+        {
+            
+        }
 
 
         /*if(stateCalled == false)

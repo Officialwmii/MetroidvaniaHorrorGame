@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb08f29e2aae4016abb85ee54b66c1b, type: 3}
+  m_Name: 5E3E24B7-074F-47B7-9A2C-83774513BA27
+  m_EditorClassIdentifier: 
+  objectName: Play_Escape_Pod_Ambience
+  id: 2505135486
+  guid: 5E3E24B7-074F-47B7-9A2C-83774513BA27

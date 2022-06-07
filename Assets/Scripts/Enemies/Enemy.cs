@@ -165,7 +165,7 @@ public class Enemy : MonoBehaviour {
 		capsule.size = new Vector2(1f, 0.25f);
 		capsule.offset = new Vector2(0f, -0.8f);
 		capsule.direction = CapsuleDirection2D.Horizontal;
-		if (!crawler)
+		if (crawler == false)
 		{
 			AkSoundEngine.PostEvent("Infected_Death", enemy);
 		}
