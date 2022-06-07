@@ -586,6 +586,7 @@ MonoBehaviour:
   doorOpened: {fileID: 11400000, guid: 1796b1bf1c4de4bf88bc185119058fe8, type: 2}
   SFXOpen: {fileID: 8300000, guid: 881457ce73bbcf84caa9d723794815c2, type: 3}
   SFXClose: {fileID: 8300000, guid: 772972ea3704dec4fab2c9a69964c262, type: 3}
+  SFXCantEnter: {fileID: 8300000, guid: f019b96c22c183c4fa05914e39065462, type: 3}
   doorType: 1
 --- !u!61 &5124778580734193240
 BoxCollider2D:

@@ -15,6 +15,8 @@ public class Attack : MonoBehaviour
 	public GameObject cam;
 	public GameObject Grenade;
 	public GameObject player;
+	public AudioClip SFXDenial;
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -37,7 +39,11 @@ public class Attack : MonoBehaviour
 			StartCoroutine(AttackCooldown());
 		}*/
 
-		if (Input.GetButtonDown("Stun") && EventManager.canUseStun == true && canAttack)
+		if (Input.GetButtonDown("Stun") && (EventManager.canUseStun == false || canAttack == false)) {
+			AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position);
+		}
+
+			if (Input.GetButtonDown("Stun") && EventManager.canUseStun == true && canAttack)
 		{
 
 			animator.SetBool("IsShooting", true);
@@ -46,6 +52,12 @@ public class Attack : MonoBehaviour
 			canAttack = false;
 			StartCoroutine(AttackCooldown());
 		}
+
+		if (Input.GetButtonDown("Grenade") && EventManager.grenades <= 0) {
+
+			AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position);
+		}
+
 
 		if (Input.GetButtonDown("Grenade") && EventManager.grenades>0)
 		{

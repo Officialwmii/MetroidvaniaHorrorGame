@@ -14,7 +14,7 @@ public class GravityDoorTrigger : MonoBehaviour
 
     public AudioClip SFXOpen;
     public AudioClip SFXClose;
-    
+    public AudioClip SFXCantEnter;
 
     public  enum DoorType
     {
@@ -55,6 +55,8 @@ public class GravityDoorTrigger : MonoBehaviour
             {
                 shipAIAnnouncementClosed.Post(col.gameObject);
                 SubtitlesText.instance.SetSubtitle(doorClosed.subtitle, doorClosed.duration);
+                GetComponent<AudioSource>().clip = SFXCantEnter;
+                GetComponent<AudioSource>().Play();  
             }
             //Debug.Log("open door");
 
@@ -67,7 +69,8 @@ public class GravityDoorTrigger : MonoBehaviour
         {
            animator.SetBool("Opening", false);
 
-            if(doorType == DoorType.ZeroGravity){
+            if(doorType == DoorType.ZeroGravity && EventManager.HasArmour)
+            {
                 GetComponent<AudioSource>().clip = SFXClose;
                 GetComponent<AudioSource>().Play();
 

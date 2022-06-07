@@ -562,6 +562,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   Grenade: {fileID: 0}
   player: {fileID: 1377240496476148}
+  SFXDenial: {fileID: 8300000, guid: 5429011ff33095743a12568a560a4b76, type: 3}
 --- !u!114 &114145887554720856
 MonoBehaviour:
   m_ObjectHideFlags: 0

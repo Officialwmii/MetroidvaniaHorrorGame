@@ -5,6 +5,9 @@ using UnityEngine;
 public class LowGravityEffect : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public AudioClip SFXEnter;
+
     void Start()
     {
         
@@ -23,6 +26,10 @@ public class LowGravityEffect : MonoBehaviour
         {
             Debug.Log("Low gravity");
             col.GetComponent<PlayerMovement>().variableGravity= 0.25f;
+            AudioSource.PlayClipAtPoint(SFXEnter, col.gameObject.transform.position);
+
+
+
         }
     }
 
@@ -31,6 +38,7 @@ public class LowGravityEffect : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             col.GetComponent<PlayerMovement>().variableGravity = 2f;
+            //AudioSource.PlayClipAtPoint(SFXExits, col.gameObject.transform.position);
 
 
 
