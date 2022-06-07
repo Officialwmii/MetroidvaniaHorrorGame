@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 1914831492010572265}
   - component: {fileID: 7017016742175851537}
   - component: {fileID: 2861043723350808202}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Audio Events
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8561798947067966758
 Transform:
   m_ObjectHideFlags: 0
