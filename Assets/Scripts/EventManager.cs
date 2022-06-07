@@ -143,7 +143,8 @@ public class EventManager : MonoBehaviour
 
 
         AkSoundEngine.PostEvent("Play_Ambience", player);
-        
+        AkSoundEngine.PostEvent("Play_Music", player);
+
     }
 
     // Update is called once per frame
@@ -216,18 +217,42 @@ public class EventManager : MonoBehaviour
 
         switch (Mathf.RoundToInt(RandomLine))
         {
-            case 1: sub("loneliness is the cancer that grows in the hearts of all brains", 5f); break;
-            case 2: sub("dare to dream a nightmare from which you wouldn?t want to wake up", 5f); break;
-            case 3: sub("feed your own tail to your own mouth again and again and again and again", 5f); break;
-            case 4: sub("we are what we are and what we are is the cosmic recursion", 5f); break;
-            case 5: sub("even the smallest speck plays its part", 5f); break;
-            case 6: sub("they trusted you", 1f); break;
-            case 7: sub("in the eternal dark scream your screams and we will whisper you to sleep", 5f); break;
-            case 8: sub("that which does not end cannot end that which does not end", 5f); break;
-            case 9: sub("open your eyes to find that your eyes were already open", 5f); break;
-            case 10: sub("you cannot wake up you are not asleep", 2f); break;
-            case 11: sub("O the curse of recursion!", 2f); break;
-            case 12: sub("void your shells. cease your lives.", 2f); break;
+            case 1: sub("loneliness is the cancer that grows in the hearts of all brains", 5f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_02", player);
+                break;
+            case 2: sub("dare to dream a nightmare from which you wouldn?t want to wake up", 5f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_03", player);
+                break;
+            case 3: sub("feed your own tail to your own mouth again and again and again and again", 5f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_04", player);
+                break;
+            case 4: sub("we are what we are and what we are is the cosmic recursion", 5f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_05", player);
+                break;
+            case 5: sub("even the smallest speck plays its part", 5f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_06", player);
+                break;
+            case 6: sub("they trusted you", 1f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_07", player);
+                break;
+            case 7: sub("in the eternal dark scream your screams and we will whisper you to sleep", 5f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_08", player);
+                break;
+            case 8: sub("that which does not end cannot end that which does not end", 5f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_09", player);
+                break;
+            case 9: sub("open your eyes to find that your eyes were already open", 5f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_10", player);
+                break;
+            case 10: sub("you cannot wake up you are not asleep", 2f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_11", player);
+                break;
+            case 11: sub("O the curse of recursion!", 2f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_14", player);
+                break;
+            case 12: sub("void your shells. cease your lives.", 2f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_15", player);
+                break;
         }
     }
 
