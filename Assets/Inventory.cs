@@ -74,14 +74,14 @@ public class Inventory : MonoBehaviour
     private void OnEnable()
     {
         Debug.Log("Gets active.");
-        Health.GetComponent<TMP_Text>().text = ": " + ((EventManager.MaxLives - 4) * 3 + EventManager.LifeShards) + "/15 " + (EventManager.MaxLives) + " HP";
-        Fuel.GetComponent<TMP_Text>().text = ": " + ((EventManager.MaxFuel - 50)/10) + "/10 +" + (EventManager.MaxFuel) + " Fuel";
-        Cryo.GetComponent<TMP_Text>().text = ": " + ((EventManager.MaxGrenades-2)) + "/3 Cryo G." ;
-        Logs.GetComponent<TMP_Text>().text = ": " + ((EventManager.AudioLog )) + "/5 " + " Logs";
-        Artifacts.GetComponent<TMP_Text>().text = ": " + ((EventManager.Collectables-EventManager.AudioLog)) + "/5 " + " Alien Artifacts";
-        Keys.GetComponent<TMP_Text>().text = ": " + (EventManager.ConstalationsKeysAcquired) + "/3 " + " Con.P.";
-        Stun.GetComponent<TMP_Text>().text = ": " + ((EventManager.stunUpgrade-1 )) + "/5 " +EventManager.CooldownTime +"s Stun";
-        Refill.GetComponent<TMP_Text>().text = ": " + (EventManager.FuelRefillNumberOfUpgrades-1)  + "/5 +" +  " Refill";
+        Health.GetComponent<TMP_Text>().text = "" + ((EventManager.MaxLives - 4) * 3 + EventManager.LifeShards) + "/15 " + (EventManager.MaxLives) + " HP";
+        Fuel.GetComponent<TMP_Text>().text = "" + ((EventManager.MaxFuel - 50)/10) + "/10 " + (EventManager.MaxFuel) + " Fuel";
+        Cryo.GetComponent<TMP_Text>().text = "" + ((EventManager.MaxGrenades-2)) + "/3 Cryo G." ;
+        Logs.GetComponent<TMP_Text>().text = "" + ((EventManager.AudioLog )) + "/5 " + " Logs";
+        Artifacts.GetComponent<TMP_Text>().text = "" + ((EventManager.Collectables-EventManager.AudioLog)) + "/5 " + " Alien Artifacts";
+        Keys.GetComponent<TMP_Text>().text = "" + (EventManager.ConstalationsKeysAcquired) + "/3 " + " Con. P.";
+        Stun.GetComponent<TMP_Text>().text = "" + ((EventManager.stunUpgrade-1 )) + "/5 " +EventManager.CooldownTime +"s Stun";
+        Refill.GetComponent<TMP_Text>().text = "" + (EventManager.FuelRefillNumberOfUpgrades-1)  + "/5 +" +  " Refill";
 
 
         //Keys

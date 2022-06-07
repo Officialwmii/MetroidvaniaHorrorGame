@@ -425,6 +425,7 @@ GameObject:
   - component: {fileID: 528434529}
   - component: {fileID: 528434530}
   - component: {fileID: 528434531}
+  - component: {fileID: 16453732285732907}
   m_Layer: 1
   m_Name: Player
   m_TagString: Player
@@ -496,6 +497,7 @@ MonoBehaviour:
   particleJetpack: {fileID: 1980178223}
   DashTrail: {fileID: 2062988029}
   JetpackTrail: {fileID: 553462433}
+  player: {fileID: 0}
   OnFallEvent:
     m_PersistentCalls:
       m_Calls:
@@ -538,6 +540,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  gameState: {fileID: 0}
 --- !u!114 &114435281327171648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,6 +838,14 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!81 &16453732285732907
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377240496476148}
+  m_Enabled: 1
 --- !u!1 &1393053470196254
 GameObject:
   m_ObjectHideFlags: 0
