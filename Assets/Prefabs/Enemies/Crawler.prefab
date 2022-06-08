@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1914831492010572265}
   - component: {fileID: 7017016742175851537}
   - component: {fileID: 2861043723350808202}
-  m_Layer: 1
+  m_Layer: 3
   m_Name: Audio Events
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 826529193392231162}
   - component: {fileID: 807242336929141194}
   - component: {fileID: 779311044678612238}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Crawler
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   life: 10
   turnLayerMask:
     serializedVersion: 2
-    m_Bits: 513
+    m_Bits: 769
   speed: 5
   isInvincible: 0
   Exploadable: 1
@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 833263741300592438}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 833200837642659382}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

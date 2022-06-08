@@ -24,7 +24,14 @@ public class BossPhaseTimer : MonoBehaviour
         if (timer <= trigger_time)
         {
             director.Play();
+           
             timer = phase_timer;
+
+            // testing rotating, and it doesn't work that well
+           // var euler = transform.eulerAngles;
+           // euler.z = Random.Range(0.0f, 360.0f);
+           // transform.eulerAngles = euler;
+
         }
     }
 }
