@@ -8,6 +8,7 @@ TagManager:
   - Jumpthrough
   - Liptank
   - tilemap
+  - Crate
   layers:
   - Default
   - TransparentFX
