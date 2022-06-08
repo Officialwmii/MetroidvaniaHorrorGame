@@ -73,7 +73,7 @@ public class Screamer : MonoBehaviour {
 		if (onAlert)
 		{
 			animator.SetBool("HasNoticed", true);
-			Attack.Post(screamer);
+			//Attack.Post(screamer);
 		}
 
         else if (!onAlert)
