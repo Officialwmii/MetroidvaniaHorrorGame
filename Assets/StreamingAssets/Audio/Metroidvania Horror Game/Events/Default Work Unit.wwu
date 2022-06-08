@@ -1073,6 +1073,20 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Stop_Screaming" ID="{B977D28B-B749-4630-BA5E-B3A37C4ACEC5}">
+									<ChildrenList>
+										<Action Name="" ID="{077D2C92-E8A3-4103-8110-B75835EE40B9}" ShortID="134434067">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Screamer Screeching" ID="{3736F616-FE76-4728-9707-DA6BA7A484FA}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Event Name="Constalation_Key" ID="{D10499D7-29C5-4CC0-B109-6DC4553D2E0C}">
