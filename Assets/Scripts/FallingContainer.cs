@@ -24,6 +24,9 @@ public class FallingContainer : MonoBehaviour
             this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         
         }
+
+        if (collision.gameObject.tag == "Crate")
+        { Destroy(gameObject); }
     }
 
         }
