@@ -34,7 +34,7 @@ public class ThrowableWeapon : MonoBehaviour
 		{
 
 			if(StunGun) collision.gameObject.SendMessage("Stun", 5f);
-			else collision.gameObject.SendMessage("ApplyDamage", Mathf.Sign(direction.x) * 30f);
+			else collision.gameObject.SendMessage("ApplyDamage", Mathf.Sign(direction.x) * 50f);
 
 			Destroy(gameObject);
 			GameObject NewParticle = Instantiate(particles, gameObject.transform.position, Quaternion.identity);

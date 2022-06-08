@@ -24,7 +24,7 @@ public class BossHead : MonoBehaviour
         {
             
             collision.gameObject.SendMessage("ApplyDamage", -damageAmount);
-            Debug.Log("I hurt");
+            //Debug.Log("I hurt");
 
         }
         else if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "tilemap" || collision.gameObject.tag == "Jumpthrough")

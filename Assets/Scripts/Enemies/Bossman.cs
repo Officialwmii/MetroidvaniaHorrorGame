@@ -169,7 +169,10 @@ public class Bossman : MonoBehaviour
 	}
 
 	public void Stun(float StunDuration) {
-		StartCoroutine(StunTime(StunDuration));
+
+		ApplyDamage(30f);
+
+		//StartCoroutine(StunTime(StunDuration));
 	}
 	IEnumerator StunTime(float _StunDuration){
 		isStunned = true;
