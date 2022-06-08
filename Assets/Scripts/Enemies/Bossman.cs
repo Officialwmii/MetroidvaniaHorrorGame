@@ -80,14 +80,15 @@ public class Bossman : MonoBehaviour
 			idle.Post(boss);
         }
 
-		if (life <= 0)
+		if (life <= 0 && transform.GetComponent<Animator>().GetBool("BossDead")==false)
 		{
 			transform.GetComponent<Animator>().SetBool("BossDead", true);
 			StartCoroutine(DestroyEnemy());
 		}
 
-		isPlat = Physics2D.OverlapCircle(fallCheck.position, .2f, 1 << LayerMask.NameToLayer("Default"));
-		isObstacle = Physics2D.OverlapCircle(wallCheck.position, .2f, turnLayerMask);
+		//the boss doesn't move so we don't need this
+		//isPlat = Physics2D.OverlapCircle(fallCheck.position, .2f, 1 << LayerMask.NameToLayer("Default"));
+		//isObstacle = Physics2D.OverlapCircle(wallCheck.position, .2f, turnLayerMask);
 
 
 		//if (!isHitted && life > 0 && Mathf.Abs(rb.velocity.y) < 0.5f)
@@ -116,12 +117,13 @@ public class Bossman : MonoBehaviour
 		{
 			playerDetectable = true;
 			transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0);
-			
-			if (player.transform.position.x > transform.position.x && facingRight) 
-				Flip();
-			if (player.transform.position.x < transform.position.x && !facingRight)
-				Flip();
 
+			if (player.transform.position.x > transform.position.x && facingRight)
+				//	Flip();
+				;
+				if (player.transform.position.x < transform.position.x && !facingRight)
+					//Flip(); 
+					;
 
 		}
 		else
@@ -183,6 +185,30 @@ public class Bossman : MonoBehaviour
 
 	}
 
+	public void Frozen()
+	{
+
+		//GameObject FrozenCorpse = Instantiate(FrozenEnemy, transform.position, Quaternion.identity);
+		//Physics2D.IgnoreCollision(FrozenCorpse.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+
+		//Destroy(gameObject);
+
+		if (isInvincible == false) { ApplyDamage(100); StartCoroutine(FrozenTime());}
+	}
+
+
+	IEnumerator FrozenTime()
+	{
+		isHitted = true;
+		isInvincible = true;
+		transform.GetComponent<Animator>().SetBool("Frozen", true);
+
+		yield return new WaitForSeconds(1f);
+		isHitted = false;
+		isInvincible = false;
+
+		transform.GetComponent<Animator>().SetBool("Frozen", false);
+	}
 
 
 	void OnCollisionStay2D(Collision2D collision)

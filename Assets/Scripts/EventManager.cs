@@ -309,6 +309,7 @@ public class EventManager : MonoBehaviour
             AlertTimerFont.SetActive(true);
             AlertSound.SetActive(true);
             AkSoundEngine.PostEvent("Xeno_Death", boss);
+            AkSoundEngine.PostEvent("SHIP_SYSTEM_ANNOUNCEMENT_11", boss);
 
             StartPosition = StartPositionBoss;
 
