@@ -185,7 +185,8 @@ public class EventManager : MonoBehaviour
 
             if (TriggerCooldownSoundOnce == false)
             {
-                AkSoundEngine.PostEvent("Jetpack_Upgrade", player);
+                //disabeling temp recharge sound
+                //AkSoundEngine.PostEvent("Jetpack_Upgrade", player);
                 TriggerCooldownSoundOnce = true;
             }
         }
