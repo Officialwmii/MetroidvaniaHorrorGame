@@ -18828,6 +18828,11 @@ MonoBehaviour:
   speed: 5
   isInvincible: 0
   onAlert: 0
+  boss: {fileID: 0}
+  idle:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!212 &4109069180127268440
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33976,6 +33981,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9075371018857037055, guid: 97744294c912f334d96487b141400b3e, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2235644163067800543, guid: 97744294c912f334d96487b141400b3e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 97744294c912f334d96487b141400b3e, type: 3}
@@ -34071,6 +34080,10 @@ PrefabInstance:
     - target: {fileID: 7154381175383738594, guid: 97744294c912f334d96487b141400b3e, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9075371018857037055, guid: 97744294c912f334d96487b141400b3e, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2235644163067800543, guid: 97744294c912f334d96487b141400b3e, type: 3}
@@ -34171,6 +34184,10 @@ PrefabInstance:
     - target: {fileID: 7154381175383738594, guid: 97744294c912f334d96487b141400b3e, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9075371018857037055, guid: 97744294c912f334d96487b141400b3e, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2235644163067800543, guid: 97744294c912f334d96487b141400b3e, type: 3}
@@ -34329,6 +34346,10 @@ PrefabInstance:
     - target: {fileID: 7154381175383738594, guid: 97744294c912f334d96487b141400b3e, type: 3}
       propertyPath: m_Color.r
       value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 9075371018857037055, guid: 97744294c912f334d96487b141400b3e, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2235644163067800543, guid: 97744294c912f334d96487b141400b3e, type: 3}
@@ -35432,6 +35453,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9075371018857037055, guid: 97744294c912f334d96487b141400b3e, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2235644163067800543, guid: 97744294c912f334d96487b141400b3e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 97744294c912f334d96487b141400b3e, type: 3}
@@ -35927,6 +35952,10 @@ PrefabInstance:
     - target: {fileID: 7154381175383738594, guid: 97744294c912f334d96487b141400b3e, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9075371018857037055, guid: 97744294c912f334d96487b141400b3e, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2235644163067800543, guid: 97744294c912f334d96487b141400b3e, type: 3}
@@ -36823,6 +36852,10 @@ PrefabInstance:
     - target: {fileID: 7154381175383738594, guid: 97744294c912f334d96487b141400b3e, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9075371018857037055, guid: 97744294c912f334d96487b141400b3e, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2235644163067800543, guid: 97744294c912f334d96487b141400b3e, type: 3}
@@ -37761,6 +37794,10 @@ PrefabInstance:
     - target: {fileID: 7154381175383738594, guid: 97744294c912f334d96487b141400b3e, type: 3}
       propertyPath: m_Color.r
       value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 9075371018857037055, guid: 97744294c912f334d96487b141400b3e, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2235644163067800543, guid: 97744294c912f334d96487b141400b3e, type: 3}
