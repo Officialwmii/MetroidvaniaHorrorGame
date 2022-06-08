@@ -31,5 +31,13 @@ public class CheatManager : MonoBehaviour
             EventManager.ConstalationsKeysAcquired = 3;
 
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha5) && Input.GetKeyDown(KeyCode.Alpha6) && Input.GetKeyDown(KeyCode.Alpha7)) {
+            EventManager.GetAllUpgrades();
+
+
+
+        }
+
     }
 }

@@ -70,7 +70,7 @@ public class EventManager : MonoBehaviour
     static public float FuelRefillTreshold = 0.25f;
     static public float FuelRefillSpeed = 2.5f;
 
-    static public int MainUpgradesAcquired= 0;
+    static public int MainUpgradesAcquired = 0;
     static public int ConstalationsKeysAcquired = 0;
 
     static private GameObject player;
@@ -163,9 +163,9 @@ public class EventManager : MonoBehaviour
         Cursor.visible = false;
 
         //stun cooldown
-        if (StunCooldown <= 100* CooldownTime)
+        if (StunCooldown <= 100 * CooldownTime)
         {
-            StunCooldown = StunCooldown + Time.deltaTime*100;
+            StunCooldown = StunCooldown + Time.deltaTime * 100;
 
             UpdateCooldown();
             //Debug.Log(StunCooldown);
@@ -192,26 +192,26 @@ public class EventManager : MonoBehaviour
         }
         else { TriggerCooldownSoundOnce = false; }
 
-        
+
 
         //AlertAddingDanger();
         AutomaticallyReduceDanger();
 
         //if (Input.GetKeyDown(KeyCode.PageDown)) { OnBossCompleted(); }
-        if (EscapeSequence) 
+        if (EscapeSequence)
         {
             AlertTimer = AlertTimer - Time.deltaTime;
-            AlertTimerFont.GetComponent<TMP_Text>().text = 
-                Mathf.FloorToInt(AlertTimer / 60).ToString("D2") + ":"+ 
+            AlertTimerFont.GetComponent<TMP_Text>().text =
+                Mathf.FloorToInt(AlertTimer / 60).ToString("D2") + ":" +
                 Mathf.FloorToInt(AlertTimer % 60).ToString("D2") + ":" +
-                (Mathf.FloorToInt((AlertTimer % 1)*100)).ToString("D2");
+                (Mathf.FloorToInt((AlertTimer % 1) * 100)).ToString("D2");
             if (AlertTimer <= 0) { SceneManager.LoadScene("Credits"); ; EscapeSequence = false; }
 
             if (AlertTimer <= (180 - 3) && AudioPlayEscapePodInitiated == false)
             {
                 AkSoundEngine.PostEvent("SHIP_SYSTEM_ANNOUNCEMENT_11", boss);
                 sub("WARNING INITIATING SCUTTLE PROTOCOL", 2f);
-                AudioPlayEscapePodInitiated = true; 
+                AudioPlayEscapePodInitiated = true;
             }
 
             if (AlertTimer <= 180 - 6)
@@ -226,7 +226,7 @@ public class EventManager : MonoBehaviour
 
             alienTimer = 0;
 
-            float randomNumber = Random.Range(0f,300f);
+            float randomNumber = Random.Range(0f, 300f);
 
             //Debug.Log(randomNumber);
             //randomNumber = 1;
@@ -243,11 +243,11 @@ public class EventManager : MonoBehaviour
 
     }
 
-    public static void AddMapSegment(){ MapProgress++;}
+    public static void AddMapSegment() { MapProgress++; }
 
-   // public static void PlayDenialSound() {
+    // public static void PlayDenialSound() {
 
-     //   ThisGameObject.GetComponent<AudioSource>.play();
+    //   ThisGameObject.GetComponent<AudioSource>.play();
 
     //}
 
@@ -315,18 +315,31 @@ public class EventManager : MonoBehaviour
 
     static public void OnBossCompleted() {
 
-        if(EscapeSequence == false) { 
+        if (EscapeSequence == false) {
             EscapeSequence = true;
             AlertWarning.SetActive(true);
             Elevator.SetActive(false);
             AlertTimerFont.SetActive(true);
             AkSoundEngine.PostEvent("Xeno_Death", boss);
-            
+
             StartPosition = StartPositionBoss;
 
             Destroy(EscapePodDoor);
 
         }
+    }
+
+    static public void GetAllUpgrades()
+    {
+        for (int i = 0; i < 5; i++) UpgradeStunGun();
+        for (int i = 0; i < 5; i++) GainAbilityFuelRefill();
+        for (int i = 0; i < 10; i++) HealthPickup();
+        for (int i = 0; i < 10; i++) GrenadePickup();
+        for (int i = 0; i < 10; i++) FuelPickup();
+        for (int i = 0; i < 3; i++) GainConstalationKey();
+        GainAbilityJetpack();
+        GainAbilityArmour();
+        GainAbilityRocketLauncher();
     }
 
     static public void UpgradeStunGun() {
