@@ -26291,7 +26291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb0872d4e304b1b458ffa4f71694c715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheatPickupGroup: {fileID: 0}
   Player: {fileID: 0}
   CheatPlayerSpawn: {fileID: 0}
 --- !u!1 &7124186239808568067
