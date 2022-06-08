@@ -95,6 +95,7 @@ public class EventManager : MonoBehaviour
 
     static private GameObject AlertSound;
 
+    static private bool AudioPlayEscapePodInitiated;
 
     // Start is called before the first frame update
     void Start()
@@ -196,7 +197,7 @@ public class EventManager : MonoBehaviour
         //AlertAddingDanger();
         AutomaticallyReduceDanger();
 
-        if (Input.GetKeyDown(KeyCode.PageDown)) { OnBossCompleted(); }
+        //if (Input.GetKeyDown(KeyCode.PageDown)) { OnBossCompleted(); }
         if (EscapeSequence) 
         {
             AlertTimer = AlertTimer - Time.deltaTime;
@@ -205,6 +206,18 @@ public class EventManager : MonoBehaviour
                 Mathf.FloorToInt(AlertTimer % 60).ToString("D2") + ":" +
                 (Mathf.FloorToInt((AlertTimer % 1)*100)).ToString("D2");
             if (AlertTimer <= 0) { SceneManager.LoadScene("Credits"); ; EscapeSequence = false; }
+
+            if (AlertTimer <= (180 - 3) && AudioPlayEscapePodInitiated == false)
+            {
+                AkSoundEngine.PostEvent("SHIP_SYSTEM_ANNOUNCEMENT_11", boss);
+                sub("WARNING INITIATING SCUTTLE PROTOCOL", 2f);
+                AudioPlayEscapePodInitiated = true; 
+            }
+
+            if (AlertTimer <= 180 - 6)
+            {
+                AlertSound.SetActive(true);
+            }
         }
 
         if (CurrentDangerLevel == 0) alienTimer = alienTimer + Time.deltaTime;
@@ -308,12 +321,10 @@ public class EventManager : MonoBehaviour
             Elevator.SetActive(false);
             AlertTimerFont.SetActive(true);
             AkSoundEngine.PostEvent("Xeno_Death", boss);
-            AkSoundEngine.PostEvent("SHIP_SYSTEM_ANNOUNCEMENT_11", boss);
-
+            
             StartPosition = StartPositionBoss;
 
             Destroy(EscapePodDoor);
-            AlertSound.SetActive(true);
 
         }
     }
