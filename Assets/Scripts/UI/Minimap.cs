@@ -11,7 +11,8 @@ public class Minimap : MonoBehaviour
     void Start()
     {
         this.GetComponent<Renderer>().enabled = false;
-
+        //EventManager.AddMapSegment();
+        //Debug.Log(EventManager.MapProgress);
     }
 
     // Update is called once per frame
