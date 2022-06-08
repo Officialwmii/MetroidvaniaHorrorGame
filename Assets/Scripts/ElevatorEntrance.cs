@@ -32,12 +32,13 @@ public class ElevatorEntrance : MonoBehaviour
             if (goingUp)
             {
                 AkSoundEngine.PostEvent("Elevator_Up", player);
-                AkSoundEngine.PostEvent("SHIP_SYSTEM_ANNOUNCEMENT_4", player);
+                
+                //AkSoundEngine.PostEvent("SHIP_SYSTEM_ANNOUNCEMENT_4", player);
             }
             else
             {
                 AkSoundEngine.PostEvent("Elevator_Down", player);
-                AkSoundEngine.PostEvent("SHIP_SYSTEM_ANNOUNCEMENT_5", player);
+                //AkSoundEngine.PostEvent("SHIP_SYSTEM_ANNOUNCEMENT_5", player);
             }
         }
     }
