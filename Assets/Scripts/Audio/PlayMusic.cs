@@ -17,4 +17,13 @@ public class PlayMusic : MonoBehaviour
     {
         playMusic.Post(player);
     }
+    void OnDestroy() { StopGameplayMusic(); }
+
+    public void StopGameplayMusic()
+    {
+        Debug.Log("stopmusci");
+        playMusic.Stop(player);
+    }
+
 }
+

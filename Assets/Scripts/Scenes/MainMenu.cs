@@ -16,15 +16,15 @@ public class MainMenu : MonoBehaviour
     public void BackToMenu()
     {
         // Use this when scenes are added to the queue in the build settings
-        SceneManager.LoadScene(0);
-        // SceneManager.LoadScene("Main Menu");
+        //SceneManager.LoadScene(0);
+         SceneManager.LoadScene("Main Menu");
     }
 
     public void Credits()
     {
         // Use this when scenes are added to the queue in the build settings
-        SceneManager.LoadScene(2);
-        // SceneManager.LoadScene("Credits");
+        //SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Credits");
     }
 
     public void QuitGame ()
