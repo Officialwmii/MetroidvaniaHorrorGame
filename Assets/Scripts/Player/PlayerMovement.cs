@@ -64,10 +64,9 @@ public class PlayerMovement : MonoBehaviour {
 			}
 		}
 		//JETPACK
-		if (Input.GetButtonDown("Jetpack")&&EventManager.HasDoubleJetpack)
+		if (Input.GetButtonDown("Jetpack"))
         {
 			holdJetpack = true;
-
         }
 		if (Input.GetButtonUp("Jetpack"))
         {
@@ -78,7 +77,6 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetButtonDown("Dash"))
 		{
 			dash = true;
-			AkSoundEngine.PostEvent("Jetpack_Dash", player);
 		}
 
 		/*if (Input.GetAxisRaw("Dash") == 1 || Input.GetAxisRaw("Dash") == -1) //RT in Unity 2017 = -1, RT in Unity 2019 = 1

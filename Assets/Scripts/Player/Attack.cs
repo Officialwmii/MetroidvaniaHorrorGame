@@ -40,7 +40,7 @@ public class Attack : MonoBehaviour
 		}*/
 
 		if (Input.GetButtonDown("Stun") && (EventManager.canUseStun == false || canAttack == false)) {
-			AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position);
+			AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position, 0.1f);
 		}
 
 			if (Input.GetButtonDown("Stun") && EventManager.canUseStun == true && canAttack)
@@ -55,7 +55,7 @@ public class Attack : MonoBehaviour
 
 		if (Input.GetButtonDown("Grenade") && EventManager.grenades <= 0) {
 
-			AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position);
+			AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position,0.1f);
 		}
 
 

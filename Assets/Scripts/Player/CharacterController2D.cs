@@ -72,6 +72,8 @@ public class CharacterController2D : MonoBehaviour
 
 	public SetParameter gameState;
 
+	private AudioClip SFXDenial;
+
 	private void Awake()
 	{
 		startLife = life;
@@ -84,7 +86,7 @@ public class CharacterController2D : MonoBehaviour
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
-
+		SFXDenial = GetComponent<Attack>().SFXDenial;
 
 	}
 
@@ -162,6 +164,9 @@ public class CharacterController2D : MonoBehaviour
 		m_Rigidbody2D.gravityScale = gravity;   // Variable jump height is achievemed by lowering the player's gravity for a period of time. 
 		//Debug.Log(gravity);
 		if (canMove) {
+
+			if (dash && EventManager.HasJetpack == false) AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position, 0.1f);
+
 			if (dash && canDash && !isWallSliding && EventManager.canUseDash && EventManager.HasJetpack)
 			{
 				//m_Rigidbody2D.AddForce(new Vector2(transform.localScale.x * m_DashForce, 0f));
@@ -171,7 +176,6 @@ public class CharacterController2D : MonoBehaviour
 			// If crouching, check to see if the character can stand up
 			if (isDashing)
 			{
-
 
 				if (MultiDirectionalDashing) {
 
@@ -191,8 +195,6 @@ public class CharacterController2D : MonoBehaviour
 				else {
 					m_Rigidbody2D.velocity = new Vector2(transform.localScale.x * m_DashForce, 0);
 				}
-
-				
 
 			}
 			//only control the player if grounded or airControl is turned on
@@ -235,20 +237,18 @@ public class CharacterController2D : MonoBehaviour
 				particleJumpDown.Play();
 				particleJumpUp.Play();
 			}
-            if (!m_Grounded && holdJetpack && EventManager.canUseJetpack)
-           
-			{
+
+			if (holdJetpack && EventManager.canUseJetpack == false) { AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position, 0.1f); }
+
+			if (!m_Grounded && holdJetpack && EventManager.canUseJetpack){
+
 				m_Rigidbody2D.AddForce(new Vector2(0, m_JetpackForce));
 				EventManager.UseJetpack();
 				//particleJetpack.GetComponent<ParticleSystem>().Play();
 				JetpackTrail.GetComponent<TrailRenderer>().emitting = true;
-
-
 			}
-			if ((holdJetpack == false || EventManager.canUseJetpack == false))
-			{
-				JetpackTrail.GetComponent<TrailRenderer>().emitting = false;
-			}
+
+			if (holdJetpack == false || EventManager.canUseJetpack == false){ JetpackTrail.GetComponent<TrailRenderer>().emitting = false;}
 
 			else if (!m_Grounded && jump && canDoubleJump && !isWallSliding)
 			{
@@ -257,7 +257,6 @@ public class CharacterController2D : MonoBehaviour
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce / 1.2f));
 				animator.SetBool("IsDoubleJumping", true);
 			}
-
 
 			else if (m_IsWall && !m_Grounded && WallSlideAbilityActive)
 			{
@@ -366,6 +365,7 @@ public class CharacterController2D : MonoBehaviour
 		isDashing = true;
 		canDash = false;
 		DashTrail.GetComponent<TrailRenderer>().emitting = true;
+		AkSoundEngine.PostEvent("Jetpack_Dash", player);
 
 		yield return new WaitForSeconds(0.1f);
 		isDashing = false;
@@ -452,8 +452,6 @@ public class CharacterController2D : MonoBehaviour
 
 		life = startLife;
 		EventManager.SetHP(life);
-
-
 	}
 
 }

@@ -89,6 +89,9 @@ public class EventManager : MonoBehaviour
     public static int MapProgress = 0;
     public static float Timer = 0;
 
+    static private GameObject ThisGameObject;
+
+    static private bool TriggerCooldownSoundOnce = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -142,7 +145,7 @@ public class EventManager : MonoBehaviour
         AlertTimerFont.SetActive(false);
 
         boss = GameObject.Find("Boss");
-
+        ThisGameObject = GameObject.Find("EventManager");
     }
 
     // Update is called once per frame
@@ -167,11 +170,20 @@ public class EventManager : MonoBehaviour
 
 
         //fuel refill upgrade
-        if (HasFuelRefill && (Fuel < MaxFuel * FuelRefillTreshold || Fuel<15) && CharacterController2D.m_Grounded==true) {
+        if (HasFuelRefill && (Fuel < MaxFuel * FuelRefillTreshold || Fuel < 15) && CharacterController2D.m_Grounded == true)
+        {
             Fuel = Fuel + Time.deltaTime * FuelRefillSpeed;
-            AkSoundEngine.PostEvent("Jetpack_Upgrade", player);
             UpdateFuel();
+
+            if (TriggerCooldownSoundOnce == false)
+            {
+                AkSoundEngine.PostEvent("Jetpack_Upgrade", player);
+                TriggerCooldownSoundOnce = true;
+            }
         }
+        else { TriggerCooldownSoundOnce = false; }
+
+        
 
         //AlertAddingDanger();
         AutomaticallyReduceDanger();
@@ -210,12 +222,13 @@ public class EventManager : MonoBehaviour
 
     }
 
-    public static void AddMapSegment()
-    {
+    public static void AddMapSegment(){ MapProgress++;}
 
-        MapProgress++;
+   // public static void PlayDenialSound() {
 
-    }
+     //   ThisGameObject.GetComponent<AudioSource>.play();
+
+    //}
 
     static public void AlienInnerMonologue() {
 
@@ -277,11 +290,7 @@ public class EventManager : MonoBehaviour
     static public void sub(string text, float duration) {
 
         SubtitlesText.instance.SetSubtitle(text, duration);
-
-
     }
-
-
 
     static public void OnBossCompleted() {
 
@@ -353,8 +362,6 @@ public class EventManager : MonoBehaviour
         if (Lives >= MaxLives) { Lives = MaxLives; }
 
         UpdateLives();
-
-
     }
 
     static public void UpdateGrenades(){
@@ -516,7 +523,6 @@ public class EventManager : MonoBehaviour
     }
     static public void GainConstalationKey() { ConstalationsKeysAcquired++; }
     static public void GoToCredits() { SceneManager.LoadScene("EndSequence"); }
-
     static public void OnRespawning() {
 
         if (grenades <= 0) { grenades = 1; UpdateGrenades(); } 

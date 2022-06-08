@@ -28,6 +28,7 @@ public class Pickup : MonoBehaviour
     public UpgradeType upgradeType;
     private bool DestroyObject;
     private GameObject particles;
+    public AudioClip SFXDenial;
 
     // Start is called before the first frame update
     void Start()
@@ -63,11 +64,13 @@ public class Pickup : MonoBehaviour
                 case UpgradeType.GrenadeResource:
                     if (EventManager.grenades == EventManager.MaxGrenades) {
                         EventManager.sub("No room for any more Cryo grenades.", 2f);
-                        DestroyObject = false;}
+                        DestroyObject = false;
+                        AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position, 0.1f);
+                    }
                     else
-                    {EventManager.sub("Cryo Grenade - +1 grenade. Freezes unprotected lifeforms.", 3f);}
+                    {EventManager.sub("Cryo Grenade - +1 grenade. Freezes unprotected lifeforms.", 3f); EventManager.GrenadePickup(); }
                     
-                    EventManager.GrenadePickup();
+
                     break;
                 case UpgradeType.HealthPack:
                     string temptext = "Health pack - Recover 1 health. " +(EventManager.LifeShards+1) +" / 3 rations.";
@@ -101,7 +104,6 @@ public class Pickup : MonoBehaviour
                 case UpgradeType.AudioLogPickup:
                     EventManager.AudioLogPickup(subtitles);
                     break;
-
 
                 // Ability upgrades
                 case UpgradeType.GainAbilityJetpack:

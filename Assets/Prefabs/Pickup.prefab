@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subtitles: {fileID: 0}
   upgradeType: 0
+  SFXDenial: {fileID: 8300000, guid: 5429011ff33095743a12568a560a4b76, type: 3}
 --- !u!61 &2862989420647916126
 BoxCollider2D:
   m_ObjectHideFlags: 0
