@@ -170,6 +170,8 @@ public class Screamer : MonoBehaviour {
 		EventManager.Calm();
 		playerDetectable = false;
 		//IsQuietEvent.Invoke();
+		Attack.Stop(screamer);
+
 
 	}
 	IEnumerator StunTime(float _StunDuration)
@@ -188,6 +190,8 @@ public class Screamer : MonoBehaviour {
 		Physics2D.IgnoreCollision(FrozenCorpse.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
 
 		Destroy(gameObject);
+		Attack.Stop(screamer);
+
 	}
 
 
