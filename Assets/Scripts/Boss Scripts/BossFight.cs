@@ -95,6 +95,7 @@ public class BossFight : MonoBehaviour
             Phase_6.SetActive(false);
             End_Phase.SetActive(true);
             EventManager.OnBossCompleted();
+            Debug.Log("Boss hp 0");
 
 
         }

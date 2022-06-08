@@ -18,21 +18,12 @@ public class Minimap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (ShowMap.showMap && active)
-        {
-
-            this.GetComponent<Renderer>().enabled = true;
-
-        }
-        else {
-
-            this.GetComponent<Renderer>().enabled = false;
-
-        }
-
+        if ((ShowMap.showMap && active)||EventManager.CheatMapVisibility)
+        { this.GetComponent<Renderer>().enabled = true; }
+        
+        else 
+        { this.GetComponent<Renderer>().enabled = false; }
     }
-
 
     void OnTriggerEnter2D(Collider2D col)
     {

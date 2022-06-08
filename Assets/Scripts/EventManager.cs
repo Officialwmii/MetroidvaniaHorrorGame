@@ -95,9 +95,9 @@ public class EventManager : MonoBehaviour
 
     static private GameObject AlertSound;
 
-    static private bool AudioPlayEscapePodInitiated;
+    static private bool AudioPlayEscapePodInitiated = false;
+    static public bool CheatMapVisibility = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         life1 = GameObject.Find("HP1");
@@ -153,7 +153,6 @@ public class EventManager : MonoBehaviour
         ThisGameObject = GameObject.Find("EventManager");
         AlertSound = GameObject.Find("AlertSound");
         AlertSound.SetActive(false);
-
 
     }
 
@@ -316,6 +315,7 @@ public class EventManager : MonoBehaviour
     static public void OnBossCompleted() {
 
         if (EscapeSequence == false) {
+            Debug.Log("escape sequence");
             EscapeSequence = true;
             AlertWarning.SetActive(true);
             Elevator.SetActive(false);
@@ -333,6 +333,7 @@ public class EventManager : MonoBehaviour
     {
         for (int i = 0; i < 5; i++) UpgradeStunGun();
         for (int i = 0; i < 5; i++) GainAbilityFuelRefill();
+        for (int i = 0; i < 3; i++) UpgradeMaxGrenade();
         for (int i = 0; i < 10; i++) HealthPickup();
         for (int i = 0; i < 10; i++) GrenadePickup();
         for (int i = 0; i < 10; i++) FuelPickup();
@@ -340,6 +341,13 @@ public class EventManager : MonoBehaviour
         GainAbilityJetpack();
         GainAbilityArmour();
         GainAbilityRocketLauncher();
+    }
+
+    static public void cheatShowAllTheMap() {
+
+        if (!CheatMapVisibility) { CheatMapVisibility = true; }
+        else { CheatMapVisibility = false; }
+
     }
 
     static public void UpgradeStunGun() {

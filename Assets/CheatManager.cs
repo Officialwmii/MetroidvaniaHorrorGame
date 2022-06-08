@@ -34,10 +34,11 @@ public class CheatManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha5) && Input.GetKeyDown(KeyCode.Alpha6) && Input.GetKeyDown(KeyCode.Alpha7)) {
             EventManager.GetAllUpgrades();
-
-
-
         }
+
+        if(Input.GetKeyDown(KeyCode.Alpha2) && Input.GetKeyDown(KeyCode.Alpha3) && Input.GetKeyDown(KeyCode.Alpha4))
+        { EventManager.cheatShowAllTheMap(); }
+
 
     }
 }
