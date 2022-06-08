@@ -175,7 +175,7 @@ public class Liptank : MonoBehaviour
 	}
 
 	public void Stun(float StunDuration) {
-		StartCoroutine(StunTime(StunDuration));
+		StartCoroutine(StunTime(StunDuration/5));
 	}
 	IEnumerator StunTime(float _StunDuration){
 		isStunned = true;
