@@ -36,6 +36,7 @@ public class Bossman : MonoBehaviour
 
 	public AK.Wwise.Event idle;
 
+	private int grenadeReducedDamage;
 
 	void Awake()
 	{
@@ -172,7 +173,7 @@ public class Bossman : MonoBehaviour
 
 	public void Stun(float StunDuration) {
 
-		ApplyDamage(30f);
+		ApplyDamage(20f);
 
 		//StartCoroutine(StunTime(StunDuration));
 	}
@@ -193,7 +194,19 @@ public class Bossman : MonoBehaviour
 
 		//Destroy(gameObject);
 
-		if (isInvincible == false) { ApplyDamage(100); StartCoroutine(FrozenTime());}
+
+
+
+		if (isInvincible == false) {
+
+			grenadeReducedDamage++;
+			if (grenadeReducedDamage == 1) ApplyDamage(75);
+			if (grenadeReducedDamage == 2) ApplyDamage(60);
+			if (grenadeReducedDamage == 3) ApplyDamage(50);
+			if (grenadeReducedDamage == 4) ApplyDamage(25);
+			if (grenadeReducedDamage >= 5) ApplyDamage(10);
+
+			StartCoroutine(FrozenTime());}
 	}
 
 

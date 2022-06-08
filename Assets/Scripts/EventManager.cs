@@ -307,16 +307,16 @@ public class EventManager : MonoBehaviour
             AlertWarning.SetActive(true);
             Elevator.SetActive(false);
             AlertTimerFont.SetActive(true);
-            AlertSound.SetActive(true);
             AkSoundEngine.PostEvent("Xeno_Death", boss);
             AkSoundEngine.PostEvent("SHIP_SYSTEM_ANNOUNCEMENT_11", boss);
 
             StartPosition = StartPositionBoss;
 
             Destroy(EscapePodDoor);
+            AlertSound.SetActive(true);
+
         }
     }
-
 
     static public void UpgradeStunGun() {
         AkSoundEngine.PostEvent("Stun_Gun_Upgrade", player);
