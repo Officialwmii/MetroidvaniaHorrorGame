@@ -111,8 +111,8 @@ public class EventManager : MonoBehaviour
         grenade1 = GameObject.Find("grenade1");
         grenade2 = GameObject.Find("grenade2");
         grenade3 = GameObject.Find("grenade3");
-        grenade5 = GameObject.Find("grenade4");
-        grenade4 = GameObject.Find("grenade5");
+        grenade4 = GameObject.Find("grenade4");
+        grenade5 = GameObject.Find("grenade5");
 
         MaxGrenade1 = GameObject.Find("MaxGrenade1");
         MaxGrenade2 = GameObject.Find("MaxGrenade2");
