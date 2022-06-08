@@ -184,7 +184,7 @@ public class EventManager : MonoBehaviour
                 Mathf.FloorToInt(AlertTimer / 60).ToString("D2") + ":"+ 
                 Mathf.FloorToInt(AlertTimer % 60).ToString("D2") + ":" +
                 (Mathf.FloorToInt((AlertTimer % 1)*100)).ToString("D2");
-            if (AlertTimer <= 0) { EventManager.GoToCredits(); EscapeSequence = false; }
+            if (AlertTimer <= 0) { SceneManager.LoadScene("Credits"); ; EscapeSequence = false; }
         }
 
         if (CurrentDangerLevel == 0) alienTimer = alienTimer + Time.deltaTime;
@@ -285,17 +285,18 @@ public class EventManager : MonoBehaviour
 
     static public void OnBossCompleted() {
 
-        EscapeSequence = true;
-        AlertWarning.SetActive(true);
-        Elevator.SetActive(false);
-        AlertTimerFont.SetActive(true);
+        if(EscapeSequence == false) { 
+            EscapeSequence = true;
+            AlertWarning.SetActive(true);
+            Elevator.SetActive(false);
+            AlertTimerFont.SetActive(true);
 
-        AkSoundEngine.PostEvent("Xeno_Death", boss);
+            AkSoundEngine.PostEvent("Xeno_Death", boss);
 
-        StartPosition = StartPositionBoss;
+            StartPosition = StartPositionBoss;
 
-        Destroy(EscapePodDoor);
-
+            Destroy(EscapePodDoor);
+        }
     }
 
 

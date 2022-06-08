@@ -111,6 +111,7 @@ public class Enemy : MonoBehaviour {
 			rb.velocity = Vector2.zero;
 			rb.AddForce(new Vector2(direction * 500f, 100f));
 			StartCoroutine(HitTime());
+			if (Exploadable) EventManager.AddDanger(15);
 		}
 	}
 
@@ -145,7 +146,7 @@ public class Enemy : MonoBehaviour {
 		{
 			collision.gameObject.GetComponent<CharacterController2D>().ApplyDamage(-damageAmount);
 
-			if (Exploadable){ ApplyDamage(2000); EventManager.AddDanger(15); }
+			if (Exploadable){ ApplyDamage(2000);  }
 
 		}
 	}

@@ -71,7 +71,7 @@ public class Pickup : MonoBehaviour
                     break;
                 case UpgradeType.HealthPack:
                     string temptext = "Health pack - Recover 1 health. " +(EventManager.LifeShards+1) +" / 3 rations.";
-                    if (EventManager.LifeShards == 2) temptext = temptext + "+1 health point.";
+                    if (EventManager.LifeShards == 2) temptext = temptext + " +1 health point.";
                     EventManager.sub(temptext, 3f);
                     AkSoundEngine.PostEvent("Health_Pickup", col.gameObject);
                     EventManager.HealthPickup();
