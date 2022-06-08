@@ -165,7 +165,7 @@ public class CharacterController2D : MonoBehaviour
 		//Debug.Log(gravity);
 		if (canMove) {
 
-			if (dash && EventManager.HasJetpack == false) AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position, 0.1f);
+			if (dash && (EventManager.HasJetpack == false || EventManager.canUseDash == false )) AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position, 0.1f);
 
 			if (dash && canDash && !isWallSliding && EventManager.canUseDash && EventManager.HasJetpack)
 			{
