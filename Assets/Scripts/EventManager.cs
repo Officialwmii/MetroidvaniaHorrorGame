@@ -92,6 +92,10 @@ public class EventManager : MonoBehaviour
     static private GameObject ThisGameObject;
 
     static private bool TriggerCooldownSoundOnce = false;
+
+    static private GameObject AlertSound;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -146,6 +150,10 @@ public class EventManager : MonoBehaviour
 
         boss = GameObject.Find("Boss");
         ThisGameObject = GameObject.Find("EventManager");
+        AlertSound = GameObject.Find("AlertSound");
+        AlertSound.SetActive(false);
+
+
     }
 
     // Update is called once per frame
@@ -188,7 +196,7 @@ public class EventManager : MonoBehaviour
         //AlertAddingDanger();
         AutomaticallyReduceDanger();
 
-        //if (Input.GetKeyDown(KeyCode.PageDown)) { OnBossCompleted(); }
+        if (Input.GetKeyDown(KeyCode.PageDown)) { OnBossCompleted(); }
         if (EscapeSequence) 
         {
             AlertTimer = AlertTimer - Time.deltaTime;
@@ -299,7 +307,7 @@ public class EventManager : MonoBehaviour
             AlertWarning.SetActive(true);
             Elevator.SetActive(false);
             AlertTimerFont.SetActive(true);
-
+            AlertSound.SetActive(true);
             AkSoundEngine.PostEvent("Xeno_Death", boss);
 
             StartPosition = StartPositionBoss;
