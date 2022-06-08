@@ -120,7 +120,7 @@ public class Inventory : MonoBehaviour
                 Mathf.FloorToInt(EventManager.Timer / 60).ToString("D2") + ":" +
                 Mathf.FloorToInt(EventManager.Timer % 60).ToString("D2");
 
-        Map.GetComponent<TMP_Text>().text = "Map: "+ ((float)Mathf.FloorToInt(EventManager.MapProgress/4*100)/100)+"%";
+        Map.GetComponent<TMP_Text>().text = "Map: "+ ((float)Mathf.FloorToInt(EventManager.MapProgress/396)*100)+"%";
         Debug.Log(EventManager.MapProgress);
 
     }
