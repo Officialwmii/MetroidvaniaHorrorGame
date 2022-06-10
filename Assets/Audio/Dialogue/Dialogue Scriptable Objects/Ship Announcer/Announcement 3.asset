@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Announcement 3
   m_EditorClassIdentifier: 
   clip: {fileID: 0}
-  subtitle: ESCAPE POD UNLOCKED
-  duration: 5
+  subtitle: CONSTALATION PROTOCOL REQUIRED
+  duration: 2
