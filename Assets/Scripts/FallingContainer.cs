@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class FallingContainer : MonoBehaviour
 {
+
+    private GameObject BrokenCreate;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        BrokenCreate = GameObject.Find("BrokenCreate");
+        BrokenCreate.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -26,7 +31,10 @@ public class FallingContainer : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "Crate")
-        { Destroy(gameObject); }
+        { Destroy(gameObject);
+            BrokenCreate.SetActive(true);
+            BrokenCreate.GetComponent<AudioSource>().Play();
+        }
     }
 
-        }
+}
