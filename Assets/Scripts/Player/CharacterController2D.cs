@@ -96,6 +96,8 @@ public class CharacterController2D : MonoBehaviour
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
 
+		
+
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -131,7 +133,7 @@ public class CharacterController2D : MonoBehaviour
 			prevVelocityX = m_Rigidbody2D.velocity.x;
 		}
 
-		if (limitVelOnWallJump)
+		if (limitVelOnWallJump&& WallSlideAbilityActive)
 		{
 			if (m_Rigidbody2D.velocity.y < -0.5f)
 				limitVelOnWallJump = false;
@@ -318,6 +320,10 @@ public class CharacterController2D : MonoBehaviour
 				if (DoubleJumpAbilityActive) canDoubleJump = true;
 			}
 		}
+
+		//if (m_Grounded) { m_Rigidbody2D.sharedMaterial.friction = 1f; }
+		//else { m_Rigidbody2D.sharedMaterial.friction = 0f; }
+
 	}
 
 
