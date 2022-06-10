@@ -3,12 +3,52 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Music" ID="{3E5D4BDC-CD65-42A5-B08D-0A53D5809338}">
+				<Event Name="Play_Music_Gameplay" ID="{3E5D4BDC-CD65-42A5-B08D-0A53D5809338}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
+						<Action Name="" ID="{A503052B-F5D4-4E94-BA06-CD8726486F2D}" ShortID="23874547">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gameplay" ID="{237D4A90-E503-4C0E-90B8-9903D0B9DBD2}" WorkUnitID="{5D906649-5363-408C-B39D-AA3DF0B3E71E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4BBF7D48-1AAF-404A-934D-96E12D5B51C9}" ShortID="324998972">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Alive" ID="{10522CB0-52A3-4E42-B1E1-0CA2C975F816}" WorkUnitID="{5D906649-5363-408C-B39D-AA3DF0B3E71E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5F99933F-6BAC-41D1-B3C6-614FDA270162}" ShortID="646066805">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Start" ID="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}" WorkUnitID="{5D906649-5363-408C-B39D-AA3DF0B3E71E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BC515A75-AEBC-4583-909D-12A0D294D416}" ShortID="549047653">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Silent" ID="{C0AB1866-64C3-4CF2-8BAB-5CA886D86167}" WorkUnitID="{F5C71EC7-FBF4-4E46-9445-B7648D67EA2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{19A803B5-7F18-4545-B492-25AD0F37ED09}" ShortID="423750409">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -1102,6 +1142,56 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Music_Main_Menu" ID="{90C49C69-74D1-4693-B1E2-890C9C3C1941}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{2E39FC0A-D095-4ED5-B7D0-D50CA443031C}" ShortID="946734723">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main_Menu" ID="{1CE6CB78-5BBB-44D3-878E-1BE4E83038E5}" WorkUnitID="{5D906649-5363-408C-B39D-AA3DF0B3E71E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{56ED3EEF-7E8A-4FCA-AE71-2B2C34F7ADD9}" ShortID="288448531">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Silent_Space_Music" ID="{FEA8C2FE-EC05-4DCD-96E3-5DE7EC78D12F}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Credits" ID="{6F033B7B-25FC-455B-9F00-75384213278F}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{996EEAD0-3526-41C2-B239-95E9C76C79E8}" ShortID="403774599">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Credits" ID="{2D795328-8802-4398-931F-C4B993FE4951}" WorkUnitID="{5D906649-5363-408C-B39D-AA3DF0B3E71E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F9DCC939-AEF3-4212-9C2C-406B0F3AC8A3}" ShortID="61569599">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Silent_Space_Music" ID="{FEA8C2FE-EC05-4DCD-96E3-5DE7EC78D12F}" WorkUnitID="{B15C134B-AE5F-4653-8739-529510C7A6E0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -10,20 +10,29 @@ public class PlayMusic : MonoBehaviour
 
     void Start()
     {
-        PlayGameplayMusic();
+        
     }
 
     public void PlayGameplayMusic()
     {
         playMusic.Post(player);
     }
-    void OnDestroy() { StopGameplayMusic(); }
+    void OnDestroy()
+    {
+        StopGameplayMusic();
+    }
 
     public void StopGameplayMusic()
     {
-        Debug.Log("stopmusci");
+        Debug.Log("stopmusic");
         playMusic.Stop(player);
     }
 
-}
+    public void StartBaseMusic()
+    {
+        AkSoundEngine.SetState("Player_State", "Alive");
+        AkSoundEngine.SetState("Music_State", "Gameplay");
+        AkSoundEngine.SetState("Music_Segments", "Start");
+    }
 
+}

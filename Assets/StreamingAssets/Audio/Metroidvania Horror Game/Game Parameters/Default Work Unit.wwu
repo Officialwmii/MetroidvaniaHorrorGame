@@ -23,6 +23,7 @@
 						<GameParameter Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="Jetpack_Fuel" ID="{764CD0BC-123E-459D-B959-FA6512EEBA0E}">

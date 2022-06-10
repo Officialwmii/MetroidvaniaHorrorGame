@@ -48,7 +48,9 @@ namespace AK
         static const AkUniqueID PLAY_ESCAPE_POD_AMBIENCE = 2505135486U;
         static const AkUniqueID PLAY_HALLWAY_AMBIENCE = 3648364775U;
         static const AkUniqueID PLAY_MEDBAY_AMBIENCE = 2963757099U;
-        static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_MUSIC_CREDITS = 4121310008U;
+        static const AkUniqueID PLAY_MUSIC_GAMEPLAY = 1182046178U;
+        static const AkUniqueID PLAY_MUSIC_MAIN_MENU = 3968446557U;
         static const AkUniqueID PLAY_SHIP_HULL_AMBIENCE = 3569999937U;
         static const AkUniqueID PLAY_WAREHOUSE_AMBIENCE = 2853390822U;
         static const AkUniqueID PLAY_XENO_AMBIENCE = 3109796241U;
@@ -83,6 +85,7 @@ namespace AK
         static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_20 = 1348318558U;
         static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_21 = 1348318559U;
         static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_22 = 1348318556U;
+        static const AkUniqueID STOP_SCREAMING = 4191195101U;
         static const AkUniqueID STUN_GUN_COOLDOWN = 708622098U;
         static const AkUniqueID STUN_GUN_FIRE = 1876963445U;
         static const AkUniqueID STUN_GUN_UPGRADE = 2455087587U;

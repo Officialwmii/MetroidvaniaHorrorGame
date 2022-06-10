@@ -12,6 +12,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1069991569	Noise_Meter_Fill			\Default Work Unit\SFX\UI\Noise_Meter_Fill	
 	1077976377	Elevator_Up			\Default Work Unit\SFX\Environment\Elevator_Up	
 	1098479049	Liptank_Idle			\Default Work Unit\SFX\Enemies\Liptank\Liptank_Idle	
+	1182046178	Play_Music_Gameplay			\Default Work Unit\Play_Music_Gameplay	
 	1201273840	Audio_Log_3			\Default Work Unit\Dialogue\Audio Logs\Audio_Log_3	
 	1201273841	Audio_Log_2			\Default Work Unit\Dialogue\Audio Logs\Audio_Log_2	
 	1201273842	Audio_Log_1			\Default Work Unit\Dialogue\Audio Logs\Audio_Log_1	
@@ -65,7 +66,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2793513639	Liptank_Attack			\Default Work Unit\SFX\Enemies\Liptank\Liptank_Attack	
 	2853390822	Play_Warehouse_Ambience			\Default Work Unit\SFX\Ambience\Play_Warehouse_Ambience	
 	2896864154	Elevator_Down			\Default Work Unit\SFX\Environment\Elevator_Down	
-	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	2963757099	Play_Medbay_Ambience			\Default Work Unit\SFX\Ambience\Play_Medbay_Ambience	
 	3025607975	Liptank_Death			\Default Work Unit\SFX\Enemies\Liptank\Liptank_Death	
 	3075738884	Glob_Idle			\Default Work Unit\SFX\Enemies\Glob_Idle	
@@ -88,8 +88,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	3790999965	SHIP_SYSTEM_ANNOUNCEMENT_5			\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_5	
 	3790999966	SHIP_SYSTEM_ANNOUNCEMENT_6			\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_6	
 	3790999967	SHIP_SYSTEM_ANNOUNCEMENT_7			\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_7	
+	3968446557	Play_Music_Main_Menu			\Default Work Unit\Play_Music_Main_Menu	
 	4035040332	Jetpack_Dash			\Default Work Unit\SFX\Player\Movement\Jetpack_Dash	
 	4062170604	Jetpack_Upgrade			\Default Work Unit\SFX\Player\Movement\Jetpack_Upgrade	
+	4121310008	Play_Music_Credits			\Default Work Unit\Play_Music_Credits	
+	4191195101	Stop_Screaming			\Default Work Unit\SFX\Enemies\Stop_Screaming	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	21751588	Noise_Meter_Level			\Default Work Unit\Noise_Meter_Level	
