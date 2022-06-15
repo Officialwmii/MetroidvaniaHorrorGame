@@ -1140,6 +1140,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Easter_Egg_Jumpscare" ID="{10384272-6921-4F11-A280-3F253D0A8398}">
+							<ChildrenList>
+								<Action Name="" ID="{B9CE88FD-FD4E-4C92-A342-D61F97BF1F01}" ShortID="848673095">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Easter Egg Jumpscare" ID="{8C7A4A8D-1B4C-4DFF-90B0-AD3197A51F4C}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_Music_Main_Menu" ID="{90C49C69-74D1-4693-B1E2-890C9C3C1941}">

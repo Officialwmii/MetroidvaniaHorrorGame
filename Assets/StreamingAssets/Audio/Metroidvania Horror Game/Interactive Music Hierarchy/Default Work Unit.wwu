@@ -192,11 +192,6 @@
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="77"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>10</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -284,21 +279,26 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
-										<RTPC Name="" ID="{7DE8ED66-AA6D-4EE3-8D44-3D01EE494FB6}" ShortID="1019604462">
+										<RTPC Name="" ID="{A00172F0-A8BE-46B9-9B8A-C8343465B161}" ShortID="796576834">
 											<ReferenceList>
 												<Reference Name="ControlInput">
 													<ObjectRef Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}" WorkUnitID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}"/>
 												</Reference>
 											</ReferenceList>
-											<Curve Name="" ID="{8CD04FC9-7A2E-4D37-AE3D-2B4BFFC4A0D1}">
+											<Curve Name="" ID="{BF8DAE7A-D451-408F-B77E-E0477EB2BE6C}">
 												<PropertyList>
 													<Property Name="Flags" Type="int32" Value="3"/>
 												</PropertyList>
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-14</YPos>
+														<YPos>-200</YPos>
 														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.1</XPos>
+														<YPos>-6</YPos>
+														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>1</XPos>
@@ -1780,21 +1780,26 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
-										<RTPC Name="" ID="{134F9DAB-B0FC-4918-B95C-BBE59C45E51A}" ShortID="514044547">
+										<RTPC Name="" ID="{B0D2B436-CAF2-4D73-850E-805D77F8A57C}" ShortID="103489021">
 											<ReferenceList>
 												<Reference Name="ControlInput">
 													<ObjectRef Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}" WorkUnitID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}"/>
 												</Reference>
 											</ReferenceList>
-											<Curve Name="" ID="{AC7621DE-8CA7-4431-A16C-1A3729152894}">
+											<Curve Name="" ID="{C31E340D-4902-49DB-9EC3-CD75335D6B15}">
 												<PropertyList>
 													<Property Name="Flags" Type="int32" Value="3"/>
 												</PropertyList>
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-14</YPos>
+														<YPos>-200</YPos>
 														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.1</XPos>
+														<YPos>-6</YPos>
+														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>1</XPos>
@@ -3388,21 +3393,26 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
-										<RTPC Name="" ID="{0051E100-F4E4-4294-86A5-CAF2154ABA76}" ShortID="2943697">
+										<RTPC Name="" ID="{55BB6DC1-A77B-42A2-9D90-8640095C0AE1}" ShortID="447901058">
 											<ReferenceList>
 												<Reference Name="ControlInput">
 													<ObjectRef Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}" WorkUnitID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}"/>
 												</Reference>
 											</ReferenceList>
-											<Curve Name="" ID="{44BC08FF-8C49-4F6E-B8C6-BA3911A53CB0}">
+											<Curve Name="" ID="{BD2FE583-F7B2-468A-A2F3-0FBB3ACD10D1}">
 												<PropertyList>
 													<Property Name="Flags" Type="int32" Value="3"/>
 												</PropertyList>
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-14</YPos>
+														<YPos>-200</YPos>
 														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.1</XPos>
+														<YPos>-6</YPos>
+														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>1</XPos>
@@ -6371,6 +6381,11 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
+														<XPos>0.1</XPos>
+														<YPos>-6</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
 														<XPos>1</XPos>
 														<YPos>0</YPos>
 														<Flags>37</Flags>
@@ -7741,21 +7756,26 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
-										<RTPC Name="" ID="{7BD6C81E-CFAA-41F6-B1CA-F08FEAF2DF3D}" ShortID="98673573">
+										<RTPC Name="" ID="{AA006F94-01D0-4609-BFBA-3A04A1787A18}" ShortID="708679829">
 											<ReferenceList>
 												<Reference Name="ControlInput">
 													<ObjectRef Name="Noise_Meter" ID="{606131D3-2B65-4CE3-AD45-940650947DC2}" WorkUnitID="{58CE2026-FEE7-431E-9E67-7F5E73B7C0D5}"/>
 												</Reference>
 											</ReferenceList>
-											<Curve Name="" ID="{88E73C56-92E2-485A-B660-BFEBE7289BD5}">
+											<Curve Name="" ID="{C76180E2-CC3F-4B50-B02A-68F25AD95339}">
 												<PropertyList>
 													<Property Name="Flags" Type="int32" Value="3"/>
 												</PropertyList>
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-14</YPos>
+														<YPos>-200</YPos>
 														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.1</XPos>
+														<YPos>-6</YPos>
+														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>1</XPos>

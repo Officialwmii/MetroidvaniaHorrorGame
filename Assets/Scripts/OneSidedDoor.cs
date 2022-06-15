@@ -51,6 +51,8 @@ public class OneSidedDoor : MonoBehaviour
 
                 case DoorType.Credits:
                     AkSoundEngine.PostEvent("Escape_Pod_Sequence", col.gameObject);
+                    AkSoundEngine.PostEvent("Play_Bridge_Ambience", col.gameObject);
+                    // Play Cutscene sequence Audio
                     EventManager.GoToCredits();
                     break;
                     

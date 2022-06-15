@@ -3715,6 +3715,11 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -4584,7 +4589,7 @@
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>4</Value>
+														<Value>2</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4855,6 +4860,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="sfx_enemie_xeno-encephalon_attack_through_surface_1" ID="{7F6A3507-46DE-43F2-A708-A8AD4B4B21E9}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.31561996779388"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.00161030595813"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>sfx_enemie_xeno-encephalon_attack_through_surface_1.wav</AudioFile>
 															<MediaIDList>
@@ -4878,6 +4888,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="sfx_enemie_xeno-encephalon_attack_through_surface_2" ID="{EB42E52B-9133-455E-8464-C14B258235B9}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.969404186795491"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.01288244766506"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>sfx_enemie_xeno-encephalon_attack_through_surface_2.wav</AudioFile>
 															<MediaIDList>
@@ -4901,6 +4916,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="sfx_enemie_xeno-encephalon_attack_through_surface_3" ID="{23E7F0FA-55C9-423B-A0DF-D9FA62392F81}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.901771336553945"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.01288244766506"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>sfx_enemie_xeno-encephalon_attack_through_surface_3.wav</AudioFile>
 															<MediaIDList>
@@ -6290,7 +6310,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-16</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -6324,11 +6344,6 @@
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -6393,11 +6408,6 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-8</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -6460,11 +6470,6 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-12</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -6525,11 +6530,6 @@
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -6597,11 +6597,6 @@
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -6679,11 +6674,6 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-12</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -6759,13 +6749,12 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Folder Name="Screamer" ID="{16AE6DEE-4640-4150-9A23-1640098DA426}" ShortID="464203533"/>
 								<ActorMixer Name="Audio Logs" ID="{88864E5F-8E3F-4A34-AE3C-EDC7C0398486}" ShortID="260213249">
 									<PropertyList>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-13</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -7347,7 +7336,7 @@
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -7804,134 +7793,12 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
-								<ActorMixer Name="Enemies" ID="{FF09EC4A-9B76-47AE-BAB0-01A23FB118EB}" ShortID="759183119">
-									<PropertyList>
-										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-8</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="Enemies" ID="{FD8C7B6F-E296-4B5F-9F69-0B1CE2129740}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="Infected Sequence" ID="{9ABD1D06-CC4C-4C86-B406-59B7922230A8}" ShortID="921300402">
-											<PropertyList>
-												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="SFX" ID="{A6993C3C-F08B-47C7-A798-9F27B5C1EC09}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
-												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="Dialogue_Bus" ID="{725B5DE9-3B81-4AB0-AC1B-1B1351D8620F}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SwitchContainer Name="Infected Switch Container" ID="{00524FCA-5A83-4F4E-B318-0AF6BE3D2428}" ShortID="437182297">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
-														</Reference>
-														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Alive" ID="{10522CB0-52A3-4E42-B1E1-0CA2C975F816}" WorkUnitID="{5D906649-5363-408C-B39D-AA3DF0B3E71E}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
-														</Reference>
-														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="Player_State" ID="{30D0CF07-04A9-4175-BB31-F5DF8F44B3CF}" WorkUnitID="{5D906649-5363-408C-B39D-AA3DF0B3E71E}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<RandomSequenceContainer Name="Infected Dies" ID="{269E26CB-6BA1-4044-AFC9-E76AA94FFE98}" ShortID="834533211">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
-																</Reference>
-															</ReferenceList>
-															<ObjectLists/>
-														</RandomSequenceContainer>
-														<RandomSequenceContainer Name="Infected Kills" ID="{6F6F3E69-1ABE-465B-958D-7E0402DD2084}" ShortID="219781011">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
-																</Reference>
-															</ReferenceList>
-															<ObjectLists/>
-														</RandomSequenceContainer>
-													</ChildrenList>
-													<ObjectLists/>
-													<GroupingInfo>
-														<GroupingBehaviorList>
-															<GroupingBehavior>
-																<ItemRef Name="Infected Kills" ID="{6F6F3E69-1ABE-465B-958D-7E0402DD2084}"/>
-															</GroupingBehavior>
-															<GroupingBehavior>
-																<ItemRef Name="Infected Dies" ID="{269E26CB-6BA1-4044-AFC9-E76AA94FFE98}"/>
-															</GroupingBehavior>
-														</GroupingBehaviorList>
-													</GroupingInfo>
-												</SwitchContainer>
-												<RandomSequenceContainer Name="Infected Idle Ambience" ID="{F51E6000-5D6E-4013-9C4F-0933FA7A05AB}" ShortID="688071191">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
-														</Reference>
-													</ReferenceList>
-													<ObjectLists/>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Infected Alerted" ID="{A8CB9892-8C84-4BC3-96C3-F05CF8421EBA}" ShortID="209902180">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{465A04D4-DC64-4C4B-A75D-DE083142843D}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AB53585-20A1-4BC7-8C0E-CF7198A0E1C6}"/>
-														</Reference>
-													</ReferenceList>
-													<ObjectLists/>
-												</RandomSequenceContainer>
-											</ChildrenList>
-											<ObjectLists/>
-											<Playlist>
-												<ItemRef Name="Infected Idle Ambience" ID="{F51E6000-5D6E-4013-9C4F-0933FA7A05AB}"/>
-												<ItemRef Name="Infected Alerted" ID="{A8CB9892-8C84-4BC3-96C3-F05CF8421EBA}"/>
-												<ItemRef Name="Infected Switch Container" ID="{00524FCA-5A83-4F4E-B318-0AF6BE3D2428}"/>
-											</Playlist>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<ObjectLists/>
-								</ActorMixer>
 								<ActorMixer Name="Ship AI" ID="{58B7A0EE-7CCA-49C6-BAB7-3560BDD64811}" ShortID="69759056">
 									<PropertyList>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-13</Value>
+												<Value>-17</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

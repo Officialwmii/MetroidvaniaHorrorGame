@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="170476487">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3353431175">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -29,7 +29,7 @@
 				<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="English(US)" Hash="1339555093">
+		<SoundBank Id="3161908922" Language="English(US)" Hash="691186692">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
@@ -1931,19 +1931,19 @@
 						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2325592372" Name="Xeno_Attack" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Attack" DurationType="OneShot" DurationMin="7." DurationMax="7.">
+				<Event Id="2325592372" Name="Xeno_Attack" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Attack" DurationType="OneShot" DurationMin="4.00161" DurationMax="4.012882">
 					<IncludedMemoryFiles>
 						<File Id="477298105" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_attack_through_surface_1.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_1_569C59C1.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_1_1F5AF5CC.wem</Path>
 						</File>
 						<File Id="767708188" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_attack_through_surface_3.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_3_569C59C1.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_3_4D08091B.wem</Path>
 						</File>
 						<File Id="771317424" Language="SFX">
 							<ShortName>sfx_enemie_xeno-encephalon_attack_through_surface_2.wav</ShortName>
-							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_2_569C59C1.wem</Path>
+							<Path>SFX/sfx_enemie_xeno-encephalon_attack_through_surface_2_85B6CB88.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>

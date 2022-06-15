@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 8535b56aa120c74b8c0ecf7198a0e1c6
     GuidInternal: 
-    m_lastTime: -8585469787644224897
+    m_lastTime: -8585462906963592238
     List:
     - name: 0 Gravity Room
       guid: cfd7a6d59eed854e89f0364decde63de
@@ -632,7 +632,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 678d0dc573114b4fa4a47a1483ba6642
     GuidInternal: 
-    m_lastTime: -8585467202298603803
+    m_lastTime: -8585462882776449125
     List:
     - name: Alien_Artifact
       guid: b19eeb17f466c3408e4ddff15aac46a9
@@ -964,6 +964,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: 70d1c9a3772214439489d74547327c05
       Path: Events/Default Work Unit/Dialogue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Easter_Egg_Jumpscare
+      guid: 724238102169114fa2803f253d0a8398
+      id: 4042687956
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 678d0dc573114b4fa4a47a1483ba6642
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 55ed874f4f02f64cbc25e9908d2fbece
+      - ElementName: Easter_Egg_Jumpscare
+        ObjectType: 3
+        guid: 724238102169114fa2803f253d0a8398
+      Path: Events/Default Work Unit/SFX/Easter_Egg_Jumpscare
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2838,8 +2858,8 @@ MonoBehaviour:
         guid: ca08e436e896a541a62f1f7dade855b2
       Path: Events/Default Work Unit/SFX/Enemies/Xeno-Encephalon/Xeno_Attack
       maxAttenuation: 0
-      maxDuration: 7
-      minDuration: 7
+      maxDuration: 4.012882
+      minDuration: 4.00161
     - name: Xeno_Damaged
       guid: 4260698ae4805c4db247f05fcc7bce29
       id: 2379525397
@@ -4047,7 +4067,7 @@ MonoBehaviour:
         ObjectType: 14
         guid: b5ae3e944a84714f9658293429bb509d
       Path: Triggers/Default Work Unit/Ambience_Intensifier
-  ExpandedFileSystemItemIds: 
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000008000000120000001e00000062000000790000007a000000
   ExpandedWaapiItemIds: 0100000006000000070000000a0000000b0000000c0000000d0000000e0000000f00000012000000130000001400000015000000160000001a0000001b0000001c0000001d00000032000000
   AutoSyncSelection: 1
   autoPopulateEnabled: 1
