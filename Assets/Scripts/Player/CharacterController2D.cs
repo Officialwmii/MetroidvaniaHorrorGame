@@ -242,7 +242,7 @@ public class CharacterController2D : MonoBehaviour
 
 			if (holdJetpack && EventManager.canUseJetpack == false) { AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position, 0.1f); }
 
-			if (/*!m_Grounded &&*/ holdJetpack && EventManager.canUseJetpack){
+			if (/*!m_Grounded &&*/ EventManager.HasDoubleJetpack && holdJetpack && EventManager.canUseJetpack){
 
 				m_Rigidbody2D.AddForce(new Vector2(0, m_JetpackForce));
 				EventManager.UseJetpack();

@@ -340,6 +340,7 @@ public class EventManager : MonoBehaviour
         for (int i = 0; i < 10; i++) FuelPickup();
         for (int i = 0; i < 3; i++) GainConstalationKey();
         GainAbilityJetpack();
+        GainAbilityJetpack();
         GainAbilityArmour();
         GainAbilityRocketLauncher();
     }
