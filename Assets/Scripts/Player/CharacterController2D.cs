@@ -163,7 +163,9 @@ public class CharacterController2D : MonoBehaviour
 
 	public void Move(float move, bool jump, bool dash, bool holdJump, float gravity, bool holdJetpack)
 	{
-		m_Rigidbody2D.gravityScale = gravity;   // Variable jump height is achievemed by lowering the player's gravity for a period of time. 
+		// Variable jump height is achievemed by lowering the player's gravity for a period of time. 
+		if (EventManager.inLowGravityZone) m_Rigidbody2D.gravityScale = gravity/4;   
+		else m_Rigidbody2D.gravityScale = gravity;
 		//Debug.Log(gravity);
 		if (canMove) {
 
@@ -242,7 +244,7 @@ public class CharacterController2D : MonoBehaviour
 
 			if (holdJetpack && EventManager.canUseJetpack == false) { AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position, 0.1f); }
 
-			if (/*!m_Grounded &&*/ EventManager.HasDoubleJetpack && holdJetpack && EventManager.canUseJetpack){
+			if (EventManager.HasDoubleJetpack && holdJetpack && EventManager.canUseJetpack){
 
 				m_Rigidbody2D.AddForce(new Vector2(0, m_JetpackForce));
 				EventManager.UseJetpack();
