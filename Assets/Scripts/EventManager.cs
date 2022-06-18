@@ -8,6 +8,7 @@ public class EventManager : MonoBehaviour
     static public int Lives = 4;
     static public int MaxLives = 4;
     static public int LifeShards = 0;
+    static public int DeathCounter = 0;
 
     static private GameObject life1;
     static private GameObject life2;
@@ -582,6 +583,7 @@ public class EventManager : MonoBehaviour
         player.GetComponent<Animator>().SetBool("IsDead", false);
         
         CurrentDanger = 0; UpdateDangerMeter(); UpdateDangerLevel();
+        DeathCounter++;
     }
 
     static public void AudioLogPickup(AudioNode subtitles)

@@ -31,6 +31,7 @@ public class Inventory : MonoBehaviour
 
     private GameObject Time;
     private GameObject Map;
+    private GameObject Deaths;
 
     void Start()
     {
@@ -60,7 +61,7 @@ public class Inventory : MonoBehaviour
 
         Time = GameObject.Find("Time");
         Map = GameObject.Find("Map");
-
+        Deaths = GameObject.Find("Deaths");
 
         OnEnable();
     }
@@ -78,7 +79,7 @@ public class Inventory : MonoBehaviour
         Fuel.GetComponent<TMP_Text>().text = "" + ((EventManager.MaxFuel - 50)/10) + "/10 " + (EventManager.MaxFuel) + " Fuel";
         Cryo.GetComponent<TMP_Text>().text = "" + ((EventManager.MaxGrenades-2)) + "/3 Cryo G." ;
         Logs.GetComponent<TMP_Text>().text = "" + ((EventManager.AudioLog )) + "/5 " + " Logs";
-        Artifacts.GetComponent<TMP_Text>().text = "" + ((EventManager.Collectables-EventManager.AudioLog)) + "/5 " + " Alien Artifacts";
+        Artifacts.GetComponent<TMP_Text>().text = "" + ((EventManager.Collectables)) + "/5 " + " Alien Artifacts";
         Keys.GetComponent<TMP_Text>().text = "" + (EventManager.ConstalationsKeysAcquired) + "/3 " + " Con. P.";
         Stun.GetComponent<TMP_Text>().text = "" + ((EventManager.stunUpgrade-1 )) + "/5 " +EventManager.CooldownTime +"s Stun";
         Refill.GetComponent<TMP_Text>().text = "" + (EventManager.FuelRefillNumberOfUpgrades-1)  + "/5 +" +  " Refill";
@@ -122,6 +123,9 @@ public class Inventory : MonoBehaviour
 
         Map.GetComponent<TMP_Text>().text = "Map: "+ ((Mathf.Round(((float)EventManager.MapProgress) / 376 * 1000)) / 10) + "%";
         //Debug.Log(EventManager.MapProgress);
+
+        Deaths.GetComponent<TMP_Text>().text = "Deaths: " + (EventManager.DeathCounter).ToString("D3");
+
 
     }
 
