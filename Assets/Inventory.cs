@@ -73,7 +73,7 @@ public class Inventory : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log("Gets active.");
+        //Debug.Log("Gets active.");
         Health.GetComponent<TMP_Text>().text = "" + ((EventManager.MaxLives - 4) * 3 + EventManager.LifeShards) + "/15 " + (EventManager.MaxLives) + " HP";
         Fuel.GetComponent<TMP_Text>().text = "" + ((EventManager.MaxFuel - 50)/10) + "/10 " + (EventManager.MaxFuel) + " Fuel";
         Cryo.GetComponent<TMP_Text>().text = "" + ((EventManager.MaxGrenades-2)) + "/3 Cryo G." ;
@@ -121,7 +121,7 @@ public class Inventory : MonoBehaviour
                 Mathf.FloorToInt(EventManager.Timer % 60).ToString("D2");
 
         Map.GetComponent<TMP_Text>().text = "Map: "+ ((Mathf.Round(((float)EventManager.MapProgress) / 376 * 1000)) / 10) + "%";
-        Debug.Log(EventManager.MapProgress);
+        //Debug.Log(EventManager.MapProgress);
 
     }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -16,16 +17,34 @@ public class PauseMenu : MonoBehaviour
 
     public UISounds pauseMenuSounds;
 
+    public GameObject Inventory;
+    public GameObject Controls;
+    private bool ViewingControls = false;
+    public GameObject ControlText;
+
+
+
     void Start()
     {
         eventSystemObject = GameObject.Find("EventSystem");
+
     }
+
+
+    private void OnEnabled()
+    {
+       // Inventory = GameObject.Find("Inventory");
+       // Controls = GameObject.Find("Controls");
+        if (ViewingControls) { Controls.SetActive(true); Inventory.SetActive(false); }
+        else { Controls.SetActive(false); Inventory.SetActive(false); }    
+        //ControlText = GameObject.Find("Control Text (TMP)");
+    }
+
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Paus"))
-            //Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
             if (GameIsPaused)
             {
@@ -76,10 +95,32 @@ public class PauseMenu : MonoBehaviour
         MIAMComp = eventSystemObject.GetComponent<MenuInputModule>();
     }
 
+
     public void LoadMenu()
     {
-        SceneManager.LoadScene("Main Menu");
-        Time.timeScale = 1f;
+        Debug.Log("Show Controls");
+
+        if (ViewingControls)
+        {
+
+            ViewingControls = false;
+            Controls.SetActive(false);
+            Inventory.SetActive(true);
+            ControlText.GetComponent<TextMeshPro>().text = "CONTROLS";
+        }
+        else
+        {
+
+            ViewingControls = true;
+            Controls.SetActive(true);
+           Inventory.SetActive(false);
+            ControlText.GetComponent<TMP_Text>().text = "INVENTORY";
+
+        }
+
+
+        // SceneManager.LoadScene("Main Menu");
+        //Time.timeScale = 1f;
     }
 
     public void QuitGame()
