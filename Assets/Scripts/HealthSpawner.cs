@@ -30,8 +30,8 @@ public class HealthSpawner : MonoBehaviour
         spawnPickups();
         player = GameObject.FindWithTag("Player");
         pickupsPresent = true;
-        Debug.Log(player.GetComponent<CharacterController2D>().life);
-        Debug.Log("AYYYOOOO");
+        //Debug.Log(player.GetComponent<CharacterController2D>().life);
+        //Debug.Log("AYYYOOOO");
         if (player.GetComponent<CharacterController2D>().life < 4)
         {
             playerFullHealth = false;
