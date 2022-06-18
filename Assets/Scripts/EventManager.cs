@@ -259,51 +259,51 @@ public class EventManager : MonoBehaviour
         switch (Mathf.RoundToInt(RandomLine))
         {
             case 1:
-                sub("o to drift across the endless night hopping from star to star never look down and never look up a thousand eyes forever affixed to the abyss", 5f);
+                sub("O to drift across the endless night hopping from star to star never look down and never look up a thousand eyes forever affixed to the abyss.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_01", player);
                 break;
-            case 2: sub("loneliness is the cancer that grows in the hearts of all brains", 5f);
+            case 2: sub("Loneliness is the cancer that grows in the hearts of all brains.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_02", player);
                 break;
-            case 3: sub("dare to dream a nightmare from which you wouldn?t want to wake up", 5f);
+            case 3: sub("Dare to dream a nightmare from which you wouldn?t want to wake up.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_03", player);
                 break;
-            case 4: sub("feed your own tail to your own mouth again and again and again and again", 5f);
+            case 4: sub("Feed your own tail to your own mouth again and again and again and again.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_04", player);
                 break;
-            case 5: sub("we are what we are and what we are is the cosmic recursion", 5f);
+            case 5: sub("We are what we are and what we are is the cosmic recursion.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_05", player);
                 break;
-            case 6: sub("even the smallest speck plays its part", 5f);
+            case 6: sub("Even the smallest speck plays its part", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_06", player);
                 break;
-            case 7: sub("they trusted you", 1f);
+            case 7: sub("They trusted you", 1f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_07", player);
                 break;
-            case 8: sub("in the eternal dark scream your screams and we will whisper you to sleep", 5f);
+            case 8: sub("In the eternal dark scream your screams and we will whisper you to sleep.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_08", player);
                 break;
-            case 9: sub("that which does not end cannot end that which does not end", 5f);
+            case 9: sub("That which does not end cannot end that which does not end.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_09", player);
                 break;
-            case 10: sub("open your eyes to find that your eyes were already open", 5f);
+            case 10: sub("Open your eyes to find that your eyes were already open.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_10", player);
                 break;
-            case 11: sub("you cannot wake up you are not asleep", 2f);
+            case 11: sub("You cannot wake up you are not asleep.", 2f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_11", player);
                 break;
             case 12:
-                sub("nightmares are not real but we are", 2f);
+                sub("Nightmares are not real but we are.", 2f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_12", player);
                 break;
             case 13:
-                sub("the fruit of the tree that grew in the heart of the dark garden which spreads through the bowels of the cosmos holds the seed to salvation/damnation", 2f);
+                sub("The fruit of the tree that grew in the heart of the dark garden which spreads through the bowels of the cosmos holds the seed to salvation/damnation.", 2f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_13", player);
                 break;
             case 14: sub("O the curse of recursion!", 2f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_14", player);
                 break;
-            case 15: sub("void your shells. cease your lives.", 2f);
+            case 15: sub("Void your shells. cease your lives.", 2f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_15", player);
                 break;
         }
@@ -592,7 +592,9 @@ public class EventManager : MonoBehaviour
         {
             AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_1", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
+
+            SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
+            //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
         else if (AudioLog == 1)
         {
