@@ -32,7 +32,8 @@ public class PlayerMovement : MonoBehaviour {
 		timer = jumpTimer;
     }
 
-    void Update () {
+	void Update()
+	{
 		//Debug.Log(timer);
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
@@ -42,36 +43,28 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
-			holdJump = true;
-			startTimer = true;
+			//holdJump = true;
+			//startTimer = true;
 			AkSoundEngine.PostEvent("Player_Jump", player);
 		}
 
 		if (Input.GetButtonUp("Jump"))
-        {
-			holdJump = false;
-			jump = false;
-			timer = jumpTimer;
-        }
-		if (startTimer)
 		{
-			timer -= Time.deltaTime;
-			if (timer <= 0)
-			{
-				holdJump = false;
-				timer = jumpTimer;
-				startTimer = false;
-			}
+			//holdJump = false;
+			jump = false;
+			//timer = jumpTimer;
 		}
+
+
 		//JETPACK
 		if (Input.GetButtonDown("Jetpack"))
-        {
+		{
 			holdJetpack = true;
-        }
+		}
 		if (Input.GetButtonUp("Jetpack"))
-        {
+		{
 			holdJetpack = false;
-        }
+		}
 
 		//DASH
 		if (Input.GetButtonDown("Dash"))
@@ -93,6 +86,14 @@ public class PlayerMovement : MonoBehaviour {
 		}
 		*/
 
+
+		// Move our character
+
+
+
+
+
+
 	}
 
 	public void OnFall()
@@ -105,22 +106,47 @@ public class PlayerMovement : MonoBehaviour {
 		animator.SetBool("IsJumping", false);
 	}
 
-	void FixedUpdate ()
-	{
-		// Move our character
-		
+	void FixedUpdate() {
+
+		if (Input.GetButtonDown("Jump"))
+		{
+			holdJump = true;
+			startTimer = true;
+
+		}
+
+		if (Input.GetButtonUp("Jump"))
+		{
+			holdJump = false;
+			timer = jumpTimer;
+		}
+
+		if (startTimer)
+		{
+			timer -= Time.deltaTime;
+			if (timer <= 0)
+			{
+				holdJump = false;
+				timer = jumpTimer;
+				startTimer = false;
+			}
+
+		}
 
 		if (holdJump) //Lower gravity to achieve variable jump height.
-        {
+		{
 			controller.Move(horizontalMove * Time.fixedDeltaTime, jump, dash, holdJump, variableGravity, holdJetpack);
 			jump = false;
 			dash = false;
 		}
-        if (!holdJump) //Default jump height.
-        {
+		if (!holdJump) //Default jump height.
+		{
 			controller.Move(horizontalMove * Time.fixedDeltaTime, jump, dash, holdJump, defaultGravity, holdJetpack);
 			jump = false;
 			dash = false;
 		}
+
+
 	}
+
 }

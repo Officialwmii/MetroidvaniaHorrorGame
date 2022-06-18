@@ -164,8 +164,8 @@ public class CharacterController2D : MonoBehaviour
 	public void Move(float move, bool jump, bool dash, bool holdJump, float gravity, bool holdJetpack)
 	{
 		// Variable jump height is achievemed by lowering the player's gravity for a period of time. 
-		if (EventManager.inLowGravityZone) m_Rigidbody2D.gravityScale = gravity/4;   
-		else m_Rigidbody2D.gravityScale = gravity;
+		if (EventManager.inLowGravityZone) { m_Rigidbody2D.gravityScale = gravity / 4; }
+		else {m_Rigidbody2D.gravityScale = gravity; }
 		//Debug.Log(gravity);
 		if (canMove) {
 
