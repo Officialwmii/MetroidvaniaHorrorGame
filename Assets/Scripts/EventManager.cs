@@ -101,6 +101,10 @@ public class EventManager : MonoBehaviour
 
     public static bool inLowGravityZone = false; 
 
+
+    public static GameObject KeyUnlocked1;
+    public static GameObject KeyUnlocked2;
+    public static GameObject KeyUnlocked3;
     void Start()
     {
         life1 = GameObject.Find("HP1");
@@ -157,6 +161,12 @@ public class EventManager : MonoBehaviour
         AlertSound = GameObject.Find("AlertSound");
         AlertSound.SetActive(false);
 
+        KeyUnlocked1 = GameObject.Find("Keys_0");
+        KeyUnlocked1.SetActive(false);
+        KeyUnlocked2 = GameObject.Find("Keys_1");
+        KeyUnlocked2.SetActive(false);
+        KeyUnlocked3 = GameObject.Find("Keys_2");
+        KeyUnlocked3.SetActive(false);
     }
 
     // Update is called once per frame
@@ -577,7 +587,14 @@ public class EventManager : MonoBehaviour
         if (FuelRefillNumberOfUpgrades >= 6) { FuelRefillTreshold = 1f; FuelRefillSpeed = 25; }
 
     }
-    static public void GainConstalationKey() { ConstalationsKeysAcquired++; }
+    static public void GainConstalationKey() { ConstalationsKeysAcquired++;
+
+        if (ConstalationsKeysAcquired == 1) KeyUnlocked1.SetActive(true);
+        if (ConstalationsKeysAcquired == 2) KeyUnlocked2.SetActive(true);
+        if (ConstalationsKeysAcquired == 3) KeyUnlocked3.SetActive(true);
+
+
+    }
     static public void GoToCredits() { SceneManager.LoadScene("EndSequence"); }
     static public void OnRespawning() {
 
