@@ -58,19 +58,30 @@ public class Attack : MonoBehaviour
 			AudioSource.PlayClipAtPoint(SFXDenial, gameObject.transform.position,0.1f);
 		}
 
-
-		if (Input.GetButtonDown("Grenade") && EventManager.grenades>0)
+		if (Input.GetButton("Grenade") && EventManager.grenades>0)
 		{
-			EventManager.UseGrenades();
-			AkSoundEngine.PostEvent("Grenade_Freeze", Grenade);
-			animator.SetBool("IsThrowingGrenade", true);
-
-			GameObject Grenade2 = Instantiate(Grenade, transform.position + new Vector3(transform.localScale.x * 0.5f, -0.2f), Quaternion.identity) as GameObject;
-			Vector2 direction = new Vector2(transform.localScale.x, 0);
-			Grenade2.GetComponent<GrenadeProjectile>().direction = direction;
-
+			EventManager.UpdateGrenadeCountdown();
 		}
 
+		if (Input.GetButtonUp("Grenade"))
+		{
+			EventManager.GrenadeCountdown=0;
+			EventManager.CanThrowGrenade = true;
+			EventManager.GrenadeCircle.SetActive(false);
+		}
+
+	}
+
+	public void ThrowGrenade()
+    {
+		EventManager.GrenadeCountdown = 0;
+		EventManager.UseGrenades();
+		AkSoundEngine.PostEvent("Grenade_Freeze", Grenade);
+		animator.SetBool("IsThrowingGrenade", true);
+
+		GameObject Grenade2 = Instantiate(Grenade, transform.position + new Vector3(transform.localScale.x * 0.5f, -0.2f), Quaternion.identity) as GameObject;
+		Vector2 direction = new Vector2(transform.localScale.x, 0);
+		Grenade2.GetComponent<GrenadeProjectile>().direction = direction;
 	}
 
 	IEnumerator AttackCooldown()

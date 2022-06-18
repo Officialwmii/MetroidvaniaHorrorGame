@@ -105,6 +105,10 @@ public class EventManager : MonoBehaviour
     public static GameObject KeyUnlocked1;
     public static GameObject KeyUnlocked2;
     public static GameObject KeyUnlocked3;
+    public static GameObject GrenadeCircle; 
+    public static float GrenadeCountdown = 0;
+    public static bool CanThrowGrenade = true; 
+
     void Start()
     {
         life1 = GameObject.Find("HP1");
@@ -167,6 +171,10 @@ public class EventManager : MonoBehaviour
         KeyUnlocked2.SetActive(false);
         KeyUnlocked3 = GameObject.Find("Keys_2");
         KeyUnlocked3.SetActive(false);
+
+        GrenadeCircle = GameObject.Find("GrenadeCircle");
+        GrenadeCircle.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -263,6 +271,30 @@ public class EventManager : MonoBehaviour
     //   ThisGameObject.GetComponent<AudioSource>.play();
 
     //}
+
+    static public void UpdateGrenadeCountdown() {
+       
+        if (CanThrowGrenade) {
+            GrenadeCircle.SetActive(true);
+
+            GrenadeCountdown = GrenadeCountdown + Time.deltaTime;
+            GrenadeCircle.GetComponent<Transform>().localScale = new Vector3(GrenadeCountdown * 4, GrenadeCountdown * 4, 0);
+
+            if (GrenadeCountdown >= 1.0f)
+            {
+                player.GetComponent<Attack>().ThrowGrenade();
+                GrenadeCountdown = 0;
+                GrenadeCircle.SetActive(false);
+                CanThrowGrenade = false; 
+            }
+
+
+
+        }
+
+    }
+
+
 
     static public void AlienInnerMonologue() {
 
