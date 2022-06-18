@@ -7,14 +7,15 @@ public class ShipAnnouncements : MonoBehaviour
     public string location;
     public AudioNode subtitles;
     public AK.Wwise.Event shipAIAnnouncement;
-
+    private float duration = 0;
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player"))
+        if (col.CompareTag("Player")&& duration<=0)
         {
             shipAIAnnouncement.Post(col.gameObject);
             SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
+            duration = 10;
         }
     }
 
@@ -27,6 +28,8 @@ public class ShipAnnouncements : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (duration > 0) {
+            duration = duration - Time.deltaTime;
+        }
     }
 }
