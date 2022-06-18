@@ -516,6 +516,12 @@ public class EventManager : MonoBehaviour
         UpdateFuel();
     }
 
+    static public void CheckpoiontReached(GameObject CheckpointPosition) {
+
+        StartPosition.GetComponent<Transform>().position = CheckpointPosition.GetComponent<Transform>().position;
+    }
+
+
     static public void StartingRoom() {
 
         player.GetComponent<CharacterController2D>().ResetHealth();

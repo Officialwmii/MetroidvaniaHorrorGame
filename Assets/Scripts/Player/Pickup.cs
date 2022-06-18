@@ -129,7 +129,8 @@ public class Pickup : MonoBehaviour
                     break;
                 case UpgradeType.RefillStation:
                     EventManager.RefillFuel(); DestroyObject = false;
-                    EventManager.sub("Fuel Restored", 1f);
+                    EventManager.CheckpoiontReached(gameObject);
+                    EventManager.sub("Checkpoint Reached! Fuel Restored.", 1f);
                     AkSoundEngine.PostEvent("Jetpack_Refill", col.gameObject);
                     break;
                 case UpgradeType.StartingRoom:
