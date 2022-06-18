@@ -92,7 +92,7 @@ public class Pickup : MonoBehaviour
                 case UpgradeType.MaxGranade:
                     EventManager.UpgradeMaxGrenade();
                     AkSoundEngine.PostEvent("Jetpack_Refill", col.gameObject);
-                    EventManager.sub("Grenade slot -Increase maximum cryo grenade capacity +1.", 3f);
+                    EventManager.sub("Grenade slot - Increase maximum cryo grenade capacity +1.", 3f);
                     break;
 
                 //Collectable 
@@ -109,28 +109,39 @@ public class Pickup : MonoBehaviour
                 case UpgradeType.GainAbilityJetpack:
                     AkSoundEngine.PostEvent("Grenade_Upgrade", col.gameObject);
                     EventManager.GainAbilityJetpack();
+                    if(EventManager.HasJetpack && !EventManager.HasDoubleJetpack) 
+                        EventManager.sub("Damaged Jetpack Acquired! - Use to dash short distances.", 3f);
+                    if (EventManager.HasJetpack && EventManager.HasDoubleJetpack)
+                        EventManager.sub("Compete Jetpack Acquired! - Used to fly. Fuel consumption is high in gravity bound areas.", 3f);
                     break;
                 case UpgradeType.GainAbilityArmour:
                     AkSoundEngine.PostEvent("Grenade_Upgrade", col.gameObject);
                     EventManager.GainAbilityArmour();
+                    EventManager.sub("EVA Suit Acquired! - Protects against gas and allows transport in oxygen free zones.", 3f);
+
+
                     break;
                 case UpgradeType.GainAbilityRocketLauncher:
                     AkSoundEngine.PostEvent("Grenade_Upgrade", col.gameObject);
                     EventManager.GainAbilityRocketLauncher();
+                    EventManager.sub("Rocket Launcher Acquired! - Destroys unprotected lifeforms.", 3f);
+
                     break;
                 case UpgradeType.GainAbilityFuelRefill:
                     EventManager.GainAbilityFuelRefill();
                     AkSoundEngine.PostEvent("Grenade_Upgrade", col.gameObject);
-                    EventManager.sub("Fuel recovery module acquired - Regenerates fuel on the ground.", 3f);
+                    EventManager.sub("Fuel Recovery Module Acquired! - Regenerates fuel on the ground.", 3f);
                     break;
                 case UpgradeType.ConstalationKey:
                     EventManager.GainConstalationKey();
                     AkSoundEngine.PostEvent("Constalation_Key", col.gameObject);
+                    EventManager.sub("Constellation Protocol Acquired! - " + EventManager.ConstalationsKeysAcquired+"/3 to unlock the Control Bridge.", 3f);
+
                     break;
                 case UpgradeType.RefillStation:
                     EventManager.RefillFuel(); DestroyObject = false;
                     EventManager.CheckpoiontReached(gameObject);
-                    EventManager.sub("Checkpoint Reached! Fuel Restored.", 1f);
+                    EventManager.sub("Checkpoint Reached! - Fuel Restored.", 1f);
                     AkSoundEngine.PostEvent("Jetpack_Refill", col.gameObject);
                     break;
                 case UpgradeType.StartingRoom:
