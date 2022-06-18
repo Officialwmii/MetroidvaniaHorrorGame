@@ -24,11 +24,10 @@ public class LowGravityEffect : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            Debug.Log("Low gravity");
+            Debug.Log("Enter Low gravity");
             col.GetComponent<PlayerMovement>().variableGravity= 0.25f;
-            AudioSource.PlayClipAtPoint(SFXEnter, col.gameObject.transform.position);
-
-
+           // AudioSource.PlayClipAtPoint(SFXEnter, col.gameObject.transform.position);
+            EventManager.inLowGravityZone = true;
 
         }
     }
@@ -37,10 +36,10 @@ public class LowGravityEffect : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
+            Debug.Log("Exits Low gravity");
             col.GetComponent<PlayerMovement>().variableGravity = 2f;
             //AudioSource.PlayClipAtPoint(SFXExits, col.gameObject.transform.position);
-
-
+            EventManager.inLowGravityZone = false;
 
         }
     }

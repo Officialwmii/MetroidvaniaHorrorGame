@@ -99,6 +99,8 @@ public class EventManager : MonoBehaviour
     static private bool AudioPlayEscapePodInitiated = false;
     static public bool CheatMapVisibility = false;
 
+    public static bool inLowGravityZone = false; 
+
     void Start()
     {
         life1 = GameObject.Find("HP1");
@@ -477,7 +479,9 @@ public class EventManager : MonoBehaviour
 
     static public void UseDash() {
 
-        Fuel = Fuel - DashFuelCost;
+        if (inLowGravityZone) { Fuel = Fuel - DashFuelCost / 10; }
+        else { Fuel = Fuel - DashFuelCost; }
+
         if (Fuel <= DashFuelCost) {
             Fuel = 0;
             canUseDash = false;
@@ -488,7 +492,9 @@ public class EventManager : MonoBehaviour
     
     static public void UseJetpack()
     {
-        Fuel = Fuel - JetpackFuelCost;
+        if (inLowGravityZone) { Fuel = Fuel - JetpackFuelCost*Time.deltaTime *60 / 10; }
+        else { Fuel = Fuel - JetpackFuelCost * Time.deltaTime * 60; }
+
         if (Fuel <= JetpackFuelCost)
         {
             Fuel = 0;
