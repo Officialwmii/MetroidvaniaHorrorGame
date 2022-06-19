@@ -40,6 +40,41 @@ public class PlayerMovement : MonoBehaviour {
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
 		//JUMP
+
+		if (Input.GetButtonUp("Jump"))
+		{
+			holdJump = false;
+		}
+
+		if (Input.GetButton("Jump"))
+		{
+			holdJump = true;
+			startTimer = true;
+		}
+
+		if (Input.GetButtonDown("Jump"))
+		{
+			holdJump = true;
+			startTimer = true;
+			timer = jumpTimer;
+
+		}
+
+
+
+		if (startTimer)
+		{
+			timer -= Time.deltaTime;
+			if (timer <= 0)
+			{
+				holdJump = false;
+				//timer = jumpTimer;
+				startTimer = false;
+			}
+
+		}
+
+
 		if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
@@ -47,6 +82,17 @@ public class PlayerMovement : MonoBehaviour {
 			//startTimer = true;
 			AkSoundEngine.PostEvent("Player_Jump", player);
 		}
+		/*	if (Input.GetButton("Jump"))
+			{
+				if (holdJump == false)
+				{
+					jump = true;
+
+					holdJump = true;
+				}
+
+			}
+		*/
 
 		if (Input.GetButtonUp("Jump"))
 		{
@@ -108,30 +154,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate() {
 
-		if (Input.GetButtonDown("Jump"))
-		{
-			holdJump = true;
-			startTimer = true;
 
-		}
-
-		if (Input.GetButtonUp("Jump"))
-		{
-			holdJump = false;
-			timer = jumpTimer;
-		}
-
-		if (startTimer)
-		{
-			timer -= Time.deltaTime;
-			if (timer <= 0)
-			{
-				holdJump = false;
-				timer = jumpTimer;
-				startTimer = false;
-			}
-
-		}
 
 		if (holdJump) //Lower gravity to achieve variable jump height.
 		{
