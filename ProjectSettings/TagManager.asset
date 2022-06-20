@@ -9,6 +9,7 @@ TagManager:
   - Liptank
   - tilemap
   - Crate
+  - Bullet
   layers:
   - Default
   - TransparentFX

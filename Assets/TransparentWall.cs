@@ -37,9 +37,15 @@ public class TransparentWall : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player") )
-        {
-            StartFading = true;
+
+        if (StartFading==false) {       
+        
+            if (col.CompareTag("Player")) StartFading = true;
+            if (   col.CompareTag("Bullet"))
+            {
+                Destroy(col.gameObject);
+                StartFading = true;
+            }
         }
 
     }
