@@ -258,8 +258,8 @@ TextureImporter:
         y: 2915
         width: 494
         height: 974
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 9
+      pivot: {x: 0.8357347, y: 0.9782444}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -368,14 +368,14 @@ TextureImporter:
     nameFileIdTable:
       vents_4: -2142883181
       vents_7: -736091760
-      vents_9: 1766073245
+      vents_10: -1759001733
       vents_11: 1467536219
       vents_2: -1092173468
       vents_8: -1721797157
       vents_0: 582886374
       vents_5: 1012222644
       vents_6: -1269384212
-      vents_10: -1759001733
+      vents_9: 1766073245
       vents_1: -1823898382
       vents_3: 1281251939
   spritePackingTag: 
