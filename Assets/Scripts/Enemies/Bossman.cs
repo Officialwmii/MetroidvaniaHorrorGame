@@ -179,7 +179,7 @@ public class Bossman : MonoBehaviour
 
 	public void Stun(float StunDuration) {
 
-		ApplyDamage(20f/2);
+		ApplyDamage(20f/4);
 
 		//StartCoroutine(StunTime(StunDuration));
 	}
