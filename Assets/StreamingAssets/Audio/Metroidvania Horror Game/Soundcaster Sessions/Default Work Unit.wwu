@@ -85,7 +85,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Start" ID="{05BA3E71-FED0-4959-A8A1-4DBEFABD8A23}"/>
+						<CurrentStateRef Name="None" ID="{6448DD6C-28B5-415A-8353-F77F06597E06}"/>
 						<CurrentStateRef Name="None" ID="{0F1295A8-FFFD-4165-9CF6-54B740B9372D}"/>
 						<CurrentStateRef Name="Credits" ID="{2D795328-8802-4398-931F-C4B993FE4951}"/>
 					</CurrentStateList>

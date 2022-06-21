@@ -1642,7 +1642,6 @@
 																<Property Name="FadeInDuration" Type="Real64" Value="0.0966183574879227"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.972624798711756"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.547504025764895"/>
 																<Property Name="TrimEnd" Type="Real64" Value="1.99677938808374"/>
 															</PropertyList>
 															<Language>SFX</Language>
@@ -2741,6 +2740,11 @@
 										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Key_Pick_Up_1" ID="{6A283B32-0DCC-492C-A9E7-CFB18B45B1DE}"/>
+										<ItemRef Name="Key_Pick_Up_2" ID="{FBB10EA5-18B6-4275-862B-D9542A9E4792}"/>
+										<ItemRef Name="Key_Pick_Up_3" ID="{06F303CA-4FCC-4485-AEA9-A4D3528AC760}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>

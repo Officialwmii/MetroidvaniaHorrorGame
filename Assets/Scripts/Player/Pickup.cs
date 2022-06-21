@@ -91,7 +91,7 @@ public class Pickup : MonoBehaviour
                     break;
                 case UpgradeType.MaxGranade:
                     EventManager.UpgradeMaxGrenade();
-                    AkSoundEngine.PostEvent("Jetpack_Refill", col.gameObject);
+                    AkSoundEngine.PostEvent("Alien_Artifact", col.gameObject);
                     EventManager.sub("Grenade slot - Increase maximum cryo grenade capacity +1.", 3f);
                     break;
 
@@ -129,7 +129,7 @@ public class Pickup : MonoBehaviour
                     break;
                 case UpgradeType.GainAbilityFuelRefill:
                     EventManager.GainAbilityFuelRefill();
-                    AkSoundEngine.PostEvent("Grenade_Upgrade", col.gameObject);
+                    AkSoundEngine.PostEvent("Jetpack_Refill", col.gameObject);
                     EventManager.sub("Fuel Recovery Module Acquired! - Regenerates fuel on the ground.", 3f);
                     break;
                 case UpgradeType.ConstalationKey:

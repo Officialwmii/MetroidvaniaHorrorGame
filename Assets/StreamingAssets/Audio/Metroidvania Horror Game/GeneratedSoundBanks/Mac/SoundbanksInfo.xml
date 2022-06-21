@@ -29,7 +29,7 @@
 				<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="English(US)" Hash="691186692">
+		<SoundBank Id="3161908922" Language="English(US)" Hash="500774536">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
@@ -358,11 +358,11 @@
 						<AuxBus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player\Weapons"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="475568473" Name="Grenade_Freeze" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Grenade_Freeze" DurationType="OneShot" DurationMin="1.024792" DurationMax="2.049585">
+				<Event Id="475568473" Name="Grenade_Freeze" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Grenade_Freeze" DurationType="OneShot" DurationMin="1.411936" DurationMax="2.823873">
 					<IncludedMemoryFiles>
 						<File Id="544239192" Language="SFX">
 							<ShortName>Grenade Freeze\sfx_player_grenade_freeze.wav</ShortName>
-							<Path>SFX/Grenade Freeze/sfx_player_grenade_freeze_4184CB45.wem</Path>
+							<Path>SFX/Grenade Freeze/sfx_player_grenade_freeze_5104282C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
