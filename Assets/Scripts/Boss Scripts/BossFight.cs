@@ -28,6 +28,7 @@ public class BossFight : MonoBehaviour
 
     public float bossAttackTimer = 0;
 
+
     public float BossHP;
 
     [Header("Debug")]
@@ -39,15 +40,20 @@ public class BossFight : MonoBehaviour
     public bool SET_BOSS_HP_0;
 
 
-    void Start()
+    void OnEnable()
     {
         Phase_1.SetActive(true);
         Phase_1.GetComponent<PlayableDirector>().Stop();
+        Phase_1.GetComponent<PlayableDirector>().time = 0;
 
         Phase_2.SetActive(true);
         Phase_2.GetComponent<PlayableDirector>().Stop();
+        Phase_2.GetComponent<PlayableDirector>().time = 0;
+
         Phase_3.SetActive(true);
         Phase_3.GetComponent<PlayableDirector>().Stop();
+        Phase_3.GetComponent<PlayableDirector>().time = 0;
+
         Phase_4.SetActive(false);
         Phase_5.SetActive(false);
         Phase_6.SetActive(false);
@@ -69,9 +75,9 @@ public class BossFight : MonoBehaviour
         //DebugPhases();
         //OldBossPhases();
 
-        bossAttackTimer = bossAttackTimer + Time.deltaTime;
+        if (BossHP < 400) bossAttackTimer = bossAttackTimer - Time.deltaTime;
         //2s is hard mode, 3 normal, 4 easy
-        if (bossAttackTimer >= 3) { bossAttackTimer = 0; NewBossPhases(); }
+        if (bossAttackTimer <= 0) { bossAttackTimer = 1.5f+Random.Range(0, 2)+BossHP/400; NewBossPhases(); }
 
 
     }
@@ -89,6 +95,20 @@ public class BossFight : MonoBehaviour
         BossAttack.GetComponent<PlayableDirector>().Play();
         Debug.Log("Attack"+BossAttack.name);
     }
+
+    private void RandomMirrorFlip(GameObject BossAttack)
+    {
+        RandomBossAttackVariant = (int)Random.Range(1, 4 + 1);
+        switch (RandomBossAttackVariant)
+        {
+            case (1): BossAttack.transform.localScale = new Vector3(1, 1, 1); break;
+            case (2): BossAttack.transform.localScale = new Vector3(-1, 1, 1); break;
+            case (3): BossAttack.transform.localScale = new Vector3(1, -1, 1); break;
+            case (4): BossAttack.transform.localScale = new Vector3(-1, -1, 1); break;
+        }
+
+    }
+
     private void NewBossPhases()
     {
 
@@ -97,31 +117,30 @@ public class BossFight : MonoBehaviour
 
         }
 
-        if (BossHP <= 380)
-        {
+        if (BossHP <= 380){
 
-            RandomBossAttack = (int)Random.Range(1,3+1);
-            RandomBossAttackVariant = (int)Random.Range(1, 4 + 1);
+            RandomBossAttack = (int)Random.Range(0,3+1);
+            RandomBossAttack = 3;
 
-            switch (RandomBossAttack)
-            {
+            switch (RandomBossAttack) { 
+
+
+                case (0): //Nothing! 
+                    break;
+
                 case (1):
-                    switch (RandomBossAttackVariant) {
-                        case (1): ActivateAttack(Phase_1); break;
-                        case (2): ActivateAttack(Phase_1); break;
-                        case (3): ActivateAttack(Phase_1); break;
-                        case (4): ActivateAttack(Phase_1); break;
-                    }break;
+                    ActivateAttack(Phase_1);
+                    RandomMirrorFlip(Phase_1);
+                    break;
 
                 case (2):
-                    Phase_2.GetComponent<PlayableDirector>().Stop();
-                    Phase_2.GetComponent<PlayableDirector>().Play();
-                   Debug.Log("Play attack2");
+                    ActivateAttack(Phase_2);
+                    RandomMirrorFlip(Phase_2);
                     break;
+
                 case (3):
-                    Phase_3.GetComponent<PlayableDirector>().Stop();
-                    Phase_3.GetComponent<PlayableDirector>().Play();
-                    Debug.Log("Play attack3");
+                    ActivateAttack(Phase_3);
+                    RandomMirrorFlip(Phase_3);
                     break;
                 case (4):
                     Phase_4.SetActive(true);
