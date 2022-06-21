@@ -103,6 +103,10 @@ public class BossArena : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             PlayerInArena = false;
+
+
+
+
         }
     }
 }

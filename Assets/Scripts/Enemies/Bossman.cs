@@ -51,8 +51,14 @@ public class Bossman : MonoBehaviour
 
 	}
 
-	// Update is called once per frame
-	void FixedUpdate()
+    private void OnEnable()
+    {
+		grenadeReducedDamage = 0;
+
+	}
+
+    // Update is called once per frame
+    void FixedUpdate()
 	{
 		if (EventManager.EnemiesAlerted == true)
 		{
@@ -173,7 +179,7 @@ public class Bossman : MonoBehaviour
 
 	public void Stun(float StunDuration) {
 
-		ApplyDamage(20f);
+		ApplyDamage(20f*2);
 
 		//StartCoroutine(StunTime(StunDuration));
 	}

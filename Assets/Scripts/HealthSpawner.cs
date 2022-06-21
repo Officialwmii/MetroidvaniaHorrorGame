@@ -10,11 +10,12 @@ public class HealthSpawner : MonoBehaviour
     public GameObject spawner_2;
     public GameObject spawner_3;
     public GameObject spawner_4;
+    public GameObject spawner_5;
     public GameObject health_pickup;
     public GameObject grenade_pickup;
     public GameObject fuel_pickup;
     public GameObject pickupParent;
-    public GameObject player;
+    private GameObject player;
     public bool pickupsPresent = false;
     public bool playerFullHealth = true;
     [Header("Timer")]
@@ -71,9 +72,8 @@ public class HealthSpawner : MonoBehaviour
         Instantiate(health_pickup, spawner_2.transform.position, spawner_2.transform.rotation, pickupParent.transform);
         Instantiate(health_pickup, spawner_3.transform.position, spawner_3.transform.rotation, pickupParent.transform);
         Instantiate(health_pickup, spawner_4.transform.position, spawner_4.transform.rotation, pickupParent.transform);
+        Instantiate(health_pickup, spawner_5.transform.position, spawner_4.transform.rotation, pickupParent.transform);
     }
-
-
 
     void checkPickups(Transform spawnParent)
     {

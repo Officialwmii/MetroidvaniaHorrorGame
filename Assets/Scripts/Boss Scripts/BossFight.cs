@@ -42,15 +42,15 @@ public class BossFight : MonoBehaviour
 
     void OnEnable()
     {
-        Phase_1.SetActive(true);
+        Phase_1.SetActive(false);
         Phase_1.GetComponent<PlayableDirector>().Stop();
         Phase_1.GetComponent<PlayableDirector>().time = 0;
 
-        Phase_2.SetActive(true);
+        Phase_2.SetActive(false);
         Phase_2.GetComponent<PlayableDirector>().Stop();
         Phase_2.GetComponent<PlayableDirector>().time = 0;
 
-        Phase_3.SetActive(true);
+        Phase_3.SetActive(false);
         Phase_3.GetComponent<PlayableDirector>().Stop();
         Phase_3.GetComponent<PlayableDirector>().time = 0;
 
@@ -60,9 +60,25 @@ public class BossFight : MonoBehaviour
         End_Phase.SetActive(false);
 
         Attack1v1.SetActive(true);
+        Attack1v1.GetComponent<PlayableDirector>().Play();
+        Attack1v1.GetComponent<PlayableDirector>().time = Attack1v1.GetComponent<PlayableDirector>().playableAsset.duration;
+        //Attack1v1.GetComponent<PlayableDirector>().time = 0;
         Attack1v2.SetActive(true);
+        Attack1v2.GetComponent<PlayableDirector>().Play();
+
+        //Attack1v2.GetComponent<PlayableDirector>().time = 0;
+        Attack1v2.GetComponent<PlayableDirector>().time = Attack1v2.GetComponent<PlayableDirector>().playableAsset.duration;
+
         Attack1v3.SetActive(true);
+        Attack1v3.GetComponent<PlayableDirector>().Play();
+        //Attack1v3.GetComponent<PlayableDirector>().time = 0;
+        Attack1v3.GetComponent<PlayableDirector>().time = Attack1v3.GetComponent<PlayableDirector>().playableAsset.duration;
+
         Attack1v4.SetActive(true);
+        Attack1v4.GetComponent<PlayableDirector>().Play();
+        //Attack1v4.GetComponent<PlayableDirector>().time = 0;
+        Attack1v4.GetComponent<PlayableDirector>().time = Attack1v4.GetComponent<PlayableDirector>().playableAsset.duration;
+        Debug.Log("Rests bossfight");
 
 
 
@@ -75,9 +91,9 @@ public class BossFight : MonoBehaviour
         //DebugPhases();
         //OldBossPhases();
 
-        if (BossHP < 400) bossAttackTimer = bossAttackTimer - Time.deltaTime;
         //2s is hard mode, 3 normal, 4 easy
-        if (bossAttackTimer <= 0) { bossAttackTimer = 1.5f+Random.Range(0, 2)+BossHP/400; NewBossPhases(); }
+        if (bossAttackTimer <= 0) { bossAttackTimer = 1.5f+Random.Range(0, 2* (BossHP / 400)) +BossHP/400; NewBossPhases(); }
+        if (BossHP < 400) bossAttackTimer = bossAttackTimer - Time.deltaTime;
 
 
     }
@@ -109,18 +125,20 @@ public class BossFight : MonoBehaviour
 
     }
 
+
+
     private void NewBossPhases()
     {
 
         if (BossHP == 400)
         {
-
+            OnEnable();
         }
 
-        if (BossHP <= 380){
+        if (BossHP <= 380 && BossHP > 0){
 
-            RandomBossAttack = (int)Random.Range(0,3+1);
-            RandomBossAttack = 3;
+            RandomBossAttack = (int)Random.Range(0,4+1);
+            //RandomBossAttack = 4;
 
             switch (RandomBossAttack) { 
 
@@ -129,22 +147,23 @@ public class BossFight : MonoBehaviour
                     break;
 
                 case (1):
-                    ActivateAttack(Phase_1);
-                    RandomMirrorFlip(Phase_1);
+                    ActivateAttack(Attack1v1);
+                    RandomMirrorFlip(Attack1v1);
                     break;
 
                 case (2):
-                    ActivateAttack(Phase_2);
-                    RandomMirrorFlip(Phase_2);
+                    ActivateAttack(Attack1v2);
+                    RandomMirrorFlip(Attack1v2);
                     break;
 
                 case (3):
-                    ActivateAttack(Phase_3);
-                    RandomMirrorFlip(Phase_3);
+                    ActivateAttack(Attack1v3);
+                    RandomMirrorFlip(Attack1v3);
                     break;
                 case (4):
-                    Phase_4.SetActive(true);
-                    Phase_4.GetComponent<PlayableDirector>().Play();
+                    ActivateAttack(Attack1v4);
+                    RandomMirrorFlip(Attack1v4);
+
                     break;
                 case (5):
                     Phase_5.SetActive(true);
@@ -157,6 +176,25 @@ public class BossFight : MonoBehaviour
 
 
             
+        }
+
+        if (The_Bossman.GetComponent<Bossman>().life <= 0)
+        {
+            Phase_1.SetActive(false);
+            Phase_2.SetActive(false);
+            Phase_3.SetActive(false);
+            Phase_4.SetActive(false);
+            Phase_5.SetActive(false);
+            Phase_6.SetActive(false);
+
+            Attack1v1.SetActive(false);
+            Attack1v2.SetActive(false);
+            Attack1v3.SetActive(false);
+            Attack1v4.SetActive(false);
+
+            End_Phase.SetActive(true);
+            EventManager.OnBossCompleted();
+            Debug.Log("Boss hp 0");
         }
 
 
