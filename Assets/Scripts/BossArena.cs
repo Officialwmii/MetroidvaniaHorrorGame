@@ -94,6 +94,8 @@ public class BossArena : MonoBehaviour
             PlayerInArena = true;
 
             collision.gameObject.transform.position = BossEntrance.transform.position;
+
+            EventManager.CooldownTime = 0.5f;
         }
 
     }
@@ -104,7 +106,7 @@ public class BossArena : MonoBehaviour
         {
             PlayerInArena = false;
 
-
+            EventManager.UpdateStunGunCooldown();
 
 
         }
