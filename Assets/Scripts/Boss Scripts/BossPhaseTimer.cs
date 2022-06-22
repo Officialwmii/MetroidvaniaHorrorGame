@@ -12,7 +12,7 @@ public class BossPhaseTimer : MonoBehaviour
     public float trigger_time = 5f;
     void Awake()
     {
-        Debug.Log(director);
+        //Debug.Log(director);
         timer = phase_timer;
     }
 

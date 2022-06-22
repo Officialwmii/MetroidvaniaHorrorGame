@@ -755,7 +755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &419100331
 Transform:
   m_ObjectHideFlags: 0
@@ -1073,7 +1073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &694993444
 Transform:
   m_ObjectHideFlags: 0
@@ -1838,7 +1838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1754892330
 Transform:
   m_ObjectHideFlags: 0
@@ -27971,7 +27971,7 @@ MonoBehaviour:
   spawner_2: {fileID: 2340405983858595784}
   spawner_3: {fileID: 7241109182171111879}
   spawner_4: {fileID: 8784209090298072733}
-  spawner_5: {fileID: 0}
+  spawner_5: {fileID: 1830403501}
   health_pickup: {fileID: 6029347338394502869}
   grenade_pickup: {fileID: 1631584526715294557}
   fuel_pickup: {fileID: 2122314914701242193}
@@ -30497,6 +30497,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8153998441090405331, guid: b376aa763d0550c4c8d8687812e92ab9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1664458342, guid: 9c3787f4bbd162f4ebe73fd5a542399f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b376aa763d0550c4c8d8687812e92ab9, type: 3}
 --- !u!4 &8544806466466348866 stripped
@@ -34713,6 +34717,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8153998441090405331, guid: b376aa763d0550c4c8d8687812e92ab9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1664458342, guid: 9c3787f4bbd162f4ebe73fd5a542399f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b376aa763d0550c4c8d8687812e92ab9, type: 3}
 --- !u!4 &4709703756347609458 stripped
@@ -35269,6 +35277,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8153998441090405331, guid: b376aa763d0550c4c8d8687812e92ab9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1664458342, guid: 9c3787f4bbd162f4ebe73fd5a542399f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b376aa763d0550c4c8d8687812e92ab9, type: 3}
 --- !u!4 &4709703756738159894 stripped
@@ -35857,6 +35869,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8153998441090405331, guid: b376aa763d0550c4c8d8687812e92ab9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1664458342, guid: 9c3787f4bbd162f4ebe73fd5a542399f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b376aa763d0550c4c8d8687812e92ab9, type: 3}
 --- !u!4 &4709703758190339990 stripped
