@@ -2859,6 +2859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartButton
       objectReference: {fileID: 0}
+    - target: {fileID: 676780686316290208, guid: 104ed2192a047497fac20424fda31e37, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 676780686316290209, guid: 104ed2192a047497fac20424fda31e37, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3259,6 +3263,10 @@ PrefabInstance:
     - target: {fileID: 1052892821353216784, guid: 573d3cfec8f954689840599062954481, type: 3}
       propertyPath: m_Name
       value: QuitButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052892821353216784, guid: 573d3cfec8f954689840599062954481, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1052892821353216785, guid: 573d3cfec8f954689840599062954481, type: 3}
       propertyPath: m_Pivot.x
