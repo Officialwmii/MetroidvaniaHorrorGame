@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d2c0f83c1beeb41ad996fae74d081d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 10
+  life: 1
   turnLayerMask:
     serializedVersion: 2
     m_Bits: 0
