@@ -536,6 +536,28 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Xeno_Monologue_16" ID="{7AC3EE6F-629D-4205-9329-C69D4E045985}">
+									<ChildrenList>
+										<Action Name="" ID="{D63540ED-C70E-422B-9156-7125C06F9AD0}" ShortID="375590540">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_16" ID="{F3F5CC75-5B28-4E60-9B6E-F43EA08FE920}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Xeno_Monologue_01" ID="{D5678D23-C0BD-499D-93CB-2B7DDCACA7E3}">
+									<ChildrenList>
+										<Action Name="" ID="{FE3E76D1-51C9-4647-909A-1F1875019DA2}" ShortID="673360506">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="XENO-ENCEPHALON_MONOLOGUE_1" ID="{5320D3FD-40DB-42C3-938F-6A56418D0D11}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Enemies" ID="{8C91EE2C-979F-4D18-B89D-195AC4C38B4B}" ShortID="186543466">
@@ -687,6 +709,70 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Hallway Ambience Loop" ID="{93759C70-453E-4DC7-9942-8E60164349EF}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Ambience" ID="{B6B0BC33-88DB-4BAC-98A2-A29C6FE8A200}">
+									<ChildrenList>
+										<Action Name="" ID="{0334FDD3-D4AA-4793-8A69-DEB7E9B085F1}" ShortID="733884747">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Medbay Ambience Loop" ID="{37821992-DF49-4902-864D-B38056F842AF}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D97F2807-0502-4ADD-9377-9B88B59F901E}" ShortID="10919827">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boss Ambience Loop" ID="{48ADBDA1-F5E7-4BD9-A8EE-C27CB72149C0}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{8228337E-3089-40C9-B365-5068D332D67A}" ShortID="794915723">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Escape Pod Hatch Ambience Loop" ID="{B5792B25-5BF6-4DD5-BC62-96624CBC6419}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{06C40A32-0161-4365-A378-ABD9D01E3190}" ShortID="714721367">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hallway Ambience Loop" ID="{93759C70-453E-4DC7-9942-8E60164349EF}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{AE996C51-6F78-4DD3-817E-886A38F2830B}" ShortID="1057386187">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship Hull Ambience Loop" ID="{3B0D450D-D4DB-42A3-B7F2-8245E7349377}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{3AC2B03E-3662-48C5-83BD-C81C35E04D19}" ShortID="409017240">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Warehouse Ambience Loop" ID="{6CADF69D-885E-4B5B-BF13-3B142125ACE6}" WorkUnitID="{F5EE9549-DDFB-406F-A3E8-A0E9641AE443}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

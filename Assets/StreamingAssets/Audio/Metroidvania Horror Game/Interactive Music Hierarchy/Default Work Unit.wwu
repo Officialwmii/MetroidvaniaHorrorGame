@@ -278,6 +278,9 @@
 								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{A00172F0-A8BE-46B9-9B8A-C8343465B161}" ShortID="796576834">
 											<ReferenceList>
@@ -1779,6 +1782,9 @@
 								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{B0D2B436-CAF2-4D73-850E-805D77F8A57C}" ShortID="103489021">
 											<ReferenceList>
@@ -3392,6 +3398,9 @@
 								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{55BB6DC1-A77B-42A2-9D90-8640095C0AE1}" ShortID="447901058">
 											<ReferenceList>
@@ -6361,7 +6370,7 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-10</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{18C2D292-7C7C-4FD3-93B9-556AC85D5379}" ShortID="310931523">
@@ -7755,6 +7764,9 @@
 								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{AA006F94-01D0-4609-BFBA-3A04A1787A18}" ShortID="708679829">
 											<ReferenceList>

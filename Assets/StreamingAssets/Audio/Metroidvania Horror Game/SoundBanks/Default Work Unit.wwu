@@ -15,6 +15,7 @@
 						<ObjectRef Name="Lethal_Gun_Fire" ID="{40B31D89-A6C8-4169-8CB1-F5A39CC55798}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Xeno_Attack" ID="{36E408CA-96E8-41A5-A62F-1F7DADE855B2}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Xeno_Monologue_10" ID="{8F292F50-8CA7-41DF-9909-7338763CDAD0}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Xeno_Monologue_16" ID="{7AC3EE6F-629D-4205-9329-C69D4E045985}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Xeno_Gas" ID="{48FDCEDC-FFCD-420F-A6BE-36A4776F93D7}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_14" ID="{55E9A784-86FA-4212-87F8-83E51831F56D}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grenade_Freeze" ID="{A95944B5-7B48-4238-A430-CAB7C527288B}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
@@ -59,6 +60,7 @@
 						<ObjectRef Name="Play_Hallway_Ambience" ID="{8E99BAD6-A38B-4931-8D6C-37FED1C70E74}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Back" ID="{84270609-278D-4949-83F5-97150CEAFB9C}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Security_Alarm" ID="{686BBCB0-5B53-495B-AD35-777BF4C6CC2B}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Xeno_Monologue_01" ID="{D5678D23-C0BD-499D-93CB-2B7DDCACA7E3}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Medbay_Ambience" ID="{F8333775-511B-49B7-A15C-EB15804BFCDD}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Xeno_Monologue_11" ID="{91B0F835-5008-49FB-8698-091195CBCE08}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_7" ID="{CD7F4382-3BFB-4A12-B6A2-642B746E8BFD}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
@@ -77,6 +79,7 @@
 						<ObjectRef Name="Xeno_Monologue_07" ID="{D7DEBCEC-C830-4B47-8781-E9D503E039E9}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Glob_Idle" ID="{1827A82C-B268-4B71-B87C-A8089E77C804}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Liptank_Death" ID="{FC628602-C847-4B90-9ACA-B0875CCB793A}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Ambience" ID="{B6B0BC33-88DB-4BAC-98A2-A29C6FE8A200}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stun_Gun_Cooldown" ID="{66997210-A674-4BE5-B7BA-D88A0391ABD3}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Xeno_Monologue_02" ID="{6A1850A7-4FDC-4C29-BBB3-DB6967A315E8}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_16" ID="{82E1F147-9A6D-4C3D-A68F-F19C92CC35A8}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
@@ -97,6 +100,7 @@
 						<ObjectRef Name="Audio_Log_5" ID="{4A9F447A-F1F4-4ECC-A67B-70CF0F228623}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Xeno_Monologue_04" ID="{C718963D-972D-4EFF-BEBB-0BF27FF685D7}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Noise_Meter_Fill" ID="{C1D5B6A7-1D44-4F08-9323-5F6113062645}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Easter_Egg_Jumpscare" ID="{10384272-6921-4F11-A280-3F253D0A8398}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SHIP_SYSTEM_ANNOUNCEMENT_19" ID="{3A4DBE1E-E8D3-4F5B-9C82-B4E22C312283}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Xeno_Monologue_14" ID="{47136DBD-4D85-4FFD-AEF4-D6E58EC1AC5C}" WorkUnitID="{C50D8D67-1173-4F4B-A4A4-7A1483BA6642}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

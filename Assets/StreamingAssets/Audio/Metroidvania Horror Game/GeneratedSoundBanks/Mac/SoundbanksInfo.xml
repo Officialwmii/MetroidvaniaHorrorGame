@@ -29,7 +29,7 @@
 				<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="English(US)" Hash="500774536">
+		<SoundBank Id="3161908922" Language="English(US)" Hash="981971560">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
@@ -146,7 +146,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="991706544" Name="Constalation_Key" ObjectPath="\Events\Default Work Unit\SFX\Constalation_Key" DurationType="OneShot" DurationMin="0." DurationMax="0.">
+				<Event Id="991706544" Name="Constalation_Key" ObjectPath="\Events\Default Work Unit\SFX\Constalation_Key" DurationType="OneShot" DurationMin="0.856138" DurationMax="1.036879">
 					<IncludedMemoryFiles>
 						<File Id="242184287" Language="SFX">
 							<ShortName>SCI FI Interface Display Confirm Data Sweep.wav</ShortName>
@@ -182,6 +182,17 @@
 						<File Id="699407469" Language="SFX">
 							<ShortName>sfx_enemie_crawlers_idle_2.wav</ShortName>
 							<Path>SFX/sfx_enemie_crawlers_idle_2_569C59C1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="4042687956" Name="Easter_Egg_Jumpscare" ObjectPath="\Events\Default Work Unit\SFX\Easter_Egg_Jumpscare" DurationType="OneShot" DurationMin="12." DurationMax="12.">
+					<IncludedMemoryFiles>
+						<File Id="169296593" Language="SFX">
+							<ShortName>SPECIAL INFECTED_EASTER_EGG.wav</ShortName>
+							<Path>SFX/SPECIAL INFECTED_EASTER_EGG_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -405,19 +416,11 @@
 						<AuxBus Id="1069431850" Name="Player" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_Bus\Player"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3491076326" Name="Infected_Death" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Infected\Infected_Death" DurationType="OneShot" DurationMin="1.05212" DurationMax="3.712311">
+				<Event Id="3491076326" Name="Infected_Death" ObjectPath="\Events\Default Work Unit\Dialogue\Enemies\Infected\Infected_Death" DurationType="OneShot" DurationMin="1.05212" DurationMax="3.005204">
 					<IncludedMemoryFiles>
 						<File Id="251338578" Language="SFX">
 							<ShortName>INFECTED_GRUNT_7_1.wav</ShortName>
 							<Path>SFX/INFECTED_GRUNT_7_1_BD42DE7F.wem</Path>
-						</File>
-						<File Id="416918827" Language="SFX">
-							<ShortName>INFECTED_GRUNT_7_2.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_7_2_569C59C1.wem</Path>
-						</File>
-						<File Id="960901028" Language="SFX">
-							<ShortName>INFECTED_GRUNT_7_3.wav</ShortName>
-							<Path>SFX/INFECTED_GRUNT_7_3_1D6AB4CA.wem</Path>
 						</File>
 						<File Id="1069455546" Language="SFX">
 							<ShortName>INFECTED_GRUNT_7_4.wav</ShortName>
@@ -1863,6 +1866,7 @@
 						<AuxBus Id="1779194964" Name="Ship_AI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Ship_AI"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="2477713992" Name="Stop_Ambience" ObjectPath="\Events\Default Work Unit\SFX\Ambience\Stop_Ambience" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="4191195101" Name="Stop_Screaming" ObjectPath="\Events\Default Work Unit\SFX\Enemies\Stop_Screaming" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="708622098" Name="Stun_Gun_Cooldown" ObjectPath="\Events\Default Work Unit\SFX\Player\Weapons\Stun_Gun_Cooldown" DurationType="OneShot" DurationMin="9.1875" DurationMax="9.1875">
 					<IncludedMemoryFiles>
@@ -2002,6 +2006,18 @@
 						<AuxBus Id="2242381963" Name="Enemies" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Enemies"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="2070832519" Name="Xeno_Monologue_01" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_01" DurationType="OneShot" DurationMin="8.5" DurationMax="8.5">
+					<IncludedMemoryFiles>
+						<File Id="932881791" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_1.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_1_569C59C1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="2070832516" Name="Xeno_Monologue_02" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_02" DurationType="OneShot" DurationMin="5.875" DurationMax="5.875">
 					<IncludedMemoryFiles>
 						<File Id="486323830" Language="English(US)">
@@ -2139,6 +2155,18 @@
 						<File Id="378239919" Language="English(US)">
 							<ShortName>XENO-ENCEPHALON_MONOLOGUE_15.wav</ShortName>
 							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_15_569C59C1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="573466488" Name="Dialogue_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus"/>
+						<AuxBus Id="3971690117" Name="Xeno" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue_Bus\Xeno"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2087610239" Name="Xeno_Monologue_16" ObjectPath="\Events\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_16" DurationType="OneShot" DurationMin="36.5" DurationMax="36.5">
+					<IncludedMemoryFiles>
+						<File Id="512919423" Language="English(US)">
+							<ShortName>XENO-ENCEPHALON_MONOLOGUE_16.wav</ShortName>
+							<Path>Voices/English(US)/XENO-ENCEPHALON_MONOLOGUE_16_569C59C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>

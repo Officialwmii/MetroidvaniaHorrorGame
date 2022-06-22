@@ -24,6 +24,7 @@ namespace AK
         static const AkUniqueID CONSTALATION_KEY = 991706544U;
         static const AkUniqueID CRAWLER_EXPLODE = 2583459121U;
         static const AkUniqueID CRAWLER_IDLE = 2451879384U;
+        static const AkUniqueID EASTER_EGG_JUMPSCARE = 4042687956U;
         static const AkUniqueID ELEVATOR_DOWN = 2896864154U;
         static const AkUniqueID ELEVATOR_UP = 1077976377U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
@@ -85,6 +86,7 @@ namespace AK
         static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_20 = 1348318558U;
         static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_21 = 1348318559U;
         static const AkUniqueID SHIP_SYSTEM_ANNOUNCEMENT_22 = 1348318556U;
+        static const AkUniqueID STOP_AMBIENCE = 2477713992U;
         static const AkUniqueID STOP_SCREAMING = 4191195101U;
         static const AkUniqueID STUN_GUN_COOLDOWN = 708622098U;
         static const AkUniqueID STUN_GUN_FIRE = 1876963445U;
@@ -95,6 +97,7 @@ namespace AK
         static const AkUniqueID XENO_DEATH = 644176342U;
         static const AkUniqueID XENO_GAS = 1780464255U;
         static const AkUniqueID XENO_IDLE = 1798072102U;
+        static const AkUniqueID XENO_MONOLOGUE_01 = 2070832519U;
         static const AkUniqueID XENO_MONOLOGUE_02 = 2070832516U;
         static const AkUniqueID XENO_MONOLOGUE_03 = 2070832517U;
         static const AkUniqueID XENO_MONOLOGUE_04 = 2070832514U;
@@ -107,6 +110,7 @@ namespace AK
         static const AkUniqueID XENO_MONOLOGUE_11 = 2087610232U;
         static const AkUniqueID XENO_MONOLOGUE_14 = 2087610237U;
         static const AkUniqueID XENO_MONOLOGUE_15 = 2087610236U;
+        static const AkUniqueID XENO_MONOLOGUE_16 = 2087610239U;
     } // namespace EVENTS
 
     namespace STATES

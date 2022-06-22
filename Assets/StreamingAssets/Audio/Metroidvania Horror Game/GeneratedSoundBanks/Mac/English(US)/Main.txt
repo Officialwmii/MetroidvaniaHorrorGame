@@ -48,12 +48,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	2070832515	Xeno_Monologue_05			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_05	
 	2070832516	Xeno_Monologue_02			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_02	
 	2070832517	Xeno_Monologue_03			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_03	
+	2070832519	Xeno_Monologue_01			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_01	
 	2070832526	Xeno_Monologue_08			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_08	
 	2070832527	Xeno_Monologue_09			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_09	
 	2087610232	Xeno_Monologue_11			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_11	
 	2087610233	Xeno_Monologue_10			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_10	
 	2087610236	Xeno_Monologue_15			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_15	
 	2087610237	Xeno_Monologue_14			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_14	
+	2087610239	Xeno_Monologue_16			\Default Work Unit\Dialogue\Xeno\Xeno_Monologue_16	
 	2325592372	Xeno_Attack			\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Attack	
 	2379525397	Xeno_Damaged			\Default Work Unit\SFX\Enemies\Xeno-Encephalon\Xeno_Damaged	
 	2385628198	Footsteps			\Default Work Unit\SFX\Player\Movement\Footsteps	
@@ -61,6 +63,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2414406199	Screamer_Screeching			\Default Work Unit\Dialogue\Enemies\Screamer\Screamer_Screeching	
 	2451879384	Crawler_Idle			\Default Work Unit\SFX\Enemies\Crawler\Crawler_Idle	
 	2455087587	Stun_Gun_Upgrade			\Default Work Unit\SFX\Player\Weapons\Stun_Gun_Upgrade	
+	2477713992	Stop_Ambience			\Default Work Unit\SFX\Ambience\Stop_Ambience	
 	2505135486	Play_Escape_Pod_Ambience			\Default Work Unit\SFX\Ambience\Play_Escape_Pod_Ambience	
 	2583459121	Crawler_Explode			\Default Work Unit\SFX\Enemies\Crawler\Crawler_Explode	
 	2793513639	Liptank_Attack			\Default Work Unit\SFX\Enemies\Liptank\Liptank_Attack	
@@ -90,6 +93,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3790999967	SHIP_SYSTEM_ANNOUNCEMENT_7			\Default Work Unit\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_7	
 	3968446557	Play_Music_Main_Menu			\Default Work Unit\Play_Music_Main_Menu	
 	4035040332	Jetpack_Dash			\Default Work Unit\SFX\Player\Movement\Jetpack_Dash	
+	4042687956	Easter_Egg_Jumpscare			\Default Work Unit\SFX\Easter_Egg_Jumpscare	
 	4062170604	Jetpack_Upgrade			\Default Work Unit\SFX\Player\Movement\Jetpack_Upgrade	
 	4121310008	Play_Music_Credits			\Default Work Unit\Play_Music_Credits	
 	4191195101	Stop_Screaming			\Default Work Unit\SFX\Enemies\Stop_Screaming	
@@ -166,6 +170,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	153984511	Noise_Meter_Layer_2_1_M1-5	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\Noise_Meter_Layer_2_1_M1-5_E84716CF.wem		\Interactive Music Hierarchy\Default Work Unit\Silent_Space_Music\Base Music\Noise Meter Base\Noise_Meter_Layer_2_1_M1-5		84801
 	154343532	Base_Layer_2_M1-49	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\Base_Layer_2_M1-49_E84716CF.wem		\Interactive Music Hierarchy\Default Work Unit\Silent_Space_Music\Base Music\Noise Meter Base\Base_Layer_2_M1-49		983567
 	158052674	XENO-ENCEPHALON_MONOLOGUE_8	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\Voices\English(US)\XENO-ENCEPHALON_MONOLOGUE_8_569C59C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Dialogue\Xeno-Encephalon\Xeno-encephalon Monologues\XENO-ENCEPHALON_MONOLOGUE_8		98480
+	169296593	SPECIAL INFECTED_EASTER_EGG	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\SPECIAL INFECTED_EASTER_EGG_569C59C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Enemies\Infected\Easter Egg Jumpscare\SPECIAL INFECTED_EASTER_EGG		132816
 	182519293	sfx_objects_alien_artifact	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\sfx_objects_alien_artifact_569C59C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Objects\Alien Artifact Pick Up\sfx_objects_alien_artifact		146275
 	183375381	sfx_player_lethal_gun_fire_2	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\Lethal Gun\sfx_player_lethal_gun_fire_2_569C59C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Player\Weapons\Lethal Gun\sfx_player_lethal_gun_fire_2		17928
 	187605677	SHIP_SYSTEM_ANNOUNCEMENT_5	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\SHIP_SYSTEM_ANNOUNCEMENT_5_569C59C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_5		21518
@@ -210,7 +215,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	392537604	sfx_player_stun_upgrade_3	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\Stun Upgrade\sfx_player_stun_upgrade_3_569C59C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Player\Weapons\Stun Upgrade\sfx_player_stun_upgrade_3		20172
 	395898396	Key_Pick_Up_3	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\SCI FI Interface Display Confirm Data Sweep_B7ED9916.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Objects\Constalation Key Pick Up\Key_Pick_Up_3		13829
 	404218294	SHIP_SYSTEM_ANNOUNCEMENT_10	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\SHIP_SYSTEM_ANNOUNCEMENT_10_569C59C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_10		78424
-	416918827	INFECTED_GRUNT_7_2	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\INFECTED_GRUNT_7_2_569C59C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Enemies\Infected\Infected_Death\INFECTED_GRUNT_7_2		35154
 	419453379	sfx_ambience_med_bay	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\sfx_ambience_med_bay_569C59C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Ambience\Medbay Ambience Loop\sfx_ambience_med_bay		549117
 	430324706	sfx_enemie_liptank_death	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\sfx_enemie_liptank_death_F7D96E01.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Enemies\Liptank\Liptank Death\sfx_enemie_liptank_death		34639
 	451920883	sfx_player_grenade_fire	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\Grenade Fire\sfx_player_grenade_fire_D9E1D213.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Player\Weapons\Grenade Fire\sfx_player_grenade_fire		44965
@@ -316,7 +320,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	945601546	SHIP_SYSTEM_ANNOUNCEMENT_3	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\SHIP_SYSTEM_ANNOUNCEMENT_3_569C59C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Dialogue\Ship AI\SHIP_SYSTEM_ANNOUNCEMENT_3		53175
 	951515435	sfx_player_footsteps_glass_5	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\Footsteps\Glass\sfx_player_footsteps_glass_5_569C59C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Player\Movement\Footsteps\Glass\sfx_player_footsteps_glass_5		9280
 	959127739	sfx_environment_elevator	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\Elevator\sfx_environment_elevator_2CFAF476.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Environment\Elevator\Elevator Going Down\sfx_environment_elevator		43286
-	960901028	INFECTED_GRUNT_7_3	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\INFECTED_GRUNT_7_3_1D6AB4CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\Enemies\Infected\Infected_Death\INFECTED_GRUNT_7_3		29327
 	969567069	Back	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\ui_back_BB7E5536.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game SFX\UI\Back\Back		27770
 	971252853	Death_Stinger_Ending_Base_3_M61-65	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\Death_Stinger_Ending_Base_3_M61-65_E84716CF.wem		\Interactive Music Hierarchy\Default Work Unit\Silent_Space_Music\Death\Player Death\Death_Stinger_Ending_Base_3_M61-65		146883
 	977194662	Death_Stinger_Ending_Prog_3_1_M61-65	Y:\Documents\GitHub\MetroidvaniaHorrorGame\Metroidvania Horror Unity Project Settings\Assets\StreamingAssets\Audio\Metroidvania Horror Game\.cache\Mac\SFX\Death_Stinger_Ending_Prog_3_1_M61-65_E84716CF.wem		\Interactive Music Hierarchy\Default Work Unit\Silent_Space_Music\Death\Player Death\Death_Stinger_Ending_Prog_3_1_M61-65		73084
