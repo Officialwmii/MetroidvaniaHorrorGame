@@ -107,7 +107,9 @@ public class EventManager : MonoBehaviour
     public static GameObject KeyUnlocked3;
     public static GameObject GrenadeCircle; 
     public static float GrenadeCountdown = 0;
-    public static bool CanThrowGrenade = true; 
+    public static bool CanThrowGrenade = true;
+
+    static private float randomAlienMonolouge = 0; 
 
     void Start()
     {
@@ -241,6 +243,9 @@ public class EventManager : MonoBehaviour
             }
         }
 
+        //debugging Xeno Lines
+        if(Input.GetKeyDown(KeyCode.PageDown)) { randomAlienMonolouge++; AlienInnerMonologue(); }
+
         if (CurrentDangerLevel == 0) alienTimer = alienTimer + Time.deltaTime;
 
         if (alienTimer >= 1) {
@@ -261,6 +266,7 @@ public class EventManager : MonoBehaviour
         }
 
         Timer = Timer + Time.deltaTime;
+
 
     }
 
@@ -298,8 +304,8 @@ public class EventManager : MonoBehaviour
 
     static public void AlienInnerMonologue() {
 
-        float RandomLine = Random.Range(0f, 12f);
-
+        float RandomLine = (int)Random.Range(1f, 16f);
+        RandomLine = randomAlienMonolouge;
         switch (Mathf.RoundToInt(RandomLine))
         {
             case 1:
@@ -318,10 +324,10 @@ public class EventManager : MonoBehaviour
             case 5: sub("We are what we are and what we are is the cosmic recursion.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_05", player);
                 break;
-            case 6: sub("Even the smallest speck plays its part", 5f);
+            case 6: sub("Even the smallest speck plays its part.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_06", player);
                 break;
-            case 7: sub("They trusted you", 1f);
+            case 7: sub("They trusted you.", 1f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_07", player);
                 break;
             case 8: sub("In the eternal dark scream your screams and we will whisper you to sleep.", 5f);
@@ -347,7 +353,7 @@ public class EventManager : MonoBehaviour
             case 14: sub("O the curse of recursion!", 2f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_14", player);
                 break;
-            case 15: sub("Void your shells. cease your lives.", 2f);
+            case 15: sub("Void your shells. Cease your lives.", 2f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_15", player);
                 break;
         }
