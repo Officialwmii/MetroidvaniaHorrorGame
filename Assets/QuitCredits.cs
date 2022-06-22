@@ -13,6 +13,10 @@ public class QuitCredits : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Cursor.visible = false;
+
         if (Input.GetButtonDown("Submit")) { SceneManager.LoadScene("Main Menu"); }
+
     }
 }

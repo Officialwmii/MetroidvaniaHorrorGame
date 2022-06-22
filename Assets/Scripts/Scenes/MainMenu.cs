@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
+    public void Update()
+    {
+        Cursor.visible = false;
+
+    }
+
     public void PlayGame ()
     {
         // Use this when scenes are added to the queue in the build settings
