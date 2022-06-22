@@ -78,7 +78,7 @@ public class Inventory : MonoBehaviour
         Health.GetComponent<TMP_Text>().text = "" + ((EventManager.MaxLives - 4) * 3 + EventManager.LifeShards) + "/15 " + (EventManager.MaxLives) + " HP";
         Fuel.GetComponent<TMP_Text>().text = "" + ((EventManager.MaxFuel - 50)/10) + "/10 " + (EventManager.MaxFuel) + " Fuel";
         Cryo.GetComponent<TMP_Text>().text = "" + ((EventManager.MaxGrenades-2)) + "/3 Cryo G." ;
-        Logs.GetComponent<TMP_Text>().text = "" + ((EventManager.AudioLog )) + "/5 " + " Logs";
+        Logs.GetComponent<TMP_Text>().text = "" + ((EventManager.AudioLog )) + "/6 " + " Logs";
         Artifacts.GetComponent<TMP_Text>().text = "" + ((EventManager.Collectables)) + "/5 " + " Alien Artifacts";
         Keys.GetComponent<TMP_Text>().text = "" + (EventManager.ConstalationsKeysAcquired) + "/3 " + " Con. P.";
         Stun.GetComponent<TMP_Text>().text = "" + ((EventManager.stunUpgrade-1 )) + "/5 " +EventManager.CooldownTime +"s Stun";
