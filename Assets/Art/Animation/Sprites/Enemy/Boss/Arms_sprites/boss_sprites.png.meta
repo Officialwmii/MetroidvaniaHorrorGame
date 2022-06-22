@@ -401,9 +401,9 @@ TextureImporter:
       name: boss_sprites_14
       rect:
         serializedVersion: 2
-        x: 1475
+        x: 1519
         y: 52
-        width: 1378
+        width: 1383
         height: 1146
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
