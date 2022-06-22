@@ -649,43 +649,44 @@ public class EventManager : MonoBehaviour
 
     static public void AudioLogPickup(AudioNode subtitles)
     {
-        if (AudioLog == 0)
+        AudioLog++;
+
+        if (AudioLog == 1)
         {
-            AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_1", player);
 
             SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
             //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
-        else if (AudioLog == 1)
-        {
-            AudioLog++;
-            AkSoundEngine.PostEvent("Audio_Log_2", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
-        }
         else if (AudioLog == 2)
         {
-            AudioLog++;
-            AkSoundEngine.PostEvent("Audio_Log_3", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
+            AkSoundEngine.PostEvent("Audio_Log_2", player);
+            SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
+            //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
         else if (AudioLog == 3)
         {
-            AudioLog++;
-            AkSoundEngine.PostEvent("Audio_Log_4", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
+            AkSoundEngine.PostEvent("Audio_Log_3", player);
+            SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
+            //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
         else if (AudioLog == 4)
         {
-            AudioLog++;
+            AkSoundEngine.PostEvent("Audio_Log_4", player);
+            SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
+            //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
+        }
+        else if (AudioLog == 5)
+        {
             AkSoundEngine.PostEvent("Audio_Log_5", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
+            SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
+            //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
         else
         {
-            AudioLog++;
             AkSoundEngine.PostEvent("Audio_Log_6", player);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
+            SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
+            //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
     }
 
