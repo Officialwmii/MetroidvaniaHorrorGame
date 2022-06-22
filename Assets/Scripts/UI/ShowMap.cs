@@ -7,13 +7,10 @@ public class ShowMap : MonoBehaviour
 
     static public bool showMap = true;
     public GameObject BossArenaBounds;
-    // Start is called before the first frame update
     void Start()
     {
         BossArenaBounds = GameObject.Find("BossArenaBounds");
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (BossArenaBounds.GetComponent<BossArena>().PlayerInArena == true)
@@ -28,13 +25,13 @@ public class ShowMap : MonoBehaviour
 
                 if (showMap == true)
                 {
-                    Debug.Log("press map show");
+                    //Debug.Log("press map show");
 
                     showMap = false;
                 }
                 else
                 {
-                    Debug.Log("press map hide");
+                    //Debug.Log("press map hide");
 
                     showMap = true;
                 }

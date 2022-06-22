@@ -111,7 +111,7 @@ public class EventManager : MonoBehaviour
 
     static private float randomAlienMonolouge = 0; 
 
-    void Start()
+    void Awake()
     {
         life1 = GameObject.Find("HP1");
         life2 = GameObject.Find("HP2");
@@ -176,7 +176,6 @@ public class EventManager : MonoBehaviour
 
         GrenadeCircle = GameObject.Find("GrenadeCircle");
         GrenadeCircle.SetActive(false);
-
     }
 
     // Update is called once per frame
@@ -220,7 +219,7 @@ public class EventManager : MonoBehaviour
         //AlertAddingDanger();
         AutomaticallyReduceDanger();
 
-        //if (Input.GetKeyDown(KeyCode.PageDown)) { OnBossCompleted(); }
+        if (Input.GetKeyDown(KeyCode.PageUp)) { OnBossCompleted(); }
         if (EscapeSequence)
         {
             AlertTimer = AlertTimer - Time.deltaTime;
