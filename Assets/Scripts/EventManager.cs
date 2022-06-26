@@ -113,7 +113,54 @@ public class EventManager : MonoBehaviour
 
 
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode) {    }
+    void OnEnable() {
+        //Resetting all variables when playing the game again.
+        Lives = 4;
+        MaxLives = 4;
+        LifeShards = 0;
+        DeathCounter = 0;
+        grenades = 1;
+        MaxGrenades = 2;
+        CooldownTime = 15;
+        canUseStun = true;
+        stunUpgrade = 1;
+        Collectables = 0;
+        AudioLog = 0;
+        EnemiesAlerted = false;
+        CurrentDanger = 15;
+        CurrentDangerLevel = 0;
+        DangerMultiplier = 1;
+        Fuel = 100;
+        MaxFuel = 50;
+        DashFuelCost = 15;
+        EMPFuelCost = 15;
+        canUseDash = true;
+        JetpackFuelCost = 0.9f;
+        canUseJetpack = true;
+
+        HasJetpack = false;
+        HasDoubleJetpack = false;
+        HasArmour = false;
+        HasRocketLauncher = false;
+        HasFuelRefill = true;
+        FuelRefillNumberOfUpgrades = 1;
+        FuelRefillTreshold = 0.25f;
+        FuelRefillSpeed = 2.5f;
+        MainUpgradesAcquired = 0;
+        ConstalationsKeysAcquired = 0;
+        EscapeSequence = false;
+
+        AlertTimer = 180;
+        alienTimer = 0;
+        MapProgress = 0;
+        Timer = 0;
+        AudioPlayEscapePodInitiated = false;
+        CheatMapVisibility = false;
+        inLowGravityZone = false;
+        GrenadeCountdown = 0;
+        CanThrowGrenade = true;
+
+    }
 
     void Start(){
         life1 = GameObject.Find("HP1");
