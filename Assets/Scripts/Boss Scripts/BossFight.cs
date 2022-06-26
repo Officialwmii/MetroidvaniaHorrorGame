@@ -116,21 +116,24 @@ public class BossFight : MonoBehaviour
     }
 
 
-    private void RandomMirror(GameObject BossAttack)
+    private void RandomMirrorPlayerPosition(GameObject BossAttack)
     {
-        RandomBossAttackVariant = (int)Random.Range(1, 2 + 1);
-        /*switch (RandomBossAttackVariant) {
-
-            case (1): BossAttack.transform.localScale = new Vector3(1, 1, 1); break;
-            case (2): BossAttack.transform.localScale = new Vector3(-1, 1, 1); break;
-        }*/
-
         if (Player.GetComponent<Transform>().position.x <= gameObject.GetComponent<Transform>().position.x) { 
             BossAttack.transform.localScale = new Vector3(1, 1, 1); }
         else { BossAttack.transform.localScale = new Vector3(-1, 1, 1); }
+    }
 
+    private void RandomMirror(GameObject BossAttack)
+    {
+        RandomBossAttackVariant = (int)Random.Range(1, 2 + 1);
+        switch (RandomBossAttackVariant) {
+
+            case (1): BossAttack.transform.localScale = new Vector3(1, 1, 1); break;
+            case (2): BossAttack.transform.localScale = new Vector3(-1, 1, 1); break;
+        }
 
     }
+
 
     private void RandomMirrorFlip(GameObject BossAttack)
     {
@@ -150,6 +153,7 @@ public class BossFight : MonoBehaviour
     private void NewBossPhases()
     {
 
+
         if (BossHP == 400)
         {
             OnEnable();
@@ -157,8 +161,10 @@ public class BossFight : MonoBehaviour
 
         if (BossHP <= 399 && BossHP > 0){
 
+            //Add boss attack audio
+
             RandomBossAttack = (int)Random.Range(0,4+1);
-            //RandomBossAttack = 1;
+            //RandomBossAttack = 4;
 
             switch (RandomBossAttack) { 
 
@@ -168,26 +174,21 @@ public class BossFight : MonoBehaviour
 
                 case (1):
                     ActivateAttack(Attack1v1);
-                    RandomMirrorFlip(Attack1v1);
+                    RandomMirror(Attack1v1);
                     break;
 
                 case (2):
                     ActivateAttack(Attack1v2);
-                    RandomMirrorFlip(Attack1v2);
+                    RandomMirror(Attack1v2);
                     break;
 
                 case (3):
                     ActivateAttack(Attack1v3);
-                    RandomMirror(Attack1v3);
+                    RandomMirrorPlayerPosition(Attack1v3);
                     break;
                 case (4):
                     ActivateAttack(Attack1v4);
-                    RandomMirrorFlip(Attack1v4);
-
-                    break;
-                case (5):
-                    Phase_5.SetActive(true);
-                    Phase_5.GetComponent<PlayableDirector>().Play();
+                    RandomMirror(Attack1v4);
 
                     break;
                 default:
