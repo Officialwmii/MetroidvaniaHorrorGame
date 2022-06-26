@@ -61,6 +61,8 @@ public class EventManager : MonoBehaviour
     static public bool canUseJetpack = true;
 
     static private GameObject fuelBar;
+    static private GameObject fuelBarArea;
+    static private GameObject fuelBarFrame;
 
     static public bool HasJetpack = false;
     static public bool HasDoubleJetpack = false;
@@ -191,6 +193,9 @@ public class EventManager : MonoBehaviour
         UpdateCooldown();
 
         fuelBar = GameObject.Find("fuelBar");
+        fuelBarArea = GameObject.Find("Fuel Fill Area");
+        fuelBarFrame = GameObject.Find("FuelFrame");
+
         UpdateFuel();
 
         DangerMeter = GameObject.Find("DangerMeter");
@@ -612,6 +617,10 @@ public class EventManager : MonoBehaviour
                 Fuel = MaxFuel; 
         }
         
+        fuelBarArea.GetComponent<RectTransform>().sizeDelta = new Vector2(100*MaxFuel/100, 7);
+        fuelBarFrame.GetComponent<RectTransform>().sizeDelta = new Vector2(115 * MaxFuel / 100, 12);
+
+
         UpdateFuel();
     }
 
