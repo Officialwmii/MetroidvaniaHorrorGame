@@ -109,10 +109,13 @@ public class EventManager : MonoBehaviour
     public static float GrenadeCountdown = 0;
     public static bool CanThrowGrenade = true;
 
-    static private float randomAlienMonolouge = 0; 
+    static private float randomAlienMonolouge = 0;
 
-    void Awake()
-    {
+
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) {    }
+
+    void Start(){
         life1 = GameObject.Find("HP1");
         life2 = GameObject.Find("HP2");
         life3 = GameObject.Find("HP3");

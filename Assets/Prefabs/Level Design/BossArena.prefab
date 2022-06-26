@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 26193230}
   - component: {fileID: 26193231}
+  - component: {fileID: 2073425132646707567}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: Untagged
@@ -39,7 +40,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26193229}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -84,6 +85,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2073425132646707567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26193229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbb3b1d80683eb42aca689a31d53a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &84117575
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,7 +114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &84117576
 Transform:
   m_ObjectHideFlags: 0
@@ -204,12 +217,12 @@ GameObject:
   - component: {fileID: 94042718}
   - component: {fileID: 94042717}
   m_Layer: 0
-  m_Name: Boss_Bash4
+  m_Name: Boss_Bash3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &94042716
 Transform:
   m_ObjectHideFlags: 0
@@ -561,12 +574,12 @@ GameObject:
   - component: {fileID: 327990145}
   - component: {fileID: 327990144}
   m_Layer: 0
-  m_Name: Boss_Bash2
+  m_Name: Boss_Bash1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &327990143
 Transform:
   m_ObjectHideFlags: 0
@@ -752,6 +765,7 @@ GameObject:
   - component: {fileID: 419100332}
   - component: {fileID: 419100336}
   - component: {fileID: 419100335}
+  - component: {fileID: 783083466145367347}
   m_Layer: 1
   m_Name: BossArenaBounds
   m_TagString: Untagged
@@ -781,7 +795,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419100330}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -914,6 +928,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &783083466145367347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419100330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbb3b1d80683eb42aca689a31d53a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &611670858
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,6 +1013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 664101291}
   - component: {fileID: 664101292}
+  - component: {fileID: 1005856652601141480}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -1016,7 +1043,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664101290}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1061,6 +1088,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1005856652601141480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664101290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbb3b1d80683eb42aca689a31d53a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &694993443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,6 +1251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 803723977}
   - component: {fileID: 803723978}
+  - component: {fileID: 5440091626222054452}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -1241,7 +1281,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803723976}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1286,6 +1326,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5440091626222054452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803723976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbb3b1d80683eb42aca689a31d53a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &839397306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,6 +1601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1052117036}
   - component: {fileID: 1052117037}
+  - component: {fileID: 5233561651597124887}
   m_Layer: 0
   m_Name: Square (3)
   m_TagString: Untagged
@@ -1578,7 +1631,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052117035}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1623,6 +1676,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5233561651597124887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052117035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbb3b1d80683eb42aca689a31d53a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1642139345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,7 +1903,7 @@ GameObject:
   - component: {fileID: 1754892332}
   - component: {fileID: 1754892331}
   m_Layer: 0
-  m_Name: Boss_Bash5
+  m_Name: Boss_Bash4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2223,7 +2288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2018038393
 Transform:
   m_ObjectHideFlags: 0
@@ -12145,7 +12210,7 @@ GameObject:
   - component: {fileID: 6203755389714109071}
   - component: {fileID: 266697858}
   m_Layer: 0
-  m_Name: Boss_Bash1
+  m_Name: Boss_Bash1Old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12836,7 +12901,7 @@ GameObject:
   - component: {fileID: 3491671781402159564}
   - component: {fileID: 3491671781402159565}
   m_Layer: 0
-  m_Name: BossStuff
+  m_Name: Boss Attacks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14008,12 +14073,12 @@ GameObject:
   - component: {fileID: 1184357436335648990}
   - component: {fileID: 987305949091881785}
   m_Layer: 0
-  m_Name: Boss_Bash3
+  m_Name: Boss_Bash2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6657875552974621943
 Transform:
   m_ObjectHideFlags: 0
@@ -34335,6 +34400,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7684536899328654243, guid: 4415b78d4e0ea1f44a866d602ad52ee8, type: 3}
+      propertyPath: m_FlipY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684536899328654243, guid: 4415b78d4e0ea1f44a866d602ad52ee8, type: 3}
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
@@ -34647,6 +34716,10 @@ PrefabInstance:
     - target: {fileID: 4684221702729259155, guid: 4415b78d4e0ea1f44a866d602ad52ee8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684536899328654243, guid: 4415b78d4e0ea1f44a866d602ad52ee8, type: 3}
+      propertyPath: m_FlipY
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4415b78d4e0ea1f44a866d602ad52ee8, type: 3}
@@ -35441,6 +35514,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684536899328654243, guid: 4415b78d4e0ea1f44a866d602ad52ee8, type: 3}
+      propertyPath: m_FlipY
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4415b78d4e0ea1f44a866d602ad52ee8, type: 3}
 --- !u!4 &8175539852826056381 stripped
@@ -36110,6 +36187,10 @@ PrefabInstance:
     - target: {fileID: 4684221702729259155, guid: 4415b78d4e0ea1f44a866d602ad52ee8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684536899328654243, guid: 4415b78d4e0ea1f44a866d602ad52ee8, type: 3}
+      propertyPath: m_FlipY
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7684536899328654243, guid: 4415b78d4e0ea1f44a866d602ad52ee8, type: 3}
       propertyPath: m_SortingOrder

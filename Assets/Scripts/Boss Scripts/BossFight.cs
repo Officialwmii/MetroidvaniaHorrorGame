@@ -112,6 +112,18 @@ public class BossFight : MonoBehaviour
         Debug.Log("Attack"+BossAttack.name);
     }
 
+
+    private void RandomMirror(GameObject BossAttack)
+    {
+        RandomBossAttackVariant = (int)Random.Range(1, 2 + 1);
+        switch (RandomBossAttackVariant)
+        {
+            case (1): BossAttack.transform.localScale = new Vector3(1, 1, 1); break;
+            case (2): BossAttack.transform.localScale = new Vector3(-1, 1, 1); break;
+        }
+
+    }
+
     private void RandomMirrorFlip(GameObject BossAttack)
     {
         RandomBossAttackVariant = (int)Random.Range(1, 4 + 1);
@@ -138,7 +150,7 @@ public class BossFight : MonoBehaviour
         if (BossHP <= 380 && BossHP > 0){
 
             RandomBossAttack = (int)Random.Range(0,4+1);
-            //RandomBossAttack = 4;
+            RandomBossAttack = 3;
 
             switch (RandomBossAttack) { 
 
@@ -158,7 +170,7 @@ public class BossFight : MonoBehaviour
 
                 case (3):
                     ActivateAttack(Attack1v3);
-                    RandomMirrorFlip(Attack1v3);
+                    RandomMirror(Attack1v3);
                     break;
                 case (4):
                     ActivateAttack(Attack1v4);
