@@ -158,7 +158,7 @@ public class BossFight : MonoBehaviour
         if (BossHP <= 399 && BossHP > 0){
 
             RandomBossAttack = (int)Random.Range(0,4+1);
-            RandomBossAttack = 1;
+            //RandomBossAttack = 1;
 
             switch (RandomBossAttack) { 
 
