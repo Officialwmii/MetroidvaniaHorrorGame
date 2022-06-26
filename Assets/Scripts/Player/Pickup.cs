@@ -149,6 +149,7 @@ public class Pickup : MonoBehaviour
                 case UpgradeType.StartingRoom:
                     EventManager.StartingRoom(); DestroyObject = false;
                     EventManager.sub("Health Restored", 1f);
+                    AkSoundEngine.PostEvent("Jetpack_Refill", col.gameObject);
                     break;
             }
 
