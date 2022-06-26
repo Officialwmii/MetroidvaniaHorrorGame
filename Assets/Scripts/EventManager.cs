@@ -439,8 +439,8 @@ public class EventManager : MonoBehaviour
         for (int i = 0; i < 10; i++) GrenadePickup();
         for (int i = 0; i < 10; i++) FuelPickup();
         for (int i = 0; i < 3; i++) GainConstalationKey();
-        GainAbilityJetpack();
-        GainAbilityJetpack();
+        GainAbilityJetpack(1);
+        GainAbilityJetpack(2);
         GainAbilityArmour();
         GainAbilityRocketLauncher();
     }
@@ -655,9 +655,24 @@ public class EventManager : MonoBehaviour
         AddDanger(25);
     }
 
-    static public void GainAbilityJetpack() {
+    static public void GainAbilityJetpack(int variable) {
 
-        if (HasJetpack == false) { HasJetpack = true; }
+        if (HasJetpack == false) { 
+            
+            HasJetpack = true;
+            
+            if (variable == 1) {
+                GameObject Text = GameObject.Find("Tutorial Text Jetpack 2");
+                Text.GetComponent<TMP_Text>().text =
+                    "Full Jetpack Acquired -  \n Hold L1 or W to fly.  \n Flying in gravity bounded areas  \n consumes a large amount of fuel.";
+            }
+            if (variable == 2){
+                GameObject Text = GameObject.Find("Tutorial Text Jetpack 1");
+                Text.GetComponent<TMP_Text>().text =
+                    "Full Jetpack Acquired -  \n Hold L1 or W to fly.  \n Flying in gravity bounded areas  \n consumes a large amount of fuel.";
+            }
+
+        }
         else { HasDoubleJetpack = true; }
          MainUpgradesAcquired++; }
 
@@ -674,12 +689,22 @@ public class EventManager : MonoBehaviour
         if (FuelRefillNumberOfUpgrades >= 6) { FuelRefillTreshold = 1f; FuelRefillSpeed = 25; }
 
     }
-    static public void GainConstalationKey() { ConstalationsKeysAcquired++;
+    static public void GainConstalationKey() { 
+        
+        ConstalationsKeysAcquired++;
 
-        if (ConstalationsKeysAcquired == 1) KeyUnlocked1.SetActive(true);
-        if (ConstalationsKeysAcquired == 2) KeyUnlocked2.SetActive(true);
-        if (ConstalationsKeysAcquired == 3) KeyUnlocked3.SetActive(true);
+        string KeyText = "";
 
+        if (ConstalationsKeysAcquired == 1) { KeyUnlocked1.SetActive(true); 
+            KeyText = "Constellation Protocol Acquired - \n 1 found, 2 remaining to \n access the Control Bridge.";  }
+        if (ConstalationsKeysAcquired == 2) { KeyUnlocked2.SetActive(true);
+            KeyText = "Constellation Protocol Acquired - \n 2 found, 1 final remaining to \n access the Control Bridge.";}
+        if (ConstalationsKeysAcquired == 3) { KeyUnlocked3.SetActive(true);
+            KeyText = "Constellation Protocol Acquired - \n All found! Access the \n Control Bridge and initiate the scuttle protocol.";}
+
+        GameObject KeyText1 = GameObject.Find("Key Text 1"); KeyText1.GetComponent<TMP_Text>().text = KeyText;
+        GameObject KeyText2 = GameObject.Find("Key Text 2"); KeyText2.GetComponent<TMP_Text>().text = KeyText;
+        GameObject KeyText3 = GameObject.Find("Key Text 3"); KeyText3.GetComponent<TMP_Text>().text = KeyText;
 
     }
     static public void GoToCredits() { SceneManager.LoadScene("EndSequence"); }
@@ -696,43 +721,36 @@ public class EventManager : MonoBehaviour
         DeathCounter++;
     }
 
-    static public void AudioLogPickup(AudioNode subtitles)
-    {
+    static public void AudioLogPickup(AudioNode subtitles){
+       
         AudioLog++;
 
-        if (AudioLog == 1)
-        {
+        if (AudioLog == 1){
             AkSoundEngine.PostEvent("Audio_Log_1", player);
-
             SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
             //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
-        else if (AudioLog == 2)
-        {
+        else if (AudioLog == 2){
             AkSoundEngine.PostEvent("Audio_Log_2", player);
             SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
             //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
-        else if (AudioLog == 3)
-        {
+        else if (AudioLog == 3){
             AkSoundEngine.PostEvent("Audio_Log_3", player);
             SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
             //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
-        else if (AudioLog == 4)
-        {
+        else if (AudioLog == 4){
             AkSoundEngine.PostEvent("Audio_Log_4", player);
             SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
             //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
-        else if (AudioLog == 5)
-        {
+        else if (AudioLog == 5){
             AkSoundEngine.PostEvent("Audio_Log_5", player);
             SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
             //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
         }
-        else
-        {
+        else{
             AkSoundEngine.PostEvent("Audio_Log_6", player);
             SubtitlesText.instance.SetAudioLogSubtitle(AudioLog);
             //SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);

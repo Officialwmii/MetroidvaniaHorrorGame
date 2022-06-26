@@ -30,6 +30,8 @@ public class Pickup : MonoBehaviour
     private GameObject particles;
     public AudioClip SFXDenial;
 
+    public int Variable;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -108,11 +110,11 @@ public class Pickup : MonoBehaviour
                 // Ability upgrades
                 case UpgradeType.GainAbilityJetpack:
                     AkSoundEngine.PostEvent("Grenade_Upgrade", col.gameObject);
-                    EventManager.GainAbilityJetpack();
+                    EventManager.GainAbilityJetpack(Variable);
                     if(EventManager.HasJetpack && !EventManager.HasDoubleJetpack) 
                         EventManager.sub("Damaged Jetpack Acquired! - Use to dash short distances.", 3f);
                     if (EventManager.HasJetpack && EventManager.HasDoubleJetpack)
-                        EventManager.sub("Compete Jetpack Acquired! - Used to fly. Fuel consumption is high in gravity bound areas.", 3f);
+                        EventManager.sub("Full Jetpack Acquired - Hold L1 or W to fly. \n Flying in gravity bounded areas consumes a large amount of fuel.", 3f);
                     break;
                 case UpgradeType.GainAbilityArmour:
                     AkSoundEngine.PostEvent("Grenade_Upgrade", col.gameObject);
