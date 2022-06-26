@@ -28,6 +28,7 @@ public class BossFight : MonoBehaviour
 
     public float bossAttackTimer = 0;
 
+    public GameObject Player;
 
     public float BossHP;
 
@@ -40,8 +41,10 @@ public class BossFight : MonoBehaviour
     public bool SET_BOSS_HP_0;
 
 
-    void OnEnable()
-    {
+    void OnEnable() { 
+
+        Player = GameObject.Find("Player");
+
         Phase_1.SetActive(false);
         Phase_1.GetComponent<PlayableDirector>().Stop();
         Phase_1.GetComponent<PlayableDirector>().time = 0;
@@ -116,11 +119,16 @@ public class BossFight : MonoBehaviour
     private void RandomMirror(GameObject BossAttack)
     {
         RandomBossAttackVariant = (int)Random.Range(1, 2 + 1);
-        switch (RandomBossAttackVariant)
-        {
+        /*switch (RandomBossAttackVariant) {
+
             case (1): BossAttack.transform.localScale = new Vector3(1, 1, 1); break;
             case (2): BossAttack.transform.localScale = new Vector3(-1, 1, 1); break;
-        }
+        }*/
+
+        if (Player.GetComponent<Transform>().position.x <= gameObject.GetComponent<Transform>().position.x) { 
+            BossAttack.transform.localScale = new Vector3(1, 1, 1); }
+        else { BossAttack.transform.localScale = new Vector3(-1, 1, 1); }
+
 
     }
 
@@ -147,10 +155,10 @@ public class BossFight : MonoBehaviour
             OnEnable();
         }
 
-        if (BossHP <= 380 && BossHP > 0){
+        if (BossHP <= 399 && BossHP > 0){
 
             RandomBossAttack = (int)Random.Range(0,4+1);
-            RandomBossAttack = 3;
+            RandomBossAttack = 1;
 
             switch (RandomBossAttack) { 
 
