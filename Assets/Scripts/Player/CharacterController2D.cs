@@ -250,6 +250,9 @@ public class CharacterController2D : MonoBehaviour
 				EventManager.UseJetpack();
 				//particleJetpack.GetComponent<ParticleSystem>().Play();
 				JetpackTrail.GetComponent<TrailRenderer>().emitting = true;
+				Debug.Log("Jetpack speed: "+m_Rigidbody2D.velocity.y);
+				if (m_Rigidbody2D.velocity.y >= 40) { m_Rigidbody2D.velocity = m_Rigidbody2D.velocity.normalized * 40; }
+
 			}
 
 			if (holdJetpack == false || EventManager.canUseJetpack == false){ JetpackTrail.GetComponent<TrailRenderer>().emitting = false;}
