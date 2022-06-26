@@ -162,6 +162,9 @@ public class EventManager : MonoBehaviour
         GrenadeCountdown = 0;
         CanThrowGrenade = true;
 
+        UpdateMaxFuleGUI();
+
+
     }
 
     void Start(){
@@ -231,6 +234,10 @@ public class EventManager : MonoBehaviour
 
         GrenadeCircle = GameObject.Find("GrenadeCircle");
         GrenadeCircle.SetActive(false);
+
+        UpdateMaxFuleGUI();
+
+
     }
 
     // Update is called once per frame
@@ -616,12 +623,18 @@ public class EventManager : MonoBehaviour
             {
                 Fuel = MaxFuel; 
         }
-        
-        fuelBarArea.GetComponent<RectTransform>().sizeDelta = new Vector2(100*MaxFuel/100, 7);
+
+
+
+        UpdateMaxFuleGUI();
+        UpdateFuel();
+    }
+
+
+    static public void UpdateMaxFuleGUI() {
+        fuelBarArea.GetComponent<RectTransform>().sizeDelta = new Vector2(100 * MaxFuel / 100, 7);
         fuelBarFrame.GetComponent<RectTransform>().sizeDelta = new Vector2(115 * MaxFuel / 100, 12);
 
-
-        UpdateFuel();
     }
 
     static public void RefillFuel(){

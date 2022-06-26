@@ -55,6 +55,7 @@ MonoBehaviour:
   Inventory: {fileID: 647045488088282819}
   Controls: {fileID: 1823115396557994438}
   ControlText: {fileID: 5844246083387232251}
+  QuitText: {fileID: 1740688110723935883}
 --- !u!1 &647045488088282819
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +277,7 @@ GameObject:
   - component: {fileID: 1393412716810016748}
   - component: {fileID: 407200761166092467}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Quit Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

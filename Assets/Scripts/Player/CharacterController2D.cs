@@ -250,7 +250,7 @@ public class CharacterController2D : MonoBehaviour
 				EventManager.UseJetpack();
 				//particleJetpack.GetComponent<ParticleSystem>().Play();
 				JetpackTrail.GetComponent<TrailRenderer>().emitting = true;
-				Debug.Log("Jetpack speed: "+m_Rigidbody2D.velocity.y);
+				//Debug.Log("Jetpack speed: "+m_Rigidbody2D.velocity.y);
 				if (m_Rigidbody2D.velocity.y >= 40) { m_Rigidbody2D.velocity = m_Rigidbody2D.velocity.normalized * 40; }
 
 			}
@@ -382,7 +382,7 @@ public class CharacterController2D : MonoBehaviour
 		isDashing = false;
 		yield return new WaitForSeconds(0.25f);
 		DashTrail.GetComponent<TrailRenderer>().emitting = false;
-		Debug.Log("turn off dash trail");
+		//Debug.Log("turn off dash trail");
 		yield return new WaitForSeconds(0.25f);
 		canDash = true;
 

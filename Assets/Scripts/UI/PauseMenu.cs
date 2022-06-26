@@ -22,12 +22,13 @@ public class PauseMenu : MonoBehaviour
     private bool ViewingControls = false;
     public GameObject ControlText;
 
+    private bool SureYouWantToQuit = false;
+    public GameObject QuitText;
 
 
     void Start()
     {
         eventSystemObject = GameObject.Find("EventSystem");
-
     }
 
 
@@ -68,6 +69,9 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        QuitText.GetComponent<TMP_Text>().text = "Quit";
+        SureYouWantToQuit = false;
+
     }
 
     public void Pause()
@@ -107,6 +111,7 @@ public class PauseMenu : MonoBehaviour
             Controls.SetActive(false);
             Inventory.SetActive(true);
             ControlText.GetComponent<TextMeshPro>().text = "CONTROLS";
+
         }
         else
         {
@@ -125,8 +130,21 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
-        //Debug.Log("QUIT");
+
+
+
+        if (SureYouWantToQuit)
+        {
+            Application.Quit();
+            Debug.Log("QUIT");
+        }
+        else { SureYouWantToQuit = true;
+
+            QuitText.GetComponent<TMP_Text>().text = "Confirm?";
+        }
+
+
+
     }
 
     public void Respawn() {
