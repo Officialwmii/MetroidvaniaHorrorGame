@@ -6528,6 +6528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1853118496}
   - component: {fileID: 1853118497}
+  - component: {fileID: 1853118498}
   m_Layer: 0
   m_Name: Audio Events
   m_TagString: Untagged
@@ -6575,6 +6576,28 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &1853118498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853118495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c5260c21598406c80db8886d3f1d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!4 &1915484134 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4424035838213028237, guid: f17dac3b48a9deb4281c307621caa263, type: 3}

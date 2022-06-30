@@ -483,6 +483,8 @@ GameObject:
   - component: {fileID: 107957464}
   - component: {fileID: 107957463}
   - component: {fileID: 107957466}
+  - component: {fileID: 107957468}
+  - component: {fileID: 107957467}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -577,6 +579,57 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!114 &107957467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107957462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db108f68445943ca9af34bcfa001eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6d964061811ce4d3d8e12fbb60193935, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &107957468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107957462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c5260c21598406c80db8886d3f1d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &118372655
 GameObject:
   m_ObjectHideFlags: 0
@@ -3858,7 +3911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3551165419774798405, guid: 7b93f720188dbf84dbbb8cb7bcf56fec, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1736.3
+      value: 1661
       objectReference: {fileID: 0}
     - target: {fileID: 3551165419774798405, guid: 7b93f720188dbf84dbbb8cb7bcf56fec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
