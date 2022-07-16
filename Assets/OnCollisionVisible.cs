@@ -15,7 +15,9 @@ public class OnCollisionVisible : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (ShowMap.showMap) { this.GetComponent<Renderer>().enabled = true; }
+        else { this.GetComponent<Renderer>().enabled = false; }
+
     }
 
     void OnTriggerEnter2D(Collider2D col)
