@@ -281,7 +281,7 @@ public class EventManager : MonoBehaviour
         //AlertAddingDanger();
         AutomaticallyReduceDanger();
 
-        if (Input.GetKeyDown(KeyCode.PageUp)) { OnBossCompleted(); }
+        //if (Input.GetKeyDown(KeyCode.PageUp)) { OnBossCompleted(); }
         if (EscapeSequence)
         {
             AlertTimer = AlertTimer - Time.deltaTime;

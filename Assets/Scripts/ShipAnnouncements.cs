@@ -13,9 +13,13 @@ public class ShipAnnouncements : MonoBehaviour
     {
         if (col.CompareTag("Player")&& duration<=0)
         {
-            shipAIAnnouncement.Post(col.gameObject);
-            SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
-            duration = 10;
+            if (location == "BossRoom") {
+                if (EventManager.ConstalationsKeysAcquired < 3)
+                    PlayAudio(col);
+            }
+            else {
+                PlayAudio(col);
+            }
         }
     }
 
@@ -32,4 +36,12 @@ public class ShipAnnouncements : MonoBehaviour
             duration = duration - Time.deltaTime;
         }
     }
+
+
+     void PlayAudio(Collider2D col) {
+        shipAIAnnouncement.Post(col.gameObject);
+        SubtitlesText.instance.SetSubtitle(subtitles.subtitle, subtitles.duration);
+        duration = 10;
+    }
+
 }
