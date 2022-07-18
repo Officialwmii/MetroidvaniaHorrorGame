@@ -81,7 +81,7 @@ public class BossFight : MonoBehaviour
         Attack1v4.GetComponent<PlayableDirector>().Play();
         //Attack1v4.GetComponent<PlayableDirector>().time = 0;
         Attack1v4.GetComponent<PlayableDirector>().time = Attack1v4.GetComponent<PlayableDirector>().playableAsset.duration;
-        Debug.Log("Rests bossfight");
+        //Debug.Log("Rests bossfight");
 
 
 

@@ -107,7 +107,12 @@ public class CharacterController2D : MonoBehaviour
 				m_Grounded = true;
 				if (!wasGrounded )
 				{
-					OnLandEvent.Invoke();
+				//if (m_Rigidbody2D.velocity.y <9)
+					{ OnLandEvent.Invoke();
+					//Debug.Log(m_Rigidbody2D.velocity.y);
+						}
+					
+					
 					if (!m_IsWall && !isDashing) 
 						particleJumpDown.Play();
 					//canDoubleJump = true;
@@ -225,7 +230,7 @@ public class CharacterController2D : MonoBehaviour
 				}
 			}
 			// If the player should jump...
-			if (m_Grounded && jump)
+			if (m_Grounded && jump )
 			{
 				// Add a vertical force to the player.	
 

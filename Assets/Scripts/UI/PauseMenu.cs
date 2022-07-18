@@ -24,7 +24,7 @@ public class PauseMenu : MonoBehaviour
 
     private bool SureYouWantToQuit = false;
     public GameObject QuitText;
-
+    public GameObject Player; 
 
     void Start()
     {
@@ -37,8 +37,10 @@ public class PauseMenu : MonoBehaviour
        // Inventory = GameObject.Find("Inventory");
        // Controls = GameObject.Find("Controls");
         if (ViewingControls) { Controls.SetActive(true); Inventory.SetActive(false); }
-        else { Controls.SetActive(false); Inventory.SetActive(false); }    
+        else { Controls.SetActive(false); Inventory.SetActive(false); }
         //ControlText = GameObject.Find("Control Text (TMP)");
+        //Player = GameObject.Find("Player");
+
     }
 
 
@@ -51,11 +53,18 @@ public class PauseMenu : MonoBehaviour
             {
                 Resume();
                 pauseMenuSounds.BackSound();
+                Player.GetComponent<PlayerMovement>().enabled = false;
+                Player.GetComponent<CharacterController2D>().enabled = false;
+
             }
             else
             {
                 Pause();
                 pauseMenuSounds.PauseSound();
+                Player.GetComponent<PlayerMovement>().enabled = true;
+                Player.GetComponent<CharacterController2D>().enabled = true;
+
+
             }
         }
     }
@@ -102,27 +111,20 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
-        Debug.Log("Show Controls");
+        //Debug.Log("Show Controls");
 
-        if (ViewingControls)
-        {
-
+        if (ViewingControls){
             ViewingControls = false;
             Controls.SetActive(false);
             Inventory.SetActive(true);
             ControlText.GetComponent<TextMeshPro>().text = "CONTROLS";
-
         }
-        else
-        {
-
+        else{
             ViewingControls = true;
             Controls.SetActive(true);
-           Inventory.SetActive(false);
+            Inventory.SetActive(false);
             ControlText.GetComponent<TMP_Text>().text = "INVENTORY";
-
         }
-
 
         // SceneManager.LoadScene("Main Menu");
         //Time.timeScale = 1f;
