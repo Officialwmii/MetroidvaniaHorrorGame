@@ -52,8 +52,8 @@ public class GravityDoorTrigger : MonoBehaviour
             }
             if (doorType == DoorType.ZeroGravity && EventManager.HasArmour)
             {
-                shipAIAnnouncementOpened.Post(col.gameObject);
-                SubtitlesText.instance.SetSubtitle(doorOpened.subtitle, doorOpened.duration);
+                //shipAIAnnouncementOpened.Post(col.gameObject);
+                //SubtitlesText.instance.SetSubtitle(doorOpened.subtitle, doorOpened.duration);
                 GetComponent<AudioSource>().clip = SFXOpen;
                 GetComponent<AudioSource>().Play();
 

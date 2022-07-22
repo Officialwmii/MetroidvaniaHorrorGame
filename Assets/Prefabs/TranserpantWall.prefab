@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fade: 1
+  SecretAudio: {fileID: 8300000, guid: 449bbb3aae7cb44f6aa2610b8dfd7cf8, type: 3}
 --- !u!61 &2167376258229649589
 BoxCollider2D:
   m_ObjectHideFlags: 0

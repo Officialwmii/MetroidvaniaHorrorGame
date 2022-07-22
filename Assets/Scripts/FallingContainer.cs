@@ -6,6 +6,7 @@ public class FallingContainer : MonoBehaviour
 {
 
     private GameObject BrokenCreate;
+    public AudioSource JumpScare;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class FallingContainer : MonoBehaviour
         {
 
             this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-        
+            JumpScare.Play();
         }
 
         if (collision.gameObject.tag == "Crate")

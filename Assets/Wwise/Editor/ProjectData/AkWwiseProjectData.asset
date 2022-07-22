@@ -604,7 +604,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Credits
     guid: 5fb001664d55d44fae09e071ce986671
     GuidInternal: 
-    m_lastTime: -8585431406822365368
+    m_lastTime: -8585431346242034106
     List:
     - name: Credits_Audio
       guid: 38f2cc8e7a68164ead4e7042a069bbd8

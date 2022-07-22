@@ -7,7 +7,7 @@ public class TransparentWall : MonoBehaviour
     public float Fade=2f;
     private bool StartFading = false;
     private float StartFade;
-
+    public AudioClip SecretAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -38,13 +38,14 @@ public class TransparentWall : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
 
-        if (StartFading==false) {       
-        
-            if (col.CompareTag("Player")) StartFading = true;
+        if (StartFading==false) {
+
+            if (col.CompareTag("Player")) { StartFading = true; AudioSource.PlayClipAtPoint(SecretAudio, gameObject.transform.position, 0.2f); }
             if (   col.CompareTag("Bullet"))
             {
                 Destroy(col.gameObject);
                 StartFading = true;
+
             }
         }
 
