@@ -26,7 +26,7 @@ public class LowGravityEffect : MonoBehaviour
         {
             Debug.Log("Enter Low gravity");
             col.GetComponent<PlayerMovement>().variableGravity= 0.25f;
-           // AudioSource.PlayClipAtPoint(SFXEnter, col.gameObject.transform.position);
+            AudioSource.PlayClipAtPoint(SFXEnter, col.gameObject.transform.position);
             EventManager.inLowGravityZone = true;
 
         }
