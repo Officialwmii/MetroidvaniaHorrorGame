@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 528434529}
   - component: {fileID: 528434530}
   - component: {fileID: 528434531}
-  - component: {fileID: 16453732285732907}
+  - component: {fileID: 2299668498712237996}
   m_Layer: 1
   m_Name: Player
   m_TagString: Player
@@ -841,7 +841,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!81 &16453732285732907
+--- !u!81 &2299668498712237996
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

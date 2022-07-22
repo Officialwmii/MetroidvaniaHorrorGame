@@ -27,8 +27,19 @@ public class ATotallyNormalScript : MonoBehaviour
         {
             Debug.Log("Enter");
 
-            this.GetComponent<BoxCollider2D>().enabled = false;
             StartCoroutine(SpawnEnemy());
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.CompareTag("Player"))
+        {
+            Debug.Log("Exit");
+
+            this.GetComponent<BoxCollider2D>().enabled = false;
+            StartCoroutine(DeSpawnEnemy());
+
         }
     }
 
@@ -36,8 +47,20 @@ public class ATotallyNormalScript : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimer);
 
+        jumpScare.Play();
         toActivate.SetActive(true);
-        Destroy(gameObject);
+        //Destroy(gameObject);
 
     }
+
+    IEnumerator DeSpawnEnemy()
+    {
+        yield return new WaitForSeconds(delayTimer);
+
+        toActivate.SetActive(false);
+        //Destroy(gameObject);
+
+    }
+
+
 }
