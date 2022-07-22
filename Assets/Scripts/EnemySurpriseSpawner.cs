@@ -9,7 +9,7 @@ public class EnemySurpriseSpawner : MonoBehaviour
     public GameObject enemy;
     public GameObject SpawnPosition;
     public float delayTimer;
-    public AudioSource JumpScare;
+    public AudioClip JumpScare;
     void Start()
     {
         
@@ -38,6 +38,6 @@ public class EnemySurpriseSpawner : MonoBehaviour
 
         GameObject EnemySpawned = Instantiate(enemy, SpawnPosition.transform.position, Quaternion.identity);
         Destroy(gameObject);
-        JumpScare.Play();
+        AudioSource.PlayClipAtPoint(JumpScare, gameObject.transform.position, 0.1f);
     }
 }
