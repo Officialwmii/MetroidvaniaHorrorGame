@@ -78,7 +78,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
-        QuitText.GetComponent<TMP_Text>().text = "Quit";
+        QuitText.GetComponent<TMP_Text>().text = "QUIT";
         SureYouWantToQuit = false;
 
     }
@@ -142,7 +142,7 @@ public class PauseMenu : MonoBehaviour
         }
         else { SureYouWantToQuit = true;
 
-            QuitText.GetComponent<TMP_Text>().text = "Confirm?";
+            QuitText.GetComponent<TMP_Text>().text = "CONFIRM?";
         }
 
 
