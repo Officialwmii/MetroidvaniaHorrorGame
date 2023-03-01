@@ -40,6 +40,8 @@ public class BossFight : MonoBehaviour
     public bool SET_BOSS_HP_100;
     public bool SET_BOSS_HP_0;
 
+    public AudioClip BossAttack;
+
 
     void OnEnable() { 
 
@@ -162,6 +164,7 @@ public class BossFight : MonoBehaviour
         if (BossHP <= 399 && BossHP > 0){
 
             //Add boss attack audio
+            AudioSource.PlayClipAtPoint(BossAttack, gameObject.transform.position,1f);
 
             RandomBossAttack = (int)Random.Range(0,4+1);
             //RandomBossAttack = 4;

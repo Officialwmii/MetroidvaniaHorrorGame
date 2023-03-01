@@ -3,7 +3,22 @@ guid: ca59b7f3b2c0c27448e7d9e2c21eb6e4
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Phase_1: {instanceID: 0}
+  - Phase_2: {instanceID: 0}
+  - Phase_3: {instanceID: 0}
+  - Phase_4: {instanceID: 0}
+  - Phase_5: {instanceID: 0}
+  - Phase_6: {instanceID: 0}
+  - End_Phase: {instanceID: 0}
+  - The_Bossman: {instanceID: 0}
+  - Attack1v1: {instanceID: 0}
+  - Attack1v2: {instanceID: 0}
+  - Attack1v3: {instanceID: 0}
+  - Attack1v4: {instanceID: 0}
+  - BossmanHP: {instanceID: 0}
+  - Player: {instanceID: 0}
+  - BossAttack: {fileID: 8300000, guid: 73112c756e0cfba419cbb3a349b18b1c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
