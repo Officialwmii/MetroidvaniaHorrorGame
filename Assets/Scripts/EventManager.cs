@@ -113,7 +113,9 @@ public class EventManager : MonoBehaviour
 
     static private float randomAlienMonolouge = 0;
 
+    public static bool PickUpAlienArtifactTrigger = false;
 
+    public static float PickUpAlienArtifactTimer = 0;
 
     void OnEnable() {
         //Resetting all variables when playing the game again.
@@ -306,7 +308,7 @@ public class EventManager : MonoBehaviour
 
         //debugging Xeno Lines
         if(Input.GetKeyDown(KeyCode.PageDown)) { randomAlienMonolouge++; AlienInnerMonologue(); }
-
+        /*
         if (CurrentDangerLevel == 0) alienTimer = alienTimer + Time.deltaTime;
 
         if (alienTimer >= 1) {
@@ -324,6 +326,23 @@ public class EventManager : MonoBehaviour
 
             }
 
+        }*/
+
+        //Start a timer when you pick up an artifact and play the AlienInnerMonologue
+        if (PickUpAlienArtifactTrigger)
+        {
+
+            PickUpAlienArtifactTimer = PickUpAlienArtifactTimer - Time.deltaTime;
+            //Debug.Log("Timer:" + PickUpAlienArtifactTimer);
+
+            if (PickUpAlienArtifactTimer <= 0) {
+                //Debug.Log("PlayMonoloug");
+              
+                PickUpAlienArtifactTrigger = false;
+                randomAlienMonolouge++;
+                AlienInnerMonologue();
+
+            }
         }
 
         Timer = Timer + Time.deltaTime;
@@ -365,58 +384,63 @@ public class EventManager : MonoBehaviour
 
     static public void AlienInnerMonologue() {
 
-        float RandomLine = (int)Random.Range(1f, 16f);
-        RandomLine = randomAlienMonolouge;
+        float RandomLine = (int)Random.Range(1f, 12f);
+        //RandomLine = randomAlienMonolouge;
         switch (Mathf.RoundToInt(RandomLine))
         {
-            case 1:
-                sub("O to drift across the endless night hopping from star to star never look down and never look up a thousand eyes forever affixed to the abyss.", 5f);
-                AkSoundEngine.PostEvent("Xeno_Monologue_01", player);
-                break;
-            case 2: sub("Loneliness is the cancer that grows in the hearts of all brains.", 5f);
+           
+            case 1: sub("Loneliness is the cancer that grows in the hearts of all brains.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_02", player);
                 break;
-            case 3: sub("Dare to dream a nightmare from which you wouldn?t want to wake up.", 5f);
+            case 2: sub("Dare to dream a nightmare from which you wouldnt want to wake up.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_03", player);
                 break;
-            case 4: sub("Feed your own tail to your own mouth again and again and again and again.", 5f);
+            case 3: sub("Feed your own tail to your own mouth again and again and again and again.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_04", player);
                 break;
-            case 5: sub("We are what we are and what we are is the cosmic recursion.", 5f);
+            case 4: sub("We are what we are and what we are is the cosmic recursion.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_05", player);
                 break;
-            case 6: sub("Even the smallest speck plays its part.", 5f);
+            case 5: sub("Even the smallest speck plays its part.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_06", player);
                 break;
-            case 7: sub("They trusted you.", 1f);
+            case 6: sub("They trusted you.", 1f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_07", player);
                 break;
-            case 8: sub("In the eternal dark scream your screams and we will whisper you to sleep.", 5f);
+            case 7: sub("In the eternal dark scream your screams and we will whisper you to sleep.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_08", player);
                 break;
-            case 9: sub("That which does not end cannot end that which does not end.", 5f);
+            case 8: sub("That which does not end cannot end that which does not end.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_09", player);
                 break;
-            case 10: sub("Open your eyes to find that your eyes were already open.", 5f);
+            case 9: sub("Open your eyes to find that your eyes were already open.", 5f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_10", player);
                 break;
-            case 11: sub("You cannot wake up you are not asleep.", 2f);
+            case 10: sub("You cannot wake up you are not asleep.", 2f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_11", player);
+                break;          
+            case 11: sub("O the curse of recursion!", 2f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_14", player);
                 break;
-            case 12:
+            case 12: sub("Void your shells. Cease your lives.", 2f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_15", player);
+                break;
+
+            /*
+            case 13:
                 sub("Nightmares are not real but we are.", 2f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_12", player);
                 break;
-            case 13:
+
+            case 14:
+                sub("O to drift across the endless night hopping from star to star never look down and never look up a thousand eyes forever affixed to the abyss.", 5f);
+                AkSoundEngine.PostEvent("Xeno_Monologue_01", player);
+                break;
+
+            case 15:
                 sub("The fruit of the tree that grew in the heart of the dark garden which spreads through the bowels of the cosmos holds the seed to salvation/damnation.", 2f);
                 AkSoundEngine.PostEvent("Xeno_Monologue_13", player);
-                break;
-            case 14: sub("O the curse of recursion!", 2f);
-                AkSoundEngine.PostEvent("Xeno_Monologue_14", player);
-                break;
-            case 15: sub("Void your shells. Cease your lives.", 2f);
-                AkSoundEngine.PostEvent("Xeno_Monologue_15", player);
-                break;
+                break;*/
         }
     }
 
@@ -675,7 +699,13 @@ public class EventManager : MonoBehaviour
         if (Collectables >= 5) DangerMultiplier = 2.5f;
 
         AddDanger(25);
+
+        //Start timer for Alien Monolouge
+        PickUpAlienArtifactTrigger = true;
+        PickUpAlienArtifactTimer = 3.5f;
+
     }
+
 
     static public void GainAbilityJetpack(int variable) {
 
@@ -727,6 +757,10 @@ public class EventManager : MonoBehaviour
         GameObject KeyText1 = GameObject.Find("Key Text 1"); KeyText1.GetComponent<TMP_Text>().text = KeyText;
         GameObject KeyText2 = GameObject.Find("Key Text 2"); KeyText2.GetComponent<TMP_Text>().text = KeyText;
         GameObject KeyText3 = GameObject.Find("Key Text 3"); KeyText3.GetComponent<TMP_Text>().text = KeyText;
+
+        //Start timer for Alien Monolouge
+        PickUpAlienArtifactTrigger = true;
+        PickUpAlienArtifactTimer = 3.5f;
 
     }
     static public void GoToCredits() { SceneManager.LoadScene("EndSequence"); }
