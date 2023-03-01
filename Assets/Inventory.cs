@@ -118,7 +118,7 @@ public class Inventory : MonoBehaviour
 
         Time.GetComponent<TMP_Text>().text = 
                 Mathf.FloorToInt(EventManager.Timer / (60*60)).ToString("D2") + ":" +
-                Mathf.FloorToInt(EventManager.Timer / 60).ToString("D2") + ":" +
+                Mathf.FloorToInt((EventManager.Timer / 60)%60).ToString("D2") + ":" +
                 Mathf.FloorToInt(EventManager.Timer % 60).ToString("D2");
 
         Map.GetComponent<TMP_Text>().text = "Map: "+ ((Mathf.Round(((float)EventManager.MapProgress) / 376 * 1000)) / 10) + "%";
